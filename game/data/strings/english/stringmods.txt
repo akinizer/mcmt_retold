@@ -1,2 +1,6 @@
 ID = "STR_TECH_MCMT_PAGE_1"   ;   Str = "Page1"
 ID = "STR_TECH_MCMT_PAGE_2"   ;   Str = "Page2"
+
+ID = "STR_UNIT_KINGLYCAON_WOLF_NAME"   ;   Str = "King Lycaon (Hero)"
+ID = "STR_UNIT_KINGLYCAON_WOLF_SR"   ;   Str = "King of Arcadia"
+ID = "STR_UNIT_KINGLYCAON_WOLF_LR"   ;   Str = "King of Arcadia"

@@ -496,11 +496,223 @@
         </veterancybonus>
     </unit>
 
+    <!-- Greek Myth Units: Demeter -->
+    <unit name="KingLycaon" orderhint="3" mergemode="add">
+        <displaynameid>STR_UNIT_KINGLYCAON_WOLF_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_KINGLYCAON_WOLF_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_KINGLYCAON_WOLF_SR</shortrollovertextid>
+        <icon>resources\greek\player_color\units\lykaon_wolf_icon.png</icon>
+        <animfile>greek\units\myth\lykaon\lykaon_wolf.xml</animfile>
+        <soundsetfile>greek_demeter\vo\lykaon_transformed\lykaon_transformed.xml</soundsetfile>
+        <obstructionradiusx>0.9900</obstructionradiusx>
+        <obstructionradiusz>0.9900</obstructionradiusz>
+        <selectionradiusx>0.7500</selectionradiusx>
+        <selectionradiusz>1.2500</selectionradiusz>
+        <impacttype>Armoured</impacttype>
+        <unitaitype>HandCombative</unitaitype>
+        <movementtype>land</movementtype>
+        <turnrate>18.0000</turnrate>
+        <initialhitpoints>850.0000</initialhitpoints>
+        <maxhitpoints>850.0000</maxhitpoints>
+        <unitregen>1.5000</unitregen>
+
+        <trainpoints>20.0000</trainpoints>
+        <weightclass>6</weightclass>
+        <populationcount>1</populationcount>
+        <buildlimit>1</buildlimit>
+        <maxvelocity>3.5000</maxvelocity>
+        <maxrunvelocity>4.0000</maxrunvelocity>
+        <los>18.0000</los>
+    
+        <cost resourcetype="Gold">200.0000</cost>
+        <cost resourcetype="Food">300.0000</cost>
+        <armor type="Hack" value="0.6000"></armor>
+        <armor type="Pierce" value="0.6500"></armor>
+        <armor type="Crush" value="0.8900"></armor>
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeLandMilitary</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeGarrisonInShips</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+        <unittype>LogicalTypeClassicalMythUnit</unittype>
+        <unittype>BuildLimitSharedGreek</unittype>
+
+        <unittype>MilitaryUnit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>Unit</unittype>
+        <unittype>MythUnit</unittype>
+        <unittype>MythUnitCavalry</unittype>
+        <unittype>InfantryLineUpgraded</unittype>
+        <unittype>SiegeLineUpgraded</unittype>
+        <unittype>Hero</unittype>
+        <unittype>MajorHero</unittype>
+        <unittype>HeroShadowUpgraded</unittype>
+        
+        <unittype>CountsTowardMilitaryScore</unittype>
+        <unittype>LogicalTypeValidBoltTarget</unittype>
+        <unittype>LogicalTypeConvertsHerds</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+        <unittype>LogicalTypeMythUnitNotTitan</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        <unittype>LogicalTypeValidTraitorTarget</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>LogicalTypeFreezableMythUnit</unittype>
+        <unittype>LogicalTypeMythUnitNotFlying</unittype>
+        <unittype>LogicalTypeValidEidolon</unittype>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>CorpseDecays</flag>
+        <flag>ShowGarrisonButton</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>CommonCommands</flag>
+        <flag>MilitaryCommands</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+        <flag>HideFromDialogs</flag>
+        <tactics>lykaon_wolf.tactics</tactics>
+        <protoaction>
+            <name>HandAttack</name>
+            <rof>1.00000</rof>
+            <damage type="Hack">28.000000</damage>
+            <damage type="Crush">4.000000</damage>
+            <damagebonus type="MythUnit">2.500000</damagebonus>
+            <damagebonus type="HumanSoldier">4.000000</damagebonus>
+            <onhiteffect type="Attach" targetunittype="Unit" proto="VFXBleed" attachbone="spine" duration="6.000000"></onhiteffect>
+			<onhiteffect type="DamageOverTime" duration="3.000000" targetunittype="HumanSoldier">
+				<damage type="Hack">1.50000</damage>
+			</onhiteffect>
+            <maxrange>0.500000</maxrange>
+        </protoaction>
+        <protoaction>
+            <name>DelayedTransform</name>
+            <type>DelayedTransform</type>
+            <modifyprotoid>LykaonVillager</modifyprotoid>
+            <modifyduration>2000</modifyduration>
+            <anim>Transform</anim>
+            <transformskipplacementpush>1</transformskipplacementpush>
+            <active>0</active>
+        </protoaction>
+        <protoaction>
+            <name>BirthHackArmor</name>
+            <type>AutoRangedModify</type>
+            <persistent>1</persistent>
+            <modifyduration>1750</modifyduration>
+            <modifytype>ArmorSpecific</modifytype>
+            <modifyamount>1.75</modifyamount>
+            <modifydamagetype>Hack</modifydamagetype>
+            <modifyabstracttype>Unit</modifyabstracttype>
+            <modifyselfonly>1</modifyselfonly>
+            <modifytargetdoingaction>Birth</modifytargetdoingaction>
+            <modifyupdateinterval>250</modifyupdateinterval>
+            <modifyupdateintervalrandomness>1</modifyupdateintervalrandomness>
+        </protoaction>
+        <protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
+			</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+    </unit>
+
     <!-- EGYPTIAN SECTION -->
     <!-- NORSE SECTION -->
     <!-- CHINESE SECTION -->
     <!-- JAPANESE SECTION -->
     <!-- GENERAL SECTION -->
+    <unit name="House" mergemode="replace">
+        <displaynameid>STR_BLD_HOUSE_NAME</displaynameid>
+        <rollovertextid>STR_BLD_HOUSE_LR</rollovertextid>
+        <shortrollovertextid>STR_BLD_HOUSE_SR</shortrollovertextid>
+        <icon>resources\shared\static_color\buildings\house_icon.png</icon>
+        <animfile culture="greek">greek\buildings\house\house.xml</animfile>
+        <animfile culture="egyptian">egyptian\buildings\house\house.xml</animfile>
+        <animfile culture="norse">norse\buildings\house\house.xml</animfile>
+        <animfile culture="chinese">chinese\buildings\house\house.xml</animfile>
+        <animfile culture="japanese">japanese\buildings\house\house.xml</animfile>
+        <soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
+        <obstructionradiusx>2.0000</obstructionradiusx>
+        <obstructionradiusz>2.0000</obstructionradiusz>
+        <impacttype>Stone</impacttype>
+        <screenshakeondestruction>0.200</screenshakeondestruction>
+        <partisantype>Militia</partisantype>
+        <partisancount>2</partisancount>
+        <movementtype>land</movementtype>
+        <initialhitpoints>450.0000</initialhitpoints>
+        <maxhitpoints>450.0000</maxhitpoints>
+        <buildpoints>15.0000</buildpoints>
+        <buildlimit>16</buildlimit>
+        <maxcontained>15</maxcontained>
+        <sharedbuildlimitunit>House</sharedbuildlimitunit>
+        <sharedbuildlimitunittypes>
+        <unittype>AbstractHouseBuildLimit</unittype>
+        </sharedbuildlimitunittypes>
+        <populationcapaddition>10</populationcapaddition>
+        <los>9.0000</los>
+        <cost resourcetype="Wood">50.0000</cost>
+        <carrycapacity resourcetype="Wood">1.0000</carrycapacity>
+        <armor type="Hack" value="0.4000"></armor>
+        <armor type="Pierce" value="0.9000"></armor>
+        <armor type="Crush" value="0.0500"></armor>
+        <unittype>LogicalTypeMinimapFilterEconomic</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeBuildingsNotWalls</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>BuildingClass</unittype>
+        <unittype>Building</unittype>
+        <unittype>CountsTowardEconomicScore</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+        <unittype>AbstractHouseBuildLimit</unittype>
+        <unittype>LogicalTypeBuildingThatCanBeEmpowered</unittype>
+        <unittype>LogicalTypeBuildingNotWonderOrTitan</unittype>
+        <unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+        <unittype>LogicalTypeAffectedByBuildingChainAutoBuild</unittype>
+        <hotkeycontext>HouseAccel</hotkeycontext>
+        <tech row="0" column="0">VibrantLand</tech>
+        <train row="1" column="0">KingLycaon</train>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>Immoveable</flag>
+        <flag>ObscuresUnits</flag>
+        <flag>NonAutoFormedUnit</flag>
+        <flag>Doppled</flag>
+        <flag>SelectWithObstruction</flag>
+        <flag>PaintTextureWhenPlacing</flag>
+        <flag>FlattenGround</flag>
+        <flag>UseSharedBuildLimit</flag>
+        <flag>NoIdleActions</flag>
+        <flag>DynamicUpdate</flag>
+        <flag>HasGatherPoint</flag>
+        <contain>AbstractVillager</contain>
+        <contain>HumanSoldier</contain>
+        <contain>Hero</contain>
+        <command row="1" column="1">CancelBuilding</command>
+        <command row="3" column="5">Delete</command>
+    </unit>
 
     <!-- MCMT CONTENT -->
 

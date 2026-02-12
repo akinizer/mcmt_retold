@@ -16,8 +16,11 @@
 	</tech>
 
     <tech name="MCMT_SpecialUnits" mergeMode="add">
-		<status>UNOBTAINABLE</status>
-		<effects></effects>
+      <status>UNOBTAINABLE</status>
+      <effects>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				  <target type="ProtoUnit">KingLycaon</target></effect>
+      </effects>
     </tech> 
 
     <tech name="MCMT_Researches" mergeMode="add">
@@ -51,5 +54,33 @@
         <flag>InfiniteTech</flag>
         <flag>NoTextMessage</flag>
         <effects></effects>
+    </tech>
+    <tech name="PredatoryInstinct" orderhint="4" mergeMode="replace">
+      <displaynameid>STR_TECH_PREDATORY_INSTINCT_NAME</displaynameid>
+      <rollovertextid>STR_TECH_PREDATORY_INSTINCT_LR</rollovertextid>
+      <cost resourcetype="Food">300.0000</cost>
+      <cost resourcetype="Favor">20.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\greek_demeter\static_color\technologies\predatory_instinct_icon.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <techtype>MythUnitUpgrade</techtype>
+      <effects>
+        <effect type="Data" amount="2.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+          <target type="ProtoUnit">LykaonWolf</target></effect>
+        <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
+          <target type="ProtoUnit">LykaonWolf</target></effect>
+        
+        <effect type="Data" amount="2.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+          <target type="ProtoUnit">KingLycaon</target></effect>
+        <effect type="Data" action="HandAttack" amount="0.75" subtype="RateOfFire" relativity="Percent">
+          <target type="ProtoUnit">KingLycaon</target></effect>
+        <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
+          <target type="ProtoUnit">KingLycaon</target></effect>
+        
+        <effect type="SetName" proto="LykaonWolf" newname="STR_UNIT_ALPHA_LYKAON_WOLF_NAME"></effect>
+        <effect type="SetName" proto="LykaonVillager" newname="STR_UNIT_ALPHA_LYKAON_VILLAGER_NAME"></effect>
+      </effects>
     </tech>
 </techtreemods>
