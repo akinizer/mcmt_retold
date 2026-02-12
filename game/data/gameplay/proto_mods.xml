@@ -1,5 +1,540 @@
 <protomods>
     <!-- BASE GAME CONTENT -->
 
+    <!-- GREEK SECTION -->
+
+    <!-- Greek Heroes: Demeter -->
+    <unit name="Orpheus" orderhint="3" mergemode="replace">
+        <displaynameid>STR_UNIT_ORPHEUS_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_ORPHEUS_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_ORPHEUS_SR</shortrollovertextid>
+        <icon>resources\greek\player_color\units\orpheus_icon.png</icon>
+        <animfile>greek\units\hero\orpheus\orpheus.xml</animfile>
+        <soundsetfile>greek\vo\orpheus\orpheus.xml</soundsetfile>
+        <obstructionradiusx>0.4900</obstructionradiusx>
+        <obstructionradiusz>0.4900</obstructionradiusz>
+        <impacttype>Unarmoured</impacttype>
+        <unitaitype>Passive</unitaitype>
+        <movementtype>land</movementtype>
+        <formationorder>3</formationorder>
+        <turnrate>18.0000</turnrate>
+        <initialhitpoints>220.0000</initialhitpoints>
+        <maxhitpoints>220.0000</maxhitpoints>
+        <trainpoints>5.0000</trainpoints>
+        <buildlimit>1</buildlimit>
+        <weightclass>8</weightclass>
+        <maxcontained>1</maxcontained>
+        <populationcount>1</populationcount>
+        <maxvelocity>4.3000</maxvelocity>
+        <los>20.0000</los>
+        <sharedselectionunittypes>
+        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        </sharedselectionunittypes>
+        <cost resourcetype="Food">100.0000</cost>
+        <cost resourcetype="Wood">50.0000</cost>
+        <armor type="Hack" value="0.3500"></armor>
+        <armor type="Pierce" value="0.4000"></armor>
+        <armor type="Crush" value="0.6900"></armor>
+
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeLandMilitary</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeGarrisonInShips</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+        <unittype>LogicalTypeValidBoltTarget</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        <unittype>Unit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>MilitaryUnit</unittype>
+        <unittype>Hero</unittype>
+        <unittype>MajorHero</unittype>
+        <unittype>ArcherLineUpgraded</unittype>
+
+        <unittype>LogicalTypeConvertsHerds</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+        <unittype>LogicalTypeParticipatesInBattlecries</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        <unittype>HeroShadowUpgraded</unittype>
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>CountsTowardMilitaryScore</unittype>
+        
+        <unittype>LogicalTypeFindMilitaryHero</unittype>
+        <unittype>LogicalTypeAffectedBySunRay</unittype>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>CorpseDecays</flag>
+        <flag>ShowGarrisonButton</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>RotateInPlace</flag>
+        <flag>CommonCommands</flag>
+        <flag>MilitaryCommands</flag>
+        <flag>HideGarrisonFlag</flag>
+        <flag>HasDefaultAttack</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+        <flag>SplitQueue</flag>
+        <contain external="1">LogicalTypePickable</contain>
+        <tactics>orpheus.tactics</tactics>
+        <protoaction>
+            <name>DamageBonusVsMyth</name>
+            <type>AutoRangedModify</type>
+            <modifytype>DamageByTargetType</modifytype>
+            <modifyabstracttype>HumanSoldier</modifyabstracttype>
+            <maxrange>5</maxrange>
+            <modifydamagetargettype>MythUnit</modifydamagetargettype>
+            <modifyamount>5.0</modifyamount>
+            <modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+            <modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+            <persistent>1</persistent>
+        </protoaction>
+        <protoaction>
+            <name>Pickup</name>
+            <type>Pickup</type>
+            <maxrange>1</maxrange>
+            <rate type="LogicalTypePickable">1.00000</rate>
+        </protoaction>
+        <protoaction>
+            <name>DropOff</name>
+            <type>DropOff</type>
+            <maxrange>1</maxrange>
+            <rate type="AbstractTemple">1.00000</rate>
+        </protoaction>
+        <protoaction>
+            <name>RangedAttack</name>
+            <rof>1.200000</rof>
+            <damage type="Divine">6.000000</damage>
+            <damagebonus type="MythUnit">6.500000</damagebonus>
+            <maxrange>22.000000</maxrange>
+            <projectile>ProjectilePriestPharaoh</projectile>
+        </protoaction>
+        <protoaction>
+            <name>RangedAttackFlying</name>
+            <rof>1.200000</rof>
+            <damage type="Divine">6.000000</damage>
+            <damagebonus type="MythUnit">6.500000</damagebonus>
+            <maxrange>28.000000</maxrange>
+            <projectile>ProjectilePriestPharaoh</projectile>
+            <trackrating>99.0</trackrating>
+        </protoaction>
+    </unit>
+    <unit name="Icarus" orderhint="3" mergemode="replace">
+        <displaynameid>STR_UNIT_ICARUS_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_ICARUS_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_ICARUS_SR</shortrollovertextid>
+        <icon>resources\greek\player_color\units\icarus_icon.png</icon>
+        <animfile>greek_demeter\units\hero\icarus\icarus.xml</animfile>
+        <soundsetfile>greek_demeter\vo\icarus_demeter\icarus_demeter.xml</soundsetfile>
+        <obstructionradiusx>0.7400</obstructionradiusx>
+        <obstructionradiusz>0.7400</obstructionradiusz>
+        <impacttype>Armoured</impacttype>
+        <unitaitype>RangedCombative</unitaitype>
+        <autoattackrange>25.0000</autoattackrange>
+        <movementtype>air</movementtype>
+        <turnrate>9.0000</turnrate>
+        <initialhitpoints>300.0000</initialhitpoints>
+        <maxhitpoints>300.0000</maxhitpoints>
+        <trainpoints>25.0000</trainpoints>
+        <buildlimit>1</buildlimit>
+        <weightclass>8</weightclass>
+        <maxcontained>1</maxcontained>
+        <populationcount>1</populationcount>
+        <maxvelocity>6.3000</maxvelocity>
+        <los>22.0000</los>
+        <sharedselectionunittypes>
+        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        </sharedselectionunittypes>
+        <cost resourcetype="Wood">250.0000</cost>
+        <cost resourcetype="Gold">100.0000</cost>
+        <armor type="Hack" value="0.2500"></armor>
+        <armor type="Pierce" value="0.3000"></armor>
+        <armor type="Crush" value="0.9900"></armor>
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeLandMilitary</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+        <unittype>LogicalTypeValidBoltTarget</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        <unittype>Unit</unittype>
+        <unittype>MilitaryUnit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>Ranged</unittype>
+        <unittype>Hero</unittype>
+        <unittype>HeroShadowUpgraded</unittype>
+        <unittype>MajorHero</unittype>
+        <unittype>AbstractFlyingUnit</unittype>        
+        <unittype>SiegeLineUpgraded</unittype>
+
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+        <unittype>LogicalTypeParticipatesInBattlecries</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>CountsTowardMilitaryScore</unittype>        
+        <unittype>LogicalTypeFindMilitaryHero</unittype>
+        <unittype>LogicalTypeAffectedBySunRay</unittype>
+        <flag>FlyingUnit</flag>
+        <flag>NoTieToGround</flag>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>CorpseDecays</flag>
+        <flag>ShowGarrisonButton</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>RotateInPlace</flag>
+        <flag>CommonCommands</flag>
+        <flag>MilitaryCommands</flag>
+        <flag>HideGarrisonFlag</flag>
+        <flag>HasDefaultAttack</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+        <flag>SplitQueue</flag>
+        <contain external="1">LogicalTypePickable</contain>
+        <tactics>rangedattack_rangedattackflying.tactics</tactics>
+        <protoaction>
+            <name>RangedAttack</name>
+            <rof>1.200000</rof>
+            <damagearea>10.000000</damagearea>
+            <damage type="Pierce">23.000000</damage>
+            <damage type="Divine">5.000000</damage>
+            <damagebonus type="HumanSoldier">4.500000</damagebonus>
+            <damagebonus type="AbstractSiegeWeapon">3.500000</damagebonus>
+            <damagebonus type="Building">6.500000</damagebonus>
+            <maxrange>20.000000</maxrange>
+        <projectile>ProjectileIcarusBomb</projectile>
+            <defaultattack>1</defaultattack>
+            <accuracy>1.0</accuracy>
+            <trackrating>99.0</trackrating>
+            <impacteffect>effects\impacts\fireball</impacteffect>
+        </protoaction>
+        <protoaction>
+            <name>RangedAttackFlying</name>
+            <rof>1.200000</rof>
+            <damagearea>3.000000</damagearea>
+            <damage type="Pierce">28.000000</damage>
+            <damagebonus type="MythUnit">6.500000</damagebonus>
+            <maxrange>18.000000</maxrange>
+            <projectile>ProjectileIcarusBomb</projectile>
+            <accuracy>1.0</accuracy>
+            <trackrating>99.0</trackrating>
+            <impacteffect>effects\impacts\fireball</impacteffect>
+        </protoaction>
+        <protoaction>
+            <name>Pickup</name>
+            <type>Pickup</type>
+            <maxrange>1</maxrange>
+            <rate type="LogicalTypePickable">1.00000</rate>
+        </protoaction>
+        <protoaction>
+            <name>DropOff</name>
+            <type>DropOff</type>
+            <maxrange>1</maxrange>
+            <rate type="AbstractTemple">1.00000</rate>
+        </protoaction>
+    </unit>
+    <unit name="Iolaus" orderhint="3" mergemode="replace">
+        <displaynameid>STR_UNIT_IOLAUS_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_IOLAUS_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_IOLAUS_SR</shortrollovertextid>
+        <icon>resources\greek\player_color\units\iolaus_icon.png</icon>
+        <animfile>greek_demeter\units\hero\iolaus\iolaus_horse.xml</animfile>
+        <soundsetfile>greek_demeter\vo\iolalus_demeter\iolalus_demeter.xml</soundsetfile>
+        <obstructionradiusx>0.7400</obstructionradiusx>
+        <obstructionradiusz>0.7400</obstructionradiusz>
+        <selectionradiusx>1.0000</selectionradiusx>
+        <selectionradiusz>1.8500</selectionradiusz>
+        <impacttype>Armoured</impacttype>
+        <unitaitype>HandCombative</unitaitype>
+        <autoattackrange>25.0000</autoattackrange>
+        <movementtype>land</movementtype>
+        <turnrate>18.0000</turnrate>
+        <initialhitpoints>380.0000</initialhitpoints>
+        <maxhitpoints>380.0000</maxhitpoints>
+        <trainpoints>20.0000</trainpoints>
+        <buildlimit>1</buildlimit>
+        <weightclass>9</weightclass>
+        <maxcontained>1</maxcontained>
+        <populationcount>3</populationcount>
+        <maxvelocity>6.6000</maxvelocity>
+        <los>16.0000</los>
+        <sharedselectionunittypes>
+        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        </sharedselectionunittypes>
+        <cost resourcetype="Food">75.0000</cost>
+        <cost resourcetype="Gold">175.0000</cost>
+        <armor type="Hack" value="0.4500"></armor>
+        <armor type="Pierce" value="0.6000"></armor>
+        <armor type="Crush" value="0.9900">
+        </armor>
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeLandMilitary</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeGarrisonInShips</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+        <unittype>LogicalTypeValidBoltTarget</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        <unittype>Unit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>MilitaryUnit</unittype>
+        <unittype>Hero</unittype>
+        <unittype>MajorHero</unittype>
+        <unittype>CavalryLineUpgraded</unittype>
+
+        <unittype>LogicalTypeConvertsHerds</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+        <unittype>LogicalTypeParticipatesInBattlecries</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        <unittype>HeroShadowUpgraded</unittype>
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>CountsTowardMilitaryScore</unittype>
+        
+        <unittype>LogicalTypeFindMilitaryHero</unittype>
+        <unittype>LogicalTypeAffectedBySunRay</unittype>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>CorpseDecays</flag>
+        <flag>ShowGarrisonButton</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>RotateInPlace</flag>
+        <flag>CommonCommands</flag>
+        <flag>MilitaryCommands</flag>
+        <flag>HideGarrisonFlag</flag>
+        <flag>HasDefaultAttack</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+        <flag>SplitQueue</flag>
+        <contain external="1">LogicalTypePickable</contain>
+        <tactics>greek_hero.tactics</tactics>
+        <protoaction>
+            <name>HandAttack</name>
+            <rof>0.900000</rof>
+            <damage type="Pierce">14.000000</damage>
+            <damage type="Hack">6.000000</damage>
+            <damagebonus type="MythUnit">8.000000</damagebonus>
+            <maxrange>2.000000</maxrange>
+            <defaultattack>1</defaultattack>
+        </protoaction>
+        <protoaction>
+            <name>RangedAttack</name>
+            <rof>1.700000</rof>
+            <damage type="Pierce">8.0000</damage>
+            <damagebonus type="MythUnit">7.000000</damagebonus>
+            <maxrange>12.000000</maxrange>
+            <projectile>ProjectileJavelinFlaming</projectile>
+        </protoaction>
+        <protoaction>
+            <name>Pickup</name>
+            <type>Pickup</type>
+            <maxrange>1</maxrange>
+            <rate type="LogicalTypePickable">1.00000</rate>
+        </protoaction>
+        <protoaction>
+            <name>DropOff</name>
+            <type>DropOff</type>
+            <maxrange>1</maxrange>
+            <rate type="AbstractTemple">1.00000</rate>
+        </protoaction>
+    </unit>
+    <unit name="Midas" orderhint="3" mergemode="replace">
+        <displaynameid>STR_UNIT_MIDAS_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_MIDAS_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_MIDAS_SR</shortrollovertextid>
+        <icon>resources\greek\player_color\units\midas_icon.png</icon>
+        <animfile>greek_demeter\units\hero\midas\midas.xml</animfile>
+        <soundsetfile>greek_demeter\vo\king_midas_demeter\king_midas_demeter.xml</soundsetfile>
+        <obstructionradiusx>0.4900</obstructionradiusx>
+        <obstructionradiusz>0.4900</obstructionradiusz>
+        <impacttype>Armoured</impacttype>
+        <unitaitype>HandCombative</unitaitype>
+        <autoattackrange>16.0000</autoattackrange>
+        <movementtype>land</movementtype>
+        <turnrate>18.0000</turnrate>
+        <initialhitpoints>480.0000</initialhitpoints>
+        <maxhitpoints>480.0000</maxhitpoints>
+        <trainpoints>30.0000</trainpoints>
+        <buildlimit>1</buildlimit>
+        <weightclass>8</weightclass>
+        <maxcontained>1</maxcontained>
+        <populationcount>4</populationcount>
+        <maxvelocity>4.2000</maxvelocity>
+        <los>16.0000</los>
+        <sharedselectionunittypes>
+        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        </sharedselectionunittypes>
+        <cost resourcetype="Gold">400.0000</cost>
+        <armor type="Hack" value="0.6700"></armor>
+        <armor type="Pierce" value="0.8800"></armor>
+        <armor type="Crush" value="0.9900"></armor>
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeLandMilitary</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeGarrisonInShips</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+        <unittype>LogicalTypeValidBoltTarget</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        
+        <unittype>Unit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>MilitaryUnit</unittype>
+        <unittype>Hero</unittype>
+        <unittype>MajorHero</unittype>
+        <unittype>HeroShadowUpgraded</unittype>
+        <unittype>InfantryLineUpgraded</unittype>
+
+        <unittype>LogicalTypeConvertsHerds</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+        <unittype>LogicalTypeParticipatesInBattlecries</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>CountsTowardMilitaryScore</unittype>
+        
+        <unittype>LogicalTypeFindMilitaryHero</unittype>
+        <unittype>LogicalTypeAffectedBySunRay</unittype>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>CorpseDecays</flag>
+        <flag>ShowGarrisonButton</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>RotateInPlace</flag>
+        <flag>CommonCommands</flag>
+        <flag>MilitaryCommands</flag>
+        <flag>HideGarrisonFlag</flag>
+        <flag>HasDefaultAttack</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+        <flag>ExperienceUnit</flag>
+        <flag>SplitQueue</flag>
+        <contain external="1">LogicalTypePickable</contain>
+        <tactics>greek_hero.tactics</tactics>
+        <protoaction>
+            <name>HandAttack</name>
+            <rof>1.200000</rof>
+            <damage type="Hack">17.000000</damage>
+            <damagebonus type="MythUnit">6.000000</damagebonus>
+            <maxrange>0.750000</maxrange>
+            <defaultattack>1</defaultattack>
+        </protoaction>
+        <protoaction>
+            <name>RangedAttack</name>
+            <rof>1.000000</rof>
+            <damage type="Hack">17.0000</damage>
+            <damagebonus type="MythUnit">6.000000</damagebonus>
+            <maxrange>28.000000</maxrange>
+            <projectile>ProjectileJavelinFlaming</projectile>
+        </protoaction>
+        <protoaction>
+            <name>Pickup</name>
+            <type>Pickup</type>
+            <maxrange>1</maxrange>
+            <rate type="LogicalTypePickable">1.00000</rate>
+        </protoaction>
+        <protoaction>
+            <name>DropOff</name>
+            <type>DropOff</type>
+            <maxrange>1</maxrange>
+            <rate type="AbstractTemple">1.00000</rate>
+        </protoaction>
+        <veterancyranks>
+            <rank>
+                <totaldamage>700</totaldamage>
+                <resetnumkills>1</resetnumkills>
+            </rank>
+            <rank>
+                <numkills>1</numkills>
+                <resetrank>1</resetrank>
+            </rank>
+        </veterancyranks>
+        <veterancybonus>
+            <rank id="1">
+                <spawn type="veterancyRankUp" count="1" param="1" skipplacementcheck="" swapkilledunit="" shadingtype="gold">MineGoldMidas199</spawn>
+            </rank>
+            <includetypes>
+                <unittype>MilitaryUnit</unittype>
+                <unittype>EconomicUnit</unittype>
+            </includetypes>
+            <excludetypes>
+                <unittype>NavalUnit</unittype>
+                <unittype>AbstractFlyingUnit</unittype>
+                <unittype>MajorHero</unittype>
+                <unittype>AbstractTitan</unittype>
+            </excludetypes>
+        </veterancybonus>
+    </unit>
+
+    <!-- EGYPTIAN SECTION -->
+    <!-- NORSE SECTION -->
+    <!-- CHINESE SECTION -->
+    <!-- JAPANESE SECTION -->
+    <!-- GENERAL SECTION -->
+
     <!-- MCMT CONTENT -->
+
+    <!-- Special Units-->
+    <!-- Special Buildings-->
+    
+    <!-- Greek Hero Units-->
+    <!-- Greek Myth Units-->
+    <!-- Greek Military Units-->
+    <!-- Greek Naval Units-->
+    <!-- Greek Buildings-->
+
+    <!-- Egyptian Hero Units-->
+    <!-- Egyptian Myth Units-->
+    <!-- Egyptian Military Units-->
+    <!-- Egyptian Naval Units-->
+    <!-- Egyptian Buildings-->
+    
+    <!-- Norse Hero Units-->
+    <!-- Norse Myth Units-->
+    <!-- Norse Military Units-->
+    <!-- Norse Naval Units-->
+    <!-- Norse Buildings-->
+
+    <!-- Chinese Hero Units-->
+    <!-- Chinese Myth Units-->
+    <!-- Chinese Military Units-->
+    <!-- Chinese Naval Units-->
+    <!-- Chinese Buildings-->
+
+    <!-- Japanese Hero Units-->
+    <!-- Japanese Myth Units-->
+    <!-- Japanese Military Units-->
+    <!-- Japanese Naval Units-->
+    <!-- Japanese Buildings-->
+     
 </protomods>
