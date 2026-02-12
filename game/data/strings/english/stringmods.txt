@@ -1,0 +1,2 @@
+ID = "STR_TECH_MCMT_PAGE_1"   ;   Str = "Page1"
+ID = "STR_TECH_MCMT_PAGE_2"   ;   Str = "Page2"

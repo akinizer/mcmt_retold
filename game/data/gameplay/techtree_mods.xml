@@ -1,0 +1,55 @@
+<techtreemods>
+	<!-- /////////////////////////////////////////////////////// MCMT TECH ENABLE  //////////////////////////////////////////////// -->
+    <tech name="ArchaicAgeAtlantean"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
+    <tech name="ArchaicAgeGreek"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
+    <tech name="ArchaicAgeEgyptian"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
+    <tech name="ArchaicAgeNorse"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
+    <tech name="ArchaicAgeChinese"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects>	</tech>
+
+    <tech name="MCMT_Techs" mergeMode="add">
+		<status>UNOBTAINABLE</status>
+		<effects>
+			<effect type="TechStatus" status="active" mergeMode="add">MCMT_SpecialUnits</effect>
+			<effect type="TechStatus" status="active" mergeMode="add">MCMT_Researches</effect>
+			<effect type="TechStatus" status="active" mergeMode="add">MCMT_UnitAccelPanels</effect>
+		</effects>
+	</tech>
+
+    <tech name="MCMT_SpecialUnits" mergeMode="add">
+		<status>UNOBTAINABLE</status>
+		<effects></effects>
+    </tech> 
+
+    <tech name="MCMT_Researches" mergeMode="add">
+		<status>UNOBTAINABLE</status>
+		<effects></effects>
+    </tech>
+
+    <tech name="MCMT_UnitAccelPanels" mergeMode="add">
+		<status>UNOBTAINABLE</status>
+		<effects>			
+			<effect type="TechStatus" status="obtainable">MCMT_Page2</effect>
+			<effect type="TechStatus" status="obtainable">MCMT_Page1</effect>
+		</effects>
+	</tech>
+
+    <tech name="MCMT_Page1" mergeMode="add">
+        <displaynameid>STR_TECH_MCMT_PAGE_1</displaynameid>
+        <researchpoints>0.0000</researchpoints>
+        <status>UNOBTAINABLE</status>
+        <icon>resources\front_end\GodsPage\Arrow_Button_L_On.png</icon>
+        <flag>InfiniteTech</flag>
+        <flag>NoTextMessage</flag>
+        <effects></effects>
+    </tech>
+
+    <tech name="MCMT_Page2" mergeMode="add">
+        <displaynameid>STR_TECH_MCMT_PAGE_2</displaynameid>
+        <researchpoints>0.0000</researchpoints>
+        <status>UNOBTAINABLE</status>
+        <icon>resources\front_end\GodsPage\Arrow_Button_L_On.png</icon>
+        <flag>InfiniteTech</flag>
+        <flag>NoTextMessage</flag>
+        <effects></effects>
+    </tech>
+</techtreemods>
