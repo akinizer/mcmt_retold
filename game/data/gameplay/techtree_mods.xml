@@ -83,4 +83,47 @@
         <effect type="SetName" proto="LykaonVillager" newname="STR_UNIT_ALPHA_LYKAON_VILLAGER_NAME"></effect>
       </effects>
     </tech>
+    <tech name="FatedArrows" orderhint="4" mergeMode="replace">
+      <displaynameid>STR_TECH_FATED_ARROWS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_FATED_ARROWS_LR</rollovertextid>
+      <cost resourcetype="Food">300.0000</cost>
+      <cost resourcetype="Favor">30.0000</cost>
+      <researchpoints>40.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\greek_demeter\static_color\technologies\fated_arrows_icon.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <effects>
+        <effect type="Data" amount="2.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute">
+          <target type="ProtoUnit">AbstractArcher</target></effect>
+        <effect type="Data" amount="3.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute">
+          <target type="ProtoUnit">MythUnit</target></effect>
+        <effect type="Data" amount="8.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute">
+          <target type="ProtoUnit">Hero</target></effect>
+      </effects>
+    </tech>
+    <tech name="ThornedWalls" orderhint="4">
+      <displaynameid>STR_TECH_THORNED_WALLS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_THORNED_WALLS_LR</rollovertextid>
+      <cost resourcetype="Wood">150.0000</cost>
+      <cost resourcetype="Favor">15.0000</cost>
+      <researchpoints>40.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\greek_demeter\static_color\technologies\thorned_walls_icon.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <techtype>MythTechDefensive</techtype>
+      <effects>
+        <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign">
+          <target type="ProtoUnit">AbstractWall</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasReflectAttack" relativity="Absolute">
+          <target type="ProtoUnit">AbstractWall</target></effect>
+        <effect type="Data" amount="3.00" subtype="Damage" damagetype="Hack" action="ThornedWallsAttack" relativity="Absolute">
+          <target type="ProtoUnit">AbstractWall</target></effect>
+        <effect type="Data" amount="1.00" subtype="UnitRegenRate" relativity="Absolute">
+          <target type="ProtoUnit">AbstractWall</target></effect>
+        <effect type="Data" amount="0.80" subtype="UnitRegenRate" relativity="Absolute">
+          <target type="ProtoUnit">Hamadryad</target></effect>
+      </effects>
+    </tech>
 </techtreemods>
