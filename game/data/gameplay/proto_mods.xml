@@ -1513,6 +1513,20 @@
     <!-- Greek Buildings-->
 
     <!-- Atlantean Hero Units-->
+    <unit name="OracleHero">
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">12.000000</damage>
+			<damage type="Divine">8.000000</damage>
+			<damagebonus type="MythUnit">6.000000</damagebonus>
+			<damagebonus type="AbstractVillager">6.000000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>	
+	</unit>
+
     <!-- Atlantean Myth Units-->
      <unit name="Satyr">
 		<unittype>MilitaryUnit</unittype>
