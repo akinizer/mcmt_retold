@@ -1796,6 +1796,633 @@
     
     <!-- Norse Hero Units-->
     <!-- Norse Myth Units-->
+    <unit name="GullinburstiArchaic">
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<lifespan>50.0000</lifespan>
+	</unit>
+	<unit name="GullinburstiClassical">
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<lifespan>125.0000</lifespan>
+	</unit>
+	<unit name="GullinburstiHeroic">
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<lifespan>200.0000</lifespan>
+	</unit>
+	<unit name="GullinburstiMythic">
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<lifespan>300.0000</lifespan>
+	</unit>
+	
+	<unit name="Draugr">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.0</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damage type="Divine">9.000000</damage>
+			<damagebonus type="MythUnit">4.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<passthroughbuildings>1</passthroughbuildings>
+			<projectile>ProjectileDraugrArrow</projectile>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>2.500000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damage type="Divine">9.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileDraugrArrow</projectile>
+			<numberprojectiles>8</numberprojectiles>
+			<maxspread>5.0</maxspread>
+			<volleymode>1</volleymode>
+			<spreadfactor>0.50</spreadfactor>
+			<passthroughbuildings>1</passthroughbuildings>
+			<perfectaccuracy>1</perfectaccuracy>
+		</protoaction>
+	</unit>
+	
+	<unit name="RockGiant">
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<armor type="Hack" value="0.8500"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.4000"></armor>
+		<protoaction>
+			<name>TauntAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">5.000000</damage>
+			<damagearea>6.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>3.000000</maxrange>
+			<forceareaattackcenter>1</forceareaattackcenter>
+			<onhiteffect type="StatModify" targetunittype="HumanSoldier" duration="5.000000">
+				<modify type="ForcedTarget">1.000000</modify>
+			</onhiteffect>
+			<onhiteffect type="StatModify" targetunittype="LogicalTypeMythUnitNotTitan" duration="5.000000">
+				<modify type="ForcedTarget">1.000000</modify>
+			</onhiteffect>
+			<onhiteffect type="SelfModify" duration="30.000000">
+				<modify type="ArmorSpecific" dmgtype="Pierce">1.500000</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack">1.500000</modify>
+				<modify type="ArmorSpecific" dmgtype="Crush">1.500000</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="HumanSoldier" proto="VFXChaos" attachbone="vfx_top" duration="5.000000"></onhiteffect>
+			<onhiteffect type="Attach" targetunittype="LogicalTypeMythUnitNotTitan" proto="VFXChaos" attachbone="vfx_top" duration="5.000000"></onhiteffect>
+		</protoaction>
+	</unit>
+	
+	<unit name="MountainGiant">
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<armor type="Hack" value="0.6500"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.00000</rof>
+			<damage type="Hack">78.000000</damage>
+			<damage type="Crush">96.000000</damage>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<damagebonus type="AbstractTitan">10.00000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<rof>5.000000</rof>
+			<damage type="Crush">180.000000</damage>
+			<damagebonus type="AbstractTitan">10.00000</damagebonus>
+			<maxrange>1.000000</maxrange>
+			<damagearea>10.000000</damagearea>
+			<onhiteffect type="Throw">
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="AbstractVillager"></target>
+				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
+			</onhiteffect>
+		</protoaction>
+	</unit>
+	
+	<unit name="FrostGiant">
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.4000"></armor>
+		<movementtype>amphibious</movementtype>		
+		<flag>TieToWaterSurface</flag>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Land</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+		</protoaction>
+		<flag>AmphibiousBirth</flag>
+	</unit>
+	
+	<unit name="Troll">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<initialhitpoints>325.0000</initialhitpoints>
+		<maxhitpoints>325.0000</maxhitpoints>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Pierce">18.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>14.000000</maxrange>
+			<projectile>ProjectileBoulder</projectile>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Pierce">72.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">4.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<impacteffect>effects\impacts\crush</impacteffect>
+			<projectile>ProjectileBoulder</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<targetground>1</targetground>
+			<onhiteffect type="Throw">
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="LogicalTypeVillagerNotHero"></target>
+				<target attacktype="MythUnit"></target>
+			</onhiteffect>
+			<throw>1</throw>
+			<throwdistancemin>5.0</throwdistancemin>
+			<throwdistancemax>7.0</throwdistancemax>
+			<throwmaxheight>4.0</throwmaxheight>
+			<throwvelocity>15.0</throwvelocity>
+			<areasortmode>Directional</areasortmode>
+			<maxsizeclass>5</maxsizeclass>
+		</protoaction>
+	</unit>
+	
+	<unit name="FenrisWolfBrood">
+		<maxvelocity>7.0000</maxvelocity>
+		<maxrunvelocity>7.3000</maxrunvelocity>
+		<armor type="Hack" value="0.7000"></armor>
+		<armor type="Pierce" value="0.5500"></armor>
+		<armor type="Crush" value="0.5500"></armor>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.900000</rof>
+			<damage type="Hack">35.000000</damage>
+			<damage type="Crush">5.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>IncreaseDamageWithLikeUnits</name>
+			<modifydamagetype>Hack</modifydamagetype>
+			<maxrange>30</maxrange>
+			<modifymultiplier>0.10</modifymultiplier>
+			<modifytargetlimit>12</modifytargetlimit>
+		</protoaction>
+		<protoaction>
+			<name>IncreaseSpeedWithLikeUnits</name>
+			<maxrange>30</maxrange>
+			<modifytype>Speed</modifytype>
+			<modifymultiplier>0.05</modifymultiplier>
+			<modifytargetlimit>12</modifytargetlimit>
+		</protoaction>
+	</unit>
+	
+	<unit name="FireGiant">
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">45.000000</damage>
+			<damage type="Crush">15.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>28.000000</maxrange>
+			<projectile>ProjectileBallOfFire</projectile>
+			<impacteffect>effects\impacts\fireball</impacteffect>
+			<displayednumberprojectiles>2</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">30.000000</damage>
+			<damage type="Crush">10.000000</damage>
+			<damagearea>4.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>28.000000</maxrange>
+			<projectile>ProjectileFireGiantSpecialAttack</projectile>
+			<numberprojectiles>6</numberprojectiles>
+			<impacteffect>effects\impacts\fireball</impacteffect>
+			<volleymode></volleymode>
+			
+			<onhiteffect type="Throw">
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="LogicalTypeVillagerNotHero"></target>
+				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
+				<target attacktype="Ship"></target>
+			</onhiteffect>
+		</protoaction>
+	</unit>
+	
+	<unit name="Nidhogg">
+		<initialhitpoints>10000.0000</initialhitpoints>
+		<maxhitpoints>10000.0000</maxhitpoints>
+		<armor type="Hack" value="0.8700"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.4000"></armor>
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">80.000000</damage>
+			<damage type="Crush">80.000000</damage>
+			<damagearea>8.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="Hero">0.100000</damagebonus>
+			<maxrange>4.0</maxrange>
+			<projectile>ProjectileNidhoggInvisible</projectile>
+		</protoaction>
+		<protoaction>
+			<name>BlazingStrafeAttack</name>
+			<rof>5.000000</rof>
+			<damage type="Divine">15.000000</damage>
+			<damage type="Hack">85.000000</damage>
+			<damagearea>12.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<modifyamount>9.500000</modifyamount>
+			<damagebonus type="Building">2.000000</damagebonus>
+			<damagebonus type="Hero">0.100000</damagebonus>
+			<maxrange>12.000000</maxrange>
+			<minrate type="All">33.0</minrate>
+		</protoaction>
+	</unit>
+	
+	<unit name="Valkyrie">
+		<impacttype>Armoured</impacttype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<movementtype>amphibious</movementtype>		
+		<flag>TieToWaterSurface</flag>
+		<flag>AmphibiousBirth</flag>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>5.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Land</settactic>
+				<duration>5.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+		</protoaction>		
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.00000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damage type="Divine">22.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Heal</name>
+			<type>Heal</type>
+			<maxrange>20.000000</maxrange>
+			<rate type="LogicalTypeHealed">7.50000</rate>
+			<slowhealmultiplier>0.50</slowhealmultiplier>
+		</protoaction>
+	</unit>
+	
+	<unit name="Einheri">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>LogicalTypeNorseSoldierThatBuilds</unittype>
+		<maxvelocity>6.5000</maxvelocity>
+		<flag>ExperienceUnit</flag>
+		<veterancyranks>
+			<rank><totaldamage>500</totaldamage></rank>
+			<rank><totaldamage>1000</totaldamage></rank>
+			<rank><totaldamage>1500</totaldamage></rank>
+			<rank><totaldamage>2000</totaldamage></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="MaxHP">1.2500</veterancymodify>
+				<veterancymodify modifytype="VisualScale">1.2500</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="MaxHP">1.5000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">1.5000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="MaxHP">1.7500</veterancymodify>
+				<veterancymodify modifytype="VisualScale">1.7500</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="MaxHP">2.0000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">2.0000</veterancymodify>
+			</rank>
+		</veterancybonus>		
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.0</rof>
+			<damage type="Hack">25.000000</damage>
+			<damage type="Crush">10.000000</damage>
+			<damagebonus type="MythUnit">6.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>AutoBoost</name>
+			<rof>3.8</rof>
+			<damageflags>Enemy</damageflags>
+			<maxrange>5.0</maxrange>
+			<rate type="MilitaryUnit">1.0</rate>
+			<onhiteffect type="Boost" targetunittype="LogicalTypeMythUnitNotTitan" duration="25.000000" radius="10.000000">
+				<modifyramp type="Speed" init="5.00000" final="1.000000"></modifyramp>
+				<modifyramp type="Damage" init="5.00000" final="1.000000"></modifyramp>
+			</onhiteffect>
+			<onhiteffect type="Boost" targetunittype="Hero" duration="25.000000" radius="10.000000">
+				<modifyramp type="Speed" init="2.00000" final="1.000000"></modifyramp>
+				<modifyramp type="Damage" init="2.00000" final="1.000000"></modifyramp>
+			</onhiteffect>
+			<onhiteffect type="Boost" targetunittype="HumanSoldier" duration="25.000000" radius="10.000000">
+				<modifyramp type="Speed" init="1.50000" final="1.000000"></modifyramp>
+				<modifyramp type="Damage" init="1.50000" final="1.000000"></modifyramp>
+			</onhiteffect>
+			<modelattachment>vfx\glow\einheri_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+
+		<hotkeycontext>BuildNorseAccel</hotkeycontext>
+		<train row="0" column="0">House</train>
+		<train row="0" column="1">OxCartBuilding</train>
+		<train row="1" column="3">Farm</train>
+		<train row="0" column="0">House</train>
+		<train row="0" column="4">Temple</train>
+		<train row="0" column="5">Dock</train>
+		<train row="1" column="1">Longhouse</train>
+		<train row="1" column="2">GreatHall</train>
+		<train row="1" column="4">Market</train>
+		<train row="1" column="5">Armory</train>
+		<train row="1" column="5">DwarvenArmory</train>
+		<train row="2" column="0">TownCenter</train>
+		<train row="255" column="0">VillageCenter</train>
+		<train row="2" column="1">WallConnector</train>
+		<train row="255" column="255">WallShort</train>
+		<train row="255" column="255">WallMedium</train>
+		<train row="255" column="255">WallLong</train>
+		<train row="2" column="2">SentryTower</train>
+		<train row="2" column="3">HillFort</train>
+		<train row="2" column="5">Wonder</train>
+		<train>TitanGate</train>
+		<train>AsgardianHillFort</train>
+		<protoaction>
+			<name>Build</name>
+			<type>Build</type>
+			<anim>Build</anim>
+			<rate type="Building">1.000000</rate>
+			<maxrange>0.2</maxrange>
+			<typedmaxrange type="Dock">2.0</typedmaxrange>
+		</protoaction>
+		<protoaction>
+			<name>Repair</name>
+			<type>Repair</type>
+			<anim>Build</anim>
+			<maxrange>0.2</maxrange>
+			<rate type="AbstractWall">0.2500</rate>
+			<rate type="Building">0.5000</rate>
+			<typedmaxrange type="Dock">2.0</typedmaxrange>
+		</protoaction>
+	</unit>
+	
+	<unit name="Kraken">		
+		<armor type="Hack" value="0.8700"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.7000"></armor>
+		<flag>ExperienceUnit</flag>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">30.000000</damage>
+			<damage type="Crush">15.000000</damage>
+			<damagebonus type="MythUnit">2.00000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>2.000000</maxrange>
+		</protoaction>
+		<veterancyranks>
+			<rank><totaldamage>500</totaldamage></rank>
+			<rank><totaldamage>1000</totaldamage></rank>
+			<rank><totaldamage>1500</totaldamage></rank>
+			<rank><totaldamage>2000</totaldamage></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="MaxHP">1.0000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">1.0000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="MaxHP">1.5000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">1.5000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="MaxHP">1.7500</veterancymodify>
+				<veterancymodify modifytype="VisualScale">1.7500</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="MaxHP">2.0000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">2.0000</veterancymodify>
+			</rank>
+		</veterancybonus>
+	</unit>
+	<unit name="Fafnir">
+		<initialhitpoints>5000</initialhitpoints>
+		<maxhitpoints>5000</maxhitpoints>
+		<buildlimit>1</buildlimit>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">50.000000</damage>
+			<damage type="Crush">60.000000</damage>
+			<damagebonus type="MythUnit">2.00000</damagebonus>
+			<damagebonus type="MilitaryUnit">5.00000</damagebonus>
+			<damagebonus type="Hero">3.000000</damagebonus>
+			<maxrange>10.000000</maxrange>
+			<displayednumberprojectiles>6</displayednumberprojectiles>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+			<passthroughbuildings>1</passthroughbuildings>
+			<maxheight>2</maxheight>
+			<onhiteffect type="ShadingFade" shadingtype="burning" fadetime="1.0" factor="1.4" duration="5.0" targetunittype="Unit"></onhiteffect>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+		</protoaction>		
+	</unit>
+		<unit name="JormunElver" mergeMode="replace">
+		<displaynameid>STR_UNIT_JORMUN_ELVER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_JORMUN_ELVER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_JORMUN_ELVER_SR</shortrollovertextid>
+		<icon>resources\norse\player_color\units\jormun_elver_icon.png</icon>
+		<animfile>norse\units\myth\jormun_elver\jormun_elver.xml</animfile>
+		<soundsetfile>norse\vo\jormun_elver\jormun_elver.xml</soundsetfile>
+		<obstructionradiusx>1.4900</obstructionradiusx>
+		<obstructionradiusz>1.4900</obstructionradiusz>
+		<selectionradiusx>1.5000</selectionradiusx>
+		<selectionradiusz>4.5000</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<formationorder>1</formationorder>
+		<movementtype>water</movementtype>
+		<turnrate>5.0000</turnrate>
+		<initialhitpoints>1200.0000</initialhitpoints>
+		<maxhitpoints>1200.0000</maxhitpoints>
+		<trainpoints>10.0000</trainpoints>
+		<weightclass>10</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>6.0000</maxvelocity>
+		<rechargetime>24.0000</rechargetime>
+		<los>22.0000</los>
+		<autoattackrange>40</autoattackrange>
+
+		<cost resourcetype="Food">200.0000</cost>
+		<cost resourcetype="Favor">15.0000</cost>
+		<armor type="Hack" value="0.5500"></armor>
+		<armor type="Pierce" value="0.6000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNavalMilitary</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>NavalUnit</unittype>
+
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeRangedMythUnit</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitThatGeneratesFavor</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>RangeIndicatorForAbilityCasting</flag>
+		<command row="3" column="0">Stop</command>
+		<command row="3" column="3">Patrol</command>
+		<command row="3" column="4">AttackMove</command>
+		<command row="3" column="5">Delete</command>
+
+		<tactics>mcmt_jormunelver.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">48.000000</damage>
+			<damage type="Crush">12.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>12.000000</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">60.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<minrange>12.000000</minrange>
+			<maxrange>38.000000</maxrange>
+			<projectile>ProjectileBallOfFire</projectile>
+		</protoaction>		
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">150.000000</damage>
+			<damagearea>6.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>3.000000</maxrange>
+			<directionaldamagerefangle>1.0000</directionaldamagerefangle>
+			<maxsizeclass>6</maxsizeclass>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeShipNotHero"></onhiteffect>
+			<throw>1</throw>
+			<impactforcemin>300.0f</impactforcemin>
+			<impactforcemax>600.0f</impactforcemax>
+			<impactlaunchangle>10.0</impactlaunchangle>
+			<areasortmode>Directional</areasortmode>
+		</protoaction>
+	</unit>
+    <unit name="BattleBoar">
+		<soundsetfile>norse\vo\gullinbursti\gullinbursti.xml</soundsetfile>
+	</unit>	
+	<unit name="Raven">
+		<flag>Invulnerable</flag>
+		<lifespan>30.0000</lifespan>
+		<unittype>AbstractScout</unittype>
+  	</unit>
+
     <!-- Norse Military Units-->
     <!-- Norse Naval Units-->
     <!-- Norse Buildings-->
