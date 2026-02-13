@@ -1,0 +1,50 @@
+<tactics>
+  <action>
+    <name stringid="STR_ACTION_BUILD">Build</name>
+    <type>Build</type>
+    <anim>Build</anim>
+    <maxrange>0.2</maxrange>
+    <rate type="AbstractDock">1.0</rate>
+    <typedmaxrange type="Dock">2.0</typedmaxrange>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_REPAIR">Repair</name>
+    <type>Repair</type>
+    <anim>Build</anim>
+    <maxrange>0.2</maxrange>
+    <typedmaxrange type="AbstractDock">2.0</typedmaxrange>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_RANGED">RangedAttack</name>
+    <type>Attack</type>
+    <attackaction>1</attackaction>
+    <rangedlogic>1</rangedlogic>
+    <anim>RangedAttack</anim>
+    <accuracy>1.0</accuracy>
+    <maxspread>0</maxspread>
+    <trackrating>99.0</trackrating>
+    <unintentionaldamagemultiplier>0</unintentionaldamagemultiplier>
+    <impacteffect>effects\impacts\pierce</impacteffect>
+    <rate type="NonConvertableHerdable">0</rate>
+    <rate type="Herdable">0</rate>
+    <rate type="Tree">0</rate>
+    <rate type="All">1.0</rate>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_GATHER">Gather</name>
+    <type>Gather</type>
+    <maxrange>0.5</maxrange>
+    <rate type="FishResource">1.0</rate>
+    <rate type="Dropsite">1.0</rate>
+    <typedmaxrange type="FishResource">10</typedmaxrange>
+    <typedmaxrange type="Dropsite">1.0</typedmaxrange>
+    <typedanim type="FishResource">Sow</typedanim>
+  </action>
+  <action>
+    <name>SmartDropsite</name>
+    <type>SmartDropsite</type>
+    <maxrange>2</maxrange>
+    <rate type="Dropsite">1.0</rate>
+  </action>
+  <tactic>Default<action priority="90">RangedAttack</action><action>Build</action><action>Repair</action><action>Gather</action><action>SmartDropsite</action><attackresponsetype>LogicalTypeVillagersAttackResponse</attackresponsetype><attacktype>LogicalTypeVillagersAttack</attacktype><attackmovetype>LogicalTypeHandUnitsAutoAttack</attackmovetype></tactic>
+</tactics>

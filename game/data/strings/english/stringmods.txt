@@ -1,6 +1,698 @@
-ID = "STR_TECH_MCMT_PAGE_1"   ;   Str = "Page1"
-ID = "STR_TECH_MCMT_PAGE_2"   ;   Str = "Page2"
-
+// DEMETER EXPANSION
 ID = "STR_UNIT_KINGLYCAON_WOLF_NAME"   ;   Str = "King Lycaon (Hero)"
 ID = "STR_UNIT_KINGLYCAON_WOLF_SR"   ;   Str = "King of Arcadia"
 ID = "STR_UNIT_KINGLYCAON_WOLF_LR"   ;   Str = "King of Arcadia"
+
+// DEMIGODS
+ID = "STR_UNIT_SON_OF_HORUS_NAME"  ;   Str = "Son of Horus"
+ID = "STR_UNIT_TITAN_CERBERUS_NAME"  ;   Str = "Cerberus (Titan)"
+ID = "STR_UNIT_TITAN_RA_NAME"  ;   Str = "Ra (Titan)"
+ID = "STR_UNIT_TITAN_YMIR_NAME"  ;   Str = "Ymir (Titan)"
+ID = "STR_UNIT_TITAN_CHTHONIAN_NAME"  ;   Str = "Chthonian (Titan)"
+ID = "STR_UNIT_TITAN_XINGTIAN_NAME"  ;   Str = "Xing Tian (Titan)"
+
+// SPECIAL UNITS
+ID = "STR_UNIT_LANDLORD_NAME"   ;   Str = "Landlord"
+ID = "STR_UNIT_LANDLORD_LR"   ;   Str = "Elite Infantry. All-around. Head of Household and stronger than the basic variant."
+ID = "STR_MSG_LANDLORD_SPAWN"   ;   Str = "CyberTech has granted you a founding father!"
+ID = "STR_UNIT_MOUNTAINDWARF_NAME"   ;   Str = "Mountain Dwarf"
+
+ID = "STR_UNIT_TRAVELER_OX_CART_NAME"   ;   Str = "Traveler's Ox Wagon"
+ID = "STR_UNIT_TRAVELER_OX_CART_LR"   ;   Str = "Desgined to help Merchants to travel in long distances with their precious supplies"
+ID = "STR_UNIT_TRAVELER_OX_CART_SR"   ;   Str = "T.O.W"
+
+ID = "STR_UNIT_MERCHANT_NAME"   ;   Str = "Merchant (Traveler)"
+ID = "STR_UNIT_MERCHANT_LR"   ;   Str = "Civilian Unit that travels in long distances with their precious supplies"
+ID = "STR_UNIT_MERCHANT_SR"   ;   Str = "Merchant (Traveler)"
+ID = "STR_UNIT_MERCHANTHUNTER_NAME"   ;   Str = "Merchant (Hunter)"
+ID = "STR_UNIT_MERCHANTHUNTER_LR"   ;   Str = "Merchant that is sharpened in hunting skills while fighting with games and monsters"
+ID = "STR_UNIT_MERCHANTHUNTER_SR"   ;   Str = "Merchant (Hunter)"
+ID = "STR_UNIT_MERCHANTFARMER_NAME"   ;   Str = "Merchant (Farmer)"
+ID = "STR_UNIT_MERCHANTFARMER_LR"   ;   Str = "Merchant that is sharpened in farming and collecting skills for a living"
+ID = "STR_UNIT_MERCHANTFARMER_SR"   ;   Str = "Merchant (Farmer)"
+ID = "STR_UNIT_MERCHANTLUMBERJACK_NAME"   ;   Str = "Merchant (Lumberjack)"
+ID = "STR_UNIT_MERCHANTLUMBERJACK_LR"   ;   Str = "Merchant that is sharpened in chopping woods and monsters"
+ID = "STR_UNIT_MERCHANTLUMBERJACK_SR"   ;   Str = "Merchant (Lumberjack)"
+ID = "STR_UNIT_MERCHANTFISHERMAN_NAME"   ;   Str = "Merchant (Fisherman)"
+ID = "STR_UNIT_MERCHANTFISHERMAN_LR"   ;   Str = "Merchant excels in shoore fishing and harpoon"
+ID = "STR_UNIT_MERCHANTFISHERMAN_SR"   ;   Str = "Merchant (Fisherman)"
+
+ID = "STR_UNIT_DEFORESTATOR_NAME"   ;   Str = "Deforestator"
+ID = "STR_UNIT_DEFORESTATOR_LR"   ;   Str = "Merchant Lumberjack gets on a machine provided by CyberTech. Faster at woodcutting. Larger load capacity"
+ID = "STR_UNIT_DEFORESTATOR_SR"   ;   Str = "Lumberjack (Machine)"
+
+// ELITE UNITS
+ID = "STR_UNIT_CHIEFTAIN_NAME"   ;   Str = "Chieftain"
+ID = "STR_UNIT_CHIEFTAIN_LR"   ;   Str = "Veteran Tribal Villager. Faster, Stronger, Tougher."
+ID = "STR_UNIT_CONAN_NAME"   ;   Str = "Conan"
+ID = "STR_UNIT_MATSURIYURIO_NAME"   ;   Str = "Matsuri Yurio"
+ID = "STR_UNIT_MATSURIYURIO_SR"   ;   Str = "Psionic Commando"
+ID = "STR_UNIT_MATSURIYURIO_LR"   ;   Str = "Highschool girl broken free from psionics research facility in the Rising Sun Empire in an alternative timeline"
+ID = "STR_UNIT_MATSURIAZULA_NAME"   ;   Str = "Matsuri Azula"
+ID = "STR_UNIT_MATSURIAZULA_SR"   ;   Str = "Secret Weapon of Rising Sun CyberTech Labs"
+ID = "STR_UNIT_MATSURIAZULA_LR"   ;   Str = "Elder sister and a clone matured and militarized in psionics research facility after disappearance of Yuri"
+
+ID = "STR_UNIT_PARTISAN_NAME"   ;   Str = "Partisan"
+ID = "STR_UNIT_PARTISAN_NAME"   ;   Str = "Partisan"
+ID = "STR_UNIT_VALKYRIE_WARRIOR_NAME"   ;   Str = "Valkyrie Warrior"
+ID = "STR_UNIT_VALKYRIE_WARRIOR_LR"   ;   Str = "Valkyrie Dismounted. Ranged Hero Infantry. Unyielding protector of Valhalla."
+ID = "STR_UNIT_VALKYRIE_WARRIOR_HORSE_NAME"   ;   Str = "Valkyrie Horse"
+ID = "STR_UNIT_VALKYRIE_WARRIOR_HORSE_LR"   ;   Str = "Valkyrie Dismounted. Ranged Hero Infantry. Unyielding protector of Valhalla."
+
+ID = "STR_UNIT_FARSEER_NAME"   ;   Str = "Farseer"
+ID = "STR_UNIT_FARSEER_LR"   ;   Str = "Ascendend Oracle"
+
+// TEMPLE OF PRIMORDIALS
+ID = "STR_UNIT_THORDESCENDED_NAME"   ;   Str = "Thor (God)"
+ID = "STR_UNIT_THORDESCENDED_LR"   ;   Str = "Lord of Thunder"
+
+ID = "STR_UNIT_VOLSTAGGAWAKENED_NAME"   ;   Str = "Volstagg (Jötnar)"
+ID = "STR_UNIT_VOLSTAGGAWAKENED_LR"   ;   Str = "King of Jötunnheim"
+
+ID = "STR_UNIT_SURTRAWAKENED_NAME"   ;   Str = "Surtr (Jötnar)"
+ID = "STR_UNIT_SURTRAWAKENED_LR"   ;   Str = "King of Muspelheim"
+
+ID = "STR_UNIT_FENRISULFRAWAKENED_NAME"   ;   Str = "Fenrisulfr (Son of Loki)"
+ID = "STR_UNIT_FENRISULFRAWAKENED_LR"   ;   Str = "Mythical Beast of Ragnarok"
+
+ID = "STR_UNIT_GROOTIA_NAME"   ;   Str = "Grootia"
+ID = "STR_UNIT_GROOTIA_LR"   ;   Str = "Mother of Dryads"
+
+ID = "STR_UNIT_MCMT_HUANGZHAOWU_NAME"   ;   Str = "Huang Zhaowu"
+ID = "STR_UNIT_MCMT_HUANGZHAOWU_LR"   ;   Str = "Emperor of China"
+
+ID = "STR_UNIT_MCMT_HUANGZHAOWUWIFE_NAME"   ;   Str = "Xiaoli"
+ID = "STR_UNIT_MCMT_HUANGZHAOWUWIFE_LR"   ;   Str = "Resurrected Wife of Huang Zhaowu"
+
+ID = "STR_UNIT_MCMT_NVCHOU_NAME"   ;   Str = "Shiji Nüchou"
+ID = "STR_UNIT_MCMT_NVCHOU_LR"   ;   Str = "Old Witch Friend of Houyi"
+
+ID = "STR_UNIT_BULLOFHEAVEN_NAME"   ;   Str = "Bull of Heaven"
+ID = "STR_UNIT_BULLOFHEAVEN_SR"   ;   Str = "Heavenly Bull of Olympus"
+ID = "STR_UNIT_BULLOFHEAVEN_LR"   ;   Str = "Divine Bull that raged through Olympus as alter-ego of Dionysus "
+
+// MANOR ELITES
+ID = "STR_UNIT_MURMILLO_CAPTAIN_NAME"   ;   Str = "Murmillo Captain"
+ID = "STR_UNIT_MURMILLO_CAPTAIN_SR"   ;   Str = "Alektus the Plasmasteel"
+ID = "STR_UNIT_MURMILLO_CAPTAIN_LR"   ;   Str = "Veteran of First Chapter in the Battle of Chaos Tartarus Marines"
+
+ID = "STR_UNIT_KATAPELTES_CAPTAIN_NAME"   ;   Str = "Katapeltes Captain"
+ID = "STR_UNIT_KATAPELTES_CAPTAIN_SR"   ;   Str = "Christopeles the Daemonhammer"
+ID = "STR_UNIT_KATAPELTES_CAPTAIN_LR"   ;   Str = "Veteran of First Chapter in the Battle of Chaos Tartarus Marines"
+
+ID = "STR_UNIT_FANATIC_CAPTAIN_NAME"   ;   Str = "Fanatic Captain"
+ID = "STR_UNIT_FANATIC_CAPTAIN_SR"   ;   Str = "Alexei the Bloodseeker"
+ID = "STR_UNIT_FANATIC_CAPTAIN_LR"   ;   Str = "Veteran of First Chapter in the Battle of Chaos Tartarus Marines"
+
+ID = "STR_UNIT_DESTROYER_CAPTAIN_NAME"   ;   Str = "Destroyer Captain"
+ID = "STR_UNIT_DESTROYER_CAPTAIN_SR"   ;   Str = "Hugeus the Titanborn"
+ID = "STR_UNIT_DESTROYER_CAPTAIN_LR"   ;   Str = "Veteran of First Chapter in the Battle of Chaos Tartarus Marines"
+
+ID = "STR_UNIT_CONTARIUS_CAPTAIN_NAME"   ;   Str = "Contarius Captain"
+ID = "STR_UNIT_CONTARIUS_CAPTAIN_SR"   ;   Str = "Arthorun Dragonheart"
+ID = "STR_UNIT_CONTARIUS_CAPTAIN_LR"   ;   Str = "Veteran of First Chapter in the Battle of Chaos Tartarus Marines"
+
+ID = "STR_UNIT_TURMA_CAPTAIN_NAME"   ;   Str = "Turma Captain"
+ID = "STR_UNIT_TURMA_CAPTAIN_SR"   ;   Str = "Seless of the Huntress Marines"
+ID = "STR_UNIT_TURMA_CAPTAIN_LR"   ;   Str = "Veteran of First Chapter in the Battle of Chaos Tartarus Marines"
+
+ID = "STR_UNIT_ARCUS_CAPTAIN_NAME"   ;   Str = "Arcus Captain"
+ID = "STR_UNIT_ARCUS_CAPTAIN_SR"   ;   Str = "Markswell the Deadeye"
+ID = "STR_UNIT_ARCUS_CAPTAIN_LR"   ;   Str = "Veteran of First Chapter in the Battle of Chaos Tartarus Marines"
+
+// MANOR TANKS AND DRONES
+ID = "STR_UNIT_MOTHERSHIP_NAME"   ;   Str = "Mothership"
+ID = "STR_UNIT_MOTHERSHIP_SR"   ;   Str = "Mothership"
+ID = "STR_UNIT_MOTHERSHIP_LR"   ;   Str = "End of the All Things"
+
+ID = "STR_UNIT_PRISMTANK_NAME"   ;   Str = "Prism Tank"
+ID = "STR_UNIT_PRISMTANK_SR"   ;   Str = "Prism Tank"
+ID = "STR_UNIT_PRISMTANK_LR"   ;   Str = "FutureTech with a Powerful Laser Cannon"
+
+ID = "STR_UNIT_MIRAGETANK_NAME"   ;   Str = "Mirage Tank"
+ID = "STR_UNIT_MIRAGETANK_SR"   ;   Str = "Mirage Tank"
+ID = "STR_UNIT_MIRAGETANK_LR"   ;   Str = "FutureTech with a Shockwave Cannon"
+
+ID = "STR_UNIT_MIRRORTANK_NAME"   ;   Str = "Mirror Tank"
+ID = "STR_UNIT_MIRRORTANK_SR"   ;   Str = "Mirror Tank"
+ID = "STR_UNIT_MIRRORTANK_LR"   ;   Str = "FutureTech with a Solus Cannon"
+
+ID = "STR_UNIT_IGNITER_NAME"   ;   Str = "Igniter Tank"
+ID = "STR_UNIT_IGNITER_SR"   ;   Str = "Igniter Tank"
+ID = "STR_UNIT_IGNITER_LR"   ;   Str = "Invented by a Pyrotechnician"
+
+ID = "STR_UNIT_SCOUTPROBE_NAME"   ;   Str = "Scout Probe"
+ID = "STR_UNIT_SCOUTPROBE_SR"   ;   Str = "Scout Probe"
+ID = "STR_UNIT_SCOUTPROBE_LR"   ;   Str = "Fast Drone with Lightweight Plating"
+
+ID = "STR_UNIT_EMFU_NAME"   ;   Str = "Electromagnetic Flying Unit"
+ID = "STR_UNIT_EMFU_SR"   ;   Str = "E.M.F.U"
+ID = "STR_UNIT_EMFU_LR"   ;   Str = "Shortcircuit Drone"
+
+ID = "STR_UNIT_EAP_NAME"   ;   Str = "Establishment Assist Probe"
+ID = "STR_UNIT_EAP_SR"   ;   Str = "E.A.P"
+ID = "STR_UNIT_EAP_LR"   ;   Str = "AI-Assisted Worker for FutureTech Foundations"
+
+// CONSTRUCTS OF HEPHAESTOS
+ID = "STR_UNIT_MCMT_GIANTSIEGECROSSBOW_NAME"   ;   Str = "Giant Siege Crossbow"
+ID = "STR_UNIT_MCMT_GIANTSIEGECROSSBOW_LR"   ;   Str = "Anti-Pillar SuperWeapon"
+
+ID = "STR_UNIT_MCMT_DEVASTATOR_NAME"   ;   Str = "Devastator"
+ID = "STR_UNIT_MCMT_DEVASTATOR_LR"   ;   Str = "Anti-TartarusGate SuperWeapon"
+
+ID = "STR_UNIT_MCMT_COLOSSUSOFRHODES_NAME"   ;   Str = "Colossus of Rhodes"
+ID = "STR_UNIT_MCMT_COLOSSUSOFRHODES_SR"   ;   Str = "Colossus of Rhodes"
+ID = "STR_UNIT_MCMT_COLOSSUSOFRHODES_LR"   ;   Str = "Mobile Wonder of Rhodes Island"
+
+ID = "STR_UNIT_ONIGAMI_NAME"   ;   Str = "Onigami"
+ID = "STR_UNIT_ONIGAMI_SR"   ;   Str = "Onigami"
+ID = "STR_UNIT_ONIGAMI_LR"   ;   Str = "Nuke Carrier Hovercraft"
+
+ID = "STR_UNIT_SOLARBARGE_NAME"   ;   Str = "Solar Barge"
+ID = "STR_UNIT_SOLARBARGE_SR"   ;   Str = "Solar Barge"
+ID = "STR_UNIT_SOLARBARGE_LR"   ;   Str = "The Divine Construct of Ra that Carries the Sun"
+
+// BASTION UNITS
+ID = "STR_UNIT_WINDRIDER_NAME"   ;   Str = "Wind Rider"
+ID = "STR_UNIT_WINDRIDER_SR"   ;   Str = "Wind Rider"
+ID = "STR_UNIT_WINDRIDER_LR"   ;   Str = "Mounted Monk of Shangri La that excels in elemental archery"
+
+ID = "STR_UNIT_SPARTAN_NAME"    ;   Str = "Spartan"
+ID = "STR_UNIT_SPARTAN_SR"    ;   Str = "Spartan"
+ID = "STR_UNIT_SPARTAN_LR"    ;   Str = "Warriors of Mars Forged in Fire and Fiery Battles"
+
+ID = "STR_UNIT_IMPERIALGUARD_NAME"    ;   Str = "Imperial Guard"
+ID = "STR_UNIT_IMPERIALGUARD_SR"    ;   Str = "Imperial Guard"
+ID = "STR_UNIT_IMPERIALGUARD_LR"    ;   Str = "Chosen Protectors of Emperor Darthagon"
+
+ID = "STR_UNIT_PEACEMAKER_NAME"    ;   Str = "Peacemaker"
+ID = "STR_UNIT_PEACEMAKER_SR"    ;   Str = "Peacemaker"
+ID = "STR_UNIT_PEACEMAKER_LR"    ;   Str = "Shield of the Mankind and Always Takes It Serious"
+
+ID = "STR_UNIT_HITMAN_NAME"    ;   Str = "Hitman"
+ID = "STR_UNIT_HITMAN_SR"    ;   Str = "Hitman"
+ID = "STR_UNIT_HITMAN_LR"    ;   Str = "Excellent Marksman and Hired Gun that Never Forgives Whoever Approaches"
+
+ID = "STR_UNIT_MOBILE_FORTRESS_NAME"    ;   Str = "Mobile Fortress"
+ID = "STR_UNIT_MOBILE_FORTRESS_SR"    ;   Str = "Mobile Fortress"
+ID = "STR_UNIT_MOBILE_FORTRESS_LR"    ;   Str = "Peak of Warfare on wheels. No soldier has seen another day"
+
+ID = "STR_UNIT_VOLTOX_NAME"    ;   Str = "Voltox"
+ID = "STR_UNIT_VOLTOX_SR"    ;   Str = "Voltox Superpova"
+ID = "STR_UNIT_VOLTOX_LR"    ;   Str = "Super Cyborg without any fear and mercy. Equipped with ballistic anti-unit power sword and anti-building explosive charges. Accompanied with his best friend, Sparky the energy wolf"
+ID = "STR_ABILITY_VOLTOX"    ;   Str = "Sparky the Energy Wolf"
+ID = "STR_ABILITY_VOLTOX_LR"    ;   Str = "Summons the best companion of a cyborg. It zaps to enemies and leaves them electrified"
+
+// HOUSE UNITS
+ID = "STR_UNIT_ATTACKWOLF_NAME"    ;   Str = "Attack Wolf"
+ID = "STR_UNIT_ATTACKWOLF_SR"    ;   Str = "Attack Wolf"
+ID = "STR_UNIT_ATTACKWOLF_LR"    ;   Str = "The Best Friend of Scientific Volunteers. Cybernetically Enhanced Wolf"
+
+ID = "STR_UNIT_EARTHSHAKER_NAME"   ;   Str = "Earthshaker"
+ID = "STR_UNIT_EARTHSHAKER_SR"   ;   Str = "Earthshaker"
+ID = "STR_UNIT_EARTHSHAKER_LR"   ;   Str = "The Worst Nightmare of Gaia"
+
+ID = "STR_UNIT_MR_WUKONG_NAME"   ;   Str = "Mr. Wukong"
+ID = "STR_UNIT_MR_WUKONG_SR"   ;   Str = "Mr. Wukong"
+ID = "STR_UNIT_MR_WUKONG_LR"   ;   Str = "The Monkey King from the Rising Sun Empire in service to establish civilizations"
+
+// STRATEGIC VESSEL ASSEMBLY UNITS
+ID = "STR_UNIT_MCMT_DESOLATOR_NAME"   ;   Str = "Desolator"
+ID = "STR_UNIT_MCMT_DESOLATOR_SR"   ;   Str = "Desolator"
+ID = "STR_UNIT_MCMT_DESOLATOR_LR"   ;   Str = "Corrosive Battleship Loaded with Biotoxin Missiles and Anthrax Field"
+
+ID = "STR_UNIT_MCMT_FLAGSHIP_NAME"   ;   Str = "Flagship"
+ID = "STR_UNIT_MCMT_FLAGSHIP_SR"   ;   Str = "Flagship"
+ID = "STR_UNIT_MCMT_FLAGSHIP_LR"   ;   Str = "Military Beacon of Seven Seas that Fortifies With Passengers"
+
+ID = "STR_UNIT_MCMT_SCORPIONBOAT_NAME"   ;   Str = "Scorpion Boat"
+ID = "STR_UNIT_MCMT_SCORPIONBOAT_SR"   ;   Str = "Scorpion Boat"
+ID = "STR_UNIT_MCMT_SCORPIONBOAT_LR"   ;   Str = "Light Battleship Armed with Minigun"
+
+ID = "STR_UNIT_MCMT_BLAZEMASTER_NAME"   ;   Str = "Blazemaster"
+ID = "STR_UNIT_MCMT_BLAZEMASTER_SR"   ;   Str = "Blazemaster"
+ID = "STR_UNIT_MCMT_BLAZEMASTER_LR"   ;   Str = "Heavy Battleship Armed with Inferno Cannon"
+
+ID = "STR_UNIT_NAVIGATOR_NAME"   ;   Str = "Navigator"
+ID = "STR_UNIT_NAVIGATOR_SR"   ;   Str = "Navigator"
+ID = "STR_UNIT_NAVIGATOR_LR"   ;   Str = "Fast and Agile Ship Excelling in Exploration and Reconnaissance"
+
+ID = "STR_UNIT_MCMT_FLYINGDUTCHMAN_NAME"   ;   Str = "Flying Dutchman"
+ID = "STR_UNIT_MCMT_FLYINGDUTCHMAN_SR"   ;   Str = "Flying Dutchman"
+ID = "STR_UNIT_MCMT_FLYINGDUTCHMAN_LR"   ;   Str = "Ghost Ship of Abyss that Voyages with the Undead"
+
+ID = "STR_UNIT_MCMT_GHOSTCREW_NAME"   ;   Str = "Ghost Crew"
+ID = "STR_UNIT_MCMT_GHOSTCREW_SR"   ;   Str = "Ghost Crew"
+ID = "STR_UNIT_MCMT_GHOSTCREW_LR"   ;   Str = "Passengers of the Legendary Flying Dutchman"
+
+ID = "STR_UNIT_MCMT_PIRATECAPTAIN_NAME"   ;   Str = "Pirate Captain"
+ID = "STR_UNIT_MCMT_PIRATECAPTAIN_SR"   ;   Str = "Pirate Captain"
+ID = "STR_UNIT_MCMT_PIRATECAPTAIN_LR"   ;   Str = "Captain of the Legendary Flying Dutchman"
+
+ID = "STR_UNIT_MCMT_WORLDBREAKER_NAME"   ;   Str = "Worldbreaker"
+ID = "STR_UNIT_MCMT_WORLDBREAKER_SR"   ;   Str = "Worldbreaker"
+ID = "STR_UNIT_MCMT_WORLDBREAKER_LR"   ;   Str = "Superunit of the Rising Sun Empire that Operates as Mobile Dock of Onigami and Naval Fortress. Equipped with Anti-Air, Anti-Army and Anti-Titan Cannons. Bearer of Tsunai Generator Superweapon"
+
+// DEPLOYABLE UNITS
+ID = "STR_UNIT_NUKECANNON_NAME"   ;   Str = "Nuke Cannon"
+ID = "STR_UNIT_NUKECANNON_DEPLOYED_NAME"   ;   Str = "Nuke Cannon (Deployed)"
+ID = "STR_UNIT_NUKECANNON_LR"   ;   Str = "Nuke Cannon"
+ID = "STR_UNIT_NUKECANNON_SR"   ;   Str = "The Worst Enemy of Structures"
+
+ID = "STR_UNIT_FIRE_ARCHER_SANDBAG_NAME"   ;   Str = "Fire Archer (Sandbag)"
+ID = "STR_UNIT_WUZU_JAVELINEER_SANDBAG_NAME"   ;   Str = "Wuzu Javelineer (Sandbag)"
+ID = "STR_UNIT_CHUKONU_SANDBAG_NAME"   ;   Str = "ChuKoNu (Sandbag)"
+
+// ECONOMIC UNITS
+ID = "STR_UNIT_OXCARTMODELX_NAME"   ;   Str = "Ox Cart Model - X"
+ID = "STR_UNIT_OXCARTMODELX_LR"   ;   Str = "Ox Cart Model - X"
+ID = "STR_UNIT_OXCARTMODELX_SR"   ;   Str = "Ox Cart Model - X"
+
+// MAGE TOWER UNITS
+ID = "STR_UNIT_MAIAR_NAME"   ;   Str = "Maiar Wizard"
+ID = "STR_UNIT_MAIAR_SR"   ;   Str = "Maiar Wizard"
+ID = "STR_UNIT_MAIAR_LR"   ;   Str = "Primordial Spirits that Shaped the World with Valar and Establishd Order of Wizards. Capable of Shapeshifting"
+
+// KINGDOM UNITS
+ID = "STR_UNIT_HOBBIT_NAME"   ;   Str = "Hobbit"
+ID = "STR_UNIT_HOBBIT_SR"   ;   Str = "Hobbit"
+ID = "STR_UNIT_HOBBIT_LR"   ;   Str = "Small People with Large Hearts"
+
+ID = "STR_UNIT_MORADIN_NAME"   ;   Str = "King Moradin"
+ID = "STR_UNIT_MORADIN_ENT_SR"   ;   Str = "King of Mountain Dwarves"
+ID = "STR_UNIT_MORADIN_ENT_LR"   ;   Str = "Legendary Dwarf that Rules over the Mountain Dwarves Kingdom, Ironhammer"
+
+ID = "STR_UNIT_TREEBEARD_ENT_NAME"   ;   Str = "Treebeard of Fangorn"
+ID = "STR_UNIT_TREEBEARD_ENT_SR"   ;   Str = "Treebeard of Fangorn"
+ID = "STR_UNIT_TREEBEARD_ENT_LR"   ;   Str = "Leader of Ent People"
+
+ID = "STR_UNIT_LOKI_NAME"   ;   Str = "Thökk (Loki)"
+ID = "STR_UNIT_LOKI_SR"   ;   Str = "Human Form of Loki"
+ID = "STR_UNIT_LOKI_LR"   ;   Str = "God of Mischief. Good at Conviction"
+
+ID = "STR_UNIT_LOKI_MARE_NAME"   ;   Str = "Svadillfari (Loki)"
+ID = "STR_UNIT_LOKI_MARE_SR"   ;   Str = "Loki in Mare Form"
+ID = "STR_UNIT_LOKI_MARE_LR"   ;   Str = "God of Mischief. Good at Infiltration "
+
+ID = "STR_UNIT_WARBEAR_NAME"   ;   Str = "Warbear (Berserk)"
+ID = "STR_UNIT_WARBEAR_SR"   ;   Str = "Werebear Berserk"
+ID = "STR_UNIT_WARBEAR_LR"   ;   Str = "Berserk unleashes his inner form"
+
+ID = "STR_UNIT_LOKI_JOTNAR_NAME"   ;   Str = "Loki Odinson (God)"
+ID = "STR_UNIT_LOKI_JOTNAR_SR"   ;   Str = "Loki in True Form"
+ID = "STR_UNIT_LOKI_JOTNAR_LR"   ;   Str = "God of Mischief. Has Never Been This Serious"
+
+// NOAH
+ID = "STR_UNIT_NOAH_NAME"   ;   Str = "Noah "
+ID = "STR_UNIT_NOAH_SR"   ;   Str = "Noah the Oracle of Guidance"
+ID = "STR_UNIT_NOAH_LR"   ;   Str = "The Legendary Oracle that Visited Many Eras for Millenia in Many Forms; Widely Known as Moses and Pharaoh; Noah of Ark; King David;  "
+ID = "STR_MSG_NOAH_SPAWN"   ;   Str = "Noah has returned to teach Pharaoh a new lesson!"
+
+// ORPHIC
+ID = "STR_UNIT_ORPHIC_EGG_NAME"   ;   Str = "Orphic Egg"
+ID = "STR_UNIT_ORPHIC_EGG_SR"   ;   Str = "Cosmic Egg of Cosmos"
+ID = "STR_UNIT_ORPHIC_EGG_LR"   ;   Str = "One of Creator Entities. It gives a birth to Phanes, Huanglong and Auspicious Beasts"
+
+ID = "STR_UNIT_PHANES_NAME"   ;   Str = "Phanes"
+ID = "STR_UNIT_PHANES_SR"   ;   Str = "Cosmic Egg of Cosmos"
+ID = "STR_UNIT_PHANES_LR"   ;   Str = "Primeval Creation intervined with Huanglong, created Darkness, Light and the Cosmos"
+
+// CYBERTECH SET UNITS
+ID = "STR_UNIT_MECHANIZED_MAMMOTH_UNIT_NAME"   ;   Str = "Mechanized Mammoth Unit"
+ID = "STR_UNIT_MECHANIZED_MAMMOTH_UNIT_SR"   ;   Str = "Mechanized Mammoth Unit"
+ID = "STR_UNIT_MECHANIZED_MAMMOTH_UNIT_LR"   ;   Str = "CyberTech Super Unit Unexpectedly Possessed By Set"
+
+// BASTION UNITS
+ID = "STR_UNIT_MULTIGUNNER_UNIT_NAME"   ;   Str = "Multigunner"
+ID = "STR_UNIT_MULTIGUNNER_UNIT_SR"   ;   Str = "Multigunner Super Infantry"
+ID = "STR_UNIT_MULTIGUNNER_UNIT_LR"   ;   Str = "CyberTech Super Unit Armed with Technological Weaponry"
+
+ID = "STR_UNIT_CONSTRUCTOR_UNIT_NAME"   ;   Str = "Constructor"
+ID = "STR_UNIT_CONSTRUCTOR_UNIT_SR"   ;   Str = "Mechanical Construction Unit"
+ID = "STR_UNIT_CONSTRUCTOR_UNIT_LR"   ;   Str = "FutureTech Mechanical Construction Unit"
+
+// SPECIAL BUILDINGS
+ID = "STR_BLD_STELLAR_GATEWAY_NAME"   ;   Str = "Advanced Relocation Kapsule"
+ID = "STR_BLD_STELLAR_GATEWAY_SR"   ;   Str = "A.R.K"
+ID = "STR_BLD_STELLAR_GATEWAY_LR"   ;   Str = "FutureTech Personalized Transportation Unit"
+
+ID = "STR_BLD_BASTION_NAME"   ;   Str = "Bastion"
+ID = "STR_BLD_BASTION_LR"   ;   Str = "Special Units Building"
+
+ID = "STR_BLD_TEMPLE_OF_PRIMORDIALS_NAME"   ;   Str = "Temple of the Primordial Creators"
+ID = "STR_BLD_TEMPLE_OF_PRIMORDIALS_LR"   ;   Str = "Worldly Gateway to Divine Entities"
+
+ID = "STR_BLD_TECH_BUILDING_NAME"   ;   Str = "Tech Building"
+ID = "STR_BLD_TECH_BUILDING_LR"   ;   Str = "Cybertech Researches"
+
+ID = "STR_BLD_SVA_NAME"   ;   Str = "Strategic Vessel Assembly"
+ID = "STR_BLD_SVA_LR"   ;   Str = "Mechanized Naval Warfare Deployment Center"
+
+ID = "STR_BLD_OILRIG_NAME"   ;   Str = "Oil Obscurator Rig"
+ID = "STR_BLD_OILRIG_SR"   ;   Str = "Oil Obscurator Rig"
+ID = "STR_BLD_OILRIG_LR"   ;   Str = "Oil Industry Settles into Mythological Era"
+
+ID = "STR_BLD_OILRIGPACKED_NAME"   ;   Str = "Mobile Oil Obscurator Rig"
+ID = "STR_BLD_OILRIGPACKED_SR"   ;   Str = "M.O.O.R"
+ID = "STR_BLD_OILRIGPACKED_LR"   ;   Str = "Packed Form of the Oil Obscurator Rig Structure"
+
+ID = "STR_BLD_AIRCOMMAND_NAME"   ;   Str = "Air Command HQ"
+ID = "STR_BLD_AIRCOMMAND_SR"   ;   Str = "Air Command Headquarters"
+ID = "STR_BLD_AIRCOMMAND_LR"   ;   Str = "Defensive Base of Operations for Aircraft"
+
+ID = "STR_BLD_WARBUNKER_NAME"   ;   Str = "War Bunker"
+ID = "STR_BLD_WARBUNKER_LR"   ;   Str = "Defensive Building"
+ID = "STR_BLD_WARBUNKER_SR"   ;   Str = "Defensive Building"
+
+// SPECIAL UTILITY STRUCTURES
+ID = "STR_BLD_SONICDISRUPTORARRAY_NAME"   ;   Str = "Sonic Disruptor Array"
+ID = "STR_BLD_SONICDISRUPTORARRAY_SR"   ;   Str = "S.D.A"
+ID = "STR_BLD_SONICDISRUPTORARRAY_LR"   ;   Str = "Stealth Cloaking Technology for Units"
+
+ID = "STR_BLD_ATTRACTOR_NAME"   ;   Str = "The Attractor"
+ID = "STR_BLD_ATTRACTOR_SR"   ;   Str = "The Attractor"
+ID = "STR_BLD_ATTRACTOR_LR"   ;   Str = "A Peak of the Economical Development that Broadcast Brainwaves that Instinctively Pulls Preys"
+
+ID = "STR_BLD_SEASONAL_FARM_NAME"   ;   Str = "Seasonal Farm"
+ID = "STR_BLD_SEASONAL_FARM_LR"   ;   Str = "Seasonal Farm"
+ID = "STR_BLD_SEASONAL_FARM_SR"   ;   Str = "Farming planted with one generation seeds"
+ID = "STR_BLD_INDUSTRIAL_FARM_NAME"   ;   Str = "Industrial Farm"
+ID = "STR_BLD_INDUSTRIAL_FARM_LR"   ;   Str = "Farming of modern era with automatized supplication features\n·Costs same as a regular Industrial Farm"
+ID = "STR_BLD_INDUSTRIAL_FARM_SR"   ;   Str = "Restockable Farm at a cost"
+
+ID = "STR_BLD_DIONYSIAN_FARM_NAME" ;   Str = "Dionysian Farm"
+ID = "STR_BLD_DIONYSIAN_FARM_SR" ;   Str = "Farms from Dionysian Festivals"
+ID = "STR_BLD_DIONYSIAN_FARM_LR" ;   Str = "Farms harvested during Urban and Rural Dionysian Festivals"
+
+ID = "STR_BLD_CHTHONIANTEMPLE_NAME" ;   Str = "Chthonian Temple"
+ID = "STR_BLD_APOLLONTEMPLE_NAME" ;   Str = "Apollon Temple"
+ID = "STR_BLD_TITANESSTEMPLE_NAME" ;   Str = "Titaness Temple"
+ID = "STR_BLD_FORGEOFOLYMPUS_NAME" ;   Str = "Forge of Olympus"
+ID = "STR_BLD_TEMPLEOFTHEDEAD_NAME" ;   Str = "Temple of the Dead"
+ID = "STR_BLD_TEMPLEOFTHEELDER_NAME" ;   Str = "Temple of the Elder"
+ID = "STR_BLD_TEMPLEOFESHMOON_NAME" ;   Str = "Temple of Lord Eshmoon"
+ID = "STR_BLD_TEMPLEOFTHUNDER_NAME" ;   Str = "Temple of Thunder"
+ID = "STR_BLD_TEMPLEOFVALOR_NAME" ;   Str = "Temple of Valor"
+ID = "STR_BLD_TEMPLEOFDESTINY_NAME" ;   Str = "Temple of Destiny"
+ID = "STR_BLD_TEMPLEOFYNGVI_NAME" ;   Str = "Temple of Yngvi"
+ID = "STR_BLD_TEMPLEOFTIME_NAME" ;   Str = "Temple of Time"
+ID = "STR_BLD_TEMPLEOFSKY_NAME" ;   Str = "Temple of Sky"
+ID = "STR_BLD_TEMPLEOFEARTH_NAME" ;   Str = "Temple of Earth"
+ID = "STR_BLD_TEMPLEOFSEA_NAME" ;   Str = "Temple of Sea"
+ID = "STR_BLD_TEMPLEOFGOLDGENEMPEROR_NAME" ;   Str = "Temple of Golden Emperor"
+ID = "STR_BLD_TEMPLEOFFIRE_NAME" ;   Str = "Temple of Fire"
+
+ID = "STR_BLD_STATUEOFZEUS_NAME" ;   Str = "Statue of Zeus"
+ID = "STR_BLD_MAUSOLEUM_NAME" ;   Str = "Mausoleum"
+ID = "STR_BLD_THEATREOFDIONYSUS_NAME" ;   Str = "Theatre of Dionysus"
+ID = "STR_BLD_GREATPYRAMIDOFGIZA_NAME" ;   Str = "Great Pyramid of Giza"
+ID = "STR_BLD_GREATSPHINXOFGIZA_NAME" ;   Str = "Great Sphinx of Giza"
+ID = "STR_BLD_TEMPLEOFHATHORNEFERTARI_NAME" ;   Str = "Temple of Hathor Nefertari"
+ID = "STR_BLD_DONARSOAK_NAME" ;   Str = "Donar's Oak"
+ID = "STR_BLD_ODINSTOWER_NAME" ;   Str = "Odin's Tower"
+ID = "STR_BLD_SKIDBLADNIR_NAME" ;   Str = "Skidbladnir"
+ID = "STR_BLD_ALFHEIMR_NAME" ;   Str = "Alfheimr"
+ID = "STR_BLD_ORANOSPALACE_NAME" ;   Str = "Oranos Palace"
+ID = "STR_BLD_AQUEDUCTFOUNTAIN_NAME" ;   Str = "Aqueduct Fountain"
+ID = "STR_BLD_SUNDIALTOWER_NAME" ;   Str = "Sundial Tower"
+ID = "STR_BLD_AOGUANGPALACE_NAME" ;   Str = "Aoguang Palace"
+ID = "STR_BLD_MOUNTPENGLAI_NAME" ;   Str = "Mount Penglai"
+ID = "STR_BLD_FUSANG_NAME" ;   Str = "Fusang"
+
+ID = "STR_BLD_MAGETOWER_NAME"   ;   Str = "Mage Tower"
+ID = "STR_BLD_MAGETOWER_SR"   ;   Str = "Mage Tower"
+ID = "STR_BLD_MAGETOWER_LR"   ;   Str = "Akashic Archive and Residence of the Archmage"
+
+ID = "STR_BLD_FORTIFIED_WARTOWER_NAME"   ;   Str = "Fortified Wartower"
+ID = "STR_BLD_FORTIFIED_WARTOWERII_NAME"   ;   Str = "Fortified Wartower II"
+ID = "STR_BLD_TITAN_WALL_NAME"   ;   Str = "Titan Wall of Aegis"
+
+ID = "STR_BLD_ELECTROFENCE_NAME"   ;   Str = "Electrofence"
+ID = "STR_BLD_ELECTROFENCE_SR"   ;   Str = "Powered Barrier"
+ID = "STR_BLD_ELECTROFENCE_LR"   ;   Str = "FutureTech Fortification Barrier"
+
+ID = "STR_BLD_HOLOFENCE_GATE_NAME"   ;   Str = "Holofence Gate"
+ID = "STR_BLD_HOLOFENCE_GATE_SR"   ;   Str = "Powered Gate"
+ID = "STR_BLD_HOLOFENCE_GATE_LR"   ;   Str = "FutureTech Fortification Gate"
+
+ID = "STR_BLD_BEACON_OF_LIGHTNING_NAME"   ;   Str = "Beacon of Lightning"
+ID = "STR_BLD_BEACON_OF_LIGHTNING_SR"   ;   Str = "B.O.LIG"
+ID = "STR_BLD_BEACON_OF_LIGHTNING_LR"   ;   Str = "FutureTech Electrokinetic Defense System. Overseen by Nikola Tesla himself. Electrocutes unworthy"
+
+ID = "STR_BLD_BEACON_OF_TRUTH_NAME"   ;   Str = "Beacon of Truth"
+ID = "STR_BLD_BEACON_OF_TRUTH_SR"   ;   Str = "B.O.TR"
+ID = "STR_BLD_BEACON_OF_TRUTH_LR"   ;   Str = "FutureTech Illumokinetic Defense System. Overseen by Justice herself. Unveils the blinded"
+
+ID = "STR_BLD_BEACON_OF_SUN_NAME"   ;   Str = "Beacon of Sun"
+ID = "STR_BLD_BEACON_OF_SUN_SR"   ;   Str = "B.O.SUN"
+ID = "STR_BLD_BEACON_OF_SUN_LR"   ;   Str = "FutureTech Pyrokinetic Defense System. Overseen by August von Marquardt himself. Fires concentrated sunfire beam"
+
+ID = "STR_BLD_BEACON_OF_SEA_NAME"   ;   Str = "Beacon of Sea"
+ID = "STR_BLD_BEACON_OF_SEA_SR"   ;   Str = "B.O.SEA"
+ID = "STR_BLD_BEACON_OF_SEA_LR"   ;   Str = "FutureTech Hydrokinetic Defense System. Overseen by Lonnie Johnson himself. Absorbs and unleashes water blast via weathercontrol generator"
+
+ID = "STR_BLD_BEACON_OF_AFFECTION_NAME"   ;   Str = "Beacon of Affection"
+ID = "STR_BLD_BEACON_OF_AFFECTION_SR"   ;   Str = "B.O.AFF"
+ID = "STR_BLD_BEACON_OF_AFFECTION_LR"   ;   Str = "FutureTech Cerebral Defense System. Operated by elite psionics serving chosen by the God Emperor. Influences minds"
+
+ID = "STR_BLD_BEACON_OF_AMBITION_NAME"   ;   Str = "Beacon of Ambition"
+ID = "STR_BLD_BEACON_OF_AMBITION_SR"   ;   Str = "B.O.AMB"
+ID = "STR_BLD_BEACON_OF_AMBITION_LR"   ;   Str = "FutureTech Celerital Defense System. Overseen by August von Marquardt himself. Weakens motivation of enemies"
+
+ID = "STR_UNIT_SIEGE_TURRET_NAME"   ;   Str = "Siege Turret"
+ID = "STR_UNIT_SIEGE_TURRET_SR"   ;   Str = "Siege Turret"
+ID = "STR_UNIT_SIEGE_TURRET_LR"   ;   Str = "Siege Tower Entrenchment in a Defensive Position"
+
+// UNIT TRANSFORM TEXTS
+ID = "STR_TRANSFORM_INDUSTRIAL_FARM_NAME"   ;   Str = "Restock Farm"
+ID = "STR_TRANSFORM_INDUSTRIAL_FARM_LR"   ;   Str = "Restock Industrial Farm nutritions. It costs same as a regular Industral Farm"
+
+// REWORKED UNITS
+ID = "STR_UNIT_NILECROCODILE_NAME"   ;   Str = "Nile Crocodile"
+
+// SPECIAL TECHS
+ID = "STR_TECH_MCMT_PAGE_1"   ;   Str = "Page1"
+ID = "STR_TECH_MCMT_PAGE_2"   ;   Str = "Page2"
+ID = "STR_TECH_BAOLEI_PAGE_1_0"   ;   Str = "Path1"
+ID = "STR_TECH_BAOLEI_PAGE_2_0"   ;   Str = "Path2"
+ID = "STR_TECH_BAOLEI_PAGE_1"   ;   Str = "Command Myth"
+ID = "STR_TECH_BAOLEI_PAGE_2"   ;   Str = "Command Might"
+
+ID = "STR_TECH_ACTIVATE_TECH"   ;   Str = "Activate Tech"
+ID = "STR_TECH_ACTIVATE_TECH_GODSBEASTS"   ;   Str = "Activate Tech: Gods and Beasts"
+ID = "STR_TECH_ACTIVATE_TECH_PRIMEVALS"   ;   Str = "Activate Tech: Primevals"
+ID = "STR_TECH_ACTIVATE_TECH_LEGENDS"   ;   Str = "Activate Tech: Legends"
+ID = "STR_TECH_ACTIVATE_TECH_SUPERWEAPONS"   ;   Str = "Activate Tech: Superweapons"
+
+ID = "STR_TECH_RECRUITING_MOUNTAINDWARVES_NAME"   ;   Str = "Recruiting Mountain Dwarves"
+ID = "STR_TECH_RECRUITING_MOUNTAINDWARVES_LR"    ;   Str = "Work Force now becomes Dwarf Force"
+
+ID = "STR_TECH_ARCHITECTS_OF_MARLEY_NAME"   ;   Str = "Architects of Marley"
+ID = "STR_TECH_ARCHITECTS_OF_MARLEY_LR"   ;   Str = "Architects from Kingdom of Marley share their pride in the Anti-Titan Walls"
+
+ID = "STR_TECH_ADVANCEDFORTIFICATIONS_NAME"   ;   Str = "Advanced Fortifications"
+ID = "STR_TECH_ADVANCEDFORTIFICATIONS_LR"   ;   Str = "CyberTech R & D provides modern techniques and materials to create ultimate fortifications"
+
+ID = "STR_TECH_ORACLEWATCHERS_NAME"   ;   Str = "Oracle Watchers"
+ID = "STR_TECH_ORACLEWATCHERS_LR"   ;   Str = "Oracles with Excellent Psionic Sight have been assigned to Towers as Watcher Commanders"
+
+ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"
+ID = "STR_TECH_DIVINEARMAMENTS_LR"   ;   Str = "Improves Offensive Capabilities of Military Units, Heroes and Hunters with Divine Weaponry"
+
+ID = "STR_TECH_NANOFIBERPLATINGS_NAME"   ;   Str = "Nanofiber Platings"
+ID = "STR_TECH_NANOFIBERPLATINGS_LR"   ;   Str = "Enhances Defensive Capabilities of Military Units and Heroes with Nanofiber Technology"
+
+ID = "STR_TECH_BOWOFORION_NAME"   ;   Str = "Bow of Orion"
+ID = "STR_TECH_BOWOFORION_LR"   ;   Str = "Envelops Projeectiles of Ranged Units in Pure Energy"
+
+ID = "STR_TECH_ANTHRAX_NAME"   ;   Str = "Anthrax"
+ID = "STR_TECH_ANTHRAX_LR"   ;   Str = "Enhances Effectiveness of Ranged Soldiers with Desolation Technology"
+
+ID = "STR_TECH_PHOBOSSPEAROFPANIC_MK2_NAME"   ;   Str = "Phobos Spear of Panic Mk.2"
+ID = "STR_TECH_PHOBOSSPEAROFPANIC_MK2_LR"   ;   Str = "Upgrades Spear Weaponry with Nano-Technology"
+
+ID = "STR_TECH_DEIMOSSWORDOFDREAD_MK2_NAME"   ;   Str = "Deimos Sword of Dread Mk.2"
+ID = "STR_TECH_DEIMOSSWORDOFDREAD_MK2_LR"   ;   Str = "Upgrades Sword Weaponry with Nano-Technology"
+
+ID = "STR_TECH_ENYOSBOWOFHORRO_MK2_NAME"   ;   Str = "Enyo's Bow of Horror Mk.2"
+ID = "STR_TECH_ENYOSBOWOFHORRO_MK2_LR"   ;   Str = "Upgrades Bow Weaponry with Nano-Technology"
+
+ID = "STR_TECH_MJOLNIR_NAME"   ;   Str = "Mjölnir"
+ID = "STR_TECH_MJOLNIR_LR"   ;   Str = "Thor Empowers Oracles and Wielders of Hammer, Mace and Axe with Worthiness of the Gods"
+
+ID = "STR_TECH_AEGISSHIELD_MK2_NAME"   ;   Str = "Aegis Shield Mk.2"
+ID = "STR_TECH_AEGISSHIELD_MK2_LR"   ;   Str = "Unleashes the True Potential of Whom Sworn to Protect and Unyield"
+
+ID = "STR_TECH_UNIT_STIMULANTS_NAME"   ;   Str = "Stimulants"
+ID = "STR_TECH_UNIT_STIMULANTS_LR"   ;   Str = "Increases the Regeneration Rate of Units"
+
+ID = "STR_TECH_DIVINEPROTECTION_NAME"   ;   Str = "Divine Protection"
+ID = "STR_TECH_DIVINEPROTECTION_LR"   ;   Str = "Fortfies the Special Structures and Landlord with Divine Blessing by God of Technology"
+
+ID = "STR_TECH_BUILDING_ABSORBANTS_NAME"   ;   Str = "Absorbants"
+ID = "STR_TECH_BUILDING_ABSORBANTS_LR"   ;   Str = "Increases the Regeneration Rate of Buildings"
+
+ID = "STR_TECH_COMPENSATIONS_NAME"   ;   Str = "Compensations"
+ID = "STR_TECH_COMPENSATIONS_LR"   ;   Str = "CyberTech Authorties Compensates Famlies of the Fallen Units with Resources"
+
+ID = "STR_TECH_MUSCLETRAINING_NAME"   ;   Str = "Muscle Training"
+ID = "STR_TECH_MUSCLETRAINING_LR"   ;   Str = "Overdoses Capabilities of Builder Units"
+
+ID = "STR_TECH_VIBRANTLAND_MK2_NAME"   ;   Str = "Vibrant Land Mk.2"
+ID = "STR_TECH_VIBRANTLAND_MK2_LR"   ;   Str = "Enforces Strategical Structures with Production Facilities"
+
+ID = "STR_TECH_MONSTROUSRAGE_MK2_NAME"   ;   Str = "Monstrous Rage Mk.2"
+ID = "STR_TECH_MONSTROUSRAGE_MK2_LR"   ;   Str = "Breakthrough Technology of Myth Genetics that Puts the Units in the Blazing Rage and Siege Units in the Petrification Curtain "
+
+ID = "STR_TECH_TOWEROFBABEL_NAME"   ;   Str = "Tower of Babel"
+ID = "STR_TECH_TOWEROFBABEL_LR"   ;   Str = "Improves Capabilities of Special Towers with Master Architects of Babylon"
+
+ID = "STR_TECH_MITHRILARMAMENTS_NAME"   ;   Str = "Mithril Armaments"
+ID = "STR_TECH_MITHRILARMAMENTS_LR"   ;   Str = "Introduces the Power of Mithril Platings to Tower Structures"
+
+ID = "STR_TECH_TURRETINSTALLATION_NAME"   ;   Str = "Turret Installation"
+ID = "STR_TECH_TURRETINSTALLATION_LR"   ;   Str = "Introduces the Automatization Machinery to Tower Structures"
+
+ID = "STR_TECH_NANOMACHINES_NAME"   ;   Str = "Nanomachines"
+ID = "STR_TECH_NANOMACHINES_LR"   ;   Str = "Introduces the Nanotechnology that Enhances SVA, CyberTech Facility and Docks with Autorepair Machines"
+
+ID = "STR_TECH_EXPLOSIVES_NAME"   ;   Str = "Explosives"
+ID = "STR_TECH_EXPLOSIVES_LR"   ;   Str = "Introduces the Explosive Technology to Onigami Hovercrafts and Overcharged Engines to Economic Ships"
+
+ID = "STR_TECH_COMFORTABLE_FIREPORTS_NAME"   ;   Str = "Comfortable Fireports"
+ID = "STR_TECH_COMFORTABLE_FIREPORTS_LR"   ;   Str = "Installs Passenger Ports with a Better Room Service"
+
+ID = "STR_TECH_NAVAL_DEFENSIVE_SYSTEMS_NAME"   ;   Str = "Naval Defensive Systems"
+ID = "STR_TECH_NAVAL_DEFENSIVE_SYSTEMS_LR"   ;   Str = "Coastal Defense That Carries Big Guns"
+
+ID = "STR_TECH_ELITE_FIREPORTS_NAME"   ;   Str = "Elite Fireports"
+ID = "STR_TECH_ELITE_FIREPORTS_LR"   ;   Str = "Installs Passenger Ports with a Jacuzzi and a Bar"
+
+ID = "STR_TECH_LUXURIOUS_FIREPORTS_NAME"   ;   Str = "Luxurious Fireports"
+ID = "STR_TECH_LUXURIOUS_FIREPORTS_LR"   ;   Str = "Installs Passenger Ports with a Casino, Kingsize Bed and Personal Assistants"
+
+ID = "STR_TECH_CHAMPION_ARMS_NAME"   ;   Str = "Champion Arms"
+ID = "STR_TECH_CHAMPION_ARMS_LR"   ;   Str = "Champion Infantry Ultimate Promotion"
+
+ID = "STR_TECH_CHAMPION_RANGERS_NAME"   ;   Str = "Champion Rangers"
+ID = "STR_TECH_CHAMPION_RANGERS_LR"   ;   Str = "Champion Archer Ultimate Promotion"
+
+ID = "STR_TECH_CHAMPION_HOOVES_NAME"   ;   Str = "Champion Hooves"
+ID = "STR_TECH_CHAMPION_HOOVES_LR"   ;   Str = "Champion Cavalry Ultimate Promotion"
+
+ID = "STR_TECH_CHAMPION_ENGINES_NAME"   ;   Str = "Champion Engines"
+ID = "STR_TECH_CHAMPION_ENGINES_LR"   ;   Str = "Champion Siege Weapon Ultimate Promotion"
+
+ID = "STR_TECH_PRIMORDIAL_LIGHT_NAME"   ;   Str = "Primordial Light"
+ID = "STR_TECH_PRIMORDIAL_LIGHT_LR"   ;   Str = "Empowers Damages of Heroes and Myth Units"
+
+ID = "STR_TECH_WARBUNKER_ANTIARMOR_NAME"   ;   Str = "Anti-Armor Logistics"
+ID = "STR_TECH_WARBUNKER_ANTIARMOR_LR"   ;   Str = "Enable heavy-armored targeting fireports. Deadly to buildings and siege weapons"
+
+ID = "STR_TECH_WARBUNKER_ANTIAIR_NAME"   ;   Str = "Anti-Air Logistics"
+ID = "STR_TECH_WARBUNKER_ANTIAIR_LR"   ;   Str = "Enable aerial targeting fireports"
+
+ID = "STR_TECH_OLYMPICGAMES_NAME"   ;   Str = "Olympic Games"
+ID = "STR_TECH_OLYMPICGAMES_LR"   ;   Str = "Integrates Era with Sports, Athletes and Mounted Racers"
+
+ID = "STR_TECH_DIONYSIA_FESTIVAL_PREPARATIONS_NAME"   ;   Str = "Dionysia: Festival Preparations"
+ID = "STR_TECH_DIONYSIA_FESTIVAL_PREPARATIONS_LR"   ;   Str = "Dionysian Festivals are being prepared both in Rural and Urban Areas. Harvests are blessed during the celebrations worthy of the God of Festivities and Wine"
+ID = "STR_TECH_RURAL_FESTIVAL_NAME"   ;   Str = "Dionysia: Rural Festival"
+ID = "STR_TECH_RURAL_FESTIVAL_LR"   ;   Str = "Rural Dionysian Festival where countryside citizens gather to celebrate the God of Festivities and Wine with rustic dances, music and feasts"
+ID = "STR_TECH_URBAN_FESTIVAL_NAME"   ;   Str = "Dionysia: Urban Festival"
+ID = "STR_TECH_URBAN_FESTIVAL_SR"   ;   Str = "Urban Dionysian Festival where citizens gather to celebrate the God of Festivities and Wine with rustic dances, music and feasts"
+
+ID = "STR_TECH_MADNESSOFDIONYSUS_NAME"   ;   Str = "Madness of Dionysus"
+ID = "STR_TECH_MADNESSOFDIONYSUS_LR"   ;   Str = "Dionysus goes through madness phase that leaves festive ego behind and embraces bloodthirsty personality. As he turns into Bull God, his followers orchestrate murders "
+ID = "STR_TECH_ELDRITCHSECTS_NAME"   ;   Str = "Eldritch Sects"
+ID = "STR_TECH_ELDRITCHSECTS_LR"   ;   Str = "Worshippers of Eldritch Gods emerge among citizens which start a new faction of Gods that is based on fear and horror crawling through vast space of Cosmos"
+
+// SUPERWEAPONS
+ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"
+ID = "STR_POWER_PSIONIC_DECIMATOR_LR"   ;   Str = "Psionic Superweapon Unleashed by Matsuri Yurio"
+ID = "STR_POWER_PSIONIC_LEVITATION"   ;   Str = "Psionic Levitation"
+ID = "STR_POWER_PSIONIC_LEVITATION_LR"   ;   Str = "Psionic Energy Unleashed to Blast Targets"
+
+ID = "STR_POWER_TSUNAMI_GENERATOR"   ;   Str = "Tsunami Generator"
+ID = "STR_POWER_TSUNAMI_GENERATOR_LR"   ;   Str = "Seismic Wave Superweapon Unleashed by Worldbreaker Super Battleship"
+
+// ACTION NAMES
+ID = "STR_ACTION_DEMOLITION_ATTACK"   ;   Str = "Demolition Attack"
+
+ID = "STR_ACTION_SLASHATTACK"   ;   Str = "Slash Attack"
+ID = "STR_ACTION_SPEARTHRUSTATTACK"   ;   Str = "Spear Thrust Attack"
+ID = "STR_ACTION_HEROICBOWATTACK"   ;   Str = "Heroic Bow Attack"
+ID = "STR_ACTION_HEROICJAVELINATTACK"   ;   Str = "Heroic Javelin Attack"
+ID = "STR_ACTION_HEROICTHROWATTACK"   ;   Str = "Heroic Throw Attack"
+
+ID = "STR_ACTION_CLUBSMASHATTACK"   ;   Str = "Club Smash Attack"
+ID = "STR_ACTION_HEAVYSLAMATTACK"   ;   Str = "Heavy Slam Attack"
+ID = "STR_ACTION_SEISMICSLAMATTACK"   ;   Str = "Seismic Slam Attack"
+ID = "STR_ACTION_CLEAVEATTACK"   ;   Str = "Cleave Attack"
+ID = "STR_ACTION_RAPIDFIREATTACK"   ;   Str = "Rapid Fire Attack"
+ID = "STR_ACTION_SERPENTBOWATTACK"   ;   Str = "Serpentbow Attack"
+ID = "STR_ACTION_PIERCINGTHROWATTACK"   ;   Str = "Piercing Throw Attack"
+ID = "STR_ACTION_LIONTHROWATTACK"   ;   Str = "Lion Throw Attack"
+ID = "STR_ACTION_ROCKTHROWATTACK"   ;   Str = "Rock Throw Attack"
+ID = "STR_ACTION_EXPLOSIVEJAVELINATTACK"   ;   Str = "Explosive Javelin Attack"
+ID = "STR_ACTION_SKYDIVEATTACK"   ;   Str = "Skydive Attack"
+ID = "STR_ACTION_GORGONSGAZEATTACK"   ;   Str = "Gorgon's Gaze Attack"
+ID = "STR_ACTION_DISTANCINGATTACK"   ;   Str = "Distancing Attack"
+
+ID = "STR_ACTION_AXESWINGATTACK"   ;   Str = "Axe Swing Attack"
+
+// XL MAPS
+ID = "STR_MAP_ACROPOLIS_COLOSSAL_NAME" ;   Str = "Acropolis Colossal Map"
+ID = "STR_MAP_AIR_COLOSSAL_NAME" ;   Str = "Air Colossal Map"
+ID = "STR_MAP_ALFHEIM_COLOSSAL_NAME" ;   Str = "Alfheim Colossal Map"
+ID = "STR_MAP_ANATOLIA_COLOSSAL_NAME" ;   Str = "Anatolia Colossal Map"
+ID = "STR_MAP_ARCHIPELAGO_COLOSSAL_NAME" ;   Str = "Archipelago Colossal Map"
+ID = "STR_MAP_ARENA_COLOSSAL_NAME" ;   Str = "Arena Colossal Map"
+ID = "STR_MAP_BAMBOO_GROVE_COLOSSAL_NAME" ;   Str = "Bamboo Grove Colossal Map"
+ID = "STR_MAP_BLACK_SEA_COLOSSAL_NAME" ;   Str = "Black Sea Colossal Map"
+ID = "STR_MAP_BLUE_LAGOON_COLOSSAL_NAME" ;   Str = "Blue Lagoon Colossal Map"
+ID = "STR_MAP_ELYSIUM_COLOSSAL_NAME" ;   Str = "Elysium Colossal Map"
+ID = "STR_MAP_EREBUS_COLOSSAL_NAME" ;   Str = "Erebus Colossal Map"
+ID = "STR_MAP_GHOST_LAKE_COLOSSAL_NAME" ;   Str = "Ghost Lake Colossal Map"
+ID = "STR_MAP_GIZA_COLOSSAL_NAME" ;   Str = "Giza Colossal Map"
+ID = "STR_MAP_GOLD_RUSH_COLOSSAL_NAME" ;   Str = "Gold Rush Colossal Map"
+ID = "STR_MAP_GREAT_WALL_COLOSSAL_NAME" ;   Str = "Great Wall Colossal Map"
+ID = "STR_MAP_HIGHLAND_COLOSSAL_NAME" ;   Str = "Highland Colossal Map"
+ID = "STR_MAP_IRONWOOD_COLOSSAL_NAME" ;   Str = "Ironwood Colossal Map"
+ID = "STR_MAP_ISLANDS_COLOSSAL_NAME" ;   Str = "Islands Colossal Map"
+ID = "STR_MAP_JOTUNHEIM_COLOSSAL_NAME" ;   Str = "Jotunheim Colossal Map"
+ID = "STR_MAP_KERLAUGAR_COLOSSAL_NAME" ;   Str = "Kerlaugar Colossal Map"
+ID = "STR_MAP_LAND_UNKNOWN_COLOSSAL_NAME" ;   Str = "Land Unknown Colossal Map"
+ID = "STR_MAP_MARSH_COLOSSAL_NAME" ;   Str = "Marsh Colossal Map"
+ID = "STR_MAP_MEDITERRANEAN_COLOSSAL_NAME" ;   Str = "Mediterranean Colossal Map"
+ID = "STR_MAP_MEGALOPOLIS_COLOSSAL_NAME" ;   Str = "Megalopolis Colossal Map"
+ID = "STR_MAP_MIDGARD_COLOSSAL_NAME" ;   Str = "Midgard Colossal Map"
+ID = "STR_MAP_MIRAGE_COLOSSAL_NAME" ;   Str = "Mirage Colossal Map"
+ID = "STR_MAP_MIRKWOOD_COLOSSAL_NAME" ;   Str = "Mirkwood Colossal Map"
+ID = "STR_MAP_MOUNT_OLYMPUS_COLOSSAL_NAME" ;   Str = "Mount Olympus Colossal Map"
+ID = "STR_MAP_MUSPELLHEIM_COLOSSAL_NAME" ;   Str = "Muspellheim Colossal Map"
+ID = "STR_MAP_NILE_SHALLOWS_COLOSSAL_NAME" ;   Str = "Nile Shallows Colossal Map"
+ID = "STR_MAP_NOMAD_COLOSSAL_NAME" ;   Str = "Nomad Colossal Map"
+ID = "STR_MAP_OASIS_COLOSSAL_NAME" ;   Str = "Oasis Colossal Map"
+ID = "STR_MAP_PEACH_BLOSSOM_LAND_COLOSSAL_NAME" ;   Str = "Peach Blossom Land Colossal Map"
+ID = "STR_MAP_QINGHAI_LAKE_COLOSSAL_NAME" ;   Str = "Qinghai Lake Colossal Map"
+ID = "STR_MAP_RIVER_NILE_COLOSSAL_NAME" ;   Str = "River Nile Colossal Map"
+ID = "STR_MAP_RIVER_STYX_COLOSSAL_NAME" ;   Str = "River Styx Colossal Map"
+ID = "STR_MAP_SAVANNAH_COLOSSAL_NAME" ;   Str = "Savannah Colossal Map"
+ID = "STR_MAP_SEA_OF_WORMS_COLOSSAL_NAME" ;   Str = "Sea Of Worms Colossal Map"
+ID = "STR_MAP_SILK_ROAD_COLOSSAL_NAME" ;   Str = "Silk Road Colossal Map"
+ID = "STR_MAP_STEPPE_COLOSSAL_NAME" ;   Str = "Steppe Colossal Map"
+ID = "STR_MAP_TEAM_MIGRATION_COLOSSAL_NAME" ;   Str = "Team Migration Colossal Map"
+ID = "STR_MAP_THE_UNKNOWN_COLOSSAL_NAME" ;   Str = "The Unknown Colossal Map"
+ID = "STR_MAP_TINY_COLOSSAL_NAME" ;   Str = "Tiny Colossal Map"
+ID = "STR_MAP_TUNDRA_COLOSSAL_NAME" ;   Str = "Tundra Colossal Map"
+ID = "STR_MAP_VALLEY_OF_KINGS_COLOSSAL_NAME" ;   Str = "Valley Of Kings Colossal Map"
+ID = "STR_MAP_VINLANDSAGA_COLOSSAL_NAME" ;   Str = "Vinlandsaga Colossal Map"
+ID = "STR_MAP_WATERING_HOLE_COLOSSAL_NAME" ;   Str = "Watering Hole Colossal Map"
+ID = "STR_MAP_YELLOW_RIVER_COLOSSAL_NAME" ;   Str = "Yellow River Colossal Map"
+
+ID = "STR_MAP_NAVAL_COLOSSAL_NAME" ;   Str = "Naval Colossal Maps"
+ID = "STR_MAP_LAND_COLOSSAL_NAME" ;   Str = "Land Colossal Maps"
+ID = "STR_RANDOM_MAP_SET_COLOSSAL_NAME" ;   Str = "Random Colossal Maps"
+ID = "STR_STANDARD_MAP_SET_COLOSSAL_NAME" ;   Str = "Standard Colossal Maps"
+ID = "STR_QUICK_MATCH_MAP_SET_COLOSSAL_NAME" ;   Str = "Quick Match Colossal Maps"

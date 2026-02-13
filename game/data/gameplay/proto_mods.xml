@@ -540,7 +540,6 @@
         <unittype>LogicalTypeVillagersAttack</unittype>
         <unittype>LogicalTypeMinimapFilterMilitary</unittype>
         <unittype>LogicalTypeClassicalMythUnit</unittype>
-        <unittype>BuildLimitSharedGreek</unittype>
 
         <unittype>MilitaryUnit</unittype>
         <unittype>UnitClass</unittype>
@@ -559,14 +558,9 @@
         <unittype>LogicalTypeValidMeteorTarget</unittype>
         <unittype>LogicalTypeValidTornadoAttack</unittype>
         <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
-        <unittype>LogicalTypeMythUnitNotTitan</unittype>
         <unittype>LogicalTypeValidSpyTarget</unittype>
-        <unittype>LogicalTypeValidFrostTarget</unittype>
-        <unittype>LogicalTypeValidTraitorTarget</unittype>
         <unittype>LogicalTypeHealed</unittype>
         <unittype>LogicalTypeValidShockwaveTarget</unittype>
-        <unittype>LogicalTypeFreezableMythUnit</unittype>
-        <unittype>LogicalTypeMythUnitNotFlying</unittype>
         <unittype>LogicalTypeValidEidolon</unittype>
         <flag>CollidesWithProjectiles</flag>
         <flag>CorpseDecays</flag>
@@ -1220,6 +1214,302 @@
     
     <!-- Greek Hero Units-->
     <!-- Greek Myth Units-->
+     <unit name="Pegasus">		
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<tactics>delayed_transform.tactics</tactics>
+		<protoaction>
+			<name>DelayedTransform</name>
+			<modifyduration>2500</modifyduration>
+			<modifyprotoid>PegasusGroundedMessenger</modifyprotoid>
+		</protoaction>
+	</unit>
+	<unit name="PegasusWingedMessenger">
+		<unittype>TradeUnit</unittype>
+		<carrycapacity resourcetype="Gold">1000.0000</carrycapacity>
+		<tactics>trade.tactics</tactics>
+		<protoaction>
+			<name>Trade</name>
+			<modifyamount>0.01</modifyamount>
+			<maxrange>1.5</maxrange>
+			<rate type="AbstractTownCenter">0.630000</rate>
+			<rate type="Market">0.001000</rate>
+		</protoaction>
+	</unit>			
+	<unit name="Minotaur">
+		<maxvelocity>5.2000</maxvelocity>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+	</unit>
+	<unit name="Centaur">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+	</unit>
+	<unit name="Medusa">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.700000</rof>
+			<damage type="Pierce">35.000000</damage>
+			<damage type="Crush">1.000000</damage>
+			<damagebonus type="MythUnit">8.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+		</protoaction>
+		<protoaction>
+			<name>FreezeAttack</name>
+			<rof>1.700000</rof>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileBallOfFireInvisible</projectile>
+			<onhiteffect type="Freeze" freezetype="StoneDamage" duration="8.000000" damage="400.000000"></onhiteffect>
+			<onhiteffect type="StatModify" duration="15.000000">
+				<modify type="ArmorSpecific" dmgtype="Pierce">1.300000</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack">1.300000</modify>
+				<modify type="ArmorSpecific" dmgtype="Crush">0.700000</modify>
+			</onhiteffect>
+			<workonfrozenunits>0</workonfrozenunits>
+		</protoaction>
+	</unit>
+	<unit name="Colossus">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>		
+		<unittype>SiegeLineUpgraded</unittype>		
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.950000</rof>
+			<damage type="Hack">26.000000</damage>
+			<damage type="Crush">65.000000</damage>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+			<impacteffect>effects\impacts\crush_medium</impacteffect>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+	</unit>
+	<unit name="Hydra">
+		<armor type="Hack" value="0.8700"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.7000"></armor>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.0000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="Damage">3.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="Damage">4.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">4.0000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="Damage">5.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">5.0000</veterancymodify>
+			</rank>
+		</veterancybonus>
+	</unit>
+	<unit name="Carcinos">
+		<armor type="Hack" value="0.7000"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.4000"></armor>
+		<maxvelocity>6.5000</maxvelocity>
+		<movementtype>amphibious</movementtype>		
+		<flag>TieToWaterSurface</flag>
+		<flag>TieToGround</flag>
+		<flag>AmphibiousBirth</flag>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="Speed" applytype="Multiply">0.5</chargedmodify>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Land</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+		</protoaction>
+	</unit>
+	<unit name="NemeanLion">
+		<armor type="Hack" value="0.8000"></armor>
+		<armor type="Pierce" value="0.9400"></armor>
+		<armor type="Crush" value="0.3000"></armor>
+		<impacttype>Armoured</impacttype>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.800000</rof>
+			<damage type="Hack">22.000000</damage>
+			<damage type="Crush">11.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+		  <name stringid="STR_ABILITY_NEMEAN_LION">ChannelAttack</name>
+		  <rof>3.000000</rof>
+		  <damage type="Hack">10.000000</damage>
+		  <damagearea>4.000000</damagearea>
+		  <damageflags>Nature|Enemy</damageflags>
+		  <damagebonus type="Hero">0.500000</damagebonus>
+		  <maxrange>2.000000</maxrange>
+		  <onhiteffect type="Snare" duration="3.00" rate="0.50"></onhiteffect>
+		  <onhiteffect type="Stun" duration="1.00"></onhiteffect>
+		  <onhiteffect type="Throw">
+			<target attacktype="HumanSoldier"></target>
+			<target attacktype="AbstractVillager"></target>
+		  </onhiteffect>
+		</protoaction>
+	</unit>
+	<unit name="Cyclops">
+		<initialhitpoints>700.0000</initialhitpoints>
+		<maxhitpoints>700.0000</maxhitpoints>
+		<armor type="Hack" value="0.8000"></armor>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">40.000000</damage>
+			<damage type="Crush">40.000000</damage>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="AbstractInfantry">8.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+			<impacteffect>effects\impacts\crush_medium</impacteffect>
+			<onhiteffect type="Throw">
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="AbstractVillager"></target>
+				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
+		  </onhiteffect>
+		</protoaction>
+	</unit>
+	<unit name="HadesShade">
+		<populationcount>0</populationcount>
+
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		
+		<movementtype>amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+		
+		<armor type="Hack" value="0.9900"></armor>
+		<armor type="Pierce" value="0.9900"></armor>
+		<armor type="Crush" value="0.3000"></armor>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.500000</rof>
+			<damage type="Divine">0.100000</damage>
+			<damagebonus type="HumanSoldier">80.000000</damagebonus>
+			<damagebonus type="AbstractVillager">160.000000</damagebonus>
+			<damagebonus type="Hero">0.00100</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+	</unit>
+	
+	<unit name="Sentinel">		
+		<displaynameid>STR_UNIT_SENTINEL_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SENTINEL_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_SENTINEL_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\sentinel_icon.png</icon>
+		<animfile>greek\units\archery\sentinel\sentinel.xml</animfile>
+		<soundsetfile>greek\vo\sentinel\sentinel.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.5000</selectionradiusx>
+		<selectionradiusz>1.5000</selectionradiusz>
+		<impacttype>Stone</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>22.0000</autoattackrange>
+		<movementtype>Amphibious</movementtype>
+		<turnrate>9.0000</turnrate>
+		<initialhitpoints>400.0000</initialhitpoints>
+		<maxhitpoints>400.0000</maxhitpoints>
+		<buildpoints>45.0000</buildpoints>
+		<los>26.0000</los>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<culture>Greek</culture>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+	
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+
+		<unittype>MilitaryBuilding</unittype>		
+		<unittype>BuildingClass</unittype>
+		<unittype>Building</unittype>	
+		<unittype>AbstractTower</unittype>	
+
+		<unittype>MilitaryUnit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitRanged</unittype>
+
+		<unittype>Unit</unittype>	
+		<unittype>UnitClass</unittype>	
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeBuildingsThatShoot</unittype>
+		<unittype>LogicalTypeBuildingNotWonderOrTitan</unittype>
+		
+		<flag>RotateInPlace</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DisplayRange</flag>
+		<flag>Doppled</flag>
+		<flag>Immoveable</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>SnapPlacement</flag>
+		<flag>PlaceAnywhere</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<!---->
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">20.000000</damage>
+			<damage type="Crush">5.000000</damage>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileSiegeCrossbowArrow</projectile>
+			
+			<onhiteffect type="Throw"><target attacktype="AbstractVillager"></target></onhiteffect>	 
+			<onhiteffect type="Freeze" freezetype="StoneDamage" duration="3.000000" damage="0.1"></onhiteffect>  
+		</protoaction>
+	</unit>
     <!-- Greek Military Units-->
     <!-- Greek Naval Units-->
     <!-- Greek Buildings-->
@@ -1247,5 +1537,83 @@
     <!-- Japanese Military Units-->
     <!-- Japanese Naval Units-->
     <!-- Japanese Buildings-->
+
+    <!-- SPECIAL MCMT RETOLD CUSTOM UNITS -->
+    <unit name="PegasusGroundedMessenger">
+		<displaynameid>STR_UNIT_PEGASUS_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_PEGASUS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_PEGASUS_SR</shortrollovertextid>
+		<editornameid>STR_UNIT_PEGASUS_WINGED_MESSENGER_EDT_NAME</editornameid>
+		<icon>resources\greek\player_color\units\pegasus_icon.png</icon>
+		<animfile>greek\units\myth\pegasus\pegasus.xml</animfile>
+		<soundsetfile>greek\vo\pegasus\pegasus.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>Passive</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<turnrate>9.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<trainpoints>6.0000</trainpoints>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.2500</maxvelocity>
+		<los>18.0000</los>
+		<cost resourcetype="Gold">50.0000</cost>
+		<cost resourcetype="Favor">2.0000</cost>
+		<armor type="Hack" value="0.5600"></armor>
+		<armor type="Pierce" value="0.5500"></armor>
+		<armor type="Crush" value="0.6000"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeArchaicMythUnit</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		
+		<unittype>MilitaryUnit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitCavalry</unittype>
+		<unittype>AbstractScout</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeEasySelectAvoid</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>ExcludeFromIdleQuery</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>GroupSelection</flag>
+		<flag>CorpseDecays</flag>
+		<flag>IgnoreForFavoriteUnitCount</flag>
+		<flag>HideGarrisonFlag</flag>
+
+		<maxcontained>1</maxcontained>
+		<contain>AbstractInfantry</contain>
+		<notcontain>MythUnit</notcontain>
+		<notcontain>AbstractCavalry</notcontain>
+		<notcontain>MythUnit</notcontain>
+		<notcontain>AbstractSiegeWeapon</notcontain>
+		<notcontain>Ship</notcontain>
+		<notcontain>Resource</notcontain>
+		
+		<tactics>delayed_transform.tactics</tactics>
+		<protoaction>
+			<name>DelayedTransform</name>
+			<modifyduration>2500</modifyduration>
+			<modifyprotoid>Pegasus</modifyprotoid>
+		</protoaction>
+    </unit>
      
 </protomods>

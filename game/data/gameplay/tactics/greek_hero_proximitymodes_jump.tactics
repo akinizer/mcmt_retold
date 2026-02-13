@@ -1,0 +1,58 @@
+<tactics>
+  <action>
+    <name>HandAttack</name>
+    <type>Attack</type>
+    <rate type="LogicalTypeHandUnitsAttack">1.0</rate>
+    <attackaction>1</attackaction>
+    <handlogic>1</handlogic>
+    <forceareaattacktarget>1</forceareaattacktarget>
+    <anim>HandAttack</anim>
+    <onhiteffect type="Snare" duration="2" rate="0.85">
+    </onhiteffect>
+    <impacteffect>effects\impacts\hack</impacteffect>
+  </action>
+  <action>
+    <name>RangedAttack</name>
+    <type>Attack</type>
+    <attackaction>1</attackaction>
+    <rangedlogic>1</rangedlogic>
+    <anim>RangedAttack</anim>
+    <accuracy>0.8</accuracy>
+    <maxspread>5.0</maxspread>
+    <spreadfactor>0.25</spreadfactor>
+    <trackrating>1.0</trackrating>
+    <impacteffect>effects\impacts\pierce</impacteffect>
+    <rate type="AbstractFlyingUnit">1.0</rate>
+  </action>
+  <action>
+    <name>RangedAttackLand</name>
+    <type>Attack</type>
+    <attackaction>1</attackaction>
+    <rangedlogic>1</rangedlogic>
+    <anim>RangedAttack</anim>
+    <accuracy>0.8</accuracy>
+    <maxspread>5.0</maxspread>
+    <spreadfactor>0.25</spreadfactor>
+    <trackrating>1.0</trackrating>
+    <impacteffect>effects\impacts\pierce</impacteffect>
+    <rate type="AbstractFlyingUnit">0.0</rate>
+    <rate type="Building">1.0</rate>
+    <rate type="NavalUnit">1.0</rate>
+  </action>
+   <action>
+    <name>JumpAttack</name>
+    <type>JumpAttack</type>
+    <rate type="Unit">1.0</rate>
+    <attackaction>1</attackaction>
+    <handlogic>1</handlogic>
+    <anim>JumpAttack</anim>
+    <chargeaction>1</chargeaction>
+    <impacteffect>effects\impacts\hack</impacteffect>
+  </action>
+  <tactic>Default
+    <action priority="100">RangedAttack</action>
+    <action priority="90">RangedAttackLand</action>
+    <action priority="80">JumpAttack</action>
+    <action priority="70">HandAttack</action>
+    <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>
