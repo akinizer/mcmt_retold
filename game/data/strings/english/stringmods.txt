@@ -3,6 +3,11 @@ ID = "STR_UNIT_KINGLYCAON_WOLF_NAME"   ;   Str = "King Lycaon (Hero)"
 ID = "STR_UNIT_KINGLYCAON_WOLF_SR"   ;   Str = "King of Arcadia"
 ID = "STR_UNIT_KINGLYCAON_WOLF_LR"   ;   Str = "King of Arcadia"
 
+// JAPANESE EXPANSION
+ID = "STR_UNIT_ASURENDA_NAME"   ;   Str = "Asurendra (Hero)"
+ID = "STR_UNIT_ASURENDA_SR"   ;   Str = "Leader of Asuras"
+ID = "STR_UNIT_ASURENDA_LR"   ;   Str = "Leader of Asuras"
+
 // DEMIGODS
 ID = "STR_UNIT_SON_OF_HORUS_NAME"  ;   Str = "Son of Horus"
 ID = "STR_UNIT_TITAN_CERBERUS_NAME"  ;   Str = "Cerberus (Titan)"

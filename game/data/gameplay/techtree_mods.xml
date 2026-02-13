@@ -5,6 +5,7 @@
     <tech name="ArchaicAgeEgyptian"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
     <tech name="ArchaicAgeNorse"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
     <tech name="ArchaicAgeChinese"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects>	</tech>
+    <tech name="ArchaicAgeJapanese"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects>	</tech>
 
     <tech name="MCMT_Techs" mergeMode="add">
       <status>UNOBTAINABLE</status>
@@ -21,10 +22,14 @@
       <effects>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
 				  <target type="ProtoUnit">KingLycaon</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				  <target type="ProtoUnit">Asurendra</target></effect>
       </effects>
       <!-- MythUnit -->
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
 				<target type="ProtoUnit">PegasusGroundedMessenger</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">MummyFallen</target></effect>
     </tech> 
 
     <tech name="MCMT_Researches" mergeMode="add">
