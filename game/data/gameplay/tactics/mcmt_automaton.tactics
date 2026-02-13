@@ -24,17 +24,10 @@
     <anim>Heal</anim>
     <maxrange>0.2</maxrange>
   </action>
-  <action>
-    <name stringid="STR_ACTION_REPAIR">Repair</name>
-    <type>Repair</type>
-    <anim>Heal</anim>
-    <maxrange>0.2</maxrange>
-  </action>
   <tactic>Default
     <action priority="100">HandAttack</action>
     <action priority="90">Heal</action>
-    <action>Build</action>
-    <action>Repair</action>
+    <action priority="80">Build</action>
     <attacktype>LogicalTypeHandUnitsAttack</attacktype>
     <autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
     <attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>

@@ -7,13 +7,13 @@
     <tech name="ArchaicAgeChinese"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects>	</tech>
 
     <tech name="MCMT_Techs" mergeMode="add">
-		<status>UNOBTAINABLE</status>
-		<effects>
-			<effect type="TechStatus" status="active" mergeMode="add">MCMT_SpecialUnits</effect>
-			<effect type="TechStatus" status="active" mergeMode="add">MCMT_Researches</effect>
-			<effect type="TechStatus" status="active" mergeMode="add">MCMT_UnitAccelPanels</effect>
-		</effects>
-	</tech>
+      <status>UNOBTAINABLE</status>
+      <effects>
+        <effect type="TechStatus" status="active" mergeMode="add">MCMT_SpecialUnits</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">MCMT_Researches</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">MCMT_UnitAccelPanels</effect>
+      </effects>
+    </tech>
 
     <tech name="MCMT_SpecialUnits" mergeMode="add">
       <status>UNOBTAINABLE</status>
@@ -28,17 +28,18 @@
     </tech> 
 
     <tech name="MCMT_Researches" mergeMode="add">
-		<status>UNOBTAINABLE</status>
-		<effects></effects>
-    </tech>
+      <status>UNOBTAINABLE</status>
+      <effects></effects>
+      </tech>
 
-    <tech name="MCMT_UnitAccelPanels" mergeMode="add">
-		<status>UNOBTAINABLE</status>
-		<effects>			
-			<effect type="TechStatus" status="obtainable">MCMT_Page2</effect>
-			<effect type="TechStatus" status="obtainable">MCMT_Page1</effect>
-		</effects>
-	</tech>
+      <tech name="MCMT_UnitAccelPanels" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <effects>			
+        <effect type="TechStatus" status="obtainable">MCMT_Page2</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_Page1</effect>
+        <effect type="TechStatus" status="obtainable">AutomatonAccel</effect>
+      </effects>
+    </tech>
 
     <tech name="MCMT_Page1" mergeMode="add">
         <displaynameid>STR_TECH_MCMT_PAGE_1</displaynameid>
@@ -59,6 +60,27 @@
         <flag>NoTextMessage</flag>
         <effects></effects>
     </tech>
+
+    <!-- UNIT ACCEL REWORKS -->
+
+    <!-- Greek -->
+
+    <tech name="AutomatonAccel" mergeMode="add">
+        <displaynameid>STR_TECH_MCMT_PAGE_1</displaynameid>
+        <researchpoints>0.0000</researchpoints>
+        <status>UNOBTAINABLE</status>
+        <icon>resources\front_end\GodsPage\Arrow_Button_L_On.png</icon>
+        <flag>InfiniteTech</flag>
+        <flag>NoTextMessage</flag>
+        <effects>
+          <!-- Automaton Single Page-->
+			    <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Armory" row="1" column="4" relativity="Assign"><target type="ProtoUnit">Automaton</target></effect>
+        </effects>
+    </tech>
+
+    <!-- TECH REWORKS -->
+
+    <!-- Greek -->
     <tech name="PredatoryInstinct" orderhint="4" mergeMode="replace">
       <displaynameid>STR_TECH_PREDATORY_INSTINCT_NAME</displaynameid>
       <rollovertextid>STR_TECH_PREDATORY_INSTINCT_LR</rollovertextid>

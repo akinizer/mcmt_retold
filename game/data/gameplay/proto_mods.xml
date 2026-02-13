@@ -1207,10 +1207,7 @@
         <command row="3" column="5">Delete</command>
     </unit>
 
-    <!-- MCMT CONTENT -->
-
-    <!-- Special Units-->
-    <!-- Special Buildings-->
+   
     
     <!-- Greek Hero Units-->
     <!-- Greek Myth Units-->
@@ -1510,9 +1507,272 @@
 			<onhiteffect type="Freeze" freezetype="StoneDamage" duration="3.000000" damage="0.1"></onhiteffect>  
 		</protoaction>
 	</unit>
+
     <!-- Greek Military Units-->
     <!-- Greek Naval Units-->
     <!-- Greek Buildings-->
+
+    <!-- Atlantean Hero Units-->
+    <!-- Atlantean Myth Units-->
+     <unit name="Satyr">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">20.000000</damage>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileArrowCentaurAttack</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<passthrough>1</passthrough>
+			<passthroughbuildings>1</passthroughbuildings>
+			<maxheight>2</maxheight>
+			<perfectaccuracy>1</perfectaccuracy>
+			<launchpoint>ChargeAttackLaunchPoint</launchpoint>
+		</protoaction>
+	</unit>
+	<unit name="Centimanus">
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">55.000000</damage>
+			<damage type="Crush">60.000000</damage>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<damagebonus type="AbstractTitan">10.000000</damagebonus>
+			<maxrange>0.500000</maxrange>			
+		</protoaction>
+		<protoaction>
+			<name>ShockwaveAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">120.000000</damage>
+			<damage type="Crush">0.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<damagebonus type="AbstractTitan">20.000000</damagebonus>
+			<maxrange>5.000000</maxrange>
+			<workonfrozenunits>0</workonfrozenunits>
+			<maxsizeclass>6</maxsizeclass>
+		</protoaction>
+	</unit>
+	<unit name="Nereid">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<protoaction>
+		  <name>ChargedHandAttack</name>
+		  <rof>3.000000</rof>
+		  <damage type="Hack">150.00000</damage>
+		  <damagebonus type="MythUnit">6.000000</damagebonus>
+		  <damagebonus type="Hero">0.500000</damagebonus>
+		  <maxrange>1.000000</maxrange>
+		  <onhiteffect type="Throw">
+			<target attacktype="HumanSoldier"></target>
+			<target attacktype="AbstractVillager"></target>
+			<target attacktype="AbstractFishingShip"></target>
+		  </onhiteffect>
+		  <onhiteffect type="DamageOverTime" targetunittype="HumanSoldier" duration="3.000000">
+        	<damage type="Divine">1.50000</damage>
+      	  </onhiteffect> 
+		  <onhiteffect type="Attach" targetunittype="HumanSoldier" proto="VFXBleed" attachbone="spine" duration="3.000000"></onhiteffect>
+		</protoaction>		
+	</unit>
+	<unit name="Automaton" mergemode="replace">
+		<displaynameid>STR_UNIT_AUTOMATON_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_AUTOMATON_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_AUTOMATON_SR</shortrollovertextid>
+		<icon>resources\atlantean\player_color\units\automaton_icon.png</icon>
+		<animfile>atlantean\units\myth\automaton\automaton.xml</animfile>
+		<soundsetfile>atlantean\vo\automaton\automaton.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>230.0000</initialhitpoints>
+		<maxhitpoints>230.0000</maxhitpoints>
+		<trainpoints>10.0000</trainpoints>
+		<weightclass>6</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.2000</maxvelocity>
+		<los>16.0000</los>
+
+		<cost resourcetype="Gold">90.0000</cost><cost resourcetype="Favor">6.0000</cost>
+		<armor type="Hack" value="0.3000"></armor><armor type="Pierce" value="0.5500"></armor><armor type="Crush" value="0.8000"></armor>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeClassicalMythUnit</unittype>
+
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitMelee</unittype>
+
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>RecoverableDeathHeal</flag>
+		<flag>CanAutoHeal</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>PreventRespawn</flag>
+
+		<flag>AbilitiesOnBothPages</flag>
+		<flag>ForceBuildingData</flag>
+		<unittype>LogicalTypeNorseSoldierThatBuilds</unittype>
+		
+		<tactics>mcmt_automaton.tactics</tactics>
+		<protoaction>
+		<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">11.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Heal</name>
+			<type>Heal</type>
+			<maxrange>0.500000</maxrange>
+			<rate type="Automaton">15.00000</rate>
+			<rate type="AbstractSiegeWeapon">5.00000</rate>
+			<rate type="Ship">5.00000</rate>	
+			<rate type="Armory">100.0000</rate>	
+			<donotignoredead>1</donotignoredead>
+		</protoaction>
+		<protoaction>
+			<name>Build</name>
+			<rate type="Armory">100.0000</rate>	
+		</protoaction>		
+	</unit>
+	<unit name="Behemoth">
+		<unitregen>6</unitregen>
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<movementtype>amphibious</movementtype>		
+		<flag>TieToWaterSurface</flag>
+	</unit>
+	<unit name="Argus">
+		<movementtype>amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+	</unit>
+	<unit name="ManOWar">
+		<protoaction>
+			<name>LightningAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Divine">35.00000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>20.000000</maxrange>
+			<numberbounces>3</numberbounces>
+			<onhiteffect type="Stun" duration="1.00"></onhiteffect>
+		</protoaction>	
+	</unit>
+	<unit name="Caladria">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<protoaction>
+			<name>Heal</name>
+			<type>Heal</type>
+			<maxrange>20.000000</maxrange>
+			<rate type="LogicalTypeHealed">15.00000</rate>
+			<slowhealmultiplier>0.50</slowhealmultiplier>
+		</protoaction>
+		<protoaction>
+			<name>Pacify</name>
+			<rof>3.5</rof>
+			<maxrange>15.000000</maxrange>
+			<onhiteffect type="StatModify" duration="5.000000">
+				<modify type="ROF">5.000000</modify>
+				<modify type="Speed">0.500000</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXCaladriaPacify" attachbone="spine" duration="5.000000"></onhiteffect>
+			<exclusive>1</exclusive>
+		</protoaction>
+	</unit>
+	<unit name="Lampades">
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<buildlimit>3</buildlimit>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Pierce">24.000000</damage>
+			<damage type="Divine">20.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<damagebonus type="Hero">2.000000</damagebonus>
+			<maxrange>22.000000</maxrange>
+			<projectile>ProjectileLampadesBolt</projectile>
+		</protoaction>
+		<protoaction>
+			<name>TransfigurationAttack</name>
+			<rof>2.000000</rof>
+			<maxrange>14.000000</maxrange>
+			<active>0</active>
+			<onhiteffect type="MutateNature" proto="ChickenExploding"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<damage type="Divine">200.000000</damage>
+			<damagearea>15.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">2.000000</damagebonus>
+		</protoaction>
+	</unit>
+	<unit name="Servant">
+		<cost resourcetype="Favor">10.0000</cost>
+	</unit>
+	<unit name="Promethean">
+		<populationcount>1</populationcount>
+		<cost resourcetype="Food">40.0000</cost>
+		<cost resourcetype="Favor">1.0000</cost>
+	</unit>
+    
+    <!-- Atlantean Military Units-->
+    <!-- Atlantean Naval Units-->
+    <!-- Atlantean Buildings-->
 
     <!-- Egyptian Hero Units-->
     <!-- Egyptian Myth Units-->
@@ -1536,10 +1796,13 @@
     <!-- Japanese Myth Units-->
     <!-- Japanese Military Units-->
     <!-- Japanese Naval Units-->
-    <!-- Japanese Buildings-->
-
-    <!-- SPECIAL MCMT RETOLD CUSTOM UNITS -->
-    <unit name="PegasusGroundedMessenger">
+    <!-- Japanese Buildings--> 
+     
+    <!-- MCMT CONTENT -->
+    
+    <!-- Special Buildings-->
+    <!-- Special Units-->
+        <unit name="PegasusGroundedMessenger">
 		<displaynameid>STR_UNIT_PEGASUS_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_PEGASUS_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_PEGASUS_SR</shortrollovertextid>
