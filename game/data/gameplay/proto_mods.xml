@@ -1785,6 +1785,109 @@
 	</unit>
     
     <!-- Atlantean Military Units-->
+    <unit name="FireSiphon" mergeMode="replace">
+		<displaynameid>STR_UNIT_FIRE_SIPHON_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_FIRE_SIPHON_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_FIRE_SIPHON_SR</shortrollovertextid>
+		<icon>resources\atlantean\player_color\units\fire_siphon_icon.png</icon>
+		<animfile>atlantean\units\siege\fire_siphon\fire_siphon.xml</animfile>
+		<soundsetfile>atlantean\vo\fire_siphon\fire_siphon.xml</soundsetfile>
+		<obstructionradiusx>1.4900</obstructionradiusx>
+		<obstructionradiusz>1.4900</obstructionradiusz>
+		<selectionradiusx>2.2500</selectionradiusx>
+		<selectionradiusz>2.2500</selectionradiusz>
+		<impacttype>Wood</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>350.0000</initialhitpoints>
+		<maxhitpoints>350.0000</maxhitpoints>
+		<trainpoints>19.0000</trainpoints>
+		<weightclass>8</weightclass>
+		<populationcount>5</populationcount>
+		<maxvelocity>2.9000</maxvelocity>
+		<los>20.0000</los>
+		<cost resourcetype="Wood">275.0000</cost>
+		<cost resourcetype="Gold">180.0000</cost>
+		<armor type="Hack" value="0.0500"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.6500"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeAutoAttackFocusBuildings</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<flag>OrientUnitWithGround</flag>
+		<flag>RotateInPlace</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>ConstrainOrientation</flag>
+		<flag>DisplayMinimumRange</flag>
+		<flag>DisplayRange</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>mcmt_firesiphon.tactics</tactics>
+		<protoaction>
+			<name>FlameAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damage type="Crush">100.000000</damage>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>20.000000</maxrange>
+			<projectile>ProjectileFireGiantSpecialAttack</projectile>
+			<numberprojectiles>4</numberprojectiles>
+			<impacteffect>effects\impacts\fireball</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.700000</rof>
+			<damage type="Hack">60.000000</damage>
+			<damage type="Divine">5.000000</damage>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileFireSiphonFire</projectile>
+		</protoaction>		
+		<protoaction>
+			<name>PetrificationBonus</name>
+			<type>IdleStatBonus</type>
+			<modifyamount>0.025000</modifyamount>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyratecap>1.250000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<modifydecay>0.005000</modifydecay>
+			<active>0</active>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+		</protoaction>
+	</unit>
+    
     <!-- Atlantean Naval Units-->
     <!-- Atlantean Buildings-->
 
