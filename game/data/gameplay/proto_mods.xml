@@ -2424,6 +2424,275 @@
   	</unit>
 
     <!-- Norse Military Units-->
+     <!--
+    <unit name="Berserk" mergeMode="add">
+		
+	</unit>-->
+    <unit name="Berserk" mergeMode="replace">
+        <displaynameid>STR_UNIT_BERSERK_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_BERSERK_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_BERSERK_SR</shortrollovertextid>
+        <icon>resources\norse\player_color\units\berserk_icon.png</icon>
+        <animfile>norse\units\infantry\berserk\berserk.xml</animfile>
+        <soundsetfile>norse\vo\berserk\berserk.xml</soundsetfile>
+        <obstructionradiusx>0.4900</obstructionradiusx>
+        <obstructionradiusz>0.4900</obstructionradiusz>
+        <impacttype>Armoured</impacttype>
+        <unitaitype>HandCombative</unitaitype>
+        <movementtype>land</movementtype>
+        <turnrate>18.0000</turnrate>
+        <initialhitpoints>95.0000</initialhitpoints>
+        <maxhitpoints>95.0000</maxhitpoints>
+        <trainpoints>9.0000</trainpoints>
+        <weightclass>5</weightclass>
+        <populationcount>2</populationcount>
+        <maxvelocity>4.8000</maxvelocity>
+        <los>18.0000</los>
+        <cost resourcetype="Food">50.0000</cost>
+        <cost resourcetype="Gold">30.0000</cost>
+        <armor type="Hack" value="0.3500"></armor>
+        <armor type="Pierce" value="0.0500"></armor>
+        <armor type="Crush" value="0.9900"></armor>
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeLandMilitary</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeGarrisonInShips</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+        <unittype>CountsTowardMilitaryScore</unittype>
+        <unittype>Unit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>MilitaryUnit</unittype>
+        <unittype>HumanSoldier</unittype>
+        <unittype>AbstractInfantry</unittype>
+        <unittype>InfantryLineUpgraded</unittype>
+        <unittype>AbstractScout</unittype>
+        <unittype>LogicalTypeConvertsHerds</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+        <unittype>LogicalTypeParticipatesInBattlecries</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        <unittype>LogicalTypeValidTraitorTarget</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>LogicalTypeNorseSoldierThatBuilds</unittype>
+        <unittype>LogicalTypeValidEidolon</unittype>
+        <hotkeycontext>BuildNorseAccel</hotkeycontext>
+        <train row="0" column="0">House</train>
+        <train row="0" column="4">Temple</train>
+        <train row="0" column="5">Dock</train>
+        <train row="1" column="1">Longhouse</train>
+        <train row="1" column="2">GreatHall</train>
+        <train row="1" column="4">Market</train>
+        <train row="1" column="5">Armory</train>
+        <train row="1" column="5">DwarvenArmory</train>
+        <train row="2" column="0">TownCenter</train>
+        <train row="255" column="0">VillageCenter</train>
+        <train row="2" column="1">WallConnector</train>
+        <train row="255" column="255">WallShort</train>
+        <train row="255" column="255">WallMedium</train>
+        <train row="255" column="255">WallLong</train>
+        <train row="2" column="2">SentryTower</train>
+        <train row="2" column="3">HillFort</train>
+        <train row="2" column="5">Wonder</train>
+        <train>TitanGate</train>
+        <train>AsgardianHillFort</train>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>CorpseDecays</flag>
+        <flag>ShowGarrisonButton</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>UnitTransformFree</flag>
+        <flag>MilitaryCommands</flag>
+        <flag>CommonCommands</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+        <command row="3" column="3">Repair</command>
+        <tactics>handattack_idle_stat_bonus.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.700000</rof>
+			<damage type="Hack">6.50000</damage>
+			<maxrange>0.500000</maxrange>
+			<onhiteffect active="0" type="ProgFreeze" duration="5.0" rate="0.10" freezeduration="2.0" targetunittype="HumanSoldier"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>Build</name>
+			<type>Build</type>
+			<maxrange>0.2</maxrange>
+			<anim>Build</anim>
+			<rate type="Building">1.000000</rate>
+			<typedmaxrange type="Dock">2.0</typedmaxrange>
+		</protoaction>
+		<protoaction>
+			<name>Repair</name>
+			<type>Repair</type>
+			<maxrange>0.2</maxrange>
+			<anim>Build</anim>
+			<rate type="AbstractWall">0.2500</rate>
+			<rate type="Building">0.5000</rate>
+			<typedmaxrange type="Dock">2.0</typedmaxrange>
+		</protoaction>
+		<protoaction>
+			<name>IdleDamageBonus</name>
+			<modifyamount>0.00250</modifyamount>
+			<modifyratecap>1.3000</modifyratecap>
+			<modifybase>1.0000</modifybase>
+			<modifydecay>0.00100</modifydecay>
+			<modifytype>Damage</modifytype>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_TECH_FURY_OF_THE_FALLEN_NAME">DeathBoostDamageBonus</name>
+			<type>LikeBonus</type>
+			<modifybase>1.0</modifybase>
+			<maxrange>6</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyprotoid>BerserkDamageBoost</modifyprotoid>
+			<active>0</active>
+			<rate type="BerserkDamageBoost">0.25</rate>
+			<persistent>1</persistent>
+			<modifytype>Damage</modifytype>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+    </unit>
+    
+    <unit name="ThrowingAxeman" mergeMode="replace">
+        <displaynameid>STR_UNIT_THROWING_AXEMAN_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_THROWING_AXEMAN_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_THROWING_AXEMAN_SR</shortrollovertextid>
+        <icon>resources\norse\player_color\units\throwing_axeman_icon.png</icon>
+        <animfile>norse\units\infantry\throwing_axeman\throwing_axeman.xml</animfile>
+        <soundsetfile>norse\vo\throwing_axeman\throwing_axeman.xml</soundsetfile>
+        <obstructionradiusx>0.4900</obstructionradiusx>
+        <obstructionradiusz>0.4900</obstructionradiusz>
+        <impacttype>Armoured</impacttype>
+        <unitaitype>RangedCombative</unitaitype>
+        <autoattackrange>16.0000</autoattackrange>
+        <movementtype>land</movementtype>
+        <turnrate>18.0000</turnrate>
+        <initialhitpoints>65.0000</initialhitpoints>
+        <maxhitpoints>65.0000</maxhitpoints>
+        <trainpoints>15.0000</trainpoints>
+        <weightclass>4</weightclass>
+        <populationcount>2</populationcount>
+        <maxvelocity>4.0000</maxvelocity>
+        <los>16.0000</los>
+        <cost resourcetype="Wood">50.0000</cost>
+        <cost resourcetype="Gold">40.0000</cost>
+        <armor type="Hack" value="0.3000">
+        </armor>
+        <armor type="Pierce" value="0.1500">
+        </armor>
+        <armor type="Crush" value="0.9900">
+        </armor>
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeLandMilitary</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeGarrisonInShips</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+        <unittype>MilitaryUnit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>Unit</unittype>
+        <unittype>HumanSoldier</unittype>
+        <unittype>CountsTowardMilitaryScore</unittype>
+        <unittype>Ranged</unittype>
+        <unittype>AbstractArcher</unittype>
+        <unittype>AbstractInfantry</unittype>
+        <unittype>InfantryLineUpgraded</unittype>
+        <unittype>LogicalTypeValidBoltTarget</unittype>
+        <unittype>LogicalTypeConvertsHerds</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+        <unittype>LogicalTypeParticipatesInBattlecries</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        <unittype>LogicalTypeValidTraitorTarget</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>LogicalTypeNorseSoldierThatBuilds</unittype>
+        <unittype>LogicalTypeValidEidolon</unittype>
+        <hotkeycontext>BuildNorseAccel</hotkeycontext>
+        <train row="0" column="0">House</train>
+        <train row="0" column="4">Temple</train>
+        <train row="0" column="5">Dock</train>
+        <train row="1" column="1">Longhouse</train>
+        <train row="1" column="2">GreatHall</train>
+        <train row="1" column="4">Market</train>
+        <train row="1" column="5">Armory</train>
+        <train row="1" column="5">DwarvenArmory</train>
+        <train row="2" column="0">TownCenter</train>
+        <train row="255" column="0">VillageCenter</train>
+        <train row="2" column="1">WallConnector</train>
+        <train row="255" column="255">WallShort</train>
+        <train row="255" column="255">WallMedium</train>
+        <train row="255" column="255">WallLong</train>
+        <train row="2" column="2">SentryTower</train>
+        <train row="2" column="3">HillFort</train>
+        <train row="2" column="5">Wonder</train>
+        <train>TitanGate</train>
+        <train>AsgardianHillFort</train>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>CorpseDecays</flag>
+        <flag>ShowGarrisonButton</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>MilitaryCommands</flag>
+        <flag>CommonCommands</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+        <command row="3" column="3">Repair</command>
+        <tactics>handattack_axeattack.tactics</tactics>
+        <protoaction>
+			<name>AxeSwingAttack</name>
+			<rof>0.700000</rof>
+			<damage type="Hack">6.50000</damage>
+			<maxrange>0.500000</maxrange>
+			<onhiteffect active="0" type="ProgFreeze" duration="5.0" rate="0.10" freezeduration="2.0" targetunittype="HumanSoldier"></onhiteffect>
+		</protoaction>
+        <protoaction>
+			<name>RangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">6.000000</damage>
+			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
+			<minrange>2.000000</minrange>
+			<maxrange>10.000000</maxrange>
+			<projectile>ProjectileAxeFlaming</projectile>
+			<impacteffect>effects\impacts\pierce_medium</impacteffect>
+			<onhiteffect active="0" type="ProgFreeze" duration="5.0" rate="0.10" freezeduration="2.0" targetunittype="HumanSoldier"></onhiteffect>
+		</protoaction>
+        <protoaction>
+			<name>Build</name>
+			<type>Build</type>
+			<maxrange>0.2</maxrange>
+			<anim>Build</anim>
+			<rate type="Building">1.000000</rate>
+			<typedmaxrange type="Dock">2.0</typedmaxrange>
+		</protoaction>
+		<protoaction>
+			<name>Repair</name>
+			<type>Repair</type>
+			<maxrange>0.2</maxrange>
+			<anim>Build</anim>
+			<rate type="Building">0.5000</rate>
+			<typedmaxrange type="Dock">2.0</typedmaxrange>
+		</protoaction>
+    </unit>
+
     <!-- Norse Naval Units-->
     <!-- Norse Buildings-->
 
