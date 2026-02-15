@@ -97,4 +97,9 @@
 	<PegasusGroundedMessenger>
 		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
 	</PegasusGroundedMessenger>
+	<MasterKensei>
+		<ability>AbilityShinobi<chargetimeasrof>1</chargetimeasrof><castonself>true</castonself></ability>
+		<ability>AbilityShinobiSmokeBomb<auxchargetimeasrof>1</auxchargetimeasrof><castonself>true</castonself><noautocast>true</noautocast></ability>
+		<ability>PassiveLifesteal<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+	</MasterKensei>
 </abilities>

@@ -8,8 +8,18 @@ ID = "STR_UNIT_ASURENDA_NAME"   ;   Str = "Asurendra (Hero)"
 ID = "STR_UNIT_ASURENDA_SR"   ;   Str = "Leader of Asuras"
 ID = "STR_UNIT_ASURENDA_LR"   ;   Str = "Leader of Asuras"
 
+ID = "STR_UNIT_MASTER_KENSEI_NAME"   ;   Str = "Master Kensei (Hero)"
+ID = "STR_UNIT_MASTER_KENSEI_SR"   ;   Str = "Legendary Assassin and Clan Leader"
+ID = "STR_UNIT_MASTER_KENSEI_LR"   ;   Str = "The most skilled warrior in the Shinobi Clan and the assassin that split sky and earth with his cursed blade"
+
+ID = "STR_UNIT_SHINOBI_CLONE_NAME"   ;   Str = "Shinobi Clone"
+ID = "STR_UNIT_SHINOBI_CLONE_SR"   ;   Str = "Ilusion that vanishes in a short time"
+ID = "STR_UNIT_SHINOBI_CLONE_LR"   ;   Str = "Ninjutsu Clone Created by Smoke Bomb and Shadow Clone Technique"
+
+ID = "STR_UNIT_TITAN_YAMATANOOROCHI_NAME"   ;   Str = "Yamata no Orochi (Titan)"
+
 // DEMIGODS
-ID = "STR_UNIT_SON_OF_HORUS_NAME"  ;   Str = "Son of Horus"
+ID = "STR_UNIT_SON_OF_HORUS_NAME"  ;   Str = "Son of Horus (Hero)"
 ID = "STR_UNIT_TITAN_CERBERUS_NAME"  ;   Str = "Cerberus (Titan)"
 ID = "STR_UNIT_TITAN_RA_NAME"  ;   Str = "Ra (Titan)"
 ID = "STR_UNIT_TITAN_YMIR_NAME"  ;   Str = "Ymir (Titan)"
