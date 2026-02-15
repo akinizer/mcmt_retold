@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tactics>
+  <action>
+    <name stringid="STR_ACTION_HAND">HandAttack</name>
+    <type>Attack</type>
+    <rate type="All">1.0</rate>
+    <attackaction>1</attackaction>
+    <handlogic>1</handlogic>
+    <forceareaattacktarget>1</forceareaattacktarget>
+    <anim>HandAttack</anim>
+    <onhiteffect type="Snare" duration="2" rate="0.85">
+    </onhiteffect>
+    <impacteffect>effects\impacts\hack</impacteffect>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_BOOST">AutoBoost</name>
+    <type>AutoBoost</type>
+    <rate type="Unit">1.0</rate>
+    <attackaction>1</attackaction>
+    <handlogic>1</handlogic>
+    <anim>SelfBoost</anim>
+    <chargeaction>1</chargeaction>
+    <onhiteffect type="Snare" duration="2" rate="0.85">
+    </onhiteffect>
+    <impacteffect>effects\impacts\hack</impacteffect>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_SMOKE_BOMB">SmokeBomb</name>
+    <type>AutoBoost</type>
+    <rate type="Unit">1.0</rate>
+    <attackaction>1</attackaction>
+    <handlogic>1</handlogic>
+    <active>0</active>
+    <anim>SmokeBomb</anim>
+    <auxchargeaction>1</auxchargeaction>
+    <impacteffect>effects\impacts\hack</impacteffect>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_BLD_ATK">BuildingAttack</name>
+    <type>Attack</type>
+    <attackaction>1</attackaction>
+    <rangedlogic>1</rangedlogic>
+    <anim>BuildingAttack</anim>
+    <accuracy>0.8</accuracy>
+    <maxspread>5.0</maxspread>
+    <spreadfactor>0.25</spreadfactor>
+    <trackrating>1.0</trackrating>
+    <impacteffect>effects\impacts\crush_medium</impacteffect>
+    <rate type="Building">1.0</rate>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_CHARGE_HAND">ChargedHandAttack</name>
+    <type>Attack</type>
+    <rate type="HumanSoldier">1.0</rate>
+    <rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+    <rate type="LogicalTypeVillagerNotHero">1.0</rate>
+    <rate type="TradeUnit">1.0</rate>
+    <attackaction>1</attackaction>
+    <chargeaction>1</chargeaction>
+    <handlogic>1</handlogic>
+    <anim>ChargedHandAttack</anim>
+    <onhiteffect type="Snare" duration="2" rate="0.85">
+    </onhiteffect>
+    <impacteffect>effects\impacts\hack</impacteffect>
+  </action>
+  <tactic>Default
+    <action priority="100">BuildingAttack</action>
+    <action priority="90">AutoBoost</action>
+    <action priority="80">HandAttack</action>
+    <action priority="70">SmokeBomb</action>
+    <attacktype>LogicalTypeHandUnitsAttack</attacktype>
+    <autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+    <attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+    <attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

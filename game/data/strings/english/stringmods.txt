@@ -1,12 +1,12 @@
 // DEMETER EXPANSION
 ID = "STR_UNIT_KINGLYCAON_WOLF_NAME"   ;   Str = "King Lycaon (Hero)"
 ID = "STR_UNIT_KINGLYCAON_WOLF_SR"   ;   Str = "King of Arcadia"
-ID = "STR_UNIT_KINGLYCAON_WOLF_LR"   ;   Str = "King of Arcadia"
+ID = "STR_UNIT_KINGLYCAON_WOLF_LR"   ;   Str = "The leader of Arcadian Kingdom has been cursed after finding a mysterious object fallen from sky and bearing mark of oni. His rage infected many royal servants and spread through whole nation until a master shinobi taught them how to control their feral instincts"
 
 // JAPANESE EXPANSION
 ID = "STR_UNIT_ASURENDA_NAME"   ;   Str = "Asurendra (Hero)"
 ID = "STR_UNIT_ASURENDA_SR"   ;   Str = "Leader of Asuras"
-ID = "STR_UNIT_ASURENDA_LR"   ;   Str = "Leader of Asuras"
+ID = "STR_UNIT_ASURENDA_LR"   ;   Str = "Demon King of Cosmic Realms and archenemy of Captain Eureka. For a final battle the fate has brought them together"
 
 ID = "STR_UNIT_MASTER_KENSEI_NAME"   ;   Str = "Master Kensei (Hero)"
 ID = "STR_UNIT_MASTER_KENSEI_SR"   ;   Str = "Legendary Assassin and Clan Leader"
@@ -15,6 +15,10 @@ ID = "STR_UNIT_MASTER_KENSEI_LR"   ;   Str = "The most skilled warrior in the Sh
 ID = "STR_UNIT_SHINOBI_CLONE_NAME"   ;   Str = "Shinobi Clone"
 ID = "STR_UNIT_SHINOBI_CLONE_SR"   ;   Str = "Ilusion that vanishes in a short time"
 ID = "STR_UNIT_SHINOBI_CLONE_LR"   ;   Str = "Ninjutsu Clone Created by Smoke Bomb and Shadow Clone Technique"
+
+ID = "STR_UNIT_CAPTAIN_EUREKA_NAME"   ;   Str = "Captain Eureka (Hero)"
+ID = "STR_UNIT_CAPTAIN_EUREKA_SR"   ;   Str = "Commanding Officer of Knight Order"
+ID = "STR_UNIT_CAPTAIN_EUREKA_LR"   ;   Str = "The unyielding success of the infamous fleet overseen by Captain Eureka has defeated many cosmic forces and the army arrived Earth for the final mission. He dreams of a retirement soon and joy of a vacation in Tahiti. His arm has a tatoo of Horus"
 
 ID = "STR_UNIT_TITAN_YAMATANOOROCHI_NAME"   ;   Str = "Yamata no Orochi (Titan)"
 

@@ -26,6 +26,8 @@
 				  <target type="ProtoUnit">Asurendra</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
 				  <target type="ProtoUnit">MasterKensei</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				  <target type="ProtoUnit">CaptainEureka</target></effect>
       </effects>
       <!-- MythUnit -->
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
