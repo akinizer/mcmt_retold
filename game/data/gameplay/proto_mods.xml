@@ -7944,9 +7944,9 @@
         <protoaction>
 			<name>RangedAttack</name>
 			<rof>2.000000</rof>
-			<damage type="Divine">15.000000</damage>
-			<damagebonus type="MythUnit">2.000000</damagebonus>
-			<damagebonus type="Hero">0.250000</damagebonus>
+			<damage type="Divine">30.000000</damage>
+			<damagebonus type="HumanSoldier">2.000000</damagebonus>
+			<damagebonus type="Hero">1.250000</damagebonus>
 			<maxrange>16.000000</maxrange>
 			<projectile>ProjectileQingLongAttackWater</projectile>
 			<impacteffect>effects\impacts\crush_medium</impacteffect>
@@ -7997,9 +7997,9 @@
         <protoaction>
 			<name>RangedAttack</name>
 			<rof>2.000000</rof>
-			<damage type="Divine">15.000000</damage>
-			<damagebonus type="MythUnit">2.000000</damagebonus>
-			<damagebonus type="Hero">0.250000</damagebonus>
+			<damage type="Divine">30.000000</damage>
+			<damagebonus type="HumanSoldier">2.000000</damagebonus>
+			<damagebonus type="MythUnit">1.250000</damagebonus>
 			<maxrange>16.000000</maxrange>
 			<projectile>ProjectileNidhoggInvisible</projectile>
 			<impacteffect>effects\impacts\crush_medium</impacteffect>
