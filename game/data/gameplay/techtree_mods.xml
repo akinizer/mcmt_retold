@@ -121,8 +121,10 @@
 
     <tech name="MCMT_SpecialUnits" mergeMode="add">
       <status>UNOBTAINABLE</status>
-      <!-- Hero -->
+      <!-- House Special Units -->
       <effects>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				  <target type="ProtoUnit">AttackWolf</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
 				  <target type="ProtoUnit">KingLycaon</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
@@ -132,12 +134,30 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
 				  <target type="ProtoUnit">CaptainEureka</target></effect>
       </effects>
-      <!-- MythUnit -->
+      <!-- Greek Special Units -->
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
 				<target type="ProtoUnit">PegasusGroundedMessenger</target></effect>
+      <!-- Egyptian Special Units -->
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
 				<target type="ProtoUnit">MummyFallen</target></effect>
+      <!-- Norse Special Units -->
+      <!-- Atlantean Special Units -->
+      <!-- Chinese Special Units -->
+      <!-- Japanese Special Units -->
     </tech> 
+
+    <tech name="ArchaicAgeNorse" mergeMode="add">
+      <effects>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Hobbit</target></effect>
+        <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Hobbit</target></effect>
+        <effect type="Data" action="Gather" amount="1.50" subtype="WorkRate" unittype="FoodResource" relativity="BasePercent"><target type="ProtoUnit">Hobbit</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Moradin</target></effect>
+        <effect type="Data" amount="2.25" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Moradin</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Loki</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TreebeardOfFangorn</target></effect>
+        <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">TreebeardOfFangorn</target></effect>
+      </effects>
+    </tech>
 
     <tech name="MCMT_Researches" mergeMode="add">
       <status>UNOBTAINABLE</status>
