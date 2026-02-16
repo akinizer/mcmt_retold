@@ -5427,6 +5427,10 @@
 		</veterancybonus>
 	</unit>
 	<unit name="HeroOfRagnarok">
+		<trainpoints>10.0</trainpoints>
+		<cost resourcetype="Food">40.0000</cost>
+    	<cost resourcetype="Gold">10.0000</cost>
+		
 		<initialhitpoints>130.0000</initialhitpoints>
 		<maxhitpoints>130.0000</maxhitpoints>
 		<unittype>AbstractInfantry</unittype>
@@ -5443,8 +5447,13 @@
 		<armor type="Hack" value="0.6500"></armor>
 		<armor type="Pierce" value="0.5000"></armor>
 		<armor type="Crush" value="0.9900"></armor>
+		<flag>AutoTrainable</flag>
 	</unit>
 	<unit name="HeroOfRagnarokDwarf">
+		<trainpoints>10.0</trainpoints>
+		<cost resourcetype="Food">40.0000</cost>
+    	<cost resourcetype="Gold">10.0000</cost>
+
 		<initialhitpoints>110.0000</initialhitpoints>
 		<maxhitpoints>110.0000</maxhitpoints>
 		<unittype>AbstractInfantry</unittype>
@@ -5460,6 +5469,7 @@
 		<armor type="Hack" value="0.6700"></armor>
 		<armor type="Pierce" value="0.4500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
+		<flag>AutoTrainable</flag>
 	</unit>
 	<unit name="Jarl">
 		<armor type="Hack" value="0.4500"></armor>

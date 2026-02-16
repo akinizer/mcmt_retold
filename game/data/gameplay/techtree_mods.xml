@@ -1,5 +1,5 @@
 <techtreemods>
-	<!-- /////////////////////////////////////////////////////// MCMT TECH ENABLE  //////////////////////////////////////////////// -->
+	  <!-- MCMT TECH ENABLE -->
     <tech name="ArchaicAgeAtlantean"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
     <tech name="ArchaicAgeGreek"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
     <tech name="ArchaicAgeEgyptian"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
@@ -7,6 +7,109 @@
     <tech name="ArchaicAgeChinese"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects>	</tech>
     <tech name="ArchaicAgeJapanese"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects>	</tech>
 
+    <!-- CIVILIZATION IMPROVEMENTS -->
+    <tech name="ArchaicAgeAtlantean">
+      <effects>
+        <!--Military Barracks: Murmillo, Fanatic, Destroyer-->
+        <!--Counter Barracks: Arcus, Turma, Cheiroballista-->
+        <!--Palace Barracks: Katapeltes, Contarius, Fire Siphon-->
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Arcus" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Contarius" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Destroyer" relativity="Assign"><target type="ProtoUnit">Palace</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Fanatic" relativity="Assign"><target type="ProtoUnit">Palace</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Katapeltes" relativity="Assign"><target type="ProtoUnit">CounterBarracks</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Katapeltes" row="0" column="0" relativity="Assign"><target type="ProtoUnit">Palace</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Contarius" row="0" column="1" relativity="Assign"><target type="ProtoUnit">Palace</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Fanatic" row="0" column="1" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Destroyer" row="0" column="2" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Arcus" row="0" column="0" relativity="Assign"><target type="ProtoUnit">CounterBarracks</target></effect>		</effects>
+    </tech>
+
+    <!-- MAJOR GOD IMPROVEMENTS -->
+    <tech name="ArchaicAgeLoki">
+        <effects>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Draugr</target></effect>
+        <effect type="Data" amount="0.00" subtype="Cost" resource="Favor" relativity="Percent"><target type="ProtoUnit">Draugr</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Draugr" relativity="Assign"><target type="ProtoUnit">Temple</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Draugr" row="0" column="4" relativity="Assign"><target type="ProtoUnit">GreatHall</target></effect>
+
+        <effect type="Data" amount="1.50" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
+        <effect type="Data" amount="0.75" subtype="TrainPoints" relativity="Percent"><target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
+        <effect type="Data" amount="0.75" subtype="Cost" resource="Food" relativity="Percent"><target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
+        <effect type="Data" amount="0.75" subtype="Cost" resource="Wood" relativity="Percent"><target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
+        <effect type="Data" amount="0.75" subtype="Cost" resource="Gold" relativity="Percent"><target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
+      
+        <effect type="TechStatus" status="active">Rime</effect>
+        <effect type="TechStatus" status="active">Jotuns</effect>
+        <effect type="TechStatus" status="active">Valgaldr</effect>
+      </effects>
+    </tech>
+
+    <tech name="ArchaicAgeOdin">
+      <effects>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Einheri</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">HeroOfRagnarok</target></effect>
+
+        <effect type="Data" amount="0.00" subtype="Cost" resource="Favor" relativity="Percent"><target type="ProtoUnit">Einheri</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Einheri" relativity="Assign"><target type="ProtoUnit">Temple</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Einheri" row="0" column="4" relativity="Assign"><target type="ProtoUnit">GreatHall</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Berserk" relativity="Assign"><target type="ProtoUnit">Longhouse</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Berserk" relativity="Assign"><target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="HeroOfRagnarok" row="0" column="2" relativity="Assign"><target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="TransformUnit" toprotoid="HeroOfRagnarok" fromprotoid="Berserk" includequeued="true"></effect>
+        
+        <effect type="TechStatus" status="active">Gjallarhorn</effect>
+        <effect type="TechStatus" status="active">CallOfValhalla</effect>
+        <effect type="TechStatus" status="active">AvengingSpirit</effect>
+
+        <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">HumanSoldier</target></effect>
+        <effect type="Data" amount="1.50" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">Hero</target></effect>
+      </effects>
+    </tech>
+
+    <tech name="ArchaicAgeThor">
+        <effects>
+        <effect type="Data" action="Build" amount="1.10" subtype="WorkRate" unittype="Building" relativity="BasePercent"><target type="ProtoUnit">EconomicUpgraded</target></effect>
+        <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">DwarvenArmory</target></effect>
+        
+        <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent"><target	type="ProtoUnit">Hersir</target></effect>
+        <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent"><target	type="ProtoUnit">Jarl</target></effect>
+        <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent"><target	type="ProtoUnit">HeroOfRagnarok</target></effect>
+        <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent"><target	type="ProtoUnit">HeroOfRagnarokDwarf</target></effect>
+
+        <effect type="Data" action="RangedAttack" amount="0.90" subtype="RoF" relativity="BasePercent"><target type="ProtoUnit">HumanSoldier</target></effect>
+        <effect type="Data" action="HandAttack" amount="0.90" subtype="RoF" relativity="BasePercent"><target type="ProtoUnit">HumanSoldier</target></effect>
+      </effects>
+    </tech>
+
+    <tech name="ArchaicAgeFreyr">
+      <effects>
+        <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">BattleBoar</target></effect>
+        <effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">BattleBoar</target></effect>
+
+        <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">Hillfort</target></effect>
+        <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">Hillfort</target></effect>
+        <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="MythUnit" relativity="Absolute"><target type="ProtoUnit">Hillfort</target></effect>
+
+        <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">VillagerNorse</target></effect>
+        <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">VillagerDwarf</target></effect>
+        <effect type="Data" amount="0.80" subtype="UnitRegenRate" relativity="Absolute"><target type="ProtoUnit">VillagerNorse</target></effect>
+        <effect type="Data" amount="0.80" subtype="UnitRegenRate" relativity="Absolute"><target type="ProtoUnit">VillagerDwarf</target></effect>
+        <effect type="Data" amount="1.25" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">VillagerNorse</target></effect>
+        <effect type="Data" amount="1.25" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">VillagerDwarf</target></effect>
+        <effect type="Data" amount="0.75" subtype="TrainPoints" relativity="Percent"><target type="ProtoUnit">VillagerNorse</target></effect>
+        <effect type="Data" amount="0.75" subtype="TrainPoints" relativity="Percent"><target type="ProtoUnit">VillagerDwarf</target></effect>
+        
+        <effect type="Data" action="Gather" amount="1.50" subtype="WorkRate" unittype="AbstractFarm" relativity="BasePercent"><target type="ProtoUnit">EconomicUpgraded</target></effect>
+        <effect type="Data" amount="1.50" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">AbstractFarm</target></effect>
+        <effect type="Data" amount="1.00" subtype="UnitRegenRate" relativity="Absolute"><target type="ProtoUnit">AbstractFarm</target></effect>
+        <effect type="Data" amount="0.01" subtype="BuildPoints" relativity="Percent"><target type="ProtoUnit">AbstractFarm</target></effect>
+      </effects>
+    </tech>
+    
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <tech name="MCMT_Techs" mergeMode="add">
       <status>UNOBTAINABLE</status>
       <effects>
