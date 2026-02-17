@@ -4068,15 +4068,281 @@
 		<unittype>ArcherLineUpgraded</unittype>
 		<unitregen>10.0000</unitregen>
 	</unit>
-	<unit name="Pharaoh">
-		<unittype>AbstractArcher</unittype>
+	<unit name="Pharaoh" mergeMode="replace">
+		<displaynameid>STR_UNIT_TUTANKHAMUN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_PHARAOH_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_PHARAOH_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\pharaoh_icon.png</icon>
+		<animfile>egyptian\units\hero\pharaoh\pharaoh.xml</animfile>
+		<soundsetfile>egyptian\vo\pharaoh\pharaoh.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>20.0000</autoattackrange>
+		<formationorder>4</formationorder>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>120.0000</initialhitpoints>
+		<maxhitpoints>120.0000</maxhitpoints>
+		<weightclass>5</weightclass>
+		<maxcontained>1</maxcontained>
+		<maxvelocity>4.8000</maxvelocity>,
+		<unittype>InfantryLineUpgraded</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-		<unitregen>10.0000</unitregen>
+		<unitregen>2.0000</unitregen>
+
+		<los>18.0000</los>
+		<armor type="Hack" value="0.3500"></armor>
+		<armor type="Pierce" value="0.3000"></armor>
+		<armor type="Crush" value="0.7900"></armor>
+		<culture>Egyptian</culture>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>AbstractEmpowerer</unittype>
+		<unittype>AbstractHealer</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>AbstractPharaoh</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeEasySelectAvoid</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<hotkeycontext>PharaohAccel</hotkeycontext>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CanAutoHeal</flag>
+		<flag>ExcludeFromMoveAllMilitary</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>AutoCommandStartDisabled</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>HasDefaultAttack</flag>
+		<flag>AbilitiesOnBothPages</flag>
+		<flag>ForceBuildingData</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>egyptian_hero_pharaoh_melee.tactics</tactics>
+		<protoaction>
+			<name>Heal</name>
+			<type>Heal</type>
+			<maxrange>10</maxrange>
+			<rate type="LogicalTypeHealed">10.00000</rate>
+			<slowhealmultiplier>0.50</slowhealmultiplier>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">12.00000</damage>
+			<damagebonus type="MythUnit">3.500000</damagebonus>
+			<damagebonus type="HumanSoldier">3.000000</damagebonus>
+			<onhiteffect type="DamageOverTime" duration="5.000000">
+				<damage type="Divine">0.5000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXBleed" attachbone="spine" duration="5.000000">
+                <target attacktype="Unit"></target>
+                <target ignoretype="AbstractSiegeWeapon"></target>
+            </onhiteffect>
+			<maxrange>2.0</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackMyth</name>
+			<rof>1.000000</rof>
+			<damage type="Divine">12.00000</damage>
+			<damagebonus type="MythUnit">2.500000</damagebonus>
+			<damagebonus type="HumanSoldier">3.000000</damagebonus>
+			<minrange>5.0</minrange>
+			<maxrange>8.0</maxrange>
+			<projectile>ProjectilePriestPharaoh</projectile>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>RelicNoPickup</name>
+			<type>NoWork</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
 	</unit>
-	<unit name="PharaohNewKingdom">
-		<unittype>AbstractArcher</unittype>
+	<unit name="PharaohNewKingdom" mergeMode="replace">
+		<displaynameid>STR_UNIT_NEW_KINGDOM_PHARAOH_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_NEW_KINGDOM_PHARAOH_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_PHARAOH_SR</shortrollovertextid>
+		<editornameid>STR_UNIT_NEW_KINGDOM_PHARAOH_EDT_NAME</editornameid>
+		<icon>resources\egyptian\player_color\units\pharaoh_icon.png</icon>
+		<animfile>egyptian\units\hero\pharaoh\pharaoh.xml</animfile>
+		<soundsetfile>egyptian\vo\pharaoh\pharaoh.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>20.0000</autoattackrange>
+		<formationorder>4</formationorder>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<unittype>InfantryLineUpgraded</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-		<unitregen>5.0000</unitregen>
+		<unitregen>2.0000</unitregen>
+		
+		<weightclass>5</weightclass>
+		<maxcontained>1</maxcontained>
+		<maxvelocity>4.0000</maxvelocity>
+		<los>16.0000</los>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.2500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<culture>Egyptian</culture>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>AbstractEmpowerer</unittype>
+		<unittype>AbstractHealer</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>AbstractPharaoh</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeEasySelectAvoid</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<hotkeycontext>PharaohAccel</hotkeycontext>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CanAutoHeal</flag>
+		<flag>ExcludeFromMoveAllMilitary</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HeroNameSimple</flag>
+		<flag>AutoCommandStartDisabled</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>HasDefaultAttack</flag>
+		<flag>AbilitiesOnBothPages</flag>
+		<flag>ForceBuildingData</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>egyptian_hero_pharaoh_melee.tactics</tactics>
+		<protoaction>
+		<name>Heal</name>
+		<type>Heal</type>
+		<maxrange>10</maxrange>
+		<rate type="LogicalTypeHealed">10.00000</rate>
+		<slowhealmultiplier>0.50</slowhealmultiplier>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">9.00000</damage>
+			<damagebonus type="MythUnit">2.500000</damagebonus>
+			<damagebonus type="Building">2.500000</damagebonus>
+			<rate type="MythUnit">0.0</rate>
+			<maxrange>2.0</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackMyth</name>
+			<rof>1.000000</rof>
+			<damage type="Divine">12.00000</damage>
+			<damagebonus type="MythUnit">2.500000</damagebonus>
+			<damagebonus type="Building">2.500000</damagebonus>
+			<rate type="Unit">0.0</rate>
+			<rate type="MythUnit">1.0</rate>
+			<rate type="Ship">1.0</rate>
+			<rate type="Building">1.0</rate>
+			
+			<maxrange>3.000000</maxrange>
+			<projectile>ProjectilePriestPharaoh</projectile>
+			<onhiteffect type="DamageOverTime" duration="5.000000">
+				<damage type="Divine">0.5000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXPoison" attachbone="spine" duration="5.000000">
+                <target attacktype="Unit"></target>
+                <target ignoretype="AbstractSiegeWeapon"></target>
+            </onhiteffect>
+		</protoaction>
+		<protoaction>
+		<name>Pickup</name>
+		<type>Pickup</type>
+		<maxrange>1</maxrange>
+		<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+		<name>DropOff</name>
+		<type>DropOff</type>
+		<maxrange>1</maxrange>
+		<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
 	</unit>
 	<unit name="Priest">
 		<unittype>AbstractArcher</unittype>
@@ -19113,7 +19379,6 @@
 		<shortrollovertextid>STR_UNIT_MECHANIZED_MAMMOTH_UNIT_SR</shortrollovertextid>
 		<icon>resources\egyptian\player_color\units\elephant_of_set_icon.png</icon>
 		<animfile>egyptian\units\animals_of_set\elephant_of_set\elephant_of_set.xml</animfile>
-		<!--<animfile>egyptian\units\hero\pharaoh\pharaoh.xml</animfile>-->
 		<soundsetfile>nature\animals\elephant\elephant.xml</soundsetfile>
 		<obstructionradiusx>1.4900</obstructionradiusx>
 		<obstructionradiusz>1.4900</obstructionradiusz>
