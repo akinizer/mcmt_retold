@@ -5473,6 +5473,9 @@
     <!-- Egyptian Military Units-->
     <!-- Egyptian Naval Units-->
     <!-- Egyptian Buildings-->
+	<unit name="SiegeWorks">	
+		<train row="0" column="5">MechanizedMammothUnit</train>		
+	</unit>
     
     <!-- Norse Hero Units-->
     <unit name="Godi">
@@ -19104,6 +19107,105 @@
 		<contain>LogicalTypeGarrisonInShips</contain>
 		<notcontain>AbstractTransportShip</notcontain>
 	</unit>
+	<unit name="MechanizedMammothUnit">
+		<displaynameid>STR_UNIT_MECHANIZED_MAMMOTH_UNIT_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MECHANIZED_MAMMOTH_UNIT_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MECHANIZED_MAMMOTH_UNIT_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\elephant_of_set_icon.png</icon>
+		<animfile>egyptian\units\animals_of_set\elephant_of_set\elephant_of_set.xml</animfile>
+		<!--<animfile>egyptian\units\hero\pharaoh\pharaoh.xml</animfile>-->
+		<soundsetfile>nature\animals\elephant\elephant.xml</soundsetfile>
+		<obstructionradiusx>1.4900</obstructionradiusx>
+		<obstructionradiusz>1.4900</obstructionradiusz>
+		<selectionradiusx>1.5000</selectionradiusx>
+		<selectionradiusz>2.0000</selectionradiusz>
+
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<turnrate>10.0000</turnrate>
+		<initialhitpoints>4000.0000</initialhitpoints>
+		<maxhitpoints>4000.0000</maxhitpoints>
+		<unitregen>1.5000</unitregen>
+
+		<autoattackrange>50.0000</autoattackrange>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>100</weightclass>
+		<populationcount>3</populationcount>
+		<maxvelocity>3.5000</maxvelocity>
+		<buildlimit>1</buildlimit>
+
+		<los>18.0000</los>
+		<cost resourcetype="Gold">200.0000</cost>
+		<cost resourcetype="Food">400.0000</cost>
+		<cost resourcetype="Favor">30.0000</cost>
+
+		<armor type="Hack" value="0.7000"></armor>
+		<armor type="Pierce" value="0.85000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+
+		<unittype>AbstractTitan</unittype>
+		<unittype>AnimalOfSet</unittype>
+
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>		
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+
+		<command row="0" column="5">FlareAtUnit</command>
+		<tactics>mcmt_mechanized_mammoth_unit.tactics</tactics>
+
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>4.000000</rof>
+			<damage type="Crush">45.000000</damage>
+			<damage type="Hack">35.000000</damage>
+			<damagearea>5</damagearea>
+			<damagebonus type="AbstractWall">5.00000</damagebonus>
+			<damagebonus type="AbstractTower">5.00000</damagebonus>
+			<damagebonus type="Building">2.500000</damagebonus>
+			<damagebonus type="AbstractSiegeWeapon">1.500000</damagebonus>
+			<maxrange>2.0000</maxrange>
+			<onhiteffect type="Throw" targetunittype="EconomicUnit"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>DisintegrationAttack</name>
+			<rof>5.000000</rof>
+			<damage type="Divine">200.000000</damage>
+			<maxrange>45.0000</maxrange>
+			<projectile>ProjectileDisintegrationBolt</projectile>
+			<numberprojectiles>2</numberprojectiles>
+			<volleymode>1</volleymode>
+		</protoaction>
+	</unit>
+
 	<!-- Hall of Heroes Special Units -->
 	<unit name="ArcusCaptain">
 		<buildlimit>1</buildlimit>
@@ -20858,4 +20960,34 @@
 		</protoaction>
   	</unit>
 	<!-- Japanese Special Units -->
+	<!-- Special Unit Projectiles -->
+	<unit name="ProjectileDisintegrationBolt">
+		<animfile>vfx\projectiles\priest_pharaoh\priest_pharaoh.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="4.0000" duration="0.1000"></decay>
+		<movementtype>air</movementtype>
+		<maxvelocity>40.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>AdjustPositionOnTerrainCollision</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+ 	</unit>
 </protomods>
