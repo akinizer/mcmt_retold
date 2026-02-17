@@ -362,6 +362,9 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AirCommand</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">WarBunker</target></effect>
         <effect type="Data" amount="0.40" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">WarBunker</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">HallOfHeroes</target></effect>
+        <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">HallOfHeroes</target></effect>
+
         <!-- T.O.W Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TheAttractor</target></effect>
         <effect type="Data" amount="1.30" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">TheAttractor</target></effect>
@@ -744,7 +747,10 @@
             <effect type="TechStatus" status="obtainable">FarmingMachinery</effect>
             <effect type="TechStatus" status="obtainable">IndustrialTools</effect>
             <effect type="TechStatus" status="obtainable">ManufactionRobotics</effect>-->	
-            <!--Fortress CyberTech-->		
+            <!--Baolei CyberTech-->		
+            <!--Dwarven Armory CyberTech -->
+            <effect type="TechStatus" status="obtainable">MCMT_GiantSlayingTechs</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_ThunderSlayingTechs</effect>
       </effects>
     </tech>
 
@@ -789,13 +795,16 @@
           <effect type="Data" amount="1.00" subtype="CommandRemove" proto="MageTower" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
           <effect type="Data" amount="1.00" subtype="CommandRemove" proto="AirCommand" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
           <effect type="Data" amount="1.00" subtype="CommandRemove" proto="WarBunker" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
-          
+          <effect type="Data" amount="1.00" subtype="CommandRemove" proto="HallOfHeroes" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
+
           <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Bastion" row="1" column="1" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
           <effect type="Data" amount="1.00" subtype="CommandAdd" proto="TempleOfPrimordials" row="1" column="2" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
           <effect type="Data" amount="1.00" subtype="CommandAdd" proto="StrategicVesselAssembly" row="1" column="3" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
           <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MageTower" row="1" column="4" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
           <effect type="Data" amount="1.00" subtype="CommandAdd" proto="AirCommand" row="1" column="5" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
           <effect type="Data" amount="1.00" subtype="CommandAdd" proto="WarBunker" row="2" column="5" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
+          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="HallOfHeroes" row="2" column="4" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
+
           <!--Arrows-->
           <effect type="Data" amount="1.00" subtype="CommandRemove" tech="MCMT_Page1" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
           <effect type="Data" amount="1.00" subtype="CommandAdd" tech="MCMT_Page2" row="3" column="5" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>		
@@ -845,13 +854,16 @@
             <effect type="Data" amount="1.00" subtype="CommandRemove" proto="MageTower" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
             <effect type="Data" amount="1.00" subtype="CommandRemove" proto="AirCommand" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
             <effect type="Data" amount="1.00" subtype="CommandRemove" proto="WarBunker" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
-            
+            <effect type="Data" amount="1.00" subtype="CommandRemove" proto="HallOfHeroes" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
+
             <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Bastion" row="0" column="255" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
             <effect type="Data" amount="1.00" subtype="CommandAdd" proto="TempleOfPrimordials" row="0" column="255" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
             <effect type="Data" amount="1.00" subtype="CommandAdd" proto="StrategicVesselAssembly" row="0" column="255" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
             <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MageTower" row="0" column="255" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
             <effect type="Data" amount="1.00" subtype="CommandAdd" proto="AirCommand" row="0" column="255" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
             <effect type="Data" amount="1.00" subtype="CommandAdd" proto="WarBunker" row="0" column="255" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
+            <effect type="Data" amount="1.00" subtype="CommandAdd" proto="HallOfHeroes" row="0" column="255" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
+
             <!--Assign-->
             <effect type="Data" amount="1.00" subtype="CommandRemove" proto="TechBuilding" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
             <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Ecomarket" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
@@ -1464,6 +1476,44 @@
 			</effect>
 		</effects>
 		<effect type="TextOutput">STR_MSG_NOAH_SPAWN</effect>
+	</tech>
+  <!-- DWARVEN FORGE TECHS -->
+  <tech name="MCMT_GiantSlayingTechs" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINEARMAMENTS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINEARMAMENTS_LR</rollovertextid>
+		<researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\spc\static_color\technologies\giant_slaying_blades_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+		<cost resourcetype="Gold">350</cost>
+    <cost resourcetype="Food">350</cost>
+    <cost resourcetype="Favor">10</cost>
+		<effects>
+		  <effect type="TechStatus" status="active">GiantSlayingBlades</effect>
+ 		  <effect type="TechStatus" status="active">OsmiumArmor</effect>
+ 		  <effect type="TechStatus" status="active">AsbestosShields</effect>
+    </effects>
+	</tech>
+  <tech name="MCMT_ThunderSlayingTechs" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINEARMAMENTS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINEARMAMENTS_LR</rollovertextid>
+		<researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\norse\static_color\technologies\hammer_of_thunder_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+		<cost resourcetype="Gold">1500</cost>
+    <cost resourcetype="Food">1000</cost>
+    <cost resourcetype="Wood">500</cost>
+    <cost resourcetype="Favor">15</cost>
+		<effects>
+      <effect type="TechStatus" status="active">DwarvenWeapons</effect>
+ 		  <effect type="TechStatus" status="active">MeteoricIronArmor</effect>
+ 		  <effect type="TechStatus" status="active">DragonscaleShields</effect>
+		</effects>
 	</tech>
 	<!-- CYBERNETICS TECHNOLOGY FACILITY RESEARCHES -->
 
@@ -4394,6 +4444,7 @@
     <techage>MythicAge</techage>
     <prereqs>
       <techstatus status="Active">IronWeapons</techstatus>
+      <techstatus status="Active">MCMT_ThunderSlayingTechs</techstatus>
     </prereqs>
     <effects>
       <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent"><target type="ProtoUnit">HumanSoldier</target></effect>
@@ -4418,6 +4469,7 @@
     <techage>MythicAge</techage>
     <prereqs>
       <techstatus status="Active">IronArmor</techstatus>
+      <techstatus status="Active">MCMT_ThunderSlayingTechs</techstatus>
     </prereqs>
     <effects>
       <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">HumanSoldier</target></effect>
@@ -4442,6 +4494,7 @@
     <techage>MythicAge</techage>
     <prereqs>
       <techstatus status="Active">IronShields</techstatus>
+      <techstatus status="Active">MCMT_ThunderSlayingTechs</techstatus>
     </prereqs>
     <effects>
       <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent"><target type="ProtoUnit">HumanSoldier</target></effect>

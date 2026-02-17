@@ -380,8 +380,12 @@ ID = "STR_BLD_AIRCOMMAND_SR"   ;   Str = "Air Command Headquarters"
 ID = "STR_BLD_AIRCOMMAND_LR"   ;   Str = "Defensive Base of Operations for Aircraft"
 
 ID = "STR_BLD_WARBUNKER_NAME"   ;   Str = "War Bunker"
-ID = "STR_BLD_WARBUNKER_LR"   ;   Str = "Defensive Building"
+ID = "STR_BLD_WARBUNKER_LR"   ;   Str = "Multi-purpose garrisonable structure with fireports that can rain a hell of bullets whoever approaches"
 ID = "STR_BLD_WARBUNKER_SR"   ;   Str = "Defensive Building"
+
+ID = "STR_BLD_HALLOFHEROES_NAME"   ;   Str = "Hall of Heroes"
+ID = "STR_BLD_HALLOFHEROES_LR"   ;   Str = "Elite Soldiers armed with FutureTech arsenal and laser tank technology provided by Cosmic Forces. Captains get stronger as they get more head count (5,12,18,24,30)"
+ID = "STR_BLD_HALLOFHEROES_SR"   ;   Str = "FutureTech Base of Operations"
 
 // SPECIAL UTILITY STRUCTURES
 ID = "STR_BLD_SONICDISRUPTORARRAY_NAME"   ;   Str = "Sonic Disruptor Array"
