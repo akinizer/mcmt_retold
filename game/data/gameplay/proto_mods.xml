@@ -3956,6 +3956,18 @@
 	</unit>
     
     <!-- Atlantean Military Units-->
+	<unit name="Katapeltes">
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<protoaction mergeMode="replace">
+			<name>HandAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Hack">6.000000</damage>
+			<damage type="Crush">2.000000</damage>
+			<damagebonus type="Building">1.050000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+	</unit>
     <unit name="FireSiphon" mergeMode="replace">
 		<displaynameid>STR_UNIT_FIRE_SIPHON_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_FIRE_SIPHON_LR</rollovertextid>
@@ -7583,7 +7595,7 @@
 		<armor type="Crush" value="0.0500"></armor>
 		<unittype>AbstractWall</unittype>
 
-		<!-- TODO: MCMT Tech <tech row="0" column="0">MCMT_OracleWatchers</tech>-->
+		<tech row="0" column="0">MCMT_OracleWatchers</tech>
 		<buildlimit>10</buildlimit>
 
 		<protoaction>
@@ -7612,15 +7624,15 @@
 			<impacteffect>effects\impacts\pierce</impacteffect>
 		</protoaction>
 	</unit>
-	<!-- MCMT 
+
 	<unit name="TownCenter">
 		<tech row="3" column="3">MCMT_SpecialService</tech>
 		<tech row="2" column="1">MCMT_ArchitectsOfMarley</tech>
-	</unit>-->
+	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
 	</unit>
-	<!-- TODO: MCMT Tech
+
 	<unit name="Baolei">
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_I</tech>
@@ -7658,7 +7670,7 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_I</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_II</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
-	</unit>-->
+	</unit>
 	<unit name="Dock">
 		<protoaction>
 			<name>RangedAttack</name>
@@ -7745,7 +7757,7 @@
 		
 		<tech row="1" column="0">HammerOfThunder</tech>
 		<tech row="1" column="1">DwarvenBreastplate</tech>
-		<!-- TODO: MCMT Tech<tech row="1" column="2">MCMT_RecruitingMountainDwarves</tech>-->
+		<tech row="1" column="2">MCMT_RecruitingMountainDwarves</tech>
 	</unit>
 	<unit name="GreatHall">
 		<hotkeycontext>GreatHallAccel</hotkeycontext>
@@ -16104,8 +16116,6 @@
 		<unittype>CountsTowardMilitaryScore</unittype>
 		<unittype>LogicalTypeMythUnitNotFlying</unittype>
 		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
-		<!-- TODO: Spawned by God Power or Tech -->
-		<!-- TODO: Spawn Phanes on Decay -->
 		<flag>Invulnerable</flag>
 		<flag>Immoveable</flag>
 		<flag>NotDeleteable</flag>
@@ -16173,9 +16183,6 @@
 		<flag>CorpseDecays</flag>
 		<command row="3" column="5">AttackMove</command>
 		<tactics>handattack.tactics</tactics>
-		<!-- TODO: decay 5 minutes-->
-		<!-- TODO: blast on hiteffect-->
-		<!-- TODO: On Death Spawn: Aspicious Beasts-->
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>20.000000</rof>

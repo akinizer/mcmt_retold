@@ -1240,7 +1240,7 @@
 		<cost resourcetype="Gold">300.0000</cost>
 		<effects>
 			<!-- Dwarf Improvement -->
-			<effect type="Data" amount="1.05" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">VillagerDwarf</target></effect>
+			<effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">VillagerDwarf</target></effect>
 			<effect type="Data" action="Gather" amount="1.15" subtype="WorkRate" unittype="GoldResource" relativity="BasePercent"><target type="ProtoUnit">AbstractDwarf</target></effect>
 
 			<!-- VillagerNorse is removed. All VillagerNorse becomes VillagerDwarf -->
@@ -1257,6 +1257,10 @@
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
+    <prereqs>
+      <specificage>MythicAge</specificage>
+      <techstatus status="Active">Architects</techstatus>
+    </prereqs>
 
 		<researchpoints>10.0000</researchpoints>
 		<cost resourcetype="Gold">1000</cost>
