@@ -403,7 +403,7 @@ ID = "STR_BLD_SEASONAL_FARM_LR"   ;   Str = "Seasonal Farm"
 ID = "STR_BLD_SEASONAL_FARM_SR"   ;   Str = "Farming planted with one generation seeds"
 ID = "STR_BLD_INDUSTRIAL_FARM_NAME"   ;   Str = "Industrial Farm"
 ID = "STR_BLD_INDUSTRIAL_FARM_LR"   ;   Str = "Farming of modern era with automatized supplication features\n·Costs same as a regular Industrial Farm"
-ID = "STR_BLD_INDUSTRIAL_FARM_SR"   ;   Str = "Restockable Farm at a cost"
+ID = "STR_BLD_INDUSTRIAL_FARM_SR"   ;   Str = "Bountiful Farm at a cost"
 
 ID = "STR_BLD_DIONYSIAN_FARM_NAME" ;   Str = "Dionysian Farm"
 ID = "STR_BLD_DIONYSIAN_FARM_SR" ;   Str = "Farms from Dionysian Festivals"
@@ -484,13 +484,14 @@ ID = "STR_BLD_BEACON_OF_AMBITION_NAME"   ;   Str = "Beacon of Ambition"
 ID = "STR_BLD_BEACON_OF_AMBITION_SR"   ;   Str = "B.O.AMB"
 ID = "STR_BLD_BEACON_OF_AMBITION_LR"   ;   Str = "FutureTech Celerital Defense System. Overseen by August von Marquardt himself. Weakens motivation of enemies"
 
+ID = "STR_UNIT_WARP_PORTAL_NAME"   ;   Str = "Warp Portal"
+ID = "STR_UNIT_WARP_PORTAL_SR"   ;   Str = "Gateways used by Cosmic Forces"
+ID = "STR_UNIT_WARP_PORTAL_LR"   ;   Str = "Warp Portal techonlogy has been used for eons for traveling between intergalactic confederations and deployment of Cosmic Forces Fleet leaded by Captain Eureka. FutureTech finally succeeded to reverse-engineer and establish portals yet they cant access to Cosmic Forces"
+
 ID = "STR_UNIT_SIEGE_TURRET_NAME"   ;   Str = "Siege Turret"
 ID = "STR_UNIT_SIEGE_TURRET_SR"   ;   Str = "Siege Turret"
 ID = "STR_UNIT_SIEGE_TURRET_LR"   ;   Str = "Siege Tower Entrenchment in a Defensive Position"
 
-// UNIT TRANSFORM TEXTS
-ID = "STR_TRANSFORM_INDUSTRIAL_FARM_NAME"   ;   Str = "Restock Farm"
-ID = "STR_TRANSFORM_INDUSTRIAL_FARM_LR"   ;   Str = "Restock Industrial Farm nutritions. It costs same as a regular Industral Farm"
 
 // REWORKED UNITS
 ID = "STR_UNIT_NILECROCODILE_NAME"   ;   Str = "Nile Crocodile"
@@ -515,7 +516,9 @@ ID = "STR_TECH_RECRUITING_MOUNTAINDWARVES_LR"    ;   Str = "Work Force now becom
 ID = "STR_TECH_ARCHITECTS_OF_MARLEY_NAME"   ;   Str = "Architects of Marley"
 ID = "STR_TECH_ARCHITECTS_OF_MARLEY_LR"   ;   Str = "Architects from Kingdom of Marley share their pride in the Anti-Titan Walls"
 
-ID = "STR_TECH_ADVANCEDFORTIFICATIONS_NAME"   ;   Str = "Advanced Fortifications"
+ID = "STR_TECH_ADVANCEDFORTIFICATIONS_I_NAME"   ;   Str = "Advanced Fortifications I"
+ID = "STR_TECH_ADVANCEDFORTIFICATIONS_II_NAME"   ;   Str = "Advanced Fortifications II"
+ID = "STR_TECH_ADVANCEDFORTIFICATIONS_III_NAME"   ;   Str = "Advanced Fortifications III"
 ID = "STR_TECH_ADVANCEDFORTIFICATIONS_LR"   ;   Str = "CyberTech R & D provides modern techniques and materials to create ultimate fortifications"
 
 ID = "STR_TECH_ORACLEWATCHERS_NAME"   ;   Str = "Oracle Watchers"

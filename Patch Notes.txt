@@ -1,0 +1,442 @@
+1. Reworking on Demeter's hero units and related techs
+- favor costs removed, pop 1
+- hero:
+    - KingMidas: handattack+, armor+, infantrylineupgrade
+    - Orpheus: divineattack, hp+, range+, archerlineupgrade
+    - Icarus: spd+, divineattack, area+, range+, bonusdamage, archerlineupgrade, siegelineupgrade
+    - Iolaus: spd+, armor+, hp+, range+, rof+, pierceattack+, handattack-
+- tech:
+    - PredatoryInstinct: 
+        - LykaonWolf: hackattack+, speed+
+        - KingLycaon: hackattack+, speed+, rof+, favor 2
+
+2. Reworking on Demeter's myth units and related techs
+- myth unit:
+    - MythHarpy: ProjectileKuafuStone, Lifesteal, Speed bonus on water
+    - LykaonVillager: speed+, pop 1, archerlineupgrade, rangedattack minrange defaultattack
+    - Hamadryad: proximity attack mode, damage rework
+- tech:
+    - FatedArrows: NumberBounces myth +3, hero +8
+    - ThornedWalls: regen Walls 1.0, Hamadryad 0.8
+
+3. Greek reworks from mcmt mod
+- myth unit: 
+    - flying: Pegasus+, PegasusWingedMessenger+
+    - melee: Minotaur+, Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
+    - ranged: Centaur+, Medusa+, Sentinel+
+    - naval: Carcinos+
+- hero:
+    - OnDamageModify: Atalanta+, Jason+
+    - VisualScale: TheArgo+, Polyphemus+
+
+    - Jason+, Heracles+ Odysseus+, Bellerophon+
+    - Ajax+, Chiron+, Perseus+
+    - Achilles+, 
+        - OnDeath: AchillesDismounted+
+    - Atalanta+, Hippolyta+, Theseus+, Polyphemus+
+    - Myrmidon+, TheArgo+
+- military units:
+    - Kataskopos+
+- special unit:
+    - PegasusGroundedMessenger+
+
+4. Atlanean reworks from mcmt mod
+- myth unit:
+    - flying: Caladria+
+    - melee: Centimanus+, Automaton+, Behemoth+, Argus+, Promethean+
+    - ranged: Satyr+, Lampades+
+    - naval: Nereid+, Manowar+, Servant+
+
+
+5. Norse reworks from mcmt mod
+- myth unit:
+    - VisualScale: Raven+, Einheri+, Troll+, JormunElver+, FrostGiant+, FireGiant+, RockGiant+, Nidhogg+, GullinBursti+, Fafnir+
+    - Valkyrie:
+        - OnDeath: ValkyrieWarrior+
+
+    - flying: Nidhogg+, Raven+
+    - melee: RockGiant+, MountainGiant+, FrostGiant+, FenrisWolfBrood+, Valkyrie+, Einheri+, Battleboar+
+    - ranged: Draugr+, Troll+, FireGiant+, Fafnir+
+    - naval: Kraken+, JormunElver+
+- hero:
+    - GullinburstiArchaic+, GullinburstiClassical+, GullinburstiHeroic+, GullinburstiMythic+
+    - Hersir+, Godi+, HeroOfRagnorok+ (both), Jarl+
+- human soldiers:
+    - Berserk+, 
+        - OnDeath: WarBear+
+    - ThrowingAxeman+
+
+6. Egyptian reworks from mcmt mod and new Pharaoh reworks
+- myth unit:
+    - VisualScale: Phoenix+, Leviathan+, WarTurtle+, Scarab+, Sphinx+
+
+    - melee: Minion+, MinionReincarnated+, Avenger+, Scarab+, Sphinx+, Anubite+, ScorpionMan+
+    - ranged: Wadjet+, Petsuchos+, Mummy+
+    - naval: Leviathan+, WarTurtle+
+
+    - Mummy:
+        - OnDeath: MummyFallen+
+
+    - Tutenkhamun (primary): proximity-based attack modes, more durable 
+        - melee: vfxbleed, stronger vs humansoldier, melee
+        - range: weaker version of melee, yet effective to cheese in
+    - NewKingdom (secondary): target based attack modes
+        - ranged: mythunit,ship,building, vfxpoison
+        - melee: non-mythunit, stronger vs building, range
+
+- siege weapon:
+    - SiegeTower:
+        - Entrench: SiegeTurret
+- hero:
+    - VisualScale: Pharaoh+
+
+    - Priest+, Pharaoh+, PharaohNewKingdom+, SonOfOsiris (Son of Horus)+
+
+- SiegeWorks:
+    - MechanizedMammothUnit+
+
+6. Chinese reworks from mcmt mod
+- myth unit:
+    - VisualScale: HunDun
+    
+    - trade: PiXiu+
+    - flying: QingLong+, YingLong+
+    - melee: QiLin+, YaZi+, TaoWu+, HunDun+, QionQi+, BaiHu+, TerracottaRider+
+    - naval: ChiWen+, XuanWu+
+
+- humansoldier:
+    - ChuKoNu:
+        - DelayedTransform:ChuKoNuSandbag
+    - FireArcher
+        - DelayedTransform:FireArcherSandbag
+    - WuzuJavelineer:
+        - DelayedTransform:WuzuJavelineerSandbag
+- hero:
+    - VisualScale: NeZha (adult)+
+
+    - Pioneer+, Sage+
+    - NeZha+, Jiangziya+, YangJian+
+    - LiJing+, JiangZiya+
+    - WenZhong+
+
+7. Campaign Heroes from mcmt mod and new related techs
+- Arkantos, OdysseusSPC, AjaxSPC, ChironSPC, Kastor (unimplemented)
+- Amanra, Setna, Reginleif (needs revision)
+- Brokk+,Eitri+
+    - Build: MCMT_DwarvenForge (giantslaying and thunderslaying techs)
+- KingFolstag+
+
+8. Titan reworks from mcmt mod and new reworks on Japanese titan
+- TitanCerberus+, TitanBird+, TitanYmir+, TitanAtlantean+, TitanXingTian
+- TitanYamataNoOrochi+
+
+9. Civilian reworks from mcmt mod and new reworks on Japanese and Demeter
+- Pop: Villager 0, Trade 0, Pixiu 1, Atlantean Hero 1+ (Except Japanese)
+
+- VillagerAtlantean+
+- VillagerAtlanteanHero+
+- VillagerGreek+
+- VillagerEgyptian+
+- VillagerDwarf+
+- VillagerNorse+
+- VillagerChinese+
+- VillagerChineseClay+
+    - OnDeath: VillagerChinese+
+- VillagerJapanese+
+- LykaonVillager+
+- CaravanChinese (transport)+
+
+10. Building reworks from mcmt mod
+- VisualScale+ (except Japanese, Chinese)
+
+- SentryTower+, MilitaryCampTower+, MachineWorkshopTower+, OdinsTower+, MirrorTower+
+- CitadelCenter+
+- Dock+
+- Farm+
+- DwarvenArmory (MCMT tech will be added)
+- GreatHall (unit train order)+
+- WallConnector (hp fix)+
+- House:
+    - Global: AttackWolf+
+    - Norse: Hobbit, Moradin, Loki, TreebeardOfFangorn+
+- Manor
+- SiegeWorks
+- TownCenter:
+    - Noah,StellarGateway (A.R.K)+
+
+11. Siege Weapon reworks from mcmt mod
+- Petrobolos+, Catapult+, Cheiroballista+, CheiroballistaHero+
+- SiegeTower+, Helepolis+
+
+12. Naval reworks from mcmt mod:
+- Ship:  VisualScale+
+
+13. New Special Units: Cosmic Forces
+- special hero:
+    - KingLycaon: lykaon hero unit, bleed, siege infantry
+    - Asurendra: asura siege hero unit, wields two mighty dragons for deluge and flame attacks (drones)
+        - HandAttack: anti-structure attack that swings dragons as blunt weapons
+        - Nidhogg: VFXNidhoggScorchArea, bonus vs humansoldier, hero
+        - QingLong: QingLongAttackWaterAoE, bonus vs humansoldier, mythunit
+    - MasterKensei: repurposed hidden unit, shinobi hero, handattack, smoke bomb, ninjutsu+
+        - Ninjutsu: Temporary boost
+        - Smoke Bomb: Self-Invisibility, Spawn Shinobi Clone x5 that lasts 5 seconds
+        - Hand Attack: Laser Sword that deadly to human soldiers
+        - Building Attack: Cluster smoke bombs effective on buildings
+    - CaptainEureka: avenger hero unit, durable knight armor, masterful spin
+    
+    - rework on related production buildings:
+        - house: maxcontained 5, KingLycaon, Asurendra, MasterKensei
+        - manor: maxcontained 15, KingLycaon, Asurendra, Maste  rKensei
+
+14. Nature reworks from mcmt mod
+- tree obscurity: pass-throgh+
+- increased resources: tree+, goldmine+
+
+15. Tech reworks from mcmt mod and new reworks
+- greek
+- atlantean
+    - ArchaicAgeAtlantean:
+        - MilitaryBarracks: Murmillo, Fanatic, Destroyer +
+        - CounterBarracks: Arcus, Turma, Cheiroballista +
+        - Palace: Katapeltes, Contarius, Fire Siphon +
+    
+    - HumanSoldier:
+        - Katapeltes: crush damage, abstractsiegeweapon, siegelineupgrade
+- norse
+    - ArchaicAgeLoki: Draugr,LogicalTypeMythUnitNotTitan,Rime,Jotuns,Valgaldr+
+        - GreatHall: Draugr+
+    - ArchaicAgeOdin: Einheri,HeroOfRagnarok,Gjallarhorn,CallOfValhalla,AvengingSpirit+
+        - GreatHall: Einheri+
+        - TownCenter: HeroOfRagnarok+
+    - ArchaicAgeThor: EconomicUpgraded,DwarvenArmory,Hersir,Jarl,HeroOfRagnarok,HeroOfRagnarokDwarf,HumanSoldier+
+    - ArchaicAgeFreyr: BattleBoar,HillFort,VillagerNorse,VillagerDwarf,Farm,EconomicUpgraded+
+- egyptian
+- chinese
+- wonder names
+- temple names
+
+- archaic age tech & unit enable depending on god
+- transfer military units to different production buildings for grouping
+
+- special techs:
+    - general:
+        - ArchitectsOfMarley: <prereq> Architects, <specificage> MythicAge
+        - AdvancedFortifications I,II,III
+        
+16. Special structures from mcmt mod
+- LandLord build:
+    - TechBuilding+
+    - MageTower+
+    - WarBunker+
+    - EcoMarket+
+    - Bastion:
+        - LandLord,TravelerOxWagon,Voltox,MobileFortress,E.A.P +
+	    - Hitman,Farseer,Multigunner,WindRider,Partisan,Spartan,ImperialGuard,Peacemaker +
+        - Chieftain+, Constructor +
+        - Conan (including godpowers)+
+        - MatsuriYurio, MatsuriAzula (including godpowers)
+
+    - AirCommand (damage aura)
+        - MrWukong+
+    - Bastion:
+        - units+
+        - techs+
+    - Temple of Primordials
+        - ThorDescended,VolstaggAwakened,SurtrAwakened,FenrisulfrAwakened +
+        - Grootia,Earthshaker,OrphicEgg,Phanes +
+        - MCMT_KastorLegend,MCMT_HuangZhaowu,MCMT_HuangZhaowuWife,MCMT_NvChou,MCMT_ChampionOfFreyr,ValkyrieWarrior +
+        - MCMT_GiantSiegeCrossbow,MCMT_Devastator,NukeCannon,MCMT_ColossusOfRhodes,SolarBarge +
+
+    - S.V.A
+        - units+
+        - techs+
+
+        - Worldbreaker (mobile dock, superunit):
+            - Trains: Onigami +
+
+        - FlyingDutchman:
+            - Trains: MummyFallen,PirateCaptain,GhostCrew +
+        
+    - Hall of Heroes:
+        - Trains: Captains (numkill veterancy), Tanks, Mothership
+
+- T.O.W build:
+    - TheAttractor+
+    - MerchantFarmer: DionysianFarm,IndustrialFarm(restock removed)+
+
+- E.A.P build:
+    - BeaconOfLightning,BeaconOfTruth,BeaconOfSun,BeaconOfSea,BeaconOfAffection,BeaconOfAmbition +
+	- Electrofence(transform removed),HolofenceGate,SonicDisruptorArray,WarpPortal +
+
+17. Art Model Reworks
+- Pharaoh: chariot (tech model, gold), pharaoh (passenger attachment), sword (weapon attachment)
+- Ballista: cheiroballista (model, iron, gold, engineers), ballista (weapon attachment)
+
+18. Colossal Map transfers from mcmt
+- Land+
+- Naval+
+
+19. God Powers transfers from mcmt
+- god powers: no favor cost, reworked god powers
+    - greek+, norse+, egyptian+, atlantean+, chinese+
+- super powers
+    - Conan: Bronze,FlamingWeapons,ForestFire,OrbitalStrike +
+    - MatsuriYurio+: PsionicDecimator +
+    - MatsuriAzula: PsionicLevitation +
+    - WorldBreaker: TsunamiGenerator +
+
+=== JAPANESE: NEW
+* MythUnit
+    - TitanYamataNoOrochi: titanattack on naval+
+
+==============================================================================
+==================== REWORK-PLANS ======================================
+==============================================================================
+=== JAPANESE: NEW
+* MythUnit
+    - Flying
+        - Onmoraki: Land
+    - Siege
+        - Asura: SiegeWeapon,SiegeLineUpgrade
+        - Oni: SiegeWeapon, SiegeLineUpgrade
+    - Naval
+        - Honengyo: Amphibious
+        - Wanyudo: Amphibious, Burn, Bonus (villager,trade)
+        - Umibozu: SiegeWeapon, SiegeLineUpgraded
+        - Kappa
+    - MilitaryUnit
+        - Kamaitachi: samurai,infantry,bleed
+        - Tengu: infantry,samurai
+        - Jorogumo: Healer
+        - Shinigami: Healer, Movement (Air)
+        - MasterlessSword: InfantryLineUpgrade
+    - Beast
+        - Raiju    
+* Hero
+    - Miko: Villager, Build Accel
+    - Bushi, OnnaMusha
+    - Daimyo, Shogun
+    - Onmyoji (antibuilding fireball, antimyth (default), banish, slowaura (mythunit), healaura (empowerer, healer), barrier, summon (kitsune 5))
+* MilitaryUnit: Infantry, Cavalry, Archer, Siege
+* Naval: FishingShip, Warship, Transport
+    - Spear:YariSpearman,NaginataRider
+    - Archer:YumiArcher
+    - Sword:Samurai,Shinobi
+* Villager
+    - Commoner
+* Tech
+    - Hero
+        - Kagura: GatherShrine (Onmyoji)
+        - GoheiWands: affects Onmoji
+        - EightBanners
+        - Onmyodo
+    - MythUnit
+        - WindSickes: VFXBLeed (Kamaitachi)
+        - CondemnedSoul: VFXFire, affects (Shinigami,RevenantShinigami,Wretched,HadesShade,Mummy,MummyFallen,Minion,MinionResurrected,GhostCrew,PirateCaptain)
+        - AsceticPractices
+        - ThunderousPresence
+        - BurningMalevolence
+        - RestlessArmy
+        - DeadlySnare, WisdomOfNine
+        - DeadlyRage, OniMask
+        - EternalHaunting
+    - HumanSoldier:
+        - Katagi: speed 0.5
+        - HuntersStrength: range (villager,archer), projectilespeed
+        - Kumiki: build workrate (villager,miko), crusharmor (building)
+        - GoldenKite
+        - HannyaMask
+        - TenFistSword
+        - Sojutsu
+        - SashimonoBannermen
+        - GalesFury
+        - SeasideInfiltrators
+        - AsymmetricalBows: enable archer proximity attack
+    - Siege:
+        - SumoTraining: Oyumi,SiegeCrossbow,Catapult,Petrobolos,CheiroBallista,Ballista
+        - MechanicalArtisans: 
+            - Ship,WaterMill
+            - Villager,Wanyudo, AbstractSiegeWeapon, MechanicalOxCaravan, Colossus, Sentinel, Icarus, BattleBoar
+            - AbstractDwarf, Eitri, Brokk, Automaton
+    - Villager:
+        - SaltwaterSpring: workrate ??? 
+    - Naval:
+        - DanNoUraTactics
+        - HeavenlyBarrage
+    - GodPower:
+        - DenDenDrums: rof
+        - IvoryNetsuke
+    - Building:
+        - DivinePrefecture
+        - Tenshu
+* Building
+* Campaign Hero
+    - Harumoto (shogun),Tatsuro (father),Sojobo (tengu),Yasuko(girl), Akari(samurai,katana,spear)
+    - Kagemasa (shogun,sword,spear,yamatanoorichi),Magumo (jorogumo),ShutenDoji (oni,metalbat,heavenlyspear),YukiOnna
+    - ClanMember,Prisoner,Skult,Tanuki,Theris,HallgerdForbeard,HatamotoSamrai,Kamos,Kastor,
+    - AbeNoSeimei,HarumotoBlessed,DaimyoBlessed,ClanMemberSpear,
+    - Kodama,ShinbokuSoul,Kappa
+
+    - Cangjie,Houyi,YanFeiFeng,Chiyou,ChiyouTitan,CanjieRider,CangjieKnife,HouyiRider,YanFeiFenRider
+    - CelestialPillar,Penglai,AmeNoUkihashi
+* Hidden Units
+    - Sakimori,Azusa,BowCavalry,BushiYari
+    - Dog,Vulture,Harpy,Horse
+    - Griffon,Santa,Apep,Golem,WilliamWalrus
+    - Bondi,Recognizer,Chariot,WarChariot,Cataphract
+    - Charioteria,QinghaiLakeShrine,ShrineOfTheHunt,Goshinboku
+    - TownWall(short,long,connector),ToriiGate,KusanagiNoTsurugi
+    - ShrineMiniature,HeavenlyJeweledSpear,KagemasaSword
+    - SnowMonkey,GreenPheasant,JapaneseWolf,Serow,SpottedDeerSPC
+* Model Art
+* God Power
+* New Special Hero
+* Blessing
+    - WayOfTheStorm,WayOfTheMoon,WayOfTheSun
+
+* Nature
+    - resource rework, obscurion (japanese and chinese trees)
+
+=== DEMETER: NEW
+- Hero: Orpheus,Icarus,Iolaus,Midas +
+
+* MythUnit
+    - lykaonvillager,lykaon,hamadryad,siren,harpy
+
+* Ship: FishingShip
+    - trade
+* Tech
+    - divinelabor
+    - thornedwalls,panspioneers,predatoryinstinct
+    - gracioushospitality,hallowedwoodlands,fatedarrows
+    - sacredland,enchantedhymn (affects orpheus)
+    - irongrip
+* Building
+* Civilization boost
+* God Power
+    - wither, arcadianmeadow (heal, farm workrate), communalhearth, plenty (workrate+), underworldinvasion
+* ArtModel
+    - lykaonvillager -> scythe (anubite)
+
+
+mummy -> pierce-, bonusdamage+
+burningpitch -> bonusdamage 4 to 2.5, dot+, vfxfire
+ballistatower, crossbowtower -> additional crush damage
+japanese reworks
+asurendra, kinglycaon -> visualscale
+bragi (hero, god) -> orpheus model
+heroofragnorok vs heroofragnorokdwarft -> rof+, attack- vs rof-, attack+  
+chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
+
+rework
+	pharaoh -> desertwind,chariot upgrades
+	pharaohnekingdom -> desertwind,chariot upgrades,siegelineupgrade
+	warelephant -> siegelineupgrade
+	newkingdom -> pharaoh upgrade
+
+	mounment
+		villagers -> boost workrate
+		soldiers -> boost train rate
+		pharaohs -> boost respawm rate
+		gods -> boost myth hp

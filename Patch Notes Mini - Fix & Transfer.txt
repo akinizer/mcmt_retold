@@ -1,0 +1,77 @@
+--- Done ---
+Landlord accel:
+	Bastion,TempleOfPrimordials,SVA,MageTower,AirCommand,WarBunker,TechBuilding,EcoMarket
+
+TechBuilding,EcoMarket,MageTower,WarBunker,Bastion
+
+Bastion accel:
+	LandLord,Chieftain,Constructor,TravelerOxWagon,Voltox,MobileFortress,E.A.P
+	Conan,Hitman,MatsuriYurio,MatsuriAzula,Farseer,Multigunner,WindRider,Partisan,Spartan,ImperialGuard,Peacemaker
+
+T.O.W accel:
+	TheAttractor,SuperPig,Merchant units,SeasonalFarm,IndustrialFarm,DionysianFarm
+	
+E.A.P accel
+	BeaconOfLightning,BeaconOfTruth,BeaconOfSun,BeaconOfSea,BeaconOfAffection,BeaconOfAmbition
+	Electrofence,HolofenceGate,SonicDisruptorArray,WarpPortal
+	
+TempleOfPrimordials accel (techs are done)
+	TempleOfPrimordials_ActivateTech_GodsBeasts
+	TempleOfPrimordials_ActivateTech_Primevals
+	TempleOfPrimordials_ActivateTech_Return
+	TempleOfPrimordials_ActivateTech_Legends
+	TempleOfPrimordials_ActivateTech_SuperWeapons
+
+TempleOfPrimordials accel (units)
+	ThorDescended,VolstaggAwakened,SurtrAwakened,FenrisulfrAwakened
+	Grootia,Earthshaker,OrphicEgg,Phanes
+	MCMT_KastorLegend,MCMT_HuangZhaowu,MCMT_HuangZhaowuWife,MCMT_NvChou,MCMT_ChampionOfFreyr,ValkyrieWarrior
+	MCMT_GiantSiegeCrossbow,MCMT_Devastator,NukeCannon,MCMT_ColossusOfRhodes,SolarBarge
+
+AirCommand
+	MrWukong
+
+S.V.A accel
+	Desolator,Flagship,Navigator,ScorpionBoat,FlyingDutchman,Blazemaster,Worldbreaker,Onigami
+	OilRigPacked
+		OilRig
+MCMT_DwarvenForge accel (dwarven armory, giantslaying, thunderslaying)
+
+Worldbreaker accel
+	Onigami, mobile dock
+
+FlyingDutchman accel
+	PirateCaptain,GhostCrew,MummyFallen
+
+SiegeTower
+	SiegeTurret
+
+Chinese ranged soldiers
+	Entrench
+
+SiegeWorkshop -> MechanizedMammothUnit
+
+Hall of Heroes (formerly manor)
+	Captains
+		moved to HallOfHeroes
+		veterancy added (numkills, rof, maxp, numprojectile)
+
+Baolei_BuildingAccels: 
+	Offensive / Defensive warfare modes
+
+MCMT_Researches
+	Special Building researches
+	Civilization Building researches
+
+--- art file update
+Pharaoh: chariot (tech model, gold), pharaoh (passenger attachment), sword (weapon attachment)
+Ballista: cheiroballista (model, iron, gold, engineers), ballista (weapon attachment)
+Passenger: catapult,petrobolos,oyumi,siegecrossbow
+
+--- Progress ---
+DONE. Congratulations!
+
+
+
+
+	

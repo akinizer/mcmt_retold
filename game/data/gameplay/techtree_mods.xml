@@ -813,19 +813,6 @@
           <!-- TravelerOxWagon Single Page -->
           <!--Assign-->
           <effect type="Data" amount="1.00" subtype="CommandAdd" proto="TheAttractor" row="2" column="0" relativity="Assign"><target type="ProtoUnit">TravelerOxWagon</target></effect>
-          <!-- E.A.P Single Page    
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="BeaconOfLightning" row="0" column="0" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="BeaconOfTruth" row="0" column="1" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="BeaconOfSun" row="0" column="2" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="BeaconOfSea" row="0" column="3" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="BeaconOfAffection" row="0" column="4" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="BeaconOfAmbition" row="0" column="5" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
-
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Electrofence" row="1" column="0" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="HolofenceGate" row="1" column="1" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="SonicDisruptorArray" row="1" column="2" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
-          <effect type="Data" amount="1.00" subtype="CommandAdd" proto="WarpPortal" row="1" column="3" relativity="Assign"><target type="ProtoUnit">EstablishmentAssistProbe</target></effect>
--->       
         </effects>
     </tech>
 
@@ -1300,7 +1287,7 @@
 	</tech>
   <tech name="MCMT_AdvancedFortifications_I" mergeMode="add">
     <flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_ADVANCEDFORTIFICATIONS_NAME</displaynameid>
+		<displaynameid>STR_TECH_ADVANCEDFORTIFICATIONS_I_NAME</displaynameid>
 		<rollovertextid>STR_TECH_ADVANCEDFORTIFICATIONS_LR</rollovertextid>
 		<icon>resources\tech\architect_marley.png</icon>
 		<status>UNOBTAINABLE</status>
@@ -1327,7 +1314,7 @@
   </tech>
   <tech name="MCMT_AdvancedFortifications_II" mergeMode="add">
     <flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_ADVANCEDFORTIFICATIONS_NAME</displaynameid>
+		<displaynameid>STR_TECH_ADVANCEDFORTIFICATIONS_II_NAME</displaynameid>
 		<rollovertextid>STR_TECH_ADVANCEDFORTIFICATIONS_LR</rollovertextid>
 		<icon>resources\tech\architect_marley.png</icon>
 		<status>UNOBTAINABLE</status>
@@ -1354,7 +1341,7 @@
   </tech>
   <tech name="MCMT_AdvancedFortifications_III" mergeMode="add">
     <flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_ADVANCEDFORTIFICATIONS_NAME</displaynameid>
+		<displaynameid>STR_TECH_ADVANCEDFORTIFICATIONS_III_NAME</displaynameid>
 		<rollovertextid>STR_TECH_ADVANCEDFORTIFICATIONS_LR</rollovertextid>
 		<icon>resources\tech\architect_marley.png</icon>
 		<status>UNOBTAINABLE</status>
