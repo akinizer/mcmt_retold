@@ -5765,6 +5765,22 @@
 		<unittype>ArcherLineUpgraded</unittype>
 	</unit>
     <!-- Egyptian Naval Units-->
+	<unit name="WarBarge">
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">2.000000</damage>
+			<damage type="Crush">4.000000</damage>
+			<damagebonus type="AbstractArcherShip">2.0000000</damagebonus>
+			<maxrange>20.000000</maxrange>
+			<projectile>ProjectileBallistaShot</projectile>
+			<numberprojectiles>4</numberprojectiles>
+			<impacteffect>effects\impacts\crush</impacteffect>
+			<volleymode></volleymode>
+			<onhiteffect active="0" type="ProgFreeze" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
+			<onhiteffect active="0" type="ProgFreeze" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="Ship"></onhiteffect>
+		</protoaction>
+	</unit>
     <!-- Egyptian Buildings-->
 	<unit name="SiegeWorks">	
 		<train row="0" column="5">MechanizedMammothUnit</train>		

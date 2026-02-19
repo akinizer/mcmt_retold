@@ -87,11 +87,15 @@
 - siege weapon:
     - SiegeTower:
         - Entrench: SiegeTurret
-- cavalry
+- cavalry:
     - WarElephant: SiegeLineEpgrade
-- archer
+- archer:
     - ChariotArcher: ArcherLineUpgrade
     - Slinger: ArcherLineUpgrade
+- naval:
+    - warbarge: progfreeze
+    - 
+
 - hero:
     - General Reworks: Priest+, Pharaoh+, PharaohNewKingdom+, SonOfOsiris (Son of Horus)+
     - Pharaoh: VisualScale+, attack type
@@ -227,6 +231,17 @@
     - Chariot Archer Upgrades: Pharaoh, PharohNewKingdom (hp,speed,hackarmor)
     - DesertWinds: Pharaoh, PharohNewKingdom (hp,speed,piercearmor)
     - NewKingdom: Pharaoh (LOS,Empower), Monument (GodPowerBlockRadius)
+    - ScallopAxe: axeman (damage rof hackarmor range laststand, economic workrate)  
+    - LeatherFrameShield: humansoldier, scarab, leviathan -> (reflect)
+    - electrumbullets: (slinger, rangedattack, div, rof, range)
+    - slingsofthesun: (burn)
+    - shaduf: (farm cost workrate, dropsite buildpoints, siegeweapo trainpoints, siegeweapon chariotarcher pharaoh pharaohnewkingdom speed)
+    - bonebow: (chariotarcher range trackrating)
+    - floodofthenile: (farm workrate, petsuchos hp speed)
+    - clairvoyance: (priest pharaoh los)
+    - solarbarque: (warbarge projectileballoffire div)
+    - funeralbarge: (priest speed, warbarge projectileonmyojiattack burn progfreeze)
+    - spearofhorus: (spearman  div shieldpoints)
 - chinese
 - wonder names
 - temple names
@@ -447,3 +462,40 @@ monument
     soldiers -> boost train rate
     pharaohs -> boost respawm rate
     gods -> boost myth hp
+
+* Tech Combination Special Myth Hero Units
+Japanese
+
+Chinese
+    Chiyou + Nüba + Gonggong
+    Xuannü + Goumang + Huangdi
+    Ciyou + Goumang + Gonggong
+Greek
+    Athena + Dionysus + Hera
+    Hermes + Apollo + Hephaestus
+    Athena + Ares + Artemis
+    Ares + Apollo + Hephaestus
+    Athena + Aphrodite + Artemis
+    Ares + Dionysus + Artemis
+    Pan + Aphrodite + Persephone
+    Pan + Hestia + Perspehone
+    Ares + Hestia + Persephone
+Egyptian
+    Feral Hero: Bastet / Anubis + Sobek / Sekhmet + Horus
+    Undead Hero: Anubis + Nephtys + Osiris
+    Science Hero: Ptah + Hepthys + Thoth
+Norse
+    Winter Hero: Freyja + Skadi + Tyr
+    Warrior Hero:
+    Archer Hero:
+    Giant Hero: Forseti + Bragi + Baldr
+    Bard Knight Hero: Heimdall + Njord + Hel
+    Cavalry Hero: Forseti + Njord + Tyr
+    Sky Hero: Heimdall + Njord + Tyr
+    Siren Hero: Ullr + Aegir + Hel
+    Ullr / Freya + Vidar + Bragi
+Atlantean
+    Leto + Rheia + Atlas
+    Solar Hero: Prometheus + Hyperion + Helios
+    Witch Hero: Oceanos + Theia + Hekate
+    Cosmic Hero: Oceanus + Theia + Atlas
