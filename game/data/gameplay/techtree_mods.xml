@@ -3016,9 +3016,33 @@
       </effect>
     </effects>
   </tech>  
+  <tech name="WatchTower" mergeMode="add">
+    <effects>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileBallistaShot" relativity="Assign">
+        <target type="ProtoUnit">SentryTower</target></effect>
+    </effects>
+  </tech>
   <tech name="GuardTower" mergeMode="add">
     <effects>
       <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute">
+        <target type="ProtoUnit">SentryTower</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileCatapultShot" relativity="Assign">
+        <target type="ProtoUnit">SentryTower</target></effect>
+    </effects>
+  </tech>
+  <tech name="BallistaTower" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute">
+        <target type="ProtoUnit">SentryTower</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileHamadryadSpike" relativity="Assign">
+        <target type="ProtoUnit">SentryTower</target></effect>
+    </effects>
+  </tech>
+  <tech name="CrossbowTower" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute">
+        <target type="ProtoUnit">SentryTower</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileHamadryadSpike" relativity="Assign">
         <target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>
@@ -3060,57 +3084,47 @@
     <techtype>ArmoryTechnology</techtype>
     <techage>MythicAge</techage>
     <effects>
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
-        <target type="ProtoUnit">AbstractArcher</target></effect>
-      <effect type="Data" action="RangedAttack" amount="-2.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
-        <target type="ProtoUnit">ThrowingAxeman</target></effect>
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
-        <target type="ProtoUnit">AbstractArcherShip</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.50" subtype="Damagebonus" unittype="Ship" relativity="Absolute">
-        <target type="ProtoUnit">AbstractArcher</target></effect>
+      <!-- Archers -->
+      <effect type="Data" action="RangedAttack" amount="0.50" subtype="Damagebonus" unittype="Building" relativity="Absolute">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+      <effect type="Data" action="RangedAttack" amount="0.50" subtype="Damagebonus" unittype="Ship" relativity="Absolute">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+      <effect type="Data" action="RangedAttack" amount="0.50" subtype="Damagebonus" unittype="AbstractSiegeWeapon" relativity="Absolute">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
       
+      <!-- Exclusive Archers -->
       <effect type="Data" action="RangedAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
         <target type="ProtoUnit">AbstractArcherShip</target></effect>
-        
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
-        <target type="ProtoUnit">Centaur</target></effect>
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
-        <target type="ProtoUnit">Medusa</target></effect>
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
-        <target type="ProtoUnit">Satyr</target></effect>
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
-        <target type="ProtoUnit">Draugr</target></effect>
+      <effect type="Data" action="RangedAttack" amount="5.0" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">FireArcher</target></effect>
       
-      <effect type="Data" action="RangedAttack" amount="1.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
-        <target type="ProtoUnit">Helepolis</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
-        <target type="ProtoUnit">SiegeTower</target></effect>
+      <!-- Siege Archers -->
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
         <target type="ProtoUnit">Ballista</target></effect>
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
         <target type="ProtoUnit">SiegeCrossbow</target></effect>
 
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
+      <!-- Towers Archers -->
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
         <target type="ProtoUnit">AbstractTower</target></effect>
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
         <target type="ProtoUnit">AbstractFortress</target></effect>
 
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="AnimalOfSet" relativity="Absolute">
+      <!-- Workers Hunters -->
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="AnimalOfSet" relativity="Absolute">
         <target type="ProtoUnit">AbstractVillager</target></effect>
 
-      <effect type="Data" amount="0.25" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="4.00" targettype="House" relativity="Assign">
-        <target type="ProtoUnit">AbstractArcher</target></effect>
-      <effect type="Data" amount="0.25" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="4.00" targettype="Manor" relativity="Assign">
-        <target type="ProtoUnit">AbstractArcher</target></effect>
-      <effect type="Data" amount="0.25" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="4.00" targettype="Dropsite" relativity="Assign">
-        <target type="ProtoUnit">AbstractArcher</target></effect>
-      <effect type="Data" amount="0.25" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="4.00" targettype="Ship" relativity="Assign">
-        <target type="ProtoUnit">AbstractArcher</target></effect>
+      <!-- Burn -->
+      <effect type="Data" amount="0.10" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Building" dmgtype="Divine" relativity="Assign">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+      <effect type="Data" amount="0.10" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Ship" dmgtype="Divine" relativity="Assign">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+      <effect type="Data" amount="0.10" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="AbstractSiegeWeapon" dmgtype="Divine" relativity="Assign">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
 
-      <effect type="Data" action="RangedAttack" amount="5.0" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">FireArcher</target></effect>
-      <effect type="Data" amount="0.25" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="4.00" targettype="AbstractSiegeWeapon" relativity="Assign">
-        <target type="ProtoUnit">AbstractArcher</target></effect>
+      <!-- VFXFire -->
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" relativity="Assign">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>            
     </effects>
   </tech>  
 
@@ -3855,10 +3869,10 @@
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">Priest</target></effect>
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">Priest</target></effect>
 
-	  <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.10" subtype="Damage" relativity="BasePercent"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">AbstractPharaoh</target></effect>
+	    <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.10" subtype="Damage" relativity="BasePercent"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
 	</effects>
   </tech>
   <tech name="HeavySlingers" mergeMode="add">
@@ -3868,10 +3882,10 @@
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">Priest</target></effect>
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">Priest</target></effect>
 
-	  <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.15" subtype="Damage" relativity="BasePercent"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">AbstractPharaoh</target></effect>
+	  <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.15" subtype="Damage" relativity="BasePercent"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
 	</effects>
   </tech>
   <tech name="ChampionSlingers" mergeMode="add">
@@ -3881,16 +3895,10 @@
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">Priest</target></effect>
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">Priest</target></effect>
 
-	  <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.20" subtype="Damage" relativity="BasePercent"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">AbstractPharaoh</target></effect>
-    </effects>
-  </tech>
-  <tech name="MediumWarElephants" mergeMode="add">
-    <effects>
-      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">MechanizedMammothUnit</target></effect>
-      <effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent"><target type="ProtoUnit">MechanizedMammothUnit</target></effect>
+	  <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.20" subtype="Damage" relativity="BasePercent"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">AbstractEmpowerer</target></effect>
     </effects>
   </tech>
   <tech name="HeavyWarElephants" mergeMode="add">
@@ -3907,8 +3915,39 @@
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">MechanizedMammothUnit</target></effect>
     </effects>
   </tech>
+  <tech name="HeavyChariotArchers" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">Pharaoh</target></effect>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">PharaohNewKingdom</target></effect>
+      <effect type="Data" amount="1.10" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">Pharaoh</target></effect>
+      <effect type="Data" amount="1.10" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">PharaohNewKingdom</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">Pharaoh</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">PharaohNewKingdom</target></effect>
+    </effects>
+  </tech>
+  <tech name="ChampionChariotArchers" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">Pharaoh</target></effect>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">PharaohNewKingdom</target></effect>
+      <effect type="Data" amount="1.10" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">Pharaoh</target></effect>
+      <effect type="Data" amount="1.10" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">PharaohNewKingdom</target></effect>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">Pharaoh</target></effect>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">PharaohNewKingdom</target></effect>
+    </effects>
+  </tech>
 
   <!-- Egyptian - Techs-->
+  <tech name="NewKingdom" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute"><target type="ProtoUnit">Pharaoh</target></effect>
+      <effect type="Data" amount="15.00" subtype="GodPowerBlockRadius" relativity="Absolute">
+        <target type="ProtoUnit">AbstractMonument</target></effect>
+      <effect type="Data" action="Empower" amount="1.33" subtype="EmpowerModify" empowertype="self" unittype="LogicalTypeBuildingThatCanBeEmpowered" modifytype="FavorGatherRate" relativity="BasePercent">
+        <target type="ProtoUnit">Pharaoh</target></effect>
+      <effect type="Data" action="Empower" amount="0.3" subtype="EmpowerModify" empowertype="self" unittype="LogicalTypeAffectedByValleyOfTheKings" modifytype="MilitaryTrainingRate" relativity="BasePercent">
+        <target type="ProtoUnit">Pharaoh</target></effect>
+    </effects>
+  </tech>
   <tech name="HandsOfThePharaoh" mergeMode="add">
     <effects>
       <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent">
@@ -3921,7 +3960,7 @@
           <target type="ProtoUnit">Priest</target>
         </effect>
       <effect type="Data" amount="1.50" subtype="Damage" action="RangedAttack" relativity="BasePercent">
-          <target type="ProtoUnit">AbstractPharaoh</target>
+          <target type="ProtoUnit">AbstractEmpowerer</target>
         </effect>
       <effect type="Data" amount="4.50" subtype="Damage" action="RangedAttack" relativity="BasePercent">
           <target type="ProtoUnit">Priest</target>
@@ -4034,6 +4073,10 @@
     <effects>
         <effect type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">Pharaoh</target></effect>
         <effect type="Data" amount="1.10" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">Pharaoh</target></effect>
+        <effect type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">PharaohNewKingdom</target></effect>
+        <effect type="Data" amount="1.10" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">PharaohNewKingdom</target></effect>
+        <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent"><target type="ProtoUnit">Pharaoh</target></effect>
+        <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent"><target type="ProtoUnit">PharaohNewKingdom</target></effect>
     </effects>
   </tech>
   <tech name="SerpentSpear" mergeMode="add">

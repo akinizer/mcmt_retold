@@ -13,7 +13,7 @@
     <impacteffect>effects\impacts\hack</impacteffect>
   </action>
   <action>
-    <name stringid="STR_ACTION_RANGED">RangedAttackMyth</name>
+    <name stringid="STR_ACTION_RANGED">RangedAttack</name>
     <type>Attack</type>
     <attackaction>1</attackaction>
     <rangedlogic>1</rangedlogic>
@@ -23,7 +23,6 @@
     <spreadfactor>0.25</spreadfactor>
     <trackrating>99.0</trackrating>
     <impacteffect>effects\impacts\pierce</impacteffect>
-    <rate type="All">1.0</rate>
   </action>
   <action>
     <name stringid="STR_ACTION_EMPOWER">Empower</name>
@@ -71,5 +70,5 @@
     <modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
     <modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
   </action>
-  <tactic>Default<action priority="100">RangedAttackMyth</action><action priority="90">HandAttack</action><action>Empower</action><action>Heal</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+  <tactic>Default<action priority="100">RangedAttack</action><action priority="90">HandAttack</action><action>Empower</action><action>Heal</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
 </tactics>

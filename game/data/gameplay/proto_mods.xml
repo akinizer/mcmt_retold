@@ -4189,13 +4189,14 @@
 			<defaultattack>1</defaultattack>
 		</protoaction>
 		<protoaction>
-			<name>RangedAttackMyth</name>
+			<name>RangedAttack</name>
 			<rof>1.000000</rof>
 			<damage type="Divine">12.00000</damage>
 			<damagebonus type="MythUnit">2.500000</damagebonus>
 			<damagebonus type="HumanSoldier">3.000000</damagebonus>
 			<minrange>5.0</minrange>
-			<maxrange>8.0</maxrange>
+			<maxrange>8.0</maxrange>			
+    		<rate type="All">1.0</rate>
 			<projectile>ProjectilePriestPharaoh</projectile>
 		</protoaction>
 		<protoaction>
@@ -4265,6 +4266,7 @@
 		<unittype>Hero</unittype>
 		<unittype>AbstractPharaoh</unittype>
 		<unittype>Ranged</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
 		<unittype>LogicalTypeAffectedByRestoration</unittype>
@@ -4321,12 +4323,11 @@
 			<defaultattack>1</defaultattack>
 		</protoaction>
 		<protoaction>
-			<name>RangedAttackMyth</name>
+			<name>RangedAttack</name>
 			<rof>1.000000</rof>
 			<damage type="Divine">12.00000</damage>
 			<damagebonus type="MythUnit">2.500000</damagebonus>
 			<damagebonus type="Building">2.500000</damagebonus>
-			<rate type="Unit">0.0</rate>
 			<rate type="MythUnit">1.0</rate>
 			<rate type="Ship">1.0</rate>
 			<rate type="Building">1.0</rate>
@@ -4887,8 +4888,10 @@
         <protoaction>
         <name>RangedAttack</name>
         <rof>1.700000</rof>
-        <damage type="Pierce">30.000000</damage>
-        <damagebonus type="MythUnit">3.000000</damagebonus>
+        <damage type="Pierce">3.000000</damage>
+        <damagebonus type="MythUnit">30.000000</damagebonus>
+        <damagebonus type="HumanSoldier">30.000000</damagebonus>
+        <damagebonus type="AbstractVillager">40.000000</damagebonus>
         <damagebonus type="Hero">0.250000</damagebonus>
         <maxrange>12.000000</maxrange>
         <projectile>ProjectileMummyFlies</projectile>
@@ -5749,6 +5752,18 @@
 	</unit>
     
     <!-- Egyptian Military Units-->
+	<unit name="WarElephant">
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+	</unit>
+	<unit name="ChariotArcher">
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+	</unit>
+	<unit name="Slinger">
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+	</unit>
     <!-- Egyptian Naval Units-->
     <!-- Egyptian Buildings-->
 	<unit name="SiegeWorks">	
@@ -5911,6 +5926,7 @@
 		<unittype>MilitaryUnit</unittype>
 		<unittype>AbstractInfantry</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
 		<protoaction>
 			<name>RangedAttack</name>
 			<rof>1.0</rof>
@@ -7598,7 +7614,10 @@
 		<tech row="0" column="0">MCMT_OracleWatchers</tech>
 		<buildlimit>10</buildlimit>
 
-		<protoaction>
+		<contain>ArcherLineUpgraded</contain>
+		<notcontain>AbstractInfantry</notcontain>
+
+		<protoaction mergeMode="replace">
 			<name>RangedAttack</name>
 			<rof>15.00000</rof>
 			<damage type="Pierce">25</damage>
@@ -7608,10 +7627,12 @@
 			<damagebonus type="MythUnit">0.3</damagebonus>
 			<minrange>1.000000</minrange>
 			<maxrange>50.000000</maxrange>
-			<projectile>ProjectileCatapultShot</projectile>
+			<projectile>ProjectileArrowFlaming</projectile>
 			<numberprojectiles>1</numberprojectiles>
 			<autoretarget>1</autoretarget>
 			<canattackground>1</canattackground>
+			<activeifcontainsunits>1</activeifcontainsunits>
+			<containscalebasedamage>1</containscalebasedamage>
 		</protoaction>
 		<protoaction>
 			<name>HandAttack</name>
@@ -7620,7 +7641,7 @@
 			<damagebonus type="Ship">3.000000</damagebonus>
 			<maxrange>1.000000</maxrange>
 			<maxrange>10.000000</maxrange>
-			<active>0</active>
+			<activeifcontainsunits>1</activeifcontainsunits>
 			<impacteffect>effects\impacts\pierce</impacteffect>
 		</protoaction>
 	</unit>
@@ -7653,7 +7674,7 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_II</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>		
 	</unit>
-	<unit name="MidgolStronghold">
+	<unit name="MigdolStronghold">
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
@@ -7832,6 +7853,7 @@
 	<unit name="SiegeTower">
 		<unittype>AbstractTower</unittype>
 		<unittype>AbstractTransportShip</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
 		<tactics>mcmt_siegetowerturret.tactics</tactics>
 		<protoaction>
 			<name>DelayedTransform</name>

@@ -66,7 +66,7 @@
         - OnDeath: WarBear+
     - ThrowingAxeman+
 
-6. Egyptian reworks from mcmt mod and new Pharaoh reworks
+6. Egyptian reworks from mcmt mod and additional reworks
 - myth unit:
     - VisualScale: Phoenix+, Leviathan+, WarTurtle+, Scarab+, Sphinx+
 
@@ -76,6 +76,7 @@
 
     - Mummy:
         - OnDeath: MummyFallen+
+        - pierce-, bonusdamage+ (mythunit,humansoldier,villager)
 
     - Tutenkhamun (primary): proximity-based attack modes, more durable 
         - melee: vfxbleed, stronger vs humansoldier, melee
@@ -83,15 +84,19 @@
     - NewKingdom (secondary): target based attack modes
         - ranged: mythunit,ship,building, vfxpoison
         - melee: non-mythunit, stronger vs building, range
-
 - siege weapon:
     - SiegeTower:
         - Entrench: SiegeTurret
+- cavalry
+    - WarElephant: SiegeLineEpgrade
+- archer
+    - ChariotArcher: ArcherLineUpgrade
+    - Slinger: ArcherLineUpgrade
 - hero:
-    - VisualScale: Pharaoh+
-
-    - Priest+, Pharaoh+, PharaohNewKingdom+, SonOfOsiris (Son of Horus)+
-
+    - General Reworks: Priest+, Pharaoh+, PharaohNewKingdom+, SonOfOsiris (Son of Horus)+
+    - Pharaoh: VisualScale+, attack type
+    - PharaohNewKingdom: Siegelineupgrade
+    - Pharaoh Tactics: attack type (RangedAttackMyth->RangedAttack)
 - SiegeWorks:
     - MechanizedMammothUnit+
 
@@ -163,7 +168,12 @@
 - SiegeWorks
 - TownCenter:
     - Noah,StellarGateway (A.R.K)+
-
+- Garrison:
+    - SentryTowwe: arrow (ProjectileArrowFlaming), rangedattack (activeifcontainsunits), contain (ArcherLineUpgrade), notcontain (AbstractInfantry)
+    - WatchTower: flyingunitattack (only one enabled), arrow (ProjectileBallistaShot)
+    - GuardTower: arrow (ProjectileCatapultShot)
+    - BallistaTower, CrossbowTower: arrow (ProjectileHamadradSpike), Crush +5
+    
 11. Siege Weapon reworks from mcmt mod
 - Petrobolos+, Catapult+, Cheiroballista+, CheiroballistaHero+
 - SiegeTower+, Helepolis+
@@ -194,6 +204,8 @@
 - increased resources: tree+, goldmine+
 
 15. Tech reworks from mcmt mod and new reworks
+- general
+    - BurningPitch -> bonusdamage-, vfxfire, affected(abstractarcher->archerlineupgrade)
 - greek
 - atlantean
     - ArchaicAgeAtlantean:
@@ -212,6 +224,9 @@
     - ArchaicAgeThor: EconomicUpgraded,DwarvenArmory,Hersir,Jarl,HeroOfRagnarok,HeroOfRagnarokDwarf,HumanSoldier+
     - ArchaicAgeFreyr: BattleBoar,HillFort,VillagerNorse,VillagerDwarf,Farm,EconomicUpgraded+
 - egyptian
+    - Chariot Archer Upgrades: Pharaoh, PharohNewKingdom (hp,speed,hackarmor)
+    - DesertWinds: Pharaoh, PharohNewKingdom (hp,speed,piercearmor)
+    - NewKingdom: Pharaoh (LOS,Empower), Monument (GodPowerBlockRadius)
 - chinese
 - wonder names
 - temple names
@@ -418,25 +433,17 @@
     - wither, arcadianmeadow (heal, farm workrate), communalhearth, plenty (workrate+), underworldinvasion
 * ArtModel
     - lykaonvillager -> scythe (anubite)
-
-
-mummy -> pierce-, bonusdamage+
-burningpitch -> bonusdamage 4 to 2.5, dot+, vfxfire
+* Siege
 ballistatower, crossbowtower -> additional crush damage
-japanese reworks
+* Special Unit
 asurendra, kinglycaon -> visualscale
 bragi (hero, god) -> orpheus model
-heroofragnorok vs heroofragnorokdwarft -> rof+, attack- vs rof-, attack+  
 chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
-
-rework
-	pharaoh -> desertwind,chariot upgrades
-	pharaohnekingdom -> desertwind,chariot upgrades,siegelineupgrade
-	warelephant -> siegelineupgrade
-	newkingdom -> pharaoh upgrade
-
-	mounment
-		villagers -> boost workrate
-		soldiers -> boost train rate
-		pharaohs -> boost respawm rate
-		gods -> boost myth hp
+* Norse
+heroofragnorok vs heroofragnorokdwarft -> rof+, attack- vs rof-, attack+  
+* Egyptian
+monument
+    villagers -> boost workrate
+    soldiers -> boost train rate
+    pharaohs -> boost respawm rate
+    gods -> boost myth hp
