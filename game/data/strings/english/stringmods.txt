@@ -31,6 +31,8 @@ ID = "STR_UNIT_TITAN_CHTHONIAN_NAME"  ;   Str = "Chthonian (Titan)"
 ID = "STR_UNIT_TITAN_XINGTIAN_NAME"  ;   Str = "Xing Tian (Titan)"
 
 // SPECIAL UNITS
+ID = "STR_TECH_SPECIALSERVICE_NAME"   ;   Str = "Special Service"
+
 ID = "STR_UNIT_LANDLORD_NAME"   ;   Str = "Landlord"
 ID = "STR_UNIT_LANDLORD_LR"   ;   Str = "Elite Infantry. All-around. Head of Household and stronger than the basic variant."
 ID = "STR_MSG_LANDLORD_SPAWN"   ;   Str = "CyberTech has granted you a founding father!"
@@ -322,6 +324,8 @@ ID = "STR_UNIT_LOKI_JOTNAR_SR"   ;   Str = "Loki in True Form"
 ID = "STR_UNIT_LOKI_JOTNAR_LR"   ;   Str = "God of Mischief. Has Never Been This Serious"
 
 // NOAH
+ID = "STR_TECH_EGYPTIAN_INNOVATION_NAME"   ;   Str = "Egyptian Innovation"
+
 ID = "STR_UNIT_NOAH_NAME"   ;   Str = "Noah"
 ID = "STR_UNIT_NOAH_SR"   ;   Str = "Noah the Oracle of Guidance"
 ID = "STR_UNIT_NOAH_LR"   ;   Str = "The Legendary Oracle that Visited Many Eras for Millenia in Many Forms; Widely Known as Moses and Pharaoh; Noah of Ark; King David;  "

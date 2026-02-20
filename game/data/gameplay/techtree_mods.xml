@@ -661,7 +661,7 @@
     <tech name="ArchaicAgeEgyptian" mergeMode="add">		
 	  	<effects>
         <!--Noah-->
-        <effect type="TechStatus" status="active">MCMT_EgyptianRenovation</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_EgyptianRenovation</effect>
         <!--Son of Osiris / Horus-->
         <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="FavorGatherRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
         <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="DropsiteRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
@@ -698,7 +698,7 @@
       <status>UNOBTAINABLE</status>
       <effects>
           	<!---->
-            <effect type="TechStatus" status="active">MCMT_SpecialService</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_SpecialService</effect>
             <effect type="TechStatus" status="obtainable">MCMT_RecruitingMountainDwarves</effect>	
             <effect type="TechStatus" status="obtainable">MCMT_ArchitectsOfMarley</effect>		
             <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_I</effect>
@@ -887,11 +887,13 @@
     <!-- Norse Special Techs -->
     <!-- Egyptian Special Techs -->
     <tech name="MCMT_EgyptianRenovation">
+      <displaynameid>STR_TECH_EGYPTIAN_INNOVATION_NAME</displaynameid>
       <status>UNOBTAINABLE</status>
+      <icon>resources\tech\activate_tech.jpg</icon>
+      <researchpoints>1.0000</researchpoints>
+      <cost resourcetype="Favor">15.0000</cost>
       <flag>CountsTowardMilitaryScore</flag>
       <flag>MythTech</flag>
-      
-      <researchpoints>1.0000</researchpoints>
       <effects>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Noah</target></effect>
         <effect type="TechStatus" status="obtainable">MCMT_Noah_Respawn</effect>
@@ -1177,11 +1179,14 @@
 	
 	<!--- LANDLORD AND NOAH SPAWN TECH-->
 	<tech name="MCMT_SpecialService">
-		<status>UNOBTAINABLE</status>
-		<flag>CountsTowardMilitaryScore</flag>
-		<flag>MythTech</flag>
+    <displaynameid>STR_TECH_SPECIALSERVICE_NAME</displaynameid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">15.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
 		
-		<researchpoints>1.0000</researchpoints>
 		<effects><effect type="TechStatus" status="obtainable">MCMT_Landlord_Respawn</effect></effects>
 	</tech>
 
@@ -1201,15 +1206,6 @@
 			</effect>
 		</effects>
 		<effect type="TextOutput">STR_MSG_LANDLORD_SPAWN</effect>
-	</tech>
-
-	<tech name="MCMT_EgyptianRenovation">
-		<status>UNOBTAINABLE</status>
-		<flag>CountsTowardMilitaryScore</flag>
-		<flag>MythTech</flag>
-		
-		<researchpoints>1.0000</researchpoints>
-		<effects><effect type="TechStatus" status="obtainable">MCMT_Noah_Respawn</effect></effects>
 	</tech>
 
 	<!-- KINGDOM OF IRONHAMMER /// DWARVEN FORGE RESEARCHES -->

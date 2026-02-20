@@ -7071,16 +7071,276 @@
     <!-- Japanese Military Units-->
     <!-- Japanese Naval Units-->
     <!-- Japanese Buildings--> 
+	
+	<!-- CAMPAIGN HEROES REWORK -->
 
-    <!-- Campaign Heroes TODO: MCMT
-    <unit name="Arkantos"></unit>
-	<unit name="OdysseusSPC"></unit>
-	<unit name="AjaxSPC"></unit>
-	<unit name="ChironSPC"></unit>
-	<unit name="Kastor"></unit>
-	<unit name="Amanra"></unit>
-	<unit name="Setna"></unit>	
-	<unit name="Reginleif"></unit>-->
+	<!-- Campaign Heroes Fall of Trident -->
+ 	<unit name="Arkantos">
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="OdysseusSPC">
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+				<veterancymodify modifytype="NumProjectiles">2</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="AjaxSPC">
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="ChironSPC">
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+				<veterancymodify modifytype="NumProjectiles">2</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="Kastor">
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="Amanra">
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="Setna">
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+				<veterancymodify modifytype="NumProjectiles">2</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>	
+	<unit name="Reginleif">
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+				<veterancymodify modifytype="NumProjectiles">2</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<!-- Kastor Old, Amanra Old, Ajax Old-->
+
+	<!-- Campaign Heroes New Atlantis -->
+	<!-- Campaign Heroes Pillars of God -->
+	<!-- Campaign Heroes Yasuko's Tale -->
+	<!-- Campaign Heroes Golden Gift -->
 	<unit name="Brokk">
 		<unittype>AbstractInfantry</unittype><unittype>InfantryLineUpgraded</unittype>
 		<hotkeycontext>BuildNorseAccel</hotkeycontext>
@@ -7663,8 +7923,9 @@
 	</unit>
 
 	<unit name="TownCenter">
-		<tech row="3" column="3">MCMT_SpecialService</tech>
 		<tech row="2" column="1">MCMT_ArchitectsOfMarley</tech>
+		<tech row="3" column="2">MCMT_SpecialService</tech>
+		<tech row="3" column="3">MCMT_EgyptianRenovation</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
@@ -19425,13 +19686,13 @@
 		<protoaction>
 			<name>Convert</name>
 			<maxrange>25</maxrange>			
+			<rate type="Hero">0.000000</rate>
 			<rate type="HumanSoldier">5.000000</rate>
 			<rate type="AbstractWarship">5.000000</rate>
 			<rate type="LogicalTypeMythUnitNotTitan">10.000000</rate>
 			<rate type="LogicalTypeMilitaryProductionBuilding">10.000000</rate>
 			<rate type="AbstractDock">10.000000</rate>
 			<rate type="AbstractMarket">10.000000</rate>
-			<rate type="Hero">20.000000</rate>
 			<rate type="AbstractTitan">20.000000</rate>
 			<rate type="Sentinel">20.000000</rate>
 			<rate type="Huntable">2.000000</rate>
