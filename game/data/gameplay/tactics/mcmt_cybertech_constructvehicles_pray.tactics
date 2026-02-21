@@ -1,0 +1,25 @@
+<tactics>
+  <action>
+    <name stringid="STR_ACTION_GATHER">AbsorbFavorResource</name>
+    <type>Gather</type>
+    <maxrange>0.5</maxrange>
+    <rate type="AbstractTemple">1.0</rate>
+    <anim>HandAttack</anim>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_HAND">HandAttack</name>
+    <type>Attack</type>
+    <attackaction>1</attackaction>
+    <handlogic>1</handlogic>
+    <forceareaattacktarget>1</forceareaattacktarget>
+    <anim>HandAttack</anim>
+    <maxrange>1</maxrange>
+    <rate type="All">1.0</rate>
+    <onhiteffect type="Snare" duration="2" rate="0.85">
+    </onhiteffect>
+    <impacteffect>effects\impacts\hack</impacteffect>
+  </action>
+  <tactic>Default<action priority="100">HandAttack</action>
+    <action>AbsorbFavorResource</action>
+    <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

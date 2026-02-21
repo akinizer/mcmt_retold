@@ -25,6 +25,13 @@
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
 	<power name="Earthquake" type="Earthquake" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	
+	<power name="Wither" type="Wither" godpower="" orderhint="3">
+		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
+	<power name="ArcadianMeadow" type="ArcadianMeadow" godpower="" orderhint="3">
+		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
+	<power name="CommunalHearth" type="TempUnit" godpower="" orderhint="3">
+		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<!--Atlantean God Powers-->	
 	<power name="Deconstruction" type="Deconstruction" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	

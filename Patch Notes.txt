@@ -242,6 +242,8 @@
     - solarbarque: (warbarge projectileballoffire div)
     - funeralbarge: (priest speed, warbarge projectileonmyojiattack burn progfreeze)
     - spearofhorus: (spearman  div shieldpoints)
+    - dark water: abyss related enchancements (animals, cavalry, naval beasts)
+    - desert winds: caravan speed
 - chinese
 - wonder names
 - temple names
@@ -298,6 +300,15 @@
 - E.A.P build:
     - BeaconOfLightning,BeaconOfTruth,BeaconOfSun,BeaconOfSea,BeaconOfAffection,BeaconOfAmbition +
 	- Electrofence(transform removed),HolofenceGate,SonicDisruptorArray,WarpPortal +
+
+- Market -> Economic Center -> Financial Center:
+    - Build: 
+        - World Finance Center: 
+            - autogather unlocks (gold,food,favor,wood), repeatable autogather upgrades, bounty (humansoldier,ship,building)
+            - garrison: worker, 250 max
+    - Train:
+        - Construction Vehicles: gather resources
+    - Ability: boosts nearby resources
 
 17. Art Model Reworks
 - Pharaoh: chariot (tech model, gold), pharaoh (passenger attachment), sword (weapon attachment)

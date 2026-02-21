@@ -496,9 +496,45 @@ ID = "STR_UNIT_SIEGE_TURRET_NAME"   ;   Str = "Siege Turret"
 ID = "STR_UNIT_SIEGE_TURRET_SR"   ;   Str = "Siege Turret"
 ID = "STR_UNIT_SIEGE_TURRET_LR"   ;   Str = "Siege Tower Entrenchment in a Defensive Position"
 
+// CYBERTECH FINANCIAL DEVELOPMENT STRUCTURES
+ID = "STR_UNIT_ECONOMIC_CENTER_NAME"   ;   Str = "Economic Center"
+ID = "STR_UNIT_FINANCIAL_CENTER_NAME"   ;   Str = "Financial Center"
+ID = "STR_UNIT_CHAINCORPERATIONS_FACILITY_NAME"   ;   Str = "Chain Corperations Facility"
+
+ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_I_NAME"   ;   Str = "Activate Tech: Financial Development Upgrade I"
+ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_II_NAME"   ;   Str = "Activate Tech: Financial Development Upgrade II"
+ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_III_NAME"   ;   Str = "Activate Tech: Financial Development Upgrade III"
+
+ID = "STR_TECH_FIELDWORKERS_NAME"   ;   Str = "Field Workers"
+ID = "STR_TECH_FIELDWORKERS_LR"   ;   Str = "Assign employees to work in many fields of operations and satisfy an collaborative income"
+ID = "STR_TECH_NEWBUSINESSCONTRACTS_NAME"   ;   Str = "New Business Contracts"
+ID = "STR_TECH_NEWBUSINESSCONTRACTS_LR"   ;   Str = "Arrange and initiate new projects with shareholders for a continous income"
+ID = "STR_TECH_INTERCONTINENTALSHIPMENTS_NAME"   ;   Str = "Intercontinental Shipments"
+ID = "STR_TECH_INTERCONTINENTALSHIPMENTS_LR"   ;   Str = "Import supplications of goods via various shipments"
+ID = "STR_TECH_ELECTRICITYANDENERGYAGREEMENTS_NAME"   ;   Str = "Electricity and Energy Agreements"
+ID = "STR_TECH_ELECTRICITYANDENERGYAGREEMENTS_LR"   ;   Str = "Establish a network of next generation of resources"
+ID = "STR_TECH_FURNITUREANDMATERIALTRANSACTIONS_NAME"   ;   Str = "Furniture and Material Transactions"
+ID = "STR_TECH_FURNITUREANDMATERIALTRANSACTIONS_LR"   ;   Str = "Import materials and products from contract companies across world"
+ID = "STR_TECH_HIGHERRATEHIGHERSTAKES_NAME"   ;   Str = "Higher Rates Higher Stakes"
+ID = "STR_TECH_HIGHERRATEHIGHERSTEAKS_NAME"   ;   Str = "Higher Rates Higher Steaks"
+ID = "STR_TECH_HIGHERRATEHIGHERSTATES_NAME"   ;   Str = "Higher Rates Higher States"
+ID = "STR_TECH_HIGHERRATEHIGHERSTICKS_NAME"   ;   Str = "Higher Rates Higher Sticks"
+ID = "STR_TECH_HIGHERRATEHIGHERSTAKES_LR"   ;   Str = "Invest a high risk and benefit a higher currency rate"
+
+ID = "STR_UNIT_FIELDAGENT_NAME"   ;   Str = "Field Agent"
+ID = "STR_UNIT_FIELDAGENTELITE_NAME"   ;   Str = "Field Agent (Elite)"
+ID = "STR_UNIT_FIELDAGENTOPERATOR_NAME"   ;   Str = "Field Agent (Operator)"
+
+ID = "STR_UNIT_COMBINEHARVESTER_NAME"   ;   Str = "Combine Harvester"
+ID = "STR_UNIT_FELLERBUCHER_NAME"   ;   Str = "Feller Bucher"
+ID = "STR_UNIT_MININGEXCAVATOR_NAME"   ;   Str = "Mining Excavator"
+ID = "STR_UNIT_IDOLIZER_NAME"   ;   Str = "Idolizer"
 
 // REWORKED UNITS
 ID = "STR_UNIT_NILECROCODILE_NAME"   ;   Str = "Nile Crocodile"
+
+// REWORKED TECHS
+ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
 
 // SPECIAL TECHS
 ID = "STR_TECH_MCMT_PAGE_1"   ;   Str = "Page1"

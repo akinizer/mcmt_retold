@@ -752,6 +752,10 @@
             <!--Dwarven Armory CyberTech -->
             <effect type="TechStatus" status="obtainable">MCMT_GiantSlayingTechs</effect>
             <effect type="TechStatus" status="obtainable">MCMT_ThunderSlayingTechs</effect>
+            <!--Market CyberTech Financial Development Techs-->
+            <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeI</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeII</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeIII</effect>
       </effects>
     </tech>
 
@@ -1172,6 +1176,275 @@
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="TempleOfPrimordials_ActivateTech_Primevals" row="0" column="1" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="TempleOfPrimordials_ActivateTech_Legends" row="0" column="2" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="TempleOfPrimordials_ActivateTech_SuperWeapons" row="0" column="3" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
+    </effects>
+  </tech>
+  <tech name="MCMT_FinancialDevelopmentUpgradeI" mergeMode="add">
+    <displaynameid>STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_I_NAME</displaynameid>
+    <researchpoints>5.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <flag>CountsTowardEconomicScore</flag>
+    <researchpoints>15.0000</researchpoints>
+    <cost resourcetype="Gold">250.0000</cost>
+    <prereqs>
+      <techstatus status="Active">Ambassadors</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="ResourceInventoryAura" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">Market</target></effect>
+      <effect type="Data" action="ResourceInventoryCapAura" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">Market</target></effect>
+
+      <effect type="SetName" proto="Market" newname="STR_UNIT_ECONOMIC_CENTER_NAME"></effect>
+    </effects>
+  </tech>
+  <tech name="MCMT_FinancialDevelopmentUpgradeII" mergeMode="add">
+    <displaynameid>STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_II_NAME</displaynameid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <flag>CountsTowardEconomicScore</flag>
+    <researchpoints>10.0000</researchpoints>
+    <cost resourcetype="Gold">280.0000</cost>
+    <cost resourcetype="Wood">220.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeI</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechFellerBucher</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechMiningExcavator</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechCombineHarvester</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechIdolizer</target></effect>
+
+      <effect type="SetName" proto="Market" newname="STR_UNIT_FINANCIAL_CENTER_NAME"></effect>
+    </effects>
+  </tech>
+  <tech name="MCMT_FinancialDevelopmentUpgradeIII" mergeMode="add">
+    <displaynameid>STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_III_NAME</displaynameid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>15.0000</researchpoints>
+    <cost resourcetype="Gold">380.0000</cost>
+    <cost resourcetype="Wood">320.0000</cost>
+     <prereqs>
+      <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeII</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="Gather" amount="1.80" subtype="WoodResource" unittype="Huntable" relativity="BasePercent">
+        <target type="ProtoUnit">CyberTechFellerBucher</target></effect>
+      <effect type="Data" action="Gather" amount="1.80" subtype="GoldResource" unittype="Huntable" relativity="BasePercent">
+        <target type="ProtoUnit">CyberTechMiningExcavator</target></effect>
+      <effect type="Data" action="Gather" amount="1.80" subtype="AbstractFarm" unittype="Huntable" relativity="BasePercent">
+        <target type="ProtoUnit">CyberTechCombineHarvester</target></effect>
+      
+      <effect type="TechStatus" status="obtainable">MCMT_FieldWorkers</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_NewBusinessContracts</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_IntercontinentalShipments</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_ElectricityAndEnergyAgreements</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_FurnitureAndMaterialTransactions</effect>
+      
+      <effect type="TechStatus" status="obtainable">MCMT_HigherRatesHigherSteaks</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_HigherRatesHigherStates</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_HigherRatesHigherSticks</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_HigherRatesHigherStakes</effect>
+
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target></effect>
+      
+      <effect type="SetName" proto="Market" newname="STR_UNIT_CHAINCORPERATIONS_FACILITY_NAME"></effect>
+    </effects>
+  </tech>
+  <tech name="MCMT_FieldWorkers" mergeMode="add">
+    <displaynameid>STR_TECH_FIELDWORKERS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_FIELDWORKERS_LR</rollovertextid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>15.0000</researchpoints>
+    <cost resourcetype="Gold">200.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="HumanSoldier" resourcetype="Gold" amount="5.0" relativity="Absolute">
+        <target type="Player"></target></effect>
+      <effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="Ship" resourcetype="Gold" amount="7.5" relativity="Absolute">
+        <target type="Player"></target></effect>
+      <effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="Building" resourcetype="Gold" amount="10.0" relativity="Absolute">
+        <target type="Player"></target></effect>
+
+      <effect type="SetName" proto="Villager" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="Laborer" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="Commoner" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="Gatherer" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="Citizen" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="CitizenHero" newname="STR_UNIT_FIELDAGENTELITE_NAME"></effect>
+      <effect type="SetName" proto="LykaonVillager" newname="STR_UNIT_FIELDAGENTOPERATOR_NAME"></effect>
+    </effects>
+  </tech>
+  <tech name="MCMT_NewBusinessContracts" mergeMode="add">
+    <displaynameid>STR_TECH_NEWBUSINESSCONTRACTS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_NEWBUSINESSCONTRACTS_LR</rollovertextid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>5.0000</researchpoints>
+    <cost resourcetype="Gold">200.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="AutoGather" amount="10.00" subtype="WorkRate" unittype="Gold" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target></effect>
+    </effects>
+  </tech>
+  <tech name="MCMT_IntercontinentalShipments" mergeMode="add">
+    <displaynameid>STR_TECH_INTERCONTINENTALSHIPMENTS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_INTERCONTINENTALSHIPMENTS_LR</rollovertextid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>5.0000</researchpoints>
+    <cost resourcetype="Gold">200.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="AutoGather" amount="10.00" subtype="WorkRate" unittype="Food" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target></effect>
+    </effects>
+  </tech>
+  <tech name="MCMT_ElectricityAndEnergyAgreements" mergeMode="add">
+    <displaynameid>STR_TECH_ELECTRICITYANDENERGYAGREEMENTS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ELECTRICITYANDENERGYAGREEMENTS_LR</rollovertextid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>5.0000</researchpoints>
+    <cost resourcetype="Gold">200.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="AutoGather" amount="10.00" subtype="WorkRate" unittype="Favor" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target></effect>
+    </effects>
+  </tech>
+  <tech name="MCMT_FurnitureAndMaterialTransactions" mergeMode="add">
+    <displaynameid>STR_TECH_FURNITUREANDMATERIALTRANSACTIONS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_FURNITUREANDMATERIALTRANSACTIONS_LR</rollovertextid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>5.0000</researchpoints>
+    <cost resourcetype="Gold">200.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="AutoGather" amount="10.00" subtype="WorkRate" unittype="Wood" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target></effect>
+    </effects>
+  </tech>
+  <tech name="MCMT_HigherRatesHigherSteaks" mergeMode="add">
+    <displaynameid>STR_TECH_HIGHERRATEHIGHERSTEAKS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_HIGHERRATEHIGHERSTAKES_LR</rollovertextid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\upgrade_tech.png</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>5.0000</researchpoints>
+    <flag>InfiniteTech</flag>
+    <cost resourcetype="Gold">180.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_IntercontinentalShipments</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="AutoGather" amount="0.10" subtype="WorkRate" unittype="Food" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target>
+      </effect>    
+    </effects>
+  </tech>
+  <tech name="MCMT_HigherRatesHigherStates" mergeMode="add">
+    <displaynameid>STR_TECH_HIGHERRATEHIGHERSTATES_NAME</displaynameid>
+    <rollovertextid>STR_TECH_HIGHERRATEHIGHERSTAKES_LR</rollovertextid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\upgrade_tech.png</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>5.0000</researchpoints>
+    <flag>InfiniteTech</flag>
+    <cost resourcetype="Gold">180.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_ElectricityAndEnergyAgreements</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="AutoGather" amount="0.10" subtype="WorkRate" unittype="Favor" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target>
+      </effect>    
+    </effects>
+  </tech>
+  <tech name="MCMT_HigherRatesHigherSticks" mergeMode="add">
+    <displaynameid>STR_TECH_HIGHERRATEHIGHERSTICKS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_HIGHERRATEHIGHERSTAKES_LR</rollovertextid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\upgrade_tech.png</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>5.0000</researchpoints>
+    <flag>InfiniteTech</flag>
+    <cost resourcetype="Gold">180.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_FurnitureAndMaterialTransactions</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="AutoGather" amount="0.10" subtype="WorkRate" unittype="Wood" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target>
+      </effect>    
+    </effects>
+  </tech>
+  <tech name="MCMT_HigherRatesHigherStakes" mergeMode="add">
+    <displaynameid>STR_TECH_HIGHERRATEHIGHERSTAKES_NAME</displaynameid>
+    <rollovertextid>STR_TECH_HIGHERRATEHIGHERSTAKES_LR</rollovertextid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\upgrade_tech.png</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <researchpoints>5.0000</researchpoints>
+    <flag>InfiniteTech</flag>
+    <cost resourcetype="Gold">180.0000</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_NewBusinessContracts</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="AutoGather" amount="0.10" subtype="WorkRate" unittype="Gold" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target>
+      </effect>    
     </effects>
   </tech>
 	
@@ -2777,8 +3050,6 @@
       </effect>
     </effects>
   </tech>
-
-
     <!-- TECH REWORKS -->
 
     <!-- Greek -->
@@ -3273,7 +3544,7 @@
       <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Roc" relativity="Absolute"><target type="ProtoUnit">HumanSoldier</target></effect>
       <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Scarab" relativity="Absolute"><target type="ProtoUnit">HumanSoldier</target></effect>
       <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="WarTurtle" relativity="Absolute"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Pestuchos" relativity="Absolute"><target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Petsuchos" relativity="Absolute"><target type="ProtoUnit">HumanSoldier</target></effect>
       <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Phoenix" relativity="Absolute"><target type="ProtoUnit">HumanSoldier</target></effect>
       <!--Atlantean Beasts-->
       <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Behemoth" relativity="Absolute"><target type="ProtoUnit">HumanSoldier</target></effect>
@@ -3835,6 +4106,159 @@
         <target type="ProtoUnit">HunDun</target></effect>
     </effects>
   </tech>
+  <!-- Egyptian Techs for Campaign Heroes -->
+   <tech name="MediumAxemen" mergeMode="add">
+    <effects>
+       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Brokk</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Brokk</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Brokk</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Landlord</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Landlord</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Landlord</target></effect>
+    </effects>
+  </tech>
+  <tech name="HeavyAxemen" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Brokk</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Brokk</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Brokk</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Landlord</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Landlord</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Landlord</target></effect>
+    </effects>
+  </tech>
+  <tech name="ChampionAxemen" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Brokk</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Brokk</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Brokk</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Landlord</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Landlord</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Landlord</target></effect>
+    </effects>
+  </tech>
+  <tech name="MediumSpearmen" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Arkantos</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Arkantos</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Arkantos</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Amanra</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">AjaxSPC</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">AjaxSPC</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">AjaxSPC</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Reginleif</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Reginleif</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Reginleif</target></effect>
+    </effects>
+  </tech>
+  <tech name="HeavySpearmen" mergeMode="add">
+    <effects>
+        <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Arkantos</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Arkantos</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Arkantos</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Amanra</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">AjaxSPC</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">AjaxSPC</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">AjaxSPC</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Reginleif</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Reginleif</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Reginleif</target></effect>
+    </effects>
+  </tech>
+  <tech name="ChampionSpearmen" mergeMode="add">
+    <effects>
+        <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Arkantos</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Arkantos</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Arkantos</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Amanra</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">AjaxSPC</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">AjaxSPC</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">AjaxSPC</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Reginleif</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">Reginleif</target></effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">Reginleif</target></effect>
+    </effects>
+  </tech>
+  <tech name="FeetOfTheJackal" mergeMode="add">
+    <effects>
+      <effect type="Data" action="JumpAttack" amount="6.00" subtype="MaximumRange" relativity="Absolute">
+          <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="2.00" subtype="Damage" action="JumpAttack" relativity="BasePercent">
+          <target type="ProtoUnit">Amanra</target></effect>
+    </effects>
+  </tech>
   <!-- Egyptian Military Unit Upgrade Techs-->
   <tech name="MediumSpearmen" mergeMode="add">
     <effects>
@@ -4161,8 +4585,7 @@
       <effect type="Data" action="JumpAttack" amount="6.00" subtype="MaximumRange" relativity="Absolute">
           <target type="ProtoUnit">Anubite</target></effect>
       <effect type="Data" amount="2.00" subtype="Damage" action="JumpAttack" relativity="BasePercent">
-          <target type="ProtoUnit">Anubite</target>
-        </effect>
+          <target type="ProtoUnit">Anubite</target></effect>
     </effects>
   </tech>
   <tech name="Necropolis" mergeMode="add">
@@ -4220,6 +4643,8 @@
         <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent"><target type="ProtoUnit">AnimalOfSet</target></effect>
         <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent"><target type="ProtoUnit">AnimalOfSet</target></effect>
         <effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">AnimalOfSet</target></effect>
+
+        <effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent"><target type="ProtoUnit">CaravanEgyptian</target></effect>
     </effects>
   </tech>
   <tech name="GreatestOfFifty" mergeMode="add">
@@ -4308,6 +4733,76 @@
         </effect>
     </effects>
   </tech>  
+  <tech name="DarkWater" mergeMode="replace">
+    <displaynameid>STR_TECH_DARK_WATER_NAME</displaynameid>
+    <rollovertextid>STR_TECH_DARK_WATER_LR</rollovertextid>
+    <cost resourcetype="Food">200.0000</cost>
+    <cost resourcetype="Favor">18.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\egyptian\static_color\technologies\dark_water_icon.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <effects>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">AbstractCavalry</target></effect>
+      <effect type="Data" amount="0.50" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">AbstractCavalry</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">TradeUnit</target></effect>
+      <effect type="Data" amount="0.50" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">TradeUnit</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">AnimalOfSet</target></effect>
+      <effect type="Data" amount="0.50" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">AnimalOfSet</target></effect>
+
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Wadjet</target></effect>
+      <effect type="Data" amount="0.75" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Wadjet</target></effect>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Leviathan</target></effect>
+      <effect type="Data" amount="0.75" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Leviathan</target></effect>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarTurtle</target></effect>
+      <effect type="Data" amount="0.75" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">WarTurtle</target></effect>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Petsuchos</target></effect>
+      <effect type="Data" amount="0.75" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Petsuchos</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Umibozu</target></effect>
+      <effect type="Data" amount="0.50" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Umibozu</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">HunDun</target></effect>
+      <effect type="Data" amount="0.50" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">HunDun</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Siren</target></effect>
+      <effect type="Data" amount="0.50" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Siren</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Kraken</target></effect>
+      <effect type="Data" amount="0.50" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Kraken</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Behemoth</target></effect>
+      <effect type="Data" amount="0.50" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Behemoth</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Servant</target></effect>
+      <effect type="Data" amount="0.50" subtype="UnitRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Servant</target></effect>      
+        
+      <effect type="Data" action="AutoGatherFood" amount="1.25" subtype="WorkRate" unittype="Food" relativity="BasePercent">
+        <target type="ProtoUnit">Herdable</target></effect>
+    </effects>
+  </tech>
 
   <!-- Norse - Techs-->
   <tech name="ThorDwarfSpawn" mergeMode="replace">

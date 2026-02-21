@@ -1548,7 +1548,6 @@
 
     <!-- GENERAL SECTION -->
     <unit name="House">	
-
         <train row="1" column="0">KingLycaon</train>
         <train row="1" column="1">Asurendra</train>    
 		<train row="1" column="2">MasterKensei</train>    
@@ -1578,6 +1577,185 @@
 		<train row="1" column="3">CaptainEureka</train>   
         <command row="1" column="1">CancelBuilding</command>
     </unit>   
+	<unit name="Market" mergeMode="replace">
+		<displaynameid>STR_BLD_MARKET_NAME</displaynameid>
+		<rollovertextid>STR_BLD_MARKET_LR</rollovertextid>
+		<shortrollovertextid>STR_BLD_MARKET_SR</shortrollovertextid>
+		<icon>resources\shared\static_color\buildings\market_icon.png</icon>
+		<animfile culture="greek">greek\buildings\market\market.xml</animfile>
+		<animfile culture="egyptian">egyptian\buildings\market\market.xml</animfile>
+		<animfile culture="norse">norse\buildings\market\market.xml</animfile>
+		<animfile culture="atlantean">atlantean\buildings\market\market.xml</animfile>
+		<animfile culture="chinese">chinese\buildings\market\market.xml</animfile>
+		<animfile culture="japanese">japanese\buildings\market\market.xml</animfile>
+		<soundsetfile>shared\sfx\buildings\market.xml</soundsetfile>
+		<obstructionradiusx>4.0000</obstructionradiusx>
+		<obstructionradiusz>4.0000</obstructionradiusz>
+		<impacttype>Stone</impacttype>
+		<screenshakeondestruction>0.300</screenshakeondestruction>
+		<partisantype>Militia</partisantype>
+		<partisancount>2</partisancount>
+		<movementtype>land</movementtype>
+		<initialhitpoints>1200.0000</initialhitpoints>
+		<maxhitpoints>1200.0000</maxhitpoints>
+		<buildpoints>40.0000</buildpoints>
+		<los>9.0000</los>
+		<cost resourcetype="Wood">150.0000</cost>
+		<carrycapacity resourcetype="Gold">1.0000</carrycapacity>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.0500"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>Building</unittype>
+		<unittype>BuildingClass</unittype>
+		<unittype>AbstractMarket</unittype>
+		<unittype>TradeableFrom</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeBuildingThatCanBeEmpowered</unittype>
+		<unittype>LogicalTypeBuildingNotWonderOrTitan</unittype>
+		<unittype>LogicalTypeBuildingLarge</unittype>
+		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>LogicalTypeAffectedByBuildingChainAutoBuild</unittype>
+		<unittype>LogicalTypeBuildingThatConvertsConvertibles</unittype>
+		<hotkeycontext>MarketAccel</hotkeycontext>
+		<train row="0" column="0">CaravanGreek</train>
+		<train row="0" column="0">CaravanEgyptian</train>
+		<train row="0" column="0">CaravanNorse</train>
+		<train row="0" column="0">CaravanAtlantean</train>
+		<train row="0" column="0">CaravanChinese</train>
+		<train row="0" column="5">PiXiu</train>
+		<train row="0" column="0">CaravanJapanese</train>
+
+		<tech row="0" column="0">SilkRoad</tech>
+		<tech row="0" column="1">TaxCollectors</tech>
+		<tech row="0" column="1">Ambassadors</tech>
+		<tech row="0" column="2">Coinage</tech>		
+		<tech row="1" column="2">DarkWater</tech>
+		<tech row="1" column="5">AutumnOfAbundance</tech>
+
+		<tech row="0" column="1">MCMT_FinancialDevelopmentUpgradeI</tech>
+		<tech row="0" column="1">MCMT_FinancialDevelopmentUpgradeII</tech>
+		<tech row="0" column="1">MCMT_FinancialDevelopmentUpgradeIII</tech>		
+		<train row="0" column="1">CyberTechWorldFinancialCenter</train>
+
+		<train row="2" column="2">CyberTechFellerBucher</train>
+		<train row="2" column="3">CyberTechMiningExcavator</train>
+		<train row="2" column="4">CyberTechCombineHarvester</train>
+		<train row="2" column="5">CyberTechIdolizer</train>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>PaintTextureWhenPlacing</flag>
+		<flag>FlattenGround</flag>
+		<flag>HasGatherPoint</flag>
+		<flag>InitialGarrisonOnly</flag>
+		<flag>DynamicUpdate</flag>
+		<flag>DisplayRange</flag>
+		<flag>DisplayRangeOverride</flag>
+        <flag>LikeBonusPreview</flag>
+		<command row="1" column="1">CancelBuilding</command>
+		<command row="1" column="1">MarketBuy2</command>
+		<command row="1" column="0">MarketBuy1</command>
+		<command row="2" column="0">MarketSell1</command>
+		<command row="1" column="4">ShowFavorBonusUI</command>
+		<command row="2" column="1">MarketSell2</command>
+		<command row="3" column="0">SetGatherPoint</command>
+		<command row="3" column="1">Eject</command>
+		<command row="3" column="5">Delete</command>
+		<tactics>mcmt_market.tactics</tactics>
+    <protoaction>
+		<name>ShrineGatherRateBoost</name>
+       <modifybase>1.0</modifybase>
+      <maxrange>20</maxrange>
+      <modifyratebytype>1</modifyratebytype>
+      <modifyabstracttype>Resource</modifyabstracttype>
+      <rate type="Tree">0.05</rate>
+      <rate type="NonConvertableHerdable">0.067</rate>
+      <rate type="ArcticWolf">0.1</rate>
+      <rate type="Aurochs">0.333</rate>
+      <rate type="Baboon">0.083</rate>
+      <rate type="Bear">0.167</rate>
+      <rate type="Boar">0.267</rate>
+      <rate type="Caribou">0.133</rate>
+      <rate type="Crocodile">0.167</rate>
+      <rate type="CrownedCrane">0.083</rate>
+      <rate type="Deer">0.133</rate>
+      <rate type="Elephant">0.6</rate>
+      <rate type="Elk">0.133</rate>
+      <rate type="Gazelle">0.133</rate>
+      <rate type="Giraffe">0.267</rate>
+      <rate type="Hippopotamus">0.333</rate>
+      <rate type="Hyena">0.083</rate>
+      <rate type="Lion">0.083</rate>
+      <rate type="Monkey">0.083</rate>
+      <rate type="PolarBear">0.167</rate>
+      <rate type="Rhinoceros">0.433</rate>
+      <rate type="Walrus">0.333</rate>
+      <rate type="WaterBuffalo">0.333</rate>
+      <rate type="Wolf">0.1</rate>
+      <rate type="Zebra">0.167</rate>
+      <rate type="BlackBear">0.167</rate>
+      <rate type="GoldenPheasant">0.1</rate>
+      <rate type="RedCrownedCrane">0.1</rate>
+      <rate type="SpottedDeer">0.133</rate>
+      <rate type="DeerShrineOfTheHunt">0.133</rate>
+      <rate type="SnowMonkey">0.083</rate>
+      <rate type="JapaneseWolf">0.1</rate>
+      <rate type="GreenPheasant">0.1</rate>
+      <rate type="Serow">0.167</rate>
+      <rate type="BerryBush">0.1</rate>
+      <rate type="MineGoldLarge">1.00</rate>
+      <rate type="MineGoldMedium">0.50</rate>
+      <rate type="MineGoldSmall">0.25</rate>
+      <rate type="MineDwarvenLarge">1.00</rate>
+      <rate type="MineDwarvenMedium">0.50</rate>
+      <rate type="MineDwarvenSmall">0.25</rate>
+      <persistent>1</persistent>
+      <modifytype>GatherRateMultiplier</modifytype>
+      <exclusive>1</exclusive>
+      <includenature>1</includenature>
+      <donotignoredead>1</donotignoredead>
+      <modifyinventoryscale>1</modifyinventoryscale>
+    </protoaction>
+	<protoaction>
+      <name>ResourceInventoryAura</name>
+      <modifyamount>0.250000</modifyamount>
+      <maxrange>20</maxrange>
+      <rate type="MineGoldLarge">5.00</rate>
+      <rate type="MineGoldMedium">2.50</rate>
+      <rate type="MineGoldSmall">1.25</rate>
+      <rate type="MineDwarvenLarge">5.00</rate>
+      <rate type="MineDwarvenMedium">2.50</rate>
+      <rate type="MineDwarvenSmall">1.25</rate>
+      <rate type="Tree">0.50</rate>
+      <rate type="Huntable">1.00</rate>
+      <rate type="BerryBush">1.00</rate>
+      <rate type="NonConvertableHerdable">0.50</rate>
+	  <active>0</active>
+    </protoaction>
+    <protoaction>
+      <name>ResourceInventoryCapAura</name>
+      <maxrange>20</maxrange>
+      <modifymultiplier>0.400000</modifymultiplier>
+	  <active>0</active>
+    </protoaction>
+	</unit>
     
     <!-- Greek Hero Units-->
     <!-- Zeus Heroes -->
@@ -7076,6 +7254,8 @@
 
 	<!-- Campaign Heroes Fall of Trident -->
  	<unit name="Arkantos">
+		<flag>ExperienceUnit</flag>
+		<unittype>InfantryLineUpgraded</unittype>
 		<veterancyranks>
 			<rank><numkills>5</numkills></rank>
 			<rank><numkills>12</numkills></rank>
@@ -7089,25 +7269,27 @@
 				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
 			</rank>
 			<rank id="1">
-				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
 			</rank>
 			<rank id="2">
-				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
 			</rank>
 			<rank id="3">
-				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
 			</rank>
 			<rank id="4">
-				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
 			</rank>
 			<includetypes><unittype>Unit</unittype></includetypes>
 		</veterancybonus>
 	</unit>
 	<unit name="OdysseusSPC">
+		<unittype>ArcherLineUpgraded</unittype>
+		<flag>ExperienceUnit</flag>
 		<veterancyranks>
 			<rank><numkills>5</numkills></rank>
 			<rank><numkills>12</numkills></rank>
@@ -7121,19 +7303,19 @@
 				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
 			</rank>
 			<rank id="1">
-				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
 			</rank>
 			<rank id="2">
-				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
 			</rank>
 			<rank id="3">
-				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
 			</rank>
 			<rank id="4">
-				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
 				<veterancymodify modifytype="NumProjectiles">2</veterancymodify>
 			</rank>
@@ -7141,6 +7323,8 @@
 		</veterancybonus>
 	</unit>
 	<unit name="AjaxSPC">
+		<unittype>InfantryLineUpgraded</unittype>
+		<flag>ExperienceUnit</flag>
 		<veterancyranks>
 			<rank><numkills>5</numkills></rank>
 			<rank><numkills>12</numkills></rank>
@@ -7154,25 +7338,28 @@
 				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
 			</rank>
 			<rank id="1">
-				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
 			</rank>
 			<rank id="2">
-				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
 			</rank>
 			<rank id="3">
-				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
 			</rank>
 			<rank id="4">
-				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
 			</rank>
 			<includetypes><unittype>Unit</unittype></includetypes>
 		</veterancybonus>
 	</unit>
 	<unit name="ChironSPC">
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<flag>ExperienceUnit</flag>
 		<veterancyranks>
 			<rank><numkills>5</numkills></rank>
 			<rank><numkills>12</numkills></rank>
@@ -7186,19 +7373,19 @@
 				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
 			</rank>
 			<rank id="1">
-				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
 			</rank>
 			<rank id="2">
-				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
 			</rank>
 			<rank id="3">
-				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
 			</rank>
 			<rank id="4">
-				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
 				<veterancymodify modifytype="NumProjectiles">2</veterancymodify>
 			</rank>
@@ -7206,6 +7393,8 @@
 		</veterancybonus>
 	</unit>
 	<unit name="Kastor">
+		<unittype>InfantryLineUpgraded</unittype>
+		<flag>ExperienceUnit</flag>
 		<veterancyranks>
 			<rank><numkills>5</numkills></rank>
 			<rank><numkills>12</numkills></rank>
@@ -7219,25 +7408,27 @@
 				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
 			</rank>
 			<rank id="1">
-				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
 			</rank>
 			<rank id="2">
-				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
 			</rank>
 			<rank id="3">
-				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
 			</rank>
 			<rank id="4">
-				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
 			</rank>
 			<includetypes><unittype>Unit</unittype></includetypes>
 		</veterancybonus>
 	</unit>
 	<unit name="Amanra">
+		<unittype>InfantryLineUpgraded</unittype>
+		<flag>ExperienceUnit</flag>
 		<veterancyranks>
 			<rank><numkills>5</numkills></rank>
 			<rank><numkills>12</numkills></rank>
@@ -7251,25 +7442,38 @@
 				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
 			</rank>
 			<rank id="1">
-				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
 			</rank>
 			<rank id="2">
-				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
 			</rank>
 			<rank id="3">
-				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
 			</rank>
 			<rank id="4">
-				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
 			</rank>
 			<includetypes><unittype>Unit</unittype></includetypes>
 		</veterancybonus>
 	</unit>
+	<unit name="SwordBearer">
+		<maxshieldpoints>1000</maxshieldpoints>
+	</unit>
+	<unit name="Guardian">
+		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+	</unit>
+	<unit name="GuardianSPC">
+		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+	</unit>
 	<unit name="Setna">
+		<unittype>ArcherLineUpgraded</unittype>
+		<flag>ExperienceUnit</flag>
 		<veterancyranks>
 			<rank><numkills>5</numkills></rank>
 			<rank><numkills>12</numkills></rank>
@@ -7283,19 +7487,19 @@
 				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
 			</rank>
 			<rank id="1">
-				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
 			</rank>
 			<rank id="2">
-				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
 			</rank>
 			<rank id="3">
-				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
 			</rank>
 			<rank id="4">
-				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
 				<veterancymodify modifytype="NumProjectiles">2</veterancymodify>
 			</rank>
@@ -7303,6 +7507,9 @@
 		</veterancybonus>
 	</unit>	
 	<unit name="Reginleif">
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<flag>ExperienceUnit</flag>
 		<veterancyranks>
 			<rank><numkills>5</numkills></rank>
 			<rank><numkills>12</numkills></rank>
@@ -7316,19 +7523,19 @@
 				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
 			</rank>
 			<rank id="1">
-				<veterancymodify modifytype="ROF">0.6000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
 			</rank>
 			<rank id="2">
-				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
 			</rank>
 			<rank id="3">
-				<veterancymodify modifytype="ROF">0.2500</veterancymodify>
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
 			</rank>
 			<rank id="4">
-				<veterancymodify modifytype="ROF">0.1000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
 				<veterancymodify modifytype="NumProjectiles">2</veterancymodify>
 			</rank>
@@ -13706,6 +13913,459 @@
 			<defaultattack>1</defaultattack>
 		</protoaction>
 	  </unit>
+	  <!-- CyberTech Financial Development Units -->
+	  <unit name="CyberTechCombineHarvester">
+		<displaynameid>STR_UNIT_COMBINEHARVESTER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_COMBINEHARVESTER_NAME</rollovertextid>
+		<shortrollovertextid>STR_UNIT_COMBINEHARVESTER_NAME</shortrollovertextid>
+		<icon>resources\chinese\player_color\units\axe_cart_icon.png</icon>
+		<animfile>chinese\units\siege\axe_cart\axe_cart.xml</animfile>
+		<soundsetfile>atlantean\vo\villager_atlantean\villager_atlantean.xml</soundsetfile>
+		
+	    <obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>1.0000</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>Civilian</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<trainpoints>25.0000</trainpoints>
+		<weightclass>4</weightclass>
+		<populationcount>5</populationcount>
+		<maxvelocity>3.8000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">85.0000</cost>
+		<cost resourcetype="Wood">15.0000</cost>
+		<carrycapacity resourcetype="Food">1.0000</carrycapacity>
+		<carrycapacity resourcetype="Wood">1.0000</carrycapacity>
+		<carrycapacity resourcetype="Gold">1.0000</carrycapacity>
+		<armor type="Hack" value="0.2500"></armor>
+		<armor type="Pierce" value="0.3500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeEasySelectAvoid</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>EconomicUnit</unittype>
+		<unittype>AbstractVillager</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>ValidIdleVillager</unittype>
+		<unittype>AffectedByTownBell</unittype>
+		<unittype>DisplayQueue</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeVillagerNotHero</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeAffectedByValor</unittype>
+		<unittype>EconomicUpgraded</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<train row="1" column="0">SeasonalFarm</train>
+		<train row="1" column="1">IndustrialFarm</train>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>AutoTrainable</flag>
+		<flag>HasDefaultAttack</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NonAutoFormedUnit</flag>
+		
+		<tactics>mcmt_merchantfarmer.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">20.000000</damage>
+			<maxrange>14.000000</maxrange>
+			<projectille>ProjectileArrowNotFlaming</projectille>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>Build</name>
+			<rate type="AbstractFarm">1.2500</rate>
+		</protoaction>
+		<protoaction>
+			<name>Repair</name>
+			<rate type="AbstractFarm">0.3750</rate>
+		</protoaction>
+		<protoaction>
+			<name>Gather</name>			
+			<rate type="AbstractFarm">1.300000</rate>
+			<dropsitegathering>1</dropsitegathering>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">10.000000</damage>
+			<damagebonus type="AbstractVillager">2.50000</damagebonus>
+			<maxrange>0.800000</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+	  </unit>
+	  <unit name="CyberTechFellerBucher">
+		<displaynameid>STR_UNIT_FELLERBUCHER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_FELLERBUCHER_NAME</rollovertextid>
+		<shortrollovertextid>STR_UNIT_FELLERBUCHER_NAME</shortrollovertextid>
+		<icon>resources\chinese\player_color\units\axe_cart_icon.png</icon>
+		<animfile>chinese\units\siege\axe_cart\axe_cart.xml</animfile>
+		<soundsetfile>atlantean\vo\villager_atlantean\villager_atlantean.xml</soundsetfile>
+		<obstructionradiusx>1.2400</obstructionradiusx>
+		<obstructionradiusz>1.2400</obstructionradiusz>
+		<selectionradiusx>1.7500</selectionradiusx>
+		<selectionradiusz>2.0000</selectionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>8</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>2.6000</maxvelocity>
+		<los>18.0000</los>
+
+		<cost resourcetype="Wood">150.0000</cost>
+		<cost resourcetype="Favor">5.0000</cost>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.2500"></armor>
+		<carrycapacity resourcetype="Wood">200.0000</carrycapacity>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAutoAttackFocusBuildings</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>EconomicUnit</unittype>
+		<unittype>EconomicUpgraded</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>ValidIdleVillager</unittype>
+		
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>RotateInPlace</flag>
+		<flag>HasDefaultAttack</flag>
+		<tactics>mcmt_deforestator.tactics</tactics>
+		<protoaction>
+			<name>ChopAttack</name>
+			<damage type="Hack">100.000000</damage>
+			<anim>HandAttack</anim>
+			<maxrange>2.5</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>AbsorbWoodResource</name>
+			<dropsitegathering>1</dropsitegathering>
+			<rate type="WoodResource">1.500000</rate>
+			<maxrange>2.5</maxrange>
+			<anim>HandAttack</anim>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">32.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="HumanSoldier">2.500000</damagebonus>
+			<maxrange>1.5</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+	  </unit>
+	  <unit name="CyberTechMiningExcavator">
+		<displaynameid>STR_UNIT_MININGEXCAVATOR_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MININGEXCAVATOR_NAME</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MININGEXCAVATOR_NAME</shortrollovertextid>
+		<icon>resources\chinese\player_color\units\axe_cart_icon.png</icon>
+		<animfile>chinese\units\siege\axe_cart\axe_cart.xml</animfile>
+		<soundsetfile>atlantean\vo\villager_atlantean\villager_atlantean.xml</soundsetfile>
+		<obstructionradiusx>1.2400</obstructionradiusx>
+		<obstructionradiusz>1.2400</obstructionradiusz>
+		<selectionradiusx>1.7500</selectionradiusx>
+		<selectionradiusz>2.0000</selectionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>8</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>2.6000</maxvelocity>
+		<los>18.0000</los>
+
+		<cost resourcetype="Wood">150.0000</cost>
+		<cost resourcetype="Favor">5.0000</cost>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.2500"></armor>
+		<carrycapacity resourcetype="Wood">200.0000</carrycapacity>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAutoAttackFocusBuildings</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>EconomicUnit</unittype>
+		<unittype>EconomicUpgraded</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>ValidIdleVillager</unittype>
+		
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>RotateInPlace</flag>
+		<flag>HasDefaultAttack</flag>
+		<tactics>mcmt_cybertech_constructvehicles_mine.tactics</tactics>
+		<protoaction>
+			<name>AbsorbGoldResource</name>
+			<dropsitegathering>1</dropsitegathering>
+			<rate type="GoldResource">1.500000</rate>
+			<maxrange>2.5</maxrange>
+			<anim>HandAttack</anim>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">32.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="HumanSoldier">2.500000</damagebonus>
+			<maxrange>1.5</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+	  </unit>
+	  <unit name="CyberTechIdolizer">
+		<displaynameid>STR_UNIT_IDOLIZER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_IDOLIZER_NAME</rollovertextid>
+		<shortrollovertextid>STR_UNIT_IDOLIZER_NAME</shortrollovertextid>
+		<icon>resources\chinese\player_color\units\axe_cart_icon.png</icon>
+		<animfile>chinese\units\siege\axe_cart\axe_cart.xml</animfile>
+		<soundsetfile>atlantean\vo\villager_atlantean\villager_atlantean.xml</soundsetfile>
+		<obstructionradiusx>1.2400</obstructionradiusx>
+		<obstructionradiusz>1.2400</obstructionradiusz>
+		<selectionradiusx>1.7500</selectionradiusx>
+		<selectionradiusz>2.0000</selectionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>8</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>2.6000</maxvelocity>
+		<los>18.0000</los>
+
+		<cost resourcetype="Wood">150.0000</cost>
+		<cost resourcetype="Favor">5.0000</cost>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.2500"></armor>
+		<carrycapacity resourcetype="Wood">200.0000</carrycapacity>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAutoAttackFocusBuildings</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>EconomicUnit</unittype>
+		<unittype>EconomicUpgraded</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>ValidIdleVillager</unittype>
+		
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>RotateInPlace</flag>
+		<flag>HasDefaultAttack</flag>
+		<tactics>mcmt_cybertech_constructvehicles_pray.tactics</tactics>
+		<protoaction>
+			<name>AbsorbFavorResource</name>
+			<dropsitegathering>1</dropsitegathering>
+			<rate type="AbstractTemple">1.500000</rate>
+			<maxrange>2.5</maxrange>
+			<anim>HandAttack</anim>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">32.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="HumanSoldier">2.500000</damagebonus>
+			<maxrange>1.5</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+	  </unit>
+	  <unit name="CyberTechWorldFinancialCenter">
+		<displaynameid>STR_BLD_LIGHTHOUSE_NAME</displaynameid>
+		<rollovertextid>STR_BLD_LIGHTHOUSE_LR</rollovertextid>
+		<shortrollovertextid>STR_BLD_LIGHTHOUSE_SR</shortrollovertextid>
+		<icon>resources\egyptian\static_color\buildings\lighthouse_icon.png</icon>
+		<animfile>egyptian\buildings\lighthouse\lighthouse.xml</animfile>
+		<soundsetfile>egyptian\sfx\buildings\lighthouse.xml</soundsetfile>
+		<obstructionradiusx>3.0000</obstructionradiusx>
+		<obstructionradiusz>3.0000</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<screenshakeondestruction>0.300</screenshakeondestruction>
+		<movementtype>Amphibious</movementtype>
+		<initialhitpoints>2000.0000</initialhitpoints>
+		<maxhitpoints>2000.0000</maxhitpoints>
+		<trainpoints>5.0000</trainpoints>
+		<maxcontained>250</maxcontained>
+		<buildlimit>1</buildlimit>
+		<los>20.0000</los>
+		<cost resourcetype="Gold">300.0000</cost>
+		<armor type="Hack" value="0.8000"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.5000"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeBuildingEmpoweredForLOS</unittype>
+		<unittype>LogicalTypeBuildingNotWonderOrTitan</unittype>
+		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>LogicalTypeBuildingThatConvertsConvertibles</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>PaintTextureWhenPlacing</flag>
+		<flag>FlattenGround</flag>
+		<flag>DisplayRange</flag>
+		<flag>HasGatherPoint</flag>
+		<contain>AbstractVillager</contain>
+		
+		<tech row="0" column="0">MCMT_NewBusinessContracts</tech>
+		<tech row="0" column="1">MCMT_IntercontinentalShipments</tech>
+		<tech row="0" column="2">MCMT_ElectricityAndEnergyAgreements</tech>
+		<tech row="0" column="3">MCMT_FurnitureAndMaterialTransactions</tech>
+		<tech row="0" column="5">MCMT_FieldWorkers</tech>
+
+		<tech row="1" column="0">MCMT_HigherRatesHigherStakes</tech>
+		<tech row="1" column="1">MCMT_HigherRatesHigherSteaks</tech>
+		<tech row="1" column="2">MCMT_HigherRatesHigherStates</tech>
+		<tech row="1" column="3">MCMT_HigherRatesHigherSticks</tech>
+		<command row="3" column="5">Eject</command>
+		
+		<autobuildrate>5.0000</autobuildrate>
+		<tactics>mcmt_worldfinancecenter_autogather.tactics</tactics>
+		<protoaction>
+			<name>AutoGather</name>
+			<rate type="Food">0.00000</rate>
+			<rate type="Wood">0.00000</rate>
+			<rate type="Gold">0.00000</rate>
+			<rate type="Favor">0.00000</rate>
+		</protoaction>
+	</unit>
+
+	  <!-- T.O.W and Merchant Structures Units -->
+
 	  <unit name="TheAttractor">
 		<buildpoints>20.0000</buildpoints>
 	  

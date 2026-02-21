@@ -1,0 +1,38 @@
+<tactics>
+  <action>
+    <name stringid="STR_EDT_TRADE">Trade</name>
+    <type>Trade</type>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_SHRINE_GATHER_RATE_BOOST">ShrineGatherRateBoost</name>
+    <type>LikeBonus</type>
+    <targetattachment>vfx\glow\shrine_active.xml</targetattachment>
+    <targetattachmentbone>spine</targetattachmentbone>
+  </action>
+  <action>
+    <name>ResourceInventoryAura</name>
+    <type>AutoRangedModify</type>
+    <modifyabstracttype>Resource</modifyabstracttype>
+    <persistent>1</persistent>
+    <modifytype>InventoryAmount</modifytype>
+    <nostack>1</nostack>
+    <includenature>1</includenature>
+    <donotignoredead>1</donotignoredead>
+  </action>
+  <action>
+    <name>ResourceInventoryCapAura</name>
+    <type>AutoRangedModify</type>
+    <modifyabstracttype>Resource</modifyabstracttype>
+    <persistent>1</persistent>
+    <modifytype>InventoryExtraCap</modifytype>
+    <nostack>1</nostack>
+    <includenature>1</includenature>
+    <donotignoredead>1</donotignoredead>
+  </action>
+  <tactic>Default
+      <action>Trade</action>
+      <action>ShrineGatherRateBoost</action>
+      <action>ResourceInventoryAura</action>
+      <action>ResourceInventoryCapAura</action>
+  </tactic>
+</tactics>
