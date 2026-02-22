@@ -6047,15 +6047,15 @@
 		<cost resourcetype="Food">40.0000</cost>
     	<cost resourcetype="Gold">10.0000</cost>
 
-		<initialhitpoints>110.0000</initialhitpoints>
-		<maxhitpoints>110.0000</maxhitpoints>
+		<initialhitpoints>150.0000</initialhitpoints>
+		<maxhitpoints>150.0000</maxhitpoints>
 		<unittype>AbstractInfantry</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.300000</rof>
-			<damage type="Hack">8.000000</damage>
-			<damage type="Divine">4.000000</damage>
+			<rof>1.500000</rof>
+			<damage type="Hack">9.230000</damage>
+			<damage type="Divine">4.160000</damage>
 			<damagebonus type="MythUnit">4.000000</damagebonus>
 			<maxrange>0.750000</maxrange>
 		</protoaction>

@@ -336,7 +336,9 @@
         <!-- House Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AttackWolf</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
+        <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Asurendra</target></effect>
+        <effect type="Data" amount="1.30" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Asurendra</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MasterKensei</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">CaptainEureka</target></effect>
         <!-- Greek Special Units -->

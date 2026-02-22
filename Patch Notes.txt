@@ -36,6 +36,7 @@
 * Civilization Techs & Mountain Dwarves, CyberTech & Elite Units, FutureTech & Probes
 * Hall of Heroes: Atlantean Captains with Veterancy, Tanks with Unique Systems, Mothership Super Aircraft
 * Temple of Primordials: Divine Beats, Gods, Legendary Heroes, Constructs of Hephaestos
+* Temple Accel Reworked: That can Support upto 18 Pages and 72 Distinct Units. Default Page Loads the Choosen Temple Accel with a Return Button
 * Strategical Vessel Assembly: Unique Naval Vehicles, Flying Dutchman & Trainable Crew & Ressurection Bolts, Worldbreaker Super Mobile Dock, Onigami
 * Air Command: Mr Wukong the Airborne Builder
 * Bastion: Guild Building of Special Heroes including Voltox & Sparky the Energy Wolf
@@ -44,6 +45,11 @@
 * TechBuilding: Very Special Techs for All Fun
 * EcoMarket: Some Extra Resources
 * Deployment and Entrench Units: Ranged Soldiers, Mobile Towers, Naval Vehicles with Deployment-Special Abilities
+* Passenger Models for Various Siege Weapons
+* Increase Limit of Houses
+* Larger Ships, Temples, Town Centers, Military Production Buildings
+* Towers Reworked: Slower but Stronger
+* Houses Reworked: Garrisonable by Civilians
 * Colossal Maps
 * Names for Wonders and Titans
 * More Challenging Battles
@@ -115,7 +121,10 @@
     - naval: Kraken+, JormunElver+
 - hero:
     - GullinburstiArchaic+, GullinburstiClassical+, GullinburstiHeroic+, GullinburstiMythic+
-    - Hersir+, Godi+, HeroOfRagnorok+ (both), Jarl+
+    - Hersir+, Godi+, Jarl+
+    - Heres of Ragnarok: armor, attack, rof, hp, infantrylineupgrade
+        - HeroOfRagnarok: armor+, hackdamage+, divinedamage
+        - HeroOfRagnarokDwarf (slower but stronger): armor+, hackdamage+, divinedamage, rof-, hp+
 - human soldiers:
     - Berserk+, 
         - OnDeath: WarBear+
@@ -244,7 +253,9 @@
 13. New Special Units: Cosmic Forces
 - special hero:
     - KingLycaon: lykaon hero unit, bleed, siege infantry
+        - VisualScale+
     - Asurendra: asura siege hero unit, wields two mighty dragons for deluge and flame attacks (drones)
+        - VisualScale-
         - HandAttack: anti-structure attack that swings dragons as blunt weapons
         - Nidhogg: VFXNidhoggScorchArea, bonus vs humansoldier, hero
         - QingLong: QingLongAttackWaterAoE, bonus vs humansoldier, mythunit
@@ -426,6 +437,7 @@
     - Sword:Samurai,Shinobi
 * Villager
     - Commoner
+        - Knife Art Model: Katana
 * Tech
     - Hero
         - Kagura: GatherShrine (Onmyoji)
@@ -500,43 +512,28 @@
     - resource rework, obscurion (japanese and chinese trees)
 
 === DEMETER: NEW
-- Hero: Orpheus,Icarus,Iolaus,Midas +
-
-* MythUnit
-    - lykaonvillager,lykaon,hamadryad,siren,harpy
-
 * Ship: FishingShip
     - trade
 * Tech
     - divinelabor
-    - thornedwalls,panspioneers,predatoryinstinct
+    - panspioneers,predatoryinstinct
     - gracioushospitality,hallowedwoodlands,fatedarrows
     - sacredland,enchantedhymn (affects orpheus)
     - irongrip
-* Building
-* Civilization boost
 * God Power
     - wither, arcadianmeadow (heal, farm workrate), communalhearth, plenty (workrate+), underworldinvasion
 * ArtModel
     - lykaonvillager -> scythe (anubite)
-* Siege
-ballistatower, crossbowtower -> additional crush damage
+
 * Special Unit
-asurendra, kinglycaon -> visualscale
 bragi (hero, god) -> orpheus model
 chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
-* Norse
-heroofragnorok vs heroofragnorokdwarft -> rof+, attack- vs rof-, attack+  
-* Egyptian
-monument
-    villagers -> boost workrate
-    soldiers -> boost train rate
-    pharaohs -> boost respawm rate
-    gods -> boost myth hp
 
-* Tech Combination Special Myth Hero Units
+=== GOD REMIX
+
+* Chosen God Combos Unlock New Special Myth Hero Units
 Japanese
-
+    ????
 Chinese
     Chiyou + Nüba + Gonggong
     Xuannü + Goumang + Huangdi
