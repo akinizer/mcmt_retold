@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tactics>
+  <action>
+    <name stringid="STR_ACTION_RANGED">BeamAttack</name>
+    <type>ChainAttack</type>
+    <attackaction>1</attackaction>
+    <rangedlogic>1</rangedlogic>
+    <anim>Charging</anim>
+    <accuracy>1.0</accuracy>
+    <impacteffect>effects\impacts\pierce</impacteffect>
+    <rate type="All">1.0</rate>
+  </action>
+  <action>
+    <name>DelayedHamadryadTransform</name>
+  </action>
+  <tactic>Default
+    <action priority="100">BeamAttack</action>
+    <action>DelayedHamadryadTransform</action>
+    <attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+    <autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+    <attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+    <attackmovetype>AbstractWall</attackmovetype>
+  </tactic>
+</tactics>

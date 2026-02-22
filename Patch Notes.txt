@@ -10,6 +10,7 @@
 * Mobile Docks
 * Deployable Vehicles: Transform to Building
 * Naval-Only AutoGather Buildings
+* Self-Destruct Rework & Demo-Vehicles: Activates on both attack command and on-death condition
 * Supervehicles: Superweapon Abilities
 * Complete Rework of Techs, Units, Buildings, Heroes (proximity modes, target modes and mix of both, better projectiles)
 * Sci-Fi Tech, Vehicles, Units, Buildings, Techs
@@ -69,17 +70,26 @@
     - PredatoryInstinct: 
         - LykaonWolf: hackattack+, speed+
         - KingLycaon: hackattack+, speed+, rof+, favor 2
+    - NepheleanHarpy (Iron Grip): enables Icarus apply bleed units
 
 2. Reworking on Demeter's myth units and related techs
 - myth unit:
     - MythHarpy: ProjectileKuafuStone, Lifesteal, Speed bonus on water
     - LykaonVillager: speed+, pop 1, archerlineupgrade, rangedattack minrange defaultattack
+    - LykaonWolf: infantrylineupgrade, humansoldier
     - Hamadryad: proximity attack mode, damage rework
 - tech:
     - FatedArrows: NumberBounces myth +3, hero +8
     - ThornedWalls: regen Walls 1.0, Hamadryad 0.8
+    - DivineLabor: AbstractDwarf included
+    - PansPioneers: spawn (PansChosen x1,TownCenter VillageCenter)
+    - SacredLand: ThornAttack (Farm)
+    - EnchantedHymn: AbilityOrpheus Range+
+    - 
 - godpower:
     - cost zero
+- temple:
+    - LykaonVillager: replaced with LykaonWolf
 
 3. Greek reworks from mcmt mod
 - myth unit: 
@@ -331,7 +341,9 @@
     - EcoMarket+
     - Bastion:
         - LandLord,TravelerOxWagon,Voltox,MobileFortress,E.A.P +
-	    - Hitman,Farseer,Multigunner,WindRider,Partisan,Spartan,ImperialGuard,Peacemaker +
+	    - Hitman,Farseer,WindRider,Partisan,Spartan,ImperialGuard,Peacemaker +
+        - Multigunner+
+            - directhit
         - Chieftain+, Constructor +
         - Conan (including godpowers)+
         - MatsuriYurio, MatsuriAzula (including godpowers)
@@ -350,6 +362,7 @@
     - S.V.A
         - units+
         - techs+
+        - projectile rework: ProjectileIcarusBomb (Navigator,ScorpionBomb)
 
         - Worldbreaker (mobile dock, superunit):
             - Trains: Onigami +
@@ -369,17 +382,26 @@
 	- Electrofence(transform removed),HolofenceGate,SonicDisruptorArray,WarpPortal +
 
 - Market -> Economic Center -> Financial Center:
-    - Build: 
+    - Build / Deploy: 
         - World Finance Center: 
-            - autogather unlocks (gold,food,favor,wood), repeatable autogather upgrades, bounty (humansoldier,ship,building)
+            - Research:
+                - autogather unlocks (gold,food,favor,wood)
+                - repeatable autogather upgrades
+                - bounty (humansoldier,ship,building)
+                - spawn engineers on destruction (towncenter,market)
             - garrison: worker, 250 max
+            
     - Train:
         - Construction Vehicles: gather resources
             - CombineHarvester (abstractfarm,bush,food) +
             - MiningExcavator (problematic)
             - FellerBucher (tree,wood) +
             - Idolizer (temple,favor) +
-    - Ability: boosts nearby resources
+    - Research: 
+        - FinancialDevelopmentUpgradeI: boosts resource contained by nearby entities (food,wood,gold,InverseAura), renames market
+        - FinancialDevelopmentUpgradeII: enables construction vehicles, renames market
+        - FinancialDevelopmentUpgradeIII: improves workrates (construction vehicles), enables CyberTechWorldFinancialCenter
+
 
 17. Art Model Reworks
 - Pharaoh: chariot (tech model, gold), pharaoh (passenger attachment), sword (weapon attachment)
@@ -405,6 +427,8 @@
 ==============================================================================
 ==================== REWORK-PLANS ======================================
 ==============================================================================
+- Orpheus: Empower a single worker
+
 === JAPANESE: NEW
 * MythUnit
     - Flying
@@ -421,16 +445,21 @@
         - Kamaitachi: samurai,infantry,bleed
         - Tengu: infantry,samurai
         - Jorogumo: Healer
-        - Shinigami: Healer, Movement (Air)
+        - Shinigami: Healer, Movement (Air), Spawn (Shades)
         - MasterlessSword: InfantryLineUpgrade
     - Beast
         - Raiju    
 * Hero
-    - Miko: Villager, Build Accel
+    - Miko: Villager, Build Accel, Pacify MythUnit (caladria ability)
     - Bushi, OnnaMusha
     - Daimyo, Shogun
     - Onmyoji (antibuilding fireball, antimyth (default), banish, slowaura (mythunit), healaura (empowerer, healer), barrier, summon (kitsune 5))
 * MilitaryUnit: Infantry, Cavalry, Archer, Siege
+    - Archer: YumiArcher,YumiHorseArcher
+    - Samurai: Bushi,Daimyo,Shogun,Samura
+    - Naginata: OnnaMusha,NaginataRider,YariSpearman
+    - Warrior Myth: Kamaitachi,Tengu,Oni
+    - Priest Myth: Jorogumo,Shinigami
 * Naval: FishingShip, Warship, Transport
     - Spear:YariSpearman,NaginataRider
     - Archer:YumiArcher
@@ -484,6 +513,9 @@
         - DivinePrefecture
         - Tenshu
 * Building
+* New Tech
+    - Honor: dismount (Daimyo,Shogun,YuriHorseArcher,NaginataRider)
+    - Samurai-Bushi relation
 * Campaign Hero
     - Harumoto (shogun),Tatsuro (father),Sojobo (tengu),Yasuko(girl), Akari(samurai,katana,spear)
     - Kagemasa (shogun,sword,spear,yamatanoorichi),Magumo (jorogumo),ShutenDoji (oni,metalbat,heavenlyspear),YukiOnna
@@ -504,7 +536,9 @@
     - SnowMonkey,GreenPheasant,JapaneseWolf,Serow,SpottedDeerSPC
 * Model Art
 * God Power
+    - SolarShield: Unit -> Building
 * New Special Hero
+    - HeadPriestess: Kagura dance on Temple, build limit 1
 * Blessing
     - WayOfTheStorm,WayOfTheMoon,WayOfTheSun
 
@@ -515,7 +549,6 @@
 * Ship: FishingShip
     - trade
 * Tech
-    - divinelabor
     - panspioneers,predatoryinstinct
     - gracioushospitality,hallowedwoodlands,fatedarrows
     - sacredland,enchantedhymn (affects orpheus)
@@ -528,6 +561,8 @@
 * Special Unit
 bragi (hero, god) -> orpheus model
 chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
+nukecannon -> destruct on-death
+more drones
 
 === GOD REMIX
 

@@ -187,6 +187,16 @@
 		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
 	</PegasusGroundedMessenger>
 
+		<!--Greek-MythUnit-->
+	<MirageTank>
+    	<ability>AbilityHamadryad<tech>HallowedWoodlands</tech><castonself>true</castonself><chargetimeasrof>1</chargetimeasrof></ability>
+  	</MirageTank>
+	<MirageTree>
+		<ability>PassiveHamadryadAmbush<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+	</MirageTree>
+	<PansChosen>
+    	<ability>AbilitySatyr<chargetimeasrof>1</chargetimeasrof></ability>
+ 	</PansChosen>
 		<!--Chinese-Hero-->	
 	<Nezha>
 		<ability>PassiveDivineImmunity<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
@@ -281,4 +291,12 @@
 	<TheArgo>
 		<ability>PassiveSolarFlare<tech>SunRay</tech><alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</TheArgo>
+
+		<!--Greek-Myth-Demeter-->
+	<lykaonwolf>
+    	<ability>AbilityLykaonWolf<tech>PredatoryInstinct</tech><noautocast>true</noautocast><castonself>true</castonself><donotforcestop>true</donotforcestop></ability>
+	</lykaonwolf>
+	<lykaonvillager>
+		<ability>AbilityLykaonVillager<tech>PredatoryInstinct</tech><noautocast>true</noautocast><castonself>true</castonself><donotforcestop>true</donotforcestop><rowoverride>0</rowoverride><columnoverride>3</columnoverride></ability>
+	</lykaonvillager>
 </abilities>

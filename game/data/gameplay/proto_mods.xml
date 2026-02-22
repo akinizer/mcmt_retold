@@ -125,6 +125,7 @@
             <maxrange>28.000000</maxrange>
             <projectile>ProjectilePriestPharaoh</projectile>
             <trackrating>99.0</trackrating>
+			<defaultattack>1</defaultattack>
         </protoaction>
     </unit>
     <unit name="Icarus" orderhint="3" mergemode="replace">
@@ -215,11 +216,12 @@
             <damagebonus type="AbstractSiegeWeapon">3.500000</damagebonus>
             <damagebonus type="Building">6.500000</damagebonus>
             <maxrange>20.000000</maxrange>
-        <projectile>ProjectileIcarusBomb</projectile>
+        	<projectile>ProjectileIcarusBomb</projectile>
             <defaultattack>1</defaultattack>
             <accuracy>1.0</accuracy>
             <trackrating>99.0</trackrating>
-            <impacteffect>effects\impacts\fireball</impacteffect>
+            <impacteffect>effects\impacts\fireball</impacteffect>			
+			<damageflags>Nature|Enemy</damageflags>
         </protoaction>
         <protoaction>
             <name>RangedAttackFlying</name>
@@ -497,194 +499,6 @@
     </unit>
 
     <!-- Greek Myth Units: Demeter -->
-    <unit name="LykaonVillager" orderhint="3" mergemode="replace">
-        <displaynameid>STR_UNIT_LYKAON_VILLAGER_NAME</displaynameid>
-        <rollovertextid>STR_UNIT_LYKAON_VILLAGER_LR</rollovertextid>
-        <shortrollovertextid>STR_UNIT_LYKAON_VILLAGER_SR</shortrollovertextid>
-        <editornameid>STR_UNIT_LYKAON_VILLAGER_EDT_NAME</editornameid>
-        <icon>resources\greek\player_color\units\lykaon_icon.png</icon>
-        <animfile>greek\units\myth\lykaon\lykaon.xml</animfile>
-        <soundsetfile>greek_demeter/vo/lykaon_villager/villager_lykaon_demeter.xml</soundsetfile>
-        <disguiseprotoid>VillagerGreek</disguiseprotoid>
-        <obstructionradiusx>0.4900</obstructionradiusx>
-        <obstructionradiusz>0.4900</obstructionradiusz>
-        <impacttype>Unarmoured</impacttype>
-        <unitaitype>Civilian</unitaitype>
-        <movementtype>land</movementtype>
-        <turnrate>18.0000</turnrate>
-        <initialhitpoints>55.0000</initialhitpoints>
-        <maxhitpoints>55.0000</maxhitpoints>
-        <trainpoints>20.0000</trainpoints>
-        <weightclass>4</weightclass>
-        <populationcount>1</populationcount>
-        <sharedbuildlimitunit>VillagerGreek</sharedbuildlimitunit>
-        <sharedbuildlimitunittypes>
-        <unittype>BuildLimitSharedGreek</unittype>
-        </sharedbuildlimitunittypes>
-        <eidolonprotoid>LykaonWolf</eidolonprotoid>
-        <maxvelocity>4.0000</maxvelocity>
-        <los>14.0000</los>
-        <sharedselectionunittypes>
-        <unittype>LykaonWolf</unittype>
-        </sharedselectionunittypes>
-        <cost resourcetype="Gold">100.0000</cost>
-        <cost resourcetype="Wood">80.0000</cost>
-        <cost resourcetype="Favor">2.0000</cost>
-        <carrycapacity resourcetype="Food">15.0000</carrycapacity>
-        <carrycapacity resourcetype="Wood">10.0000</carrycapacity>
-        <carrycapacity resourcetype="Gold">10.0000</carrycapacity>
-        <armor type="Hack" value="0.2500"></armor>
-        <armor type="Pierce" value="0.3500"></armor>
-        <armor type="Crush" value="0.9900"></armor>
-        <unittype>LogicalTypeMinimapFilterEconomic</unittype>
-        <unittype>LogicalTypeEasySelectAvoid</unittype>
-        <unittype>LogicalTypeNeededForVictory</unittype>
-        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
-        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
-        <unittype>LogicalTypeGarrisonInShips</unittype>
-        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
-        <unittype>LogicalTypeVillagersAttack</unittype>
-        <unittype>LogicalTypeHandUnitsAttack</unittype>
-        <unittype>LogicalTypeRangedUnitsAttack</unittype>
-        <unittype>LogicalTypeAffectedByRestoration</unittype>
-        <unittype>LogicalTypeHealed</unittype>
-        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
-        <unittype>Unit</unittype>
-        <unittype>UnitClass</unittype>
-        <unittype>EconomicUnit</unittype>
-        <unittype>AbstractVillager</unittype>
-        <unittype>MythUnit</unittype>
-        <unittype>Ranged</unittype>
-        <unittype>ArcherLineUpgraded</unittype>
-
-        <unittype>CountsTowardEconomicScore</unittype>
-        <unittype>ValidIdleVillager</unittype>
-        <unittype>AffectedByTownBell</unittype>
-        <unittype>LogicalTypeConvertsHerds</unittype>
-        <unittype>LogicalTypeEarthquakeAttack</unittype>
-        <unittype>LogicalTypeValidMeteorTarget</unittype>
-        <unittype>LogicalTypeValidTornadoAttack</unittype>
-        <unittype>LogicalTypeVillagerNotHero</unittype>
-        <unittype>LogicalTypeValidSpyTarget</unittype>
-        <unittype>LogicalTypeValidFrostTarget</unittype>
-        <unittype>EconomicUpgraded</unittype>
-        <unittype>LogicalTypeValidShockwaveTarget</unittype>
-        <unittype>LogicalTypeValidTraitorTarget</unittype>
-        <unittype>BuildLimitSharedGreek</unittype>
-        <unittype>LogicalTypeValidEidolon</unittype>
-        <hotkeycontext>BuildGreekAccel</hotkeycontext>
-        <train row="0" column="0">House</train>
-        <train row="0" column="1">Granary</train>
-        <train row="0" column="2">Storehouse</train>
-        <train row="0" column="4">Temple</train>
-        <train row="0" column="5">Dock</train>
-        <train row="1" column="0">ArcheryRange</train>
-        <train row="1" column="1">MilitaryAcademy</train>
-        <train row="1" column="2">Stable</train>
-        <train row="1" column="3">Farm</train>
-        <train row="1" column="4">Market</train>
-        <train row="1" column="5">Armory</train>
-        <train row="2" column="0">TownCenter</train>
-        <train row="255" column="0">VillageCenter</train>
-        <train row="2" column="1">WallConnector</train>
-        <train row="255" column="255">WallShort</train>
-        <train row="255" column="255">WallMedium</train>
-        <train row="255" column="255">WallLong</train>
-        <train row="2" column="2">SentryTower</train>
-        <train row="2" column="3">Fortress</train>
-        <train row="2" column="5">Wonder</train>
-        <train>TitanGate</train>
-        <train>GiantGateRam</train>
-        <train>DigPile</train>
-        <train>TrojanHorseBuilding</train>
-        <flag>CollidesWithProjectiles</flag>
-        <flag>CorpseDecays</flag>
-        <flag>ShowGarrisonButton</flag>
-        <flag>DontRotateObstruction</flag>
-        <flag>ObscuredByUnits</flag>
-        <flag>CommonCommands</flag>
-        <flag>HasDefaultAttack</flag>
-        <flag>CreateUnitGroupAutomatically</flag>
-        <flag>NonAutoFormedUnit</flag>
-        <flag>AlwaysShowAbilities</flag>
-        <flag>UseSharedBuildLimit</flag>
-        <command row="3" column="2">SeekShelter</command>
-        <command row="3" column="3">Repair</command>
-        <command row="3" column="4">AttackMove</command>
-        <tactics>villager.tactics</tactics>
-        <protoaction>
-            <name>Hunting</name>
-            <rate type="Herdable">1.0000</rate>
-            <rate type="Huntable">1.0000</rate>
-            <rate type="Tree">1.0000</rate>
-            <rate type="NonConvertableHerdable">1.0000</rate>
-        </protoaction>
-        <protoaction>
-            <name>ChopAttack</name>
-            <damage type="Hack">8.000000</damage>
-        </protoaction>
-        <protoaction>
-            <name>RangedAttack</name>
-            <rof>2.000000</rof>
-            <damage type="Pierce">12.000000</damage>
-            <maxrange>12.000000</maxrange>
-            <projectile>ProjectileArrowNotFlaming</projectile>
-        </protoaction>
-        <protoaction>
-            <name>Build</name>
-            <rate type="Building">0.800000</rate>
-        </protoaction>
-        <protoaction>
-            <name>Repair</name>
-            <rate type="AbstractWall">0.1000</rate>
-            <rate type="Building">0.2000</rate>
-        </protoaction>
-        <protoaction>
-            <name>Gather</name>
-            <dropsitegathering>1</dropsitegathering>
-            <rate type="AbstractTemple">0.1</rate>
-            <rate type="WoodResource">1.000000</rate>
-            <rate type="GoldResource">0.850000</rate>
-            <rate type="Herdable">1.250000</rate>
-            <rate type="Huntable">1.2500000</rate>
-            <rate type="NonConvertableHerdable">1.250000</rate>
-            <rate type="BerryBush">0.800000</rate>
-            <rate type="AbstractFarm">0.700000</rate>
-            <rate type="ThePeachBlossomSpring" resource="Food">1.000000</rate>
-            <rate type="ThePeachBlossomSpring" resource="Wood">1.000000</rate>
-            <rate type="ThePeachBlossomSpring" resource="Gold">0.850000</rate>
-        </protoaction>
-        <protoaction>
-            <name>HandAttack</name>
-            <rof>1.000000</rof>
-            <damage type="Hack">8.000000</damage>
-            <damagebonus type="SentryTower">2.50000</damagebonus>
-            <damagebonus type="AbstractSiegeWeapon">2.000000</damagebonus>
-            <damagebonus type="AbstractVillager">1.50000</damagebonus>
-            <defaultattack>1</defaultattack>
-            <maxrange>0.500000</maxrange>
-        </protoaction>
-        <protoaction>
-            <name>ConditionalTransformDamageTaken</name>
-            <type>ConditionalTransform</type>
-            <persistent>1</persistent>
-            <modifyprotoid>LykaonWolf</modifyprotoid>
-            <conditionaltransformrule type="DamageTaken">1.0</conditionaltransformrule>
-        </protoaction>
-        <protoaction>
-            <name>ConditionalTransformDamageDealt</name>
-            <type>ConditionalTransform</type>
-            <persistent>1</persistent>
-            <modifyprotoid>LykaonWolf</modifyprotoid>
-            <conditionaltransformrule type="DamageDealt">1.0</conditionaltransformrule>
-        </protoaction>
-            <protoaction>
-            <name>ManualTransform</name>
-            <type>Inline</type>
-            <modifyprotoid>LykaonWolf</modifyprotoid>
-            <ismanualtransform>1</ismanualtransform>
-        </protoaction>
-    </unit>
     <unit name="HarpyMyth" orderhint="3" mergemode="replace">
         <displaynameid>STR_UNIT_HARPY_NAME</displaynameid>
         <rollovertextid>STR_UNIT_HARPY_LR</rollovertextid>
@@ -1756,7 +1570,11 @@
 	  <active>0</active>
     </protoaction>
 	</unit>
-    
+	<unit name="Temple">
+        <train row="0" column="1" mergeMode="remove">LykaonVillager</train>
+        <train row="0" column="1" mergeMode="add">LykaonWolf</train>
+	</unit>
+	    
     <!-- Greek Hero Units-->
     <!-- Zeus Heroes -->
     <unit name="Jason" mergeMode="replace">
@@ -8062,28 +7880,201 @@
 			<rate type="AbstractDock">1.30</rate>
 		</protoaction>
 	</unit>
-	<unit name="LykaonVillager" orderhint="3">
-		<unittype>AbstractInfantry</unittype>
-		<unittype>InfantryLineUpgraded</unittype>
+	<unit name="LykaonVillager" orderhint="3" mergemode="replace">
+        <displaynameid>STR_UNIT_LYKAON_VILLAGER_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_LYKAON_VILLAGER_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_LYKAON_VILLAGER_SR</shortrollovertextid>
+        <editornameid>STR_UNIT_LYKAON_VILLAGER_EDT_NAME</editornameid>
+        <icon>resources\greek\player_color\units\lykaon_icon.png</icon>
+        <animfile>greek\units\myth\lykaon\lykaon.xml</animfile>
+        <soundsetfile>greek_demeter/vo/lykaon_villager/villager_lykaon_demeter.xml</soundsetfile>
+        <disguiseprotoid>VillagerGreek</disguiseprotoid>
+        <obstructionradiusx>0.4900</obstructionradiusx>
+        <obstructionradiusz>0.4900</obstructionradiusz>
+        <impacttype>Unarmoured</impacttype>
+        <unitaitype>Civilian</unitaitype>
+        <movementtype>land</movementtype>
+        <turnrate>18.0000</turnrate>
+        <initialhitpoints>55.0000</initialhitpoints>
+        <maxhitpoints>55.0000</maxhitpoints>
+        <trainpoints>20.0000</trainpoints>
+        <weightclass>4</weightclass>
+        <populationcount>1</populationcount>
+        <sharedbuildlimitunit>VillagerGreek</sharedbuildlimitunit>
+        <sharedbuildlimitunittypes>
+        <unittype>BuildLimitSharedGreek</unittype>
+        </sharedbuildlimitunittypes>
+        <eidolonprotoid>LykaonWolf</eidolonprotoid>
+        <maxvelocity>4.0000</maxvelocity>
+        <los>14.0000</los>
+        <sharedselectionunittypes>
+        <unittype>LykaonWolf</unittype>
+        </sharedselectionunittypes>
+        <cost resourcetype="Gold">100.0000</cost>
+        <cost resourcetype="Wood">80.0000</cost>
+        <cost resourcetype="Favor">2.0000</cost>
+        <carrycapacity resourcetype="Food">15.0000</carrycapacity>
+        <carrycapacity resourcetype="Wood">10.0000</carrycapacity>
+        <carrycapacity resourcetype="Gold">10.0000</carrycapacity>
+        <armor type="Hack" value="0.2500"></armor>
+        <armor type="Pierce" value="0.3500"></armor>
+        <armor type="Crush" value="0.9900"></armor>
+        <unittype>LogicalTypeMinimapFilterEconomic</unittype>
+        <unittype>LogicalTypeEasySelectAvoid</unittype>
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeGarrisonInShips</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+
+        <unittype>Unit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>EconomicUnit</unittype>
+        <unittype>AbstractVillager</unittype>
 		<unittype>AbstractArcher</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-		<protoaction>
-			<name>Gather</name>
-			<dropsitegathering>1</dropsitegathering>
-			<rate type="AbstractTemple">0.1</rate>
-			<rate type="WoodResource">1.000000</rate>
-			<rate type="GoldResource">0.850000</rate>
-			<rate type="Herdable">1.250000</rate>
-			<rate type="Huntable">1.2500000</rate>
-			<rate type="NonConvertableHerdable">1.250000</rate>
-			<rate type="BerryBush">0.800000</rate>
-			<rate type="AbstractFarm">0.700000</rate>
-			<rate type="ThePeachBlossomSpring" resource="Food">1.000000</rate>
-			<rate type="ThePeachBlossomSpring" resource="Wood">1.000000</rate>
-			<rate type="ThePeachBlossomSpring" resource="Gold">0.850000</rate>
+        <unittype>Ranged</unittype>
+
+        <unittype>CountsTowardEconomicScore</unittype>
+        <unittype>ValidIdleVillager</unittype>
+        <unittype>AffectedByTownBell</unittype>
+        <unittype>LogicalTypeConvertsHerds</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeVillagerNotHero</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        <unittype>EconomicUpgraded</unittype>
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>LogicalTypeValidTraitorTarget</unittype>
+        <unittype>BuildLimitSharedGreek</unittype>
+        <unittype>LogicalTypeValidEidolon</unittype>
+        <hotkeycontext>BuildGreekAccel</hotkeycontext>
+        <train row="0" column="0">House</train>
+        <train row="0" column="1">Granary</train>
+        <train row="0" column="2">Storehouse</train>
+        <train row="0" column="4">Temple</train>
+        <train row="0" column="5">Dock</train>
+        <train row="1" column="0">ArcheryRange</train>
+        <train row="1" column="1">MilitaryAcademy</train>
+        <train row="1" column="2">Stable</train>
+        <train row="1" column="3">Farm</train>
+        <train row="1" column="4">Market</train>
+        <train row="1" column="5">Armory</train>
+        <train row="2" column="0">TownCenter</train>
+        <train row="255" column="0">VillageCenter</train>
+        <train row="2" column="1">WallConnector</train>
+        <train row="255" column="255">WallShort</train>
+        <train row="255" column="255">WallMedium</train>
+        <train row="255" column="255">WallLong</train>
+        <train row="2" column="2">SentryTower</train>
+        <train row="2" column="3">Fortress</train>
+        <train row="2" column="5">Wonder</train>
+        <train>TitanGate</train>
+        <train>GiantGateRam</train>
+        <train>DigPile</train>
+        <train>TrojanHorseBuilding</train>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>CorpseDecays</flag>
+        <flag>ShowGarrisonButton</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>CommonCommands</flag>
+        <flag>HasDefaultAttack</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+        <flag>NonAutoFormedUnit</flag>
+        <flag>AlwaysShowAbilities</flag>
+        <flag>UseSharedBuildLimit</flag>
+        <command row="3" column="2">SeekShelter</command>
+        <command row="3" column="3">Repair</command>
+        <command row="3" column="4">AttackMove</command>
+        <tactics>villager.tactics</tactics>
+        <protoaction>
+            <name>Hunting</name>
+            <rate type="Herdable">1.0000</rate>
+            <rate type="Huntable">1.0000</rate>
+            <rate type="Tree">1.0000</rate>
+            <rate type="NonConvertableHerdable">1.0000</rate>
+        </protoaction>
+        <protoaction>
+            <name>ChopAttack</name>
+            <damage type="Hack">8.000000</damage>
+        </protoaction>
+        <protoaction>
+            <name>RangedAttack</name>
+            <rof>2.000000</rof>
+            <damage type="Pierce">12.000000</damage>
+            <maxrange>12.000000</maxrange>
+            <projectile>ProjectileArrowNotFlaming</projectile>
+        </protoaction>
+        <protoaction>
+            <name>Build</name>
+            <rate type="Building">0.800000</rate>
+        </protoaction>
+        <protoaction>
+            <name>Repair</name>
+            <rate type="AbstractWall">0.1000</rate>
+            <rate type="Building">0.2000</rate>
+        </protoaction>
+        <protoaction>
+            <name>Gather</name>
+            <dropsitegathering>1</dropsitegathering>
+            <rate type="AbstractTemple">0.1</rate>
+            <rate type="WoodResource">1.000000</rate>
+            <rate type="GoldResource">0.850000</rate>
+            <rate type="Herdable">1.250000</rate>
+            <rate type="Huntable">1.2500000</rate>
+            <rate type="NonConvertableHerdable">1.250000</rate>
+            <rate type="BerryBush">0.800000</rate>
+            <rate type="AbstractFarm">0.700000</rate>
+            <rate type="ThePeachBlossomSpring" resource="Food">1.000000</rate>
+            <rate type="ThePeachBlossomSpring" resource="Wood">1.000000</rate>
+            <rate type="ThePeachBlossomSpring" resource="Gold">0.850000</rate>
 			<rate type="FishResource">1.30</rate>
 			<rate type="AbstractDock">1.30</rate>
-		</protoaction>
+        </protoaction>
+        <protoaction>
+            <name>HandAttack</name>
+            <rof>1.000000</rof>
+            <damage type="Hack">8.000000</damage>
+            <damagebonus type="SentryTower">2.50000</damagebonus>
+            <damagebonus type="AbstractSiegeWeapon">2.000000</damagebonus>
+            <damagebonus type="AbstractVillager">1.50000</damagebonus>
+            <defaultattack>1</defaultattack>
+            <maxrange>0.500000</maxrange>
+        </protoaction>
+        <protoaction>
+            <name>ConditionalTransformDamageTaken</name>
+            <type>ConditionalTransform</type>
+            <persistent>1</persistent>
+            <modifyprotoid>LykaonWolf</modifyprotoid>
+            <conditionaltransformrule type="DamageTaken">1.0</conditionaltransformrule>
+        </protoaction>
+        <protoaction>
+            <name>ConditionalTransformDamageDealt</name>
+            <type>ConditionalTransform</type>
+            <persistent>1</persistent>
+            <modifyprotoid>LykaonWolf</modifyprotoid>
+            <conditionaltransformrule type="DamageDealt">1.0</conditionaltransformrule>
+        </protoaction>
+            <protoaction>
+            <name>ManualTransform</name>
+            <type>Inline</type>
+            <modifyprotoid>LykaonWolf</modifyprotoid>
+            <ismanualtransform>1</ismanualtransform>
+        </protoaction>
+    </unit>		
+    <unit name="LykaonWolf" orderhint="3">
+        <unittype>InfantryLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
 	</unit>
 
     <!--general buildings improvements-->
@@ -11843,6 +11834,8 @@
 		<flag>MilitaryCommands</flag>
 		<flag>CommonCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+
+    	<flag>DirectProjectile</flag>
 		<tactics>mcmt_multigunner.tactics</tactics>
 		<protoaction>
 			<name>GattlingAttack</name>
@@ -14356,6 +14349,7 @@
 		<tech row="0" column="2">MCMT_ElectricityAndEnergyAgreements</tech>
 		<tech row="0" column="3">MCMT_FurnitureAndMaterialTransactions</tech>
 		<tech row="0" column="5">MCMT_FieldWorkers</tech>
+		<tech row="0" column="5">MCMT_ExpertEngineers</tech>
 
 		<tech row="1" column="0">MCMT_HigherRatesHigherStakes</tech>
 		<tech row="1" column="1">MCMT_HigherRatesHigherSteaks</tech>
@@ -14881,7 +14875,7 @@
 	
   </unit>
   	<!-- S.V.A Special Units -->
-  			<unit name="Desolator">
+  <unit name="Desolator">
     <displaynameid>STR_UNIT_MCMT_DESOLATOR_NAME</displaynameid>
     <rollovertextid>STR_UNIT_MCMT_DESOLATOR_LR</rollovertextid>
     <shortrollovertextid>STR_UNIT_MCMT_DESOLATOR_SR</shortrollovertextid>
@@ -15379,7 +15373,7 @@
       <damagebonus type="AbstractVillager">1.500000</damagebonus>
       <damagebonus type="AbstractArcherShip">1.500000</damagebonus>
       <maxrange>18.000000</maxrange>
-      <projectile>ProjectileKuafuStone</projectile>
+      <projectile>ProjectileIcarusBomb</projectile>
       <numberprojectiles>3</numberprojectiles>
       <volleymode></volleymode>
 	  <onhiteffect type="Throw">
@@ -15462,6 +15456,7 @@
     <flag>ObscuredByUnits</flag>
     <flag>HasContinuousParticles</flag>
     <flag>CreateUnitGroupAutomatically</flag>
+	<flag>DirectProjectile</flag>
     <contain>LogicalTypeGarrisonInShips</contain>
     <command row="3" column="0">Stop</command>
     <command row="3" column="1">Eject</command>
@@ -15477,7 +15472,7 @@
       <damagebonus type="AbstractTransportShip">1.500000</damagebonus>
       <damagebonus type="AbstractFishingShip">1.500000</damagebonus>
       <maxrange>18.000000</maxrange>
-      <projectile>ProjectileKuafuStone</projectile>
+      <projectile>ProjectileIcarusBomb</projectile>
       <numberprojectiles>1</numberprojectiles>
 	  <trackrating>99</trackrating>
     </protoaction>
@@ -15561,6 +15556,7 @@
     <flag>ObscuredByUnits</flag>
     <flag>HasContinuousParticles</flag>
     <flag>CreateUnitGroupAutomatically</flag>
+	<flag>DirectProjectile</flag>
     <contain>LogicalTypeGarrisonInShips</contain>
     <command row="3" column="0">Stop</command>
     <command row="3" column="1">Eject</command>
@@ -15576,7 +15572,7 @@
       <damagebonus type="AbstractVillager">1.500000</damagebonus>
       <damagebonus type="AbstractArcherShip">1.500000</damagebonus>
       <maxrange>12.000000</maxrange>
-      <projectile>ProjectileKuafuStone</projectile>
+      <projectile>ProjectileIcarusBomb</projectile>
       <numberprojectiles>1</numberprojectiles>
 	  <trackrating>99</trackrating>
     </protoaction>
@@ -15791,7 +15787,7 @@
 		<damagebonus type="AbstractTitan">10</damagebonus>
 		<damagebonus type="Building">5</damagebonus>
 		<maxrange>60.000000</maxrange>	
-		<projectile>ProjectileKuafuStone</projectile>
+		<projectile>ProjectileIcarusBomb</projectile>
 		<numberprojectiles>1</numberprojectiles>
 		
 		<rate type="Building">1.0</rate>
@@ -19380,6 +19376,117 @@
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
+	<unit name="PansChosen">
+		<displaynameid>STR_UNIT_SATYR_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SATYR_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_SATYR_SR</shortrollovertextid>
+		<icon>resources\atlantean\player_color\units\satyr_icon.png</icon>
+		<animfile>atlantean\units\myth\satyr\satyr.xml</animfile>
+		<soundsetfile>atlantean\vo\satyr\satyr.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<impacttype>Armored</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>650.0000</initialhitpoints>
+		<maxhitpoints>650.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>7</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.9000</maxvelocity>
+		<rechargetime>25.0000</rechargetime>
+		<los>20.0000</los>
+		<cost resourcetype="Wood">250.0000</cost>
+		<cost resourcetype="Favor">20.0000</cost>
+		<armor type="Hack" value="0.5000"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHeroicMythUnit</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MinorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>DirectProjectile</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>RangeIndicatorForAbilityCasting</flag>
+		<tactics>rangedattack_chargedrangedattack_noflying.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">9.000000</damage>
+			<damage type="Divine">2.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileSatyrSpear</projectile>
+			<numberprojectiles>2</numberprojectiles>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Divine">20.000000</damage>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileSatyrSpearSpecialAttack</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<passthrough>1</passthrough>
+			<passthroughbuildings>1</passthroughbuildings>
+			<maxheight>2</maxheight>
+			<perfectaccuracy>1</perfectaccuracy>
+			<launchpoint>ChargeAttackLaunchPoint</launchpoint>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
+			</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
 
 	<unit name="PegasusGroundedMessenger">
 		<displaynameid>STR_UNIT_PEGASUS_NAME</displaynameid>
@@ -21782,6 +21889,10 @@
 		<flag>NoIdleActions</flag>
 		<flag>RecoverableDeathHeal</flag>
 
+		<flag>UseChargeIfNotIdle</flag>
+		<flag>UseChargeOnDamaged</flag>
+		<flag>CanAutoTransform</flag>
+
 		<tactics>chainattack_beam.tactics</tactics>
 		<protoaction>
 			<name>BeamAttack</name>
@@ -21799,6 +21910,127 @@
 			<onhiteffect type="ShadingFade" shadingtype="burning" fadetime="1.0" factor="1.6" duration="5.0" targetunittype="Building"></onhiteffect>
 			
 			<canattackground>1</canattackground>
+		</protoaction>
+		<protoaction>
+     		<name stringid="STR_ABILITY_HAMADRYAD">DelayedHamadryadTransform</name>
+			<type>DelayedTransform</type>
+			<active>0</active>
+			<modifyprotoid>MirageTree</modifyprotoid>
+			<transformskipplacementpush>1</transformskipplacementpush>
+		</protoaction>
+	</unit>
+	<unit name="MirageTree" orderhint="3">
+		<displaynameid>STR_UNIT_HAMADRYAD_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_HAMADRYAD_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_HAMADRYAD_SR</shortrollovertextid>
+		<enemyshortrollovertextid>STR_EMB_WOOD_SR</enemyshortrollovertextid>
+		<icon>resources\greek\player_color\units\hamadryad_icon.png</icon>
+		<animfile>greek_demeter\units\myth\hamadryad\hamadryad_tree.xml</animfile>
+		<obstructionradiusx>1.2400</obstructionradiusx>
+		<obstructionradiusz>1.2400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<dependentunit>VFXAlliedHamadryadTree</dependentunit>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>600.0000</initialhitpoints>
+		<maxhitpoints>600.0000</maxhitpoints>
+		<trainpoints>20.0000</trainpoints>
+		<weightclass>7</weightclass>
+		<populationcount>3</populationcount>
+		<maxvelocity>1.0000</maxvelocity>
+		<los>20.0000</los>
+		<sharedselectionunittypes>
+		<unittype>MirageTank</unittype>
+		</sharedselectionunittypes>
+		<eidolonprotoid>MirageTank</eidolonprotoid>
+		<cost resourcetype="Food">200.0000</cost>
+		<cost resourcetype="Gold">100.0000</cost>
+		<cost resourcetype="Favor">25.0000</cost>
+		<armor type="Hack" value="0.5000"></armor>
+		<armor type="Pierce" value="0.6000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHeroicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DisplayRange</flag>
+		<flag>HideFromDialogs</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>CopyNearbyTree</flag>
+		<flag>NotObscuredByUnitsForOpponents</flag>
+		<flag>HideHPBarFromOpponents</flag>
+		<flag>HideMinimapIndicatorFromOpponents</flag>
+		<flag>NotPushable</flag>
+		<flag>FakeAsTreeIfEnemy</flag>
+		<tactics>hamadryad_tree.tactics</tactics>
+		<protoaction>
+			<name>PlaceholderAttackHamadryadTree</name>
+			<rate type="All">1.0</rate>
+			<damage type="Pierce">150</damage>
+			<damage type="Divine">40</damage>
+			<damagearea>16</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>6.000000</maxrange>
+			<attackaction>1</attackaction>
+		</protoaction>
+		<protoaction>
+			<name>DelayedHamadryadTransform</name>
+			<type>DelayedTransform</type>
+			<modifyprotoid>MirageTank</modifyprotoid>
+		</protoaction>
+		<protoaction>
+			<name>ConditionalTransformMoved</name>
+			<type>ConditionalTransform</type>
+			<persistent>1</persistent>
+			<modifyprotoid>MirageTank</modifyprotoid>
+			<conditionaltransformrule type="NotIdle">0.1</conditionaltransformrule>
+			<skipmutatespawnevents>1</skipmutatespawnevents>
+			<mustfinishanimation>1</mustfinishanimation>
+		</protoaction>
+		<protoaction>
+			<name>ConditionalTransformAmbush</name>
+			<type>ConditionalTransform</type>
+			<persistent>1</persistent>
+			<modifyprotoid>MirageTank</modifyprotoid>
+			<rate type="AbstractFlyingUnit">0.0</rate>
+			<rate type="MilitaryUnit">1.0</rate>
+			<rate type="EconomicUnit">1.0</rate>
+			<conditionaltransformrule type="EnemyInRange">6.00</conditionaltransformrule>
+			<mustfinishanimation>1</mustfinishanimation>
 		</protoaction>
 	</unit>
 	<unit name="MirrorTank">

@@ -507,6 +507,8 @@ ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_III_NAME"   ;   Str = "Activate Tec
 
 ID = "STR_TECH_FIELDWORKERS_NAME"   ;   Str = "Field Workers"
 ID = "STR_TECH_FIELDWORKERS_LR"   ;   Str = "Assign employees to work in many fields of operations and satisfy an collaborative income"
+ID = "STR_TECH_EXPERTENGINEERS_NAME"   ;   Str = "Expert Engineers"
+ID = "STR_TECH_EXPERTENGINEERS_LR"   ;   Str = "Authorities employ exclusive individual to recover and re-enable when a business meets its loss"
 ID = "STR_TECH_NEWBUSINESSCONTRACTS_NAME"   ;   Str = "New Business Contracts"
 ID = "STR_TECH_NEWBUSINESSCONTRACTS_LR"   ;   Str = "Arrange and initiate new projects with shareholders for a continous income"
 ID = "STR_TECH_INTERCONTINENTALSHIPMENTS_NAME"   ;   Str = "Intercontinental Shipments"
