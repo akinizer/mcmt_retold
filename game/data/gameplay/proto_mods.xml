@@ -13935,7 +13935,11 @@
 		<trainpoints>25.0000</trainpoints>
 		<weightclass>4</weightclass>
 		<populationcount>5</populationcount>
-		<maxvelocity>3.8000</maxvelocity>
+		<maxcontained>1</maxcontained>
+        <maxvelocity>0.0100</maxvelocity>
+        <containedspeedbonus>10.0000</containedspeedbonus>
+        <contain>AbstractVillager</contain>
+
 		<los>16.0000</los>
 		<cost resourcetype="Food">85.0000</cost>
 		<cost resourcetype="Wood">15.0000</cost>
@@ -14044,7 +14048,10 @@
 		<trainpoints>15.0000</trainpoints>
 		<weightclass>8</weightclass>
 		<populationcount>4</populationcount>
-		<maxvelocity>2.6000</maxvelocity>
+		<maxcontained>1</maxcontained>
+        <maxvelocity>0.0100</maxvelocity>
+        <containedspeedbonus>10.0000</containedspeedbonus>
+        <contain>AbstractVillager</contain>
 		<los>18.0000</los>
 
 		<cost resourcetype="Wood">150.0000</cost>
@@ -14136,7 +14143,10 @@
 		<trainpoints>15.0000</trainpoints>
 		<weightclass>8</weightclass>
 		<populationcount>4</populationcount>
-		<maxvelocity>2.6000</maxvelocity>
+		<maxcontained>1</maxcontained>
+        <maxvelocity>0.0100</maxvelocity>
+        <containedspeedbonus>10.0000</containedspeedbonus>
+        <contain>AbstractVillager</contain>
 		<los>18.0000</los>
 
 		<cost resourcetype="Wood">150.0000</cost>
@@ -14187,19 +14197,16 @@
 		<tactics>mcmt_cybertech_constructvehicles_mine.tactics</tactics>
 		<protoaction>
 			<name>AbsorbGoldResource</name>
-			<dropsitegathering>1</dropsitegathering>
-			<rate type="GoldResource">1.500000</rate>
-			<maxrange>2.5</maxrange>
-			<anim>HandAttack</anim>
+			<dropsitegathering>0</dropsitegathering>
+			<rate type="GoldResource">1.50000</rate>
 		</protoaction>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>3.000000</rof>
-			<damage type="Hack">32.000000</damage>
-			<damagebonus type="MythUnit">2.000000</damagebonus>
-			<damagebonus type="HumanSoldier">2.500000</damagebonus>
-			<maxrange>1.5</maxrange>
-			<defaultattack>1</defaultattack>
+			<rof>1.000000</rof>
+			<damage type="Hack">15.000000</damage>
+			<damage type="Divine">5.000000</damage>
+			<damagebonus type="MythUnit">5.00000</damagebonus>
+			<maxrange>0.750000</maxrange>
 		</protoaction>
 	  </unit>
 	  <unit name="CyberTechIdolizer">
@@ -14222,7 +14229,10 @@
 		<trainpoints>15.0000</trainpoints>
 		<weightclass>8</weightclass>
 		<populationcount>4</populationcount>
-		<maxvelocity>2.6000</maxvelocity>
+		<maxcontained>1</maxcontained>
+        <maxvelocity>0.0100</maxvelocity>
+        <containedspeedbonus>10.0000</containedspeedbonus>
+        <contain>AbstractVillager</contain>
 		<los>18.0000</los>
 
 		<cost resourcetype="Wood">150.0000</cost>

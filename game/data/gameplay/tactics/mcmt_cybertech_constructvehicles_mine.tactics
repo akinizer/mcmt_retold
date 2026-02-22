@@ -1,10 +1,9 @@
 <tactics>
-  <action>
+   <action>
     <name stringid="STR_ACTION_GATHER">AbsorbGoldResource</name>
     <type>Gather</type>
-    <maxrange>1.5</maxrange>
+    <maxrange>0.5</maxrange>
     <rate type="GoldResource">1.0</rate>
-    <anim>HandAttack</anim>
   </action>
   <action>
     <name stringid="STR_ACTION_HAND">HandAttack</name>
@@ -15,11 +14,11 @@
     <anim>HandAttack</anim>
     <maxrange>1</maxrange>
     <rate type="All">1.0</rate>
-    <onhiteffect type="Snare" duration="2" rate="0.85">
-    </onhiteffect>
+    <onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
     <impacteffect>effects\impacts\hack</impacteffect>
   </action>
-  <tactic>Default<action priority="100">HandAttack</action>
-    <action>AbsorbGoldResource</action>
-    <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+  <tactic>Default
+  <action priority="80">HandAttack</action>
+  <action>AbsorbGoldResource</action>
+  <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
 </tactics>

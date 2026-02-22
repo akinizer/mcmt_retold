@@ -1,3 +1,57 @@
+0. Notable Mechanics
+* Driver System
+* Proximity-Based Attack Modes
+* Activation Techs
+* Chariot Swordsman Hero
+* Omnniscience Reveal UI
+* Repeatable-Upgrades: AutoGather
+* Warfare Mode Switches: Baolei (Myth vs Might)
+* Market Resource Boost
+* Mobile Docks
+* Deployable Vehicles: Transform to Building
+* Naval-Only AutoGather Buildings
+* Supervehicles: Superweapon Abilities
+* Complete Rework of Techs, Units, Buildings, Heroes (proximity modes, target modes and mix of both, better projectiles)
+* Sci-Fi Tech, Vehicles, Units, Buildings, Techs
+* A Massive Size Mammoth of Set with Laser Weaponry
+* Founder Units: Special Building Builder, Ballist,c Converter Units
+* Mobile Fortress and A.R.K
+* Multigunner Infantry: Bombardment and Gattling Modes
+* Area of Effect Utility Buildings: Invisibility, Damage Aura, Resource Boost
+* Fences: Buildable and Upgradable
+* Structures with Shield
+* Enriched Natural Resources, Pass-Through Plants
+* New Amphibious and Phasing Abilities: Beasts and Spectral Units
+* Reworked Towers: Shooting If Contained
+* Stronger Myth Units, Mightier Military Techs, Herofied Jarls
+* Campaign Heroes Reworked: Numkill Veterancy
+* Civilization Heroes Reworked: Achilles Has Joined with Tendon, Greek Heroes with Blessed Armors, Archers with Long Range and Rapid Fire Modes, Heroes with Extra Ranged Modes
+* Pegasus Winged Messenger: Reworked to Flying Trade unit
+* More Dismountable Units: Valkyrie Warrior
+* Berserks Reworked: Reviving to Bears as a joke-referencing to the name
+* Blazing Wolf Fenrir: Commandable Mythic Beast Reworked from God Power
+* Mightier and Stronger God Power Dragons
+* Merchants: Simple Tasks, Promotion to Militia
+* Military Unit with Additional Line Upgrades for More Challenging Battles
+* Civilization Techs & Mountain Dwarves, CyberTech & Elite Units, FutureTech & Probes
+* Hall of Heroes: Atlantean Captains with Veterancy, Tanks with Unique Systems, Mothership Super Aircraft
+* Temple of Primordials: Divine Beats, Gods, Legendary Heroes, Constructs of Hephaestos
+* Strategical Vessel Assembly: Unique Naval Vehicles, Flying Dutchman & Trainable Crew & Ressurection Bolts, Worldbreaker Super Mobile Dock, Onigami
+* Air Command: Mr Wukong the Airborne Builder
+* Bastion: Guild Building of Special Heroes including Voltox & Sparky the Energy Wolf
+* Mage Tower: Fires Magic Bullets
+* WarBunker: Struture that Shoots If Garrisoned, Equipped with Anti-Unit, Anti-Armor, Anti-Armor Systems
+* TechBuilding: Very Special Techs for All Fun
+* EcoMarket: Some Extra Resources
+* Deployment and Entrench Units: Ranged Soldiers, Mobile Towers, Naval Vehicles with Deployment-Special Abilities
+* Colossal Maps
+* Names for Wonders and Titans
+* More Challenging Battles
+* Compatibility with Campaign
+* Exotic Lore and References, Sci-Fi, Science, Mythology, History, Cyborgs and Plent of Surprises!
+* Up-to-Date to Demeter and Japanese
+* Many Many More in Future!
+
 1. Reworking on Demeter's hero units and related techs
 - favor costs removed, pop 1
 - hero:
@@ -18,6 +72,8 @@
 - tech:
     - FatedArrows: NumberBounces myth +3, hero +8
     - ThornedWalls: regen Walls 1.0, Hamadryad 0.8
+- godpower:
+    - cost zero
 
 3. Greek reworks from mcmt mod
 - myth unit: 
@@ -46,7 +102,6 @@
     - melee: Centimanus+, Automaton+, Behemoth+, Argus+, Promethean+
     - ranged: Satyr+, Lampades+
     - naval: Nereid+, Manowar+, Servant+
-
 
 5. Norse reworks from mcmt mod
 - myth unit:
@@ -129,7 +184,8 @@
     - WenZhong+
 
 7. Campaign Heroes from mcmt mod and new related techs
-- Arkantos, OdysseusSPC, AjaxSPC, ChironSPC, Kastor (unimplemented)
+- Arkantos, OdysseusSPC, AjaxSPC, ChironSPC, Kastor
+    - veterancy numkill, lineupgrades, egyptian techs (spearmen, axemen, feetofjackal)
 - Amanra, Setna, Reginleif (needs revision)
 - Brokk+,Eitri+
     - Build: MCMT_DwarvenForge (giantslaying and thunderslaying techs)
@@ -308,6 +364,10 @@
             - garrison: worker, 250 max
     - Train:
         - Construction Vehicles: gather resources
+            - CombineHarvester (abstractfarm,bush,food) +
+            - MiningExcavator (problematic)
+            - FellerBucher (tree,wood) +
+            - Idolizer (temple,favor) +
     - Ability: boosts nearby resources
 
 17. Art Model Reworks

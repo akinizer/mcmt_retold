@@ -361,6 +361,7 @@
         <effect type="Data" amount="2.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">MageTower</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">StrategicVesselAssembly</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AirCommand</target></effect>
+        <effect type="Data" amount="0.40" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">AirCommand</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">WarBunker</target></effect>
         <effect type="Data" amount="0.40" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">WarBunker</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">HallOfHeroes</target></effect>
@@ -1261,6 +1262,9 @@
 
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
         <target type="ProtoUnit">CyberTechWorldFinancialCenter</target></effect>
+      <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
+        <target type="ProtoUnit">CyberTechWorldFinancialCenter</target></effect>
+
       
       <effect type="SetName" proto="Market" newname="STR_UNIT_CHAINCORPERATIONS_FACILITY_NAME"></effect>
     </effects>
@@ -1286,12 +1290,13 @@
       <effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="Building" resourcetype="Gold" amount="10.0" relativity="Absolute">
         <target type="Player"></target></effect>
 
-      <effect type="SetName" proto="Villager" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
-      <effect type="SetName" proto="Laborer" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
-      <effect type="SetName" proto="Commoner" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
-      <effect type="SetName" proto="Gatherer" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
-      <effect type="SetName" proto="Citizen" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
-      <effect type="SetName" proto="CitizenHero" newname="STR_UNIT_FIELDAGENTELITE_NAME"></effect>
+      <effect type="SetName" proto="VillagerGreek" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="VillagerEgyptian" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="VillagerJapanese" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="VillagerChinese" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="VillagerNorse" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="VillagerAtlantean" newname="STR_UNIT_FIELDAGENT_NAME"></effect>
+      <effect type="SetName" proto="VillagerAtlanteanHero" newname="STR_UNIT_FIELDAGENTELITE_NAME"></effect>
       <effect type="SetName" proto="LykaonVillager" newname="STR_UNIT_FIELDAGENTOPERATOR_NAME"></effect>
     </effects>
   </tech>
