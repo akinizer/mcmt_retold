@@ -3,6 +3,8 @@ ID = "STR_UNIT_KINGLYCAON_WOLF_NAME"   ;   Str = "King Lycaon (Hero)"
 ID = "STR_UNIT_KINGLYCAON_WOLF_SR"   ;   Str = "King of Arcadia"
 ID = "STR_UNIT_KINGLYCAON_WOLF_LR"   ;   Str = "The leader of Arcadian Kingdom has been cursed after finding a mysterious object fallen from sky and bearing mark of oni. His rage infected many royal servants and spread through whole nation until a master shinobi taught them how to control their feral instincts"
 
+ID = "STR_ACTION_FERALINFECTION_NAME"   ;   Str = "Feral Infection"
+
 // JAPANESE EXPANSION
 ID = "STR_UNIT_ASURENDA_NAME"   ;   Str = "Asurendra (Hero)"
 ID = "STR_UNIT_ASURENDA_SR"   ;   Str = "Leader of Asuras"

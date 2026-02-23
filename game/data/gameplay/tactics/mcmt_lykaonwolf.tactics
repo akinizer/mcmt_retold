@@ -1,0 +1,32 @@
+<tactics>
+  <action>
+    <name stringid="STR_ACTION_HAND">HandAttack</name>
+    <type>Attack</type>
+    <rate type="All">1.0</rate>
+    <attackaction>1</attackaction>
+    <handlogic>1</handlogic>
+    <anim>HandAttack</anim>
+    <onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+    <impacteffect>effects\impacts\hack</impacteffect>
+  </action>
+  <action>
+      <name stringid="STR_ACTION_FERALINFECTION_NAME">FeralInfectionAttack</name>
+      <type>Attack</type>
+      <attackaction>1</attackaction>
+      <handlogic>1</handlogic>
+      <anim>HandAttack</anim>
+      <onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+      <chargeaction>1</chargeaction>
+      <impacteffect>effects\impacts\hack</impacteffect>
+      <rate type="HumanSoldier">1.0</rate>
+      <rate type="LogicalTypeVillagerNotHero">1.0</rate>
+    </action>
+    <tactic>Default
+      <action priority="100">FeralInfectionAttack</action>
+      <action priority="90">HandAttack</action>
+      <attacktype>LogicalTypeHandUnitsAttack</attacktype>
+      <autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+      <attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+      <attackmovetype>AbstractWall</attackmovetype>
+    </tactic>
+</tactics>

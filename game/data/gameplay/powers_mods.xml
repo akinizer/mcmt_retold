@@ -29,9 +29,42 @@
 	<power name="Wither" type="Wither" godpower="" orderhint="3">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
 	<power name="ArcadianMeadow" type="ArcadianMeadow" godpower="" orderhint="3">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
+		<cost>0.0</cost><repeatcost>0.0</repeatcost>
+	</power>
 	<power name="CommunalHearth" type="TempUnit" godpower="" orderhint="3">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<power name="UnderworldInvasion" type="UnderworldInvasion" godpower="" orderhint="3" mergeMode="replace">
+		<displaynameid>STR_POWER_UNDERWORLD_INVASION</displaynameid>
+		<rolloverid>STR_POWER_UNDERWORLD_INVASION_LR</rolloverid>
+		<icon>greek_demeter\static_color\god_powers\underworld_invasion_icon.png</icon>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<placement self="" usetargetunitpositionforplacement="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidUnderworldInvasionTarget</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PersephoneUnderworldInvasionBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<soundset type="EndSound" listenertype="IfOnScreenAll">PersephoneUnderworldInvasionEnd</soundset>
+		<activetime>200.0</activetime>
+		<cost>0.0</cost>
+		<repeatcost>0.0</repeatcost>
+		<lightset>gp_underworldinvasion</lightset>
+		<lightsetbuilduptime>1.0</lightsetbuilduptime>
+		<lightsetduration>20.0</lightsetduration>
+		<lightsetshutdowntime>3.0</lightsetshutdowntime>
+		<maxeidoloncount>100</maxeidoloncount>
+		<eidolonmaxhpmultiplier>0.66</eidolonmaxhpmultiplier>
+		<eidolonmaxspeedmultiplier>1.0</eidolonmaxspeedmultiplier>
+		<eidolontype>LogicalTypeValidEidolon</eidolontype>
+		<eidolonspawnradius>10.0</eidolonspawnradius>
+		<eidolonspawnduration>5.0</eidolonspawnduration>
+		<vfxproto>VFXUnderworldInvasion</vfxproto>
+		<vfxeidolonspawnproto>VFXEidolonSpawn</vfxeidolonspawnproto>
+		<vfxforunitswithoutbirthanims>VFXTraitor</vfxforunitswithoutbirthanims>
+		<vfxcurseproto>VFXUnderworldInvasionLoop</vfxcurseproto>
+		<suddendeathhpmultiplier>0.5</suddendeathhpmultiplier>
+	</power>
+		
+
 	<!--Atlantean God Powers-->	
 	<power name="Deconstruction" type="Deconstruction" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	

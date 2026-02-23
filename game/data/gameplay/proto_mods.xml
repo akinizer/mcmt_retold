@@ -791,6 +791,7 @@
             <rof>1.000000</rof>
             <damage type="Hack">10.000000</damage>
             <damage type="Crush">8.000000</damage>
+			<damagebonus type="HumanSoldier">2.000000</damagebonus>
             <maxrange>20.000000</maxrange>
             <minrange>10.000000</minrange>
             <projectile>ProjectileHamadryadSpike</projectile>
@@ -8080,9 +8081,158 @@
             <ismanualtransform>1</ismanualtransform>
         </protoaction>
     </unit>		
-    <unit name="LykaonWolf" orderhint="3">
-        <unittype>InfantryLineUpgraded</unittype>
+
+	<unit name="LykaonWolf" orderhint="3" mergeMode="replace">
+		<displaynameid>STR_UNIT_LYKAON_WOLF_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_LYKAON_WOLF_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_LYKAON_WOLF_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\lykaon_wolf_icon.png</icon>
+		<animfile>greek\units\myth\lykaon\lykaon_wolf.xml</animfile>
+		<soundsetfile>greek_demeter\vo\lykaon_transformed\lykaon_transformed.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>350.0000</initialhitpoints>
+		<maxhitpoints>350.0000</maxhitpoints>
+		<trainpoints>20.0000</trainpoints>
+		<weightclass>6</weightclass>
+		<populationcount>3</populationcount>
+		<maxvelocity>3.5000</maxvelocity>
+		<maxrunvelocity>3.8500</maxrunvelocity>
+		<los>18.0000</los>
+		<sharedselectionunittypes>
+		<unittype>LykaonVillager</unittype>
+		</sharedselectionunittypes>
+		<sharedbuildlimitunit>VillagerGreek</sharedbuildlimitunit>
+		<sharedbuildlimitunittypes>
+		<unittype>BuildLimitSharedGreek</unittype>
+		</sharedbuildlimitunittypes>
+		<cost resourcetype="Gold">100.0000</cost>
+		<cost resourcetype="Wood">80.0000</cost>
+		<cost resourcetype="Favor">15.0000</cost>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.3500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeClassicalMythUnit</unittype>
+		<unittype>BuildLimitSharedGreek</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitCavalry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
 		<unittype>HumanSoldier</unittype>
+		<rechargetime>20.0000</rechargetime>
+
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>HideFromDialogs</flag>
+		<flag>UseSharedBuildLimit</flag>
+		<tactics>mcmt_lykaonwolf.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.00000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="HumanSoldier">1.500000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>FeralInfectionAttack</name>
+			<rof>1.75000</rof>
+			<damage type="Hack">35.000000</damage>
+			<maxrange>0.500000</maxrange>
+
+			<onhiteffect type="DamageOverTime" duration="15.000000">
+				<damage type="Divine">4.000000</damage>
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="AbstractVillager"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXBleed" attachbone="spine" duration="15.000000">
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="AbstractVillager"></target>
+			</onhiteffect>
+
+			<onhiteffect type="Reincarnation" proto="LykaonVillager" duration="15.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>DelayedTransform</name>
+			<type>DelayedTransform</type>
+			<modifyprotoid>LykaonVillager</modifyprotoid>
+			<modifyduration>2000</modifyduration>
+			<anim>Transform</anim>
+			<transformskipplacementpush>1</transformskipplacementpush>
+		</protoaction>
+		<protoaction>
+			<name>BirthHackArmor</name>
+			<type>AutoRangedModify</type>
+			<persistent>1</persistent>
+			<modifyduration>1750</modifyduration>
+			<modifytype>ArmorSpecific</modifytype>
+			<modifyamount>1.75</modifyamount>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifyselfonly>1</modifyselfonly>
+			<modifytargetdoingaction>Birth</modifytargetdoingaction>
+			<modifyupdateinterval>250</modifyupdateinterval>
+			<modifyupdateintervalrandomness>1</modifyupdateintervalrandomness>
+		</protoaction>
+			<protoaction>
+			<name>BirthPierceArmor</name>
+			<type>AutoRangedModify</type>
+			<persistent>1</persistent>
+			<modifyduration>1750</modifyduration>
+			<modifytype>ArmorSpecific</modifytype>
+			<modifyamount>1.8461</modifyamount>
+			<modifydamagetype>Pierce</modifydamagetype>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifyselfonly>1</modifyselfonly>
+			<modifytargetdoingaction>Birth</modifytargetdoingaction>
+			<modifyupdateinterval>250</modifyupdateinterval>
+			<modifyupdateintervalrandomness>1</modifyupdateintervalrandomness>
+		</protoaction>
 	</unit>
 
     <!--general buildings improvements-->

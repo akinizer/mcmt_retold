@@ -68,7 +68,7 @@
     - Iolaus: spd+, armor+, hp+, range+, rof+, pierceattack+, handattack-
 - tech:
     - PredatoryInstinct: 
-        - LykaonWolf: hackattack+, speed+
+        - LykaonWolf: hackattack+, speed+, enable FeralInfectionAttack
         - KingLycaon: hackattack+, speed+, rof+, favor 2
     - NepheleanHarpy (Iron Grip): enables Icarus apply bleed units
 
@@ -76,8 +76,8 @@
 - myth unit:
     - MythHarpy: ProjectileKuafuStone, Lifesteal, Speed bonus on water
     - LykaonVillager: speed+, pop 1, archerlineupgrade, rangedattack minrange defaultattack
-    - LykaonWolf: infantrylineupgrade, humansoldier
-    - Hamadryad: proximity attack mode, damage rework
+    - LykaonWolf: infantrylineupgrade, humansoldier, bonus (cavalry->humansoldier), ability (FeralInfectionAttack, humansoldier, villager, bleed, spawn LykaonVillager)
+    - Hamadryad: proximity attack mode, damage rework, bonus (humansoldier)
 - tech:
     - FatedArrows: NumberBounces myth +3, hero +8
     - ThornedWalls: regen Walls 1.0, Hamadryad 0.8
@@ -85,9 +85,9 @@
     - PansPioneers: spawn (PansChosen x1,TownCenter VillageCenter)
     - SacredLand: ThornAttack (Farm)
     - EnchantedHymn: AbilityOrpheus Range+
-    - 
 - godpower:
     - cost zero
+    - CommuneHearth: dropsite (food,wood)
 - temple:
     - LykaonVillager: replaced with LykaonWolf
 
@@ -427,8 +427,6 @@
 ==============================================================================
 ==================== REWORK-PLANS ======================================
 ==============================================================================
-- Orpheus: Empower a single worker
-
 === JAPANESE: NEW
 * MythUnit
     - Flying
@@ -541,28 +539,37 @@
     - HeadPriestess: Kagura dance on Temple, build limit 1
 * Blessing
     - WayOfTheStorm,WayOfTheMoon,WayOfTheSun
-
 * Nature
     - resource rework, obscurion (japanese and chinese trees)
 
 === DEMETER: NEW
 * Ship: FishingShip
     - trade
+* Hero
+    - Orpheus: Empower a single dropsite, Heal, sleep debuff on titan, slowarea
+    - Midas: art model (remove sword)
+    - Iolaus: spearthrow (ships), dashattack (minmax range)
 * Tech
-    - panspioneers,predatoryinstinct
-    - gracioushospitality,hallowedwoodlands,fatedarrows
-    - sacredland,enchantedhymn (affects orpheus)
-    - irongrip
+    - gracioushospitality
+* MythUnit
+    - harpymyth: abduct (exclude myth)
+    - siren: PlaceholderAttack -> Convert
 * God Power
-    - wither, arcadianmeadow (heal, farm workrate), communalhearth, plenty (workrate+), underworldinvasion
+    - arcadianmeadow (heal, farm workrate)
+    - underworldinvasion -> villagecenter (LogicalTypeValidUnderworldInvasionTarget)
+    - CommuneHearth: lure
 * ArtModel
     - lykaonvillager -> scythe (anubite)
 
+=== MORE
 * Special Unit
 bragi (hero, god) -> orpheus model
 chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
 nukecannon -> destruct on-death
-more drones
+robots: 
+    chaos drone (infect,selfdestruct,spawn onkill,crawler model,melee,anti-vehicle,amphibious,fast,light armor)
+drones:
+    wallcorner -> catapult
 
 === GOD REMIX
 
