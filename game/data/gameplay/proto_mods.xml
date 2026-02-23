@@ -274,14 +274,13 @@
         <maxvelocity>6.6000</maxvelocity>
         <los>16.0000</los>
         <sharedselectionunittypes>
-        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        	<unittype>LogicalTypeSharedHeroSelection</unittype>
         </sharedselectionunittypes>
         <cost resourcetype="Food">75.0000</cost>
         <cost resourcetype="Gold">175.0000</cost>
-        <armor type="Hack" value="0.4500"></armor>
+        <armor type="Hack" value="0.5500"></armor>
         <armor type="Pierce" value="0.6000"></armor>
-        <armor type="Crush" value="0.9900">
-        </armor>
+        <armor type="Crush" value="0.9900"></armor>
         <unittype>LogicalTypeNeededForVictory</unittype>
         <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
         <unittype>LogicalTypeLandMilitary</unittype>
@@ -301,6 +300,11 @@
         <unittype>Hero</unittype>
         <unittype>MajorHero</unittype>
         <unittype>CavalryLineUpgraded</unittype>
+
+		<rechargetime>30.0000</rechargetime>
+		<dependentunit attachbone="vfx_top">AsuraFireBallLeft</dependentunit>
+		<dependentunit attachbone="spine">AsuraFireBallLeft</dependentunit>
+		<flag>IgnoreDependentEditor</flag>
 
         <unittype>LogicalTypeConvertsHerds</unittype>
         <unittype>LogicalTypeEarthquakeAttack</unittype>
@@ -329,14 +333,19 @@
         <flag>HasDefaultAttack</flag>
         <flag>CreateUnitGroupAutomatically</flag>
         <flag>SplitQueue</flag>
+		<flag>CastAbilitySelf</flag>
+		<flag>DirectProjectile</flag>
+		<flag>AreaDamageConstant</flag>
+    	<flag>DisplayRange</flag>
         <contain external="1">LogicalTypePickable</contain>
-        <tactics>greek_hero.tactics</tactics>
+        <tactics>greek_hero_areadamage.tactics</tactics>
         <protoaction>
             <name>HandAttack</name>
             <rof>0.900000</rof>
             <damage type="Pierce">14.000000</damage>
             <damage type="Hack">6.000000</damage>
-            <damagebonus type="MythUnit">8.000000</damagebonus>
+            <damagebonus type="MythUnit">8.000000</damagebonus>			
+            <damagebonus type="AbstractCavalry">4.000000</damagebonus>
             <maxrange>2.000000</maxrange>
             <defaultattack>1</defaultattack>
         </protoaction>
@@ -344,10 +353,51 @@
             <name>RangedAttack</name>
             <rof>1.700000</rof>
             <damage type="Pierce">8.0000</damage>
+            <rate type="Ship">1.0</rate>
+            <rate type="AbstractSiegeWeapon">1.0</rate>
             <damagebonus type="MythUnit">7.000000</damagebonus>
-            <maxrange>12.000000</maxrange>
-            <projectile>ProjectileJavelinFlaming</projectile>
+            <maxrange>20.000000</maxrange>
+            <projectile>ProjectileArrowFireArcher</projectile>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXNeZhaFire" duration="5.000000"></onhiteffect>
+			<onhiteffect type="DamageOverTime" duration="5.000000"><damage type="Divine">1.00000</damage></onhiteffect>
         </protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_CHARGE">Charge</name>
+			<type>Rampage</type>
+			<damage type="Hack">20.0</damage>
+			<charged>
+				<chargedmodify modifytype="Speed" applytype="Multiply">2.0</chargedmodify>
+				<duration>10.0</duration>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="ArmorSpecific" param="Pierce" applytype="Add">0.7500</chargedmodify>
+				<duration>10.0</duration>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="Damage" applytype="Multiply">3.0</chargedmodify>
+				<duration>10.0</duration>
+			</charged>
+			<projectile>VFXRampage</projectile>
+			<chargeaction>1</chargeaction>
+			<modifyduration>3000</modifyduration>
+			<maxsizeclass>6</maxsizeclass>
+			<autocastbyself>1</autocastbyself>
+			<autocastdistance>5.000000</autocastdistance>
+		</protoaction>
+		<protoaction>
+			<name>Trail</name>
+			<type>Trail</type>
+			<persistent>1</persistent>
+			<trailprotounit frequency="0.25">NeZhaTrailFireArea</trailprotounit>
+		</protoaction>
+		<protoaction>
+			<name>BillowingSmog</name>
+			<modifyamount>-1</modifyamount>
+			<modifydamagetype>Divine</modifydamagetype>
+			<damagebonus type="HumanSoldier">4.00000</damagebonus>
+			<damagebonus type="AbstractSiegeWeapon">4.00000</damagebonus>
+			<maxrange>4.0</maxrange>
+		</protoaction>
         <protoaction>
             <name>Pickup</name>
             <type>Pickup</type>
@@ -361,6 +411,7 @@
             <rate type="AbstractTemple">1.00000</rate>
         </protoaction>
     </unit>
+	
     <unit name="Midas" orderhint="3" mergemode="replace">
         <displaynameid>STR_UNIT_MIDAS_NAME</displaynameid>
         <rollovertextid>STR_UNIT_MIDAS_LR</rollovertextid>
@@ -10140,7 +10191,7 @@
 			<name stringid="STR_ACTION_CHARGE">Charge</name>
 			<type>Rampage</type>
 			<damage type="Hack">15.0</damage>
-			<rate type="Building">0.0</rate>
+						<rate type="Building">0.0</rate>
 			<rate type="All">1.0</rate>
 			<damagebonus type="HumanSoldier">100.000000</damagebonus>
 			<damagebonus type="AbstractVillager">100.000000</damagebonus>

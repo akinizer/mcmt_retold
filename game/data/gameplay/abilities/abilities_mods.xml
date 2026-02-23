@@ -291,9 +291,14 @@
 	<TheArgo>
 		<ability>PassiveSolarFlare<tech>SunRay</tech><alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</TheArgo>
-
+		<!--Greek-Hero-Demeter-->
+	<Iolaus>
+		<ability>AbilityTaoWu<chargetimeasrof>1</chargetimeasrof><castonself>true</castonself><donotforcestop>true</donotforcestop></ability>
+		<ability>AbilityFafnirBillowingSmog<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+	</Iolaus>
 		<!--Greek-Myth-Demeter-->
 	<lykaonwolf>
+		<ability>AbilityMummy<chargetimeasrof>1</chargetimeasrof></ability>
     	<ability>AbilityLykaonWolf<tech>PredatoryInstinct</tech><noautocast>true</noautocast><castonself>true</castonself><donotforcestop>true</donotforcestop></ability>
 	</lykaonwolf>
 	<lykaonvillager>
