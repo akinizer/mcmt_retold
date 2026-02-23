@@ -3678,6 +3678,14 @@
     <!-- Greek Military Units-->
     <!-- Greek Naval Units-->
     <!-- Greek Buildings-->
+	<unit name="CommunalHearth" orderhint="3">
+		<unittype>FoodDropsite</unittype>
+		<unittype>WoodDropsite</unittype>
+		<unittype>Dropsite</unittype>
+		<carrycapacity resourcetype="Food">1.0000</carrycapacity>
+    	<carrycapacity resourcetype="Wood">1.0000</carrycapacity>
+    	<carrycapacity resourcetype="Gold">1.0000</carrycapacity>	
+	</unit>
 
     <!-- Atlantean Hero Units-->
     <unit name="OracleHero">
