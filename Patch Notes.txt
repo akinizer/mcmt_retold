@@ -63,10 +63,11 @@
 - favor costs removed, pop 1
 - hero:
     - KingMidas: handattack+, armor+, infantrylineupgrade
-    - Orpheus: divineattack, hp+, range+, hackarmor+, archerlineupgrade, ability (charge, boost, damage+ & piercearmor+), rangedattack (also ship)
+    - Orpheus: divineattack, hp+, range+, hackarmor+, archerlineupgrade
+        - ability (areaheal, unit, mid range)
     - Icarus: spd+, divineattack, area+, range+, bonusdamage, archerlineupgrade, siegelineupgrade
     - Iolaus: spd+, armor+, hp+, range+, rof+, pierceattack+, handattack-
-        - ability (charge, damage & piercearmor boost)
+        - ability (charge, boost, damage+ & piercearmor+)
         - rangedattack (also ship & abstractsiegeweapon), nezhafire, projectilearrowfirearcher
         - drone (asurafireball x2)
         - firetrail

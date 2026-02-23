@@ -84,7 +84,7 @@
         <flag>CreateUnitGroupAutomatically</flag>
         <flag>SplitQueue</flag>
         <contain external="1">LogicalTypePickable</contain>
-        <tactics>orpheus.tactics</tactics>
+        <tactics>greek_hero_bard.tactics</tactics>
         <protoaction>
             <name>DamageBonusVsMyth</name>
             <type>AutoRangedModify</type>
@@ -127,6 +127,12 @@
             <trackrating>99.0</trackrating>
 			<defaultattack>1</defaultattack>
         </protoaction>
+		<protoaction>
+			<name>AreaHeal</name>
+			<maxrange>15</maxrange>
+			<modifyamount>10</modifyamount>
+			<slowhealmultiplier>0.50</slowhealmultiplier>
+		</protoaction>
     </unit>
     <unit name="Icarus" orderhint="3" mergemode="replace">
         <displaynameid>STR_UNIT_ICARUS_NAME</displaynameid>
