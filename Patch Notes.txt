@@ -151,6 +151,12 @@
     - naval: Nereid+, Manowar+, Servant+
 
 5. Norse reworks from mcmt mod and new improvements
+- popcost:
+    - myth humanoid: 1
+    - myth beast: 2
+    - myth large: 3 or 5
+    - hero infantry: 1 or 2
+    - humansoldier: 1 or 2
 - myth unit:
     - VisualScale: Raven+, Einheri+, Troll+, JormunElver+, FrostGiant+, FireGiant+, RockGiant+, Nidhogg+, GullinBursti+, Fafnir+
     - Valkyrie:
@@ -160,8 +166,7 @@
     - melee: RockGiant+, MountainGiant+, FrostGiant+, FenrisWolfBrood+, Valkyrie+, Einheri+, Battleboar+
     - ranged: Draugr+, Troll+, FireGiant+, Fafnir+
     - naval: Kraken+, JormunElver+
-- hero:
-    - popcost 1 or 2
+- hero:    
     - GullinburstiArchaic+, GullinburstiClassical+, GullinburstiHeroic+, GullinburstiMythic+
     - Hersir+, Godi+, Jarl+
     - Heres of Ragnarok: armor, attack, rof, hp, infantrylineupgrade
@@ -578,24 +583,18 @@
 === DEMETER: NEW
 * Ship: FishingShip
     - trade
-* Tech
-    - gracioushospitality
 * MythUnit
     - harpymyth: abduct (exclude myth)
-* God Power
-    - arcadianmeadow (heal, farm workrate)
-    - CommuneHearth: lure
 * ArtModel
     - lykaonvillager -> scythe (anubite)
 
 === POPULATION REWORK
 * MythUnit
-    - Greek, Egyptian, Norse, Atlantean, Chinese, Japanese
-    - LykaonWolf, LykaonVillager 2 pop
+    - Greek, Egyptian, Atlantean, Chinese, Japanese
+    - humanoid: 1
+    - beast: 2
+    - large: 3 or 5
 * HumanSoldier 1 pop
-* Hero 1-2 pop
-* FishingShip 1 pop
-* WarShip 3 pop (navigator, captain, vice-captain)
 
 === MORE
 * Special Unit
