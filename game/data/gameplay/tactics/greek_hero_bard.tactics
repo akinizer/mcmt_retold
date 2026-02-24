@@ -13,7 +13,7 @@
     <spreadfactor>0.25</spreadfactor>
     <accuracy>1.0</accuracy>
     <trackrating>99.0</trackrating>
-    <impacteffect>effects\impacts\pierce</impacteffect>
+    <impacteffect>effects\impacts\crush</impacteffect>
     <rate type="All">1.0</rate>
   </action>
   <action>
@@ -26,7 +26,7 @@
     <spreadfactor>0.25</spreadfactor>
     <accuracy>1.0</accuracy>
     <trackrating>99.0</trackrating>
-    <impacteffect>effects\impacts\pierce</impacteffect>
+    <impacteffect>effects\impacts\crush</impacteffect>
     <rate type="AbstractFlyingUnit">1.0</rate>
   </action>
   <action>

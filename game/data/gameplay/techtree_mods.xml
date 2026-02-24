@@ -143,6 +143,9 @@
 
         <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TradeUnit</target></effect>
         <effect type="Data" amount="1" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">PiXiu</target></effect>
+
+        <effect type="Data" amount="2" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">LykaonVillager</target></effect>
+        <effect type="Data" amount="2" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">LykaonWolf</target></effect>
       </effects>
     </tech>
     <tech name="BuildingPresets" mergeMode="add">
@@ -280,33 +283,19 @@
       <effects>
           	<!--Greek Heroes-->
             <effect type="Data" amount="-0.050" subtype="OnDamageModify" modifytype="ROF" relativity="Assign">
-              <target type="ProtoUnit">Jason</target>
-            </effect>
-            
+              <target type="ProtoUnit">Jason</target></effect>
             <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="AchillesDismounted" relativity="Absolute">
-              <target type="ProtoUnit">Achilles</target>
-            </effect>
-              
+              <target type="ProtoUnit">Achilles</target></effect>
             <effect type="Data" amount="1.80" subtype="AdditionalScale" relativity="Absolute">
-              <target type="ProtoUnit">TheArgo</target>
-            </effect>
-            
+              <target type="ProtoUnit">TheArgo</target></effect>
             <effect type="Data" amount="-0.050" subtype="OnDamageModify" modifytype="ROF" relativity="Assign">
-              <target type="ProtoUnit">Atalanta</target>
-            </effect>
-            
+              <target type="ProtoUnit">Atalanta</target></effect>
             <effect type="Data" amount="0.020" subtype="OnDamageModify" modifytype="Speed" relativity="Assign">
-              <target type="ProtoUnit">Atalanta</target>
-            </effect>
-            
+              <target type="ProtoUnit">Atalanta</target></effect>
             <effect type="Data" amount="0.050" subtype="OnDamageModify" modifytype="Damage" relativity="Assign">
-              <target type="ProtoUnit">Theseus</target>
-            </effect>
-            
+              <target type="ProtoUnit">Theseus</target></effect>
             <effect type="Data" amount="1.80" subtype="AdditionalScale" relativity="Absolute">
-              <target type="ProtoUnit">Polyphemus</target>
-            </effect>
-      </effects>
+              <target type="ProtoUnit">Polyphemus</target></effect></effects>
     </tech>
 
     <tech name="ChinesePresets" mergeMode="add">

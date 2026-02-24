@@ -303,8 +303,8 @@
         <trainpoints>20.0000</trainpoints>
         <buildlimit>1</buildlimit>
         <weightclass>9</weightclass>
-        <maxcontained>1</maxcontained>
-        <populationcount>3</populationcount>
+        <maxcontained>2</maxcontained>
+        <populationcount>1</populationcount>
         <maxvelocity>6.6000</maxvelocity>
         <los>16.0000</los>
         <sharedselectionunittypes>
@@ -466,7 +466,7 @@
         <buildlimit>1</buildlimit>
         <weightclass>8</weightclass>
         <maxcontained>1</maxcontained>
-        <populationcount>4</populationcount>
+        <populationcount>1</populationcount>
         <maxvelocity>4.2000</maxvelocity>
         <los>16.0000</los>
         <sharedselectionunittypes>
@@ -474,7 +474,7 @@
         </sharedselectionunittypes>
         <cost resourcetype="Gold">400.0000</cost>
         <armor type="Hack" value="0.6700"></armor>
-        <armor type="Pierce" value="0.8800"></armor>
+        <armor type="Pierce" value="0.5800"></armor>
         <armor type="Crush" value="0.9900"></armor>
         <unittype>LogicalTypeNeededForVictory</unittype>
         <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
@@ -527,11 +527,11 @@
         <flag>ExperienceUnit</flag>
         <flag>SplitQueue</flag>
         <contain external="1">LogicalTypePickable</contain>
-        <tactics>greek_hero.tactics</tactics>
+        <tactics>greek_hero_militaryaura.tactics</tactics>
         <protoaction>
             <name>HandAttack</name>
             <rof>1.200000</rof>
-            <damage type="Hack">17.000000</damage>
+            <damage type="Hack">12.000000</damage>
             <damagebonus type="MythUnit">6.000000</damagebonus>
             <maxrange>0.750000</maxrange>
             <defaultattack>1</defaultattack>
@@ -539,10 +539,11 @@
         <protoaction>
             <name>RangedAttack</name>
             <rof>1.000000</rof>
-            <damage type="Hack">17.0000</damage>
-            <damagebonus type="MythUnit">6.000000</damagebonus>
-            <maxrange>28.000000</maxrange>
-            <projectile>ProjectileJavelinFlaming</projectile>
+            <damage type="Hack">8.0000</damage>
+            <damagebonus type="MythUnit">2.000000</damagebonus>
+            <maxrange>18.000000</maxrange>
+			<rate type="Ship">1.0</rate>
+            <projectile>Football</projectile>
         </protoaction>
         <protoaction>
             <name>Pickup</name>
@@ -556,6 +557,50 @@
             <maxrange>1</maxrange>
             <rate type="AbstractTemple">1.00000</rate>
         </protoaction>
+		<protoaction>
+			<name>HackArmorInverseAura</name>
+			<type>LikeBonus</type>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>10</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<rate type="MilitaryUnit">0.02</rate>
+			<targetenemy>1</targetenemy>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+		</protoaction>
+		<protoaction>
+			<name>PierceArmorInverseAura</name>
+			<type>LikeBonus</type>
+			<modifydamagetype>Pierce</modifydamagetype>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>10</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<rate type="MilitaryUnit">0.02</rate>
+			<targetenemy>1</targetenemy>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+		</protoaction>
+		<protoaction>
+			<name>DamageInverseAura</name>
+			<type>LikeBonus</type>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyratecap>4.000000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>20</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<rate type="MilitaryUnit">0.1</rate>
+			<targetenemy>1</targetenemy>
+			<persistent>1</persistent>
+			<modifytype>Damage</modifytype>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
         <veterancyranks>
             <rank>
                 <totaldamage>700</totaldamage>
@@ -1688,7 +1733,7 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>7</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>2</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<los>16.0000</los>
 		<sharedselectionunittypes><unittype>LogicalTypeSharedHeroSelection</unittype></sharedselectionunittypes>
@@ -1826,14 +1871,13 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>7</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>3</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>4.8000</maxvelocity>
 		<los>16.0000</los>
 		<sharedselectionunittypes><unittype>LogicalTypeSharedHeroSelection</unittype></sharedselectionunittypes>
 
 		<cost resourcetype="Food">75.0000</cost>
 		<cost resourcetype="Gold">175.0000</cost>
-		<cost resourcetype="Favor">2.0000</cost>
 
 		<armor type="Hack" value="0.4500"></armor>
 		<armor type="Pierce" value="0.7000"></armor>
@@ -1955,7 +1999,7 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>7</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>2</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<los>20.0000</los>
 		<sharedselectionunittypes>
@@ -1963,7 +2007,6 @@
 		</sharedselectionunittypes>
 		<cost resourcetype="Wood">250.0000</cost>
 		<cost resourcetype="Gold">100.0000</cost>
-		<cost resourcetype="Favor">4.0000</cost>
 		<armor type="Hack" value="0.2500">
 		</armor>
 		<armor type="Pierce" value="0.3500">
@@ -2086,7 +2129,7 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>8</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>4</populationcount>
+		<populationcount>2</populationcount>
 		<maxvelocity>6.7000</maxvelocity>
 		<initialshieldpoints>250</initialshieldpoints>
 		<maxshieldpoints>250</maxshieldpoints>
@@ -2097,7 +2140,6 @@
 		<unittype>LogicalTypeSharedHeroSelection</unittype>
 		</sharedselectionunittypes>
 		<cost resourcetype="Gold">400.0000</cost>
-		<cost resourcetype="Favor">6.0000</cost>
 		<armor type="Hack" value="0.2000"></armor>
 		<armor type="Pierce" value="0.5500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
@@ -2237,7 +2279,7 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>7</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>2</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<los>16.0000</los>
 		<sharedselectionunittypes>
@@ -2343,6 +2385,9 @@
 		</protoaction>
 	</unit>
 	<unit name="Achilles">
+		<cost resourcetype="Favor" mergeMode="remove"></cost>
+		<populationcount>1</populationcount>
+		
 		<armor type="Hack" value="0.6000"></armor>
 		<armor type="Pierce" value="0.6500"></armor>
 		<armor type="Crush" value="0.4900"></armor>
@@ -2381,18 +2426,10 @@
 			<maxrange>1</maxrange>
 			<rate type="AbstractTemple">1.00000</rate>
 		</protoaction>
-		<!-- TODO MCMT 
-		<protoaction>
-			<name>DelayedTransform</name>			
-    		<type>DelayedTransform</type>
-			<anim>Transform</anim>
-			<modifyduration>2500</modifyduration>
-			 <modifyprotoid>AchillesDismounted</modifyprotoid>
-			<active>0</active>
-		</protoaction>
-		-->
 	</unit>
 	<unit name="Chiron">
+		<cost resourcetype="Favor" mergeMode="remove"></cost>
+		<populationcount>1</populationcount>
 		<initialshieldpoints>100</initialshieldpoints>
 		<maxshieldpoints>100</maxshieldpoints>
 		
@@ -2442,14 +2479,13 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>7</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>4</populationcount>
+		<populationcount>2</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<rechargetime>24.0000</rechargetime>
 		<los>16.0000</los>
 		<sharedselectionunittypes><unittype>LogicalTypeSharedHeroSelection</unittype></sharedselectionunittypes>
 		<cost resourcetype="Gold">300.0000</cost>
 		<cost resourcetype="Food">100.0000</cost>
-		<cost resourcetype="Favor">6.0000</cost>
 		<armor type="Hack" value="0.2000"></armor>
 		<armor type="Pierce" value="0.4000"></armor>
 		<armor type="Crush" value="0.9900"></armor>
@@ -2558,6 +2594,7 @@
 		</protoaction>		
 	</unit>
 	<unit name="TheArgo">
+		<populationcount>2</populationcount>
 		<initialshieldpoints>100</initialshieldpoints>
 		<maxshieldpoints>100</maxshieldpoints>
 		
@@ -2608,7 +2645,7 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>7</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>3</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>5.6000</maxvelocity>
 		<los>16.0000</los>
 		<sharedselectionunittypes>
@@ -2616,7 +2653,6 @@
 		</sharedselectionunittypes>
 		<cost resourcetype="Food">75.0000</cost>
 		<cost resourcetype="Gold">175.0000</cost>
-		<cost resourcetype="Favor">2.0000</cost>
 		<armor type="Hack" value="0.3500"></armor>
 		<armor type="Pierce" value="0.3000"></armor>
 		<armor type="Crush" value="0.9900"></armor>
@@ -2737,7 +2773,7 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>7</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>2</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>6.0000</maxvelocity>
 
 		<los>22.0000</los>
@@ -2746,7 +2782,6 @@
 		</sharedselectionunittypes>
 		<cost resourcetype="Wood">250.0000</cost>
 		<cost resourcetype="Gold">100.0000</cost>
-		<cost resourcetype="Favor">4.0000</cost>
 		<armor type="Hack" value="0.2500"></armor>
 		<armor type="Pierce" value="0.3500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
@@ -2871,7 +2906,7 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>7</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>2</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<los>16.0000</los>
 		<sharedselectionunittypes><unittype>LogicalTypeSharedHeroSelection</unittype></sharedselectionunittypes>
@@ -2995,7 +3030,7 @@
 		<buildlimit>1</buildlimit>
 		<weightclass>10</weightclass>
 		<maxcontained>1</maxcontained>
-		<populationcount>4</populationcount>
+		<populationcount>2</populationcount>
 		<maxvelocity>4.1000</maxvelocity>
 		<rechargetime>18.0000</rechargetime>
 		<los>20.0000</los>
@@ -3003,7 +3038,6 @@
 		<unittype>LogicalTypeSharedHeroSelection</unittype>
 		</sharedselectionunittypes>
 		<cost resourcetype="Gold">400.0000</cost>
-		<cost resourcetype="Favor">6.0000</cost>
 		<armor type="Hack" value="0.6000"></armor>
 		<armor type="Pierce" value="0.4000"></armor>
 		<armor type="Crush" value="0.9900"></armor>
@@ -4448,6 +4482,7 @@
 		</protoaction>
 	</unit>
 	<unit name="Priest">
+		<populationcount>1</populationcount>
 		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		<unitregen>1.0000</unitregen>
@@ -5878,6 +5913,7 @@
     
     <!-- Norse Hero Units-->
     <unit name="Godi">
+		<populationcount>1</populationcount>
 		<armor type="Hack" value="0.5000"></armor>
 		<armor type="Pierce" value="0.4500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
@@ -5897,6 +5933,7 @@
 		</protoaction>
 	</unit>
 	<unit name="Hersir">
+		<populationcount>1</populationcount>
 		<armor type="Hack" value="0.6500"></armor>
 		<armor type="Pierce" value="0.4500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
@@ -5977,6 +6014,7 @@
 		<flag>AutoTrainable</flag>
 	</unit>
 	<unit name="Jarl">
+		<populationcount>2</populationcount>
 		<armor type="Hack" value="0.4500"></armor>
 		<armor type="Pierce" value="0.4500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
@@ -8002,11 +8040,10 @@
         <maxvelocity>4.0000</maxvelocity>
         <los>14.0000</los>
         <sharedselectionunittypes>
-        <unittype>LykaonWolf</unittype>
+        	<unittype>VillagerGreek</unittype>
         </sharedselectionunittypes>
-        <cost resourcetype="Gold">100.0000</cost>
-        <cost resourcetype="Wood">80.0000</cost>
-        <cost resourcetype="Favor">2.0000</cost>
+        <cost resourcetype="Food">200.0000</cost>
+		<cost resourcetype="Favor">2.0000</cost>
         <carrycapacity resourcetype="Food">15.0000</carrycapacity>
         <carrycapacity resourcetype="Wood">10.0000</carrycapacity>
         <carrycapacity resourcetype="Gold">10.0000</carrycapacity>
@@ -8190,16 +8227,12 @@
 		<maxvelocity>3.5000</maxvelocity>
 		<maxrunvelocity>3.8500</maxrunvelocity>
 		<los>18.0000</los>
-		<sharedselectionunittypes>
-		<unittype>LykaonVillager</unittype>
-		</sharedselectionunittypes>
 		<sharedbuildlimitunit>VillagerGreek</sharedbuildlimitunit>
 		<sharedbuildlimitunittypes>
-		<unittype>BuildLimitSharedGreek</unittype>
+			<unittype>BuildLimitSharedGreek</unittype>
 		</sharedbuildlimitunittypes>
-		<cost resourcetype="Gold">100.0000</cost>
-		<cost resourcetype="Wood">80.0000</cost>
-		<cost resourcetype="Favor">15.0000</cost>
+		<cost resourcetype="Food">200.0000</cost>
+		<cost resourcetype="Favor">2.0000</cost>
 		<armor type="Hack" value="0.6000"></armor>
 		<armor type="Pierce" value="0.3500"></armor>
 		<armor type="Crush" value="0.9900"></armor>

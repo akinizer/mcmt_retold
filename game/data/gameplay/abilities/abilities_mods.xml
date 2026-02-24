@@ -295,6 +295,11 @@
 	<Orpheus>
 		<ability>AbilitySiren<chargetimeasrof>1</chargetimeasrof></ability>
 	</Orpheus>
+	<Midas>
+		<ability>AbilityEitri<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+		<ability>AbilityBrokk<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+		<ability>PassiveSinisterDefiance<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+	</Midas>
 	<Iolaus>
 		<ability>AbilityTaoWu<chargetimeasrof>1</chargetimeasrof><castonself>true</castonself><donotforcestop>true</donotforcestop></ability>
 		<ability>AbilityFafnirBillowingSmog<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>

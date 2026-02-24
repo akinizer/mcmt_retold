@@ -60,10 +60,15 @@
 * Many Many More in Future!
 
 1. Reworking on Demeter's hero units and related techs
-- favor costs removed, pop 1
 - hero:
-    - KingMidas: handattack+, armor+, infantrylineupgrade
-    - Orpheus: divineattack, hp+, range+, hackarmor+, archerlineupgrade, empowerer, healer
+    - KingMidas: leader that boosts its army and gets stronger against crowds
+        - handattack+, armor+, infantrylineupgrade; military 
+        - inverseaura: self boost (hackarmor, piercearmor, damage)
+        - weaponsmithing: areaboost (hackattack, humansoldier)
+        - armorsmithing: areaboost (pierceattack, humansoldier)
+        - art model: weapon removed (midas' touch)
+    - Orpheus: offensive supporter that gains new abilities via techs
+        - divineattack, hp+, range+, hackarmor+, archerlineupgrade, empowerer, healer
         - lure / abardstale (default ability):
             - including (non-titan mythunits, cerberus, humansoldier); excluding (flying, fishingship and siegeweapon)
             - close proximity
@@ -74,13 +79,16 @@
             - including (anything not affectable by lure) 
             - bonus (mythunit)
             - projectile: projectileomniyoji
-    - Icarus: spd+, divineattack, area+, range+, bonusdamage, archerlineupgrade, siegelineupgrade
-    - Iolaus: spd+, armor+, hp+, range+, rof+, pierceattack+, handattack-
+    - Icarus: airborne bomber that is good against crowds and non-defensive structures
+            - spd+, divineattack, area+, range+, bonusdamage, archerlineupgrade, siegelineupgrade
+    - Iolaus: blazing rider of underworld, rewarded with a second chance after slaying hydra with heracles
+        - spd+, armor+, hp+, range+, rof+, pierceattack+, handattack-
         - ability (charge, boost, damage+ & piercearmor+)
         - rangedattack (also ship & abstractsiegeweapon), nezhafire, projectilearrowfirearcher
         - drone (asurafireball x2)
         - firetrail
         - areadamage aura (billowingsmog)
+        - carryrelic: 2
 - tech:
     - PredatoryInstinct: 
         - LykaonWolf: hackattack+, speed+, enable (feralinfectionattack)
@@ -90,8 +98,12 @@
 2. Reworking on Demeter's myth units and related techs
 - myth unit:
     - MythHarpy: ProjectileKuafuStone, Lifesteal, Speed bonus on water
-    - LykaonVillager: speed+, pop 1, archerlineupgrade, rangedattack minrange defaultattack
+    - LykaonVillager: speed+, archerlineupgrade, rangedattack minrange defaultattack
+        - sharedselection: villagergreek
+        - cost: favor 2, popcost 2
     - LykaonWolf: infantrylineupgrade, humansoldier, bonus (cavalry->humansoldier)
+        - sharedselection: removed (lykaonvillager)
+        - cost: favor 2, popcost 2
         - FeralInfectionAttack (ability, activated by predatoryinstincts): 
             - bleed: humansoldier, villager
             - spawn on kill: lykaonvillager 
@@ -109,13 +121,14 @@
 - temple:
     - LykaonVillager: replaced with LykaonWolf
 
-3. Greek reworks from mcmt mod
+3. Greek reworks from mcmt mod and new improvements
 - myth unit: 
     - flying: Pegasus+, PegasusWingedMessenger+
     - melee: Minotaur+, Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
     - ranged: Centaur+, Medusa+, Sentinel+
     - naval: Carcinos+
 - hero:
+    - favor costs removed, pop 1 or 2 (including Demeter)
     - OnDamageModify: Atalanta+, Jason+
     - VisualScale: TheArgo+, Polyphemus+
 
@@ -137,7 +150,7 @@
     - ranged: Satyr+, Lampades+
     - naval: Nereid+, Manowar+, Servant+
 
-5. Norse reworks from mcmt mod
+5. Norse reworks from mcmt mod and new improvements
 - myth unit:
     - VisualScale: Raven+, Einheri+, Troll+, JormunElver+, FrostGiant+, FireGiant+, RockGiant+, Nidhogg+, GullinBursti+, Fafnir+
     - Valkyrie:
@@ -148,6 +161,7 @@
     - ranged: Draugr+, Troll+, FireGiant+, Fafnir+
     - naval: Kraken+, JormunElver+
 - hero:
+    - popcost 1 or 2
     - GullinburstiArchaic+, GullinburstiClassical+, GullinburstiHeroic+, GullinburstiMythic+
     - Hersir+, Godi+, Jarl+
     - Heres of Ragnarok: armor, attack, rof, hp, infantrylineupgrade
@@ -189,6 +203,7 @@
     - 
 
 - hero:
+    - popcost 1 or 2
     - General Reworks: Priest+, Pharaoh+, PharaohNewKingdom+, SonOfOsiris (Son of Horus)+
     - Pharaoh: VisualScale+, attack type
     - PharaohNewKingdom: Siegelineupgrade
@@ -563,21 +578,24 @@
 === DEMETER: NEW
 * Ship: FishingShip
     - trade
-* Hero
-    - Orpheus: Empower a single dropsite, Heal, sleep debuff on titan, slowarea
-    - Midas: art model (remove sword)
-    - Iolaus: spearthrow (ships), dashattack (minmax range)
 * Tech
     - gracioushospitality
 * MythUnit
     - harpymyth: abduct (exclude myth)
-    - siren: PlaceholderAttack -> Convert
 * God Power
     - arcadianmeadow (heal, farm workrate)
-    - underworldinvasion -> villagecenter (LogicalTypeValidUnderworldInvasionTarget)
     - CommuneHearth: lure
 * ArtModel
     - lykaonvillager -> scythe (anubite)
+
+=== POPULATION REWORK
+* MythUnit
+    - Greek, Egyptian, Norse, Atlantean, Chinese, Japanese
+    - LykaonWolf, LykaonVillager 2 pop
+* HumanSoldier 1 pop
+* Hero 1-2 pop
+* FishingShip 1 pop
+* WarShip 3 pop (navigator, captain, vice-captain)
 
 === MORE
 * Special Unit
