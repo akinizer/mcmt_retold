@@ -247,7 +247,7 @@
         <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Fafnir</target></effect>
         <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">JormunElver</target></effect>
         <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Kraken</target></effect>
-        <!-- Norse HumanSoldiers -->
+        <!-- Norse HumanSoldiers and HeroInfantry -->
         <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Hirdman</target></effect>
         <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ThrowingAxeman</target></effect>
         <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Berserk</target></effect>
@@ -263,29 +263,46 @@
       <effects>
           <!--Egyptian MythUnits-->
           <effect type="Data" amount="2.00" subtype="AdditionalScale" relativity="Absolute">
-            <target type="ProtoUnit">Phoenix</target>
-          </effect>
+            <target type="ProtoUnit">Phoenix</target></effect>
           <effect type="Data" amount="2.00" subtype="AdditionalScale" relativity="Absolute">
-            <target type="ProtoUnit">Leviathan</target>
-          </effect>
+            <target type="ProtoUnit">Leviathan</target></effect>
           <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute">
-            <target type="ProtoUnit">WarTurtle</target>
-          </effect>
+            <target type="ProtoUnit">WarTurtle</target></effect>
           <effect type="Data" amount="2.00" subtype="AdditionalScale" relativity="Absolute">
-            <target type="ProtoUnit">Scarab</target>
-          </effect>
+            <target type="ProtoUnit">Scarab</target></effect>
           <effect type="Data" amount="1.80" subtype="AdditionalScale" relativity="Absolute">
-            <target type="ProtoUnit">Sphinx</target>
-          </effect>
+            <target type="ProtoUnit">Sphinx</target></effect>
 
-            <!--Egyptian Heroes-->
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Wadjet</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Mummy</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Avenger</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Anubite</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ScorpionMan</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Sphinx</target></effect>
+          <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Roc</target></effect>
+          <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Petsuchos</target></effect>
+          <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">WarTurtle</target></effect>
+          <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Scarab</target></effect>
+          <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Phoenix</target></effect>
+          <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Leviathan</target></effect>
+          <!--Egyptian Heroes-->
           <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
-            <target type="ProtoUnit">AbstractPharaoh</target>
-          </effect>			
+            <target type="ProtoUnit">AbstractPharaoh</target></effect>			
           
           <effect type="Data" action="Heal" amount="2.00" subtype="WorkRate" unittype="HumanSoldier" relativity="BasePercent">
-            <target type="ProtoUnit">Priest</target>
-          </effect>
+            <target type="ProtoUnit">Priest</target></effect>
+          <!--Egyptian HumanSoldiers-->
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Mercenary</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">MercenaryCavalry</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Spearman</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Axeman</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Slinger</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">CamelRider</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ChariotArcher</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">WarElephant</target></effect>
+          <!--Egyptian AnimalOfSet-->
+          <effect type="Data" amount="0.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">BaboonOfSet</target></effect>
+          
       </effects>
     </tech>
     <tech name="GreekPresets" mergeMode="add">
