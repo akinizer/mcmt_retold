@@ -713,6 +713,10 @@ ID = "STR_ACTION_DISTANCINGATTACK"   ;   Str = "Distancing Attack"
 
 ID = "STR_ACTION_AXESWINGATTACK"   ;   Str = "Axe Swing Attack"
 
+ID = "STR_ACTION_SONICBLASTATTACK"   ;   Str = "Sonic Blast Attack"
+ID = "STR_ACTION_SONICBLASTATTACKFLYING"   ;   Str = "Sonic Blast Attack (Air)"
+ID = "STR_ABILITY_ABARDSTALE"   ;   Str = "A Bard's Tale"
+
 // XL MAPS
 ID = "STR_MAP_ACROPOLIS_COLOSSAL_NAME" ;   Str = "Acropolis Colossal Map"
 ID = "STR_MAP_AIR_COLOSSAL_NAME" ;   Str = "Air Colossal Map"

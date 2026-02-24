@@ -64,7 +64,9 @@
 - hero:
     - KingMidas: handattack+, armor+, infantrylineupgrade
     - Orpheus: divineattack, hp+, range+, hackarmor+, archerlineupgrade
-        - ability (areaheal, unit, mid range)
+        - ability: lure (including non-titan mythunits, cerberus, hero, humansoldier; excluding flying, fishingship and siegeweapon)
+        - ability: areaheal (unit, mid range), activated by enchantedhymn
+        - ability: 
     - Icarus: spd+, divineattack, area+, range+, bonusdamage, archerlineupgrade, siegelineupgrade
     - Iolaus: spd+, armor+, hp+, range+, rof+, pierceattack+, handattack-
         - ability (charge, boost, damage+ & piercearmor+)
@@ -576,6 +578,9 @@ robots:
     chaos drone (infect,selfdestruct,spawn onkill,crawler model,melee,anti-vehicle,amphibious,fast,light armor)
 drones:
     wallcorner -> catapult
+
+=== ANTAGONISTS (Repurpose, Unused)
+Kamos, Theris, Gargarensis
 
 === GOD REMIX
 

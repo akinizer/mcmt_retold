@@ -292,6 +292,9 @@
 		<ability>PassiveSolarFlare<tech>SunRay</tech><alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</TheArgo>
 		<!--Greek-Hero-Demeter-->
+	<Orpheus>
+		<ability>AbilitySiren<chargetimeasrof>1</chargetimeasrof></ability>
+	</Orpheus>
 	<Iolaus>
 		<ability>AbilityTaoWu<chargetimeasrof>1</chargetimeasrof><castonself>true</castonself><donotforcestop>true</donotforcestop></ability>
 		<ability>AbilityFafnirBillowingSmog<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>

@@ -3102,7 +3102,7 @@
       <flag>MythTech</flag>
       <techtype>MythUnitUpgrade</techtype>
       <effects>
-        <effect type="Data" amount="2.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+        <effect type="Data" amount="5.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
           <target type="ProtoUnit">LykaonWolf</target></effect>
         <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
           <target type="ProtoUnit">LykaonWolf</target></effect>
@@ -3110,7 +3110,9 @@
         <effect type="Data" action="FeralInfectionAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
           <target type="ProtoUnit">LykaonWolf</target></effect>
         
-        <effect type="Data" amount="2.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+        <effect type="Data" amount="8.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+          <target type="ProtoUnit">KingLycaon</target></effect>
+        <effect type="Data" amount="12.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute">
           <target type="ProtoUnit">KingLycaon</target></effect>
         <effect type="Data" action="HandAttack" amount="0.75" subtype="RateOfFire" relativity="Percent">
           <target type="ProtoUnit">KingLycaon</target></effect>
@@ -3138,6 +3140,11 @@
           <target type="ProtoUnit">MythUnit</target></effect>
         <effect type="Data" amount="8.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute">
           <target type="ProtoUnit">Hero</target></effect>
+
+        <effect type="Data" action="SonicBlastAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+          <target type="ProtoUnit">Orpheus</target></effect>
+        <effect type="Data" action="SonicBlastAttackFlying" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+          <target type="ProtoUnit">Orpheus</target></effect>
       </effects>
     </tech>
     <tech name="ThornedWalls" orderhint="4" mergeMode="replace">
@@ -3180,11 +3187,12 @@
       <icon>resources\greek_demeter\static_color\technologies\pans_pioneers_icon.png</icon>
       <flag>CountsTowardMilitaryScore</flag>
       <flag>MythTech</flag>
+      <!-- Spawn of Build VillageCenter -->
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Build" proto="LykaonVillager" relativity="Absolute">
         <target type="ProtoUnit">VillageCenter</target></effect>
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Build" proto="PansChosen" relativity="Absolute">
         <target type="ProtoUnit">VillageCenter</target></effect>
-
+      <!-- Spawn of Build TownCenter -->
       <effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Build" proto="LykaonVillager" relativity="Absolute">
         <target type="ProtoUnit">TownCenter</target></effect>
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Build" proto="PansChosen" relativity="Absolute">
@@ -3215,7 +3223,9 @@
     <tech name="EnchantedHymn" orderhint="4" mergeMode="add">
       <effects>
         <effect type="Data" action="DamageBonusVsMyth" amount="2.5" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">Orpheus</target></effect>
+          <target type="ProtoUnit">Orpheus</target></effect>
+        <effect type="Data" action="AreaHeal" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+          <target type="ProtoUnit">Orpheus</target></effect>
       </effects>
     </tech>
     <tech name="NepheleanHarpy" orderhint="4" mergeMode="add">

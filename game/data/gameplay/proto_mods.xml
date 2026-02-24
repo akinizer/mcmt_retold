@@ -28,13 +28,17 @@
         <maxvelocity>4.3000</maxvelocity>
         <los>20.0000</los>
         <sharedselectionunittypes>
-        <unittype>LogicalTypeSharedHeroSelection</unittype>
+        	<unittype>LogicalTypeSharedHeroSelection</unittype>
         </sharedselectionunittypes>
         <cost resourcetype="Food">100.0000</cost>
         <cost resourcetype="Wood">50.0000</cost>
         <armor type="Hack" value="0.3500"></armor>
         <armor type="Pierce" value="0.4000"></armor>
         <armor type="Crush" value="0.6900"></armor>
+		
+		<rechargetime>2.0000</rechargetime>
+		<flag>RangeIndicatorForAbilityCasting</flag>
+		<flag>DirectProjectile</flag>
 
         <unittype>LogicalTypeNeededForVictory</unittype>
         <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
@@ -54,6 +58,8 @@
         <unittype>MilitaryUnit</unittype>
         <unittype>Hero</unittype>
         <unittype>MajorHero</unittype>
+        <unittype>AbstractEmpowerer</unittype>
+    	<unittype>AbstractHealer</unittype>
         <unittype>ArcherLineUpgraded</unittype>
 
         <unittype>LogicalTypeConvertsHerds</unittype>
@@ -109,29 +115,51 @@
             <maxrange>1</maxrange>
             <rate type="AbstractTemple">1.00000</rate>
         </protoaction>
+		<protoaction>
+			<name>ABardsTale</name>
+			<type>Lure</type>
+			<maxrange>9</maxrange>
+			<workingrangeslack>4</workingrangeslack>
+			<chargeaction>1</chargeaction>
+			<exclusive>1</exclusive>
+			<rof>1.00000</rof>
+			<targetedspeedmultiplier>0.5</targetedspeedmultiplier>
+			<impacteffect>effects\impacts\hack_medium</impacteffect>			
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>PlaceholderAttackSiren</name>
+			<damage type="Hack">30.0000</damage>
+			<rof>1.00000</rof>
+		</protoaction>
         <protoaction>
-            <name>RangedAttack</name>
+            <name>SonicBlastAttack</name>
             <rof>1.200000</rof>
             <damage type="Divine">6.000000</damage>
-            <damagebonus type="MythUnit">6.500000</damagebonus>
+            <damagebonus type="MythUnit">2.500000</damagebonus>
+            <minrange>10.000000</minrange>
             <maxrange>22.000000</maxrange>
-            <projectile>ProjectilePriestPharaoh</projectile>
+			<onhiteffect type="Snare" duration="3.00" rate="0.50"></onhiteffect>
+            <projectile>ProjectileOnmyojiAttack</projectile>
+			<active>0</active>
         </protoaction>
         <protoaction>
-            <name>RangedAttackFlying</name>
+            <name>SonicBlastAttackFlying</name>
             <rof>1.200000</rof>
             <damage type="Divine">6.000000</damage>
             <damagebonus type="MythUnit">6.500000</damagebonus>
             <maxrange>28.000000</maxrange>
-            <projectile>ProjectilePriestPharaoh</projectile>
+            <projectile>ProjectileOnmyojiAttack</projectile>
             <trackrating>99.0</trackrating>
-			<defaultattack>1</defaultattack>
+			<active>0</active>
         </protoaction>
+		
 		<protoaction>
 			<name>AreaHeal</name>
 			<maxrange>15</maxrange>
 			<modifyamount>10</modifyamount>
 			<slowhealmultiplier>0.50</slowhealmultiplier>
+			<active>0</active>
 		</protoaction>
     </unit>
     <unit name="Icarus" orderhint="3" mergemode="replace">
@@ -8253,6 +8281,7 @@
 				<target attacktype="Unit"></target>
 				<target ignoretype="AbstractSiegeWeapon"></target>
 			</onhiteffect>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>DelayedTransform</name>
@@ -10433,7 +10462,7 @@
         <shortrollovertextid>STR_UNIT_KINGLYCAON_WOLF_SR</shortrollovertextid>
         <icon>resources\greek\player_color\units\lykaon_wolf_icon.png</icon>
         <animfile>greek\units\myth\lykaon\lykaon_wolf.xml</animfile>
-        <soundsetfile>greek_demeter\vo\lykaon_transformed\lykaon_transformed.xml</soundsetfile>
+        <soundsetfile>greek\vo\minotaur\minotaur.xml</soundsetfile>
         <obstructionradiusx>0.9900</obstructionradiusx>
         <obstructionradiusz>0.9900</obstructionradiusz>
         <selectionradiusx>0.7500</selectionradiusx>
@@ -10504,9 +10533,8 @@
         <tactics>lykaon_wolf.tactics</tactics>
         <protoaction>
             <name>HandAttack</name>
-            <rof>0.85000</rof>
+            <rof>0.90000</rof>
             <damage type="Hack">28.000000</damage>
-            <damage type="Crush">4.000000</damage>
             <damagebonus type="MythUnit">2.500000</damagebonus>
             <damagebonus type="HumanSoldier">4.000000</damagebonus>
             <onhiteffect type="Attach" targetunittype="Unit" proto="VFXBleed" attachbone="spine" duration="6.000000"></onhiteffect>

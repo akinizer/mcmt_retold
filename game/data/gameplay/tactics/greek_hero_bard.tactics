@@ -4,7 +4,7 @@
     <type>AutoRangedModify</type>
   </action>
   <action>
-    <name>RangedAttack</name>
+    <name stringid="STR_ACTION_SONICBLASTATTACK">SonicBlastAttack</name>
     <type>Attack</type>
     <attackaction>1</attackaction>
     <rangedlogic>1</rangedlogic>
@@ -17,7 +17,7 @@
     <rate type="All">1.0</rate>
   </action>
   <action>
-    <name>RangedAttackFlying</name>
+    <name stringid="STR_ACTION_SONICBLASTATTACKFLYING">SonicBlastAttackFlying</name>
     <type>Attack</type>
     <attackaction>1</attackaction>
     <rangedlogic>1</rangedlogic>
@@ -40,9 +40,26 @@
     <modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
     <modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 </action>
+  <action>
+    <name stringid="STR_ABILITY_ABARDSTALE">ABardsTale</name>
+    <type>Lure</type>
+    <attackaction>1</attackaction>
+    <rangedlogic>1</rangedlogic>
+    <anim>Empower</anim>
+    <reloadanim>Bored</reloadanim>
+    <wateranim>BoredCinematic</wateranim>
+    <landanim>BoredCinematic</landanim>
+    <rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+    <rate type="HumanSoldier">1.0</rate>
+    <rate type="TitanCerberus">1.0</rate>
+    <rate type="AbstractFlyingUnit">0.0</rate>
+    <rate type="FishingShip">0.0</rate>
+    <rate type="AbstractSiegeWeapon">0.0</rate>
+  </action>  
   <tactic>Default
-    <action priority="100">RangedAttackFlying</action>
-    <action priority="90">RangedAttack</action>
+    <action priority="100">SonicBlastAttackFlying</action>
+    <action priority="90">SonicBlastAttack</action>
+    <action priority="80">ABardsTale</action>
     <action>DamageBonusVsMyth</action>
     <action>AreaHeal</action>
     <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
