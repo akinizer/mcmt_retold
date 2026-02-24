@@ -63,10 +63,17 @@
 - favor costs removed, pop 1
 - hero:
     - KingMidas: handattack+, armor+, infantrylineupgrade
-    - Orpheus: divineattack, hp+, range+, hackarmor+, archerlineupgrade
-        - ability: lure (including non-titan mythunits, cerberus, hero, humansoldier; excluding flying, fishingship and siegeweapon)
-        - ability: areaheal (unit, mid range), activated by enchantedhymn
-        - ability: 
+    - Orpheus: divineattack, hp+, range+, hackarmor+, archerlineupgrade, empowerer, healer
+        - lure / abardstale (default ability):
+            - including (non-titan mythunits, cerberus, humansoldier); excluding (flying, fishingship and siegeweapon)
+            - close proximity
+        - areaheal (ability, activated by enchantedhymn): 
+            - affects on units
+            - mid range 
+        - rangedattack / sonicblastatyack, rangedflyingattack / sonicblastattackflying (ability, activated by fatedarrows): 
+            - including (anything not affectable by lure) 
+            - bonus (mythunit)
+            - projectile: projectileomniyoji
     - Icarus: spd+, divineattack, area+, range+, bonusdamage, archerlineupgrade, siegelineupgrade
     - Iolaus: spd+, armor+, hp+, range+, rof+, pierceattack+, handattack-
         - ability (charge, boost, damage+ & piercearmor+)
@@ -76,15 +83,18 @@
         - areadamage aura (billowingsmog)
 - tech:
     - PredatoryInstinct: 
-        - LykaonWolf: hackattack+, speed+, enable FeralInfectionAttack
-        - KingLycaon: hackattack+, speed+, rof+, favor 2
-    - NepheleanHarpy (Iron Grip): enables Icarus apply bleed units
+        - LykaonWolf: hackattack+, speed+, enable (feralinfectionattack)
+        - KingLycaon: hackattack+, speed+, rof+, crushattack
+    - NepheleanHarpy (Iron Grip): enables bleed on units for Icarus
 
 2. Reworking on Demeter's myth units and related techs
 - myth unit:
     - MythHarpy: ProjectileKuafuStone, Lifesteal, Speed bonus on water
     - LykaonVillager: speed+, pop 1, archerlineupgrade, rangedattack minrange defaultattack
-    - LykaonWolf: infantrylineupgrade, humansoldier, bonus (cavalry->humansoldier), ability (FeralInfectionAttack, humansoldier, villager, bleed, spawn LykaonVillager)
+    - LykaonWolf: infantrylineupgrade, humansoldier, bonus (cavalry->humansoldier)
+        - FeralInfectionAttack (ability, activated by predatoryinstincts): 
+            - bleed: humansoldier, villager
+            - spawn on kill: lykaonvillager 
     - Hamadryad: proximity attack mode, damage rework, bonus (humansoldier)
 - tech:
     - FatedArrows: NumberBounces myth +3, hero +8
