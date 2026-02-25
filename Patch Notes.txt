@@ -61,6 +61,8 @@
 
 1. Reworking on Demeter's hero units and related techs
 - hero:
+    - favor costs removed, pop 1 or 2
+    
     - KingMidas: leader that boosts its army and gets stronger against crowds
         - handattack+, armor+, infantrylineupgrade; military 
         - inverseaura: self boost (hackarmor, piercearmor, damage)
@@ -97,6 +99,8 @@
 
 2. Reworking on Demeter's myth units and related techs
 - myth unit:
+    - popcosts
+
     - MythHarpy: ProjectileKuafuStone, Lifesteal, Speed bonus on water
     - LykaonVillager: speed+, archerlineupgrade, rangedattack minrange defaultattack
         - sharedselection: villagergreek
@@ -123,12 +127,14 @@
 
 3. Greek reworks from mcmt mod and new improvements
 - myth unit: 
+    - popcosts
+
     - flying: Pegasus+, PegasusWingedMessenger+
     - melee: Minotaur+, Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
     - ranged: Centaur+, Medusa+, Sentinel+
     - naval: Carcinos+
 - hero:
-    - favor costs removed, pop 1 or 2 (including Demeter)
+    - favor costs removed, pop 1 or 2
     - OnDamageModify: Atalanta+, Jason+
     - VisualScale: TheArgo+, Polyphemus+
 
@@ -139,16 +145,25 @@
     - Atalanta+, Hippolyta+, Theseus+, Polyphemus+
     - Myrmidon+, TheArgo+
 - military units:
+    - popcosts: humansoldier 1 or 2
     - Kataskopos+
 - special unit:
     - PegasusGroundedMessenger+
 
-4. Atlanean reworks from mcmt mod
+4. Atlanean reworks from mcmt mod and new changes
 - myth unit:
+    - popcosts
+
     - flying: Caladria+
     - melee: Centimanus+, Automaton+, Behemoth+, Argus+, Promethean+
     - ranged: Satyr+, Lampades+
     - naval: Nereid+, Manowar+, Servant+
+- oracle:
+    - popcosts: 1
+- humansoldier:
+    - popcosts 1 or 2
+- heroinfantry:
+    - popcosts 1 or 2
 
 5. Norse reworks from mcmt mod and new improvements
 - popcost:
@@ -216,8 +231,9 @@
 - SiegeWorks:
     - MechanizedMammothUnit+
 
-6. Chinese reworks from mcmt mod
+6. Chinese reworks from mcmt mod and extra changes
 - myth unit:
+    - popcosts
     - VisualScale: HunDun
     
     - trade: PiXiu+
@@ -226,6 +242,8 @@
     - naval: ChiWen+, XuanWu+
 
 - humansoldier:
+    - popcosts 1 or 2
+
     - ChuKoNu:
         - DelayedTransform:ChuKoNuSandbag
     - FireArcher
@@ -233,6 +251,7 @@
     - WuzuJavelineer:
         - DelayedTransform:WuzuJavelineerSandbag
 - hero:
+    - popcosts 
     - VisualScale: NeZha (adult)+
 
     - Pioneer+, Sage+
@@ -458,9 +477,19 @@
     - MatsuriAzula: PsionicLevitation +
     - WorldBreaker: TsunamiGenerator +
 
-=== JAPANESE: NEW
+20. Japanese reworks on various aspects
 * MythUnit
+    - popcosts
+
     - TitanYamataNoOrochi: titanattack on naval+
+* HumanSoldier
+    - popcosts 1 or 2
+* Hero
+    - popcosts 1 or 2
+    - favor costs:
+        - HeroInfantry:0
+        - Miko:1
+        - Onmyoji:3
 
 ==============================================================================
 ==================== REWORK-PLANS ======================================
@@ -605,6 +634,8 @@ robots:
     chaos drone (infect,selfdestruct,spawn onkill,crawler model,melee,anti-vehicle,amphibious,fast,light armor)
 drones:
     wallcorner -> catapult
+mirrortower:
+    enable attack if garrisoned by 1 oracle
 
 === ANTAGONISTS (Repurpose, Unused)
 Kamos, Theris, Gargarensis

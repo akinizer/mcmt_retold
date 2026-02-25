@@ -140,6 +140,7 @@
         <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">VillagerEgyptian</target></effect>
         <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">VillagerNorse</target></effect>
         <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">VillagerDwarf</target></effect>
+        <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">VillagerJapanese</target></effect>
 
         <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TradeUnit</target></effect>
         <effect type="Data" amount="1" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">PiXiu</target></effect>
@@ -301,45 +302,187 @@
           <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ChariotArcher</target></effect>
           <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">WarElephant</target></effect>
           <!--Egyptian AnimalOfSet-->
-          <effect type="Data" amount="0.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">BaboonOfSet</target></effect>
-          
+          <effect type="Data" amount="0.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">BaboonOfSet</target></effect>          
       </effects>
     </tech>
     <tech name="GreekPresets" mergeMode="add">
       <status>UNOBTAINABLE</status>
       <effects>
-          	<!--Greek Heroes-->
-            <effect type="Data" amount="-0.050" subtype="OnDamageModify" modifytype="ROF" relativity="Assign">
-              <target type="ProtoUnit">Jason</target></effect>
-            <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="AchillesDismounted" relativity="Absolute">
-              <target type="ProtoUnit">Achilles</target></effect>
-            <effect type="Data" amount="1.80" subtype="AdditionalScale" relativity="Absolute">
-              <target type="ProtoUnit">TheArgo</target></effect>
-            <effect type="Data" amount="-0.050" subtype="OnDamageModify" modifytype="ROF" relativity="Assign">
-              <target type="ProtoUnit">Atalanta</target></effect>
-            <effect type="Data" amount="0.020" subtype="OnDamageModify" modifytype="Speed" relativity="Assign">
-              <target type="ProtoUnit">Atalanta</target></effect>
-            <effect type="Data" amount="0.050" subtype="OnDamageModify" modifytype="Damage" relativity="Assign">
-              <target type="ProtoUnit">Theseus</target></effect>
-            <effect type="Data" amount="1.80" subtype="AdditionalScale" relativity="Absolute">
-              <target type="ProtoUnit">Polyphemus</target></effect></effects>
+          <!--Greek MythUnits-->
+          <effect type="Data" amount="0.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Pegasus</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">HadesShade</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Minotaur</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Centaur</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Medusa</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Manticore</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">NemeanLion</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Chimera</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Cyclops</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Carcinos</target></effect>
+          <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Hydra</target></effect>
+          <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Scylla</target></effect>
+          <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Colossus</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Siren</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">HarpyMyth</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Hamadryad</target></effect>
+          <effect type="Data" amount="0.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">HamadryadTree</target></effect>
+          <!--Greek HumanSoldiers-->          
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Kataskopos</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Militia</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Hoplite</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Hypaspist</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Toxotes</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Peltast</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Hippeus</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Prodromos</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Myrmidon</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Gastraphetoros</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Hetairos</target></effect>
+          <!--Greek Heroes-->
+          <effect type="Data" amount="-0.050" subtype="OnDamageModify" modifytype="ROF" relativity="Assign">
+            <target type="ProtoUnit">Jason</target></effect>
+          <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="AchillesDismounted" relativity="Absolute">
+            <target type="ProtoUnit">Achilles</target></effect>
+          <effect type="Data" amount="1.80" subtype="AdditionalScale" relativity="Absolute">
+            <target type="ProtoUnit">TheArgo</target></effect>
+          <effect type="Data" amount="-0.050" subtype="OnDamageModify" modifytype="ROF" relativity="Assign">
+            <target type="ProtoUnit">Atalanta</target></effect>
+          <effect type="Data" amount="0.020" subtype="OnDamageModify" modifytype="Speed" relativity="Assign">
+            <target type="ProtoUnit">Atalanta</target></effect>
+          <effect type="Data" amount="0.050" subtype="OnDamageModify" modifytype="Damage" relativity="Assign">
+            <target type="ProtoUnit">Theseus</target></effect>
+          <effect type="Data" amount="1.80" subtype="AdditionalScale" relativity="Absolute">
+            <target type="ProtoUnit">Polyphemus</target></effect></effects>
     </tech>
 
     <tech name="ChinesePresets" mergeMode="add">
       <status>UNOBTAINABLE</status>
       <effects>
-          	<!--Chinese MythUnit-->
-            <effect type="Data" amount="0.80" subtype="AdditionalScale" relativity="Absolute">
-              <target type="ProtoUnit">HunDun</target>
-            </effect>
-              <!--Chinese Heroes-->
-            <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
-              <target type="ProtoUnit">Nezha</target>
-            </effect>
-              <!--Chinese Economic-->
-            <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="VillagerChinese" relativity="Absolute">
-              <target type="ProtoUnit">VillagerChineseClay</target>
-            </effect>
+          <!--Chinese MythUnits-->
+          <effect type="Data" amount="0.80" subtype="AdditionalScale" relativity="Absolute">
+            <target type="ProtoUnit">HunDun</target></effect>
+          
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">QiLin</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">YaZi</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TaoWu</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TaoTie</target></effect>
+          <effect type="Data" amount="4.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">HunDun</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ChiWen</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">XuanWu</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">QiongQi</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">QiongQiAir</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">BaiHu</target></effect>
+          <effect type="Data" amount="4.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ZhuQue</target></effect>
+          <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">QingLong</target></effect>
+
+          <!--Chinese HumanSoldiers -->
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">DaoSwordsman</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">GeHalberdier</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">WuZuJavelineer</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">FireArcher</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ChuKoNu</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">WhiteHorseCavalry</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TigerCavalry</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TigerCavalryDismounted</target></effect>
+
+          <!--Chinese Heroes-->
+          <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
+            <target type="ProtoUnit">Nezha</target></effect>
+
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Pioneer</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Sage</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">JiangZiya</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">YangJian</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">NezhaChild</target></effect>
+          <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">NezhaYouth</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Nezha</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">LiJing</target></effect>
+          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">WenZhong</target></effect>
+            <!--Chinese Economic-->
+          <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="VillagerChinese" relativity="Absolute">
+            <target type="ProtoUnit">VillagerChineseClay</target>
+          </effect>
+      </effects>
+    </tech>
+    <tech name="JapanesePresets" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <effects>
+        <!--Japanese MythUnits-->
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Kappa</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Tanuki</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Kitsune</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Wanyudo</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Tengu</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Jorogumo</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Shinigami</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Kamaitachi</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Raiju</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Honengyo</target></effect>
+        <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Onmoraki</target></effect>
+        <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Oni</target></effect>
+        <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Umibozu</target></effect>
+        <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Asura</target></effect>
+        <!--Japanese HumanSoldiers-->
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">YariSpearman</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">YumiArcher</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Samurai</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Shinobi</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">NaginataRider</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">YumiHorseArcher</target></effect>
+        <!--Japanese Heroes-->
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Bushi</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">OnnaMusha</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Onmyoji</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Daimyo</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Shogun</target></effect>
+
+        <effect type="Data" amount="0.00" subtype="cost" resource="Favor" relativity="Assign"><target type="ProtoUnit">Bushi</target></effect>
+        <effect type="Data" amount="0.00" subtype="cost" resource="Favor" relativity="Assign"><target type="ProtoUnit">OnnaMusha</target></effect>
+        <effect type="Data" amount="0.00" subtype="cost" resource="Favor" relativity="Assign"><target type="ProtoUnit">Daimyo</target></effect>
+        <effect type="Data" amount="0.00" subtype="cost" resource="Favor" relativity="Assign"><target type="ProtoUnit">Shogun</target></effect>
+        <effect type="Data" amount="1.00" subtype="cost" resource="Favor" relativity="Assign"><target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" amount="3.00" subtype="cost" resource="Favor" relativity="Assign"><target type="ProtoUnit">Onmyoji</target></effect>
+      </effects>
+    </tech>
+    <tech name="AtlanteanPresets" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <effects>
+        <!--Atlantean MythUnits-->
+        <effect type="Data" amount="0.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Servant</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Promethean</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Automaton</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Satyr</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Dryad</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Lampades</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Behemoth</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Argus</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Nereid</target></effect>
+        <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ManOWar</target></effect>
+        <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Centimanus</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Caladria</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">StymphalianBird</target></effect>
+        <!--Atlantean HumanSoldiers-->
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Oracle</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Murmillo</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Katapeltes</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Destroyer</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Fanatic</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Arcus</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Contarius</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Turma</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Cheiroballista</target></effect>
+        <!--Atlantean Heroes-->
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">OracleHero</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">MurmilloHero</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">KatapeltesHero</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">DestroyerHero</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">FanaticHero</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ArcusHero</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ContariusHero</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TurmaHero</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">CheiroballistaHero</target></effect>
       </effects>
     </tech>
 
