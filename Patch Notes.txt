@@ -101,8 +101,8 @@
 - myth unit:
     - popcosts
 
-    - MythHarpy: ProjectileKuafuStone, Lifesteal, Speed bonus on water
-        - Abduct: exclude (MythUnit)
+    - MythHarpy: ProjectileKuafuStone, Lifesteal, Bonus (Farm)
+        - Abduct: exclude (MythUnit),
     - LykaonVillager: speed+, archerlineupgrade, rangedattack minrange defaultattack
         - sharedselection: villagergreek
         - cost: favor 2, popcost 2
@@ -114,6 +114,7 @@
             - bleed: humansoldier, villager
             - spawn on kill: lykaonvillager 
     - Hamadryad: proximity attack mode, damage rework, bonus (humansoldier)
+    - Siren: chargedmodify (water,speed+)
 - tech:
     - FatedArrows: NumberBounces myth +3, hero +8
     - ThornedWalls: regen Walls 1.0, Hamadryad 0.8
@@ -261,13 +262,22 @@
     - LiJing+, JiangZiya+
     - WenZhong+
 
-7. Campaign Heroes from mcmt mod and new related techs
-- Arkantos, OdysseusSPC, AjaxSPC, ChironSPC, Kastor
+7. Campaign Heroes from mcmt mod, correlating techs and new features
+- Greek +
     - veterancy numkill, lineupgrades, egyptian techs (spearmen, axemen, feetofjackal)
-- Amanra, Setna, Reginleif (needs revision)
-- Brokk+,Eitri+
-    - Build: MCMT_DwarvenForge (giantslaying and thunderslaying techs)
-- KingFolstag+
+    
+    - Arkantos: artmodel (weapon, golden trident)
+    - OdysseusSPC, AjaxSPC, ChironSPC, Kastor
+- Egyptian +
+    - Amanra, Setna,
+- Norse +
+    - Reginleif
+    - Brokk,Eitri
+        - Build: MCMT_DwarvenForge (giantslaying and thunderslaying techs)
+    - KingFolstag
+- Atlantean
+- Chinese
+- Japanese
 
 8. Titan reworks from mcmt mod and new reworks on Japanese titan
 - TitanCerberus+, TitanBird+, TitanYmir+, TitanAtlantean+, TitanXingTian
