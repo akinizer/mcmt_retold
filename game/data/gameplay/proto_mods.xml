@@ -660,6 +660,7 @@
         <unittype>LogicalTypeHeroicMythUnit</unittype>
         <unittype>Unit</unittype>
         <unittype>UnitClass</unittype>
+        <unittype>Ranged</unittype>
         <unittype>MythUnit</unittype>
         <unittype>MythUnitRanged</unittype>
         <unittype>MilitaryUnit</unittype>
@@ -692,12 +693,12 @@
         <name>RangedAttack</name>
             <rof>1.800000</rof>
             <damage type="Pierce">12.000000</damage>
+            <damagebonus type="AbstractFarm">2.500000</damagebonus>
             <damagebonus type="MythUnit">2.000000</damagebonus>
             <damagebonus type="Hero">0.250000</damagebonus>
             <maxrange>10.000000</maxrange>
             <numberprojectiles>2</numberprojectiles>
-            <volleymode>
-            </volleymode>
+            <volleymode></volleymode>
             <projectile>ProjectileKuafuStone</projectile>
         </protoaction>
         <protoaction>
@@ -710,8 +711,9 @@
             <damageflags>Nature|Enemy</damageflags>
             <modifyduration>10000</modifyduration>
             <splashvfxproto>VFXAbductSplash</splashvfxproto>
-            </protoaction>
-            <protoaction>
+			<rate type="MythUnit">0.0</rate>
+		</protoaction>
+		<protoaction>
             <name>AbductDrop</name>
             <type>Inline</type>
             <isabductdrop>1</isabductdrop>
