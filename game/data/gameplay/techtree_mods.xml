@@ -483,6 +483,9 @@
         <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ContariusHero</target></effect>
         <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TurmaHero</target></effect>
         <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">CheiroballistaHero</target></effect>
+
+        <effect type="Data" amount="15.00" subtype="BuildLimit" relativity="Assign"><target type="ProtoUnit">Oracle</target></effect>
+        <effect type="Data" amount="15.00" subtype="BuildLimit" relativity="Assign"><target type="ProtoUnit">OracleHero</target></effect>
       </effects>
     </tech>
 

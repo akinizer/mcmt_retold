@@ -1,0 +1,28 @@
+<tactics>
+  <action>
+    <name stringid="STR_ACTION_RANGED">RangedAttack</name>
+    <type>Attack</type>
+    <attackaction>1</attackaction>
+    <rangedlogic>1</rangedlogic>
+    <anim>RangedAttack</anim>
+    <accuracy>0.8</accuracy>
+    <maxspread>5.0</maxspread>
+    <spreadfactor>0.25</spreadfactor>
+    <trackrating>1.0</trackrating>
+    <impacteffect>effects\impacts\pierce</impacteffect>
+    <rate type="LogicalTypeNavalMilitary">1.0</rate>
+  </action>
+  <action>
+    <name stringid="STR_ACTION_AREA_HEAL">AreaHeal</name>
+    <type>AutoRangedModify</type>
+    <modifyabstracttype>Ship</modifyabstracttype>
+    <modifyabstracttype>AbstractSiegeWeapon</modifyabstracttype>
+    <persistent>1</persistent>
+    <active>0</active>
+    <modifytype>HealRate</modifytype>
+    <includeally>1</includeally>
+    <modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
+    <modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+  </action>
+  <tactic>Default<action priority="100">RangedAttack</action><action>AreaHeal</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype></tactic>
+</tactics>

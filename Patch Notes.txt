@@ -287,12 +287,16 @@
 - LykaonVillager+
 - CaravanChinese (transport)+
 
-10. Building reworks from mcmt mod
+10. Building reworks from mcmt mod and new additions
 - VisualScale+ (except Japanese, Chinese)
 
-- SentryTower+, MilitaryCampTower+, MachineWorkshopTower+, OdinsTower+, MirrorTower+
+- Tower:
+    - SentryTower+, MilitaryCampTower+, MachineWorkshopTower+, OdinsTower+
+    - MirrorTower+
+        - enable attack if garrisoned by 1 oracle / oraclehero
 - CitadelCenter+
 - Dock+
+    - AreaHeal: NavalUnit -> (Ship,SiegeWeapon)
 - Farm+
 - DwarvenArmory (MCMT tech will be added)
 - GreatHall (unit train order)+
@@ -634,8 +638,6 @@ robots:
     chaos drone (infect,selfdestruct,spawn onkill,crawler model,melee,anti-vehicle,amphibious,fast,light armor)
 drones:
     wallcorner -> catapult
-mirrortower:
-    enable attack if garrisoned by 1 oracle
 
 === ANTAGONISTS (Repurpose, Unused)
 Kamos, Theris, Gargarensis
