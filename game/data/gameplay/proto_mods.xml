@@ -1500,6 +1500,7 @@
 		<train row="1" column="2">MasterKensei</train>    
 		<train row="1" column="3">CaptainEureka</train> 
 		<train row="1" column="4">AttackWolf</train>
+		<train row="1" column="5">SandDevourer</train>
 
 		<hotkeycontext>BuildNorseAccel</hotkeycontext>		
 		<train row="0" column="0">Hobbit</train>
@@ -4603,7 +4604,7 @@
         <impacttype>Unarmoured</impacttype>
         <unitaitype>HandCombative</unitaitype>
         <formationorder>1</formationorder>
-        <movementtype>amphibious</movementtype>		
+        <movementtype>water</movementtype>		
         <flag>TieToWaterSurface</flag>
         <flag>AmphibiousBirth</flag>
         <turnrate>6.0000</turnrate>
@@ -7381,6 +7382,17 @@
 	<unit name="Amanra">
 		<unittype>InfantryLineUpgraded</unittype>
 		<flag>ExperienceUnit</flag>
+		<protoaction mergeMode="replace">
+			<name>JumpAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">100.000000</damage>
+			<damagearea>3.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">1.500000</damagebonus>
+			<minrange>3.000000</minrange>
+			<maxrange>18.000000</maxrange>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+		</protoaction>
 		<veterancyranks>
 			<rank><numkills>5</numkills></rank>
 			<rank><numkills>12</numkills></rank>
@@ -20941,6 +20953,122 @@
 			<volleymode>1</volleymode>
 		</protoaction>
 	</unit>
+	<unit name="SandDevourer">
+        <displaynameid>STR_UNIT_SANDDEVOURER_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_SANDDEVOURER_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_SANDDEVOURER_SR</shortrollovertextid>
+        <icon>resources\egyptian\player_color\units\leviathan_icon.png</icon>
+        <animfile>egyptian\units\myth\leviathan\leviathan.xml</animfile>
+        <soundsetfile>egyptian\vo\leviathan\leviathan.xml</soundsetfile>
+        <obstructionradiusx>1.4900</obstructionradiusx>
+        <obstructionradiusz>1.4900</obstructionradiusz>
+        <selectionradiusx>2.0000</selectionradiusx>
+        <selectionradiusz>4.0000</selectionradiusz>
+        <impacttype>Unarmoured</impacttype>
+        <unitaitype>HandCombative</unitaitype>
+        <formationorder>1</formationorder>
+        <movementtype>land</movementtype>	
+        <turnrate>0.5000</turnrate>
+
+        <initialhitpoints>2000.0000</initialhitpoints>
+        <maxhitpoints>2000.0000</maxhitpoints>
+        <unitregen>2.0000</unitregen>
+        
+        <trainpoints>18.0000</trainpoints>    
+        <weightclass>10</weightclass>
+        <populationcount>5</populationcount>
+        <maxvelocity>3.6000</maxvelocity>
+        <los>16.0000</los>
+
+        <cost resourcetype="Gold">1450.0000</cost>
+        <cost resourcetype="Favor">14.0000</cost>
+        <armor type="Hack" value="0.4800"></armor>
+        <armor type="Pierce" value="0.7000"></armor>
+        <armor type="Crush" value="0.6800"></armor>
+        <unittype>LogicalTypeNavalMilitary</unittype>
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeHeroicMythUnit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>MilitaryUnit</unittype>
+        <unittype>Unit</unittype>
+        <unittype>MythUnit</unittype>
+        <unittype>AbstractSiegeWeapon</unittype>
+        <unittype>AbstractSiegeShip</unittype>
+        <unittype>SiegeLineUpgraded</unittype>
+        <buildlimit>3</buildlimit>
+
+		<rechargetime>18.0000</rechargetime>
+
+        <unittype>CountsTowardMilitaryScore</unittype>
+        <unittype>LogicalTypeValidBoltTarget</unittype>
+        <unittype>LogicalTypeConvertsHerds</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeMythUnitNotTitan</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>LogicalTypeFreezableMythUnit</unittype>
+        <unittype>LogicalTypeMythUnitNotFlying</unittype>
+        <unittype>LogicalTypeTrainableMythUnit</unittype>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>DecalStickToWaterSurface</flag>
+        <flag>FadeOutDecalOnDeath</flag>
+        <flag>AllowAutoGarrison</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+		<flag>HasDefaultAttack</flag>
+        <contain>LogicalTypeGarrisonInShips</contain>
+        <command row="3" column="0">Stop</command>
+        <command row="3" column="3">Patrol</command>
+        <command row="3" column="4">AttackMove</command>
+        <command row="3" column="5">Delete</command>
+        <tactics>mcmt_sanddevourer.tactics</tactics>
+        <protoaction>
+            <name>HandAttack</name>
+            <rof>3.000000</rof>
+            <damage type="Hack">50.000000</damage>
+            <damage type="Crush">10.000000</damage>
+            <damagebonus type="Hero">0.250000</damagebonus>
+            <maxrange>10.000000</maxrange>
+			<defaultattack>1</defaultattack>
+        </protoaction>		
+		<protoaction>
+			<name>SandBomb</name>
+			<rof>5.000000</rof>
+			<damage type="Hack">50.000000</damage>
+			<damage type="Crush">15.000000</damage>
+			<damagearea>12.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<modifyamount>8.000000</modifyamount>
+            <damagebonus type="Building">4.000000</damagebonus>
+            <damagebonus type="MilitaryUnit">1.750000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<onhiteffect type="Spawn" proto="VFXFishingShipChineseDemolition" amount="1"></onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXNeZhaFire" duration="5.000000"></onhiteffect>
+			<maxrange>18.000000</maxrange>
+			<maxsizeclass>7</maxsizeclass>
+			<onhiteffect type="Throw" targetunittype="AbstractVillager"></onhiteffect>
+			<throw>1</throw>
+		</protoaction>
+		<protoaction>
+			<name>DevourAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Divine">1000.000000</damage>
+			<maxrange>10.000000</maxrange>
+		</protoaction>
+    </unit>
 
 	<!-- Hall of Heroes Special Units -->
 	<unit name="ArcusCaptain">

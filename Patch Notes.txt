@@ -201,7 +201,9 @@
 
     - melee: Minion+, MinionReincarnated+, Avenger+, Scarab+, Sphinx+, Anubite+, ScorpionMan+
     - ranged: Wadjet+, Petsuchos+, Mummy+
-    - naval: Leviathan+, WarTurtle+
+    - naval: 
+        - Leviathan+: no longer amphibious (repurposed into a new unit)
+        - WarTurtle+
 
     - Mummy:
         - OnDeath: MummyFallen+
@@ -269,7 +271,9 @@
     - Arkantos: artmodel (weapon, golden trident)
     - OdysseusSPC, AjaxSPC, ChironSPC, Kastor
 - Egyptian +
-    - Amanra, Setna,
+    - Amanra
+        - JumpAttack: maximumrange+
+    - Setna
 - Norse +
     - Reginleif
     - Brokk,Eitri
@@ -348,7 +352,15 @@
         - Hand Attack: Laser Sword that deadly to human soldiers
         - Building Attack: Cluster smoke bombs effective on buildings
     - CaptainEureka: avenger hero unit, durable knight armor, masterful spin
-    
+        - AoE Attack: slices & dices through crowds, afflicts chaos and poison with swords covered in chemicals
+    - SandDevourer: oversized land worm, slow but durable, attack modes
+        - LOS: low (poor vision above ground, ability transcends beyond sight area)
+        - VisualScale+
+        - movementtype: crawls though earth
+        - HandAttack (attack mode, anti-unit): a bite attack with masssive mouth and teeth
+        - SandBombAttack (attack mode, anti-building): sand explosion emerging beneath structures, knocks back units in the area
+        - DevourAttack (ability, anti-unit): consumes the target standing before the colossal creature, target (units except mythunit and navaluit)
+
     - rework on related production buildings:
         - house: maxcontained 5, KingLycaon, Asurendra, MasterKensei
         - manor: maxcontained 15, KingLycaon, Asurendra, Maste  rKensei
@@ -510,6 +522,11 @@
 ==============================================================================
 ==================== REWORK-PLANS ======================================
 ==============================================================================
+=== SPECIAL TECHS: Prerequisites
+- Tech Prereqs
+- Unit Prereqs
+- Accels: AsgardianBastion (all civ), CitadelCenter (mcmt techs), Bastion Builders (jap civ)
+
 === JAPANESE: NEW
 * MythUnit
     - Flying

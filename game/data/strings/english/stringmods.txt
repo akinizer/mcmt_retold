@@ -22,6 +22,10 @@ ID = "STR_UNIT_CAPTAIN_EUREKA_NAME"   ;   Str = "Captain Eureka (Hero)"
 ID = "STR_UNIT_CAPTAIN_EUREKA_SR"   ;   Str = "Commanding Officer of Knight Order"
 ID = "STR_UNIT_CAPTAIN_EUREKA_LR"   ;   Str = "The unyielding success of the infamous fleet overseen by Captain Eureka has defeated many cosmic forces and the army arrived Earth for the final mission. He dreams of a retirement soon and joy of a vacation in Tahiti. His arm has a tatoo of Horus"
 
+ID = "STR_UNIT_SANDDEVOURER_NAME"   ;   Str = "Sand Devourer"
+ID = "STR_UNIT_SANDDEVOURER_SR"   ;   Str = "Last Thing Expected to See Moving Beneath Shifting Sands"
+ID = "STR_UNIT_SANDDEVOURER_LR"   ;   Str = "Oversized worm that moves through sands, hunts down anythng moves and leaves buildings in crumbles"
+
 ID = "STR_UNIT_TITAN_YAMATANOOROCHI_NAME"   ;   Str = "Yamata no Orochi (Titan)"
 
 // DEMIGODS

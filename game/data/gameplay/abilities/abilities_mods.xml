@@ -178,6 +178,10 @@
 		<ability>AbilityShinobiSmokeBomb<auxchargetimeasrof>1</auxchargetimeasrof><castonself>true</castonself><noautocast>true</noautocast></ability>
 		<ability>PassiveLifesteal<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</MasterKensei>
+
+	<SandDevourer>
+		<ability>AbilityMountainGiantBludgeon<chargetimeasrof>1</chargetimeasrof></ability>
+	</SandDevourer>
 	
 		<!--Greek Special Units -->
 	<Pegasus>
