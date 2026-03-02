@@ -525,15 +525,19 @@
 === SPECIAL TECHS: Prerequisites
 - Tech Prereqs
 - Unit Prereqs
-- Accels: AsgardianBastion (all civ), CitadelCenter (mcmt techs), Bastion Builders (jap civ)
+- Accels: AsgardianHillfort (all civ), CitadelCenter (mcmt techs), Bastion Builders (jap civ)
+
+=== DEMETER: NEW
+* Ship: FishingShip
+    - trade
 
 === JAPANESE: NEW
 * MythUnit
     - Flying
-        - Onmoraki: Land
+        - Onmoraki: Land, AreaDamage
     - Siege
         - Asura: SiegeWeapon,SiegeLineUpgrade
-        - Oni: SiegeWeapon, SiegeLineUpgrade
+        - Oni: SiegeWeapon, SiegeLineUpgrade, InfantryLineUpgrade
     - Naval
         - Honengyo: Amphibious
         - Wanyudo: Amphibious, Burn, Bonus (villager,trade)
@@ -541,30 +545,50 @@
         - Kappa
     - MilitaryUnit
         - Kamaitachi: samurai,infantry,bleed
-        - Tengu: infantry,samurai
+        - Tengu: infantry,samurai,infrantrylineupgrade
         - Jorogumo: Healer
-        - Shinigami: Healer, Movement (Air), Spawn (Shades)
+            - Tech-Enabled: Minelayer, Spawn SpiderTrap x3
+        - Shinigami: Healer, Movement (Air)
+        - ShinigamiRevenant: Healer, Movement (Air), Spawn (Shades x3)
         - MasterlessSword: InfantryLineUpgrade
     - Beast
-        - Raiju    
+        - Raiju     
+            - Tech-Enabled: areaslow (aotg chronosunique)
+    - Scout
+        - Kitsune
+            - Tech-Enabled: workrate aura
 * Hero
     - Miko: Villager, Build Accel, Pacify MythUnit (caladria ability)
+        - Tech-Enabled: hp aura
+        - buildrate temple
     - Bushi, OnnaMusha
+        - Tech-Enabled: AbilityOni
     - Daimyo, Shogun
+        - Tech-Enabled: warcry
     - Onmyoji (antibuilding fireball, antimyth (default), banish, slowaura (mythunit), healaura (empowerer, healer), barrier, summon (kitsune 5))
 * MilitaryUnit: Infantry, Cavalry, Archer, Siege
     - Archer: YumiArcher,YumiHorseArcher
     - Samurai: Bushi,Daimyo,Shogun,Samura
+        - Tech-Enabled: likeunitdamagebonus, likeunitspeedbonus
     - Naginata: OnnaMusha,NaginataRider,YariSpearman
     - Warrior Myth: Kamaitachi,Tengu,Oni
     - Priest Myth: Jorogumo,Shinigami
-* Naval: FishingShip, Warship, Transport
+* Naval: 
+    - FishingShip
+        - visualscale
+    - Warship
+        - visualscale
+    - Transport
+        - visualscale
+        - maxcontained increases by age
+* Weapon-Based LineUpgrade Reworks
     - Spear:YariSpearman,NaginataRider
     - Archer:YumiArcher
     - Sword:Samurai,Shinobi
 * Villager
     - Commoner
         - Knife Art Model: Katana
+        - workrate: dropsites
 * Tech
     - Hero
         - Kagura: GatherShrine (Onmyoji)
@@ -611,6 +635,13 @@
         - DivinePrefecture
         - Tenshu
 * Building
+    - Watermill: 
+        - visualscale, <flag>SnapPlacement</flag>
+    - Dojo, Guardhouse, Stable: visualscale
+    - Castle:
+        - visualscale, advancedfortificationsI-II-III
+    - Wonder:
+        - name
 * New Tech
     - Honor: dismount (Daimyo,Shogun,YuriHorseArcher,NaginataRider)
     - Samurai-Bushi relation
@@ -642,11 +673,146 @@
 * Nature
     - resource rework, obscurion (japanese and chinese trees)
 
-=== DEMETER: NEW
-* Ship: FishingShip
-    - trade
+ === GROUP TRAIN TECHS
+    * egyptan demigod
+    - createunit monumentgods
+        - son of ra
+            - chargedattack, continous
+            - projectilepetsuchoslazer, kastorcharisma
+            - tech-enabled ability
+        - son of horus
+            - meleeattack, fast
+            - durable, workrate
+            - tech-enabled ability
+        - son of set
+            - chargedrangedattack, slow
+            - fireball, areadamage, burn
+            - tech-enabled ability
+    * japanese soldier
+    - createunit samurai x5 infinitetech fortress
+    - createunit yumiarcher x5 infinitetech fortress
+    - createunit yarispearman x5 infinitetech fortress
+    - createunit shinobi x3 infinitetech fortress	
+    - createunit naginatarider x8 infinitetech fortress
+    * chinese soldier
+    - createunit daoswordsman x5 infinitetech fortress
+    - createunit wuzujavelineer x5 infinitetech fortress
+    - createunit firearcher x3 infinitetech fortress
+    - createunit whitehorsecavalry x8 infinitetech fortress
+    * greek soldier
+    - createunit hoplite x8 infinitetech fortress
+    - createunit hypaspist x5 infinitetech fortress
+    - createunit hippeus x5 infinitetech fortress
+    - createunit myrmidon/gastraphetoros/hetairos/harpymyth x5 infinitetech fortress
+    * egyptian soldier
+    - createunit spearman x4 infinitetech fortress
+    - createunit slinger x5 infinitetech fortress
+    - createunit camelrider x8 infinitetech fortress
+    * norse soldier
+    - createunit hersir x4 infinitetech fortress
+    - createunit godi x6 infinitetech fortress
+    - createunit jarl x5 infinitetech fortress
+    - createunit huskarl x8 infinitetech fortress
+    * atlantean soldier
+    - createunit murmillo x6 infinitetech fortress
+    - createunit destroyer x5 infinitetech fortress
+    - createunit contairus x8 infinitetech fortress
 
-=== MORE
+    === DISMOUNT TECHS
+    - rate: 0.85
+    * japanese soldier
+    - NaginataRider: spawn YariSpearman x1
+    - YumiHorseArcher: spawn YumiArcher x1
+    - Daimyo: spawn SamuraiHero x1 -> new special hero
+    - Shogun: spawn SamuraiHero x1 -> new special hero
+    - Bushi: spawn SamuraiHero x1 -> new special hero
+    * chinese soldier
+    - TerracottaRider: spawn TerracottaInfantry x1 -> new special unit
+    - XuanWu: spawn serpent / serpentsea x1
+    - JianZiya: spawn Sage x1
+    - WhiteHorseCavalry: spawn GeHalberdier x1 
+    * greek soldier
+    - Hippeus: spawn Hypaspist x1 
+    - Prodromos: spawn Militia x1 
+    - Kataskopos: spawn VillagerGreek x1 
+    - Hetairos: spawn Hoplite x1 
+    - Achilles: spawn Regent / AchillesDismounted / RoyalKnight x1 
+    - Harpy: spawn HarpyGrounded -> new special unit
+    * egyptian soldier
+    - ChariotArcher: spawn Slinger x1 
+    - CamelRider: spawn Spearman x1 
+    * norse soldier
+    - RaidingCavalry -> spawn Hirdman x1
+    - Jarl: spawn HuskarlHero x1 -> new special unit
+    - PortableRam: spawn Huskarl x2
+    * atlantean soldier
+    - Turma: spawn Arcus x1
+    - Contairus: spawn Murmillo x1
+
+    === ATTACK SWITCH TECHS
+    * Samurai
+    - DefaultStance
+    - HeavyStance: rof-, hackattack+, divineattack 1
+    * Shinobi
+    - DefaultStance
+    - AssassinationStance: rof+, bonus humansoldier, nerf mythunit, hero
+
+    === EXPLOSIVE TECHS
+    
+
+=== ART MODELS FOR WEAPONS
+    * material variant (gold=3)
+        (<file>chinese\units\attachments\sword\sword_c_b_upgrade3</file><materialvariant index="3"></materialvariant>)
+
+    * Golden Needle Sword: 
+        YanFeifeng (chinese\units\attachments\sword\sword_c_b_upgrade3): golden sword
+    * Golden Katana: 
+        Shogun (japanese\units\hero\shogun\shogun_katana): golden katana
+    * Golden Spear: 
+        Chiyou (chinese\units\hero\yang_jian\yang_jian_halberd): chinese 3-fang royal spear +
+        Ajax (greek\units\hero\ajax\ajax_spear): half gold metal spear +
+        Iolaus (chinese\units\attachments\spear\spear_c_b_upgrade3): chinese golden-tip javelin
+        Circe (spc\units\circe\circe_staff): gold rod            
+    * Golden Fork: 
+        NeZha (chinese\units\hero\ne_zha\ne_zha_spear_upgrade2): chinese sharp-edge majestic golden spear +
+        Yasuko (japanese\spc\units\attachments\heavenly_jeweled_spear\heavenly_jeweled_spear): golden fork, held in wrong direction LOLZ +
+        LivingPoseidonStatue (spc\units\gargarensis\gargarensis_trident_cine): oversized iron spear LOLZ +
+        DestroyerHero (atlantean\units\attachments\trident\trident_hero): iron trident with tiny gold tips
+
+=== ART MODELS FOR UNITS
+    * Villager: YasukoUnarmed, TatsuroUnarmed
+    * Leader: Theocrat, Krios
+    * Infantry: Tatsuro, CangjieKnife, Kagemasa, GeneralMelagius, Akari
+    * Cavalry: YanFeifengRider, CangjieRider, HouyiRider, QingRider, Harumoto
+    * MythUnit: Theris (vfxfire), Magumo, Kamos, Chiyou, Tanuki, Kappa
+    * Priest: Azusa, AbeNoSeimei
+
+    * HandAttack - Knife Art Models - Villagers
+        - VillagerDwarf: minotauraxe / chopping axe
+        - VillagerNorse: heracles bat
+        - VillagerJapanese: katana
+        - VillagerChinese: spear
+        - VillagerEgyptian: camel rider sword
+        - VillagerAtlantean: murmillo sword
+        - VillagerAtlanteanHero: destroyer fork
+
+=== MASTERS OF ELEMENTS (Includes existing special units)
+	AOM RETOLD MODDING NOTES:
+	* Masters of Elements (Supersoldiers enhanced by FutureTech Labs. Available for Recruiting at a cost)
+	- Master Kensei: Excels in Pyrokinetics. Uses ash-smoke grenades
+	- Onna-Musha: Excels in Magnetokinetics. Throws rock and sends military units flying at a distance. Ability pushes back units in close range. Default attack is sword slashing
+	- ???: Excels in Hydrokinetics. Launches water bullets at a distance. Ability uses maelstrom in close range. Default attack ???
+	- Matsuri Yurio: Excels in Aerokinetics and Psionics. Deadly to airborne units. Sends flying units in distance. Devastating to buildings. Superweapon ability is Psionic Blast
+	- Matsuri Azula: Clone of Matsuri Yurio
+
+	* Techs: Abilities are default for Masters of Elements. They are tech-unlocked for military units
+	* Structure: 
+		FutureTech Genetic Labs:
+		- Matsuri Yurio and Azula will be relocated from TechBuilding
+		- Master Kensei will be relocated from Manor and House
+		- Generated by TechBuilding (same method as World Finance Center)
+
+=== NEW SPECIAL UNITS
 * Special Unit
 bragi (hero, god) -> orpheus model
 chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
@@ -698,29 +864,6 @@ Atlantean
     Witch Hero: Oceanos + Theia + Hekate
     Cosmic Hero: Oceanus + Theia + Atlas
 
-    === ART MODELS FOR WEAPONS
-    * material variant (gold=3)
-        (<file>chinese\units\attachments\sword\sword_c_b_upgrade3</file><materialvariant index="3"></materialvariant>)
-
-    * Golden Needle Sword: 
-        YanFeifeng (chinese\units\attachments\sword\sword_c_b_upgrade3): golden sword
-    * Golden Katana: 
-        Shogun (japanese\units\hero\shogun\shogun_katana): golden katana
-    * Golden Spear: 
-        Chiyou (chinese\units\hero\yang_jian\yang_jian_halberd): chinese 3-fang royal spear +
-        Ajax (greek\units\hero\ajax\ajax_spear): half gold metal spear +
-        Iolaus (chinese\units\attachments\spear\spear_c_b_upgrade3): chinese golden-tip javelin
-        Circe (spc\units\circe\circe_staff): gold rod            
-    * Golden Fork: 
-        NeZha (chinese\units\hero\ne_zha\ne_zha_spear_upgrade2): chinese sharp-edge majestic golden spear +
-        Yasuko (japanese\spc\units\attachments\heavenly_jeweled_spear\heavenly_jeweled_spear): golden fork, held in wrong direction LOLZ +
-        LivingPoseidonStatue (spc\units\gargarensis\gargarensis_trident_cine): oversized iron spear LOLZ +
-        DestroyerHero (atlantean\units\attachments\trident\trident_hero): iron trident with tiny gold tips
-
-    === ART MODELS FOR UNITS
-    * Villager: YasukoUnarmed, TatsuroUnarmed
-    * Leader: Theocrat, Krios
-    * Infantry: Tatsuro, CangjieKnife, Kagemasa, GeneralMelagius, Akari
-    * Cavalry: YanFeifengRider, CangjieRider, HouyiRider, QingRider, Harumoto
-    * MythUnit: Theris (vfxfire), Magumo, Kamos, Chiyou, Tanuki, Kappa
-    * Priest: Azusa, AbeNoSeimei
+    
+	
+	
