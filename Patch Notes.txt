@@ -524,8 +524,6 @@
 ==============================================================================
 === SPECIAL TECHS: Prerequisites
 * General
-- Tech Prereqs
-- Unit Prereqs
 - Accels: AsgardianHillfort (all civ), CitadelCenter (mcmt techs), Bastion Builders (jap civ)
 
 * Norse Settlements
