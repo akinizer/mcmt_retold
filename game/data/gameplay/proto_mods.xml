@@ -9191,10 +9191,7 @@
 		<tech row="3" column="0">ChampionArms</tech>		
 		<tech row="3" column="0">ChampionHooves</tech>		
 		<tech row="3" column="0">ChampionRangers</tech>		
-		<tech row="3" column="0">ChampionEngines</tech>		
-		<tech row="3" column="1">MCMT_SVA_ComfortableFireports</tech>		
-		<tech row="3" column="1">MCMT_SVA_EliteFireports</tech>		
-		<tech row="3" column="1">MCMT_SVA_LuxuriousFireports</tech>		
+		<tech row="3" column="0">ChampionEngines</tech>			
 		
 		<train row="3" column="4">Voltox</train>				
 		<train row="3" column="5">MobileFortress</train>				
@@ -9397,9 +9394,15 @@
 		<tech row="2" column="0">ChampionWarships</tech>
 		<tech row="2" column="0">ConscriptSailors</tech>
 		<tech row="2" column="0">HeroicFleet</tech>
-		<tech row="2" column="1">Nanomachines</tech>		
-		<tech row="2" column="2">MCMT_Explosives</tech>		
-		<tech row="2" column="3">NavalDefensiveSystems</tech>	
+		<tech row="2" column="1">MCMT_SVA_ComfortableFireports</tech>		
+		<tech row="2" column="1">MCMT_SVA_EliteFireports</tech>		
+		<tech row="2" column="1">MCMT_SVA_LuxuriousFireports</tech>	
+
+		<tech row="2" column="2">Nanomachines</tech>		
+		<tech row="2" column="3">MCMT_Explosives</tech>		
+		<tech row="2" column="4">NavalDefensiveSystems</tech>	
+		
+		
 		
 		<flag>CollidesWithProjectiles</flag>
 		<flag>Immoveable</flag>
@@ -9412,9 +9415,8 @@
 		<flag>DisplayRange</flag>
 		<flag>InitialGarrisonOnly</flag>
 		
-		<command row="3" column="1">Eject</command>
-		<command row="3" column="0">SetGatherPoint</command>
-		<command row="3" column="5">Delete</command>
+		<command row="3" column="4">SetGatherPoint</command>
+		<command row="3" column="5">Eject</command>
 		<tactics>dock.tactics</tactics>
 	</unit>
 	<unit name="MageTower" mergeMode="add">
@@ -10075,8 +10077,8 @@
 		<tech row="1" column="0">HammerOfThunder</tech>
 		<tech row="1" column="1">DwarvenBreastplate</tech>
 
-		<tech row="1" column="0">MCMT_GiantSlayingTechs</tech>
-		<tech row="1" column="1">MCMT_ThunderSlayingTechs</tech>
+		<tech row="1" column="4">MCMT_GiantSlayingTechs</tech>
+		<tech row="1" column="5">MCMT_ThunderSlayingTechs</tech>
 		<flag>ObscuresUnits</flag>
 		<flag>CollidesWithProjectiles</flag>
 		<flag>NonAutoFormedUnit</flag>

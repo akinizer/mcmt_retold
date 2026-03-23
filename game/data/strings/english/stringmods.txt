@@ -330,7 +330,7 @@ ID = "STR_UNIT_LOKI_JOTNAR_SR"   ;   Str = "Loki in True Form"
 ID = "STR_UNIT_LOKI_JOTNAR_LR"   ;   Str = "God of Mischief. Has Never Been This Serious"
 
 // NOAH
-ID = "STR_TECH_EGYPTIAN_INNOVATION_NAME"   ;   Str = "Egyptian Innovation"
+ID = "STR_TECH_EGYPTIAN_RENOVATION_NAME"   ;   Str = "Egyptian Renovation"
 
 ID = "STR_UNIT_NOAH_NAME"   ;   Str = "Noah"
 ID = "STR_UNIT_NOAH_SR"   ;   Str = "Noah the Oracle of Guidance"
@@ -561,6 +561,12 @@ ID = "STR_TECH_ACTIVATE_TECH_SUPERWEAPONS"   ;   Str = "Activate Tech: Superweap
 ID = "STR_TECH_RECRUITING_MOUNTAINDWARVES_NAME"   ;   Str = "Recruiting Mountain Dwarves"
 ID = "STR_TECH_RECRUITING_MOUNTAINDWARVES_LR"    ;   Str = "Work Force now becomes Dwarf Force"
 
+ID = "STR_TECH_MCMT_GIANTSLAYINGTECHS_NAME"   ;   Str = "Giant-Slaying Techs"
+ID = "STR_TECH_MCMT_GIANTSLAYINGTECHS_LR"    ;   Str = "Work of Art within Sharp Tools"
+
+ID = "STR_TECH_MCMT_THUNDERSLAYINGTECHS_NAME"   ;   Str = "Thunder-Slaying Techs"
+ID = "STR_TECH_MCMT_THUNDERSLAYINGTECHS_LR"    ;   Str = "Work of Art within Sky"
+
 ID = "STR_TECH_ARCHITECTS_OF_MARLEY_NAME"   ;   Str = "Architects of Marley"
 ID = "STR_TECH_ARCHITECTS_OF_MARLEY_LR"   ;   Str = "Architects from Kingdom of Marley share their pride in the Anti-Titan Walls"
 
@@ -628,6 +634,9 @@ ID = "STR_TECH_MITHRILARMAMENTS_LR"   ;   Str = "Introduces the Power of Mithril
 
 ID = "STR_TECH_TURRETINSTALLATION_NAME"   ;   Str = "Turret Installation"
 ID = "STR_TECH_TURRETINSTALLATION_LR"   ;   Str = "Introduces the Automatization Machinery to Tower Structures"
+
+ID = "STR_TECH_ASSISTED_TRADE_NETWORKS_NAME"   ;   Str = "Assisted Trade Networks"
+ID = "STR_TECH_ASSISTED_TRADE_NETWORKS_LR"   ;   Str = "Introduces Advanced Routes that Provides Varieties of Goods"
 
 ID = "STR_TECH_NANOMACHINES_NAME"   ;   Str = "Nanomachines"
 ID = "STR_TECH_NANOMACHINES_LR"   ;   Str = "Introduces the Nanotechnology that Enhances SVA, CyberTech Facility and Docks with Autorepair Machines"

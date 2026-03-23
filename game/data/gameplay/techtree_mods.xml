@@ -1032,9 +1032,7 @@
             <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Ecomarket" row="1" column="2" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
             <!--Arrows-->
             <effect type="Data" amount="1.00" subtype="CommandRemove" tech="MCMT_Page2" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>
-            <effect type="Data" amount="1.00" subtype="CommandAdd" tech="MCMT_Page1" row="3" column="5" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>				
-
-
+            <effect type="Data" amount="1.00" subtype="CommandAdd" tech="MCMT_Page1" row="3" column="5" relativity="Assign"><target type="ProtoUnit">Landlord</target></effect>			
         </effects>
     </tech>
 
@@ -1060,13 +1058,14 @@
     <!-- Norse Special Techs -->
     <!-- Egyptian Special Techs -->
     <tech name="MCMT_EgyptianRenovation">
-      <displaynameid>STR_TECH_EGYPTIAN_INNOVATION_NAME</displaynameid>
+      <displaynameid>STR_TECH_EGYPTIAN_RENOVATION_NAME</displaynameid>
       <status>UNOBTAINABLE</status>
       <icon>resources\tech\activate_tech.jpg</icon>
       <researchpoints>1.0000</researchpoints>
       <cost resourcetype="Favor">15.0000</cost>
       <flag>CountsTowardMilitaryScore</flag>
       <flag>MythTech</flag>
+      <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
       <effects>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Noah</target></effect>
         <effect type="TechStatus" status="obtainable">MCMT_Noah_Respawn</effect>
@@ -1080,6 +1079,7 @@
       <flag>Persistent</flag>
       <flag>HideFromDialogs</flag>
       <prereqs>
+        <techstatus status="Active">MCMT_EgyptianRenovation</techstatus>
         <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
         <typecount unit="Noah" count="1.00" state="aliveState" operator="lt"></typecount>
       </prereqs>
@@ -1108,6 +1108,7 @@
     <status>UNOBTAINABLE</status>
     <prereqs>
       <specificage>MythicAgeChinese</specificage>
+      <typecount unit="Baolei" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
 		<effects>			
       <effect type="TechStatus" status="obtainable">Baolei_Page1_0</effect>
@@ -1122,6 +1123,9 @@
     <flag>InfiniteTech</flag>
     <flag>NoTextMessage</flag>
     <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">Baolei_BuildingAccels</techstatus>
+    </prereqs>
 		<effects>			
       <effect type="TechStatus" status="obtainable">Baolei_Page1</effect>
       <effect type="TechStatus" status="obtainable">Baolei_Page2</effect>
@@ -1140,6 +1144,9 @@
     <flag>InfiniteTech</flag>
     <flag>NoTextMessage</flag>
     <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">Baolei_BuildingAccels</techstatus>
+    </prereqs>
 		<effects>	      
       <effect type="TechStatus" status="obtainable">Baolei_Page1</effect>
       <effect type="TechStatus" status="obtainable">Baolei_Page2</effect>		
@@ -1158,6 +1165,9 @@
     <flag>InfiniteTech</flag>
     <flag>NoTextMessage</flag>
     <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">Baolei_BuildingAccels</techstatus>
+    </prereqs>
 		<effects>			
       <effect type="Data" amount="1.00" subtype="CommandRemove" tech="Baolei_Page1" relativity="Assign" hidetooltip=""><target type="ProtoUnit">Baolei</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandRemove" tech="Baolei_Page2" relativity="Assign" hidetooltip=""><target type="ProtoUnit">Baolei</target></effect>
@@ -1177,6 +1187,9 @@
     <flag>InfiniteTech</flag>
     <flag>NoTextMessage</flag>
     <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">Baolei_BuildingAccels</techstatus>
+    </prereqs>
 		<effects>			
       <effect type="Data" amount="1.00" subtype="CommandRemove" tech="Baolei_Page1" relativity="Assign" hidetooltip=""><target type="ProtoUnit">Baolei</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandRemove" tech="Baolei_Page2" relativity="Assign" hidetooltip=""><target type="ProtoUnit">Baolei</target></effect>
@@ -1451,6 +1464,7 @@
     <cost resourcetype="Gold">200.0000</cost>
     <prereqs>
       <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+      <typecount unit="CyberTechWorldFinancialCenter" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="HumanSoldier" resourcetype="Gold" amount="5.0" relativity="Absolute">
@@ -1484,6 +1498,7 @@
     <cost resourcetype="Food">30.0000</cost>
     <prereqs>
       <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+      <typecount unit="CyberTechWorldFinancialCenter" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
      <effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="LykaonVillager" chance="1.0" relativity="Assign">
@@ -1508,6 +1523,7 @@
     <cost resourcetype="Gold">200.0000</cost>
     <prereqs>
       <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+      <typecount unit="CyberTechWorldFinancialCenter" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <effect type="Data" action="AutoGather" amount="10.00" subtype="WorkRate" unittype="Gold" relativity="Absolute">
@@ -1526,6 +1542,7 @@
     <cost resourcetype="Gold">200.0000</cost>
     <prereqs>
       <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+      <typecount unit="CyberTechWorldFinancialCenter" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <effect type="Data" action="AutoGather" amount="10.00" subtype="WorkRate" unittype="Food" relativity="Absolute">
@@ -1544,6 +1561,7 @@
     <cost resourcetype="Gold">200.0000</cost>
     <prereqs>
       <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+      <typecount unit="CyberTechWorldFinancialCenter" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <effect type="Data" action="AutoGather" amount="10.00" subtype="WorkRate" unittype="Favor" relativity="Absolute">
@@ -1562,6 +1580,7 @@
     <cost resourcetype="Gold">200.0000</cost>
     <prereqs>
       <techstatus status="Active">MCMT_FinancialDevelopmentUpgradeIII</techstatus>
+      <typecount unit="CyberTechWorldFinancialCenter" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <effect type="Data" action="AutoGather" amount="10.00" subtype="WorkRate" unittype="Wood" relativity="Absolute">
@@ -1581,6 +1600,7 @@
     <cost resourcetype="Gold">180.0000</cost>
     <prereqs>
       <techstatus status="Active">MCMT_IntercontinentalShipments</techstatus>
+      
     </prereqs>
     <effects>
       <effect type="Data" action="AutoGather" amount="0.10" subtype="WorkRate" unittype="Food" relativity="Absolute">
@@ -1673,6 +1693,7 @@
 		<prereqs>
 			<typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
 			<typecount unit="Landlord" count="1.00" state="aliveState" operator="lt"></typecount>
+      <techstatus status="Active">MCMT_SpecialService</techstatus>
 		</prereqs>
 		<effects>
 			<effect type="CreateUnit" unit="Landlord" generator="AbstractTownCenter">
@@ -1692,7 +1713,7 @@
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardEconomicScore</flag>
 		<flag>MythTech</flag>
-		
+		<prereqs><typecount unit="DwarvenArmory" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<researchpoints>3.0000</researchpoints>
 		<cost resourcetype="Gold">300.0000</cost>
 		<effects>
@@ -1767,7 +1788,7 @@
 		<researchpoints>10.0000</researchpoints>
 		<cost resourcetype="Gold">1000</cost>
 		<cost resourcetype="Wood">1000</cost>
-
+    <prereqs><techstatus status="Active">AdvancedFortifications</techstatus></prereqs>
     <effects>
       <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
 				<target type="ProtoUnit">AbstractWall</target></effect>
@@ -1794,7 +1815,7 @@
 		<researchpoints>10.0000</researchpoints>
 		<cost resourcetype="Gold">1250</cost>
 		<cost resourcetype="Wood">1250</cost>
-
+    <prereqs><techstatus status="Active">AdvancedFortifications_I</techstatus></prereqs>
     <effects>
       <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
 				<target type="ProtoUnit">AbstractWall</target></effect>
@@ -1822,7 +1843,7 @@
 		<cost resourcetype="Gold">1500</cost>
 		<cost resourcetype="Wood">1500</cost>
 		<cost resourcetype="Favor">100</cost>
-
+    <prereqs><techstatus status="Active">AdvancedFortifications_II</techstatus></prereqs>
     <effects>
       <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
 				<target type="ProtoUnit">AbstractWall</target></effect>
@@ -1852,7 +1873,7 @@
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
-
+    <prereqs><techstatus status="Active">CarrierPigeons</techstatus></prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Favor">5</cost>
 		<cost resourcetype="Food">200</cost>
@@ -1866,25 +1887,6 @@
 			</effect>
 		</effects>		
 	</tech>
-  <tech name="NavalDefensiveSystems" mergeMode="add">
-		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_NAVAL_DEFENSIVE_SYSTEMS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_NAVAL_DEFENSIVE_SYSTEMS_LR</rollovertextid>
-		<icon>resources\tech\architect_marley.png</icon>
-		<status>UNOBTAINABLE</status>
-		<flag>CountsTowardMilitaryScore</flag>
-		<flag>MythTech</flag>
-
-		<researchpoints>10.0000</researchpoints>
-		<cost resourcetype="Gold">3000</cost>
-		<cost resourcetype="Favor">1000</cost>
-		<effects>
-      <effect type="Data" action="RangedAttack" amount="30.0" subtype="DamageBonus" unittype="AbstractTitan" relativity="Assign">
-        <target type="ProtoUnit">Dock</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.5" subtype="DamageBonus" unittype="AbstractFlyingUnit" relativity="Assign">
-        <target type="ProtoUnit">Dock</target></effect>
-		</effects>
-	</tech>
   <tech name="AntiArmorLogistics" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_WARBUNKER_ANTIARMOR_NAME</displaynameid>
@@ -1897,6 +1899,7 @@
 		<researchpoints>25.0000</researchpoints>
 		<cost resourcetype="Gold">275</cost>
 		<cost resourcetype="Gold">15</cost>
+    <prereqs><typecount unit="WarBunker" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
       <effect type="Data" action="AntiArmorAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">WarBunker</target>
@@ -1915,6 +1918,7 @@
 		<researchpoints>25.0000</researchpoints>
 		<cost resourcetype="Gold">325</cost>
 		<cost resourcetype="Favor">15</cost>
+    <prereqs><typecount unit="WarBunker" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
       <effect type="Data" action="AntiAirAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">WarBunker</target>
@@ -1942,8 +1946,8 @@
   <!-- DWARVEN FORGE TECHS -->
   <tech name="MCMT_GiantSlayingTechs" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINEARMAMENTS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINEARMAMENTS_LR</rollovertextid>
+		<displaynameid>STR_TECH_MCMT_GIANTSLAYINGTECHS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_MCMT_GIANTSLAYINGTECHS_LR</rollovertextid>
 		<researchpoints>10.0000</researchpoints>
 		<status>UNOBTAINABLE</status>
 		<icon>resources\spc\static_color\technologies\giant_slaying_blades_icon.png</icon>
@@ -1952,6 +1956,7 @@
 		<cost resourcetype="Gold">350</cost>
     <cost resourcetype="Food">350</cost>
     <cost resourcetype="Favor">10</cost>
+    <prereqs><typecount unit="MCMT_DwarvenForge" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 		  <effect type="TechStatus" status="active">GiantSlayingBlades</effect>
  		  <effect type="TechStatus" status="active">OsmiumArmor</effect>
@@ -1960,8 +1965,8 @@
 	</tech>
   <tech name="MCMT_ThunderSlayingTechs" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINEARMAMENTS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINEARMAMENTS_LR</rollovertextid>
+		<displaynameid>STR_TECH_MCMT_THUNDERSLAYINGTECHS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_MCMT_THUNDERSLAYINGTECHS_LR</rollovertextid>
 		<researchpoints>10.0000</researchpoints>
 		<status>UNOBTAINABLE</status>
     <icon>resources\norse\static_color\technologies\hammer_of_thunder_icon.png</icon>
@@ -1971,6 +1976,7 @@
     <cost resourcetype="Food">1000</cost>
     <cost resourcetype="Wood">500</cost>
     <cost resourcetype="Favor">15</cost>
+    <prereqs><typecount unit="MCMT_DwarvenForge" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
       <effect type="TechStatus" status="active">DwarvenWeapons</effect>
  		  <effect type="TechStatus" status="active">MeteoricIronArmor</effect>
@@ -1989,6 +1995,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
 		<cost resourcetype="Favor">50</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 			<effect type="Data" action="RangedAttack" amount="4.00" subtype="Damagebonus" unittype="MythUnit" relativity="Absolute">
 				<target type="ProtoUnit">InfantryLineUpgraded</target>
@@ -2026,6 +2033,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
 		<cost resourcetype="Favor">150</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 			<effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
 				<target type="ProtoUnit">InfantryLineUpgraded</target>
@@ -2054,6 +2062,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
 		<cost resourcetype="Favor">25</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 			<effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent">
 				<target type="ProtoUnit">Unit</target>
@@ -2082,6 +2091,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
 		<cost resourcetype="Favor">250</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 			<effect type="Data" amount="1.50" subtype="Damage" action="RangedAttack" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractArcher</target>
@@ -2113,6 +2123,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
 		<cost resourcetype="Favor">30</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
 			<target type="ProtoUnit">Hoplite</target>
@@ -2180,7 +2191,8 @@
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <flag>IgnoreForUIAgeAvailabity</flag>
-	<cost resourcetype="Favor">40</cost>
+    <cost resourcetype="Favor">40</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
       <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent">
         <target type="ProtoUnit">Hypaspist</target>
@@ -2251,7 +2263,8 @@
     <icon>resources\greek\static_color\technologies\enyos_bow_of_horror_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
-	<cost resourcetype="Favor">48</cost>
+    <cost resourcetype="Favor">48</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
       <effect type="Data" amount="15" subtype="MaximumVelocity" relativity="Absolute">
         <target type="ProtoUnit">ProjectileArrow</target>
@@ -2322,7 +2335,8 @@
     <icon>resources\greek\static_color\technologies\aegis_shield_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
-	<cost resourcetype="Favor">80</cost>
+    <cost resourcetype="Favor">80</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
       <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent">
         <target type="ProtoUnit">InfantryLineUpgraded</target>
@@ -2362,7 +2376,8 @@
     <flag>MythTech</flag>
     <techtype>ArmoryTechnology</techtype>
     <techage>HeroicAge</techage>
-	<cost resourcetype="Favor">150</cost>
+    <cost resourcetype="Favor">150</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>      
 	  <effect type="Data" amount="1.00" subtype="MaximumRange" action="HandAttack" relativity="Absolute">
         <target type="ProtoUnit">AbstractInfantry</target>
@@ -2491,6 +2506,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
 		<cost resourcetype="Favor">1000</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 			<effect type="Data" amount="1000.00" subtype="ResourceReturn" resource="Gold" relativity="Assign">
 				<target type="ProtoUnit">MilitaryUnit</target>
@@ -2507,6 +2523,7 @@
 		<flag>CountsTowardMilitaryScore</flag>in
 		<flag>MythTech</flag>
 		<cost resourcetype="Favor">120</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 			<effect type="Data" amount="3.00" subtype="UnitRegenRate" relativity="Absolute">
 				<target type="ProtoUnit">Hero</target>
@@ -2529,6 +2546,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
 		<cost resourcetype="Favor">180</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 			<effect type="Data" amount="2.00" subtype="UnitRegenRate" relativity="Absolute">
 				<target type="ProtoUnit">Building</target>
@@ -2545,6 +2563,7 @@
 		<flag>CountsTowardEconomicScore</flag>
 		<flag>MythTech</flag>
 		<cost resourcetype="Favor">840</cost>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 			<effect type="Data" action="Build" amount="1.70" subtype="WorkRate" unittype="Building" relativity="BasePercent">
 				<target type="ProtoUnit">Unit</target>
@@ -2561,6 +2580,7 @@
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <techtype>MythUnitUpgrade</techtype>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
       <effect type="Data" action="RangedAttack" amount="0.75" subtype="RateOfFire" relativity="BasePercent">
         <target type="ProtoUnit">MythUnit</target>
@@ -2656,6 +2676,7 @@
     <icon>resources\chinese\static_color\technologies\vibrant_land_icon.png</icon>
     <flag>CountsTowardEconomicScore</flag>
     <flag>MythTech</flag>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
       <effect type="CreatePower" protopower="VibrantLand">
       </effect>
@@ -2738,6 +2759,7 @@
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <techtype>MythTechDefensive</techtype>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
       <effect type="Data" allactions="1" amount="1.15" subtype="Damage" relativity="BasePercent">
         <target type="ProtoUnit">MirrorTower</target>
@@ -2781,6 +2803,7 @@
     <flag>CountsTowardMilitaryScore</flag>
     <prereqs>
       <techstatus status="Active">GuardTower</techstatus>
+      <typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <effect type="Data" action="RangedAttack" amount="0.65" subtype="RateOfFire" relativity="BasePercent">
@@ -2807,6 +2830,7 @@
     <flag>CountsTowardMilitaryScore</flag>
     <prereqs>
       <techstatus status="Active">GuardTower</techstatus>
+      <typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <effect type="Data" allactions="1" amount="1.33" subtype="Damage" relativity="BasePercent">
@@ -2826,6 +2850,7 @@
     <icon>resources\chinese\static_color\technologies\gilded_shields_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 	<effects>
 		<effect type="Data" amount="1000.00" subtype="ShieldPoints" relativity="Assign">
 			<target type="ProtoUnit">MageTower</target>
@@ -2846,8 +2871,8 @@
 	</effects>	
   </tech>  
   <tech name="MCMT_AssistedTradeNetworks" orderhint="0">
-    <displaynameid>STR_TECH_AUTUMN_OF_ABUNDANCE_NAME</displaynameid>
-    <rollovertextid>STR_TECH_AUTUMN_OF_ABUNDANCE_LR</rollovertextid>
+    <displaynameid>STR_TECH_ASSISTED_TRADE_NETWORKS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ASSISTED_TRADE_NETWORKS_LR</rollovertextid>
     <cost resourcetype="Gold">200.0000</cost>
     <cost resourcetype="Favor">30.0000</cost>
     <researchpoints>40.0000</researchpoints>
@@ -2855,7 +2880,12 @@
     <icon>resources\chinese\static_color\technologies\autumn_of_abundance_icon.png</icon>
     <flag>CountsTowardEconomicScore</flag>
     <flag>MythTech</flag>
+    <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
+      <effect type="Data" amount="15.00" subtype="CarryCapacity" resource="Wood" relativity="Absolute">
+        <target type="ProtoUnit">TradeUnit</target></effect>
+      <effect type="Data" amount="15.00" subtype="CarryCapacity" resource="Food" relativity="Absolute">
+        <target type="ProtoUnit">TradeUnit</target></effect>
       <effect type="Data" action="Trade" amount="0.20" subtype="MinWorkRate" unittype="Food" relativity="Assign">
         <target type="ProtoUnit">OxCartModelX</target></effect>
       <effect type="Data" action="Trade" amount="0.20" subtype="MinWorkRate" unittype="Wood" relativity="Assign">
@@ -2875,6 +2905,7 @@
     <icon>resources\chinese\static_color\technologies\drought_ships_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs><typecount unit="StrategicVesselAssembly" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
       <effect type="Data" action="Demolition" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">Onigami</target>
@@ -2899,8 +2930,29 @@
       </effect>	  
     </effects>
   </tech>
-   <tech name="Nanomachines">
-	<displaynameid>STR_TECH_NANOMACHINES_NAME</displaynameid>
+ 
+  <tech name="NavalDefensiveSystems" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_NAVAL_DEFENSIVE_SYSTEMS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_NAVAL_DEFENSIVE_SYSTEMS_LR</rollovertextid>
+		<icon>resources\tech\architect_marley.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+
+		<researchpoints>10.0000</researchpoints>
+		<cost resourcetype="Gold">3000</cost>
+		<cost resourcetype="Favor">1000</cost>
+		<effects>
+      <effect type="Data" action="RangedAttack" amount="30.0" subtype="DamageBonus" unittype="AbstractTitan" relativity="Assign">
+        <target type="ProtoUnit">Dock</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.5" subtype="DamageBonus" unittype="AbstractFlyingUnit" relativity="Assign">
+        <target type="ProtoUnit">Dock</target></effect>
+		</effects>
+	</tech>
+ 
+  <tech name="Nanomachines" mergeMode="add">
+  	<displaynameid>STR_TECH_NANOMACHINES_NAME</displaynameid>
     <rollovertextid>STR_TECH_NANOMACHINES_LR</rollovertextid>
     <cost resourcetype="Gold">250.0000</cost>
     <researchpoints>30.0000</researchpoints>
@@ -2908,6 +2960,7 @@
     <icon>resources\atlantean\static_color\technologies\daktyloi_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs><typecount unit="StrategicVesselAssembly" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
       <effect type="Data" action="AreaHeal" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">Dock</target>
@@ -2929,8 +2982,8 @@
       </effect>
     </effects>
 	</tech>
-    <!--  BASTION HUMAN DEVELOPMENT AND EVOLUTION TECH RESEARCHES-->
-	<tech name="MCMT_SVA_ComfortableFireports">
+
+   <tech name="MCMT_SVA_ComfortableFireports">
 		<displaynameid>STR_TECH_COMFORTABLE_FIREPORTS_NAME</displaynameid>
 		<rollovertextid>STR_TECH_COMFORTABLE_FIREPORTS_LR</rollovertextid>
 		<cost resourcetype="Food">200.0000</cost>
@@ -2939,6 +2992,7 @@
 		<status>UNOBTAINABLE</status>
 		<icon>resources\shared\static_color\technologies\enclosed_deck_icon.png</icon>
 		<flag>CountsTowardMilitaryScore</flag>
+    <prereqs><typecount unit="StrategicVesselAssembly" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
 		  <effect type="Data" amount="1.10" subtype="MaximumContained" relativity="BasePercent">
 			<target type="ProtoUnit">AbstractTransportShip</target>
@@ -2954,6 +3008,7 @@
 		  </effect>
 		</effects>	  
 	</tech>
+  
   <tech name="MCMT_SVA_EliteFireports">
 		<displaynameid>STR_TECH_ELITE_FIREPORTS_NAME</displaynameid>
 		<rollovertextid>STR_TECH_ELITE_FIREPORTS_LR</rollovertextid>
@@ -2963,6 +3018,7 @@
 		<status>UNOBTAINABLE</status>
 		<icon>resources\shared\static_color\technologies\enclosed_deck_icon.png</icon>
 		<flag>CountsTowardMilitaryScore</flag>
+    <prereqs><techstatus status="Active">MCMT_SVA_ComfortableFireports</techstatus></prereqs>
 		<effects>
 		  <effect type="Data" amount="1.10" subtype="MaximumContained" relativity="BasePercent">
 			<target type="ProtoUnit">AbstractTransportShip</target>
@@ -2978,6 +3034,7 @@
 		  </effect>
 		</effects>	  
   </tech>
+
   <tech name="MCMT_SVA_LuxuriousFireports">
 		<displaynameid>STR_TECH_LUXURIOUS_FIREPORTS_NAME</displaynameid>
 		<rollovertextid>STR_TECH_LUXURIOUS_FIREPORTS_LR</rollovertextid>
@@ -2987,6 +3044,7 @@
 		<status>UNOBTAINABLE</status>
 		<icon>resources\shared\static_color\technologies\enclosed_deck_icon.png</icon>
 		<flag>CountsTowardMilitaryScore</flag>
+    <prereqs><techstatus status="Active">MCMT_SVA_EliteFireports</techstatus></prereqs>
 		<effects>
 		  <effect type="Data" amount="1.10" subtype="MaximumContained" relativity="BasePercent">
 			<target type="ProtoUnit">AbstractTransportShip</target>
@@ -3008,15 +3066,16 @@
 		  </effect>
 		</effects>	  
   </tech>
-
-  <tech name="ChampionArms">
-    <displaynameid>STR_TECH_CHAMPION_INFANTRY_NAME</displaynameid>
-    <rollovertextid>STR_TECH_CHAMPION_INFANTRY_LR</rollovertextid>
+    <!--  BASTION HUMAN DEVELOPMENT AND EVOLUTION TECH RESEARCHES-->
+	<tech name="ChampionArms">
+    <displaynameid>STR_TECH_CHAMPION_ARMS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_CHAMPION_ARMS_LR</rollovertextid>
     <cost resourcetype="Gold">1000.0000</cost>
     <researchpoints>40.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\shared\static_color\technologies\champion_infantry_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
+    <prereqs><typecount unit="Bastion" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
       <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">InfantryLineUpgraded</target>
@@ -3082,6 +3141,70 @@
       </effect>
     </effects>
   </tech>
+  <tech name="ChampionHooves">
+    <displaynameid>STR_TECH_CHAMPION_HOOVES_NAME</displaynameid>
+    <rollovertextid>STR_TECH_CHAMPION_HOOVES_LR</rollovertextid>
+    <cost resourcetype="Food">700.0000</cost>
+    <cost resourcetype="Gold">200.0000</cost>
+    <researchpoints>40.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\shared\static_color\technologies\champion_cavalry_icon.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <prereqs><techstatus status="Active">ChampionArms</techstatus></prereqs>
+    <effects>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">CavalryLineUpgraded</target>
+      </effect>
+      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">CavalryLineUpgraded</target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">CavalryLineUpgraded</target>
+      </effect>
+      <effect type="SetName" proto="Hippeus" newname="STR_UNIT_CHAMPION_HIPPEUS_NAME">
+      </effect>
+      <effect type="SetName" proto="Prodromos" newname="STR_UNIT_CHAMPION_PRODROMOS_NAME">
+      </effect>
+      <effect type="SetName" proto="Hetairos" newname="STR_UNIT_CHAMPION_HETAIROS_NAME">
+      </effect>
+      <effect type="SetName" proto="RaidingCavalry" newname="STR_UNIT_CHAMPION_RAIDING_CAVALRY_NAME">
+      </effect>
+      <effect type="SetName" proto="Jarl" newname="STR_UNIT_LEGENDARY_JARL_NAME">
+      </effect>
+      <effect type="SetName" proto="Contarius" newname="STR_UNIT_CHAMPION_CONTARIUS_NAME">
+      </effect>
+      <effect type="SetName" proto="WhiteHorseCavalry" newname="STR_UNIT_CHAMPION_WHITE_HORSE_CAVALRY_NAME">
+      </effect>
+      <effect type="SetName" proto="TigerCavalry" newname="STR_UNIT_CHAMPION_TIGER_CAVALRY_NAME">
+      </effect>
+      <effect type="SetName" proto="TigerCavalryDismounted" newname="STR_UNIT_CHAMPION_TIGER_CAVALRY_DISMOUNTED_NAME">
+      </effect>
+	  
+	  <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">CamelRider</target>
+      </effect>
+      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">CamelRider</target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">CamelRider</target>
+      </effect>
+      <effect type="SetName" proto="CamelRider" newname="STR_UNIT_CHAMPION_CAMEL_RIDER_NAME">
+      </effect>
+	  
+	  <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephant</target>
+      </effect>
+      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephant</target>
+      </effect>
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+        <target type="ProtoUnit">WarElephant</target>
+      </effect>
+      <effect type="SetName" proto="WarElephant" newname="STR_UNIT_CHAMPION_WAR_ELEPHANT_NAME">
+      </effect>
+    </effects>
+  </tech>
   <tech name="ChampionRangers">
     <displaynameid>STR_TECH_CHAMPION_RANGERS_NAME</displaynameid>
     <rollovertextid>STR_TECH_CHAMPION_RANGERS_LR</rollovertextid>
@@ -3091,6 +3214,7 @@
     <status>UNOBTAINABLE</status>
     <icon>resources\shared\static_color\technologies\champion_archers_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
+    <prereqs><techstatus status="Active">ChampionHooves</techstatus></prereqs>
     <effects>
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">ArcherLineUpgraded</target>
@@ -3152,69 +3276,6 @@
     </effects>
 	</tech>
 	
-	<tech name="ChampionHooves">
-    <displaynameid>STR_TECH_CHAMPION_HOOVES_NAME</displaynameid>
-    <rollovertextid>STR_TECH_CHAMPION_HOOVES_LR</rollovertextid>
-    <cost resourcetype="Food">700.0000</cost>
-    <cost resourcetype="Gold">200.0000</cost>
-    <researchpoints>40.0000</researchpoints>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\shared\static_color\technologies\champion_cavalry_icon.png</icon>
-    <flag>CountsTowardMilitaryScore</flag>
-    <effects>
-      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">CavalryLineUpgraded</target>
-      </effect>
-      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">CavalryLineUpgraded</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">CavalryLineUpgraded</target>
-      </effect>
-      <effect type="SetName" proto="Hippeus" newname="STR_UNIT_CHAMPION_HIPPEUS_NAME">
-      </effect>
-      <effect type="SetName" proto="Prodromos" newname="STR_UNIT_CHAMPION_PRODROMOS_NAME">
-      </effect>
-      <effect type="SetName" proto="Hetairos" newname="STR_UNIT_CHAMPION_HETAIROS_NAME">
-      </effect>
-      <effect type="SetName" proto="RaidingCavalry" newname="STR_UNIT_CHAMPION_RAIDING_CAVALRY_NAME">
-      </effect>
-      <effect type="SetName" proto="Jarl" newname="STR_UNIT_LEGENDARY_JARL_NAME">
-      </effect>
-      <effect type="SetName" proto="Contarius" newname="STR_UNIT_CHAMPION_CONTARIUS_NAME">
-      </effect>
-      <effect type="SetName" proto="WhiteHorseCavalry" newname="STR_UNIT_CHAMPION_WHITE_HORSE_CAVALRY_NAME">
-      </effect>
-      <effect type="SetName" proto="TigerCavalry" newname="STR_UNIT_CHAMPION_TIGER_CAVALRY_NAME">
-      </effect>
-      <effect type="SetName" proto="TigerCavalryDismounted" newname="STR_UNIT_CHAMPION_TIGER_CAVALRY_DISMOUNTED_NAME">
-      </effect>
-	  
-	  <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">CamelRider</target>
-      </effect>
-      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">CamelRider</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">CamelRider</target>
-      </effect>
-      <effect type="SetName" proto="CamelRider" newname="STR_UNIT_CHAMPION_CAMEL_RIDER_NAME">
-      </effect>
-	  
-	  <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">WarElephant</target>
-      </effect>
-      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">WarElephant</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">WarElephant</target>
-      </effect>
-      <effect type="SetName" proto="WarElephant" newname="STR_UNIT_CHAMPION_WAR_ELEPHANT_NAME">
-      </effect>
-    </effects>
-  </tech>
   <tech name="ChampionEngines">
     <displaynameid>STR_TECH_CHAMPION_ENGINES_NAME</displaynameid>
     <rollovertextid>STR_TECH_CHAMPION_ENGINES_LR</rollovertextid>
@@ -3224,6 +3285,7 @@
     <status>UNOBTAINABLE</status>
     <icon>resources\shared\static_color\technologies\engineers_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
+    <prereqs><techstatus status="Active">ChampionRangers</techstatus></prereqs>
     <effects>
       <effect type="Data" allactions="1" amount="1.25" subtype="Damage" relativity="BasePercent">
         <target type="ProtoUnit">SiegeLineUpgraded</target>
@@ -3251,6 +3313,7 @@
       </effect>
     </effects>
   </tech>
+
     <!-- TECH REWORKS -->
 
     <!-- Greek -->
@@ -4275,6 +4338,7 @@
     <icon>resources\greek\static_color\technologies\dionysia_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">Dionysia</techstatus></prereqs>
     <effects>
       <effect type="Data" action="Gather" amount="1.15" subtype="WorkRate" unittype="AbstractFarm" relativity="BasePercent">
         <target type="ProtoUnit">EconomicUpgraded</target></effect>
@@ -4293,6 +4357,7 @@
     <icon>resources\greek\static_color\technologies\dionysia_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">DionysiaRuralFestival</techstatus></prereqs>
     <effects>
       <effect type="Data" action="Gather" amount="1.15" subtype="WorkRate" unittype="AbstractFarm" relativity="BasePercent">
         <target type="ProtoUnit">EconomicUpgraded</target></effect>
@@ -4310,6 +4375,7 @@
     <icon>resources\greek\static_color\technologies\dionysia_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ChthonicRites</techstatus></prereqs>
     <effects>
       <effect type="Data" amount="0.10" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="2.00" targettype="HumanSoldier" relativity="Assign">
         <target type="ProtoUnit">Hero</target></effect>
@@ -4339,6 +4405,7 @@
     <icon>resources\greek\static_color\technologies\dionysia_icon.png</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">MadnessOfDionysus</techstatus></prereqs>
     <effects>
          <!--greek infernals (hades)-->
       <effect type="Data" amount="2.50" subtype="UnitRegenRate" relativity="Absolute">

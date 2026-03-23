@@ -1,0 +1,120 @@
+<MCMT_Techs>
+⏭ ====================================
+    CivilianPresets
+    BuildingPresets
+    NavalPresets
+    NorsePresets,EgyptianPresets,GreekPresets,AtlanteanPresets,ChinesePresets,JapanesePresets
+⏭ ====================================
+    MCMT_SpecialUnits
+        TempleOfPrimordials_ActivateTech_GodsBeasts
+        TempleOfPrimordials_ActivateTech_Primevals
+        TempleOfPrimordials_ActivateTech_Legends
+        TempleOfPrimordials_ActivateTech_SuperWeapons
+        TempleOfPrimordials_ActivateTech_Return
+⏭ ====================================
+    MCMT_UnitAccelPanels
+        MCMT_Page2
+        MCMT_Page1
+        AutomatonAccel
+👍====================================
+    <ArchaicAgeEgyptian>
+         MCMT_EgyptianRenovation
+            MCMT_Noah_Respawn
+👍====================================
+    MCMT_Researches
+        MCMT_SpecialService
+            MCMT_Landlord_Respawn
+👍====================================
+        <DwarvenArmory>
+            MCMT_RecruitingMountainDwarves
+👍====================================
+        <Architects>
+            MCMT_ArchitectsOfMarley
+👍====================================
+        <AdvancedFortifications>
+           MCMT_AdvancedFortifications_I
+                MCMT_AdvancedFortifications_II
+                    MCMT_AdvancedFortifications_III
+👍====================================
+        <Baolei>
+           Baolei_BuildingAccels
+                Baolei_Page1_0,Baolei_Page2_0
+                Baolei_Page1,Baolei_Page2
+👍====================================
+        <CarrierPigeons>
+            MCMT_OracleWatchers
+👍====================================
+        <TechBuilding>
+            MCMT_DivineArmaments
+            MCMT_NanofiberPlatings
+            MCMT_BowOfOrion
+            MCMT_Anthrax
+            MCMT_PhobosSpearOfPanic
+            MCMT_DeimosSwordOfDread
+            MCMT_EnyosBowOfHorror
+            MCMT_Mjolnir
+            MCMT_AegisShield
+            MCMT_Stimulants
+            MCMT_Absorbants
+            MCMT_Compensations
+            MCMT_MuscleTraining
+            MCMT_VibrantLand
+            MCMT_MonstrousRage
+
+            MCMT_TowerOfBabel
+            MCMT_MithrilArmaments
+            <GuardTower>
+                MCMT_TurretInstallation
+            MCMT_DivineProtection
+            MCMT_AssistedTradeNetworks      
+👍====================================
+        <Bastion>
+            ChampionArms
+                ChampionHooves
+                    ChampionRangers
+                        ChampionEngines
+👍====================================
+        <StrategicVesselAssembly>
+           MCMT_Explosives
+           NavalDefensiveSystems
+           Nanomachines
+           MCMT_SVA_ComfortableFireports
+                MCMT_SVA_EliteFireports
+                    MCMT_SVA_LuxuriousFireports
+👍====================================
+        <WarBunker>
+            AntiArmorLogistics
+            AntiAirLogistics
+👍====================================
+        <MCMT_DwarvenForge>
+            MCMT_GiantSlayingTechs
+            MCMT_ThunderSlayingTechs
+👍====================================
+        <ChthonicRites>
+            MadnessOfDionysus
+                EldritchSects
+        <Dionysia>
+            DionysiaRuralFestival
+                DionysiaUrbanFestival
+👍====================================
+    <Ambassadors>
+        MCMT_FinancialDevelopmentUpgradeI
+            MCMT_FinancialDevelopmentUpgradeII
+                MCMT_FinancialDevelopmentUpgradeIII, <CyberTechWorldFinancialCenter>
+                    MCMT_FieldWorkers
+                    MCMT_ExpertEngineers
+                    MCMT_NewBusinessContracts
+                    MCMT_IntercontinentalShipments
+                    MCMT_ElectricityAndEnergyAgreements
+                    MCMT_FurnitureAndMaterialTransactions
+                    MCMT_HigherRatesHigherSteaks
+                    MCMT_HigherRatesHigherStates
+                    MCMT_HigherRatesHigherSticks
+                    MCMT_HigherRatesHigherStakes
+==================================== ==================================== ========================================
+<name>: building or existing tech
+👍: new prerequisites applied
+⏭: no prerequisite applied
+==================================== ============ EXAMPLES ============== ========================================
+<prereqs><typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
+<prereqs><techstatus status="Active">MCMT_EgyptianRenovation</techstatus></prereqs>
