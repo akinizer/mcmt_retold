@@ -523,9 +523,66 @@
 ==================== REWORK-PLANS ======================================
 ==============================================================================
 === SPECIAL TECHS: Prerequisites
+* General
 - Tech Prereqs
 - Unit Prereqs
 - Accels: AsgardianHillfort (all civ), CitadelCenter (mcmt techs), Bastion Builders (jap civ)
+
+* Norse Settlements
+- Orc Settlement -> Summon Orcs (titanymir, rescale, infantry), Orc Brute (titanymir, rescale, Hero), hp+, hackarmor+, trainrate+
+- Elven Settlement -> maxrange+, pierceattack+, projectile arrow
+- Dwarven Settlement -> crusharmor+, los++, projectile axe, techenable (KingMoradin, hobbits, loki)
+- Jotun Settlement -> piercearmor+, projectile ice, progfreeze, summon jotun elites
+- Muspell Settlement -> piercearmor+, projectile fireball, vfxfire, summon firelings (fire giant, rescale, melee, rof, hackdamage)
+- Lordly Settlement -> Summon Bodyguards (huskarl, infantry hero, x5, hp+, piercearmor+, bonus vs giants), Summon rof, los+
+
+* Servitude Techs
+- Servitude: 1000 gold, change name (Servant)
+    - VillagerNorse: cost-, hp-, armor-, movementspeed-, woodgatherrate+
+    - VillagerEgyptian: cost-, hp-, armor-, movementspeed-, goldgatherrate+
+    - VillagerGreek: cost-, hp-, armor-, movementspeed-, favorgatherrate+
+    - VillagerChinese: cost-, hp-, armor-, movementspeed+
+
+- Modern Slavery: 1000 gold, 200 food, change name (attendant), enabletech (Overworking, transform Overworker decay hp, gatherrate+)
+    - VillagerChinese: movementspeed+, hackattack+, pierceattack+
+
+- Human Rights: 1000 gold
+    - VillagerNorse: gold cost, hp+, capacity+
+    - VillagerEgyptian: gold cost, hp+, capacity+
+    - VillagerGreek: gold cost, hp+, capacity+
+    - VillagerChinese: gold cost, hp+, capacity+
+    - VillagerAtlantean: gold cost, hp+, all gatherrate, capacity+
+    
+- Employment Rights: 1000 gold
+    - AbstractVillager: capacity+, bonus gold on dropoff, heal on dropoff
+
+- Veterancy Promotion I: 1250 gold
+    - AbstractVillager: passive gold income, activatetech Robustness (bonus gold on dropoff)
+
+- Veterancy Promotion II: 1250 gold
+    - AbstractVillager: passive gold income, activatetech QualityControl (bonus gold on dropoff), Efficiency (passive gold income)
+
+- Veterancy Promotion III: 1250 gold, enable tech (Retirement, transform Retired, movementspeed-, hp-, attack assign 0, activate 0 woodgather foodgather goldgather, favor gatherrate+, repairrate+)
+    - AbstractVillager: passive gold income, activatetech Professionalism (all gather rof)
+
+* Hero Equipment Techs
+- Helm of Darkness: Perseus gains infiltraion
+- Gaze of Medusa: Perseus gains petrification
+
+=== INFANTRY UPGRADE TECHS: name, armor, art model changes
+- champion infantry -> elite infantry
+    hoplite -> spartans
+    hypaspist -> athenians
+    daughters of artemis
+- hunts of artemis
+    kretan minotaur
+    erymanthian boar
+    kalydonian boar
+    kallisto bear
+    hind of keryneia
+    krokottas hyena
+    lykaon wolf
+    nemean lion
 
 === DEMETER: NEW
 * Ship: FishingShip
@@ -863,7 +920,6 @@ Atlantean
     Solar Hero: Prometheus + Hyperion + Helios
     Witch Hero: Oceanos + Theia + Hekate
     Cosmic Hero: Oceanus + Theia + Atlas
-
     
 	
 	
