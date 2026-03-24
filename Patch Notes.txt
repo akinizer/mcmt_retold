@@ -522,9 +522,47 @@
 ==============================================================================
 ==================== REWORK-PLANS ======================================
 ==============================================================================
-=== SPECIAL TECHS: Prerequisites
+=== MORE REWORKS
 * General
 - Accels: AsgardianHillfort (all civ), CitadelCenter (mcmt techs), Bastion Builders (jap civ)
+
+* General Naval
+- Heavy Warship, Champion Warship: HackArmor
+- Conscript Sailors: MaxVelocity, RangedAttack, Pierce Armor    
+- Manufactury I,II,III: Ship train time, MeleeWarship HackAttack
+- SiegeWarship: (non-norse, close range) arrow 
+- MeleeWarship: (non-norse, mid range) arrow, (norse) stronger melee, (greek) [ram attacki hackarmor+]
+- ArrowShip: (norse, close range) axe, (greek, close range) javelin, (greek) [charge attack projectile lightning, bounty on arrowships, maxcontainedspeed, attack modes, arrow & javelin]
+- TransportShip: (deck upgrade, bounty to slayer, tradeunit) merchantship
+* General Infantry
+- Levy & Conscript -> hp, rof, trainspeed
+    - Infantry, Ranged Soldiers, Cavalry 
+    - Stable Soldiers, Dojo Soldiers, Guardhouse Soldiers
+    - Baolei Soldiers, Migdol Soldiers, Hillfort Soldiers, Palace Soldiers
+    - Barrack Soldiers -> nefru, menfyt, nakhtu-aa
+    - Great Hall Soldiers, Longhouse Soldiers
+    - Counter Soldiers
+
+- Vikings (Norse): RaiderCavalry -> HumanSoldier, reward Food and Wood, name change (Viking Ideology)
+- Spoils of War (Japanese): minor god restriction removal
+
+* Egypt
+- Mercenary Camp
+    - Nubian Horseman
+    - Nubian Spearman
+    - Nubian Commander: hero
+
+- Greatest of Fifty: summon hero
+    - Greatest of Fifty -> Troop Commander -> Liuetenant Commander -> General Commander
+
+- Bowman: chariot_archer_rider.xml
+- Mercenaries: rename "Nubian Mercenaries"
+
+=== MORE SPECIAL REWORKS
+* Japanese
+- Miyamoto Musashi: samurai hero, attackmode arrow, abiliybehemoth
+- Oda Nobunaga: shogun hero, ally-damage aura, slow aura
+- Silo: food autogather
 
 * Norse Settlements
 - Orc Settlement -> Summon Orcs (titanymir, rescale, infantry), Orc Brute (titanymir, rescale, Hero), hp+, hackarmor+, trainrate+
@@ -541,7 +579,7 @@
     - VillagerGreek: cost-, hp-, armor-, movementspeed-, favorgatherrate+
     - VillagerChinese: cost-, hp-, armor-, movementspeed+
 
-- Modern Slavery: 1000 gold, 200 food, change name (attendant), enabletech (Overworking, transform Overworker decay hp, gatherrate+)
+- Prisoners of War: 1000 gold, 200 food, change name (attendant), enabletech (Overworking, transform Overworker decay hp, gatherrate+)
     - VillagerChinese: movementspeed+, hackattack+, pierceattack+
 
 - Human Rights: 1000 gold
@@ -563,25 +601,107 @@
 - Veterancy Promotion III: 1250 gold, enable tech (Retirement, transform Retired, movementspeed-, hp-, attack assign 0, activate 0 woodgather foodgather goldgather, favor gatherrate+, repairrate+)
     - AbstractVillager: passive gold income, activatetech Professionalism (all gather rof)
 
-* Hero Equipment Techs
+* Captains
+- Military Upgrades on accel
+
+=== HERO TECHS
 - Helm of Darkness: Perseus gains infiltraion
 - Gaze of Medusa: Perseus gains petrification
 
 === INFANTRY UPGRADE TECHS: name, armor, art model changes
 - champion infantry -> elite infantry
-    hoplite -> spartans
-    hypaspist -> athenians
+    hoplite -> spartan
+    hypaspist -> athenian
     daughters of artemis
-- hunts of artemis
-    kretan minotaur
-    erymanthian boar
-    kalydonian boar
-    kallisto bear
-    hind of keryneia
-    krokottas hyena
-    lykaon wolf
-    nemean lion
+- hunts of artemis: summon (temple, tougher variants) -> hp+, rescale, hackarmor+, handattack+, vfxbleed
+    kretan minotaur (hunt): minotaur model
+    erymanthian boar (hunt): boar model, slow
+    kalydonian boar (hunt): boar model, fast
+    kallisto bear (hunt): bear model, piercearmor+
+    hind of keryneia (hunt): elk model, attack, offensive, throw
+    krokottas hyena (hunt): hyena model, fast
+    lykaon wolf (hunt): wolf model
+    nemean lion (hunt): nemean lion model, piercearmor 99%, crusharmor 15%
 
+* Major Gods - Wonder Techs
+- CHRONOS: 
+    - titanomachy: myth units, defense, hp+
+- ORANOS: 
+    - blessing from heavens: flying units, defense+, hp+, los+
+- GAIA: nature units (servant, dryad, hamadryad), defense+, hp+
+    - Channels: (abstractvillager) maxvelocity 100%+
+    - Nature's Protection (humansoldier): piercearmor+, regeneration, ThornedWall
+    - Mother Tree (Hesperides Tree): enableaction areaheal 
+
+- RA
+    - Cycle of Creation (priest, abstractpharaoh): los+, maxvelocity, unitshield, enable tech Reincarnation
+- ISIS
+    - Nile's Blessing: Laborer, FishingShip food gatherrate+
+    - True Names: Aset, Wsjr
+- SET (wadjet, scarab, phoenix, warturtle, petsuchos, roc)
+    - Set's Presence: animalistic units, hp+, maxvelocity 0.5+
+
+- ZEUS
+    - Children of Zeus (heroes): vfxlightning on mythunits
+- POSEIDON
+    - Children of Sea (heroes): recovery
+- HADES
+    - Children of Underworld (heroes): resurrect
+- DEMETER
+    - Guardian of Harvests: summon Holo, gretahalberd model, transform lykaonwolf, aura farm gatherrate+
+
+* Minor Gods
+    - Osiris
+        - New Kingdom: enable techs
+            - Deshret (Lower Egypt): red crown of set, might, eagle, humansoldiers bonusdamage vs humansoldiers + 0.5
+            - Hedjet (Upper Egypt): white crown of nekhebet, order vulture, humansoldiers trainspeed+
+            - Pschent (Deshret + Hedjet): double crown & unification, humansoldiers (hp, bonusdamage military), pharaohs (maxrange + 20) 
+        - Spirit of Maat: rename "Ostrich Feathers of Maat"
+        - Atef Crown: rename "Cult of Osiris", justice enable tech
+            - Atef Crown: Hedjet + Cult of Osiris, resurrection & circulation, relocated effects of atef crown
+    - Theia: 
+        - Hesperides Tree: add Hamadryad, add walkingberrybush x5
+    - Oceanos: naval mythunit improvement
+    - Hyperion:
+        - SonsOfTheSun: name change (Oracle of Hyperion), OracleHero (onhiteffect vfxfire, los+)
+        - PropethicSight: relocate to Hyperion
+    - Hekate
+        - Coven of Witches (lampades, caladria, servant, circe, jorogumo): maxrange, chargedattack lightning 
+        - Three Sisters (lampades hero): lampades x3, los, unitshield, piercearmor 99%, crusharmor 5%
+    - Atlas
+        - Agents of Atlas: summon, evolve (secret of titans)
+            - Bear Girl -> Lunar Bear: bear model
+            - Brute -> Incredible Brute: centimanus model
+            - Silvan Samurai -> Sword Buster: samurai model
+            - Foxy -> Fox Centurion: kitsune model
+            - Waver -> Tsunderwave : servant model
+            - Elune -> Elune Frost: yuki-onna model
+            - Spider-Onna -> Lady Webster: jorogumo model
+            - Aviana -> Aviana Ero -> caladria model
+        - Oracle: Vision of Atlas
+            - Oracle of Atlas (oraclehero): los 100, maxvelocity 1.0
+
+    - Hel & Persephone
+        - improves undeasd: draugr, mummy, minion, shinigami, shinigamirevenant, wretch 
+
+    - Ares
+        - Spartan Training (hoplite): hp, maxvelocity, piercearmor, name change (Spartiate)
+        - Peloponnesian War Preparations (infantry): trainrate, hp
+        - Wolf of Sparta: hoplite hero, throw, javelinthrow, bonusdamage infantry
+    - Athena
+        - Athenian Training (hypaspist): hp, maxvelocity, piercearmor, name change (Athenian Polemarch)
+    - Dionysus: 
+        - Centauromachy (Centaurs): stronger, bonusdamage mythunit, name change (Lapith)
+    - Aphrodite:
+        - Titaness
+        - Beauty Contest (Atalanta, Hippolyta, Medusa, Siren, Caladria, Lampades, Nereid): hp+, onhiteffect entice
+    - Atlantean
+        - MurmilloHero: (upgrade) Arena Champion, enableaction javelinthrow
+        
+    - Amaterasu
+    - Tsukuyomi
+    - Susanoo
+        - Slayer of HumanSoldier vs Titan
 === DEMETER: NEW
 * Ship: FishingShip
     - trade
