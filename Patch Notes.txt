@@ -520,13 +520,43 @@
         - Onmyoji:3
 
 ==============================================================================
-==================== REWORK-PLANS ======================================
+==================== REWORK-PLANS ============================================
 ==============================================================================
-=== MORE REWORKS
-* General
-- Accels: AsgardianHillfort (all civ), CitadelCenter (mcmt techs), Bastion Builders (jap civ)
 
-* General Naval
+=== Amazons
+* Tech
+- WatchTower -> Amazoness Vanguards (maxrange, pierceattack, watchtower & fortress)
+- ArcheryRange -> Amazoness Training (maxvelocity, maxrange, amazoness & hippolyta)
+
+* Building
+- ArcheryRange -> Amazoness (demeter & poseidon)
+
+=== Elite Infantries
+* Tech
+- MilitaryAcademy -> Spartan Training (ares): champion hoplite -> spartan
+- MilitaryAcademy -> Pelaponesian War Preparations (ares): champion hypaspist -> athenian
+- MilitaryAcademy -> daughters of artemis (prereqs Hunts of Artemis)
+- Mercenary Camp (egypt) -> Nubian Horseman, Nubian Spearman, Nubian Commander, Bowman (chariot_archer_rider.xml)
+
+=== Hero Techs
+- Helm of Darkness: Perseus gains infiltraion
+- Gaze of Medusa: Perseus gains petrification
+- Greatest of Fifty
+    - barracks -> summon hero spearman
+    - Greatest of Fifty -> Troop Commander -> Liuetenant Commander -> General Commander
+
+=== Myth Techs
+- Temple -> Hunts of Artemis (hp+, rescale, hackarmor+, handattack+, vfxbleed):
+    kretan minotaur (hunt): minotaur model
+    erymanthian boar (hunt): boar model, slow
+    kalydonian boar (hunt): boar model, fast
+    kallisto bear (hunt): bear model, piercearmor+
+    hind of keryneia (hunt): elk model, attack, offensive, throw
+    krokottas hyena (hunt): hyena model, fast
+    lykaon wolf (hunt): wolf model
+    nemean lion (hunt): nemean lion model, piercearmor 99%, crusharmor 15%
+
+=== Naval Techs
 - Heavy Warship, Champion Warship: HackArmor
 - Conscript Sailors: MaxVelocity, RangedAttack, Pierce Armor    
 - Manufactury I,II,III: Ship train time, MeleeWarship HackAttack
@@ -534,7 +564,8 @@
 - MeleeWarship: (non-norse, mid range) arrow, (norse) stronger melee, (greek) [ram attacki hackarmor+]
 - ArrowShip: (norse, close range) axe, (greek, close range) javelin, (greek) [charge attack projectile lightning, bounty on arrowships, maxcontainedspeed, attack modes, arrow & javelin]
 - TransportShip: (deck upgrade, bounty to slayer, tradeunit) merchantship
-* General Infantry
+
+=== Infantry Techs
 - Levy & Conscript -> hp, rof, trainspeed
     - Infantry, Ranged Soldiers, Cavalry 
     - Stable Soldiers, Dojo Soldiers, Guardhouse Soldiers
@@ -546,19 +577,13 @@
 - Vikings (Norse): RaiderCavalry -> HumanSoldier, reward Food and Wood, name change (Viking Ideology)
 - Spoils of War (Japanese): minor god restriction removal
 
-* Egypt
-- Mercenary Camp
-    - Nubian Horseman
-    - Nubian Spearman
-    - Nubian Commander: hero
-
-- Greatest of Fifty: summon hero
-    - Greatest of Fifty -> Troop Commander -> Liuetenant Commander -> General Commander
-
-- Bowman: chariot_archer_rider.xml
+=== Name Updates
 - Mercenaries: rename "Nubian Mercenaries"
 
-=== MORE SPECIAL REWORKS
+=== MORE REWORKS
+* General
+- Accels: AsgardianHillfort (all civ), CitadelCenter (mcmt techs), Bastion Builders (jap civ)
+
 * Japanese
 - Miyamoto Musashi: samurai hero, attackmode arrow, abiliybehemoth
 - Oda Nobunaga: shogun hero, ally-damage aura, slow aura
@@ -572,6 +597,83 @@
 - Muspell Settlement -> piercearmor+, projectile fireball, vfxfire, summon firelings (fire giant, rescale, melee, rof, hackdamage)
 - Lordly Settlement -> Summon Bodyguards (huskarl, infantry hero, x5, hp+, piercearmor+, bonus vs giants), Summon rof, los+
 
+* Captains
+- Military Upgrades on accel
+
+* Major Gods - Wonder Techs
+- KRONOS: 
+    - titanomachy: myth units, defense, hp+
+- ORANOS: 
+    - blessing from heavens: flying units, defense+, hp+, los+
+- GAIA: nature units (servant, dryad, hamadryad), defense+, hp+
+    - Channels: (abstractvillager) maxvelocity 100%+
+    - Nature's Protection (humansoldier): piercearmor+, regeneration, ThornedWall
+    - Mother Tree (Hesperides Tree): enableaction areaheal 
+
+- RA
+    - Cycle of Creation (priest, abstractpharaoh): los+, maxvelocity, unitshield, enable tech Reincarnation
+- ISIS
+    - Nile's Blessing: Laborer, FishingShip food gatherrate+
+    - True Names: Aset, Wsjr
+- SET (wadjet, scarab, phoenix, warturtle, petsuchos, roc)
+    - Set's Presence: animalistic units, hp+, maxvelocity 0.5+
+
+- ZEUS
+    - Children of Zeus (heroes): vfxlightning on mythunits
+- POSEIDON
+    - Children of Sea (heroes): recovery
+- HADES
+    - Children of Underworld (heroes): resurrect
+- DEMETER
+    - Guardian of Harvests: summon Holo, gretahalberd model, transform lykaonwolf, aura farm gatherrate+
+
+=== DISMOUNT TECHS
+    - rate: 0.85
+    * japanese soldier (code of honor)
+    - NaginataRider: spawn YariSpearman x1
+    - YumiHorseArcher: spawn YumiArcher x1
+    - Daimyo: spawn SamuraiHero x1 -> new special hero
+    - Shogun: spawn SamuraiHero x1 -> new special hero
+    - Bushi: spawn SamuraiHero x1 -> new special hero
+    * chinese soldier (tactical advance)
+    - TerracottaRider: spawn TerracottaInfantry x1 -> new special unit
+    - XuanWu: spawn serpent / serpentsea x1
+    - JianZiya: spawn Sage x1
+    - WhiteHorseCavalry: spawn GeHalberdier x1 
+    * greek soldier (footsoldier superiority)
+    - Hippeus: spawn Hypaspist x1 
+    - Prodromos: spawn Militia x1 
+    - Kataskopos: spawn VillagerGreek x1 
+    - Hetairos: spawn Hoplite x1 
+    - Achilles: spawn Regent / AchillesDismounted / RoyalKnight x1 
+    - Harpy: spawn HarpyGrounded -> new special unit
+    * egyptian soldier (desert's children)
+    - ChariotArcher: spawn Slinger x1 
+    - CamelRider: spawn Spearman x1 
+    * norse soldier (viking resilience)
+    - RaidingCavalry -> spawn Hirdman x1
+    - Jarl: spawn HuskarlHero x1 -> new special unit
+    - PortableRam: spawn Huskarl x2
+    * atlantean soldier (unyielding resolve)
+    - Turma: spawn Arcus x1
+    - Contairus: spawn Murmillo x1
+
+=== EXPLOSIVE TECHS
+    * mechanicals
+    - Ship,MechanicalOxCaravan
+    - FireSiphon,Cheiroballista,PortableRam,OxCart,SiegeTower,Helepolis,FireArcher,ChuKoNu
+    - Automaton,Colossus,BattleBoar,Wanyudo
+    - Onmyoji
+    * infernal
+    - FireGiant,Promethean,Fafnir,Nidhogg,Phoenix,PhoenixEgg,PhoenixFromEgg,GauntletChaosFlamingMonkey,AnimalOfSet
+    - Qiling,Taotie,Asura,Kitsune,Shinigami
+    * structures
+    - dropsites,abstracttower,abstractfortress
+    * special
+    - nukecannon
+
+
+=== COMPLEX REWORKS
 * Servitude Techs
 - Servitude: 1000 gold, change name (Servant)
     - VillagerNorse: cost-, hp-, armor-, movementspeed-, woodgatherrate+
@@ -600,55 +702,6 @@
 
 - Veterancy Promotion III: 1250 gold, enable tech (Retirement, transform Retired, movementspeed-, hp-, attack assign 0, activate 0 woodgather foodgather goldgather, favor gatherrate+, repairrate+)
     - AbstractVillager: passive gold income, activatetech Professionalism (all gather rof)
-
-* Captains
-- Military Upgrades on accel
-
-=== HERO TECHS
-- Helm of Darkness: Perseus gains infiltraion
-- Gaze of Medusa: Perseus gains petrification
-
-=== INFANTRY UPGRADE TECHS: name, armor, art model changes
-- champion infantry -> elite infantry
-    hoplite -> spartan
-    hypaspist -> athenian
-    daughters of artemis
-- hunts of artemis: summon (temple, tougher variants) -> hp+, rescale, hackarmor+, handattack+, vfxbleed
-    kretan minotaur (hunt): minotaur model
-    erymanthian boar (hunt): boar model, slow
-    kalydonian boar (hunt): boar model, fast
-    kallisto bear (hunt): bear model, piercearmor+
-    hind of keryneia (hunt): elk model, attack, offensive, throw
-    krokottas hyena (hunt): hyena model, fast
-    lykaon wolf (hunt): wolf model
-    nemean lion (hunt): nemean lion model, piercearmor 99%, crusharmor 15%
-
-* Major Gods - Wonder Techs
-- CHRONOS: 
-    - titanomachy: myth units, defense, hp+
-- ORANOS: 
-    - blessing from heavens: flying units, defense+, hp+, los+
-- GAIA: nature units (servant, dryad, hamadryad), defense+, hp+
-    - Channels: (abstractvillager) maxvelocity 100%+
-    - Nature's Protection (humansoldier): piercearmor+, regeneration, ThornedWall
-    - Mother Tree (Hesperides Tree): enableaction areaheal 
-
-- RA
-    - Cycle of Creation (priest, abstractpharaoh): los+, maxvelocity, unitshield, enable tech Reincarnation
-- ISIS
-    - Nile's Blessing: Laborer, FishingShip food gatherrate+
-    - True Names: Aset, Wsjr
-- SET (wadjet, scarab, phoenix, warturtle, petsuchos, roc)
-    - Set's Presence: animalistic units, hp+, maxvelocity 0.5+
-
-- ZEUS
-    - Children of Zeus (heroes): vfxlightning on mythunits
-- POSEIDON
-    - Children of Sea (heroes): recovery
-- HADES
-    - Children of Underworld (heroes): resurrect
-- DEMETER
-    - Guardian of Harvests: summon Holo, gretahalberd model, transform lykaonwolf, aura farm gatherrate+
 
 * Minor Gods
     - Osiris
@@ -702,11 +755,8 @@
     - Tsukuyomi
     - Susanoo
         - Slayer of HumanSoldier vs Titan
-=== DEMETER: NEW
-* Ship: FishingShip
-    - trade
 
-=== JAPANESE: NEW
+=== JAPANESE
 * Special: include japanese among effects
 - ChampionArms, ChampionHooves, ChampionEngines, ChampionRangers
 - PhobosSpearOfPanicMk2: japanese spear units
@@ -807,6 +857,7 @@
         - GalesFury
         - SeasideInfiltrators
         - AsymmetricalBows: enable archer proximity attack
+        - Shinobi - Bushi
     - Siege:
         - SumoTraining: Oyumi,SiegeCrossbow,Catapult,Petrobolos,CheiroBallista,Ballista
         - MechanicalArtisans: 
@@ -832,9 +883,15 @@
         - visualscale, advancedfortificationsI-II-III
     - Wonder:
         - name
-* New Tech
-    - Honor: dismount (Daimyo,Shogun,YuriHorseArcher,NaginataRider)
-    - Samurai-Bushi relation
+
+* ATTACK SWITCH TECHS
+    * Samurai
+    - DefaultStance
+    - HeavyStance: rof-, hackattack+, divineattack 1
+    * Shinobi
+    - DefaultStance
+    - AssassinationStance: rof+, bonus humansoldier, nerf mythunit, hero   
+
 * Campaign Hero
     - Harumoto (shogun),Tatsuro (father),Sojobo (tengu),Yasuko(girl), Akari(samurai,katana,spear)
     - Kagemasa (shogun,sword,spear,yamatanoorichi),Magumo (jorogumo),ShutenDoji (oni,metalbat,heavenlyspear),YukiOnna
@@ -853,7 +910,6 @@
     - TownWall(short,long,connector),ToriiGate,KusanagiNoTsurugi
     - ShrineMiniature,HeavenlyJeweledSpear,KagemasaSword
     - SnowMonkey,GreenPheasant,JapaneseWolf,Serow,SpottedDeerSPC
-* Model Art
 * God Power
     - SolarShield: Unit -> Building
 * New Special Hero
@@ -863,7 +919,8 @@
 * Nature
     - resource rework, obscurion (japanese and chinese trees)
 
- === GROUP TRAIN TECHS
+=== EVEN MORE COMPLEX REWORKS: 
+* GROUP TRAIN TECHS
     * egyptan demigod
     - createunit monumentgods
         - son of ra
@@ -907,57 +964,6 @@
     - createunit murmillo x6 infinitetech fortress
     - createunit destroyer x5 infinitetech fortress
     - createunit contairus x8 infinitetech fortress
-
-=== DISMOUNT TECHS
-    - rate: 0.85
-    * japanese soldier
-    - NaginataRider: spawn YariSpearman x1
-    - YumiHorseArcher: spawn YumiArcher x1
-    - Daimyo: spawn SamuraiHero x1 -> new special hero
-    - Shogun: spawn SamuraiHero x1 -> new special hero
-    - Bushi: spawn SamuraiHero x1 -> new special hero
-    * chinese soldier
-    - TerracottaRider: spawn TerracottaInfantry x1 -> new special unit
-    - XuanWu: spawn serpent / serpentsea x1
-    - JianZiya: spawn Sage x1
-    - WhiteHorseCavalry: spawn GeHalberdier x1 
-    * greek soldier
-    - Hippeus: spawn Hypaspist x1 
-    - Prodromos: spawn Militia x1 
-    - Kataskopos: spawn VillagerGreek x1 
-    - Hetairos: spawn Hoplite x1 
-    - Achilles: spawn Regent / AchillesDismounted / RoyalKnight x1 
-    - Harpy: spawn HarpyGrounded -> new special unit
-    * egyptian soldier
-    - ChariotArcher: spawn Slinger x1 
-    - CamelRider: spawn Spearman x1 
-    * norse soldier
-    - RaidingCavalry -> spawn Hirdman x1
-    - Jarl: spawn HuskarlHero x1 -> new special unit
-    - PortableRam: spawn Huskarl x2
-    * atlantean soldier
-    - Turma: spawn Arcus x1
-    - Contairus: spawn Murmillo x1
-
-    === ATTACK SWITCH TECHS
-    * Samurai
-    - DefaultStance
-    - HeavyStance: rof-, hackattack+, divineattack 1
-    * Shinobi
-    - DefaultStance
-    - AssassinationStance: rof+, bonus humansoldier, nerf mythunit, hero
-
-=== EXPLOSIVE TECHS
-    * mechanicals
-    - Ship,MechanicalOxCaravan
-    - FireSiphon,Cheiroballista,PortableRam,OxCart,SiegeTower,Helepolis,FireArcher,ChuKoNu
-    - Automaton,Colossus,BattleBoar,Wanyudo
-    - Onmyoji
-    * infernal
-    - FireGiant,Promethean,Fafnir,Nidhogg,Phoenix,PhoenixEgg,PhoenixFromEgg,GauntletChaosFlamingMonkey,AnimalOfSet
-    - Qiling,Taotie,Asura,Kitsune,Shinigami
-    * structures
-    - dropsites,abstracttower,abstractfortress
 
 === TRADE UPGRADES
     <tech name="LeatherWrapsUpgrade" orderhint="0">
@@ -1139,7 +1145,6 @@
 * Special Unit
 bragi (hero, god) -> orpheus model
 chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
-nukecannon -> destruct on-death
 robots: 
     chaos drone (infect,selfdestruct,spawn onkill,crawler model,melee,anti-vehicle,amphibious,fast,light armor)
 drones:
