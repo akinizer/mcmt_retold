@@ -520,19 +520,17 @@
         - Onmyoji:3
 
 21. Amazons Patch Reworks
+* Tech
+AmazonVanguards: tower and fortress, precision, range, los improvements, requires crenelletions, guard tower, civ (Greek or Atlantean)
+AmazonTraining: enables AmazonMarksman in ArcheryRange and CounterBarracks
+AmazonTraining_I,II,III: upgrades AmazonMarksman and Hippolyta, maxrange, train speed, projectile speed, directprojectile
+
+* Unit
+ArcheryRange, CounterBarracks -> AmazonMarksman: Elite archers from Amazon Forests with special tech upgrades that also include Hippolyta 
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
-
-=== Amazons
-* Tech
-- WatchTower -> Amazoness Vanguards (maxrange, pierceattack, watchtower & fortress)
-- ArcheryRange -> Amazoness Training (maxvelocity, maxrange, amazoness & hippolyta)
-
-* Building
-- ArcheryRange -> Amazoness (demeter & poseidon)
-
 === Elite Infantries
 * Tech
 - MilitaryAcademy -> Spartan Training (ares): champion hoplite -> spartan
