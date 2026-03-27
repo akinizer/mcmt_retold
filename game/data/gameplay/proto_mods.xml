@@ -8377,6 +8377,7 @@
 		<unittype>AbstractWall</unittype>
 
 		<tech row="0" column="0">MCMT_OracleWatchers</tech>
+		<tech row="0" column="2">MCMT_AmazonVanguards</tech>
 		<buildlimit>10</buildlimit>
 
 		<contain>ArcherLineUpgraded</contain>
@@ -8585,6 +8586,30 @@
 		<tech row="2" column="2">ThunderingHooves</tech>
 		<tech row="2" column="3">SonsOfSleipnir</tech>
 		<tech row="2" column="4">TwilightOfTheGods</tech>
+	</unit>
+	<unit name="ArcheryRange">		
+		<train row="0" column="2" mergeMode="add">AmazonMarksman</train>
+		
+		<tech mergeMode="remove">LevyRangedSoldiers</tech>
+		<tech mergeMode="remove">ConscriptRangedSoldiers</tech>		
+		<tech row="1" column="2" mergeMode="add">MCMT_AmazonTraining</tech>
+		<tech row="1" column="2" mergeMode="add">MCMT_AmazonTraining_I</tech>
+		<tech row="1" column="2" mergeMode="add">MCMT_AmazonTraining_II</tech>
+		<tech row="1" column="2" mergeMode="add">MCMT_AmazonTraining_III</tech>
+		<tech row="1" column="5" mergeMode="add">LevyRangedSoldiers</tech>
+    	<tech row="1" column="5" mergeMode="add">ConscriptRangedSoldiers</tech>
+	</unit>
+	<unit name="CounterBarracks">		
+		<train row="0" column="3" mergeMode="add">AmazonMarksman</train>
+			
+		<tech mergeMode="remove">LevyCounterSoldiers</tech>
+		<tech mergeMode="remove">ConscriptCounterSoldiers</tech>		
+		<tech row="1" column="3" mergeMode="add">MCMT_AmazonTraining</tech>		
+		<tech row="1" column="3" mergeMode="add">MCMT_AmazonTraining_I</tech>
+		<tech row="1" column="3" mergeMode="add">MCMT_AmazonTraining_II</tech>
+		<tech row="1" column="3" mergeMode="add">MCMT_AmazonTraining_III</tech>
+		<tech row="1" column="5" mergeMode="add">LevyCounterSoldiers</tech>
+    	<tech row="1" column="5" mergeMode="add">ConscriptCounterSoldiers</tech>
 	</unit>
 	<unit name="MilitaryCampTower">
 		<unittype>AbstractTower</unittype>
@@ -19819,6 +19844,92 @@
 			<modifyprotoid>Pegasus</modifyprotoid>
 		</protoaction>
     </unit>
+
+	<unit name="AmazonMarksman" orderhint="4" mergeMode="add">
+		<displaynameid>STR_UNIT_AMAZON_MARKSMAN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_AMAZON_MARKSMAN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_AMAZON_MARKSMAN_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\amazonarcher_icon.png</icon>
+		<animfile>greek_demeter\units\archery\amazonarcher\amazonarcher.xml</animfile>
+		<soundsetfile>greek_demeter\vo\amazon_archer\amazonarcher.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armored</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>28.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>180.0000</initialhitpoints>
+		<maxhitpoints>180.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.5000</maxvelocity>
+		<los>32.0000</los>
+		<cost resourcetype="Wood">85.0000</cost>
+		<cost resourcetype="Gold">65.0000</cost>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.2000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeAffectedBySunRay</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CommonCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.900000</rof>
+			<damage type="Pierce">18.000000</damage>
+			<damagebonus type="Building">2.200000</damagebonus>
+			<maxrange>26.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.634</projectilechainbouncereduction>
+			<projectilechainbouncerange>5</projectilechainbouncerange>
+			<onhiteffect active="0" type="DamageOverTime" duration="6.000000">
+				<damage type="Divine">0.2500000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+	</unit>
 	<!-- Norse Special Units -->
 	 <unit name="ValkyrieWarrior" mergeMode="add">
 		<displaynameid>STR_UNIT_VALKYRIE_WARRIOR_NAME</displaynameid>

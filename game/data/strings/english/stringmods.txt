@@ -541,6 +541,10 @@ ID = "STR_UNIT_IDOLIZER_NAME"   ;   Str = "Idolizer"
 // REWORKED UNITS
 ID = "STR_UNIT_NILECROCODILE_NAME"   ;   Str = "Nile Crocodile"
 
+ID = "STR_UNIT_AMAZON_MARKSMAN_NAME"   ;   Str = "Amazon Marksman"
+ID = "STR_UNIT_AMAZON_MARKSMAN_SR"   ;   Str = "Elite Amazon Archer"
+ID = "STR_UNIT_AMAZON_MARKSMAN_LR"   ;   Str = "Among Amazons, some are born with exclusive archery skills and get appointed in private security of Queen Hippolyta"
+
 // REWORKED TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
 
@@ -577,6 +581,21 @@ ID = "STR_TECH_ADVANCEDFORTIFICATIONS_LR"   ;   Str = "CyberTech R & D provides 
 
 ID = "STR_TECH_ORACLEWATCHERS_NAME"   ;   Str = "Oracle Watchers"
 ID = "STR_TECH_ORACLEWATCHERS_LR"   ;   Str = "Oracles with Excellent Psionic Sight have been assigned to Towers as Watcher Commanders"
+
+ID = "STR_TECH_AMAZONVANGUARDS_NAME"   ;   Str = "Amazon Vanguards"
+ID = "STR_TECH_AMAZONVANGUARDS_LR"   ;   Str = "Tower and Fortress recruit elite archers from Amazon Forests with a better sight and targeting"
+
+ID = "STR_TECH_AMAZONTRAINING_NAME"   ;   Str = "Amazon Training"
+ID = "STR_TECH_AMAZONTRAINING_LR"   ;   Str = "Recruits Amazon elites for advanced warfare"
+
+ID = "STR_TECH_AMAZONTRAINING_I_NAME"   ;   Str = "Amazon Training I"
+ID = "STR_TECH_AMAZONTRAINING_I_LR"   ;   Str = "First upgrade for Amazon warriors"
+
+ID = "STR_TECH_AMAZONTRAINING_II_NAME"   ;   Str = "Amazon Training II"
+ID = "STR_TECH_AMAZONTRAINING_II_LR"   ;   Str = "Second upgrade for Amazon warriors"
+
+ID = "STR_TECH_AMAZONTRAINING_III_NAME"   ;   Str = "Amazon Training I"
+ID = "STR_TECH_AMAZONTRAINING_III_LR"   ;   Str = "Final upgrade for Amazon warriors"
 
 ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"
 ID = "STR_TECH_DIVINEARMAMENTS_LR"   ;   Str = "Improves Offensive Capabilities of Military Units, Heroes and Hunters with Divine Weaponry"

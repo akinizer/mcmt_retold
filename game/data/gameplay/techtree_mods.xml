@@ -1,13 +1,5 @@
 <techtreemods>
-	  <!-- MCMT TECH ENABLE -->
-    <tech name="ArchaicAgeAtlantean"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
-    <tech name="ArchaicAgeGreek"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
-    <tech name="ArchaicAgeEgyptian"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
-    <tech name="ArchaicAgeNorse"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects></tech>
-    <tech name="ArchaicAgeChinese"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects>	</tech>
-    <tech name="ArchaicAgeJapanese"><effects><effect type="TechStatus" status="active" mergeMode="add">MCMT_Techs</effect></effects>	</tech>
-
-    <!-- CIVILIZATION IMPROVEMENTS -->
+    <!-- GOD BLESSINGS: Base stats and Accels, Special Techs -->
     <tech name="ArchaicAgeAtlantean">
       <effects>
         <!--Military Barracks: Murmillo, Fanatic, Destroyer-->
@@ -23,7 +15,16 @@
         <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Contarius" row="0" column="1" relativity="Assign"><target type="ProtoUnit">Palace</target></effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Fanatic" row="0" column="1" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Destroyer" row="0" column="2" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Arcus" row="0" column="0" relativity="Assign"><target type="ProtoUnit">CounterBarracks</target></effect>		</effects>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Arcus" row="0" column="0" relativity="Assign"><target type="ProtoUnit">CounterBarracks</target></effect>	
+    
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AmazonVanguards</effect>
+      </effects>
+    </tech>
+
+    <tech name="ArchaicAgeGreek">
+      <effects>        
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AmazonVanguards</effect>
+      </effects>
     </tech>
 
     <!-- MAJOR GOD IMPROVEMENTS -->
@@ -111,7 +112,11 @@
     
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <tech name="MCMT_Techs" mergeMode="add">
-      <status>UNOBTAINABLE</status>
+      <status>ACTIVE</status>
+      <delay>0.5000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <flag>HideFromDialogs</flag>
       <effects>
         <effect type="TechStatus" status="active" mergeMode="add">CivilianPresets</effect>
         <effect type="TechStatus" status="active" mergeMode="add">BuildingPresets</effect>
@@ -495,7 +500,7 @@
       <status>UNOBTAINABLE</status>
         
       <effects>
-        <!-- House Special Units -->
+        <!-- General Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AttackWolf</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
         <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
@@ -504,7 +509,7 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MasterKensei</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">CaptainEureka</target></effect>
 
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PansChosen</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PansChosen</target></effect>        
         <!-- Greek Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PegasusGroundedMessenger</target></effect>
         <!-- Egyptian Special Units -->
@@ -866,15 +871,19 @@
     <tech name="MCMT_Researches" mergeMode="add">
       <status>UNOBTAINABLE</status>
       <effects>
-          	<!---->
-            <effect type="TechStatus" status="obtainable">MCMT_SpecialService</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_RecruitingMountainDwarves</effect>	
+            <!--Founders-->
+            <effect type="TechStatus" status="obtainable">MCMT_SpecialService</effect>       
+          	<!--Structure Improvements-->
             <effect type="TechStatus" status="obtainable">MCMT_ArchitectsOfMarley</effect>		
             <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_I</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_II</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_III</effect>
             <effect type="TechStatus" status="obtainable">MCMT_OracleWatchers</effect>
-
+            
+            <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_I</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_II</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_III</effect>
             <!--TechBuilding FutureTech-->
             <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
             <effect type="TechStatus" status="obtainable">MCMT_NanofiberPlatings</effect>
@@ -897,11 +906,6 @@
             <effect type="TechStatus" status="obtainable">MCMT_TurretInstallation</effect>			
             <effect type="TechStatus" status="obtainable">MCMT_DivineProtection</effect>	
             <effect type="TechStatus" status="obtainable">MCMT_AssistedTradeNetworks</effect>	
-            <!---->
-            <effect type="TechStatus" status="obtainable">Nanomachines</effect>			
-            <effect type="TechStatus" status="obtainable">MCMT_SVA_ComfortableFireports</effect>			
-            <effect type="TechStatus" status="obtainable">MCMT_SVA_EliteFireports</effect>			
-            <effect type="TechStatus" status="obtainable">MCMT_SVA_LuxuriousFireports</effect>	
             <!--Bastion FutureTech-->
             <effect type="TechStatus" status="obtainable">ChampionArms</effect>			
             <effect type="TechStatus" status="obtainable">ChampionHooves</effect>			
@@ -910,15 +914,16 @@
             <!--SVA Techs-->
             <effect type="TechStatus" status="obtainable">MCMT_Explosives</effect>
             <effect type="TechStatus" status="obtainable">NavalDefensiveSystems</effect>
+            
+            <effect type="TechStatus" status="obtainable">Nanomachines</effect>			
+            <effect type="TechStatus" status="obtainable">MCMT_SVA_ComfortableFireports</effect>			
+            <effect type="TechStatus" status="obtainable">MCMT_SVA_EliteFireports</effect>			
+            <effect type="TechStatus" status="obtainable">MCMT_SVA_LuxuriousFireports</effect>	
             <!--War Bunker Techs-->
             <effect type="TechStatus" status="obtainable">AntiArmorLogistics</effect>
             <effect type="TechStatus" status="obtainable">AntiAirLogistics</effect>
-            <!--TOW Techs
-            <effect type="TechStatus" status="obtainable">FarmingMachinery</effect>
-            <effect type="TechStatus" status="obtainable">IndustrialTools</effect>
-            <effect type="TechStatus" status="obtainable">ManufactionRobotics</effect>-->	
-            <!--Baolei CyberTech-->		
-            <!--Dwarven Armory CyberTech -->
+            <!--Dwarven Armory Techs: KingdomTech and CyberTech-->
+            <effect type="TechStatus" status="obtainable">MCMT_RecruitingMountainDwarves</effect>	     
             <effect type="TechStatus" status="obtainable">MCMT_GiantSlayingTechs</effect>
             <effect type="TechStatus" status="obtainable">MCMT_ThunderSlayingTechs</effect>
             <!--Market CyberTech Financial Development Techs-->
@@ -1056,40 +1061,7 @@
     <!-- SPECIAL TECHS -->
     <!-- Greek Special Techs -->
     <!-- Norse Special Techs -->
-    <!-- Egyptian Special Techs -->
-    <tech name="MCMT_EgyptianRenovation">
-      <displaynameid>STR_TECH_EGYPTIAN_RENOVATION_NAME</displaynameid>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\activate_tech.jpg</icon>
-      <researchpoints>1.0000</researchpoints>
-      <cost resourcetype="Favor">15.0000</cost>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
-      <effects>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Noah</target></effect>
-        <effect type="TechStatus" status="obtainable">MCMT_Noah_Respawn</effect>
-      </effects>
-    </tech>
-
-    <tech name="MCMT_Noah_Respawn">
-      <status>UNOBTAINABLE</status>
-      <delay>2.0000</delay>
-      <flag>Volatile</flag>
-      <flag>Persistent</flag>
-      <flag>HideFromDialogs</flag>
-      <prereqs>
-        <techstatus status="Active">MCMT_EgyptianRenovation</techstatus>
-        <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
-        <typecount unit="Noah" count="1.00" state="aliveState" operator="lt"></typecount>
-      </prereqs>
-      <effects>
-        <effect type="CreateUnit" unit="Noah" generator="AbstractTownCenter">
-          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
-        <effect type="TextOutput">STR_MSG_NOAH_SPAWN</effect>
-      </effects>
-      
-    </tech>
+    <!-- Egyptian Special Techs -->    
     <!-- Atlantean Special Techs -->
     <!-- Chinese Special Techs -->
     <!-- Japanese Special Techs -->
@@ -1671,7 +1643,7 @@
 	
 	<!-- /// Researches /// -->
 	
-	<!--- LANDLORD AND NOAH SPAWN TECH-->
+	<!-- FOUNDER TECHS: LANDLORD AND NOAH SPAWN -->
 	<tech name="MCMT_SpecialService">
     <displaynameid>STR_TECH_SPECIALSERVICE_NAME</displaynameid>
     <status>UNOBTAINABLE</status>
@@ -1702,6 +1674,39 @@
 		</effects>
 		<effect type="TextOutput">STR_MSG_LANDLORD_SPAWN</effect>
 	</tech>
+
+  <tech name="MCMT_EgyptianRenovation">
+    <displaynameid>STR_TECH_EGYPTIAN_RENOVATION_NAME</displaynameid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">15.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Noah</target></effect>
+      <effect type="TechStatus" status="obtainable">MCMT_Noah_Respawn</effect>
+    </effects>
+  </tech>
+
+  <tech name="MCMT_Noah_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>2.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">MCMT_EgyptianRenovation</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="Noah" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="Noah" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_NOAH_SPAWN</effect>
+    </effects>
+  </tech>
 
 	<!-- KINGDOM OF IRONHAMMER /// DWARVEN FORGE RESEARCHES -->
 	 
@@ -1887,6 +1892,149 @@
 			</effect>
 		</effects>		
 	</tech>
+	<tech name="MCMT_AmazonVanguards" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_AMAZONVANGUARDS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_AMAZONVANGUARDS_LR</rollovertextid>
+		<icon>resources\tech\marksmanship.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">150</cost>
+		<cost resourcetype="Gold">250</cost>
+    <prereqs>
+      <techstatus status="Active">Crenellations</techstatus>
+      <techstatus status="Active">GuardTower</techstatus>
+    </prereqs>
+		<effects>
+      <effect type="Data" action="RangedAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">AbstractTower</target></effect>
+      <effect type="Data" action="RangedAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">Palace</target></effect>
+      <effect type="Data" action="RangedAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">Fortress</target></effect>
+
+			<effect type="Data" amount="2.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">AbstractTower</target></effect>
+			<effect type="Data" amount="2.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">Palace</target></effect>
+			<effect type="Data" amount="2.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">Fortress</target></effect>
+        
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+        <target type="ProtoUnit">AbstractTower</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+        <target type="ProtoUnit">Palace</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+        <target type="ProtoUnit">Fortress</target></effect>
+		</effects>		
+	</tech>
+	<tech name="MCMT_AmazonTraining" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_AMAZONTRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_AMAZONTRAINING_LR</rollovertextid>
+		<icon>resources\tech\marksmanship.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">150</cost>
+		<cost resourcetype="Gold">250</cost>    
+		<effects>      
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AmazonMarksman</target></effect>
+		</effects>		
+	</tech>
+	<tech name="MCMT_AmazonTraining_I" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_AMAZONTRAINING_I_NAME</displaynameid>
+		<rollovertextid>STR_TECH_AMAZONTRAINING_I_LR</rollovertextid>
+		<icon>resources\tech\marksmanship.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">100</cost>
+		<cost resourcetype="Gold">50</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_AmazonTraining</techstatus>
+    </prereqs>
+    <effects>
+		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">AmazonMarksman</target></effect>        
+      <effect type="Data" action="HeroicBowAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">Hippolyta</target></effect>
+
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrow</target></effect>
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrowFlaming</target></effect>
+		</effects>		
+	</tech>
+	<tech name="MCMT_AmazonTraining_II" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_AMAZONTRAINING_II_NAME</displaynameid>
+		<rollovertextid>STR_TECH_AMAZONTRAINING_II_LR</rollovertextid>
+		<icon>resources\tech\marksmanship.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">100</cost>
+		<cost resourcetype="Gold">50</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_AmazonTraining_I</techstatus>
+    </prereqs>
+    <effects>
+		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">AmazonMarksman</target></effect>
+      <effect type="Data" action="HeroicBowAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">Hippolyta</target></effect>
+
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrow</target></effect>
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrowFlaming</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="DamageOverTime" relativity="Absolute">
+        <target type="ProtoUnit">AmazonMarksman</target></effect>
+		</effects>		
+	</tech>
+	<tech name="MCMT_AmazonTraining_III" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_AMAZONTRAINING_III_NAME</displaynameid>
+		<rollovertextid>STR_TECH_AMAZONTRAINING_III_LR</rollovertextid>
+		<icon>resources\tech\marksmanship.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">100</cost>
+		<cost resourcetype="Gold">50</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_AmazonTraining_II</techstatus>
+    </prereqs>
+    <effects>
+		   <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">AmazonMarksman</target></effect>
+		   <effect type="Data" action="HeroicBowAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">Hippolyta</target></effect>
+
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrow</target></effect>
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrowFlaming</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+        <target type="ProtoUnit">AmazonMarksman</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+        <target type="ProtoUnit">Hippolyta</target></effect>
+
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">AmazonMarksman</target></effect>
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">Hippolyta</target></effect>
+		</effects>		
+	</tech>
   <tech name="AntiArmorLogistics" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_WARBUNKER_ANTIARMOR_NAME</displaynameid>
@@ -1926,23 +2074,6 @@
 		</effects>
 	</tech>
 
-	<tech name="MCMT_Noah_Respawn">
-		<status>UNOBTAINABLE</status>
-		<delay>2.0000</delay>
-		<flag>Volatile</flag>
-		<flag>Persistent</flag>
-		<flag>HideFromDialogs</flag>
-		<prereqs>
-			<typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
-			<typecount unit="Noah" count="1.00" state="aliveState" operator="lt"></typecount>
-		</prereqs>
-		<effects>
-			<effect type="CreateUnit" unit="Noah" generator="AbstractTownCenter">
-				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern>
-			</effect>
-		</effects>
-		<effect type="TextOutput">STR_MSG_NOAH_SPAWN</effect>
-	</tech>
   <!-- DWARVEN FORGE TECHS -->
   <tech name="MCMT_GiantSlayingTechs" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
