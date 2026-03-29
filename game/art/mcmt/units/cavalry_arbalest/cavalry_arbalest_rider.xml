@@ -1,0 +1,21 @@
+<animfile validation="strict">
+	<attachment>Weapon<include>chinese\units\attachments\crossbow\crossbow_c.xml</include></attachment>
+	<attachment>Helmet<include>chinese\units\archery\chu_ko_nu\chu_ko_nu_helm.xml</include></attachment>
+	<attachment>Shield<include>chinese\units\attachments\shield\shield_c_h.xml</include></attachment>
+	<component>ModelComp
+		<logic type="Tech">
+			<none><assetreference type="TMModel"><file>chinese\units\archery\chu_ko_nu\chu_ko_nu_iron</file><materialvariant index="0"></materialvariant></assetreference></none>
+			<mediumarchers><assetreference type="TMModel"><file>chinese\units\archery\chu_ko_nu\chu_ko_nu_bronze</file><materialvariant index="1"></materialvariant></assetreference></mediumarchers>
+			<heavyarchers><assetreference type="TMModel"><file>chinese\units\archery\chu_ko_nu\chu_ko_nu_silver</file><materialvariant index="2"></materialvariant></assetreference></heavyarchers>
+			<championarchers><assetreference type="TMModel"><file>chinese\units\archery\chu_ko_nu\chu_ko_nu_gold</file><materialvariant index="3"></materialvariant></assetreference></championarchers>
+		</logic>
+		<attach name="Weapon" attachpoint="weapon" syncanims="1"></attach><attach name="Helmet" attachpoint="helmet"></attach>
+		<attach name="Shield" attachpoint="shield"></attach>
+	</component>
+	<anim>Death<assetreference type="TMAnimation"><file>chinese\units\archery\chu_ko_nu\anim\chu_ko_nu_death_a</file><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuDeathTumble">0.27</tag></assetreference><component>ModelComp</component></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>chinese\units\archery\chu_ko_nu\anim\chu_ko_nu_attack_a</file><tag type="Attack">0.20</tag><tag type="Attack">0.32</tag><tag type="Attack">0.40</tag><tag type="Attack">0.49</tag><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.16</tag><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.27</tag><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.35</tag><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.44</tag></assetreference><assetreference type="TMAnimation"><file>chinese\units\archery\chu_ko_nu\anim\chu_ko_nu_attack_b</file><tag type="Attack">0.20</tag><tag type="Attack">0.32</tag><tag type="Attack">0.40</tag><tag type="Attack">0.49</tag><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.16</tag><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.27</tag><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.35</tag><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.44</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>chinese\units\archery\chu_ko_nu\anim\chu_ko_nu_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>chinese\units\archery\chu_ko_nu\anim\chu_ko_nu_bored_a</file><tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuBored"></tag></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>chinese\units\archery\chu_ko_nu\anim\chu_ko_nu_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>chinese\units\archery\chu_ko_nu\anim\chu_ko_nu_flail_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>

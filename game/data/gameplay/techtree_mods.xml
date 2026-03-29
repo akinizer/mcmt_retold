@@ -512,6 +512,8 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PansChosen</target></effect>        
         <!-- Greek Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PegasusGroundedMessenger</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Enceladus</target></effect>
+        
         <!-- Egyptian Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">StellarGateway</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MummyFallen</target></effect>
@@ -701,6 +703,8 @@
         <effect type="Data" amount="8.00" subtype="AdditionalScale" relativity="Absolute">
           <target type="ProtoUnit">Fafnirstrasz</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">BullOfHeaven</target></effect>
+        <effect type="Data" amount="1.30" subtype="AdditionalScale" relativity="Absolute">
           <target type="ProtoUnit">BullOfHeaven</target></effect>
         
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Fenrisulfr</target></effect>			
@@ -1941,7 +1945,11 @@
 		<cost resourcetype="Food">150</cost>
 		<cost resourcetype="Gold">250</cost>    
 		<effects>      
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AmazonianCamp</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AmazonMarksman</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">CavalryArbalest</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AmazonianHuntress</target></effect>    
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Enceladus</target></effect>    
 		</effects>		
 	</tech>
 	<tech name="MCMT_AmazonTraining_I" mergeMode="add">
@@ -1951,7 +1959,6 @@
 		<icon>resources\tech\marksmanship.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
-		<flag>MythTech</flag>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">100</cost>
 		<cost resourcetype="Gold">50</cost>
@@ -1961,8 +1968,13 @@
     <effects>
 		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">AmazonMarksman</target></effect>        
+		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">CavalryArbalest</target></effect>        
       <effect type="Data" action="HeroicBowAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">Hippolyta</target></effect>
+
+      <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">AmazonianHuntress</target></effect>
 
       <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
         <target type="ProtoUnit">ProjectileArrow</target></effect>
@@ -1977,7 +1989,6 @@
 		<icon>resources\tech\marksmanship.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
-		<flag>MythTech</flag>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">100</cost>
 		<cost resourcetype="Gold">50</cost>
@@ -1987,8 +1998,13 @@
     <effects>
 		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">AmazonMarksman</target></effect>
+		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">CavalryArbalest</target></effect>
       <effect type="Data" action="HeroicBowAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">Hippolyta</target></effect>
+
+      <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">AmazonianHuntress</target></effect>
 
       <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
         <target type="ProtoUnit">ProjectileArrow</target></effect>
@@ -1997,6 +2013,10 @@
 
       <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="DamageOverTime" relativity="Absolute">
         <target type="ProtoUnit">AmazonMarksman</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="DamageOverTime" relativity="Absolute">
+        <target type="ProtoUnit">CavalryArbalest</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="DamageOverTime" relativity="Absolute">
+        <target type="ProtoUnit">AmazonianHuntress</target></effect>
 		</effects>		
 	</tech>
 	<tech name="MCMT_AmazonTraining_III" mergeMode="add">
@@ -2006,7 +2026,6 @@
 		<icon>resources\tech\marksmanship.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
-		<flag>MythTech</flag>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">100</cost>
 		<cost resourcetype="Gold">50</cost>
@@ -2014,10 +2033,15 @@
       <techstatus status="Active">MCMT_AmazonTraining_II</techstatus>
     </prereqs>
     <effects>
-		   <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">AmazonMarksman</target></effect>
-		   <effect type="Data" action="HeroicBowAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">CavalryArbalest</target></effect>
+      <effect type="Data" action="HeroicBowAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">Hippolyta</target></effect>
+
+      <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">AmazonianHuntress</target></effect>
 
       <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
         <target type="ProtoUnit">ProjectileArrow</target></effect>
@@ -2027,10 +2051,16 @@
       <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
         <target type="ProtoUnit">AmazonMarksman</target></effect>
       <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+        <target type="ProtoUnit">CavalryArbalest</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
         <target type="ProtoUnit">Hippolyta</target></effect>
 
       <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
         <target type="ProtoUnit">AmazonMarksman</target></effect>
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">CavalryArbalest</target></effect>
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">AmazonianHuntress</target></effect>
       <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
         <target type="ProtoUnit">Hippolyta</target></effect>
 		</effects>		

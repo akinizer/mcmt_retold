@@ -1,0 +1,11 @@
+<animfile validation="strict">
+	<attachment>Weapon<include>greek\units\attachments\spear\spear_g_cavalry.xml</include></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>atlantean\units\myth\nereid\nereid</file></assetreference><attach name="Weapon" attachpoint="weapon"></attach></component>
+	<anim>Death<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_unit_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_unit_attack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component></anim>
+	<anim>ChargedHandAttack<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_unit_whirlwindattack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_unit_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_unit_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_unit_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Birth<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_unit_birth_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>

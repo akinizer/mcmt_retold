@@ -526,11 +526,84 @@ AmazonTraining: enables AmazonMarksman in ArcheryRange and CounterBarracks
 AmazonTraining_I,II,III: upgrades AmazonMarksman and Hippolyta, maxrange, train speed, projectile speed, directprojectile
 
 * Unit
-ArcheryRange, CounterBarracks -> AmazonMarksman: Elite archers from Amazon Forests with special tech upgrades that also include Hippolyta 
-
+ArcheryRange, CounterBarracks
+- AmazonMarksman: Elite archers from Amazon Forests with special tech upgrades that also include Hippolyta 
+- CavalryArbalest: Arbalest Archer on chariot forged in Colesseum Arena and Amazon Training
+- AmazonianHuntress: Amazonian Cavalry with a fierce spear and struggle to ride her horse
+- Ecenladus: Jotun model, but with a powerful axe and a devastating charge attack
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
+=== New Unit Models - Custom Mesh
+Horse + ChuKoNu + Arbalest
+Horse + Brunhild + Bow
+
+=== Weapon Change - Myth
+Centaur + Sword
+Centaur + Spear
+Chiron + Arbalest (ChuKoNu, Gastraphetoros)
+Colossus + Double Sword (Fanatic, Kastor)
+Centimanus + Double Sword (fanatic)
+
+=== Weapon Addition - Infantry
+Arcus + Sword
+Samurai + Bow
+
+=== Weapon Change - Infantry
+Spartans
+    Hoplite + Sword
+    Militia + Sword / Fork / Bow
+    Midas + Arbalest
+Athenians
+    Hypaspist + Double Sword (Fanatic) / Mace (Katapeltes) / Fork (Destroyer) / Spear (Hoplite)
+Nubians
+    Spearman + Kopesh
+    Mercenary + Spear
+    Mercenary + Axe
+    Minion + Kopesh + Shield
+    Mummy + Kopesh + Shield
+    Mummy + Staff
+Titan Worshippers
+    Nereid + Staff
+Imperial
+    Samurai + Double Sword (Fanatic, Kastor)
+
+=== Weapon Change - Cavalry
+MercenaryCavalry + Spear + Armor
+WarElephant + Bow (upgrade)
+
+=== Cavalry Knights
+Vikings
+    Jarl
+    Raider: Raiding Cavalry
+Titan Worshippers
+    Turma
+    Hippeus + Sword
+    Hippeus + Spear
+Spartans
+    Achilles
+Imperial
+    Shogun
+Nubians
+    Bowman: ChariotArcher (No Chariot)
+
+=== New Units
+Amazons
+    Enceladus (jotun model, no club)
+    Shark (nereid_shark model)
+
+=== New Structures
+japanese\units\naval\ramming_wasen\ramming_wasen_hut_upgrade1 / 2 / 3
+
+=== Delayed Transform
+OxCart -> OxCartTent (Tent, delayedtransform)
+Roc -> RocTentSpawn (Tent, spawnondeath)
+
+=== Anim Change / Addition
+BattleBoar + ChargeAttack (anim)
+FenrisWolfBrood + JumpAttack (anim)
+Satyr + HandAttack (anim)
+
 === Elite Infantries
 * Tech
 - MilitaryAcademy -> Spartan Training (ares): champion hoplite -> spartan
@@ -1191,6 +1264,4 @@ Atlantean
     Solar Hero: Prometheus + Hyperion + Helios
     Witch Hero: Oceanos + Theia + Hekate
     Cosmic Hero: Oceanus + Theia + Atlas
-    
-	
-	
+

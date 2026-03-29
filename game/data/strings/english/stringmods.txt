@@ -507,6 +507,10 @@ ID = "STR_UNIT_ECONOMIC_CENTER_NAME"   ;   Str = "Economic Center"
 ID = "STR_UNIT_FINANCIAL_CENTER_NAME"   ;   Str = "Financial Center"
 ID = "STR_UNIT_CHAINCORPERATIONS_FACILITY_NAME"   ;   Str = "Chain Corperations Facility"
 
+ID = "STR_UNIT_WORLDFINANCIAL_CENTER_NAME"   ;   Str = "World Financial Center"
+ID = "STR_UNIT_WORLDFINANCIAL_CENTER_SR"   ;   Str = "World Financial Center"
+ID = "STR_UNIT_WORLDFINANCIAL_CENTER_LR"   ;   Str = "The Center of the World Economy and the Headquarters of the Global Stock Exchange"
+
 ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_I_NAME"   ;   Str = "Activate Tech: Financial Development Upgrade I"
 ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_II_NAME"   ;   Str = "Activate Tech: Financial Development Upgrade II"
 ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_III_NAME"   ;   Str = "Activate Tech: Financial Development Upgrade III"
@@ -544,6 +548,19 @@ ID = "STR_UNIT_NILECROCODILE_NAME"   ;   Str = "Nile Crocodile"
 ID = "STR_UNIT_AMAZON_MARKSMAN_NAME"   ;   Str = "Amazon Marksman"
 ID = "STR_UNIT_AMAZON_MARKSMAN_SR"   ;   Str = "Elite Amazon Archer"
 ID = "STR_UNIT_AMAZON_MARKSMAN_LR"   ;   Str = "Among Amazons, some are born with exclusive archery skills and get appointed in private security of Queen Hippolyta"
+
+ID = "STR_UNIT_CAVALRYARBALEST_NAME"   ;   Str = "Cavalry Arbalest"
+ID = "STR_UNIT_CAVALRYARBALEST_SR"   ;   Str = "Bullet Hell on Wheels"
+ID = "STR_UNIT_CAVALRYARBALEST_LR"   ;   Str = "Amazonian warriors share their teachings with Colosseum Archers and give a birth to an art of war"
+
+ID = "STR_UNIT_AMAZONIAN_HUNTRESS_NAME"   ;   Str = "Cavalry Arbalest"
+ID = "STR_UNIT_AMAZONIAN_HUNTRESS_SR"   ;   Str = "Bullet Hell on Wheels"
+ID = "STR_UNIT_AMAZONIAN_HUNTRESS_LR"   ;   Str = "Amazonian warriors share their teachings with Colosseum Archers and give a birth to an art of war"
+
+ID = "STR_UNIT_ENCELADUS_NAME"   ;   Str = "Enceladus (Hero)"
+ID = "STR_UNIT_ENCELADUS_SR"   ;   Str = "Legendary Giant of Greek World"
+ID = "STR_UNIT_ENCELADUS_LR"   ;   Str = "Nemesis of Athena during the Gigantomachy. Imprisoned under Mount Etna and causes volcanic eruptions with his rage"
+ID = "STR_ACTION_TELEPUNT_ATTACK"   ;   Str = "Telepunt Attack"
 
 // REWORKED TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"

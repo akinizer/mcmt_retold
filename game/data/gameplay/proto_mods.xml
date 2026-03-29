@@ -8588,28 +8588,8 @@
 		<tech row="2" column="4">TwilightOfTheGods</tech>
 	</unit>
 	<unit name="ArcheryRange">		
-		<train row="0" column="2" mergeMode="add">AmazonMarksman</train>
-		
-		<tech mergeMode="remove">LevyRangedSoldiers</tech>
-		<tech mergeMode="remove">ConscriptRangedSoldiers</tech>		
-		<tech row="1" column="2" mergeMode="add">MCMT_AmazonTraining</tech>
-		<tech row="1" column="2" mergeMode="add">MCMT_AmazonTraining_I</tech>
-		<tech row="1" column="2" mergeMode="add">MCMT_AmazonTraining_II</tech>
-		<tech row="1" column="2" mergeMode="add">MCMT_AmazonTraining_III</tech>
-		<tech row="1" column="5" mergeMode="add">LevyRangedSoldiers</tech>
-    	<tech row="1" column="5" mergeMode="add">ConscriptRangedSoldiers</tech>
-	</unit>
-	<unit name="CounterBarracks">		
-		<train row="0" column="3" mergeMode="add">AmazonMarksman</train>
-			
-		<tech mergeMode="remove">LevyCounterSoldiers</tech>
-		<tech mergeMode="remove">ConscriptCounterSoldiers</tech>		
-		<tech row="1" column="3" mergeMode="add">MCMT_AmazonTraining</tech>		
-		<tech row="1" column="3" mergeMode="add">MCMT_AmazonTraining_I</tech>
-		<tech row="1" column="3" mergeMode="add">MCMT_AmazonTraining_II</tech>
-		<tech row="1" column="3" mergeMode="add">MCMT_AmazonTraining_III</tech>
-		<tech row="1" column="5" mergeMode="add">LevyCounterSoldiers</tech>
-    	<tech row="1" column="5" mergeMode="add">ConscriptCounterSoldiers</tech>
+		<tech row="0" column="5" mergeMode="add">MCMT_AmazonTraining</tech>
+		<train row="0" column="5" mergeMode="add">AmazonianCamp</train>
 	</unit>
 	<unit name="MilitaryCampTower">
 		<unittype>AbstractTower</unittype>
@@ -10391,7 +10371,7 @@
         <soundsetfile>japanese\vo\asura\asura.xml</soundsetfile>
         <obstructionradiusx>0.9900</obstructionradiusx>
         <obstructionradiusz>0.9900</obstructionradiusz>
-        <impacttype>Armored</impacttype>
+        <impacttype>Armoured</impacttype>
         <dependentunit attachbone="LeftHand">AsurendaDroneLeft</dependentunit>
         <dependentunit attachbone="RightHand">AsurendaDroneRight</dependentunit>
         <unitaitype>HandCombative</unitaitype>
@@ -11526,7 +11506,7 @@
 		
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
-		<impacttype>Armored</impacttype>
+		<impacttype>Armoured</impacttype>
 		<unitaitype>RangedCombative</unitaitype>
 		<autoattackrange>20.0000</autoattackrange>
 		<formationorder>1</formationorder>
@@ -12001,7 +11981,7 @@
 		
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
-		<impacttype>Armored</impacttype>
+		<impacttype>Armoured</impacttype>
 		<unitaitype>RangedCombative</unitaitype>
 		<autoattackrange>45.0000</autoattackrange>
 		<movementtype>amphibious</movementtype>
@@ -14572,9 +14552,9 @@
 		</protoaction>
 	  </unit>
 	  <unit name="CyberTechWorldFinancialCenter">
-		<displaynameid>STR_BLD_LIGHTHOUSE_NAME</displaynameid>
-		<rollovertextid>STR_BLD_LIGHTHOUSE_LR</rollovertextid>
-		<shortrollovertextid>STR_BLD_LIGHTHOUSE_SR</shortrollovertextid>
+		<displaynameid>STR_UNIT_WORLDFINANCIAL_CENTER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_WORLDFINANCIAL_CENTER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_WORLDFINANCIAL_CENTER_SR</shortrollovertextid>
 		<icon>resources\egyptian\static_color\buildings\lighthouse_icon.png</icon>
 		<animfile>egyptian\buildings\lighthouse\lighthouse.xml</animfile>
 		<soundsetfile>egyptian\sfx\buildings\lighthouse.xml</soundsetfile>
@@ -18245,7 +18225,7 @@
 		<obstructionradiusz>0.7400</obstructionradiusz>
 		<selectionradiusx>0.7500</selectionradiusx>
 		<selectionradiusz>1.0000</selectionradiusz>
-		<impacttype>Armored</impacttype>
+		<impacttype>Armoured</impacttype>
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
@@ -18290,6 +18270,7 @@
 		<flag>NotDeleteable</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<initialshading type="gold" factor="1"></initialshading>
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
@@ -19656,6 +19637,13 @@
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
+	<!-- dismount units knights
+	<unit name="HippeusKnight" mergeMode="add"></unit>
+	<unit name="ProdromosKnight" mergeMode="add"></unit>
+	<unit name="HetaroiKnight" mergeMode="add"></unit>
+	<unit name="AchillesKnight" mergeMode="add"></unit>
+	<unit name="GreekSpy" mergeMode="add"></unit>
+	-->
 	<unit name="PansChosen">
 		<displaynameid>STR_UNIT_SATYR_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_SATYR_LR</rollovertextid>
@@ -19665,7 +19653,7 @@
 		<soundsetfile>atlantean\vo\satyr\satyr.xml</soundsetfile>
 		<obstructionradiusx>0.7400</obstructionradiusx>
 		<obstructionradiusz>0.7400</obstructionradiusz>
-		<impacttype>Armored</impacttype>
+		<impacttype>Armoured</impacttype>
 		<unitaitype>RangedCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
@@ -19845,7 +19833,7 @@
 		</protoaction>
     </unit>
 
-	<unit name="AmazonMarksman" orderhint="4" mergeMode="add">
+	<unit name="AmazonMarksman" mergeMode="add">
 		<displaynameid>STR_UNIT_AMAZON_MARKSMAN_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_AMAZON_MARKSMAN_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_AMAZON_MARKSMAN_SR</shortrollovertextid>
@@ -19854,7 +19842,7 @@
 		<soundsetfile>greek_demeter\vo\amazon_archer\amazonarcher.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
-		<impacttype>Armored</impacttype>
+		<impacttype>Armoured</impacttype>
 		<unitaitype>RangedCombative</unitaitype>
 		<autoattackrange>28.0000</autoattackrange>
 		<movementtype>land</movementtype>
@@ -19930,6 +19918,360 @@
 			</onhiteffect>
 		</protoaction>
 	</unit>
+
+	<unit name="CavalryArbalest" mergeMode="add">
+		<displaynameid>STR_UNIT_CAVALRYARBALEST_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_CAVALRYARBALEST_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_CAVALRYARBALEST_SR</shortrollovertextid>
+		<icon>resources\japanese\player_color\units\yumi_horse_archer_icon.png</icon>
+		<animfile>mcmt\units\cavalry_arbalest\cavalry_arbalest.xml</animfile>
+		<soundsetfile>greek\vo\prodromos\prodromos.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.1500</selectionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>	
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>90.0000</initialhitpoints>
+		<maxhitpoints>90.0000</maxhitpoints>
+		<trainpoints>16.0000</trainpoints>
+		<weightclass>6</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>17.0000</los>
+		<bloodgroupoverride>defaultbloodhorse</bloodgroupoverride>
+		<cost resourcetype="Wood">75.0000</cost>
+		<cost resourcetype="Gold">45.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.2500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>OrientUnitWithGround</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>ConstrainOrientation</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">9.0000000</damage>
+			<maxrange>15.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+		</protoaction>
+	</unit>
+	
+	<unit name="AmazonianHuntress" mergeMode="add">
+		<displaynameid>STR_UNIT_AMAZONIAN_HUNTRESS_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_AMAZONIAN_HUNTRESS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_AMAZONIAN_HUNTRESS_SR</shortrollovertextid>
+		<icon>resources\tech\amazonian_huntress.png</icon>
+		<animfile>mcmt\units\amazonian\amazonian_huntress_cavalry.xml</animfile>
+		<soundsetfile>greek_demeter\vo\amazon_archer\amazonarcher.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.1500</selectionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>145.0000</initialhitpoints>
+		<maxhitpoints>145.0000</maxhitpoints>
+		<trainpoints>12.0000</trainpoints>
+		<weightclass>6</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.0000</maxvelocity>
+		<los>16.0000</los>
+		<bloodgroupoverride>defaultbloodhorse</bloodgroupoverride>
+		<cost resourcetype="Food">70.0000</cost>
+		<cost resourcetype="Gold">40.0000</cost>
+		<armor type="Hack" value="0.2000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">6.80000</damage>
+			<damagebonus type="AbstractCavalry">1.500000</damagebonus>
+			<damagebonus type="AbstractInfantry">1.250000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+	</unit>
+
+	<unit name="Enceladus" mergeMode="add">
+		<displaynameid>STR_UNIT_ENCELADUS_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ENCELADUS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ENCELADUS_SR</shortrollovertextid>
+		<icon>resources\norse\player_color\units\mountain_giant_icon.png</icon>
+		<animfile>mcmt\units\amazonian\enceladus.xml</animfile>
+		<soundsetfile>greek\vo\polyphemus\polyphemus.xml</soundsetfile>
+		<obstructionradiusx>1.4900</obstructionradiusx>
+		<obstructionradiusz>1.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>900.0000</initialhitpoints>
+		<maxhitpoints>900.0000</maxhitpoints>
+		<trainpoints>17.0000</trainpoints>
+		<weightclass>11</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>3.2000</maxvelocity>
+		<rechargetime>15.0000</rechargetime>
+		<auxrechargetime>15.0000</auxrechargetime>
+		<buildlimit>1</buildlimit>
+		<los>16.0000</los>
+		<autoattackrange>28.0000</autoattackrange>
+		<cost resourcetype="Food">480.0000</cost>
+		<cost resourcetype="Favor">15.0000</cost>
+		<armor type="Hack" value="0.6800"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHeroicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>MythUnitMelee</unittype>
+		<unittype>MythUnitSiege</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<initialshading type="bronze" factor="1"></initialshading>
+		<tactics>greek_hero_enceladus.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.450000</rof>
+			<damage type="Hack">18.000000</damage>
+			<damage type="Crush">22.000000</damage>
+			<damagebonus type="MythUnit">2.500000</damagebonus>
+			<damagebonus type="Hero">1.250000</damagebonus>
+			<maxrange>1.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Punt</name>
+			<rof>1.500000</rof>
+			<damage type="Divine">100.000000</damage>
+			<damagebonus type="Hero">1.500000</damagebonus>
+			<maxrange>2.000000</maxrange>
+			<damagearea>2.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
+			<throw>1</throw>
+			<coneareaangle>360.000000</coneareaangle>
+			<outerdamageareadistance>1.500000</outerdamageareadistance>
+			<outerdamageareafactor>0.900000</outerdamageareafactor>
+			<fulldamagemaintarget>1</fulldamagemaintarget>
+			<maxsizeclass>7</maxsizeclass>
+			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+			<ProtoAction>
+            <Name>Teleport</Name>
+            <ROF>1.500000</ROF>
+            <Damage type='Divine'>40.000000</Damage>
+            <DamageArea>5.000000</DamageArea>
+            <DamageFlags>Enemy</DamageFlags>
+            <DamageBonus type='MythUnit'>2.0000000</DamageBonus>
+            <DamageBonus type='Hero'>0.250000</DamageBonus>
+            <MaxRange>25.000000</MaxRange>
+            <MinRange>10.000000</MinRange>
+            <ModifyDuration>1500</ModifyDuration>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
+			<throw>1</throw>
+			<coneareaangle>360.000000</coneareaangle>
+			<outerdamageareadistance>1.500000</outerdamageareadistance>
+			<outerdamageareafactor>0.900000</outerdamageareafactor>
+			<fulldamagemaintarget>1</fulldamagemaintarget>
+			<maxsizeclass>7</maxsizeclass>
+        </ProtoAction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
+			</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+	<!-- Greek Special Buildings -->
+	<unit name="AmazonianCamp">
+		<displaynameid>STR_BLD_TENT_NAME</displaynameid>
+		<rollovertextid>STR_BLD_TENT_LR</rollovertextid>
+		<shortrollovertextid>STR_BLD_TENT_SR</shortrollovertextid>
+		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
+		<animfile culture="greek">shared\buildings\tent\tent_greek.xml</animfile>
+		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
+		<obstructionradiusx>2.0000</obstructionradiusx>
+		<obstructionradiusz>2.0000</obstructionradiusz>
+		<impacttype>Wood</impacttype>
+		<allowedheightvariance>4.0000</allowedheightvariance>
+		<movementtype>land</movementtype>
+		<initialhitpoints>250.0000</initialhitpoints>
+		<maxhitpoints>250.0000</maxhitpoints>
+		<trainpoints>1.0000</trainpoints>
+		<populationcapaddition>2</populationcapaddition>
+		<los>9.0000</los>
+		<cost resourcetype="Wood">125.0000</cost>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.4500"></armor>
+		<armor type="Crush" value="0.0500"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>Unit</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>UseSharedBuildLimit</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DynamicUpdate</flag>		
+		<autobuildrate>5.0000</autobuildrate>		
+		<bloodgroupoverride>noblood</bloodgroupoverride>		
+		<train row="0" column="1" mergeMode="add">AmazonMarksman</train>
+		<train row="0" column="2" mergeMode="add">CavalryArbalest</train>
+		<train row="0" column="3" mergeMode="add">AmazonianHuntress</train>
+		<train row="0" column="5" mergeMode="add">Enceladus</train>
+		<tech row="0" column="0" mergeMode="add">MCMT_AmazonTraining_I</tech>
+		<tech row="0" column="0" mergeMode="add">MCMT_AmazonTraining_II</tech>
+		<tech row="0" column="0" mergeMode="add">MCMT_AmazonTraining_III</tech>
+	</unit>
+
 	<!-- Norse Special Units -->
 	 <unit name="ValkyrieWarrior" mergeMode="add">
 		<displaynameid>STR_UNIT_VALKYRIE_WARRIOR_NAME</displaynameid>
@@ -20125,6 +20467,10 @@
 		<flag>AutoCommandStartDisabled</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
 	</unit>		
+	<!-- dismount units knights
+	<unit name="Raider" mergeMode="add"></unit>
+	<unit name="JarlRider" mergeMode="add"></unit>
+	-->
 
 	 <unit name="Hobbit">
 		<displaynameid>STR_UNIT_HOBBIT_NAME</displaynameid>
@@ -20272,7 +20618,7 @@
 		<soundsetfile>spc\vo\eitri\eitri.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
-		<impacttype>Armored</impacttype>
+		<impacttype>Armoured</impacttype>
 		<unitaitype>HandCombative</unitaitype>
 		<autoattackrange>20.0000</autoattackrange>
 		<movementtype>land</movementtype>
@@ -20622,7 +20968,7 @@
 		
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
-		<impacttype>Unarmored</impacttype>
+		<impacttype>Unarmoured</impacttype>
 		<unitaitype>HandCombative</unitaitype>
 
 		<movementtype>land</movementtype>
@@ -20730,7 +21076,7 @@
 		
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
-		<impacttype>Armored</impacttype>
+		<impacttype>Armoured</impacttype>
 		<unitaitype>HandCombative</unitaitype>
 		<autoattackrange>20.0000</autoattackrange>
 		<formationorder>4</formationorder>
@@ -20886,7 +21232,7 @@
 
 		<obstructionradiusx>3.0000</obstructionradiusx>
 		<obstructionradiusz>3.0000</obstructionradiusz>
-		<impacttype>Armored</impacttype>
+		<impacttype>Armoured</impacttype>
 		<movementtype>amphibious</movementtype>
 		<flag>TieToWaterSurface</flag>
 
@@ -21182,7 +21528,12 @@
 			<maxrange>10.000000</maxrange>
 		</protoaction>
     </unit>
-
+<!-- dismount units knights
+	<unit name="KopeshNubian" mergeMode="add"></unit>
+	<unit name="KopeshInfantry" mergeMode="add"></unit>
+	<unit name="Bowman" mergeMode="add"></unit>
+	<unit name="ElephantRider" mergeMode="add"></unit>
+-->
 	<!-- Hall of Heroes Special Units -->
 	<unit name="ArcusCaptain">
 		<buildlimit>1</buildlimit>
@@ -22794,6 +23145,12 @@
 		</protoaction>
 	</unit>
 	<!-- Atlantean Special Units -->
+	 <!-- dismount units knights
+	 <unit name="TurmaKnight" mergeMode="add"></unit>
+	 <unit name="TurmaKnightHero" mergeMode="add"></unit>
+	 <unit name="ContariusKnight" mergeMode="add"></unit>
+	 <unit name="ContariusHero" mergeMode="add"></unit>
+-->
 	<!-- Chinese Special Units -->
 	<unit name="FireArcherSandbag">
 		<displaynameid>STR_UNIT_FIRE_ARCHER_SANDBAG_NAME</displaynameid>
@@ -23061,7 +23418,17 @@
 			<modifyprotoid>ChuKoNu</modifyprotoid>
 		</protoaction>
   	</unit>
+<!-- dismount units knights
+	<unit name="WhiteHorseKnight" mergeMode="add"></unit>
+	<unit name="QingQiKnight" mergeMode="add"></unit>
+	<unit name="GongQiKnight" mergeMode="add"></unit>
+-->
 	<!-- Japanese Special Units -->
+
+	<!-- dismount units knights
+	<unit name="NaginataSamurai" mergeMode="add"></unit>
+	<unit name="DaimyoGeneral" mergeMode="add"></unit>
+-->
 	<!-- Special Unit Projectiles -->
 	<unit name="ProjectileDisintegrationBolt">
 		<animfile>vfx\projectiles\priest_pharaoh\priest_pharaoh.xml</animfile>
