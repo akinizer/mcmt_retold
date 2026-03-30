@@ -521,16 +521,17 @@
 
 21. Amazons Patch Reworks
 * Tech
-AmazonVanguards: tower and fortress, precision, range, los improvements, requires crenelletions, guard tower, civ (Greek or Atlantean)
-AmazonTraining: enables AmazonMarksman in ArcheryRange and CounterBarracks
+AmazonVanguards: tower and fortress, precision, range, los improvements, requires crenelletions, guard tower, Greek civ
+AmazonTraining: enables AmazonMarksman in ArcheryRange
 AmazonTraining_I,II,III: upgrades AmazonMarksman and Hippolyta, maxrange, train speed, projectile speed, directprojectile
 
 * Unit
-ArcheryRange, CounterBarracks
+ArcheryRange
 - AmazonMarksman: Elite archers from Amazon Forests with special tech upgrades that also include Hippolyta 
 - CavalryArbalest: Arbalest Archer on chariot forged in Colesseum Arena and Amazon Training
 - AmazonianHuntress: Amazonian Cavalry with a fierce spear and struggle to ride her horse
 - Ecenladus: Jotun model, but with a powerful axe and a devastating charge attack
+
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
