@@ -781,6 +781,28 @@
 								<type>Throw</type>
 								<position>0.90000</position>
 							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.07100</position>
+								<properties>
+									<popcornfxname>smoke\foot_dust\foot_dust_large.pkfx</popcornfxname>
+									<bone>vfx_foot_l</bone>
+									<movewithbone>0</movewithbone>
+									<stopwithanim>0</stopwithanim>
+									<adjustduration>0</adjustduration>
+								</properties>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.07100</position>
+								<properties>
+									<popcornfxname>smoke\foot_dust\foot_dust_large.pkfx</popcornfxname>
+									<bone>vfx_foot_r</bone>
+									<movewithbone>0</movewithbone>
+									<stopwithanim>0</stopwithanim>
+									<adjustduration>0</adjustduration>
+								</properties>
+							</tag>
 						</tags>
 					</version>
 				</versions>
@@ -796,6 +818,17 @@
 							<tag>
 								<type>Attack</type>
 								<position>0.20000</position>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.16800</position>
+								<properties>
+									<popcornfxname>smoke\underworld_explosion.pkfx</popcornfxname>
+									<bone>vfx_min_d1_crack04</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>1</stopwithanim>
+									<adjustduration>1</adjustduration>
+								</properties>
 							</tag>
 						</tags>
 					</version>
