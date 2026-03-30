@@ -1489,9 +1489,227 @@
 		</protoaction>
 	</unit>
 
-    <!-- JAPANESE SECTION -->
+    <!-- JAPANESE SECTION --> 
 
-    <!-- Japanese Heroes-->
+    <!-- Japanese Priests TODO -->
+	 <unit name="Onmyoji" mergeMode="replace">
+		<displaynameid>STR_UNIT_ONMYOJI_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ONMYOJI_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ONMYOJI_SR</shortrollovertextid>
+		<icon>resources\japanese\player_color\units\onmyoji_icon.png</icon>
+		<animfile>japanese\units\hero\onmyoji\onmyoji.xml</animfile>
+		<soundsetfile>japanese\vo\onmyoji\onmyoji.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>80.0000</initialhitpoints>
+		<maxhitpoints>80.0000</maxhitpoints>
+		<trainpoints>18.0000</trainpoints>
+		<weightclass>6</weightclass>
+		<maxcontained>1</maxcontained>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.8000</maxvelocity>
+		<los>22.0000</los>
+
+		<rechargetime>25.0000</rechargetime>
+
+		<cost resourcetype="Gold">200.0000</cost>
+		<cost resourcetype="Favor">15.0000</cost>
+		<carrycapacity resourcetype="Favor">3.0000</carrycapacity>
+		<armor type="Hack" value="0.0500"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MinorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>AbstractHealer</unittype>		
+		<unittype>AbstractEmpowerer</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>		
+		<unittype>LogicalTypeHealableHero</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CanAutoHeal</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoCommandStartDisabled</flag>
+		<flag>ForceCountAsGatherer</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>japanese_hero_onmyoji.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Divine">5.000000</damage>
+			<damagearea>2.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<damagebonus type="Shinigami">2.000000</damagebonus>
+			<damagebonus type="ShinigamiRevenant">2.000000</damagebonus>
+			<damagebonus type="Wretch">2.000000</damagebonus>
+			<damagebonus type="Mummy">2.000000</damagebonus>
+			<damagebonus type="HadesShade">2.000000</damagebonus>
+			<damagebonus type="Wanyudo">2.000000</damagebonus>
+			<damagebonus type="Umibozu">2.000000</damagebonus>
+			<damagebonus type="Einheri">2.000000</damagebonus>
+			<damagebonus type="Draugr">2.000000</damagebonus>
+			<damagebonus type="Minion">2.000000</damagebonus>
+			<damagebonus type="Servant">2.000000</damagebonus>
+			<maxrange>14.000000</maxrange>
+			<projectile>ProjectileOnmyojiAttack</projectile>
+			<impacteffect>effects\impacts\onmyoji</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>Heal</name>
+			<type>Heal</type>
+			<maxrange>12</maxrange>
+			<rate type="LogicalTypeHealed">10.000000</rate>
+			<slowhealmultiplier>0.50</slowhealmultiplier>
+		</protoaction>
+		<protoaction>
+			<name>AreaHeal</name>
+			<modifyamount>1.0</modifyamount>
+			<maxrange>20</maxrange>
+			<slowhealmultiplier>0.50</slowhealmultiplier>
+		</protoaction>
+		<protoaction>
+			<name>AutoBoost</name>
+			<rof>1.0</rof>
+			<damageflags>Enemy|Nature</damageflags>
+			<maxrange>12.000000</maxrange>
+			<rate type="MilitaryUnit">1.0</rate>
+			<onhiteffect type="Boost" targetunittype="HumanSoldier" duration="25.000000" radius="15.000000">
+				<modify type="MaxShieldPoints" applytype="Add">35.000000</modify></onhiteffect>
+			<onhiteffect type="Boost" targetunittype="LogicalTypeMythUnitNotTitan" duration="25.000000" radius="15.000000">
+				<modify type="MaxShieldPoints" applytype="Add">35.000000</modify></onhiteffect>
+			<onhiteffect type="Boost" targetunittype="Hero" duration="15.000000" radius="15.000000">
+				<modify type="MaxShieldPoints" applytype="Add">35.000000</modify></onhiteffect>
+			<modelattachment>vfx\projectiles\yan_fei_feng\blessing_protect.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name>Gather</name>
+			<rate type="AbstractTemple">0.01000</rate>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+	</unit>
+
+	<!--	
+	onmyoji <barrier, myth areaslow, bonusdamage myth, areaheal>
+	<unit name="Miko"></unit>
+	-->
+
+	<!-- Japanese Worker Units-->
+	
+	<!--
+	<unit name="Commoner"></unit>
+	-->
+
+	<!-- Japanese Myth Units-->
+
+	<!--
+	<unit name="Kamaitachi"></unit> samurai tech
+	<unit name="Tengu"></unit> samurai tech
+
+	<unit name="Wanyudo"></unit> ghost tech
+	<unit name="Shinigami"></unit> ghost tech, leech, absorb ability
+	<unit name="Kitsune"></unit> ghost tech, leech, absorb ability
+
+	<unit name="Raiju"></unit> teleport ability
+	<unit name="Honengyo"></unit> amphibious
+	<unit name="Umibozu"></unit> throw on teleport
+
+	<unit name="Asura"></unit> oni tech
+	<unit name="Oni"></unit> oni tech
+
+	<unit name="Onmoraki"></unit> vfxpoison
+
+	<unit name="Jorogumo"></unit> vfxpoison, caladria ability
+	-->
+
+    <!-- Japanese Military Units-->
+
+	<!--
+	<unit name="YariSpearman"></unit>
+	<unit name="YumiArcher"></unit> samurai sword anim
+	<unit name="Bushi"></unit> light samurai sword anim
+	<unit name="Samurai"></unit> samurai sword anim, more hp, slower attack
+	<unit name="Shinobi"></unit>
+	<unit name="OnnaMusha"></unit> yumiarcher bow anim
+
+	<unit name="NaginataRider"></unit> YariSpearman spawn
+	<unit name="YumiHorseArcher"></unit> YumiArcher spawn
+	<unit name="Daimyo"></unit> DaimyoSamurai spawn
+	<unit name="Shogun"></unit> DaimyoSamurai spawn
+	-->
+
+    <!-- Japanese Naval Units-->
+
+	<!--
+	<unit name="FishingShip"></unit>
+	<unit name="TransportShip"></unit>
+	<unit name="RammingWasen"></unit>
+	<unit name="Wasen"></unit>
+	<unit name="Junkozosen"></unit>
+	-->
+
+    <!-- Japanese Buildings-->
+
+	<!--
+	<unit name=""></unit>
+	<unit name=""></unit>
+	<unit name=""></unit>
+	-->
 
     <!-- GENERAL SECTION -->
     <unit name="House">	
@@ -5878,6 +6096,12 @@
 		   </onhiteffect>
 		</protoaction>
 	</unit>
+
+	<!-- TODO
+	<unit name="Roc" mergeMode="replace"></unit>
+	<unit name="RocLanded" mergeMode="replace"></unit> areaheal, heal aura vfx, spawn roctent on death	
+	<unit name="RocTent" mergeMode="add"></unit> areaheal, heal aura vfx, population 10, garrison
+	-->
     
     <!-- Egyptian Military Units-->
 	<unit name="WarElephant">
@@ -7192,16 +7416,17 @@
 		</protoaction>
 	</unit>
 
-    <!-- Chinese Myth Units-->
-    <!-- Chinese Military Units-->
-    <!-- Chinese Naval Units-->
-    <!-- Chinese Buildings-->
+	<!-- TODO -->
+    <!-- Chinese Special Myth Units-->
+    <!-- Chinese Special Military Units-->	
+    <!-- Chinese Special Naval Units-->
+    <!-- Chinese Special Buildings-->
 
-    <!-- Japanese Hero Units-->
-    <!-- Japanese Myth Units-->
-    <!-- Japanese Military Units-->
-    <!-- Japanese Naval Units-->
-    <!-- Japanese Buildings--> 
+    <!-- Japanese Special Hero Units-->
+    <!-- Japanese Special Myth Units-->
+    <!-- Japanese Special Military Units-->
+    <!-- Japanese Special Naval Units-->
+    <!-- Japanese Special Buildings--> 
 	
 	<!-- CAMPAIGN HEROES REWORK -->
 
@@ -23418,11 +23643,26 @@
 			<modifyprotoid>ChuKoNu</modifyprotoid>
 		</protoaction>
   	</unit>
-<!-- dismount units knights
+<!-- dismount units knights TODO
 	<unit name="WhiteHorseKnight" mergeMode="add"></unit>
 	<unit name="QingQiKnight" mergeMode="add"></unit>
 	<unit name="GongQiKnight" mergeMode="add"></unit>
 -->
+
+<!-- chinese ballistic tech units TODO
+	<unit name="Hwacha" mergeMode="add"></unit> ballistic, long spread, 200 arrows, upgrade rocket-powered, iron-headed, gun barrels
+	<unit name="TeslaBoat" mergeMode="add"></unit>
+	<unit name="TeslaInfantry" mergeMode="add"></unit> 
+	<unit name="FlameInfantry" mergeMode="add"></unit> 
+	<unit name="FlameTank" mergeMode="add"></unit> 
+	<unit name="NapalmAvian" mergeMode="add"></unit> roc that drops bomb
+
+	<unit name="BallisticCart" mergeMode="add"></unit> 
+	spc\units\thor_hammer_head\thor_hammer_head_cart
+	norse\units\economic\ox_cart\ox_cart
+	spc\units\osiris_piece_cart\osiris_piece_cart
+-->
+
 	<!-- Japanese Special Units -->
 
 	<!-- dismount units knights

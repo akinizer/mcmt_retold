@@ -846,4 +846,35 @@
 			</animinfo>
 		</animations>
 	</animxml>
+	<animxml file="japanese\units\hero\onmyoji\onmyoji.xml">
+		<animations>
+			<animinfo mergemode="add">
+				<name>ChannelAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>japanese\spc\units\yasuko\anim\yasuko_ability_b</file>
+						<duration>3.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.55000</position>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.50000</position>
+								<properties>
+									<popcornfxname>spc\japanese\yasuko\yasuko_energy_pulse.pkfx</popcornfxname>
+									<bone>weapon</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>1</stopwithanim>
+									<adjustduration>1</adjustduration>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 </simdatabasemods>

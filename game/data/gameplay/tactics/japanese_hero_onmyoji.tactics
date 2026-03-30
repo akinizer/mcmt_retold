@@ -1,0 +1,60 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_HEAL">Heal</name>
+		<type>Heal</type>
+		<anim>Heal</anim>
+		<modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+    <action>
+		<name>AreaHeal</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>LogicalTypeHealed</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>HealRate</modifytype>
+		<modifyflyingunits>1</modifyflyingunits>
+		<includeally>1</includeally>
+		<modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_GATHER">Gather</name>
+		<type>Gather</type>
+        <anim>Heal</anim>
+		<maxrange>0.5</maxrange>
+		<rate type="Temple">1.0</rate>
+		<typedmaxrange type="Temple">5.0</typedmaxrange>
+	</action>
+   <action>
+		<name stringid="STR_ACTION_BOOST">AutoBoost</name>
+		<type>AutoBoost</type>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>ChannelAttack</anim>
+		<chargeaction>1</chargeaction>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<tactic>Default    
+        <action priority="100">AutoBoost</action>
+        <action priority="90">RangedAttack</action>
+        <action priority="80">Heal</action>
+        <action>Gather</action>
+        <action>AreaHeal</action>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>
+

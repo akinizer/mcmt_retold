@@ -507,17 +507,17 @@
 
 20. Japanese reworks on various aspects
 * MythUnit
-    - popcosts
-
-    - TitanYamataNoOrochi: titanattack on naval+
+- popcosts
+- TitanYamataNoOrochi: titanattack on naval+
 * HumanSoldier
-    - popcosts 1 or 2
+- popcosts 1 or 2
 * Hero
-    - popcosts 1 or 2
-    - favor costs:
-        - HeroInfantry:0
-        - Miko:1
-        - Onmyoji:3
+- popcosts 1 or 2
+- favor costs:  HeroInfantry:0, Miko:1, Onmyoji:3
+- Onmyoji:
+    - AutoBoost: active ability, sets barrier on [heroes, non-titan mythunits, humansoldier], triggered by enemy humansoldiers
+    - Gather: active ability, gathers favor on temple
+    - AreaHeal: passive ability, heals everyone in close range
 
 21. Amazons Patch Reworks
 * Techs
@@ -538,6 +538,178 @@
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
+=== JAPANESE
+* Unit Tech Reworks - General
+- Hero
+    - Kagura: GatherShrine (Onmyoji)
+    - GoheiWands: affects Onmoji
+    - EightBanners
+    - Onmyodo
+- MythUnit
+    - WindSickes: VFXBLeed (Kamaitachi)
+    - CondemnedSoul: VFXFire, affects (Shinigami,RevenantShinigami,Wretched,HadesShade,Mummy,MummyFallen,Minion,MinionResurrected,GhostCrew,PirateCaptain)
+    - AsceticPractices
+    - ThunderousPresence
+    - BurningMalevolence
+    - RestlessArmy
+    - DeadlySnare, WisdomOfNine
+    - DeadlyRage, OniMask
+    - EternalHaunting
+- HumanSoldier:
+    - Katagi: speed 0.5
+    - HuntersStrength: range (villager,archer), projectilespeed
+    - Kumiki: build workrate (villager,miko), crusharmor (building)
+    - GoldenKite
+    - HannyaMask
+    - TenFistSword
+    - Sojutsu
+    - SashimonoBannermen
+    - GalesFury
+    - SeasideInfiltrators
+    - AsymmetricalBows: enable archer proximity attack
+    - Shinobi - Bushi
+- Siege:
+    - SumoTraining: Oyumi,SiegeCrossbow,Catapult,Petrobolos,CheiroBallista,Ballista
+    - MechanicalArtisans: 
+        - Ship,WaterMill
+        - Villager,Wanyudo, AbstractSiegeWeapon, MechanicalOxCaravan, Colossus, Sentinel, Icarus, BattleBoar
+        - AbstractDwarf, Eitri, Brokk, Automaton
+- Villager:
+    - SaltwaterSpring: workrate ??? 
+- Naval:
+    - DanNoUraTactics
+    - HeavenlyBarrage
+- GodPower:
+    - DenDenDrums: rof
+    - IvoryNetsuke
+- Building:
+    - DivinePrefecture
+    - Tenshu
+
+* Unit Tech Reworks - Myth
+- Siege
+    - Asura: SiegeWeapon,SiegeLineUpgrade
+    - Oni: SiegeWeapon, SiegeLineUpgrade, InfantryLineUpgrade
+- Naval
+    - Umibozu: SiegeWeapon, SiegeLineUpgraded
+- Samurai Tech
+    - Kamaitachi: samurai,infantry,bleed
+    - Tengu: infantry,samurai,infrantrylineupgrade
+    - MasterlessSword: InfantryLineUpgrade
+
+* Proto Reworks - MythUnit
+- Flying
+    - Onmoraki: Land, AreaDamage
+- Naval
+    - Honengyo: Amphibious
+    - Wanyudo: Amphibious, Burn, Bonus (villager,trade)    
+    - Kappa
+- MilitaryUnit    
+    - Jorogumo: Healer
+        - Tech-Enabled: Minelayer, Spawn SpiderTrap x3
+    - Shinigami: Healer, Movement (Air)
+    - ShinigamiRevenant: Healer, Movement (Air), Spawn (Shades x3)
+- Beast
+    - Raiju     
+        - Tech-Enabled: areaslow (aotg chronosunique)
+- Scout
+    - Kitsune
+        - Tech-Enabled: workrate aura
+        
+* Proto Reworks - Hero
+- Miko: Villager, Build Accel, Pacify MythUnit (caladria ability)
+    - Tech-Enabled: hp aura
+    - buildrate temple
+- Bushi, OnnaMusha
+    - Tech-Enabled: AbilityOni
+- Daimyo, Shogun
+    - Tech-Enabled: warcry
+- Onmyoji (antibuilding fireball, antimyth (default), banish, slowaura (mythunit), healaura (empowerer, healer), barrier, summon (kitsune 5))
+
+* Proto Reworks - HumanSoldier: Infantry, Cavalry, Archer, Siege
+- Archer: YumiArcher,YumiHorseArcher
+- Samurai: Bushi,Daimyo,Shogun,Samura
+    - Tech-Enabled: likeunitdamagebonus, likeunitspeedbonus
+- Naginata: OnnaMusha,NaginataRider,YariSpearman
+- Warrior Myth: Kamaitachi,Tengu,Oni
+- Priest Myth: Jorogumo,Shinigami
+
+- Weapon Based Lineupgrade Techs
+    - Spear:YariSpearman,NaginataRider
+    - Archer:YumiArcher
+    - Sword:Samurai,Shinobi
+
+* Proto Reworks - Naval: 
+- FishingShip
+    - visualscale
+- Warship
+    - visualscale
+- Transport
+    - visualscale
+    - maxcontained increases by age
+
+- Commoner
+    - workrate: dropsites
+
+* Proto Reworks - Building
+- Watermill: 
+    - visualscale, <flag>SnapPlacement</flag>
+- Dojo, Guardhouse, Stable: visualscale
+- Castle:
+    - visualscale, advancedfortificationsI-II-III
+- Wonder:
+    - name
+
+* ATTACK SWITCH TECHS
+    * Samurai
+    - DefaultStance
+    - HeavyStance: rof-, hackattack+, divineattack 1
+    * Shinobi
+    - DefaultStance
+    - AssassinationStance: rof+, bonus humansoldier, nerf mythunit, hero   
+
+* Campaign Hero
+    - Harumoto (shogun),Tatsuro (father),Sojobo (tengu),Yasuko(girl), Akari(samurai,katana,spear)
+    - Kagemasa (shogun,sword,spear,yamatanoorichi),Magumo (jorogumo),ShutenDoji (oni,metalbat,heavenlyspear),YukiOnna
+    - ClanMember,Prisoner,Skult,Tanuki,Theris,HallgerdForbeard,HatamotoSamrai,Kamos,Kastor,
+    - AbeNoSeimei,HarumotoBlessed,DaimyoBlessed,ClanMemberSpear,
+    - Kodama,ShinbokuSoul,Kappa
+
+    - Cangjie,Houyi,YanFeiFeng,Chiyou,ChiyouTitan,CanjieRider,CangjieKnife,HouyiRider,YanFeiFenRider
+    - CelestialPillar,Penglai,AmeNoUkihashi
+* Hidden Units
+    - Sakimori,Azusa,BowCavalry,BushiYari
+    - Dog,Vulture,Harpy,Horse
+    - Griffon,Santa,Apep,Golem,WilliamWalrus
+    - Bondi,Recognizer,Chariot,WarChariot,Cataphract
+    - Charioteria,QinghaiLakeShrine,ShrineOfTheHunt,Goshinboku
+    - TownWall(short,long,connector),ToriiGate,KusanagiNoTsurugi
+    - ShrineMiniature,HeavenlyJeweledSpear,KagemasaSword
+    - SnowMonkey,GreenPheasant,JapaneseWolf,Serow,SpottedDeerSPC
+* God Power
+    - SolarShield: Unit -> Building
+* New Special Hero
+    - HeadPriestess: Kagura dance on Temple, build limit 1
+* Blessing
+    - WayOfTheStorm,WayOfTheMoon,WayOfTheSun
+* Nature
+    - resource rework, obscurion (japanese and chinese trees)
+
+* Special: include japanese among effects
+- ChampionArms, ChampionHooves, ChampionEngines, ChampionRangers
+- PhobosSpearOfPanicMk2: japanese spear units
+- DeimosSwordOfDreadMk2: japanese sword and blade units
+- EnyosBowOfHorrorMk2: japanese archer units
+- Mjolnir: japanese heavy blunt weapon units
+- Aegis: japanese shield units
+- VibrantLandMk2: shrine, shrineofhunt, plenty, monumenttovillagers, hesperidestree
+
+- MrWukong: VillagerJapanese Accel
+- LandLord: sfx non-norse civilizations
+
+- WarBunker: directprojectile
+- Temple: tech based name update -> temple of the sun, temple of the moon, temple of the tempest
+
 === New Unit Models - Custom Mesh
 Horse + ChuKoNu + Arbalest
 Horse + Brunhild + Bow
@@ -832,169 +1004,6 @@ Satyr + HandAttack (anim)
     - Tsukuyomi
     - Susanoo
         - Slayer of HumanSoldier vs Titan
-
-=== JAPANESE
-* Special: include japanese among effects
-- ChampionArms, ChampionHooves, ChampionEngines, ChampionRangers
-- PhobosSpearOfPanicMk2: japanese spear units
-- DeimosSwordOfDreadMk2: japanese sword and blade units
-- EnyosBowOfHorrorMk2: japanese archer units
-- Mjolnir: japanese heavy blunt weapon units
-- Aegis: japanese shield units
-- VibrantLandMk2: shrine, shrineofhunt, plenty, monumenttovillagers, hesperidestree
-
-- MrWukong: VillagerJapanese Accel
-- LandLord: sfx non-norse civilizations
-
-- WarBunker: directprojectile
-- Temple: tech based name update -> temple of the sun, temple of the moon, temple of the tempest
-
-* MythUnit
-    - Flying
-        - Onmoraki: Land, AreaDamage
-    - Siege
-        - Asura: SiegeWeapon,SiegeLineUpgrade
-        - Oni: SiegeWeapon, SiegeLineUpgrade, InfantryLineUpgrade
-    - Naval
-        - Honengyo: Amphibious
-        - Wanyudo: Amphibious, Burn, Bonus (villager,trade)
-        - Umibozu: SiegeWeapon, SiegeLineUpgraded
-        - Kappa
-    - MilitaryUnit
-        - Kamaitachi: samurai,infantry,bleed
-        - Tengu: infantry,samurai,infrantrylineupgrade
-        - Jorogumo: Healer
-            - Tech-Enabled: Minelayer, Spawn SpiderTrap x3
-        - Shinigami: Healer, Movement (Air)
-        - ShinigamiRevenant: Healer, Movement (Air), Spawn (Shades x3)
-        - MasterlessSword: InfantryLineUpgrade
-    - Beast
-        - Raiju     
-            - Tech-Enabled: areaslow (aotg chronosunique)
-    - Scout
-        - Kitsune
-            - Tech-Enabled: workrate aura
-* Hero
-    - Miko: Villager, Build Accel, Pacify MythUnit (caladria ability)
-        - Tech-Enabled: hp aura
-        - buildrate temple
-    - Bushi, OnnaMusha
-        - Tech-Enabled: AbilityOni
-    - Daimyo, Shogun
-        - Tech-Enabled: warcry
-    - Onmyoji (antibuilding fireball, antimyth (default), banish, slowaura (mythunit), healaura (empowerer, healer), barrier, summon (kitsune 5))
-* MilitaryUnit: Infantry, Cavalry, Archer, Siege
-    - Archer: YumiArcher,YumiHorseArcher
-    - Samurai: Bushi,Daimyo,Shogun,Samura
-        - Tech-Enabled: likeunitdamagebonus, likeunitspeedbonus
-    - Naginata: OnnaMusha,NaginataRider,YariSpearman
-    - Warrior Myth: Kamaitachi,Tengu,Oni
-    - Priest Myth: Jorogumo,Shinigami
-* Naval: 
-    - FishingShip
-        - visualscale
-    - Warship
-        - visualscale
-    - Transport
-        - visualscale
-        - maxcontained increases by age
-* Weapon-Based LineUpgrade Reworks
-    - Spear:YariSpearman,NaginataRider
-    - Archer:YumiArcher
-    - Sword:Samurai,Shinobi
-* Villager
-    - Commoner
-        - Knife Art Model: Katana
-        - workrate: dropsites
-* Tech
-    - Hero
-        - Kagura: GatherShrine (Onmyoji)
-        - GoheiWands: affects Onmoji
-        - EightBanners
-        - Onmyodo
-    - MythUnit
-        - WindSickes: VFXBLeed (Kamaitachi)
-        - CondemnedSoul: VFXFire, affects (Shinigami,RevenantShinigami,Wretched,HadesShade,Mummy,MummyFallen,Minion,MinionResurrected,GhostCrew,PirateCaptain)
-        - AsceticPractices
-        - ThunderousPresence
-        - BurningMalevolence
-        - RestlessArmy
-        - DeadlySnare, WisdomOfNine
-        - DeadlyRage, OniMask
-        - EternalHaunting
-    - HumanSoldier:
-        - Katagi: speed 0.5
-        - HuntersStrength: range (villager,archer), projectilespeed
-        - Kumiki: build workrate (villager,miko), crusharmor (building)
-        - GoldenKite
-        - HannyaMask
-        - TenFistSword
-        - Sojutsu
-        - SashimonoBannermen
-        - GalesFury
-        - SeasideInfiltrators
-        - AsymmetricalBows: enable archer proximity attack
-        - Shinobi - Bushi
-    - Siege:
-        - SumoTraining: Oyumi,SiegeCrossbow,Catapult,Petrobolos,CheiroBallista,Ballista
-        - MechanicalArtisans: 
-            - Ship,WaterMill
-            - Villager,Wanyudo, AbstractSiegeWeapon, MechanicalOxCaravan, Colossus, Sentinel, Icarus, BattleBoar
-            - AbstractDwarf, Eitri, Brokk, Automaton
-    - Villager:
-        - SaltwaterSpring: workrate ??? 
-    - Naval:
-        - DanNoUraTactics
-        - HeavenlyBarrage
-    - GodPower:
-        - DenDenDrums: rof
-        - IvoryNetsuke
-    - Building:
-        - DivinePrefecture
-        - Tenshu
-* Building
-    - Watermill: 
-        - visualscale, <flag>SnapPlacement</flag>
-    - Dojo, Guardhouse, Stable: visualscale
-    - Castle:
-        - visualscale, advancedfortificationsI-II-III
-    - Wonder:
-        - name
-
-* ATTACK SWITCH TECHS
-    * Samurai
-    - DefaultStance
-    - HeavyStance: rof-, hackattack+, divineattack 1
-    * Shinobi
-    - DefaultStance
-    - AssassinationStance: rof+, bonus humansoldier, nerf mythunit, hero   
-
-* Campaign Hero
-    - Harumoto (shogun),Tatsuro (father),Sojobo (tengu),Yasuko(girl), Akari(samurai,katana,spear)
-    - Kagemasa (shogun,sword,spear,yamatanoorichi),Magumo (jorogumo),ShutenDoji (oni,metalbat,heavenlyspear),YukiOnna
-    - ClanMember,Prisoner,Skult,Tanuki,Theris,HallgerdForbeard,HatamotoSamrai,Kamos,Kastor,
-    - AbeNoSeimei,HarumotoBlessed,DaimyoBlessed,ClanMemberSpear,
-    - Kodama,ShinbokuSoul,Kappa
-
-    - Cangjie,Houyi,YanFeiFeng,Chiyou,ChiyouTitan,CanjieRider,CangjieKnife,HouyiRider,YanFeiFenRider
-    - CelestialPillar,Penglai,AmeNoUkihashi
-* Hidden Units
-    - Sakimori,Azusa,BowCavalry,BushiYari
-    - Dog,Vulture,Harpy,Horse
-    - Griffon,Santa,Apep,Golem,WilliamWalrus
-    - Bondi,Recognizer,Chariot,WarChariot,Cataphract
-    - Charioteria,QinghaiLakeShrine,ShrineOfTheHunt,Goshinboku
-    - TownWall(short,long,connector),ToriiGate,KusanagiNoTsurugi
-    - ShrineMiniature,HeavenlyJeweledSpear,KagemasaSword
-    - SnowMonkey,GreenPheasant,JapaneseWolf,Serow,SpottedDeerSPC
-* God Power
-    - SolarShield: Unit -> Building
-* New Special Hero
-    - HeadPriestess: Kagura dance on Temple, build limit 1
-* Blessing
-    - WayOfTheStorm,WayOfTheMoon,WayOfTheSun
-* Nature
-    - resource rework, obscurion (japanese and chinese trees)
 
 === EVEN MORE COMPLEX REWORKS: 
 * GROUP TRAIN TECHS
