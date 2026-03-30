@@ -515,9 +515,13 @@
 - popcosts 1 or 2
 - favor costs:  HeroInfantry:0, Miko:1, Onmyoji:3
 - Onmyoji:
-    - AutoBoost: active ability, sets barrier on [heroes, non-titan mythunits, humansoldier], triggered by enemy humansoldiers
-    - Gather: active ability, gathers favor on temple
+    - Default: low divine attack, high bonus damage vs mythunit, deadlier to spectral units like shinigami, hadesshade, wretch etc
+        - no longer siege unit as crush damage removed
+    - Heal: stays as it is
     - AreaHeal: passive ability, heals everyone in close range
+    - AutoBoost: active ability, sets barrier on [heroes, non-titan mythunits, humansoldier], triggered by enemy humansoldiers
+    - Banish: active ability, sends mythunits to realm of chaos for 3s, divineattack
+    - Gather: active ability, gathers favor on temple
 
 21. Amazons Patch Reworks
 * Techs
@@ -624,7 +628,6 @@
     - Tech-Enabled: AbilityOni
 - Daimyo, Shogun
     - Tech-Enabled: warcry
-- Onmyoji (antibuilding fireball, antimyth (default), banish, slowaura (mythunit), healaura (empowerer, healer), barrier, summon (kitsune 5))
 
 * Proto Reworks - HumanSoldier: Infantry, Cavalry, Archer, Siege
 - Archer: YumiArcher,YumiHorseArcher
@@ -638,6 +641,9 @@
     - Spear:YariSpearman,NaginataRider
     - Archer:YumiArcher
     - Sword:Samurai,Shinobi
+
+* Proto Reworks - Worker: 
+- Commoner: remove temple from build accel
 
 * Proto Reworks - Naval: 
 - FishingShip

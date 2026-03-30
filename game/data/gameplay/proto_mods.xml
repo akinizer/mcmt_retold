@@ -1515,6 +1515,7 @@
 		<los>22.0000</los>
 
 		<rechargetime>25.0000</rechargetime>
+		<auxrechargetime>15.0000</auxrechargetime>
 
 		<cost resourcetype="Gold">200.0000</cost>
 		<cost resourcetype="Favor">15.0000</cost>
@@ -1629,6 +1630,28 @@
 		<protoaction>
 			<name>Gather</name>
 			<rate type="AbstractTemple">0.01000</rate>
+		</protoaction>
+		<protoaction>
+			<name>Banish</name>
+			<rof>1.330000</rof>
+			<damage type="Divine">40.000000</damage>
+			<damagearea>8.000000</damagearea>
+			<damageflags>Enemy|Nature</damageflags>
+			<maxrange>5.00000</maxrange>
+			<projectile>ProjectileBallOfFireInvisible</projectile>
+			<coneareaangle>30.000000</coneareaangle>
+			<onhiteffect type="Exile" duration="3.0">
+				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
+				<target ignoretype="Building"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="HunDunExistentialDoubt" duration="15.0">
+				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
+				<target ignoretype="Building"></target>
+			</onhiteffect>
+			<onhiteffect type="DamageOverTime" duration="15.0">
+				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
+				<target ignoretype="Building"></target>
+			</onhiteffect>
 		</protoaction>
 		<protoaction>
 			<name>Pickup</name>

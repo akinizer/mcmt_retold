@@ -6674,11 +6674,9 @@
     </effects>
   </tech>
   <!-- Japanese Techs -->
-  <tech name="Kagura" orderhint="3">
+  <tech name="Kagura">
 		<effects>
 			<effect type="Data" action="Heal" amount="1.25" unittype="LogicalTypeHealed" subtype="WorkRate" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Onmyoji</target></effect>
-      <effect type="Data" action="Gather" amount="1.10" subtype="WorkRate" unittype="AbstractTemple" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Onmyoji</target></effect>
       <effect type="Data" amount="0.90" subtype="TrainPoints" relativity="Percent" mergeMode="add">
 				<target type="ProtoUnit">Onmyoji</target></effect>

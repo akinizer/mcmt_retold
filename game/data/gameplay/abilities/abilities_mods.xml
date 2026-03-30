@@ -319,5 +319,6 @@
 		<!--Japanese-Hero-Priest-->
 	<Onmyoji>
 		<ability>AbilityYasukoSolarShield<chargetimeasrof>1</chargetimeasrof><castonself>1</castonself></ability>
+		<ability>AbilityHundunBanish<auxchargetimeasrof>1</auxchargetimeasrof></ability>
 	</Onmyoji>
 </abilities>

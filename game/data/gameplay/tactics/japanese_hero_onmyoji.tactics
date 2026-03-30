@@ -49,10 +49,27 @@
 		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
 		<impacteffect>effects\impacts\hack</impacteffect>
 	</action>
+	<action>
+		<name stringid="STR_ACTION_BANISH">Banish</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>ExileAttack</anim>
+		<impacteffect>effects\impacts\hack</impacteffect>
+		<auxchargeaction>1</auxchargeaction>
+
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+	</action>
 	<tactic>Default    
         <action priority="100">AutoBoost</action>
-        <action priority="90">RangedAttack</action>
-        <action priority="80">Heal</action>
+        <action priority="90">Banish</action>
+        <action priority="80">RangedAttack</action>
+        <action priority="70">Heal</action>
         <action>Gather</action>
         <action>AreaHeal</action>
         <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
