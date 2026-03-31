@@ -7473,6 +7473,12 @@
 		<soundsetfile>japanese\vo\abe_no_seimei\abe_no_seimei.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
+
+		<trainpoints>16.0</trainpoints>
+		<cost resourcetype="Food">380.0000</cost>
+		<cost resourcetype="Gold">20.0000</cost>
+		<cost resourcetype="Favor">12.0000</cost>
+
 		<impacttype>Armoured</impacttype>
 		<unitaitype>RangedCombative</unitaitype>
 		<movementtype>amphibious</movementtype>
@@ -7544,6 +7550,7 @@
 		<flag>CreateUnitGroupAutomatically</flag>
 		<flag>AutoCommandStartDisabled</flag>
 		<flag>TieToWaterSurface</flag>
+		<flag>AutoTrainable</flag>
 		<contain external="1">LogicalTypePickable</contain>
 		<tactics>japanese_hero_headpriest.tactics</tactics>
 		<protoaction>

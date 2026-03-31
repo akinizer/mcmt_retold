@@ -1171,14 +1171,6 @@
 						<duration>0.30000</duration>
 						<tags>
 							<tag>
-								<type>SpecificSoundSet</type>
-								<position>0.00000</position>
-								<properties>
-									<checkvisible>1</checkvisible>
-									<set>YaZiDash</set>
-								</properties>
-							</tag>
-							<tag>
 								<type>Throw</type>
 								<position>0.90000</position>
 							</tag>
@@ -1194,6 +1186,14 @@
 						<file>japanese\spc\units\yasuko\anim\yasuko_ability_b</file>
 						<duration>0.75000</duration>
 						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.00000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>HarpyDeath</set>
+								</properties>
+							</tag>
 							<tag>
 								<type>Attack</type>
 								<position>0.20000</position>

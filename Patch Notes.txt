@@ -525,7 +525,7 @@
 * Special Unit
 - MCMT_HeadPriest: improved version of Abe-No-Seimei, old priest that likes teasing others
     - Heal: active ability, automatic
-    - Teleport / Jump Scare: active ability, teleports behind target and scares them off and leaving them jumping up
+    - Jump Scare: active ability, teleports behind target [humansoldier, villager], scares them off (scream sfx) and leaves them jumping up (throw)
     - Waterwalking: passive ability
 21. Amazons Patch Reworks
 * Techs
