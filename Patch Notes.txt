@@ -522,7 +522,11 @@
     - AutoBoost: active ability, sets barrier on [heroes, non-titan mythunits, humansoldier], triggered by enemy humansoldiers
     - Banish: active ability, sends mythunits to realm of chaos for 3s, divineattack
     - Gather: active ability, gathers favor on temple
-
+* Special Unit
+- MCMT_HeadPriest: improved version of Abe-No-Seimei, old priest that likes teasing others
+    - Heal: active ability, automatic
+    - Teleport / Jump Scare: active ability, teleports behind target and scares them off and leaving them jumping up
+    - Waterwalking: passive ability
 21. Amazons Patch Reworks
 * Techs
 - AmazonVanguards: tower and fortress, precision, range, los improvements, requires crenelletions, guard tower, Greek civ

@@ -1277,6 +1277,9 @@
       </prereqs>
       <effects>
         <!-- ultimate -->
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">MCMT_HeadPriest</target></effect>
+
         <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileOnmyojiAttack" relativity="Assign">
           <target type="ProtoUnit">Onmyoji</target></effect>
         <effect type="Data" action="RangedAttack" amount="0.80" subtype="RateOfFire" relativity="Percent">

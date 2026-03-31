@@ -1735,6 +1735,7 @@
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_III</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_IV</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_V</tech>
+		<train row="0" column="5" mergeMode="add">MCMT_HeadPriest</train>
 	</unit>
 	<unit name="ShrineOfTheHunt">
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_I</tech>
@@ -1742,6 +1743,7 @@
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_III</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_IV</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_V</tech>
+		<train row="0" column="5" mergeMode="add">MCMT_HeadPriest</train>
 	</unit>
 
 	<!--
@@ -7467,7 +7469,7 @@
 		<rollovertextid>STR_UNIT_ABE_NO_SEIMEI_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_ABE_NO_SEIMEI_SR</shortrollovertextid>
 		<icon>resources\spc\player_color\units\abe_no_seimei_icon.png</icon>
-		<animfile>japanese\spc\units\abe_no_seimei\abe_no_seimei.xml</animfile>
+		<animfile>mcmt\units\priest\mcmt_abe_no_seimei.xml</animfile>
 		<soundsetfile>japanese\vo\abe_no_seimei\abe_no_seimei.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
@@ -7537,14 +7539,13 @@
 		<flag>ObscuredByUnits</flag>
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
-		<flag>KnockoutDeath</flag>
 		<flag>CanAutoHeal</flag>
 		<flag>HideGarrisonFlag</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
 		<flag>AutoCommandStartDisabled</flag>
 		<flag>TieToWaterSurface</flag>
 		<contain external="1">LogicalTypePickable</contain>
-		<tactics>rangedattack_heal.tactics</tactics>
+		<tactics>japanese_hero_headpriest.tactics</tactics>
 		<protoaction>
 			<name>RangedAttack</name>
 			<rof>1.500000</rof>
@@ -7576,6 +7577,24 @@
 			<maxrange>1</maxrange>
 			<rate type="AbstractTemple">1.00000</rate>
 		</protoaction>
+		<ProtoAction>
+            <Name>Teleport</Name>
+            <ROF>1.500000</ROF>
+            <Damage type='Divine'>5.000000</Damage>
+            <DamageFlags>Enemy</DamageFlags>
+            <DamageBonus type='MythUnit'>8.0000000</DamageBonus>
+            <MaxRange>25.000000</MaxRange>
+            <MinRange>20.000000</MinRange>
+            <ModifyDuration>1500</ModifyDuration>
+			<onhiteffect type="Throw" targetunittype="Unit"></onhiteffect>
+			<projectile>ProjectileBallOfFireInvisible</projectile>
+			<throw>1</throw>
+			<coneareaangle>360.000000</coneareaangle>
+			<outerdamageareadistance>1.500000</outerdamageareadistance>
+			<outerdamageareafactor>0.900000</outerdamageareafactor>
+			<fulldamagemaintarget>1</fulldamagemaintarget>
+			<maxsizeclass>7</maxsizeclass>
+        </ProtoAction>
 	</unit>
     <!-- Japanese Special Myth Units-->
     <!-- Japanese Special Military Units-->
@@ -20557,7 +20576,7 @@
 			<maxsizeclass>7</maxsizeclass>
 			<impacteffect>effects\impacts\hack</impacteffect>
 		</protoaction>
-			<ProtoAction>
+		<ProtoAction>
             <Name>Teleport</Name>
             <ROF>1.500000</ROF>
             <Damage type='Divine'>40.000000</Damage>
