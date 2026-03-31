@@ -24,9 +24,33 @@
     <tech name="ArchaicAgeGreek">
       <effects>        
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AmazonVanguards</effect>
+
+        <effect type="SetName" proto="TownCenter" newname="STR_BLD_PARTHENON_NAME" newrollover="STR_BLD_PARTHENON_LR" newshortrollover="STR_BLD_PARTHENON_SR"></effect>
+        <effect type="Data" action="RangedAttack" amount="0.00" subtype="ActionEnable" relativity="Assign">
+				  <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" tech="FortifiedTownCenter" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="Data" amount="1750" subtype="Hitpoints" relativity="Absolute">
+          <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">ParthenonGuards</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ParthenonGuards" row="0" column="5" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>		
       </effects>
     </tech>
-
+    <tech name="ArchaicAgeNorse">
+      <effects>        
+        <effect type="SetName" proto="TownCenter" newname="STR_BLD_JARLSMANOR_NAME" newrollover="STR_BLD_JARLSMANOR_LR" newshortrollover="STR_BLD_JARLSMANOR_SR"></effect>
+        <effect type="Data" action="RangedAttack" amount="0.00" subtype="ActionEnable" relativity="Assign">
+				  <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" tech="FortifiedTownCenter" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="Data" amount="1750" subtype="Hitpoints" relativity="Absolute">
+          <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">ManorGuards</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ManorGuards" row="0" column="5" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>		
+      </effects>
+    </tech>
     <tech name="ArchaicAgeJapanese">
       <effects>        
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_I</effect>
@@ -34,8 +58,29 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_III</effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_IV</effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_V</effect>
+        
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Temple" relativity="Assign">
+          <target type="ProtoUnit">VillagerJapanese</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>
+
+        <effect type="SetName" proto="ShrineJapanese" newname="STR_BLD_SHRINE_LOCAL_NAME"></effect>
       </effects>
     </tech>
+    <tech name="ArchaicAgeChinese">
+      <effects>        
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>
+      </effects>
+    </tech>
+    <tech name="ArchaicAgeEgyptian">
+      <effects>        
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>
+      </effects>
+    </tech>
+  
 
     <!-- MAJOR GOD IMPROVEMENTS -->
     <tech name="ArchaicAgeLoki">
@@ -1074,6 +1119,62 @@
     
     <!-- SPECIAL TECHS -->
     <!-- Greek Special Techs -->
+    <tech name="ParthenonGuards" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <flag>InfiniteTech</flag>
+      <displaynameid>STR_TECH_PARTHENONGUARDS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_PARTHENONGUARDS_LR</rollovertextid>
+      <cost resourcetype="Food">400.0000</cost>
+      <cost resourcetype="Gold">500.0000</cost>
+      <researchpoints>15.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\greek\player_color\units\hoplite_icon.png</icon>
+      <effects>
+        <effect type="CreateUnit" unit="Hoplite" generator="AbstractTownCenter">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+        <effect type="CreateUnit" unit="Hypaspist" generator="AbstractTownCenter">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+        <effect type="CreateUnit" unit="Toxotes" generator="AbstractTownCenter">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+      </effects>
+    </tech>
+    <tech name="ManorGuards" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <flag>InfiniteTech</flag>
+      <displaynameid>STR_TECH_MANORGUARDS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_MANORGUARDS_LR</rollovertextid>
+      <cost resourcetype="Wood">400.0000</cost>
+      <cost resourcetype="Gold">500.0000</cost>
+      <researchpoints>15.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\norse\player_color\units\jarl_icon.png</icon>
+      <effects>
+        <effect type="CreateUnit" unit="Huskarl" generator="AbstractTownCenter">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+        <effect type="CreateUnit" unit="Jarl" generator="AbstractTownCenter">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+        <effect type="CreateUnit" unit="ThrowingAxeman" generator="AbstractTownCenter">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="4.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+      </effects>
+    </tech>
     <!-- Norse Special Techs -->
     <!-- Egyptian Special Techs -->    
     <!-- Atlantean Special Techs -->
@@ -6859,7 +6960,17 @@
   <tech name="MythicAgeZhurong" mergeMode="add">
     <effects><effect type="SetName" proto="Temple" newname="STR_BLD_TEMPLEOFFIRE_NAME"></effect></effects>
   </tech> 
-  
+    <!-- Japanese Community -->
+  <tech name="ArchaicAgeAmaterasu">
+    <effects><effect type="SetName" proto="Temple" newname="STR_BLD_TEMPLEOFDIVINESUN_NAME" mergeMode="add"></effect></effects>
+  </tech> 
+  <tech name="ArchaicAgeTsukuyomi">
+    <effects><effect type="SetName" proto="Temple" newname="STR_BLD_TEMPLEOFETERNALMOON_NAME" mergeMode="add"></effect></effects>
+  </tech> 
+  <tech name="ArchaicAgeSusanoo">
+    <effects><effect type="SetName" proto="Temple" newname="STR_BLD_TEMPLEOFSTORMS_NAME" mergeMode="add"></effect></effects>
+  </tech> 
+
   <!-- Wonders of World-->
     <!-- Greek Wonders of Art-->
   <tech name="MythicAgeZeus" mergeMode="add">
@@ -6870,6 +6981,11 @@
   </tech> 
   <tech name="MythicAgeHades" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_MAUSOLEUM_NAME"></effect></effects>
+  </tech> 
+  <tech name="MythicAgeDemeter" mergeMode="add">
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_TELESTERION_NAME"></effect>
+    </effects>    
   </tech> 
     <!-- Egyptian Wonders of Art-->
   <tech name="MythicAgeRa" mergeMode="add">
@@ -6913,5 +7029,15 @@
   </tech> 
   <tech name="MythicAgeShennong" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_FUSANG_NAME"></effect></effects>
+  </tech> 
+    <!-- Chinese Wonders of Art-->
+  <tech name="MythicAgeAmaterasu" mergeMode="add">
+    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_HIMEJICASTLE_NAME"></effect></effects>
+  </tech> 
+  <tech name="MythicAgeTsukuyomi" mergeMode="add">
+    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TAKEONOOKUSU_NAME"></effect></effects>
+  </tech> 
+  <tech name="MythicAgeSusanoo" mergeMode="add">
+    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_ITSUKUSHIMASHRINE_NAME"></effect></effects>
   </tech> 
 </techtreemods>

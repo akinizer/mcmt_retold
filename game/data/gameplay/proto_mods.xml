@@ -8818,12 +8818,17 @@
 	</unit>
 
 	<unit name="TownCenter">
+		<animfile culture="greek" mergeMode="replace">greek_demeter\buildings\wonder\wonder_demeter.xml</animfile>
+		<animfile culture="norse" mergeMode="replace">norse_freyr\buildings\wonder\wonder_freyr.xml</animfile>
 		<tech row="2" column="1">MCMT_ArchitectsOfMarley</tech>
 		<tech row="3" column="2">MCMT_SpecialService</tech>
 		<tech row="3" column="3">MCMT_EgyptianRenovation</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
+	</unit>
+	<unit name="Settlement">
+		<flag>NonSolid</flag>
 	</unit>
 
 	<unit name="Baolei">
