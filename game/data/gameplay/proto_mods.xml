@@ -1581,8 +1581,6 @@
 			<name>RangedAttack</name>
 			<rof>1.500000</rof>
 			<damage type="Divine">5.000000</damage>
-			<damagearea>2.000000</damagearea>
-			<damageflags>Enemy</damageflags>
 			<damagebonus type="MythUnit">5.000000</damagebonus>
 			<damagebonus type="Shinigami">2.000000</damagebonus>
 			<damagebonus type="ShinigamiRevenant">2.000000</damagebonus>
@@ -1596,7 +1594,7 @@
 			<damagebonus type="Minion">2.000000</damagebonus>
 			<damagebonus type="Servant">2.000000</damagebonus>
 			<maxrange>14.000000</maxrange>
-			<projectile>ProjectileOnmyojiAttack</projectile>
+			<projectile>ProjectilePriestPharaoh</projectile>
 			<impacteffect>effects\impacts\onmyoji</impacteffect>
 		</protoaction>
 		<protoaction>
@@ -1611,6 +1609,7 @@
 			<modifyamount>1.0</modifyamount>
 			<maxrange>20</maxrange>
 			<slowhealmultiplier>0.50</slowhealmultiplier>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>AutoBoost</name>
@@ -1626,10 +1625,12 @@
 				<modify type="MaxShieldPoints" applytype="Add">35.000000</modify></onhiteffect>
 			<modelattachment>vfx\projectiles\yan_fei_feng\blessing_protect.xml</modelattachment>
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>Gather</name>
 			<rate type="AbstractTemple">0.01000</rate>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>Banish</name>
@@ -1652,6 +1653,7 @@
 				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
 				<target ignoretype="Building"></target>
 			</onhiteffect>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>Pickup</name>
@@ -1727,6 +1729,20 @@
 	-->
 
     <!-- Japanese Buildings-->
+	<unit name="ShrineJapanese">
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_I</tech>
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_II</tech>
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_III</tech>
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_IV</tech>
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_V</tech>
+	</unit>
+	<unit name="ShrineOfTheHunt">
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_I</tech>
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_II</tech>
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_III</tech>
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_IV</tech>
+		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_V</tech>
+	</unit>
 
 	<!--
 	<unit name=""></unit>
@@ -7446,6 +7462,121 @@
     <!-- Chinese Special Buildings-->
 
     <!-- Japanese Special Hero Units-->
+	<unit name="MCMT_HeadPriest">
+		<displaynameid>STR_UNIT_ABE_NO_SEIMEI_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ABE_NO_SEIMEI_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ABE_NO_SEIMEI_SR</shortrollovertextid>
+		<icon>resources\spc\player_color\units\abe_no_seimei_icon.png</icon>
+		<animfile>japanese\spc\units\abe_no_seimei\abe_no_seimei.xml</animfile>
+		<soundsetfile>japanese\vo\abe_no_seimei\abe_no_seimei.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<turnrate>18.0000</turnrate>
+		
+		<initialhitpoints>180.0000</initialhitpoints>
+		<maxhitpoints>180.0000</maxhitpoints>
+		<unitregen>1.5000</unitregen>
+		<initialshieldpoints>480</initialshieldpoints>
+		<maxshieldpoints>480</maxshieldpoints>
+		<unitshieldregen damagetimeout="2.0">5.0000</unitshieldregen>
+
+		<buildlimit>1</buildlimit>
+		<weightclass>6</weightclass>
+		<maxcontained>1</maxcontained>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.2000</maxvelocity>
+		<los>20.0000</los>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.2000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractHealer</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>		
+		<unittype>LogicalTypeHealableHero</unittype>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>KnockoutDeath</flag>
+		<flag>CanAutoHeal</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoCommandStartDisabled</flag>
+		<flag>TieToWaterSurface</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>rangedattack_heal.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Divine">5.500000</damage>
+			<damagearea>2.000000</damagearea>
+			<damageflags>Enemy|Nature</damageflags>
+			<damagebonus type="MythUnit">12.000000</damagebonus>
+			<damagebonus type="AbstractSiegeWeapon">5.000000</damagebonus>
+			<maxrange>14.000000</maxrange>
+			<projectile>ProjectileOnmyojiAttack</projectile>
+			<impacteffect>effects\impacts\onmyoji</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>Heal</name>
+			<type>Heal</type>
+			<maxrange>15</maxrange>
+			<rate type="LogicalTypeHealed">12.000000</rate>
+			<slowhealmultiplier>0.50</slowhealmultiplier>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+	</unit>
     <!-- Japanese Special Myth Units-->
     <!-- Japanese Special Military Units-->
     <!-- Japanese Special Naval Units-->

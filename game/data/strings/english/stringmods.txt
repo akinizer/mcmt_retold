@@ -565,6 +565,21 @@ ID = "STR_ACTION_TELEPUNT_ATTACK"   ;   Str = "Telepunt Attack"
 // REWORKED TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
 
+ID = "STR_TECH_ONMYOJI_UPGRADE_I_NAME"   ;   Str = "Onmyoji Upgrade I"
+ID = "STR_TECH_ONMYOJI_UPGRADE_I_LR"   ;   Str = "First of Omnyoji upgrades. Enables ability"
+
+ID = "STR_TECH_ONMYOJI_UPGRADE_II_NAME"   ;   Str = "Onmyoji Upgrade II"
+ID = "STR_TECH_ONMYOJI_UPGRADE_II_LR"   ;   Str = "Second of Omnyoji upgrades. Enables ability"
+
+ID = "STR_TECH_ONMYOJI_UPGRADE_III_NAME"   ;   Str = "Onmyoji Upgrade III"
+ID = "STR_TECH_ONMYOJI_UPGRADE_III_LR"   ;   Str = "Third of Omnyoji upgrades. Enables ability"
+
+ID = "STR_TECH_ONMYOJI_UPGRADE_IV_NAME"   ;   Str = "Onmyoji Upgrade IV"
+ID = "STR_TECH_ONMYOJI_UPGRADE_IV_LR"   ;   Str = "Fourth of Omnyoji upgrades. Enables ability"
+
+ID = "STR_TECH_ONMYOJI_UPGRADE_V_NAME"   ;   Str = "Onmyoji Upgrade V"
+ID = "STR_TECH_ONMYOJI_UPGRADE_V_LR"   ;   Str = "Final Omnyoji upgrade. Improves Omnyoji and summons Head Priest. Research it only in dire cases"
+
 // SPECIAL TECHS
 ID = "STR_TECH_MCMT_PAGE_1"   ;   Str = "Page1"
 ID = "STR_TECH_MCMT_PAGE_2"   ;   Str = "Page2"

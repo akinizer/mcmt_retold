@@ -27,6 +27,16 @@
       </effects>
     </tech>
 
+    <tech name="ArchaicAgeJapanese">
+      <effects>        
+        <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_I</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_II</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_III</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_IV</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_V</effect>
+      </effects>
+    </tech>
+
     <!-- MAJOR GOD IMPROVEMENTS -->
     <tech name="ArchaicAgeLoki">
         <effects>
@@ -1068,9 +1078,7 @@
     <!-- Egyptian Special Techs -->    
     <!-- Atlantean Special Techs -->
     <!-- Chinese Special Techs -->
-    <!-- Japanese Special Techs -->
-
-    <!-- MCMT Special Techs -->
+     
      <!--Chinese: Baolei Commands-->  
   <tech name="Baolei_BuildingAccels" mergeMode="add">
     <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
@@ -1178,7 +1186,176 @@
     </effects>
 	</tech>
 
-  <!-- Temple of Primordials - Activate Tech -->
+  
+    <!-- Japanese Special Techs -->
+	
+  <tech name="OnmyojiUpgrade_I" mergeMode="add">
+      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_I_NAME</displaynameid>
+      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_I_LR</rollovertextid>
+      <cost resourcetype="Wood">200.0000</cost>
+      <cost resourcetype="Favor">10.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\onmyoji_upgrade_I.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <effects>
+        <!-- tech enable gather -->
+        <effect type="Data" action="Gather" amount="1.00" subtype="ActionEnable" relativity="Assign">
+				  <target type="ProtoUnit">Onmyoji</target></effect>
+      </effects>
+    </tech>
+  <tech name="OnmyojiUpgrade_II" mergeMode="add">
+      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_II_NAME</displaynameid>
+      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_II_LR</rollovertextid>
+      <cost resourcetype="Gold">200.0000</cost>
+      <cost resourcetype="Favor">10.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\onmyoji_upgrade_II.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <prereqs>
+        <techstatus status="Active">OnmyojiUpgrade_I</techstatus>
+      </prereqs>
+      <effects>
+        <!-- barrier -->
+        <effect type="Data" action="AutoBoost" amount="1.00" subtype="ActionEnable" relativity="Assign">
+				  <target type="ProtoUnit">Onmyoji</target></effect>
+      </effects>
+    </tech>
+  <tech name="OnmyojiUpgrade_III" mergeMode="add">
+      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_III_NAME</displaynameid>
+      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_III_LR</rollovertextid>
+      <cost resourcetype="Food">200.0000</cost>
+      <cost resourcetype="Favor">10.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\onmyoji_upgrade_III.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <prereqs>
+        <techstatus status="Active">OnmyojiUpgrade_II</techstatus>
+      </prereqs>
+      <effects>
+        <!-- area heal -->
+        <effect type="Data" action="AreaHeal" amount="1.00" subtype="ActionEnable" relativity="Assign">
+				  <target type="ProtoUnit">Onmyoji</target></effect>
+      </effects>
+    </tech>
+  <tech name="OnmyojiUpgrade_IV" mergeMode="add">
+      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_IV_NAME</displaynameid>
+      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_IV_LR</rollovertextid>
+      <cost resourcetype="Gold">200.0000</cost>
+      <cost resourcetype="Favor">15.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\onmyoji_upgrade_IV.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <prereqs>
+        <techstatus status="Active">OnmyojiUpgrade_III</techstatus>
+      </prereqs>
+      <effects>
+        <!-- banish -->
+        <effect type="Data" action="Banish" amount="1.00" subtype="ActionEnable" relativity="Assign">
+				  <target type="ProtoUnit">Onmyoji</target></effect>
+      </effects>
+    </tech>
+  <tech name="OnmyojiUpgrade_V" mergeMode="add">
+      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_V_NAME</displaynameid>
+      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_V_LR</rollovertextid>
+      <cost resourcetype="Gold">400.0000</cost>
+      <cost resourcetype="Favor">25.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\onmyoji_upgrade_V.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <prereqs>
+        <techstatus status="Active">OnmyojiUpgrade_IV</techstatus>
+      </prereqs>
+      <effects>
+        <!-- ultimate -->
+        <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileOnmyojiAttack" relativity="Assign">
+          <target type="ProtoUnit">Onmyoji</target></effect>
+        <effect type="Data" action="RangedAttack" amount="0.80" subtype="RateOfFire" relativity="Percent">
+          <target type="ProtoUnit">Onmyoji</target></effect>
+
+			  <effect type="CreateUnit" unit="MCMT_HeadPriest" generator="AbstractShrineJapanese">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      </effects>
+    </tech>
+  
+	<!-- /// MCMT RESEARCHES /// -->
+	
+	<!-- FOUNDER TECHS // LANDLORD AND NOAH SPAWN -->
+	<tech name="MCMT_SpecialService">
+    <displaynameid>STR_TECH_SPECIALSERVICE_NAME</displaynameid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">15.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+		
+		<effects><effect type="TechStatus" status="obtainable">MCMT_Landlord_Respawn</effect></effects>
+	</tech>
+
+	<tech name="MCMT_Landlord_Respawn">
+		<status>UNOBTAINABLE</status>
+		<delay>10.0000</delay>
+		<flag>Volatile</flag>
+		<flag>Persistent</flag>
+		<flag>HideFromDialogs</flag>
+		<prereqs>
+			<typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+			<typecount unit="Landlord" count="1.00" state="aliveState" operator="lt"></typecount>
+      <techstatus status="Active">MCMT_SpecialService</techstatus>
+		</prereqs>
+		<effects>
+			<effect type="CreateUnit" unit="Landlord" generator="AbstractTownCenter">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern>
+			</effect>
+		</effects>
+		<effect type="TextOutput">STR_MSG_LANDLORD_SPAWN</effect>
+	</tech>
+
+  <tech name="MCMT_EgyptianRenovation">
+    <displaynameid>STR_TECH_EGYPTIAN_RENOVATION_NAME</displaynameid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">15.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Noah</target></effect>
+      <effect type="TechStatus" status="obtainable">MCMT_Noah_Respawn</effect>
+    </effects>
+  </tech>
+
+  <tech name="MCMT_Noah_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>2.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">MCMT_EgyptianRenovation</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="Noah" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="Noah" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_NOAH_SPAWN</effect>
+    </effects>
+  </tech>
+
+    <!-- TEMPLE OF PRIMORDIALS // PAGINATION TECHS -->
   <tech name="TempleOfPrimordials_ActivateTech_GodsBeasts" mergeMode="add">
     <displaynameid>STR_TECH_ACTIVATE_TECH_GODSBEASTS</displaynameid>
     <researchpoints>10.0000</researchpoints>
@@ -1336,6 +1513,8 @@
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="TempleOfPrimordials_ActivateTech_SuperWeapons" row="0" column="3" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
     </effects>
   </tech>
+
+  <!-- CYBERTECH // MARKET AND FINANCIAL WORLD CENTER TECHS -->
   <tech name="MCMT_FinancialDevelopmentUpgradeI" mergeMode="add">
     <displaynameid>STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_I_NAME</displaynameid>
     <researchpoints>5.0000</researchpoints>
@@ -1642,73 +1821,6 @@
       <effect type="Data" action="AutoGather" amount="0.10" subtype="WorkRate" unittype="Gold" relativity="Absolute">
         <target type="ProtoUnit">CyberTechWorldFinancialCenter</target>
       </effect>    
-    </effects>
-  </tech>
-	
-	<!-- /// Researches /// -->
-	
-	<!-- FOUNDER TECHS: LANDLORD AND NOAH SPAWN -->
-	<tech name="MCMT_SpecialService">
-    <displaynameid>STR_TECH_SPECIALSERVICE_NAME</displaynameid>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\tech\activate_tech.jpg</icon>
-    <researchpoints>1.0000</researchpoints>
-    <cost resourcetype="Favor">15.0000</cost>
-    <flag>CountsTowardMilitaryScore</flag>
-    <flag>MythTech</flag>
-		
-		<effects><effect type="TechStatus" status="obtainable">MCMT_Landlord_Respawn</effect></effects>
-	</tech>
-
-	<tech name="MCMT_Landlord_Respawn">
-		<status>UNOBTAINABLE</status>
-		<delay>10.0000</delay>
-		<flag>Volatile</flag>
-		<flag>Persistent</flag>
-		<flag>HideFromDialogs</flag>
-		<prereqs>
-			<typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
-			<typecount unit="Landlord" count="1.00" state="aliveState" operator="lt"></typecount>
-      <techstatus status="Active">MCMT_SpecialService</techstatus>
-		</prereqs>
-		<effects>
-			<effect type="CreateUnit" unit="Landlord" generator="AbstractTownCenter">
-				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern>
-			</effect>
-		</effects>
-		<effect type="TextOutput">STR_MSG_LANDLORD_SPAWN</effect>
-	</tech>
-
-  <tech name="MCMT_EgyptianRenovation">
-    <displaynameid>STR_TECH_EGYPTIAN_RENOVATION_NAME</displaynameid>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\tech\activate_tech.jpg</icon>
-    <researchpoints>1.0000</researchpoints>
-    <cost resourcetype="Favor">15.0000</cost>
-    <flag>CountsTowardMilitaryScore</flag>
-    <flag>MythTech</flag>
-    <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
-    <effects>
-      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Noah</target></effect>
-      <effect type="TechStatus" status="obtainable">MCMT_Noah_Respawn</effect>
-    </effects>
-  </tech>
-
-  <tech name="MCMT_Noah_Respawn">
-    <status>UNOBTAINABLE</status>
-    <delay>2.0000</delay>
-    <flag>Volatile</flag>
-    <flag>Persistent</flag>
-    <flag>HideFromDialogs</flag>
-    <prereqs>
-      <techstatus status="Active">MCMT_EgyptianRenovation</techstatus>
-      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
-      <typecount unit="Noah" count="1.00" state="aliveState" operator="lt"></typecount>
-    </prereqs>
-    <effects>
-      <effect type="CreateUnit" unit="Noah" generator="AbstractTownCenter">
-        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
-      <effect type="TextOutput">STR_MSG_NOAH_SPAWN</effect>
     </effects>
   </tech>
 
@@ -3857,11 +3969,11 @@
     <techage>MythicAge</techage>
     <effects>
       <!-- Archers -->
-      <effect type="Data" action="RangedAttack" amount="0.50" subtype="Damagebonus" unittype="Building" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="0.15" subtype="Damagebonus" unittype="Building" relativity="Absolute">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
-      <effect type="Data" action="RangedAttack" amount="0.50" subtype="Damagebonus" unittype="Ship" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="0.30" subtype="Damagebonus" unittype="Ship" relativity="Absolute">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
-      <effect type="Data" action="RangedAttack" amount="0.50" subtype="Damagebonus" unittype="AbstractSiegeWeapon" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="0.30" subtype="Damagebonus" unittype="AbstractSiegeWeapon" relativity="Absolute">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
       
       <!-- Exclusive Archers -->
@@ -3895,7 +4007,11 @@
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
 
       <!-- VFXFire -->
-      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" relativity="Assign">
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Building" proto="VFXFire" relativity="Assign">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>            
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Ship" proto="VFXFire" relativity="Assign">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>            
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="AbstractSiegeWeapon" proto="VFXFire" relativity="Assign">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>            
     </effects>
   </tech>  
