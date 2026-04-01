@@ -1491,7 +1491,9 @@
 
     <!-- JAPANESE SECTION --> 
 
-    <!-- Japanese Priests TODO -->
+	<!-- Japanese Unit Reworks -->
+
+    <!-- Japanese Priests -->
 	 <unit name="Onmyoji" mergeMode="replace">
 		<displaynameid>STR_UNIT_ONMYOJI_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_ONMYOJI_LR</rollovertextid>
@@ -1669,23 +1671,18 @@
 		</protoaction>
 	</unit>
 
-	<!--	
-	onmyoji <barrier, myth areaslow, bonusdamage myth, areaheal>
-	<unit name="Miko"></unit>
-	-->
+	<!-- Japanese Myth Units -->
 
-	<!-- Japanese Worker Units-->
-	
-	<!--
-	<unit name="Commoner"></unit>
-	-->
+	<unit name="Kamaitachi">
+		<unittype mergeMode="add">AbstractSamurai</unittype>
+	</unit>
+	<unit name="Tengu">
+		<unittype mergeMode="add">AbstractSamurai</unittype>
+		<unittype mergeMode="add">AbstractInfantry</unittype>
+		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
+	</unit>
 
-	<!-- Japanese Myth Units-->
-
-	<!--
-	<unit name="Kamaitachi"></unit> samurai tech
-	<unit name="Tengu"></unit> samurai tech
-
+	<!-- TODO
 	<unit name="Wanyudo"></unit> ghost tech
 	<unit name="Shinigami"></unit> ghost tech, leech, absorb ability
 	<unit name="Kitsune"></unit> ghost tech, leech, absorb ability
@@ -1700,22 +1697,60 @@
 	<unit name="Onmoraki"></unit> vfxpoison
 
 	<unit name="Jorogumo"></unit> vfxpoison, caladria ability
+	<unit name="GauntletChaosFlamingMonkey"></unit> 
+	<unit name="FavorStashSentinel"></unit> 
+	<unit name="GauntletChaosNidhogg"></unit> 
 	-->
 
     <!-- Japanese Military Units-->
-
-	<!--
+	<unit name="Bushi">
+		<unittype mergeMode="add">AbstractSamurai</unittype>
+		<unittype mergeMode="add">AbstractInfantry</unittype>
+		<unittype mergeMode="add">ArcherLineUpgraded</unittype>
+		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
+	</unit>
+	<unit name="YumiArcher">
+		<unittype mergeMode="add">ArcherLineUpgraded</unittype>
+	</unit>
+	<unit name="YumiHorseArcher">
+		<unittype mergeMode="add">ArcherLineUpgraded</unittype>
+	</unit>
+	<unit name="OnnaMusha">
+		<unittype mergeMode="add">AbstractSamurai</unittype>
+		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
+	</unit>
+	<unit name="Daimyo">
+		<unittype mergeMode="add">AbstractSamurai</unittype>
+		<unittype mergeMode="add">AbstractInfantry</unittype>
+		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
+	</unit>
+	<unit name="Shogun">
+		<unittype mergeMode="add">AbstractSamurai</unittype>
+		<unittype mergeMode="add">AbstractInfantry</unittype>
+		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
+	</unit>
+	
+	<!-- TODO
 	<unit name="YariSpearman"></unit>
-	<unit name="YumiArcher"></unit> samurai sword anim
-	<unit name="Bushi"></unit> light samurai sword anim
+	
 	<unit name="Samurai"></unit> samurai sword anim, more hp, slower attack
 	<unit name="Shinobi"></unit>
-	<unit name="OnnaMusha"></unit> yumiarcher bow anim
-
 	<unit name="NaginataRider"></unit> YariSpearman spawn
-	<unit name="YumiHorseArcher"></unit> YumiArcher spawn
-	<unit name="Daimyo"></unit> DaimyoSamurai spawn
-	<unit name="Shogun"></unit> DaimyoSamurai spawn
+	
+
+	<unit name="Sakimori"></unit>
+	<unit name="BushiYari"></unit>
+	<unit name="SamuraiHatamoto"></unit>
+	<unit name="ShinobiWanKenobi"></unit>
+	<unit name="GauntletChaosShinobiWanKenobi"></unit>
+	<unit name="Sugaru"></unit>
+	<unit name="Kunoichi"></unit>
+	<unit name="ClanMember"></unit>
+	<unit name="Azusa"></unit>
+	<unit name="akari"></unit>
+	<unit name="kagemasa"></unit>
+	<unit name="harumoto"></unit>
+	<unit name="onna_musha_champion"></unit>
 	-->
 
     <!-- Japanese Naval Units-->
