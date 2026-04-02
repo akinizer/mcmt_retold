@@ -53,17 +53,23 @@
     </tech>
     <tech name="ArchaicAgeJapanese">
       <effects>        
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MikoOracleUpgrade</effect>
+
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_I</effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_II</effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_III</effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_IV</effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_V</effect>
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsJapanese</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsJapanese" row="3" column="4" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>		
         
         <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Temple" relativity="Assign">
           <target type="ProtoUnit">VillagerJapanese</target></effect>
 
         <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
-          <target type="ProtoUnit">TownCenter</target></effect>
+          <target type="ProtoUnit">TownCenter</target></effect>       
 
         <effect type="SetName" proto="ShrineJapanese" newname="STR_BLD_SHRINE_LOCAL_NAME"></effect>
       </effects>
@@ -1290,6 +1296,34 @@
   
     <!-- Japanese Special Techs -->
 	
+  <tech name="MikoOracleUpgrade" mergeMode="add">
+      <displaynameid>STR_TECH_MIKO_ORACLE_UPGRADE_NAME</displaynameid>
+      <rollovertextid>STR_TECH_MIKO_ORACLE_UPGRADE_LR</rollovertextid>
+      <cost resourcetype="Food">200.0000</cost>
+      <cost resourcetype="Gold">100.0000</cost>
+      <cost resourcetype="Favor">10.0000</cost>
+      <researchpoints>15.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\japanese\static_color\technologies\sacred_custodians_icon.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <prereqs>
+        <techstatus status="Active">SacredCustodians</techstatus>
+      </prereqs>
+      <effects>
+        <effect type="Data" subtype="ProtoActionAdd" protoaction="AreaMutate" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+          <target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" subtype="ProtoActionAdd" protoaction="ShrineGatherRateBoost" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+          <target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" subtype="ProtoActionAdd" protoaction="CherrySpawn" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+          <target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" subtype="ProtoActionAdd" protoaction="ResourceInventoryAura" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+          <target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" subtype="ProtoActionAdd" protoaction="ResourceInventoryCapAura" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+          <target type="ProtoUnit">Miko</target></effect>
+      </effects>
+  </tech>
+
   <tech name="OnmyojiUpgrade_I" mergeMode="add">
       <displaynameid>STR_TECH_ONMYOJI_UPGRADE_I_NAME</displaynameid>
       <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_I_LR</rollovertextid>
@@ -1305,7 +1339,7 @@
         <effect type="Data" action="Gather" amount="1.00" subtype="ActionEnable" relativity="Assign">
 				  <target type="ProtoUnit">Onmyoji</target></effect>
       </effects>
-    </tech>
+  </tech>
   <tech name="OnmyojiUpgrade_II" mergeMode="add">
       <displaynameid>STR_TECH_ONMYOJI_UPGRADE_II_NAME</displaynameid>
       <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_II_LR</rollovertextid>
@@ -1389,6 +1423,31 @@
 			  <effect type="CreateUnit" unit="MCMT_HeadPriest" generator="AbstractShrineJapanese">
           <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
             <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      </effects>
+    </tech>
+  <tech name="DetonatorsJapanese" mergeMode="add">
+      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+      <cost resourcetype="Gold">300.0000</cost>
+      <cost resourcetype="Wood">100.0000</cost>
+      <cost resourcetype="Favor">5.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\explosives.jpg</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <effects>
+        <!-- ultimate -->        
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Building</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">AbstractWarship</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Shinobi</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Wanyudo</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Asura</target></effect>	
       </effects>
     </tech>
   

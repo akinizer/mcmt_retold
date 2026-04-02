@@ -1769,6 +1769,7 @@
 
     <!-- Japanese Buildings-->
 	<unit name="ShrineJapanese">
+		<tech row="0" column="0" mergeMode="add">MikoOracleUpgrade</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_I</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_II</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_III</tech>
@@ -1777,6 +1778,7 @@
 		<train row="0" column="5" mergeMode="add">MCMT_HeadPriest</train>
 	</unit>
 	<unit name="ShrineOfTheHunt">
+		<tech row="0" column="5" mergeMode="add">MikoOracleUpgrade</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_I</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_II</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_III</tech>
@@ -3476,10 +3478,9 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
-			</protoaction>
+		</protoaction>
 		<protoaction>
 			<name>HeroGlowOnSelf</name>
 			<type>Modify</type>
@@ -6337,10 +6338,9 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
-			</protoaction>
+		</protoaction>
 		<protoaction>
 			<name>HeroGlowOnSelf</name>
 			<type>Modify</type>
@@ -10280,15 +10280,12 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
-			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
 		<protoaction>
 			<name>HeroGlowOnSelf</name>
 			<type>Modify</type>
 			<modifyselfonly>1</modifyselfonly>
-			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
@@ -10882,7 +10879,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -11097,7 +11093,6 @@
         <protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
         </protoaction>
@@ -11329,7 +11324,6 @@
         <protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -11471,7 +11465,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
         </protoaction>
@@ -11731,7 +11724,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
         </protoaction>
@@ -11855,7 +11847,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -12865,7 +12856,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -13491,7 +13481,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -13605,7 +13594,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -13706,7 +13694,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -13804,7 +13791,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -13901,7 +13887,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -14103,7 +14088,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 		</protoaction>
@@ -17001,7 +16985,7 @@
 			<rate type="Building">1.00</rate>
 			<basedamagecap>1</basedamagecap>
 			<areasortmode>Radial</areasortmode>
-			<impacteffect>effects\impacts\pierce</impacteffect>
+			<impacteffect>effects\impacts\asura_fire_ball</impacteffect>
 			<onhiteffect type="Freeze" freezetype="Sand" duration="8.000000"></onhiteffect>
 			<onhiteffect type="StatModify" duration="10.00000">
 				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply">0.6000</modify>
@@ -17270,7 +17254,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -17702,7 +17685,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -17814,7 +17796,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -17924,7 +17905,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 		</protoaction> 
@@ -18057,7 +18037,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 		</protoaction>
@@ -18840,7 +18819,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -18927,7 +18905,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -19343,7 +19320,25 @@
 		<flag>DisplayMinimumRange</flag>
 		<flag>DisplayRange</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
 		<tactics>area_damage.tactics</tactics>
+		<protoaction mergeMode="add">
+			<name>SelfDestructAttack</name>
+			<type>Attack</type>
+			<anim>HandAttack</anim>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<areasortmode>Radial</areasortmode>
+			<impacteffect>effects\impacts\asura_fire_ball</impacteffect>
+
+			<damage type="Pierce">100.000000</damage>
+			<damagearea>9.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="AbstractVillager"></onhiteffect>
+			<throw>1</throw>
+   		</protoaction>
 		<protoaction>
 			<name>Trail</name>
 			<type>Trail</type>
@@ -20265,7 +20260,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -20383,7 +20377,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -20843,7 +20836,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -21482,7 +21474,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -21586,7 +21577,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -21849,7 +21839,6 @@
 		<protoaction>
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
 			</protoaction>
@@ -24084,8 +24073,9 @@
 	<!-- dismount units knights
 	<unit name="NaginataSamurai" mergeMode="add"></unit>
 	<unit name="DaimyoGeneral" mergeMode="add"></unit>
+
 -->
-	<!-- Special Unit Projectiles -->
+	<!-- /// SPECIAL PROJECTILES /// -->
 	<unit name="ProjectileDisintegrationBolt">
 		<animfile>vfx\projectiles\priest_pharaoh\priest_pharaoh.xml</animfile>
 		<obstructionradiusx>0.2000</obstructionradiusx>
@@ -24115,4 +24105,552 @@
 		<flag>NotKBTracked</flag>
 		<flag>NotDeathTracked</flag>
  	</unit>
+	<!-- /// SPECIAL AURA CONTAINERS /// -->
+	<unit name="ShrineGatherBoostContainer">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaMutate</name>
+			<type>AreaMutate</type>
+			<targetnature>1</targetnature>
+			<keepalive>1</keepalive>
+			<persistent>1</persistent>
+     		<maxrange>12</maxrange>
+      		<modifyabstracttype>Tree</modifyabstracttype>
+      		<forbidunittype>TreeCherryShrine</forbidunittype>
+      		<modifyprotoid>TreeCherryShrine</modifyprotoid>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_SHRINE_GATHER_RATE_BOOST">ShrineGatherRateBoost</name>
+			<type>LikeBonus</type>
+			<targetattachment>vfx\glow\shrine_active.xml</targetattachment>
+			<targetattachmentbone>spine</targetattachmentbone>
+			<modifybase>1.0</modifybase>
+			<maxrange>12</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>Resource</modifyabstracttype>
+			<rate type="Tree">0.05</rate>
+			<rate type="NonConvertableHerdable">0.067</rate>
+			<rate type="ArcticWolf">0.1</rate>
+			<rate type="Aurochs">0.333</rate>
+			<rate type="Baboon">0.083</rate>
+			<rate type="Bear">0.167</rate>
+			<rate type="Boar">0.267</rate>
+			<rate type="Caribou">0.133</rate>
+			<rate type="Crocodile">0.167</rate>
+			<rate type="CrownedCrane">0.083</rate>
+			<rate type="Deer">0.133</rate>
+			<rate type="Elephant">0.6</rate>
+			<rate type="Elk">0.133</rate>
+			<rate type="Gazelle">0.133</rate>
+			<rate type="Giraffe">0.267</rate>
+			<rate type="Hippopotamus">0.333</rate>
+			<rate type="Hyena">0.083</rate>
+			<rate type="Lion">0.083</rate>
+			<rate type="Monkey">0.083</rate>
+			<rate type="PolarBear">0.167</rate>
+			<rate type="Rhinoceros">0.433</rate>
+			<rate type="Walrus">0.333</rate>
+			<rate type="WaterBuffalo">0.333</rate>
+			<rate type="Wolf">0.1</rate>
+			<rate type="Zebra">0.167</rate>
+			<rate type="BlackBear">0.167</rate>
+			<rate type="GoldenPheasant">0.1</rate>
+			<rate type="RedCrownedCrane">0.1</rate>
+			<rate type="SpottedDeer">0.133</rate>
+			<rate type="DeerShrineOfTheHunt">0.133</rate>
+			<rate type="SnowMonkey">0.083</rate>
+			<rate type="JapaneseWolf">0.1</rate>
+			<rate type="GreenPheasant">0.1</rate>
+			<rate type="Serow">0.167</rate>
+			<rate type="BerryBush">0.1</rate>
+			<rate type="MineGoldLarge">1.00</rate>
+			<rate type="MineGoldMedium">0.50</rate>
+			<rate type="MineGoldSmall">0.25</rate>
+			<rate type="MineDwarvenLarge">1.00</rate>
+			<rate type="MineDwarvenMedium">0.50</rate>
+			<rate type="MineDwarvenSmall">0.25</rate>
+			<persistent>1</persistent>
+			<modifytype>GatherRateMultiplier</modifytype>
+			<exclusive>1</exclusive>
+			<includenature>1</includenature>
+			<donotignoredead>1</donotignoredead>
+			<modifyinventoryscale>1</modifyinventoryscale>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_SHRINE_CHERRY_SPAWN">CherrySpawn</name>
+			<type>Maintain</type>
+			<pausable>0</pausable>
+			<showqueuewhilewaiting>0</showqueuewhilewaiting>
+			<maxrange>12.000000</maxrange>
+			<rate type="TreeCherryShrine">1.0</rate>
+			<maintaintrainpoints>50.0000</maintaintrainpoints>
+			<persistent>1</persistent>
+			<modifytargetlimit>10</modifytargetlimit>
+			<hidefromglobalqueue>1</hidefromglobalqueue>
+		</protoaction>
+		<protoaction>
+			<name>ResourceInventoryAura</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>Resource</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>InventoryAmount</modifytype>
+			<nostack>1</nostack>
+			<includenature>1</includenature>
+			<donotignoredead>1</donotignoredead>
+			<modifyamount>0.250000</modifyamount>
+			<maxrange>12</maxrange>
+			<rate type="MineGoldLarge">5.00</rate>
+			<rate type="MineGoldMedium">2.50</rate>
+			<rate type="MineGoldSmall">1.25</rate>
+			<rate type="MineDwarvenLarge">5.00</rate>
+			<rate type="MineDwarvenMedium">2.50</rate>
+			<rate type="MineDwarvenSmall">1.25</rate>
+			<rate type="Tree">0.50</rate>
+			<rate type="Huntable">1.00</rate>
+			<rate type="BerryBush">1.00</rate>
+			<rate type="NonConvertableHerdable">0.50</rate>
+		</protoaction>
+		<protoaction>
+			<name>ResourceInventoryCapAura</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>Resource</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>InventoryExtraCap</modifytype>
+			<nostack>1</nostack>
+			<includenature>1</includenature>
+			<donotignoredead>1</donotignoredead>
+			<maxrange>12</maxrange>
+      		<modifymultiplier>0.400000</modifymultiplier>
+		</protoaction>
+	</unit>
+	<unit name="MythBonusContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>DamageBonusVsMyth</name>
+			<type>AutoRangedModify</type>
+			<modifytype>DamageByTargetType</modifytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<maxrange>5</maxrange>
+			<modifydamagetargettype>MythUnit</modifydamagetargettype>
+			<modifyamount>5.0</modifyamount>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+	<unit name="MythNavalBonusContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>DamageBonusVsMyth</name>
+			<type>AutoRangedModify</type>
+			<modifytype>DamageByTargetType</modifytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<maxrange>5</maxrange>
+			<modifydamagetargettype>LogicalTypeNavalMythUnit</modifydamagetargettype>
+			<modifyamount>5.0</modifyamount>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+	<unit name="MythTitanBonusContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>DamageBonusVsMyth</name>
+			<type>AutoRangedModify</type>
+			<modifytype>DamageByTargetType</modifytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<maxrange>5</maxrange>
+			<modifydamagetargettype>AbstractTitan</modifydamagetargettype>
+			<modifyamount>5.0</modifyamount>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+	<unit name="BuildingBonusContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>DamageBonusVsMyth</name>
+			<type>AutoRangedModify</type>
+			<modifytype>DamageByTargetType</modifytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<maxrange>5</maxrange>
+			<modifydamagetargettype>Building</modifydamagetargettype>
+			<modifyamount>5.0</modifyamount>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+	<unit name="WarshipBonusContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>DamageBonusVsMyth</name>
+			<type>AutoRangedModify</type>
+			<modifytype>DamageByTargetType</modifytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<maxrange>5</maxrange>
+			<modifydamagetargettype>AbstractWarship</modifydamagetargettype>
+			<modifyamount>5.0</modifyamount>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+	<unit name="DamageBoostStackableContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>WeaponSmithing</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<forbidabstracttype>MythUnit</forbidabstracttype>
+			<forbidabstracttype>Ship</forbidabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Damage</modifytype>
+			<modifymultiplier>1.20</modifymultiplier>
+		</protoaction>
+	</unit> 
+	<unit name="ArmorBoostStackableContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>ArmorSmithing</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<forbidabstracttype>MythUnit</forbidabstracttype>
+			<forbidabstracttype>Ship</forbidabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Armor</modifytype>
+			<modifymultiplier>1.20</modifymultiplier>
+		</protoaction>
+	</unit> 
+	<unit name="AreaDamageContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_INGAME_HELP_DAMAGE_AREA">AreaDamage</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<nostack>1</nostack>
+		</protoaction>
+	</unit> 
+	<unit name="AreaHealContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaHeal</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>LogicalTypeHealed</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<modifyflyingunits>1</modifyflyingunits>
+			<includeally>1</includeally>
+			<modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit> 
+	<unit name="AreaInvisibilityContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>Invisibility</name>
+			<type>AreaStealth</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+	<unit name="AreaSnareContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>area_slow.tactics</tactics>
+		<protoaction>
+			<name>BlessingSlowDownEnemyHumanUnitsMundane</name>
+		</protoaction>
+		<protoaction>
+			<name>BlessingSlowDownEnemyHumanUnitsRare</name>
+		</protoaction>
+		<protoaction>
+			<name>BlessingSlowDownEnemyHumanUnitsHeroic</name>
+		</protoaction>
+		<protoaction>
+			<name>BlessingSlowDownEnemyHumanUnitsMythical</name>
+		</protoaction>
+		<protoaction>
+			<name>BlessingSlowDownEnemyHumanUnitsDivine</name>
+		</protoaction>
+	</unit>
+	<unit name="ReflectAttackDivineContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_ACTION_REFLECT_ATTACK">ThornedWallsAttack</name>
+			<type>ReflectAttack</type>
+			<damage type="Divine">0.000000</damage>
+			<reflecthandattacks>1</reflecthandattacks>
+			<attackaction>1</attackaction>
+			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+	</unit>
+
+	<unit name="SelfDestructSpawn" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<type>Attack</type>
+			<anim>HandAttack</anim>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<areasortmode>Radial</areasortmode>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+
+			<damage type="Divine">100.000000</damage>
+			<damagearea>9.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="AbstractVillager"></onhiteffect>
+			<throw>1</throw>
+   		</protoaction>
+  	</unit>	
 </protomods>

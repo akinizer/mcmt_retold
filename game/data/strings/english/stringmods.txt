@@ -599,6 +599,9 @@ ID = "STR_UNIT_ONI_GUARDIAN_SR"   ;   Str = "Yokai Guardian of Household"
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
 
+ID = "STR_TECH_MIKO_ORACLE_UPGRADE_NAME"   ;   Str = "Oracles of Shinto"
+ID = "STR_TECH_MIKO_ORACLE_UPGRADE_LR"   ;   Str = "Mikos obtain favors of shrine gods and get blessed with prophetic blessings"
+
 ID = "STR_TECH_ONMYOJI_UPGRADE_I_NAME"   ;   Str = "Onmyoji Upgrade I"
 ID = "STR_TECH_ONMYOJI_UPGRADE_I_LR"   ;   Str = "First of Omnyoji upgrades. Enables ability"
 
@@ -613,6 +616,10 @@ ID = "STR_TECH_ONMYOJI_UPGRADE_IV_LR"   ;   Str = "Fourth of Omnyoji upgrades. E
 
 ID = "STR_TECH_ONMYOJI_UPGRADE_V_NAME"   ;   Str = "Onmyoji Upgrade V"
 ID = "STR_TECH_ONMYOJI_UPGRADE_V_LR"   ;   Str = "Final Omnyoji upgrade. Improves Omnyoji and summons Head Priest. Research it only in dire cases"
+
+ID = "STR_TECH_DETONATORS_NAME"   ;   Str = "Detonators"
+ID = "STR_TECH_DETONATORS_LR"   ;   Str = "Explosive breakthrough of the technology that can be used both offensively and defensively"
+ID = "STR_VFX_DETONATORS_NAME"   ;   Str = "Detonator Charge"
 
 // REWORKED TECHS
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_NAME"   ;   Str = "Order of the Golden Kite"

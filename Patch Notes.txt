@@ -606,7 +606,13 @@
 - Onmyodo:
     - Onmyoji: name ("Shrine Priest" -> "Onmyoji")
 - AsymmetricalBows:
-    - YumiHorseArcher: NumberProjectiles+, NumberOfBounces+    
+    - YumiHorseArcher: NumberProjectiles+, NumberOfBounces+ 
+    
+* Special Techs
+- DetonatorsJapanes: explosive tech researchable in Armory, releases explosion on destruction (building, ship) or death (infrenal mythunit, shinobi), deals area damage and sends humansoldiers and villagers flying
+- OnmyojiUpgradeI,I,II,IV: enables additional abilities for Onmyoji (temple gather, shieldboost, areaheal)
+- OnmyojiUpgradeV: enables additional ability for Onmyoji (banish) and enables HeadPriest (improved AbeNoSeimei) recruitable in abstactshrinejapanese
+- OraclesOfShinto: enables additional ability for Miko (ShrineBoost)
 
 21. Amazons Patch Reworks
 * Techs
