@@ -644,6 +644,20 @@
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
+* warbear -> lykaon transform ability, lazerbear
+* SandDevourer -> sand trail
+* hobbit hero -> nezha ring projectile
+* fenrir -> hand attack anim
+* elf -> forkbear model, amazon archer anim
+* nitroglicerine -> vfxcold variant of detonators
+* dismount tech
+* hunts of artemis tech
+* roc -> dead spawn roctent, areheal
+* zhuque -> areaheal / area barrier
+* onmoraki -> areadamage, vfx poison
+* caladrialanded -> icarus & servant of kronos anim, handattack
+* pegasus -> pegasus anim, bellerophorn_horse anim
+
 === JAPANESE
 * Unit Tech Reworks - General
 - MythUnit
