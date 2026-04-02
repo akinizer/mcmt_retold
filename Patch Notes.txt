@@ -555,7 +555,7 @@
     - Tower: Damage+, LOS+
     - Fortress: Damage+, LOS+, BonusDamage HumanSoldier, MaximumRange+
 - CrushingWaves:
-    - Warship: MaximumVelocity+, HP+
+    - Warship: MaximumVelocity+, HP+, OnDamageModify CrushArmor
 
 - Kumiki:
     - House, Temple: CostWood-, CrushArmor+ 

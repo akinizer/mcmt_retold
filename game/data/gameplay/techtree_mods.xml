@@ -6925,6 +6925,8 @@
 				<target type="ProtoUnit">AbstractWarship</target></effect>
 			<effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">AbstractWarship</target></effect>
+      <effect type="Data" amount="0.003" subtype="OnDamageModify" modifytype="ArmorSpecific" damagetype="Crush" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">AbstractCavalry</target></effect>
 		</effects>
 	</tech>
   <!-- Japanese Techs - Minor Gods -->
@@ -7181,11 +7183,11 @@
   <tech name="IvoryNetsuke">
 		<effects mergeMode="replace">
 		  <effect type="Data" amount="25.00" subtype="ShieldPoints" relativity="Absolute">
-        <target type="ProtoUnit">Commoner</target></effect>
+        <target type="ProtoUnit">VillagerJapanese</target></effect>
 		  <effect type="Data" amount="25.00" subtype="ShieldPoints" relativity="Absolute">
         <target type="ProtoUnit">Miko</target></effect>
       <effect type="Data" amount="1.0" subtype="UnitShieldRegenRate" relativity="Absolute">
-        <target type="ProtoUnit">Commoner</target></effect>
+        <target type="ProtoUnit">VillagerJapanese</target></effect>
       <effect type="Data" amount="1.0" subtype="UnitShieldRegenRate" relativity="Absolute">
         <target type="ProtoUnit">Miko</target></effect>
 		</effects>
