@@ -6893,7 +6893,7 @@
         <target type="ProtoUnit">DouJian</target></effect>
     </effects>
   </tech>
-  <!-- Japanese Techs -->
+  <!-- Japanese Techs - Military -  Major Gods -->
   <tech name="Kagura">
 		<effects>
 			<effect type="Data" action="Heal" amount="1.25" unittype="LogicalTypeHealed" subtype="WorkRate" relativity="BasePercent" mergeMode="add">
@@ -6902,6 +6902,341 @@
 				<target type="ProtoUnit">Onmyoji</target></effect>
 		</effects>
 	</tech>
+  <tech name="Tenshu">
+		<effects mergeMode="replace">
+			<effect type="Data" amount="1.20" subtype="Damage" allactions="1" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractTower</target></effect>
+      <effect type="Data" amount="5" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">AbstractTower</target></effect>
+
+			<effect type="Data" amount="1.40" subtype="Damage" allactions="1" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" amount="5" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" action="RangedAttack" amount="0.05" subtype="DamageBonus" unittype="HumanSoldier" relativity="Absolute">
+				<target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" action="RangedAttack" amount="5.00" subtype="MaximumRange" relativity="Absolute">
+				<target type="ProtoUnit">AbstractFortress</target></effect>		
+		</effects>
+	</tech>
+  <tech name="CrushingWaves">
+		<effects>
+			<effect type="Data" amount="1.10" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractWarship</target></effect>
+			<effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractWarship</target></effect>
+		</effects>
+	</tech>
+  <!-- Japanese Techs - Minor Gods -->
+  <tech name="Katagi">
+		<effects mergeMode="replace">
+			<effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractSamurai</target></effect>
+			<effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">Hero</target></effect>
+			<effect type="Data" amount="75.00" subtype="OnDeathCombatXP" relativity="Absolute">
+				<target type="ProtoUnit">AbstractInfantry</target></effect>
+		</effects>
+	</tech>
+  <tech name="GoheiWands">
+		<effects>
+			<effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Onmyoji</target></effect>
+      <effect type="Data" action="HandAttack" amount="0.75" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">Miko</target></effect>
+		</effects>
+	</tech>
+  <tech name="HuntersStrength">
+		<effects>
+			<effect type="Data" action="RangedAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Hero</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.20" subtype="Damagebonus" unittype="Huntable" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">EconomicUpgraded</target></effect>
+		</effects>
+	</tech>
+  <tech name="Kumiki">
+		<effects mergeMode="replace">
+			<effect type="Data" amount="0.9" subtype="cost" resource="Wood" relativity="BasePercent">
+				<target type="ProtoUnit">House</target></effect>
+			<effect type="Data" amount="0.9" subtype="cost" resource="Wood" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractShrine</target></effect>
+			<effect type="Data" amount="0.9" subtype="cost" resource="Wood" relativity="BasePercent">
+				<target type="ProtoUnit">Temple</target></effect>
+
+			<effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
+				<target type="ProtoUnit">House</target></effect>
+			<effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
+				<target type="ProtoUnit">AbstractShrine</target></effect>
+			<effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
+				<target type="ProtoUnit">Temple</target></effect>
+		</effects>
+	</tech>
+  <tech name="GoldenKite">
+		<displaynameid mergeMode="replace">STR_TECH_ORDER_OF_GOLDEN_KITE_NAME</displaynameid>
+    <rollovertextid mergeMode="replace">STR_TECH_ORDER_OF_GOLDEN_KITE_LR</rollovertextid>
+  </tech>
+  <tech name="DanNoUraTactics">
+		<effects>
+			<effect type="Data" amount="1.5" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractArcherShip</target></effect>
+		</effects>
+	</tech>
+  <tech name="DenDenDrums">
+		<effects>
+			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">StatueOfLightning</target></effect>
+			<effect type="Data" action="ChainAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">YingLong</target></effect>
+			<effect type="Data" action="FlyingUnitChainAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">YingLong</target></effect>
+			<effect type="Data" action="ChargedChainAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">YingLong</target></effect>
+			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">SonOfOsiris</target></effect>
+			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Circe</target></effect>
+			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ManOWar</target></effect>
+
+      <effect type="Data" action="HandAttack" subtype="Damage" amount="1.50" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">LightningStrike</target></effect>      
+
+			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Junkozosen</target></effect>
+      <effect type="Data" action="ChargedHandAttack" damagetype="Divine" subtype="Damage" amount="2.00" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Raiju</target></effect>
+      <effect type="Data" action="LightningAttack" damagetype="Divine" subtype="Damage" amount="2.00" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Shinigami</target></effect>
+      <effect type="Data" action="LightningAttack" damagetype="Divine" subtype="Damage" amount="2.00" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiRevenant</target></effect>
+      <effect type="Data" action="LightningAttack" damagetype="Divine" subtype="Damage" amount="2.00" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiVengeful</target></effect>      
+		</effects>
+	</tech>
+  <tech name="HannyaMask">
+		<effects mergeMode="replace">
+			<effect type="Data" amount="0.10" subtype="OnHitEffect" allactions="1" effecttype="Lifesteal" targettype="Unit" relativity="Assign">
+				<target type="ProtoUnit">VillagerJapanese</target></effect>
+			<effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">VillagerJapanese</target></effect>
+			<effect type="Data" amount="0.10" subtype="OnHitEffect" allactions="1" effecttype="Lifesteal" targettype="Unit" relativity="Assign">
+				<target type="ProtoUnit">Miko</target></effect>
+			<effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">Miko</target></effect>
+			<effect type="Data" amount="0.10" subtype="OnHitEffect" allactions="1" effecttype="Lifesteal" targettype="Unit" relativity="Assign">
+				<target type="ProtoUnit">OnnaMusha</target></effect>
+			<effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">OnnaMusha</target></effect>
+			<effect type="Data" amount="0.10" subtype="OnHitEffect" allactions="1" effecttype="Lifesteal" targettype="Unit" relativity="Assign">
+				<target type="ProtoUnit">Jorogumo</target></effect>
+			<effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">Jorogumo</target></effect>
+
+      <effect type="Data" amount="0.10" subtype="OnHitEffect" allactions="1" effecttype="Lifesteal" targettype="Unit" relativity="Assign">
+				<target type="ProtoUnit">Oni</target></effect>
+		</effects>
+	</tech>
+  <tech name="OniMask">
+		<effects mergeMode="replace">
+			<effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+				<target type="ProtoUnit">House</target></effect>
+      <effect type="Data" amount="20.00" subtype="ShieldPoints" relativity="Absolute">
+        <target type="ProtoUnit">House</target></effect>
+      <effect type="Data" amount="1.0" subtype="UnitShieldRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">House</target></effect>
+      <effect type="CreateUnit" unit="OniGuardianRed" generator="House">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+          <offset x="-5.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="CreateUnit" unit="OniGuardianBlue" generator="House">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+          <offset x="-5.00" y="0.00" z="0.00"></offset></pattern></effect>
+		</effects>
+	</tech>
+  <tech name="SumoTraining" orderhint="3">
+		<effects>
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Oyumi</target></effect>
+			<effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Oyumi</target></effect>
+
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">SiegeCrossbow</target></effect>
+			<effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">SiegeCrossbow</target></effect>
+
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Petrobolos</target></effect>
+			<effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Petrobolos</target></effect>
+
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Catapult</target></effect>
+			<effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Catapult</target></effect>
+
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Ballista</target></effect>
+			<effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Ballista</target></effect>
+
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Cheiroballista</target></effect>
+			<effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Cheiroballista</target></effect>
+
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">CheiroballistaHero</target></effect>
+			<effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">CheiroballistaHero</target></effect>
+		</effects>
+	</tech> 
+  <tech name="TenFistSword">
+		<effects>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">AbstractSamurai</target></effect>
+		</effects>
+	</tech>
+  <tech name="Sojutsu">
+		<effects>
+			<effect type="Data" action="HandAttack" amount="0.85" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">NaginataRider</target></effect>
+			<effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">NaginataRider</target></effect>
+			<effect type="Data" action="HandAttack" amount="0.85" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">OnnaMusha</target></effect>
+			<effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">OnnaMusha</target></effect>
+
+			<effect type="Data" action="HandAttack" amount="0.85" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">TigerCavalry</target></effect>
+			<effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">TigerCavalry</target></effect>
+			<effect type="Data" action="HandAttack" amount="0.85" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">TigerCavalryDismounted</target></effect>
+			<effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">TigerCavalryDismounted</target></effect>
+			<effect type="Data" action="HandAttack" amount="0.85" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">WhiteHorseCavalry</target></effect>
+			<effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">WhiteHorseCavalry</target></effect>
+
+			<effect type="Data" action="HandAttack" amount="0.85" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">Murmillo</target></effect>
+			<effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Murmillo</target></effect>
+
+      <effect type="Data" action="HandAttack" amount="0.85" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">Arkantos</target></effect>
+			<effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Arkantos</target></effect>
+		</effects>
+	</tech>
+  <tech name="DivinePrefecture">
+		<effects>
+      <effect type="Data" action="RangedAttack" amount="1.10" subtype="Damagebonus" unittype="MythUnit" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractFortress</target></effect>
+		</effects>
+	</tech>
+<tech name="MechanicalArtisans">
+		<effects mergeMode="replace">
+			<effect type="Data" amount="1.50" subtype="Damage" allactions="1" damagetype="Pierce" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+			<effect type="Data" action="RangedAttack" amount="4.00" subtype="MaximumRange" relativity="Absolute">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+			<effect type="Data" action="AntiWallAttack" amount="4.00" subtype="MaximumRange" relativity="Absolute">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+			<effect type="Data" subtype="LOS" amount="4.00" relativity="Absolute">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+
+			<effect type="Data" amount="1.50" subtype="Damage" allactions="1" damagetype="Pierce" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractWarship</target></effect>
+			<effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
+				<target type="ProtoUnit">AbstractWarship</target></effect>
+			<effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
+				<target type="ProtoUnit">AbstractWarship</target></effect>
+			<effect type="Data" subtype="LOS" amount="2.00" relativity="Absolute">
+				<target type="ProtoUnit">AbstractWarship</target></effect>
+
+      <effect type="Data" action="RangedAttack" amount="0.95" subtype="RateOfFire" relativity="Percent">
+        <target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" amount="0.75" subtype="BuildPoints" relativity="Percent">
+				<target type="ProtoUnit">Watermill</target></effect>
+
+       <effect type="Data" protoaction="Abundance" amount="1.00" subtype="ProtoActionAdd" unittype="AbundanceAura" relativity="Assign">
+          <target type="ProtoUnit">Watermill</target></effect>
+		</effects>
+	</tech>
+  <tech name="SashimonoBannermen">
+		<effects>
+			<effect type="Data" amount="0.003" subtype="OnDamageModify" modifytype="ArmorSpecific" damagetype="Hack" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">AbstractCavalry</target></effect>
+      <effect type="Data" amount="0.0025" subtype="OnDamageModify" modifytype="Damage" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractCavalry</target></effect>
+      <effect type="Data" amount="125.00" subtype="OnDeathCombatXP" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractCavalry</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="AttackSpeedBuffContainer" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">AbstractCavalry</target></effect>
+		</effects>
+	</tech>
+  <tech name="IvoryNetsuke">
+		<effects mergeMode="replace">
+		  <effect type="Data" amount="25.00" subtype="ShieldPoints" relativity="Absolute">
+        <target type="ProtoUnit">Commoner</target></effect>
+		  <effect type="Data" amount="25.00" subtype="ShieldPoints" relativity="Absolute">
+        <target type="ProtoUnit">Miko</target></effect>
+      <effect type="Data" amount="1.0" subtype="UnitShieldRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Commoner</target></effect>
+      <effect type="Data" amount="1.0" subtype="UnitShieldRegenRate" relativity="Absolute">
+        <target type="ProtoUnit">Miko</target></effect>
+		</effects>
+	</tech>
+  <tech name="SeasideInfiltrators">
+		<effects>
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="AbstractInfantry" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Shinobi</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.50" subtype="Damagebonus" unittype="Hero" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Shinobi</target></effect>
+      <effect type="Data" action="RangedAttack" amount="5.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractArcher</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractArcher</target></effect>
+		</effects>
+	</tech>
+  <tech name="Onmyodo">
+		<effects>
+      <effect type="SetName" proto="Onmyoji" newname="STR_UNIT_ONMYOJI_NAME" mergeMode="add"></effect>
+		</effects>
+	</tech>
+  <tech name="AsymmetricalBows">
+		<effects>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="NumberProjectiles" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">YumiHorseArcher</target></effect>
+      <effect type="Data" amount="2.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">YumiHorseArcher</target></effect>
+		</effects>
+	</tech>
+
+  <tech name="GalesFury">
+    <effects mergeMode="replace">
+      <effect type="Data" action="ChargedHandAttack" subtype="Damage" amount="15.0" relativity="Absolute">
+        <target type="ProtoUnit">Kamaitachi</target></effect>
+      <effect type="Data" action="ChargedHandAttack" amount="1.20" subtype="Damagebonus" unittype="AbstractSiegeWeapon" relativity="BasePercent">
+        <target type="ProtoUnit">Kamaitachi</target></effect>
+        
+      <effect type="Data" action="AoEAttack" subtype="Damage" amount="15.0" relativity="Absolute">
+        <target type="ProtoUnit">Sphinx</target></effect>
+      <effect type="Data" action="AoEAttack" amount="1.20" subtype="Damagebonus" unittype="AbstractSiegeWeapon" relativity="BasePercent">
+        <target type="ProtoUnit">Sphinx</target></effect>
+
+      <effect type="Data" action="HandAttack" subtype="Damage" amount="15.0" relativity="Absolute">
+        <target type="ProtoUnit">TyphoonDragon</target></effect>
+      <effect type="Data" action="HandAttack" subtype="Damage" amount="15.0" relativity="Absolute">
+        <target type="ProtoUnit">Tornado</target></effect>
+    </effects>
+  </tech>			
+
+  <!-- Japanese Techs - Myth Unit -  Major Gods -->
+  <!-- Japanese Techs - Military Techs -->
 
   <!-- Structures of Gods-->
     <!-- Ancient Greek -->

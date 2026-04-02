@@ -568,6 +568,7 @@ ID = "STR_UNIT_IDOLIZER_NAME"   ;   Str = "Idolizer"
 
 // REWORKED UNITS
 ID = "STR_UNIT_NILECROCODILE_NAME"   ;   Str = "Nile Crocodile"
+ID = "STR_UNIT_SHRINE_PRIEST_NAME"   ;   Str = "Shrine Priest (Hero)"
 
 // GREEK SPECIAL UNITS
 ID = "STR_UNIT_AMAZON_MARKSMAN_NAME"   ;   Str = "Amazon Marksman"
@@ -590,6 +591,11 @@ ID = "STR_ACTION_TELEPUNT_ATTACK"   ;   Str = "Telepunt Attack"
 // JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
 
+ID = "STR_UNIT_ONI_GUARDIAN_RED_NAME"   ;   Str = "Red Oni (Guardian)"
+ID = "STR_UNIT_ONI_GUARDIAN_BLUE_NAME"   ;   Str = "Blue Oni (Guardian)"
+ID = "STR_UNIT_ONI_GUARDIAN_LR"   ;   Str = "Oni Mask summons guardians to protect homes from uninvited guests"
+ID = "STR_UNIT_ONI_GUARDIAN_SR"   ;   Str = "Yokai Guardian of Household"
+
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
 
@@ -607,6 +613,22 @@ ID = "STR_TECH_ONMYOJI_UPGRADE_IV_LR"   ;   Str = "Fourth of Omnyoji upgrades. E
 
 ID = "STR_TECH_ONMYOJI_UPGRADE_V_NAME"   ;   Str = "Onmyoji Upgrade V"
 ID = "STR_TECH_ONMYOJI_UPGRADE_V_LR"   ;   Str = "Final Omnyoji upgrade. Improves Omnyoji and summons Head Priest. Research it only in dire cases"
+
+// REWORKED TECHS
+ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_NAME"   ;   Str = "Order of the Golden Kite"
+ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_LR"   ;   Str = "The Order was established by Emperor Meiji and served Empire of Japan until 1947. It is exclusive military award given to soldier for bravery, leadership and commandship. It is followed by Order of the Chrysanthemum "
+ID = "STR_TECH_ORDER_OF_CHRYSANTHEMUM_NAME"   ;   Str = "Order of the Chrysanthemum"
+ID = "STR_TECH_ORDER_OF_CHRYSANTHEMUM_LR"   ;   Str = "The Order is the highest honor and award given to who merit Orders of the Rising Sun and the Sacred Treasures for extraordinary accomplishment in the service. The only cases recorded are Imperial Family and 53 citizens, only 23 of which received while alive"
+ID = "STR_TECH_ORDER_OF_RISING_SUN_NAME"   ;   Str = "Order of the Rising Sun"
+ID = "STR_TECH_ORDER_OF_RISING_SUN_LR"   ;   Str = "The Order is first natural decoration and given to men who distinguished service in non-military fields and public service"
+ID = "STR_TECH_ORDER_OF_PRECIOUS_CROWN_NAME"   ;   Str = "Order of the Precious Crown"
+ID = "STR_TECH_ORDER_OF_PRECIOUS_CROWN_LR"   ;   Str = "The Order is established for women with distinguished public service as equivalent rank to Order of the Rising Sun"
+ID = "STR_TECH_ORDER_OF_PAULOWNIA_FLOWERS_NAME"   ;   Str = "Order of the Paulownia Flowers"
+ID = "STR_TECH_ORDER_OF_PAULOWNIA_FLOWERS_LR"   ;   Str = "The Order is given to higher ranks of Rising Sun after its abolishment"
+ID = "STR_TECH_ORDER_OF_SACRED_TREASURE_NAME"   ;   Str = "Order of the Sacred Treasure"
+ID = "STR_TECH_ORDER_OF_SACRED_TREASURE_LR"   ;   Str = "The Order is slightly below Rising Sun and Precious Crown. It is awareded for service in education, social welfare, medical care, commission and employment with harsh environment"
+ID = "STR_TECH_ORDER_OF_CULTURE_NAME"   ;   Str = "Order of the Culture"
+ID = "STR_TECH_ORDER_OF_CULTURE_LR"   ;   Str = "The Order is given to Persons of Cultural Merit who contributed culture in various aspects by Minister of Education, Culturei Sports Science and Technology. The annuity is also given for the contributions"
 
 // SPECIAL TECHS
 ID = "STR_TECH_MCMT_PAGE_1"   ;   Str = "Page1"

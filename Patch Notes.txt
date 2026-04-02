@@ -528,6 +528,7 @@
 * Hero
 - popcosts 1 or 2
 - favor costs:  HeroInfantry:0, Miko:1, Onmyoji:3
+- Miko: AbstractOracle
 - Onmyoji:
     - Default: low divine attack, high bonus damage vs mythunit, deadlier to spectral units like shinigami, hadesshade, wretch etc
         - no longer siege unit as crush damage removed
@@ -537,11 +538,75 @@
     - Banish: active ability, sends mythunits to realm of chaos for 3s, divineattack
     - Gather: active ability, gathers favor on temple
 
+
 * Special Unit
 - MCMT_HeadPriest: improved version of Abe-No-Seimei, old priest that likes teasing others
     - Heal: active ability, automatic
     - Jump Scare: active ability, teleports behind target [humansoldier, villager], scares them off (scream sfx) and leaves them jumping up (throw)
     - Waterwalking: passive ability
+- OniMask:
+    - GuardianOniRed: hackattack, no ability, lesser hp, flame theme
+    - GuardianOniBLue: hackattack, no ability, lesser hp, frost theme
+
+* Techs Reworks & Additions
+- Kagura: 
+    - Onmyoji: heal workrate+, trainpoints-
+- Tenshu:
+    - Tower: Damage+, LOS+
+    - Fortress: Damage+, LOS+, BonusDamage HumanSoldier, MaximumRange+
+- CrushingWaves:
+    - Warship: MaximumVelocity+, HP+
+
+- Kumiki:
+    - House, Temple: CostWood-, CrushArmor+ 
+- HuntersStrength:
+     - Hero: RangedAttack+
+     - AbstractVillager: BonusDamage Huntable+
+- Katagi: 
+    - Samurai, Hero: HP+
+    - Infantry: Bushido XP+
+- GoheiWands:
+    - Onmyoji: MaxVelocity+
+    - Miko: HandAttack RoF+
+- GoldenKite: name (Order Of the Golden Kite), longrollovertext
+- DanNoUraTactics: 
+    - Wasen: MaximumVelocity+
+- DenDenDrums:
+    - Junkozosen, Raiju, RevenantShinigami, VengefulShinigami: DivineAttack+
+    - StatueOfLightning, YingLong, SonOfOsiris, Circe, ManOWar: DivineAttack+
+    - LightningStrike: DivineAttack+
+- HannyaMask:
+    - VillagerJapanese, Miko, OnnaMusha, Jorogumo: Lifesteal, Hitpoints+
+- OniMask:
+    - House: HackArmor+, ShieldPoints
+- Sojutsu:
+    - NaginataRider, OnnaMusha: RoF+, MaximumVelocity+
+    - TigerCavalry, TigerCavalryDismounted, WhiteHorseCavalry, Murmillo, Arkantos: RoF+, MaximumVelocity+
+- SumoTraining:
+    - Oyumi, Cheiroballista, CheiroballistaHero, Catapult, Petrobolos, SiegeCrossbow, Ballista: HP+, Speed+
+- TenFistSword:
+    - AbstractSamurai: VFXLightningWeaponsUnitImpact
+- DivinePrefecture: 
+    - Fortress: BonusDamage Myth
+- MechanicalArtisans:
+    - SiegeWeapon, Warship: MaximumRange+, LOS+
+    - Fortress: ROF+
+    - Watermill: Buildpoints+
+- SashimonoBannersmen:
+    - Cavalry: OnDamageModify HackArmor & Damage, BushidoXP, SpawnOnDeath AttackSpeedBuffContainer
+- IvoryNetsuke:
+    - Miko: ShieldPoints
+- GalesFury:
+    - Kamaitachi: Ability Damage+, Ability BonusDamage SiegeWeapon
+    - Sphinx: Ability Damage+, Ability BonusDamage SiegeWeapon
+    - TyphoonDragon: Ability Damage+, Ability BonusDamage SiegeWeapon
+- SeasideInfiltrators:
+    - Shinobi: BonusDamage Infantry, BonusDamage Hero
+    - AbstractArcher: MaximumRange+, DirectProjectile
+- Onmyodo:
+    - Onmyoji: name ("Shrine Priest" -> "Onmyoji")
+- AsymmetricalBows:
+    - YumiHorseArcher: NumberProjectiles+, NumberOfBounces+    
 
 21. Amazons Patch Reworks
 * Techs

@@ -1494,8 +1494,12 @@
 	<!-- Japanese Unit Reworks -->
 
     <!-- Japanese Priests -->
+	<unit name="Miko">
+		<unittype mergeMode="add">AbstractOracle</unittype>
+	</unit>
+
 	 <unit name="Onmyoji" mergeMode="replace">
-		<displaynameid>STR_UNIT_ONMYOJI_NAME</displaynameid>
+		<displaynameid>STR_UNIT_SHRINE_PRIEST_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_ONMYOJI_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_ONMYOJI_SR</shortrollovertextid>
 		<icon>resources\japanese\player_color\units\onmyoji_icon.png</icon>
@@ -7639,6 +7643,198 @@
         </ProtoAction>
 	</unit>
     <!-- Japanese Special Myth Units-->
+	<unit name="OniGuardianRed">
+		<displaynameid>STR_UNIT_ONI_GUARDIAN_RED_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ONI_GUARDIAN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ONI_GUARDIAN_SR</shortrollovertextid>
+		<icon>resources\japanese\player_color\units\oni_icon.png</icon>
+		<animfile>japanese\units\myth\oni\oni.xml</animfile>
+		<soundsetfile>japanese\vo\oni\oni.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Unrmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>400.0000</initialhitpoints>
+		<maxhitpoints>400.0000</maxhitpoints>
+		<trainpoints>1.0000</trainpoints>
+		<weightclass>11</weightclass>
+		<maxvelocity>3.5000</maxvelocity>
+		<los>16.0000</los>
+		<armor type="Hack" value="0.5000"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.5000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHeroicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitMelee</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitThatGeneratesFavor</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<initialshading type="burning" factor="1"></initialshading>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.500000</rof>
+			<damage type="Hack">65.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.100000</damagebonus>
+			<maxrange>1.000000</maxrange>
+			<impacteffect>effects\impacts\asura_fire_ball</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>DistanceLimiting</name>
+			<type>DistanceModify</type>
+			<modifyamount>1.000000</modifyamount>
+			<modifybase>1.000000</modifybase>
+			<minrange>25.000000</minrange>
+			<maxrange>100.000000</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Speed</modifytype>
+			<minrate type="All">0.350000</minrate>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\oni_berserk_loop.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+	<unit name="OniGuardianBlue">
+		<displaynameid>STR_UNIT_ONI_GUARDIAN_BLUE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ONI_GUARDIAN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ONI_GUARDIAN_SR</shortrollovertextid>
+		<icon>resources\japanese\player_color\units\oni_icon.png</icon>
+		<animfile>japanese\units\myth\oni\oni.xml</animfile>
+		<soundsetfile>japanese\vo\oni\oni.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Unrmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>400.0000</initialhitpoints>
+		<maxhitpoints>400.0000</maxhitpoints>
+		<trainpoints>1.0000</trainpoints>
+		<weightclass>11</weightclass>
+		<maxvelocity>3.5000</maxvelocity>
+		<los>16.0000</los>
+		<armor type="Hack" value="0.5000"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.5000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHeroicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitMelee</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitThatGeneratesFavor</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<initialshading type="frost" factor="1"></initialshading>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.500000</rof>
+			<damage type="Hack">65.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.100000</damagebonus>
+			<maxrange>1.000000</maxrange>
+			<impacteffect>effects\impacts\crush_medium</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>DistanceLimiting</name>
+			<type>DistanceModify</type>
+			<modifyamount>1.000000</modifyamount>
+			<modifybase>1.000000</modifybase>
+			<minrange>25.000000</minrange>
+			<maxrange>100.000000</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Speed</modifytype>
+			<minrate type="All">0.350000</minrate>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\favor_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
     <!-- Japanese Special Military Units-->
     <!-- Japanese Special Naval Units-->
     <!-- Japanese Special Buildings--> 
