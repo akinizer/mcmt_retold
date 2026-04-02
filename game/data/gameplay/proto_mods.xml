@@ -21571,6 +21571,7 @@
 			<damagebonus type="MythUnit">8.0000</damagebonus>
 			<damagebonus type="HumanSoldier">5.00000</damagebonus>
 			<damagebonus type="AbstractVillager">20.000000</damagebonus>
+			<damagebonus type="Huntable">0.010000</damagebonus>
 			<defaultattack>1</defaultattack>
 			<maxrange>12.000000</maxrange>
 		</protoaction>

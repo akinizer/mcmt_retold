@@ -18,6 +18,10 @@
         <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Arcus" row="0" column="0" relativity="Assign"><target type="ProtoUnit">CounterBarracks</target></effect>	
     
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AmazonVanguards</effect>
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsAtlantean</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsAtlantean" row="3" column="4" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>	
       </effects>
     </tech>
 
@@ -35,6 +39,10 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">ParthenonGuards</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ParthenonGuards" row="0" column="5" relativity="Assign">
           <target type="ProtoUnit">TownCenter</target></effect>		
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsGreek</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsGreek" row="3" column="4" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>	
       </effects>
     </tech>
     <tech name="ArchaicAgeNorse">
@@ -49,6 +57,10 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">ManorGuards</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ManorGuards" row="0" column="5" relativity="Assign">
           <target type="ProtoUnit">TownCenter</target></effect>		
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsNorse</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsNorse" row="3" column="4" relativity="Assign">
+          <target type="ProtoUnit">AbstractArmory</target></effect>		
       </effects>
     </tech>
     <tech name="ArchaicAgeJapanese">
@@ -78,12 +90,20 @@
       <effects>        
         <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
           <target type="ProtoUnit">TownCenter</target></effect>
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsChinese</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsChinese" row="3" column="4" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>		
       </effects>
     </tech>
     <tech name="ArchaicAgeEgyptian">
       <effects>        
         <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
           <target type="ProtoUnit">TownCenter</target></effect>
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsEgyptian</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsEgyptian" row="3" column="4" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>	
       </effects>
     </tech>
   
@@ -1448,6 +1468,157 @@
 				  <target type="ProtoUnit">Wanyudo</target></effect>	
         <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
 				  <target type="ProtoUnit">Asura</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">ShinigamiVengeful</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Wretch</target></effect>	
+      </effects>
+    </tech>
+  <tech name="DetonatorsChinese" mergeMode="add">
+      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+      <cost resourcetype="Gold">300.0000</cost>
+      <cost resourcetype="Wood">100.0000</cost>
+      <cost resourcetype="Favor">5.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\explosives.jpg</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <effects>
+        <!-- ultimate -->        
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Building</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">AbstractWarship</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">HunDun</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">ZhuQueLanded</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">FireArcher</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Nezha</target></effect>	
+      </effects>
+    </tech>
+  <tech name="DetonatorsGreek" mergeMode="add">
+      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+      <cost resourcetype="Gold">300.0000</cost>
+      <cost resourcetype="Wood">100.0000</cost>
+      <cost resourcetype="Favor">5.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\explosives.jpg</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <effects>
+        <!-- ultimate -->        
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Building</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">AbstractWarship</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Hydra</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Colossus</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Scylla</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Chimera</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Helepolis</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Iolaus</target></effect>	
+      </effects>
+    </tech>
+  <tech name="DetonatorsEgyptian" mergeMode="add">
+      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+      <cost resourcetype="Gold">300.0000</cost>
+      <cost resourcetype="Wood">100.0000</cost>
+      <cost resourcetype="Favor">5.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\explosives.jpg</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <effects>
+        <!-- ultimate -->        
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Building</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">AbstractWarship</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">RocLanded</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">ScorpionMan</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">PhoenixEgg</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">MechanizedMammothUnit</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Leviathan</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">SiegeTower</target></effect>	
+      </effects>
+    </tech>
+  <tech name="DetonatorsNorse" mergeMode="add">
+      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+      <cost resourcetype="Gold">300.0000</cost>
+      <cost resourcetype="Wood">100.0000</cost>
+      <cost resourcetype="Favor">5.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\explosives.jpg</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <effects>
+        <!-- ultimate -->        
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Building</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">AbstractWarship</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">BattleBoar</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">FireGiant</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Fafnir</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">PortableRam</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Berserk</target></effect>	
+      </effects>
+    </tech>
+  <tech name="DetonatorsAtlantean" mergeMode="add">
+      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+      <cost resourcetype="Gold">300.0000</cost>
+      <cost resourcetype="Wood">100.0000</cost>
+      <cost resourcetype="Favor">5.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\explosives.jpg</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <effects>
+        <!-- ultimate -->        
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Building</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">AbstractWarship</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Promethean</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Automaton</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Behemoth</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">Argus</target></effect>	
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+				  <target type="ProtoUnit">FireSiphon</target></effect>	
       </effects>
     </tech>
   
@@ -6767,15 +6938,13 @@
     <prereqs>
       <techstatus status="Active">EastWind</techstatus>
     </prereqs>
-    <effects>
-      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="HitGround" proto="SkylanternFireAreaGround" relativity="Absolute">
-        <target type="ProtoUnit">SkyLantern</target></effect>
-      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="HitWater" proto="SkylanternFireAreaWater" relativity="Absolute">
-        <target type="ProtoUnit">SkyLantern</target></effect>
-       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SkylanternFireAreaGround" relativity="Absolute">
-		    <target type="ProtoUnit">AbstractFlyingUnit</target></effect>
-       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SkylanternFireAreaWater" relativity="Absolute">
-		    <target type="ProtoUnit">AbstractFlyingUnit</target></effect>
+    <effects mergeMode="replace">
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="SpawnWhenHitGround" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractFlyingUnit</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="HitGround" proto="SkylanternFireAreaGround" relativity="Assign">
+        <target type="ProtoUnit">AbstractFlyingUnit</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="HitWater" proto="SkylanternFireAreaWater" relativity="Assign">
+        <target type="ProtoUnit">AbstractFlyingUnit</target></effect>
     </effects>
   </tech>
   <tech name="ShakerOfHeaven" orderhint="0" mergeMode="replace">
