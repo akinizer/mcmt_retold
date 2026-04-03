@@ -4096,6 +4096,52 @@
 			<onhiteffect type="Freeze" freezetype="StoneDamage" duration="3.000000" damage="0.1"></onhiteffect>  
 		</protoaction>
 	</unit>
+	<unit name="Manticore">
+		<tactics mergeMode="replace">mcmt_manticore.tactics</tactics>
+		<protoaction mergeMode="add">
+			<name stringid="STR_ACTION_HAND">HandAttack</name>
+			<type>Attack</type>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<handlogic>1</handlogic>
+			<forceareaattacktarget>1</forceareaattacktarget>
+			<anim>HandAttack</anim>
+			<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+			<impacteffect>effects\impacts\hack</impacteffect>
+			
+			<rof>1.300000</rof>
+			<damage type="Hack">12.000000</damage>
+			<damagebonus type="HumanSoldier">1.500000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction mergeMode="replace">
+			<name>RangedAttack</name>
+			<rof>1.100000</rof>
+			<damage type="Pierce">11.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<minrange>8.000000</minrange>
+			<maxrange>17.000000</maxrange>
+			<projectile>ProjectileManticoreBarb</projectile>
+			<numberprojectiles>6</numberprojectiles>
+			<volleymode></volleymode>
+		</protoaction>
+		<protoaction mergeMode="replace">
+			<name>ChargedRangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">11.000000</damage>
+			<damagearea>3.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<minrange>18.000000</minrange>
+			<maxrange>28.000000</maxrange>
+			<projectile>ProjectileManticoreBarbSpecialAttack</projectile>
+			<numberprojectiles>200</numberprojectiles>
+			<volleymode></volleymode>
+		</protoaction>
+	</unit>
 
     <!-- Greek Military Units-->
     <!-- Greek Naval Units-->

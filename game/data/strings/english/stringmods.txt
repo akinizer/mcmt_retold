@@ -301,8 +301,8 @@ ID = "STR_UNIT_MAIAR_SR"   ;   Str = "Maiar Wizard"
 ID = "STR_UNIT_MAIAR_LR"   ;   Str = "Primordial Spirits that Shaped the World with Valar and Establishd Order of Wizards. Capable of Shapeshifting"
 
 // KINGDOM UNITS
-ID = "STR_UNIT_HOBBIT_NAME"   ;   Str = "Hobbit"
-ID = "STR_UNIT_HOBBIT_SR"   ;   Str = "Hobbit"
+ID = "STR_UNIT_HOBBIT_NAME"   ;   Str = "Halfling"
+ID = "STR_UNIT_HOBBIT_SR"   ;   Str = "Halfling"
 ID = "STR_UNIT_HOBBIT_LR"   ;   Str = "Small People with Large Hearts"
 
 ID = "STR_UNIT_MORADIN_NAME"   ;   Str = "King Moradin"
@@ -568,6 +568,10 @@ ID = "STR_UNIT_IDOLIZER_NAME"   ;   Str = "Idolizer"
 
 // REWORKED UNITS
 ID = "STR_UNIT_NILECROCODILE_NAME"   ;   Str = "Nile Crocodile"
+ID = "STR_UNIT_MEDUSA_NAME"   ;   Str = "Gorgon"
+ID = "STR_UNIT_MEDUSA_MATRIARCH_NAME"   ;   Str = "Gorgon Matriarch"
+
+ID = "STR_UNIT_SHRINE_PRIEST_NAME"   ;   Str = "Shrine Priest (Hero)"
 ID = "STR_UNIT_SHRINE_PRIEST_NAME"   ;   Str = "Shrine Priest (Hero)"
 
 // GREEK SPECIAL UNITS
@@ -837,6 +841,8 @@ ID = "STR_ACTION_AXESWINGATTACK"   ;   Str = "Axe Swing Attack"
 ID = "STR_ACTION_SONICBLASTATTACK"   ;   Str = "Sonic Blast Attack"
 ID = "STR_ACTION_SONICBLASTATTACKFLYING"   ;   Str = "Sonic Blast Attack (Air)"
 ID = "STR_ABILITY_ABARDSTALE"   ;   Str = "A Bard's Tale"
+
+ID = "STR_ABILITY_BARRAGE_ATTACK"   ;   Str = "Barrage Attack"
 
 // XL MAPS
 ID = "STR_MAP_ACROPOLIS_COLOSSAL_NAME" ;   Str = "Acropolis Colossal Map"

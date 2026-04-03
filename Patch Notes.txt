@@ -136,6 +136,13 @@
     - melee: Minotaur+, Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
     - ranged: Centaur+, Medusa+, Sentinel+
     - naval: Carcinos+
+
+    - manticore
+        - rangedattacK: default, effective to counter ranged units, usable for kiting units to flee or get closer
+        - handattacK: effective to counter humansoldiers that get too close
+        - chargedrangedattack / barrage attack: effective for crowds in further distance and units that flee
+    - medusa: renamed to "gorgon"
+        - faceofthegorgon: sets name to "gorgon matriarch"
 - hero:
     - favor costs removed, pop 1 or 2
     - OnDamageModify: Atalanta+, Jason+
@@ -323,7 +330,7 @@
 - WallConnector (hp fix)+
 - House:
     - Global: AttackWolf+
-    - Norse: Hobbit, Moradin, Loki, TreebeardOfFangorn+
+    - Norse: Hobbit (renamed to "Halfling" to avoid issues), Moradin, Loki, TreebeardOfFangorn+
 - Manor
 - SiegeWorks
 - TownCenter:

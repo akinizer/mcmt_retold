@@ -1217,4 +1217,72 @@
 			<cinematic></cinematic>
 		</alsouseslogic>
 	</animxml>
+	<animxml file="greek\units\myth\manticore\manticore.xml">		
+		<animations>
+			<animinfo mergeMode="add">
+				<name>HandAttack</name>
+				<versioncount>2</versioncount>
+				<versions>
+					<version>
+						<file>chinese\units\myth\qiong_qi\anim\qiong_qi_attack_b</file>
+						<duration>1.33333</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.76000</position>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.20000</position>
+								<properties>
+									<popcornfxname>objects\qiongqi\qiongqi_attack_trail.pkfx</popcornfxname>
+									<bone>vfx_hand_right</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>1</stopwithanim>
+									<adjustduration>1</adjustduration>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.56000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>QiongQiAttackB</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+					<version>
+						<file>chinese\units\myth\qiong_qi\anim\qiong_qi_attack_c</file>
+						<duration>1.33333</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.76000</position>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.20000</position>
+								<properties>
+									<popcornfxname>objects\qiongqi\qiongqi_attack_trail.pkfx</popcornfxname>
+									<bone>vfx_hand_left</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>1</stopwithanim>
+									<adjustduration>1</adjustduration>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.56000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>QiongQiAttackC</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 </simdatabasemods>
