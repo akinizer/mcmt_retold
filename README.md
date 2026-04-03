@@ -1,4 +1,4 @@
-# MCMT Mod for Age of Mythology: Retold with DLC: Immortal Pillars, DLC: Heavenly Spear, DLC: Demeter, DLC: Amazon & Blood Pack
+# MCMT: UNLEASHED
 
 **Author:** Akinizer
 
@@ -7,6 +7,8 @@
 ## Description
 
 MCMT: UNLEASHED is a comprehensive modification for Age of Mythology: Retold, introducing a vast array of new units, buildings, technologies, and powers, while also enhancing existing game content across all civilizations. Experience new legendary heroes, powerful mythical beasts, advanced siege weaponry, unique economic units, and much more. This mod aims to expand strategic options and provide a fresh gameplay experience with featuring folk stories, scifi and legends...
+
+* DLC: Immortal Pillars, Heavenly Spear, Demeter, Amazon & Blood Pack
 
 ## Features
 
