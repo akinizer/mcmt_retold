@@ -558,6 +558,14 @@
     - Heal: active ability, automatic
     - Jump Scare: active ability, teleports behind target [humansoldier, villager], scares them off (scream sfx) and leaves them jumping up (throw)
     - Waterwalking: passive ability
+- MikoSwordmaster:
+    - warrior trained in Kendo Arts, light hero unit, excellent against mythunits, trainable at shrine, buildlimit 5
+    - ChargedAttack: ported from OnnaMusha, spin attack with sword
+    - SacredCustodians: enables the unit
+    - MikoOracleUpgrade:
+        - weapon model: katana -> lightsaber
+
+- credits to Eskiss for the idea of lightsaber as a sword model
 - OniMask:
     - GuardianOniRed: hackattack, no ability, lesser hp, flame theme
     - GuardianOniBLue: hackattack, no ability, lesser hp, frost theme

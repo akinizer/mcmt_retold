@@ -1394,6 +1394,12 @@
 
   
     <!-- Japanese Special Techs -->
+  <tech name="SacredCustodians">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">MikoSwordmaster</target></effect>
+    </effects>
+  </tech>
 	
   <tech name="MikoOracleUpgrade" mergeMode="add">
       <displaynameid>STR_TECH_MIKO_ORACLE_UPGRADE_NAME</displaynameid>
@@ -1523,7 +1529,7 @@
           <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
             <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
       </effects>
-    </tech>
+  </tech>
   <tech name="DetonatorsJapanese" mergeMode="add">
       <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
       <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>

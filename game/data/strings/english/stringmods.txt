@@ -600,6 +600,10 @@ ID = "STR_UNIT_ONI_GUARDIAN_BLUE_NAME"   ;   Str = "Blue Oni (Guardian)"
 ID = "STR_UNIT_ONI_GUARDIAN_LR"   ;   Str = "Oni Mask summons guardians to protect homes from uninvited guests"
 ID = "STR_UNIT_ONI_GUARDIAN_SR"   ;   Str = "Yokai Guardian of Household"
 
+ID = "STR_UNIT_MIKO_SWORDMASTER_NAME"   ;   Str = "Miko Swordmaster (Hero)"
+ID = "STR_UNIT_MIKO_SWORDMASTER_SR"   ;   Str = "Master of kendo in an unmatched elegance"
+ID = "STR_UNIT_MIKO_SWORDMASTER_LR"   ;   Str = "Beauty is a deadly weapon"
+
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
 
