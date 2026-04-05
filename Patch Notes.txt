@@ -159,6 +159,10 @@
     - Kataskopos+
 - special unit:
     - PegasusGroundedMessenger+
+- Spartans
+    - SpartanTraining: enables Spartan building, techs and units
+    - SpartanEncampment: trains SpartanCaptain, SpartanSpearman, SpartanSwordsman, SpartanBrute, SpartanAxeman, SpartanHalberdier
+
 
 4. Atlanean reworks from mcmt mod and new changes
 - myth unit:

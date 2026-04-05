@@ -1048,6 +1048,8 @@
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_I</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_II</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_III</effect>
+            
+            <effect type="TechStatus" status="obtainable">MCMT_SpartanTraining</effect>
             <!--TechBuilding FutureTech-->
             <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
             <effect type="TechStatus" status="obtainable">MCMT_NanofiberPlatings</effect>
@@ -2594,6 +2596,26 @@
         <target type="ProtoUnit">AmazonianHuntress</target></effect>
       <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
         <target type="ProtoUnit">Hippolyta</target></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_SpartanTraining" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_SPARTAN_TRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_SPARTAN_TRAINING_LR</rollovertextid>
+		<icon>resources\tech\spartan_helmet.jpg</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">350</cost>    
+		<effects>      
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanCamp</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanAxeman</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanBrute</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanHalberdier</target></effect>    
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanSpearman</target></effect>    
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanSwordsman</target></effect>    
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanCaptain</target></effect>    
 		</effects>		
 	</tech>
   <tech name="AntiArmorLogistics" mergeMode="add">

@@ -592,6 +592,30 @@ ID = "STR_UNIT_ENCELADUS_SR"   ;   Str = "Legendary Giant of Greek World"
 ID = "STR_UNIT_ENCELADUS_LR"   ;   Str = "Nemesis of Athena during the Gigantomachy. Imprisoned under Mount Etna and causes volcanic eruptions with his rage"
 ID = "STR_ACTION_TELEPUNT_ATTACK"   ;   Str = "Telepunt Attack"
 
+ID = "STR_UNIT_SPARTAN_AXEMAN_NAME"   ;   Str = "Spartan Axeman"
+ID = "STR_UNIT_SPARTAN_AXEMAN_SR"   ;   Str = "Spartan that chops units"
+ID = "STR_UNIT_SPARTAN_AXEMAN_LR"   ;   Str = "In Spartan army, some soldier wield a heavy axe that can chop and throw away shield"
+
+ID = "STR_UNIT_SPARTAN_BRUTE_NAME"   ;   Str = "Spartan Brute"
+ID = "STR_UNIT_SPARTAN_BRUTE_SR"   ;   Str = "Spartan with a formidable build"
+ID = "STR_UNIT_SPARTAN_BRUTE_LR"   ;   Str = "In Spartan army, some soldiers train muscles to wield heavy blunt weapons"
+
+ID = "STR_UNIT_SPARTAN_HALBERDIER_NAME"   ;   Str = "Spartan Halberdier"
+ID = "STR_UNIT_SPARTAN_HALBERDIER_SR"   ;   Str = "Spartan with a bladed spear"
+ID = "STR_UNIT_SPARTAN_HALBERDIER_LR"   ;   Str = "In Spartan army, some soldiers prefer bladed spears over classic spears"
+
+ID = "STR_UNIT_SPARTAN_SPEARMAN_NAME"   ;   Str = "Spartan Spearman"
+ID = "STR_UNIT_SPARTAN_SPEARMAN_SR"   ;   Str = "Spartan Hoplite that has blessing of War God"
+ID = "STR_UNIT_SPARTAN_SPEARMAN_LR"   ;   Str = "In Spartan army, default supressive soldiers and elites guards of King Leonidas"
+
+ID = "STR_UNIT_SPARTAN_SWORDSMAN_NAME"   ;   Str = "Spartan Swordsman"
+ID = "STR_UNIT_SPARTAN_SWORDSMAN_SR"   ;   Str = "Spartan Hoplite that has same fashion sense as Athenians"
+ID = "STR_UNIT_SPARTAN_SWORDSMAN_LR"   ;   Str = "In Spartan army, close range soldiers occasionally prefer swords as they put a formidable trust on shields"
+
+ID = "STR_UNIT_SPARTAN_CAPTAIN_NAME"   ;   Str = "Spartan Captain (Hero)"
+ID = "STR_UNIT_SPARTAN_CAPTAIN_SR"   ;   Str = "Spartan with many accomplishments in war"
+ID = "STR_UNIT_SPARTAN_CAPTAIN_LR"   ;   Str = "In Spartan army, armies are categorized into smaller groups and the captains serve the commander faithfully"
+
 // JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
 
@@ -693,6 +717,12 @@ ID = "STR_TECH_AMAZONTRAINING_II_LR"   ;   Str = "Second upgrade for Amazon warr
 
 ID = "STR_TECH_AMAZONTRAINING_III_NAME"   ;   Str = "Amazon Training I"
 ID = "STR_TECH_AMAZONTRAINING_III_LR"   ;   Str = "Final upgrade for Amazon warriors"
+
+ID = "STR_TECH_SPARTAN_TRAINING_NAME"   ;   Str = "Spartan Training"
+ID = "STR_TECH_SPARTAN_TRAINING_LR"   ;   Str = "Initiates advanced Spartan Army warfare and facilities"
+
+ID = "STR_TECH_ATHENIAN_TRAINING_NAME"   ;   Str = "Athenian Training"
+ID = "STR_TECH_ATHENIAN_TRAINING_LR"   ;   Str = "Initiates advanced Greater Athens warfare and facilities"
 
 ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"
 ID = "STR_TECH_DIVINEARMAMENTS_LR"   ;   Str = "Improves Offensive Capabilities of Military Units, Heroes and Hunters with Divine Weaponry"

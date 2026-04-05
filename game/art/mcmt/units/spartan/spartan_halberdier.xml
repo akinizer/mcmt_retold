@@ -1,9 +1,20 @@
 <animfile validation="strict">
 	<attachment>Helmet<include>greek\units\infantry\hoplite\hoplite_helm.xml</include></attachment>
-	<attachment>Weapon<include>japanese\units\attachments\yari\yari_j_a.xml</include></attachment>
+	<attachment>Weapon<component>ModelComp
+		<logic type="Tech">
+			<none><assetreference type="TMModel"><file>japanese\units\attachments\yari\yari_j_a_baseline</file><materialvariant index="0"></materialvariant></assetreference></none>
+			<mediuminfantry><assetreference type="TMModel"><file>japanese\units\attachments\yari\yari_j_a_upgrade1</file><materialvariant index="1"></materialvariant></assetreference></mediuminfantry>
+			<heavyinfantry><assetreference type="TMModel"><file>japanese\units\attachments\yari\yari_j_a_upgrade2</file><materialvariant index="2"></materialvariant></assetreference></heavyinfantry>
+			<championinfantry><assetreference type="TMModel"><file>japanese\units\attachments\yari\yari_j_a_upgrade3</file><materialvariant index="3"></materialvariant></assetreference></championinfantry>
+		</logic></component>
+		<anim>Idle<component>ModelComp</component></anim>
+	</attachment>
 	<attachment>Shield<include>greek\units\attachments\shield\shield_g_a.xml</include></attachment>
 	<component>ModelComp<logic type="Cinematic"><normal><logic type="Tech"><none><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_iron</file><materialvariant index="0"></materialvariant></assetreference></none><mediuminfantry><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_bronze</file><materialvariant index="1"></materialvariant></assetreference></mediuminfantry><heavyinfantry><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_silver</file><materialvariant index="2"></materialvariant></assetreference></heavyinfantry><championinfantry><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_gold</file><materialvariant index="3"></materialvariant></assetreference></championinfantry></logic></normal><cinematic><logic type="Tech"><none><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_iron_igc</file><materialvariant index="0"></materialvariant></assetreference></none><mediuminfantry><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_bronze_igc</file><materialvariant index="1"></materialvariant></assetreference></mediuminfantry><heavyinfantry><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_silver_igc</file><materialvariant index="2"></materialvariant></assetreference></heavyinfantry><championinfantry><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_gold_igc</file><materialvariant index="3"></materialvariant></assetreference></championinfantry></logic></cinematic></logic><attach name="Helmet" attachpoint="helmet"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></component>
-	<anim>HandAttack<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_igc_attack_a</file><tag type="Attack">0.5</tag></assetreference><assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_igc_attack_b</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component></anim>
+	<anim>HandAttack
+		<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_attack_b</file><tag type="Attack">0.5</tag></assetreference>
+		<assetreference type="TMAnimation"><file>atlantean\units\infantry\katapeltes\anim\katapeltes_attack_a</file><tag type="Attack">0.5</tag></assetreference>
+		<component>ModelComp</component></anim>
 	<anim>Bored<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_igc_bored_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>Death<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_igc_death_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>Flail<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_igc_flail_a</file></assetreference><component>ModelComp</component></anim>
