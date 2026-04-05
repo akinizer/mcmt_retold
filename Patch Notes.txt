@@ -648,6 +648,21 @@
 22. Town Center Reworks
 - Parthenon: Greek Center of Nation, FortifiedTownCenter tech removed, summon guard command added
 - Jarl's Manor: Norse Center of Nation, FortifiedTownCenter tech removed, summon guard command added
+
+23. Upstart boosts
+- Amaterasu: hero damage, 1 min, miko areaheal, chat notification
+- Tsukuyomi: humansoldier damage, 1 min, watermill areaheal, chat notification
+- Susanoo: mythunit damage, 1 min, kitsune areaheal, chat notification
+
+==============================================================================
+==================== REWORK-PLANS ============================================
+==============================================================================
+Implemented & Unused Models (soldiers & leaders)
+* Imperial: 2
+* Nubian: 4
+* Athenian: 8
+* Spartan: 6
+
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
@@ -655,6 +670,8 @@
 * SandDevourer -> sand trail
 * hobbit hero -> nezha ring projectile
 * fenrir -> hand attack anim
+* avenger -> anubite jump anim
+
 * elf -> forkbear model, amazon archer anim
 * nitroglicerine -> vfxcold variant of detonators
 * dismount tech
@@ -664,7 +681,10 @@
 * onmoraki -> areadamage, vfx poison
 * caladrialanded -> icarus & servant of kronos anim, handattack
 * pegasus -> pegasus anim, bellerophorn_horse anim
-
+* luffy: militia / prodromos_rider -> promethean_attack_a, promethean_attack_b, shinobi_wan_kenobi_attack_b, avenger_whirlwindattack_a 
+* alvida: miko -> oni club
+* zorro: chiyou -> 4x katana, 
+* mihawk: samurai, throw, ranged slash
 === JAPANESE
 * Unit Tech Reworks - General
 - MythUnit

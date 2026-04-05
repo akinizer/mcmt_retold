@@ -1375,4 +1375,80 @@
 		<abstractplacementtargettype>AbstractSiegeWeapon</abstractplacementtargettype>
 		<unitaction>HowlingCelestialDog</unitaction>
 	</power>
+	<!--- BLESSINGS JAPANESE -->
+	<power name="GP_EternalMoon" type="GeneralEffect" godpower="">
+		<displaynameid>STR_POWER_ECLIPSE</displaynameid>
+		<rolloverid>STR_POWER_ECLIPSE_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\eclipse_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">EclipseBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>49.0</activetime>
+		<exclusive></exclusive>
+		<exclusiveerrormsgid>STR_ERROR_GODPOWER_ECLIPSE</exclusiveerrormsgid>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<builduptime>6.0</builduptime>
+		<shutdowntime>3.0</shutdowntime>
+		<cost>90.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<lighting>gp_eclipse</lighting>
+		<loopingsound>CricketLoop</loopingsound>
+		<effect type="Damage" relativity="BasePercent" amount="1.20">
+			<target type="ProtoUnit">HumanSoldier</target></effect>
+		<effect type="TechActivate">
+			<target type="Tech">EclipseActive</target></effect>
+	</power>
+	<power name="GP_DivineSun" type="GeneralEffect" godpower="">
+		<displaynameid>STR_POWER_ECLIPSE</displaynameid>
+		<rolloverid>STR_POWER_ECLIPSE_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\eclipse_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">EclipseBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>49.0</activetime>
+		<exclusive></exclusive>
+		<exclusiveerrormsgid>STR_ERROR_GODPOWER_ECLIPSE</exclusiveerrormsgid>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<builduptime>6.0</builduptime>
+		<shutdowntime>3.0</shutdowntime>
+		<cost>90.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<lighting>gp_eclipse</lighting>
+		<loopingsound>CricketLoop</loopingsound>
+		<effect type="Damage" relativity="BasePercent" amount="1.20">
+			<target type="ProtoUnit">Hero</target></effect>
+		<effect type="TechActivate">
+			<target type="Tech">EclipseActive</target></effect>
+	</power>
+	<power name="GP_Storms" type="GeneralEffect" godpower="">
+		<displaynameid>STR_POWER_ECLIPSE</displaynameid>
+		<rolloverid>STR_POWER_ECLIPSE_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\eclipse_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">EclipseBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>49.0</activetime>
+		<exclusive></exclusive>
+		<exclusiveerrormsgid>STR_ERROR_GODPOWER_ECLIPSE</exclusiveerrormsgid>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<builduptime>6.0</builduptime>
+		<shutdowntime>3.0</shutdowntime>
+		<cost>90.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<lighting>gp_eclipse</lighting>
+		<loopingsound>CricketLoop</loopingsound>
+		<effect type="Damage" relativity="BasePercent" amount="1.20">
+			<target type="ProtoUnit">MythUnit</target></effect>
+		<effect type="TechActivate">
+			<target type="Tech">EclipseActive</target></effect>
+	</power>
 </powersmod>

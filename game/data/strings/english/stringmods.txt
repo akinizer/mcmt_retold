@@ -844,6 +844,14 @@ ID = "STR_ABILITY_ABARDSTALE"   ;   Str = "A Bard's Tale"
 
 ID = "STR_ABILITY_BARRAGE_ATTACK"   ;   Str = "Barrage Attack"
 
+// GOD POWERS
+ID = "STR_POWER_ETERNALMOON"   ;   Str = "Eternal Moon"
+ID = "STR_POWER_ETERNALMOON_LR"   ;   Str = "Tsukuyomi blesses human units with power of moon for a duration"
+ID = "STR_MSG_ETERNALMOON"   ;   Str = "Tsukuyomi blesses human units with power of Eternal Moon!\n•  Duration: 1 minute\n•  Effect: Human Soldiers deal 20% more damage"
+ID = "STR_MSG_DIVINESUN"   ;   Str = "Amaterasu blesses heroes with power of Divine Sun!\n•  Duration: 1 minute\n•  Effect: Heroes deal 20% more damage"
+ID = "STR_MSG_STORMS"   ;   Str = "Susanoo blesses myth units with power of Untamed Storm!\n•  Duration: 1 minute\n•  Effect: Myth Units deal 20% more damage"
+ID = "STR_TECH_UPSTARTBOOST_NAME"   ;   Str = "Upstart Boost"
+
 // XL MAPS
 ID = "STR_MAP_ACROPOLIS_COLOSSAL_NAME" ;   Str = "Acropolis Colossal Map"
 ID = "STR_MAP_AIR_COLOSSAL_NAME" ;   Str = "Air Colossal Map"

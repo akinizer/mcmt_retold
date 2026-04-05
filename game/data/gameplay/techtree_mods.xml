@@ -1,5 +1,5 @@
 <techtreemods>
-    <!-- GOD BLESSINGS: Base stats and Accels, Special Techs -->
+    <!-- CIVILIZATION BLESSINGS: Base stats and Accels, Special Techs -->
     <tech name="ArchaicAgeAtlantean">
       <effects>
         <!--Military Barracks: Murmillo, Fanatic, Destroyer-->
@@ -74,16 +74,15 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">OnmyojiUpgrade_V</effect>
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsJapanese</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsJapanese" row="3" column="4" relativity="Assign">
-          <target type="ProtoUnit">Armory</target></effect>		
-        
-        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Temple" relativity="Assign">
+        <!---->
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsJapanese" row="3" column="4" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Armory</target></effect>		        
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Temple" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">VillagerJapanese</target></effect>
-
-        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
-          <target type="ProtoUnit">TownCenter</target></effect>       
-
-        <effect type="SetName" proto="ShrineJapanese" newname="STR_BLD_SHRINE_LOCAL_NAME"></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">TownCenter</target></effect>      
+        <!---->
+        <effect type="SetName" proto="ShrineJapanese" newname="STR_BLD_SHRINE_LOCAL_NAME" mergeMode="add"></effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeChinese">
@@ -106,7 +105,87 @@
           <target type="ProtoUnit">Armory</target></effect>	
       </effects>
     </tech>
-  
+
+    <!-- UPSTART GOD BOOSTS -->
+    <tech name="UpstartBoost_Tsukuyomi" mergeMode="add">
+      <displaynameid>STR_TECH_UPSTARTBOOST_NAME</displaynameid>
+      <status>UNOBTAINABLE</status>
+      <delay>90.0000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <effects> 
+        <effect type="Data" subtype="ProtoActionAdd" protoaction="AreaHeal" amount="1.00" unittype="AreaHealContainer" relativity="Assign">
+          <target type="ProtoUnit">Kitsune</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute">
+				  <target type="ProtoUnit">Kitsune</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRangeOverride" relativity="Absolute">
+          <target type="ProtoUnit">Kitsune</target></effect>
+        <effect type="Data" amount="5.00" subtype="DisplayedRange" relativity="Absolute">
+          <target type="ProtoUnit">Kitsune</target></effect>
+        <effect type="CreatePower" protopower="GP_EternalMoon"></effect>
+        <effect type="TextOutput">STR_MSG_ETERNALMOON</effect>
+      </effects>
+    </tech>
+    <tech name="UpstartBoost_Amaterasu" mergeMode="add">
+      <displaynameid>STR_TECH_UPSTARTBOOST_NAME</displaynameid>
+      <status>UNOBTAINABLE</status>
+      <delay>90.0000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <effects> 
+        <effect type="Data" subtype="ProtoActionAdd" protoaction="AreaHeal" amount="1.00" unittype="AreaHealContainer" relativity="Assign">
+          <target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute">
+				  <target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRangeOverride" relativity="Absolute">
+          <target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" amount="5.00" subtype="DisplayedRange" relativity="Absolute">
+          <target type="ProtoUnit">Miko</target></effect>
+        <effect type="CreatePower" protopower="GP_EternalMoon"></effect>
+        <effect type="TextOutput">STR_MSG_DIVINESUN</effect>
+      </effects>
+    </tech>
+    <tech name="UpstartBoost_Susanoo" mergeMode="add">
+      <displaynameid>STR_TECH_UPSTARTBOOST_NAME</displaynameid>
+      <status>UNOBTAINABLE</status>
+      <delay>90.0000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <effects> 
+        <effect type="Data" subtype="ProtoActionAdd" protoaction="AreaHeal" amount="1.00" unittype="AreaHealContainer" relativity="Assign">
+          <target type="ProtoUnit">Watermill</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute">
+				  <target type="ProtoUnit">Watermill</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRangeOverride" relativity="Absolute">
+          <target type="ProtoUnit">Watermill</target></effect>
+        <effect type="Data" amount="5.00" subtype="DisplayedRange" relativity="Absolute">
+          <target type="ProtoUnit">Watermill</target></effect>
+        <effect type="CreatePower" protopower="GP_EternalMoon"></effect>
+        <effect type="TextOutput">STR_MSG_STORMS</effect>
+      </effects>
+    </tech>
+
+    <!-- MAJOR GOD BLESSINGS -->
+    <tech name="ArchaicAgeTsukuyomi">  
+      <effects> 
+        <effect type="TechStatus" status="obtainable" mergeMode="add">UpstartBoost_Tsukuyomi</effect>
+      </effects> 
+    </tech>
+
+    <tech name="ArchaicAgeAmaterasu">  
+      <effects> 
+        <effect type="TechStatus" status="obtainable" mergeMode="add">UpstartBoost_Amaterasu</effect>
+      </effects> 
+    </tech>    
+
+    <tech name="ArchaicAgeSusanoo">  
+      <effects> 
+        <effect type="TechStatus" status="obtainable" mergeMode="add">UpstartBoost_Susanoo</effect>
+      </effects> 
+    </tech>
 
     <!-- MAJOR GOD IMPROVEMENTS -->
     <tech name="ArchaicAgeLoki">
@@ -3199,7 +3278,7 @@
         <target type="ProtoUnit">MythUnit</target>
       </effect>
 	  
-	  <effect type="Data" subtype="ProtoActionAdd" protoaction="RockSolidHackBonus" amount="1.00" unittype="ChargedModifyContainer" relativity="Assign">
+	    <effect type="Data" subtype="ProtoActionAdd" protoaction="RockSolidHackBonus" amount="1.00" unittype="ChargedModifyContainer" relativity="Assign">
         <target type="ProtoUnit">AbstractSiegeWeapon</target>
       </effect>
 	  

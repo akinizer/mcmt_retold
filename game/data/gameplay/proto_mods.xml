@@ -24566,6 +24566,8 @@
 			<includeally>1</includeally>
 			<modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>3</modifyamount>			
+			<maxrange>5	</maxrange>
 		</protoaction>
 	</unit> 
 	<unit name="AreaInvisibilityContainer" mergeMode="add">
@@ -24654,6 +24656,44 @@
 			<reflecthandattacks>1</reflecthandattacks>
 			<attackaction>1</attackaction>
 			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+	</unit>
+	<unit name="AreaRestrictContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_ABILITY_LIJING_PAGODA">Pagoda</name>
+			<type>AreaRestrict</type>
+			<anim>Pagoda</anim>
+			<damagearea>10.00000</damagearea>
+			<maxrange>20.00000</maxrange>
+			<modifyduration>2000</modifyduration>
+			<attackaction>1</attackaction>
+			<rangedlogic>1</rangedlogic>
+			<chargeaction>1</chargeaction>
+			<charged>
+				<chargedmodifyvfx>VFXPagoda</chargedmodifyvfx>
+			</charged>
+			<rate type="HumanSoldier">1.0</rate>
+			<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+			<rate type="Hero">1.0</rate>
+			<rate type="EconomicUnit">1.0</rate>			
 		</protoaction>
 	</unit>
 
