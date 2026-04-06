@@ -190,7 +190,6 @@
 	<PegasusGroundedMessenger>
 		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
 	</PegasusGroundedMessenger>
-
 		<!--Greek-MythUnit-->
 	<MirageTank>
     	<ability>AbilityHamadryad<tech>HallowedWoodlands</tech><castonself>true</castonself><chargetimeasrof>1</chargetimeasrof></ability>
@@ -330,4 +329,11 @@
 	<MikoSwordmaster>
 		<ability>AbilityOnnaMusha<chargetimeasrof>1</chargetimeasrof></ability>
 	</MikoSwordmaster>
+		<!--Greek-Spartan-->
+	<SpartanAxeman>
+		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>
+	</SpartanAxeman>
+	<SpartanBrute>
+		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>
+	</SpartanBrute>
 </abilities>

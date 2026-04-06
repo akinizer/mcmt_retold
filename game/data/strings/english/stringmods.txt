@@ -878,6 +878,11 @@ ID = "STR_ABILITY_ABARDSTALE"   ;   Str = "A Bard's Tale"
 
 ID = "STR_ABILITY_BARRAGE_ATTACK"   ;   Str = "Barrage Attack"
 
+ID = "STR_ABILITY_BASH_ATTACK"   ;   Str = "Bash Attack"
+
+ID = "STR_ABILITY_SPECIALATTACK"   ;   Str = "Special Attack"
+ID = "STR_ABILITY_SPECIALATTACK_LR"   ;   Str = "This unit has a special ability that recharges"
+
 // GOD POWERS
 ID = "STR_POWER_ETERNALMOON"   ;   Str = "Eternal Moon"
 ID = "STR_POWER_ETERNALMOON_LR"   ;   Str = "Tsukuyomi blesses human units with power of moon for a duration"

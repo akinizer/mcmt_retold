@@ -20916,17 +20916,20 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>115.0000</initialhitpoints>
-		<maxhitpoints>115.0000</maxhitpoints>
+		<initialhitpoints>145.0000</initialhitpoints>
+		<maxhitpoints>145.0000</maxhitpoints>
 		<trainpoints>12.0000</trainpoints>
+		<buildlimit>60</buildlimit>
 		<weightclass>5</weightclass>
 		<populationcount>2</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<los>16.0000</los>
+		<rechargetime>30.0000</rechargetime>
+
 		<cost resourcetype="Food">50.0000</cost>
 		<cost resourcetype="Gold">40.0000</cost>
 		<armor type="Hack" value="0.4000"></armor>
-		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Pierce" value="0.2500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
@@ -20967,13 +20970,23 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
-		<tactics>handattack.tactics</tactics>
+		<tactics>greek_spartan_throw.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.000000</rof>
+			<rof>1.100000</rof>
 			<damage type="Hack">8.000000</damage>
-			<damagebonus type="AbstractCavalry">1.250000</damagebonus>
-			<maxrange>0.750000</maxrange>
+			<damagebonus type="HumanSoldier">1.250000</damagebonus>
+			<maxrange>0.850000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>BashAttack</name>
+			<rof>2.00000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagebonus type="HumanSoldier">1.500000</damagebonus>
+			<maxrange>0.850000</maxrange>
+			<maxsizeclass>7</maxsizeclass>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<throw>1</throw>
 		</protoaction>
 	</unit>
 	<unit name="SpartanBrute" mergeMode="add">
@@ -20989,17 +21002,20 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>115.0000</initialhitpoints>
-		<maxhitpoints>115.0000</maxhitpoints>
+		<initialhitpoints>165.0000</initialhitpoints>
+		<maxhitpoints>165.0000</maxhitpoints>
 		<trainpoints>12.0000</trainpoints>
+		<buildlimit>60</buildlimit>
 		<weightclass>5</weightclass>
 		<populationcount>2</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<los>16.0000</los>
+		<rechargetime>35.0000</rechargetime>
+
 		<cost resourcetype="Food">50.0000</cost>
 		<cost resourcetype="Gold">40.0000</cost>
 		<armor type="Hack" value="0.4000"></armor>
-		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
@@ -21040,13 +21056,24 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
-		<tactics>handattack.tactics</tactics>
+		<tactics>greek_spartan_throw.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.000000</rof>
+			<rof>1.300000</rof>
 			<damage type="Hack">8.000000</damage>
-			<damagebonus type="AbstractCavalry">1.250000</damagebonus>
-			<maxrange>0.750000</maxrange>
+			<damage type="Divine">0.500000</damage>
+			<damagebonus type="HumanSoldier">1.4250000</damagebonus>
+			<maxrange>0.900000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>BashAttack</name>
+			<rof>2.00000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagebonus type="HumanSoldier">1.500000</damagebonus>
+			<maxrange>0.850000</maxrange>
+			<maxsizeclass>7</maxsizeclass>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<throw>1</throw>
 		</protoaction>
 	</unit>
 	<unit name="SpartanHalberdier" mergeMode="add">
@@ -21062,9 +21089,10 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>115.0000</initialhitpoints>
-		<maxhitpoints>115.0000</maxhitpoints>
+		<initialhitpoints>145.0000</initialhitpoints>
+		<maxhitpoints>145.0000</maxhitpoints>
 		<trainpoints>12.0000</trainpoints>
+		<buildlimit>60</buildlimit>
 		<weightclass>5</weightclass>
 		<populationcount>2</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
@@ -21072,7 +21100,7 @@
 		<cost resourcetype="Food">50.0000</cost>
 		<cost resourcetype="Gold">40.0000</cost>
 		<armor type="Hack" value="0.4000"></armor>
-		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Pierce" value="0.2500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
@@ -21116,10 +21144,10 @@
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.000000</rof>
+			<rof>1.200000</rof>
 			<damage type="Hack">8.000000</damage>
-			<damagebonus type="AbstractCavalry">1.250000</damagebonus>
-			<maxrange>0.750000</maxrange>
+			<damagebonus type="HumanSoldier">1.350000</damagebonus>
+			<maxrange>0.990000</maxrange>
 		</protoaction>
 	</unit>
 	<unit name="SpartanSpearman" mergeMode="add">
@@ -21135,17 +21163,18 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>115.0000</initialhitpoints>
-		<maxhitpoints>115.0000</maxhitpoints>
+		<initialhitpoints>135.0000</initialhitpoints>
+		<maxhitpoints>135.0000</maxhitpoints>
 		<trainpoints>12.0000</trainpoints>
+		<buildlimit>60</buildlimit>
 		<weightclass>5</weightclass>
 		<populationcount>2</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<los>16.0000</los>
 		<cost resourcetype="Food">50.0000</cost>
 		<cost resourcetype="Gold">40.0000</cost>
-		<armor type="Hack" value="0.4000"></armor>
-		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
@@ -21186,13 +21215,24 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
-		<tactics>handattack.tactics</tactics>
+		<flag>HasDefaultAttack</flag>
+		<tactics>greek_spartan_proximity.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>1.000000</rof>
 			<damage type="Hack">8.000000</damage>
-			<damagebonus type="AbstractCavalry">1.250000</damagebonus>
-			<maxrange>0.750000</maxrange>
+			<damagebonus type="HumanSoldier">1.250000</damagebonus>
+			<maxrange>0.950000</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="HumanSoldier">1.250000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>10.000000</maxrange>			
+			<projectile>ProjectileJavelinFlaming</projectile>
 		</protoaction>
 	</unit>
 	<unit name="SpartanSwordsman" mergeMode="add">
@@ -21208,9 +21248,10 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>115.0000</initialhitpoints>
-		<maxhitpoints>115.0000</maxhitpoints>
+		<initialhitpoints>150.0000</initialhitpoints>
+		<maxhitpoints>150.0000</maxhitpoints>
 		<trainpoints>12.0000</trainpoints>
+		<buildlimit>60</buildlimit>
 		<weightclass>5</weightclass>
 		<populationcount>2</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
@@ -21218,7 +21259,7 @@
 		<cost resourcetype="Food">50.0000</cost>
 		<cost resourcetype="Gold">40.0000</cost>
 		<armor type="Hack" value="0.4000"></armor>
-		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Pierce" value="0.3000"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
@@ -21262,9 +21303,9 @@
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.000000</rof>
+			<rof>0.900000</rof>
 			<damage type="Hack">8.000000</damage>
-			<damagebonus type="AbstractCavalry">1.250000</damagebonus>
+			<damagebonus type="HumanSoldier">1.250000</damagebonus>
 			<maxrange>0.750000</maxrange>
 		</protoaction>
 	</unit>
@@ -21281,17 +21322,18 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>115.0000</initialhitpoints>
-		<maxhitpoints>115.0000</maxhitpoints>
+		<initialhitpoints>155.0000</initialhitpoints>
+		<maxhitpoints>155.0000</maxhitpoints>
 		<trainpoints>12.0000</trainpoints>
+		<buildlimit>5</buildlimit>
 		<weightclass>5</weightclass>
 		<populationcount>2</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<los>16.0000</los>
 		<cost resourcetype="Food">50.0000</cost>
 		<cost resourcetype="Gold">40.0000</cost>
-		<armor type="Hack" value="0.4000"></armor>
-		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Hack" value="0.5000"></armor>
+		<armor type="Pierce" value="0.4500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
@@ -21319,6 +21361,9 @@
 		<unittype>AbstractInfantry</unittype>
 		<unittype>HumanSoldier</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MinorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
 		<unittype>LogicalTypeLandMilitary</unittype>
 		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
 		<unittype>LogicalTypeNeededForVictory</unittype>
@@ -21335,9 +21380,9 @@
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.000000</rof>
-			<damage type="Hack">8.000000</damage>
-			<damagebonus type="AbstractCavalry">1.250000</damagebonus>
+			<rof>1.100000</rof>
+			<damage type="Hack">10.000000</damage>
+			<damagebonus type="HumanSoldier">1.450000</damagebonus>
 			<maxrange>0.750000</maxrange>
 		</protoaction>
 		<protoaction>
