@@ -1400,6 +1400,8 @@
     <effects>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">MikoSwordmaster</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">YukiOnnaMusha</target></effect>
     </effects>
   </tech>
 	

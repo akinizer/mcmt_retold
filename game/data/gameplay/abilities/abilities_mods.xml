@@ -329,6 +329,10 @@
 	<MikoSwordmaster>
 		<ability>AbilityOnnaMusha<chargetimeasrof>1</chargetimeasrof></ability>
 	</MikoSwordmaster>
+	<YukiOnnaMusha>
+		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>
+		<ability>AbilityYukiOnna<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</YukiOnnaMusha>
 		<!--Greek-Spartan-->
 	<SpartanAxeman>
 		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>

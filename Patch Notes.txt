@@ -438,8 +438,7 @@
 - special techs:
     - general:
         - ArchitectsOfMarley: <prereq> Architects, <specificage> MythicAge
-        - AdvancedFortifications I,II,III
-    
+        - AdvancedFortifications I,II,III    
         
 16. Special structures from mcmt mod
 - LandLord build:
@@ -573,11 +572,15 @@
     - SacredCustodians: enables the unit
     - MikoOracleUpgrade:
         - weapon model: katana -> lightsaber
-
-- credits to Eskiss for the idea of lightsaber as a sword model
+        - credits to Eskiss for the idea of lightsaber as a sword model
 - OniMask:
     - GuardianOniRed: hackattack, no ability, lesser hp, flame theme
     - GuardianOniBLue: hackattack, no ability, lesser hp, frost theme
+
+- YukiOnnaMusha: mythunit with a precious naginata
+    - Deadly Charm: charged ability, melee, freeze area, damageovertime
+    - Snow Blast: auxcharged ability, ranged, snowball projectile, slow unit
+    - Mist Trail
 
 * Techs Reworks & Additions
 - Kagura: 

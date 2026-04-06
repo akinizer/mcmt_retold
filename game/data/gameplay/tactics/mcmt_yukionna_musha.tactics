@@ -1,0 +1,48 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ABILITY_DEADLY_CHARM">ChargedHandAttack</name>
+		<type>Attack</type>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<handlogic>1</handlogic>
+		<anim>ChargedHandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ABILITY_SNOW_BLAST">ColdTouch</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<rate type="Building">0.0</rate>
+		<attackaction>1</attackaction>
+		<anim>ColdTouch</anim>
+		<auxchargeaction>1</auxchargeaction>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>		
+		<rangedlogic>1</rangedlogic>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+	</action>
+	<tactic>Default
+        <action priority="100">ColdTouch</action>
+        <action priority="90">ChargedHandAttack</action>
+        <action priority="80">HandAttack</action
+        ><attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

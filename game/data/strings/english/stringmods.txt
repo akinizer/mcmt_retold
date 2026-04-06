@@ -628,6 +628,10 @@ ID = "STR_UNIT_MIKO_SWORDMASTER_NAME"   ;   Str = "Miko Swordmaster (Hero)"
 ID = "STR_UNIT_MIKO_SWORDMASTER_SR"   ;   Str = "Master of kendo in an unmatched elegance"
 ID = "STR_UNIT_MIKO_SWORDMASTER_LR"   ;   Str = "Beauty is a deadly weapon"
 
+ID = "STR_UNIT_YUKIONNA_MUSHA_NAME"   ;   Str = "Yuki Onna Musha"
+ID = "STR_UNIT_YUKIONNA_MUSHA_SR"   ;   Str = "Wandering Snow Beauty"
+ID = "STR_UNIT_YUKIONNA_MUSHA_LR"   ;   Str = "Yuki-Onna seeks a man as a true love but she ends it up with freezing him to head. Yuki-Onna protects the naginata of her late husband as a precious memory"
+
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
 
@@ -879,6 +883,8 @@ ID = "STR_ABILITY_ABARDSTALE"   ;   Str = "A Bard's Tale"
 ID = "STR_ABILITY_BARRAGE_ATTACK"   ;   Str = "Barrage Attack"
 
 ID = "STR_ABILITY_BASH_ATTACK"   ;   Str = "Bash Attack"
+ID = "STR_ABILITY_DEADLY_CHARM"   ;   Str = "Deadly Charm"
+ID = "STR_ABILITY_SNOW_BLAST"   ;   Str = "Snow Blast"
 
 ID = "STR_ABILITY_SPECIALATTACK"   ;   Str = "Special Attack"
 ID = "STR_ABILITY_SPECIALATTACK_LR"   ;   Str = "This unit has a special ability that recharges"
