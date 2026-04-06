@@ -632,6 +632,10 @@ ID = "STR_UNIT_YUKIONNA_MUSHA_NAME"   ;   Str = "Yuki Onna Musha"
 ID = "STR_UNIT_YUKIONNA_MUSHA_SR"   ;   Str = "Wandering Snow Beauty"
 ID = "STR_UNIT_YUKIONNA_MUSHA_LR"   ;   Str = "Yuki-Onna seeks a man as a true love but she ends it up with freezing him to head. Yuki-Onna protects the naginata of her late husband as a precious memory"
 
+ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_NAME"   ;   Str = "Yuki Onna Mistbender (Hero)"
+ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_SR"   ;   Str = "Shinobi Master of Air Element"
+ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_LR"   ;   Str = "Yuki-Onna seeks a man as a true love but she ends it up with freezing him to head. Yuki-Onna protects the naginata of her late husband as a precious memory"
+
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
 
@@ -852,6 +856,10 @@ ID = "STR_POWER_TSUNAMI_GENERATOR"   ;   Str = "Tsunami Generator"
 ID = "STR_POWER_TSUNAMI_GENERATOR_LR"   ;   Str = "Seismic Wave Superweapon Unleashed by Worldbreaker Super Battleship"
 
 // ACTION NAMES
+ID = "STR_ACTION_TRANSFORM"   ;   Str = "Transform"
+ID = "STR_ACTION_DEPLOY"   ;   Str = "Deploy"
+ID = "STR_ACTION_UNDEPLOY"   ;   Str = "Undeploy"
+
 ID = "STR_ACTION_DEMOLITION_ATTACK"   ;   Str = "Demolition Attack"
 
 ID = "STR_ACTION_SLASHATTACK"   ;   Str = "Slash Attack"

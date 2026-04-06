@@ -332,7 +332,12 @@
 	<YukiOnnaMusha>
 		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>
 		<ability>AbilityYukiOnna<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
 	</YukiOnnaMusha>
+	<YukiOnnaMistBender>
+		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>
+		<ability>AbilityYukiOnna<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</YukiOnnaMistBender>
 		<!--Greek-Spartan-->
 	<SpartanAxeman>
 		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>

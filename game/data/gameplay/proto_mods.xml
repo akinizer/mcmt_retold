@@ -24862,7 +24862,6 @@
 		<flag>ShowGarrisonButton</flag>
 		<flag>DontRotateObstruction</flag>
 		<flag>ObscuredByUnits</flag>
-		<flag>NotDeleteable</flag>
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>HideGarrisonFlag</flag>
@@ -24918,6 +24917,158 @@
 			<type>Trail</type>
 			<persistent>1</persistent>
 			<trailprotounit frequency="0.25">TrailOfMist</trailprotounit>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_TRANSFORM">DelayedTransform</name>			
+			<type>DelayedTransform</type>
+			<anim>Transform</anim>
+			<modifyduration>2500</modifyduration>
+			<modifyprotoid>YukiOnnaMistBender</modifyprotoid>
+		</protoaction>
+	</unit>
+	<unit name="YukiOnnaMistBender" mergeMode="add">
+		<displaynameid>STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_LR</rollovertextid>
+		<icon>resources\japanese\player_color\units\yuki_onna_icon.png</icon>
+		<animfile>mcmt\units\imperial\yuki_onna_musha.xml</animfile>
+		<soundsetfile>japanese\vo\yuki_onna\yuki_onna.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Wood</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<trainpoints>12.0000</trainpoints>
+		<movementtype>Amphibious</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>280.0000</initialhitpoints>
+		<maxhitpoints>280.0000</maxhitpoints>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.2000</maxvelocity>
+		<rechargetime>20</rechargetime>
+		<auxrechargetime>15</auxrechargetime>
+		<los>12.0000</los>
+		<buildlimit>4</buildlimit>
+
+		<bloodgroupoverride>defaultmythblood</bloodgroupoverride>
+		<armor type="Hack" value="0.3500"></armor>
+		<armor type="Pierce" value="0.8500"></armor>
+		<armor type="Crush" value="0.6900"></armor>
+		<cost resourcetype="Gold">125.0000</cost>
+        <cost resourcetype="Wood">175.0000</cost>
+        <cost resourcetype="Favor">15.0000</cost>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeSharedHeroSelection</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MinorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeDivineImmunity</unittype>
+		<flag>AutoTrainable</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>TieToWaterSurface</flag>
+		<tactics>mcmt_yukionna_musha.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">8.00000</damage>
+			<damage type="Divine">2.00000</damage>
+			<damagebonus type="HumanSoldier">5.000000</damagebonus>
+			<damagebonus type="MythUnit">7.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+			<onhiteffect type="ProgFreeze" duration="8.2" rate="0.15" freezeduration="5.0">
+				<target attacktype="Unit"></target>
+				<target ignoretype="LogicalTypeMythUnitNotTitan"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">10.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<damagebonus type="HumanSoldier">5.000000</damagebonus>
+			<maxrange>2.000000</maxrange>
+			<forceareaattackcenter>1</forceareaattackcenter>
+			<onhiteffect type="Freeze" duration="10.000000" freezetype="default"></onhiteffect>			
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXCold" attachbone="spine" duration="10.000000"></onhiteffect>
+			<onhiteffect type="DamageOverTime" duration="10.000000"><damage type="Divine">20.00000</damage></onhiteffect>
+			<workonfrozenunits>0</workonfrozenunits>
+			<workonstonedamageunits>0</workonstonedamageunits>
+		</protoaction>
+		<protoaction>
+			<name>ColdTouch</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">10.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<damagebonus type="HumanSoldier">10.000000</damagebonus>
+			<damagebonus type="MythUnit">15.000000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>12.000000</maxrange>
+			<forceareaattackcenter>1</forceareaattackcenter>
+			<onhiteffect type="StatModify" duration="10.000000">
+				<modify type="Speed">0.500000</modify></onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXCold" attachbone="spine" duration="10.000000"></onhiteffect>
+			<projectile>ProjectileYukiOnnaBall</projectile>
+		</protoaction>
+		<protoaction>
+			<name>Trail</name>
+			<type>Trail</type>
+			<persistent>1</persistent>
+			<trailprotounit frequency="0.25">TrailOfAirbender</trailprotounit>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
 	<!-- dismount units knights
@@ -25051,10 +25202,10 @@
 			<maxrange>1.5</maxrange>
 			<targetenemy>1</targetenemy>
 		</protoaction>
-	</unit>
-	<unit name="TrailOfIce">
+	</unit>	
+	<unit name="TrailOfAirbender">
 		<displaynameid>STR_VFX_NEZHA_FIRE_AREA_NAME</displaynameid>
-		<animfile>vfx\projectiles\frost_drift\frost_drift.xml</animfile>
+		<animfile>vfx\smoke\shinobi_smoke_bomb.xml</animfile>
 		<obstructionradiusx>0.2000</obstructionradiusx>
 		<obstructionradiusz>0.2000</obstructionradiusz>
 		<lifespan>4.0000</lifespan>
@@ -25086,6 +25237,39 @@
 	<unit name="TrailOfPoison">
 		<displaynameid>STR_VFX_NEZHA_FIRE_AREA_NAME</displaynameid>
 		<animfile>chinese\godpowers\venom_beast\venom_trail.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>4.0000</lifespan>
+		<decay delay="1.0000" duration="0.1000"></decay>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<los>3.0000</los>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>TieToWaterSurface</flag>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name>AreaDamage</name>
+			<modifyamount>-2</modifyamount>
+			<modifydamagetype>Divine</modifydamagetype>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<maxrange>1.5</maxrange>
+			<targetenemy>1</targetenemy>
+		</protoaction>
+	</unit>
+
+	<!-- /// SPECIAL TRAIL UNITS ALL MAP /// -->
+	<unit name="TrailOfWeatherSnow">
+		<displaynameid>STR_VFX_NEZHA_FIRE_AREA_NAME</displaynameid>
+		<animfile>vfx\weather\snow.xml</animfile>
 		<obstructionradiusx>0.2000</obstructionradiusx>
 		<obstructionradiusz>0.2000</obstructionradiusz>
 		<lifespan>4.0000</lifespan>
