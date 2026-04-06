@@ -24941,15 +24941,14 @@
 		<trainpoints>12.0000</trainpoints>
 		<movementtype>Amphibious</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>280.0000</initialhitpoints>
-		<maxhitpoints>280.0000</maxhitpoints>
+		<initialhitpoints>220.0000</initialhitpoints>
+		<maxhitpoints>220.0000</maxhitpoints>
 		<weightclass>5</weightclass>
 		<populationcount>1</populationcount>
 		<maxvelocity>4.2000</maxvelocity>
 		<rechargetime>20</rechargetime>
 		<auxrechargetime>15</auxrechargetime>
 		<los>12.0000</los>
-		<buildlimit>4</buildlimit>
 
 		<bloodgroupoverride>defaultmythblood</bloodgroupoverride>
 		<armor type="Hack" value="0.3500"></armor>

@@ -580,7 +580,12 @@
 - YukiOnnaMusha: mythunit with a precious naginata
     - Deadly Charm: charged ability, melee, freeze area, damageovertime
     - Snow Blast: auxcharged ability, ranged, snowball projectile, slow unit
+    - Transform: YukiOnnaMushaMistBender (hero)
     - Mist Trail
+
+- YukiOnnaMushaMistBender: alternative variant of YukiOnnaMusha, hero, mastery in air element, physically weaker but more resilient to projectiles 
+    - lower HP, higher PierceArmor
+    - Air Trail
 
 * Techs Reworks & Additions
 - Kagura: 
@@ -673,6 +678,8 @@
 - Amaterasu: hero damage, 1 min, miko areaheal, chat notification
 - Tsukuyomi: humansoldier damage, 1 min, watermill areaheal, chat notification
 - Susanoo: mythunit damage, 1 min, kitsune areaheal, chat notification
+
+24. More Containers, Trails
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
