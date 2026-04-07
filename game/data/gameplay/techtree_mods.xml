@@ -1050,6 +1050,11 @@
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_III</effect>
             
             <effect type="TechStatus" status="obtainable">MCMT_SpartanTraining</effect>
+
+            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining</effect>            
+            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_I</effect>            
+            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_II</effect>            
+            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_III</effect>            
             <!--TechBuilding FutureTech-->
             <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
             <effect type="TechStatus" status="obtainable">MCMT_NanofiberPlatings</effect>
@@ -2602,6 +2607,7 @@
         <target type="ProtoUnit">Hippolyta</target></effect>
 		</effects>		
 	</tech>
+
   <tech name="MCMT_SpartanTraining" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_SPARTAN_TRAINING_NAME</displaynameid>
@@ -2622,6 +2628,143 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanCaptain</target></effect>    
 		</effects>		
 	</tech>
+
+  <tech name="MCMT_ElvenTraining" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_ELVENTRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_ELVENTRAINING_LR</rollovertextid>
+		<icon>resources\tech\marksmanship.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">150</cost>    
+		<effects>      
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ElvenCamp</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">RangerElf</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">RoyalElf</target></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_ElvenTraining_I" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_ELVENTRAINING_I_NAME</displaynameid>
+		<rollovertextid>STR_TECH_ELVENTRAINING_I_LR</rollovertextid>
+		<icon>resources\tech\marksmanship.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">100</cost>
+		<cost resourcetype="Wood">150</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_ElvenTraining</techstatus>
+    </prereqs>
+    <effects>
+		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">RangerElf</target></effect>        
+		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">RoyalElf</target></effect> 
+
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+        <target type="ProtoUnit">RangerElf</target></effect>
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+        <target type="ProtoUnit">RoyalElf</target></effect>
+
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrow</target></effect>
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrowFlaming</target></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_ElvenTraining_II" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_ELVENTRAINING_II_NAME</displaynameid>
+		<rollovertextid>STR_TECH_ELVENTRAINING_II_LR</rollovertextid>
+		<icon>resources\tech\marksmanship.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">100</cost>
+		<cost resourcetype="Wood">150</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_ElvenTraining_I</techstatus>
+    </prereqs>
+    <effects>
+		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">RangerElf</target></effect>
+		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">RoyalElf</target></effect>
+
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+        <target type="ProtoUnit">RangerElf</target></effect>
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+        <target type="ProtoUnit">RoyalElf</target></effect>
+
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrow</target></effect>
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrowFlaming</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="DamageOverTime" relativity="Absolute">
+        <target type="ProtoUnit">RangerElf</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="DamageOverTime" relativity="Absolute">
+        <target type="ProtoUnit">RoyalElf</target></effect>
+		</effects>		
+	</tech>
+  	<tech name="MCMT_ElvenTraining_III" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_ELVENTRAINING_III_NAME</displaynameid>
+		<rollovertextid>STR_TECH_ELVENTRAINING_III_LR</rollovertextid>
+		<icon>resources\tech\marksmanship.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">100</cost>
+		<cost resourcetype="Wood">150</cost>
+    <prereqs>
+      <techstatus status="Active">MCMT_ElvenTraining_II</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">RangerElf</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">RoyalElf</target></effect>
+
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+        <target type="ProtoUnit">RangerElf</target></effect>
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+        <target type="ProtoUnit">RoyalElf</target></effect>
+
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent">
+        <target type="ProtoUnit">RangerElf</target></effect>
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent">
+        <target type="ProtoUnit">RoyalElf</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="RangedAttackFlying" relativity="Absolute">
+			  <target type="ProtoUnit">RangerElf</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="RangedAttack" relativity="Absolute">
+			  <target type="ProtoUnit">RoyalElf</target></effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="RangedAttackFlying" relativity="Absolute">
+			  <target type="ProtoUnit">RoyalElf</target></effect>
+
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrow</target></effect>
+      <effect type="Data" amount="20" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">ProjectileArrowFlaming</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+        <target type="ProtoUnit">RangerElf</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+        <target type="ProtoUnit">RoyalElf</target></effect>
+
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">RangerElf</target></effect>
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">RoyalElf</target></effect>
+		</effects>		
+	</tech>
+
+  <!-- WARBUNKER TECHS-->
   <tech name="AntiArmorLogistics" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_WARBUNKER_ANTIARMOR_NAME</displaynameid>

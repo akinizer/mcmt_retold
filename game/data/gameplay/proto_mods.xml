@@ -9288,6 +9288,10 @@
 		<tech row="0" column="5" mergeMode="add">MCMT_SpartanTraining</tech>
 		<train row="0" column="5" mergeMode="add">SpartanCamp</train>
 	</unit>
+	<unit name="GreatHall">		
+		<tech row="0" column="5" mergeMode="add">MCMT_ElvenTraining</tech>
+		<train row="0" column="5" mergeMode="add">ElvenCamp</train>
+	</unit>
 	<unit name="MilitaryCampTower">
 		<unittype>AbstractTower</unittype>
 	</unit>
@@ -21854,6 +21858,207 @@
 			<anim>RangedAttack</anim>
 		</protoaction>
 	</unit>
+	<unit name="RangerElf">		
+		<displaynameid>STR_UNIT_RANGER_ELF_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_RANGER_ELF_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_RANGER_ELF_LR</rollovertextid>
+		<icon>resources\greek\player_color\units\amazonarcher_icon.png</icon>
+		<animfile>mcmt\units\viking\elf_ranger.xml</animfile>
+		<soundsetfile>game\sound\norse\vo\hersir\hersir.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>28.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>180.0000</initialhitpoints>
+		<maxhitpoints>180.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<los>32.0000</los>
+		<cost resourcetype="Wood">85.0000</cost>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.2000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeAffectedBySunRay</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CommonCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
+		<flag>HasDefaultAttack</flag>
+		<tactics>norse_elves_proximitymodes.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.400000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagebonus type="MythUnit">1.250000</damagebonus>
+			<damagebonus type="AbstractInfantry">2.000000</damagebonus>
+			<maxrange>0.500000</maxrange>	
+			<defaultattack>1</defaultattack>		
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackFlying</name>
+			<rof>1.900000</rof>
+			<damage type="Pierce">9.000000</damage>
+			<damagebonus type="MythUnit">2.200000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.900000</rof>
+			<damage type="Pierce">9.000000</damage>
+			<damagebonus type="HumanSoldier">2.200000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+	</unit>
+	<unit name="RoyalElf">		
+		<displaynameid>STR_UNIT_ROYAL_ELF_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_ROYAL_ELF_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_ROYAL_ELF_LR</rollovertextid>
+		<icon>resources\greek\player_color\units\amazonarcher_icon.png</icon>
+		<animfile>mcmt\units\viking\elf_royal.xml</animfile>
+		<soundsetfile>game\sound\norse\vo\hersir\hersir.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>28.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>140.0000</initialhitpoints>
+		<maxhitpoints>140.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<los>32.0000</los>
+		<cost resourcetype="Wood">85.0000</cost>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.2500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeAffectedBySunRay</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CommonCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
+		<flag>HasDefaultAttack</flag>
+		<tactics>norse_elves_proximitymodes.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.400000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagebonus type="MythUnit">1.500000</damagebonus>
+			<damagebonus type="AbstractInfantry">2.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackFlying</name>
+			<rof>1.600000</rof>
+			<damage type="Pierce">9.000000</damage>
+			<damagebonus type="MythUnit">2.300000</damagebonus>
+			<maxrange>12.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.600000</rof>
+			<damage type="Pierce">9.000000</damage>
+			<damagebonus type="HumanSoldier">2.300000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>12.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
 	<unit name="Moradin">
 		<displaynameid>STR_UNIT_MORADIN_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_MORADIN_ENT_SR</shortrollovertextid>
@@ -22306,6 +22511,61 @@
 			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
+	</unit>
+	
+	<!-- Norse Special Buildings -->
+	<unit name="ElvenCamp">
+		<displaynameid>STR_BLD_TENT_NAME</displaynameid>
+		<rollovertextid>STR_BLD_TENT_LR</rollovertextid>
+		<shortrollovertextid>STR_BLD_TENT_SR</shortrollovertextid>
+		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
+		<animfile culture="greek">shared\buildings\tent\tent_greek.xml</animfile>
+		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
+		<obstructionradiusx>2.0000</obstructionradiusx>
+		<obstructionradiusz>2.0000</obstructionradiusz>
+		<impacttype>Wood</impacttype>
+		<allowedheightvariance>4.0000</allowedheightvariance>
+		<movementtype>land</movementtype>
+		<initialhitpoints>250.0000</initialhitpoints>
+		<maxhitpoints>250.0000</maxhitpoints>
+		<trainpoints>1.0000</trainpoints>
+		<populationcapaddition>2</populationcapaddition>
+		<los>9.0000</los>
+		<cost resourcetype="Wood">125.0000</cost>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.4500"></armor>
+		<armor type="Crush" value="0.0500"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>Unit</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>UseSharedBuildLimit</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DynamicUpdate</flag>		
+		<autobuildrate>5.0000</autobuildrate>		
+		<bloodgroupoverride>noblood</bloodgroupoverride>		
+		<train row="0" column="1" mergeMode="add">RangerElf</train>
+		<train row="0" column="2" mergeMode="add">RoyalElf</train>
+		<tech row="0" column="0" mergeMode="add">MCMT_ElvenTraining_I</tech>
+		<tech row="0" column="0" mergeMode="add">MCMT_ElvenTraining_II</tech>
+		<tech row="0" column="0" mergeMode="add">MCMT_ElvenTraining_III</tech>
 	</unit>
 
 	<!-- Egyptian Special Units -->

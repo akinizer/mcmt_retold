@@ -616,6 +616,15 @@ ID = "STR_UNIT_SPARTAN_CAPTAIN_NAME"   ;   Str = "Spartan Captain (Hero)"
 ID = "STR_UNIT_SPARTAN_CAPTAIN_SR"   ;   Str = "Spartan with many accomplishments in war"
 ID = "STR_UNIT_SPARTAN_CAPTAIN_LR"   ;   Str = "In Spartan army, armies are categorized into smaller groups and the captains serve the commander faithfully"
 
+// NORSE SPECIAL UNITS
+ID = "STR_UNIT_RANGER_ELF_NAME"   ;   Str = "Ranger Elf"
+ID = "STR_UNIT_RANGER_ELF_SR"   ;   Str = "Effective at both melee and range"
+ID = "STR_UNIT_RANGER_ELF_LR"   ;   Str = "Ranger Elves are survivalists as they grow in wilderness and embrace nature as their home"
+
+ID = "STR_UNIT_ROYAL_ELF_NAME"   ;   Str = "Royal Elf"
+ID = "STR_UNIT_ROYAL_ELF_SR"   ;   Str = "Elites from Elven Empire"
+ID = "STR_UNIT_ROYAL_ELF_LR"   ;   Str = "Royal Elves are naturally talented at swordsmanship, archery as well as smithery. They receive a professional training, join military in early ages and wield mithril armaments"
+
 // JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
 
@@ -734,6 +743,18 @@ ID = "STR_TECH_ATHENIAN_TRAINING_LR"   ;   Str = "Initiates advanced Greater Ath
 
 ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"
 ID = "STR_TECH_DIVINEARMAMENTS_LR"   ;   Str = "Improves Offensive Capabilities of Military Units, Heroes and Hunters with Divine Weaponry"
+
+ID = "STR_TECH_ELVENTRAINING_NAME"   ;   Str = "Elven Training"
+ID = "STR_TECH_ELVENTRAINING_LR"   ;   Str = "Recruits Elven specialists for advanced warfare"
+
+ID = "STR_TECH_ELVENTRAINING_I_NAME"   ;   Str = "Elven Training I"
+ID = "STR_TECH_ELVENTRAINING_I_LR"   ;   Str = "First upgrade for Elven specialists"
+
+ID = "STR_TECH_ELVENTRAINING_II_NAME"   ;   Str = "Elven Training II"
+ID = "STR_TECH_ELVENTRAINING_II_LR"   ;   Str = "Second upgrade for Elven specialists"
+
+ID = "STR_TECH_ELVENTRAINING_III_NAME"   ;   Str = "Elven Training III"
+ID = "STR_TECH_ELVENTRAINING_III_LR"   ;   Str = "Final upgrade for Elven specialists"
 
 ID = "STR_TECH_NANOFIBERPLATINGS_NAME"   ;   Str = "Nanofiber Platings"
 ID = "STR_TECH_NANOFIBERPLATINGS_LR"   ;   Str = "Enhances Defensive Capabilities of Military Units and Heroes with Nanofiber Technology"

@@ -1,0 +1,45 @@
+<animfile validation="strict">
+   	<attachment>sowSeeds<component>VFXComp<assetreference type="PopcornFx"><file>objects\villager\sow_seeds.pkfx</file></assetreference></component><anim>Idle<component>VFXComp</component></anim></attachment>
+	<attachment>Arrow<include>shared\units\attachments\arrow\arrow.xml</include></attachment>
+	<attachment>RangedWeapon
+        <component>ModelComp
+		<logic type="Tech">
+			<none><assetreference type="TMModel"><file>shared\units\attachments\bow\bow_baseline</file><materialvariant index="0"></materialvariant></assetreference></none>
+			<mediuminfantry><assetreference type="TMModel"><file>norse_freyr\units\myth\draugr\draugr_bow</file><materialvariant index="1"></materialvariant></assetreference></mediuminfantry>
+			<heavyinfantry><assetreference type="TMModel"><file>norse_freyr\units\myth\draugr\draugr_upgrade</file><materialvariant index="2"></materialvariant></assetreference></heavyinfantry>
+			<championinfantry><assetreference type="TMModel"><file>greek\units\myth\medusa\medusa_upgraded_bow</file><materialvariant index="3"></materialvariant></assetreference></championinfantry>
+		</logic></component>
+		<anim>Idle<component>ModelComp</component></anim>
+        
+        <include>shared\units\attachments\bow\bow.xml</include></attachment>
+	<attachment>Axe<include>shared\units\attachments\axe\axe.xml</include></attachment>
+	<attachment>Pickaxe<include>shared\units\attachments\tool\tool_pickaxe.xml</include></attachment>
+	<attachment>Knife<include>greek\units\attachments\sword\sword_g.xml</include></attachment>
+	<attachment>Hammer<include>shared\units\attachments\tool\tool_hammer.xml</include></attachment>
+	<attachment>Hoe<include>shared\units\attachments\tool\tool_hoe.xml</include></attachment>
+	<attachment>ResourceBasket<include>shared\units\attachments\resource_basket\resource_basket.xml</include></attachment>
+	<attachment>ResourceGold<include>shared\units\attachments\resource\resource_gold.xml</include></attachment>
+	<attachment>ResourceWood<include>shared\units\attachments\resource_wood\resource_wood.xml</include></attachment>
+	<attachment>ResourceMeat<include>shared\units\attachments\resource_meat\resource_meat.xml</include></attachment>
+	<attachment>ResourceGrain<include>shared\units\attachments\resource_grain\resource_grain.xml</include></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>spc\units\prisoner\prisoner</file></assetreference></component>
+	<anim>Bored<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Build<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_build_a</file></assetreference><component>ModelComp</component><attach name="Hammer" attachpoint="hammer"></attach></anim>
+	<anim>Carry<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_carry_a</file></assetreference><component>ModelComp</component><attach name="ResourceGold" attachpoint="resourcegold"></attach><attach name="ResourceWood" attachpoint="resourcewood"></attach><attach name="ResourceMeat" attachpoint="resourcemeat"></attach><attach name="ResourceGrain" attachpoint="resourcegrain"></attach></anim>
+	<anim>CarryIdle<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_carryidle_a</file></assetreference><component>ModelComp</component><attach name="ResourceGold" attachpoint="resourcegold"></attach><attach name="ResourceWood" attachpoint="resourcewood"></attach><attach name="ResourceMeat" attachpoint="resourcemeat"></attach><attach name="ResourceGrain" attachpoint="resourcegrain"></attach></anim>
+	<anim>GatherChop<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_chop_a</file></assetreference><component>ModelComp</component><attach name="Axe" attachpoint="axe"></attach></anim>
+	<anim>ChopDownTree<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_chopdown_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component><attach name="Axe" attachpoint="axe"></attach></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_flail_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Dig<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_dig_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>GatherFarm<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_farm_a</file></assetreference><component>ModelComp</component><attach name="Hoe" attachpoint="hoe"></attach></anim>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_handattack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component><attach name="Knife" attachpoint="meleeweapon"></attach></anim>
+	<anim>GatherBush<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_harvest_a</file></assetreference><component>ModelComp</component><attach name="ResourceBasket" attachpoint="basket"></attach></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>GatherMine<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_mine_a</file></assetreference><component>ModelComp</component><attach name="Pickaxe" attachpoint="pickaxe"></attach></anim>
+	<anim>Pray<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_pray_a</file></assetreference><assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_pray_b</file></assetreference><component>ModelComp</component></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_rangedattack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component><attach name="Arrow" attachpoint="arrow"></attach><attach name="RangedWeapon" attachpoint="rangedweapon"></attach></anim>
+	<anim>GatherHunt<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_slice_a</file></assetreference><component>ModelComp</component><attach name="Knife" attachpoint="meleeweapon"></attach></anim>
+	<anim>Sow<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_sow_a</file></assetreference><component>ModelComp</component><attach name="sowSeeds" attachpoint="hammer"></attach><attach name="ResourceBasket" attachpoint="basket"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_walk_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>

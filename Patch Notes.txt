@@ -210,6 +210,12 @@
     - Berserk+, 
         - OnDeath: WarBear+
     - ThrowingAxeman+
+- elven specialsts:
+    - rangerelf: rangedattack, handattack, rangedattackflying, long range, effective at infantry at close range, effective at mythunit at distance
+    - royalelf: rangedattack, handatack, rangedattackflying, medium range, stronger variant of rangerelf
+    - elventraining: enables elf units and elventent at greathall
+    - elventraining I-II-III: improves maxrange and armor of elven units
+        - final upgrade improves enables direct damage for all, provides divine damage on rangedattack of royalelf and rangedattackflying of rangerelf
 
 6. Egyptian reworks from mcmt mod and additional reworks
 - myth unit:
