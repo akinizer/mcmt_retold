@@ -583,9 +583,11 @@
     - Transform: YukiOnnaMushaMistBender (hero)
     - Mist Trail
 
-- YukiOnnaMushaMistBender: alternative variant of YukiOnnaMusha, hero, mastery in air element, physically weaker but more resilient to projectiles 
+- YukiOnnaMistBender: alternative variant of YukiOnnaMusha, hero, mastery in air element, physically weaker but more resilient to projectiles 
     - lower HP, higher PierceArmor
-    - Air Trail
+    - Deadly Charm: charged ability, melee, freeze area, deadlier damageovertime
+    - Snow Blast: auxcharged ability, ranged, snowball projectile, slow unit, throw [HumanSoldier, AbstractVillager]
+    - Air Flow Trail
 
 * Techs Reworks & Additions
 - Kagura: 
