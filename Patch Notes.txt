@@ -381,6 +381,7 @@
         - HandAttack (attack mode, anti-unit): a bite attack with masssive mouth and teeth
         - SandBombAttack (attack mode, anti-building): sand explosion emerging beneath structures, knocks back units in the area
         - DevourAttack (ability, anti-unit): consumes the target standing before the colossal creature, target (units except mythunit and navaluit)
+        - Sand Trail
 
     - rework on related production buildings:
         - house: maxcontained 5, KingLycaon, Asurendra, MasterKensei
@@ -687,16 +688,13 @@
 ==================== REWORK-PLANS ============================================
 ==============================================================================
 Implemented & Unused Models (soldiers & leaders)
-* Imperial: 2
 * Nubian: 4
 * Athenian: 8
-* Spartan: 6
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
 * warbear -> lykaon transform ability, lazerbear
-* SandDevourer -> sand trail
 * hobbit hero -> nezha ring projectile
 * fenrir -> hand attack anim
 * avenger -> anubite jump anim

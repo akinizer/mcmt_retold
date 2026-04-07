@@ -22771,7 +22771,14 @@
 			<damage type="Divine">1000.000000</damage>
 			<maxrange>10.000000</maxrange>
 		</protoaction>
+		<protoaction>
+			<name>Trail</name>
+			<type>Trail</type>
+			<persistent>1</persistent>
+			<trailprotounit frequency="0.25">VFXRampage</trailprotounit>
+		</protoaction>
     </unit>
+	
 <!-- dismount units knights
 	<unit name="KopeshNubian" mergeMode="add"></unit>
 	<unit name="KopeshInfantry" mergeMode="add"></unit>
