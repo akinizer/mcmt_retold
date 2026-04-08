@@ -25145,7 +25145,7 @@
 		<tactics>mcmt_yukionna_musha.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.500000</rof>
+			<rof>2.500000</rof>
 			<damage type="Hack">8.00000</damage>
 			<damage type="Divine">1.00000</damage>
 			<damagebonus type="HumanSoldier">5.000000</damagebonus>
@@ -25216,8 +25216,8 @@
 		<trainpoints>12.0000</trainpoints>
 		<movementtype>Amphibious</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>220.0000</initialhitpoints>
-		<maxhitpoints>220.0000</maxhitpoints>
+		<initialhitpoints>80.0000</initialhitpoints>
+		<maxhitpoints>80.0000</maxhitpoints>
 		<weightclass>5</weightclass>
 		<populationcount>1</populationcount>
 		<maxvelocity>4.2000</maxvelocity>
@@ -25282,7 +25282,7 @@
 		<tactics>mcmt_yukionna_musha.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.500000</rof>
+			<rof>2.500000</rof>
 			<damage type="Hack">8.00000</damage>
 			<damage type="Divine">2.00000</damage>
 			<damagebonus type="HumanSoldier">5.000000</damagebonus>

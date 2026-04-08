@@ -639,11 +639,11 @@ ID = "STR_UNIT_MIKO_SWORDMASTER_LR"   ;   Str = "Beauty is a deadly weapon"
 
 ID = "STR_UNIT_YUKIONNA_MUSHA_NAME"   ;   Str = "Yuki Onna Musha"
 ID = "STR_UNIT_YUKIONNA_MUSHA_SR"   ;   Str = "Wandering Snow Beauty"
-ID = "STR_UNIT_YUKIONNA_MUSHA_LR"   ;   Str = "Yuki-Onna seeks a man as a true love but she ends it up with freezing him to head. Yuki-Onna protects the naginata of her late husband as a precious memory"
+ID = "STR_UNIT_YUKIONNA_MUSHA_LR"   ;   Str = "Yuki-Onna seeks a man as a true love but it ends up with a freezing death. Yuki-Onna protects the naginata of her late husband as a precious memory"
 
 ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_NAME"   ;   Str = "Yuki Onna Mistbender (Hero)"
 ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_SR"   ;   Str = "Shinobi Master of Air Element"
-ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_LR"   ;   Str = "Yuki-Onna seeks a man as a true love but she ends it up with freezing him to head. Yuki-Onna protects the naginata of her late husband as a precious memory"
+ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_LR"   ;   Str = "Yuki-Onna seeks a man as a true love but it ends up with a freezing death. Yuki-Onna protects the naginata of her late husband as a precious memory"
 
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
