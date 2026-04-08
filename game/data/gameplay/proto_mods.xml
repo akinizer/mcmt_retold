@@ -21862,7 +21862,7 @@
 		<displaynameid>STR_UNIT_RANGER_ELF_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_RANGER_ELF_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_RANGER_ELF_LR</rollovertextid>
-		<icon>resources\greek\player_color\units\amazonarcher_icon.png</icon>
+		<icon>resources\tech\elven_ranger.png</icon>
 		<animfile>mcmt\units\viking\elf_ranger.xml</animfile>
 		<soundsetfile>game\sound\norse\vo\hersir\hersir.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
@@ -21954,12 +21954,20 @@
 			<projectile>ProjectileArrowFlaming</projectile>
 			<defaultattack>1</defaultattack>
 		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\objects\flower_petals.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
 	</unit>
 	<unit name="RoyalElf">		
 		<displaynameid>STR_UNIT_ROYAL_ELF_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_ROYAL_ELF_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_ROYAL_ELF_LR</rollovertextid>
-		<icon>resources\greek\player_color\units\amazonarcher_icon.png</icon>
+		<icon>resources\tech\elven_royality.png</icon>
 		<animfile>mcmt\units\viking\elf_royal.xml</animfile>
 		<soundsetfile>game\sound\norse\vo\hersir\hersir.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>

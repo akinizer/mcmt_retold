@@ -23,7 +23,7 @@
 	<anim>Flail<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_flail_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>Dig<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_dig_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>GatherFarm<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_farm_a</file></assetreference><component>ModelComp</component><attach name="Hoe" attachpoint="hoe"></attach></anim>
-	<anim>HandAttack<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_handattack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component><attach name="Knife" attachpoint="meleeweapon"></attach></anim>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>atlantean\units\infantry\murmillo\anim\murmillo_attack_b</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component><attach name="Knife" attachpoint="meleeweapon"></attach></anim>
 	<anim>GatherBush<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_harvest_a</file></assetreference><component>ModelComp</component><attach name="ResourceBasket" attachpoint="basket"></attach></anim>
 	<anim>Idle<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_idle_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>GatherMine<assetreference type="TMAnimation"><file>spc\units\prisoner\anim\prisoner_mine_a</file></assetreference><component>ModelComp</component><attach name="Pickaxe" attachpoint="pickaxe"></attach></anim>
