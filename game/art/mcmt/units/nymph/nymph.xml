@@ -1,0 +1,17 @@
+<animfile validation="strict">
+	<component>ModelComp<assetreference type="TMModel"><file>atlantean\units\myth\nereid\nereid</file></assetreference></component>
+	<anim>Bored<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_flail_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>norse\units\economic\villager_norse\anim\villager_norse_female_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Build<assetreference type="TMAnimation"><file>norse\units\infantry\huskarl\anim\huskarl_build_a</file><tag type="SpecificSoundSet" checkvisible="1" set="Build">0.99</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_walk_a</file></assetreference><component>ModelComp</component></anim>
+    <anim>Heal<assetreference type="TMAnimation"><file>egyptian\units\hero\priest\anim\priest_heal_a</file><tag type="SpecificSoundSet" checkvisible="1" set="Heal">0.0</tag><tag type="particles" popcornfxname="glow\priest_heal.pkfx" bone="vfx_local" movewithbone="false" stopwithanim="true" adjustduration="false">0.02</tag></assetreference><component>ModelComp</component></anim>
+    <anim>Empower<assetreference type="TMAnimation"><file>egyptian\units\hero\priest\anim\priest_empower_a</file><tag type="particles" popcornfxname="glow\empower_caster.pkfx" bone="vfx_local" movewithbone="true" stopwithanim="true" adjustduration="true">0.0</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Convert<assetreference type="TMAnimation"><file>egyptian\units\hero\priest\anim\priest_convert_a</file><tag type="SpecificSoundSet" checkvisible="1" set="Converting">0.0</tag><tag type="particles" popcornfxname="glow\conversion_casting.pkfx" bone="vfx_convert" movewithbone="true" stopwithanim="true" adjustduration="true">0.17</tag></assetreference><component>ModelComp</component></anim>
+	<anim>HandAttack
+		<assetreference type="TMAnimation"><file>japanese\units\hero\onna_musha\anim\onna_musha_attack_b</file><tag type="Attack">0.45</tag></assetreference>
+		<assetreference type="TMAnimation"><file>norse\units\myth\mountain_giant\anim\mountain_giant_gore_a</file><tag type="Attack">0.45</tag></assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

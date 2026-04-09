@@ -1,0 +1,27 @@
+<protounitsounddef>
+	<soundtype name="Select">	
+        <soundset name="JapaneseVillagerFemaleSelect"></soundset>
+	</soundtype>
+	<soundtype name="Acknowledge">		
+        <targetlogic>
+            <choice name="default">
+                <soundset name="JapaneseVillagerFemaleAcknowledge"></soundset>
+            </choice>
+            <choice name="enemy">
+                <soundset name="JapaneseVillagerFemaleAttack"></soundset>
+            </choice>
+            <choice name="Build">
+                <soundset name="JapaneseVillagerFemaleBuild"></soundset>
+            </choice>
+        </targetlogic>        
+	</soundtype>
+	<soundtype name="Grunt">
+	    <soundset name="GruntFemale"></soundset>
+	</soundtype>
+	<soundtype name="Death">
+		<soundset name="DeathFemale"></soundset>
+	</soundtype>
+	<soundtype name="Birth">
+		<soundset name="BirthVillager"></soundset>
+	</soundtype>
+</protounitsounddef>

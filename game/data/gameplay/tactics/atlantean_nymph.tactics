@@ -1,0 +1,83 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_EMPOWER">Empower</name>
+		<type>Empower</type>
+		<anim>Empower</anim>
+		<empowerdata>
+			<logicaltypebuildingempoweredforlos>
+				<empowerrate modifytype="BuildRate">1.45</empowerrate>
+				<empowerrate modifytype="ResearchRate">1.45</empowerrate>
+				<empowerrate modifytype="LOSFactor">1.45</empowerrate>
+			</logicaltypebuildingempoweredforlos>
+			<logicaltypebuildingthatcanbeempowered>
+				<empowerrate modifytype="BuildRate">1.45</empowerrate>
+				<empowerrate modifytype="ResearchRate">1.45</empowerrate>
+				<empowerrate modifytype="MilitaryTrainingRate">1.45</empowerrate>
+				<empowerrate modifytype="ROF">0.85</empowerrate>
+				<empowerrate modifytype="FavorGatherRate">1.12</empowerrate>
+				<empowerrate modifytype="DropsiteRate">1.12</empowerrate>
+				<modelattachment>vfx\glow\empower_priest.xml</modelattachment>
+				<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			</logicaltypebuildingthatcanbeempowered>
+		</empowerdata>
+		<natureempowerdata>
+			<abstractsettlement>
+				<empowerrate modifytype="BuildRate">1.45</empowerrate>
+				<modelattachment>vfx\glow\empower_priest.xml</modelattachment>
+				<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			</abstractsettlement>
+		</natureempowerdata>
+		<maxrange>3</maxrange>
+		
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CONVERT">Convert</name>
+		<type>Convert</type>
+		<anim>Convert</anim>
+		<attackaction>1</attackaction>
+		<modelattachment>vfx\conversion\conversion_vfx.xml</modelattachment>
+		<modelattachmentbone>vfx_top</modelattachmentbone>
+
+		<maxrange>25</maxrange>			
+		<rate type="LogicalTypeMythUnitNotTitan">2.000000</rate>
+		<rate type="AbstractDock">1.000000</rate>
+		<rate type="Huntable">2.000000</rate>
+		<rate type="AbstractVillager">2.000000</rate>
+		
+		<active>0</active>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_HEAL">Heal</name>
+		<type>Heal</type>
+		<anim>Heal</anim>
+		<modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		
+		<maxrange>10</maxrange>
+		<rate type="LogicalTypeHealed">10.00000</rate>
+		<slowhealmultiplier>0.50</slowhealmultiplier>
+
+		<active>0</active>
+	</action>
+	<tactic>Default
+        <action priority="100">Convert</action>
+        <action priority="90">HandAttack</action>
+        <action>Heal</action>
+        <action>Empower</action>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+        <attackmovetype>AbstractWall</attackmovetype>
+    </tactic>
+</tactics>

@@ -345,4 +345,11 @@
 	<SpartanBrute>
 		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>
 	</SpartanBrute>
+	<Nymph>
+		<ability>AbilityEgyptianHeal<actioncommand>true</actioncommand></ability>
+		<ability>AbilityEmpower<actioncommand>true</actioncommand><noautocast>true</noautocast></ability>
+		<ability>AbilityConvertAnimal<actioncommand>true</actioncommand><noautocast>true</noautocast></ability>
+		<ability>PassiveHeka<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+		<ability>PassiveSacredHands<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+	</Nymph>
 </abilities>

@@ -180,7 +180,11 @@
             - model: murmillo helm, fanatic body
         - AthenianAxeman: bash ability, slower rof, melee range
         - AthenianHalberdier: highest melee range, slower rof
-
+- Nymphs
+    - Prereq: ArchaicAgeGreek
+    - MCMT_DivineNatureSpirits (activate, upgrades I, II, III): enables Nymph unit, dock tech
+        - nymph: general builder, enableaction [heal, empower, convert], infantry, handattack [punch, kick]
+        - sound set: japanese\female.xml
 4. Atlanean reworks from mcmt mod and new changes
 - myth unit:
     - popcosts
@@ -709,7 +713,6 @@
 ==============================================================================
 Implemented & Unused Models (soldiers & leaders)
 * Nubian: 4
-* Athenian: 8
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
@@ -844,10 +847,6 @@ Implemented & Unused Models (soldiers & leaders)
     - SnowMonkey,GreenPheasant,JapaneseWolf,Serow,SpottedDeerSPC
 * God Power
     - SolarShield: Unit -> Building
-* New Special Hero
-    - HeadPriestess: Kagura dance on Temple, build limit 1
-* Blessing
-    - WayOfTheStorm,WayOfTheMoon,WayOfTheSun
 * Nature
     - resource rework, obscurion (japanese and chinese trees)
 
@@ -1140,14 +1139,11 @@ Satyr + HandAttack (anim)
             - Oracle of Atlas (oraclehero): los 100, maxvelocity 1.0
 
     - Hel & Persephone
-        - improves undeasd: draugr, mummy, minion, shinigami, shinigamirevenant, wretch 
+        - improves undeads: draugr, mummy, minion, shinigami, shinigamirevenant, wretch 
 
-    - Ares
-        - Spartan Training (hoplite): hp, maxvelocity, piercearmor, name change (Spartiate)
+    - Ares (spartan techs)
         - Peloponnesian War Preparations (infantry): trainrate, hp
         - Wolf of Sparta: hoplite hero, throw, javelinthrow, bonusdamage infantry
-    - Athena
-        - Athenian Training (hypaspist): hp, maxvelocity, piercearmor, name change (Athenian Polemarch)
     - Dionysus: 
         - Centauromachy (Centaurs): stronger, bonusdamage mythunit, name change (Lapith)
     - Aphrodite:

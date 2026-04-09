@@ -646,6 +646,10 @@ ID = "STR_UNIT_ATHENIAN_CAPTAIN_NAME"   ;   Str = "Athenian Polemarch (Hero)"
 ID = "STR_UNIT_ATHENIAN_CAPTAIN_SR"   ;   Str = "Athenian with many accomplishments in war"
 ID = "STR_UNIT_ATHENIAN_CAPTAIN_LR"   ;   Str = "In Athenian army, polemarchs serve commanders during war and guard important people during peace"
 
+ID = "STR_UNIT_NYMPH_NAME"   ;   Str = "Nymph"
+ID = "STR_UNIT_NYMPH_SR"   ;   Str = "Humanoid aquatic fae"
+ID = "STR_UNIT_NYMPH_LR"   ;   Str = "During the journey of Odysseus, he encounters a beautiful nymph. Later, Circe who has interest in him finds it out and turns the nymph into a seas monster named Scylla"
+
 // NORSE SPECIAL UNITS
 ID = "STR_UNIT_RANGER_ELF_NAME"   ;   Str = "Ranger Elf"
 ID = "STR_UNIT_RANGER_ELF_SR"   ;   Str = "Effective at both melee and range"
@@ -771,6 +775,9 @@ ID = "STR_TECH_SPARTAN_TRAINING_LR"   ;   Str = "Initiates advanced Spartan Army
 ID = "STR_TECH_ATHENIAN_TRAINING_NAME"   ;   Str = "Athenian Training"
 ID = "STR_TECH_ATHENIAN_TRAINING_LR"   ;   Str = "Initiates advanced Greater Athens warfare and facilities"
 
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_NAME"   ;   Str = "Divine Nature Spirits"
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_LR"   ;   Str = "Nymphs are divine faes that have female deity rank abd longevity. They prefer to live in nature like saltwater, freshwater, trees and ashtrees. They have accompanied various gods and even nurtured infant Zeus. Among the popular ones, there exists Nereids, Dryads, Hamadryads and Hesperides aka Atlantides"
+
 ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"
 ID = "STR_TECH_DIVINEARMAMENTS_LR"   ;   Str = "Improves Offensive Capabilities of Military Units, Heroes and Hunters with Divine Weaponry"
 
@@ -895,7 +902,9 @@ ID = "STR_TECH_URBAN_FESTIVAL_SR"   ;   Str = "Urban Dionysian Festival where ci
 ID = "STR_TECH_MADNESSOFDIONYSUS_NAME"   ;   Str = "Madness of Dionysus"
 ID = "STR_TECH_MADNESSOFDIONYSUS_LR"   ;   Str = "Dionysus goes through madness phase that leaves festive ego behind and embraces bloodthirsty personality. As he turns into Bull God, his followers orchestrate murders "
 ID = "STR_TECH_ELDRITCHSECTS_NAME"   ;   Str = "Eldritch Sects"
-ID = "STR_TECH_ELDRITCHSECTS_LR"   ;   Str = "Worshippers of Eldritch Gods emerge among citizens which start a new faction of Gods that is based on fear and horror crawling through vast space of Cosmos"
+
+ID = "STR_TECH_DISMOUNT_TACTICS_NAME"   ;   Str = "Dismount Tactics"
+ID = "STR_TECH_DISMOUNT_TACTICS_LR"   ;   Str = "Enable dismount capability for mounted units"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"
