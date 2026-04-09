@@ -160,6 +160,7 @@
 - special unit:
     - PegasusGroundedMessenger+
 - Spartans
+    - Prereq: ClassicAgeAres
     - SpartanTraining: enables Spartan building, techs and units
     - SpartanEncampment: hp, attack, armor, rof, bonusdamage, non-hero buildlimit 60, popcost 2
         - SpartanCaptain: hero humansoldier, buildlimit, highest armor
@@ -168,6 +169,17 @@
         - SpartanBrute: bash ability, slowest rof, high hp
         - SpartanAxeman: bash ability, slower rof, melee range
         - SpartanHalberdier: highest melee range, slower rof
+- Athenians
+    - Prereq: ClassicAgeAthena
+    - AthenianTraining: enables Athenian building, techs and units
+    - AthenianEncampment: hp, attack, armor, rof, bonusdamage, non-hero buildlimit 60, popcost 2
+        - AthenianCaptain: hero humansoldier, buildlimit, highest armor
+        - AthenianSpearman: handattack default, rangedattack for units in range, decent armor, melee range
+        - AthenianSwordsman: faster rof, decent armor
+        - AthenianBrute: bash ability, slowest rof, high hp, dual-wield
+            - model: murmillo helm, fanatic body
+        - AthenianAxeman: bash ability, slower rof, melee range
+        - AthenianHalberdier: highest melee range, slower rof
 
 4. Atlanean reworks from mcmt mod and new changes
 - myth unit:

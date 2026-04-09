@@ -12,8 +12,8 @@
 			</normal>
 			<cinematic><logic type="Tech"><none><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_iron_igc</file><materialvariant index="0"></materialvariant></assetreference></none><mediuminfantry><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_bronze_igc</file><materialvariant index="1"></materialvariant></assetreference></mediuminfantry><heavyinfantry><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_silver_igc</file><materialvariant index="2"></materialvariant></assetreference></heavyinfantry><championinfantry><assetreference type="TMModel"><file>greek\units\infantry\hoplite\hoplite_gold_igc</file><materialvariant index="3"></materialvariant></assetreference></championinfantry></logic></cinematic>
 		</logic>
-		<attach name="Helmet" attachpoint="helmet"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></component>
-		<attach name="HeroGlow" attachpoint="hero_glow"></attach>
+		<attach name="Helmet" attachpoint="helmet"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach><attach name="HeroGlow" attachpoint="hero_glow"></attach>
+	</component>
 	<anim>HandAttack
 		<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_attack_b</file><tag type="Attack">0.5</tag></assetreference>
 		<assetreference type="TMAnimation"><file>greek\units\infantry\hypaspist\anim\hypaspist_attack_a</file><tag type="Attack">0.5</tag></assetreference>

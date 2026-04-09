@@ -1,0 +1,44 @@
+<animfile validation="strict">
+	<attachment>Helmet<include>atlantean\units\infantry\murmillo\murmillo_helm.xml</include></attachment>
+	<attachment>WeaponRight<include>atlantean\units\attachments\mace\mace_a.xml</include></attachment>
+	<attachment>WeaponLeft<include>atlantean\units\attachments\mace\mace_a.xml</include></attachment>
+	
+	<component>ModelComp
+		<logic type="Cinematic">
+			<normal>
+				<logic type="Tech">
+					<none><assetreference type="TMModel"><file>atlantean\units\infantry\fanatic\fanatic_iron</file><materialvariant index="0"></materialvariant></assetreference></none>
+					<mediuminfantry><assetreference type="TMModel"><file>atlantean\units\infantry\fanatic\fanatic_bronze</file><materialvariant index="1"></materialvariant></assetreference></mediuminfantry>
+					<heavyinfantry><assetreference type="TMModel"><file>atlantean\units\infantry\fanatic\fanatic_silver</file><materialvariant index="2"></materialvariant></assetreference></heavyinfantry>
+					<championinfantry><assetreference type="TMModel"><file>atlantean\units\infantry\fanatic\fanatic_gold</file><materialvariant index="3"></materialvariant></assetreference></championinfantry>
+				</logic>
+			</normal>
+			<cinematic>
+				<logic type="Tech">
+					<none><assetreference type="TMModel"><file>atlantean\units\infantry\fanatic\fanatic_iron_igc</file><materialvariant index="0"></materialvariant></assetreference></none>
+					<mediuminfantry><assetreference type="TMModel"><file>atlantean\units\infantry\fanatic\fanatic_bronze_igc</file><materialvariant index="1"></materialvariant></assetreference></mediuminfantry>
+					<heavyinfantry><assetreference type="TMModel"><file>atlantean\units\infantry\fanatic\fanatic_silver_igc</file><materialvariant index="2"></materialvariant></assetreference></heavyinfantry>
+					<championinfantry><assetreference type="TMModel"><file>atlantean\units\infantry\fanatic\fanatic_gold_igc</file><materialvariant index="3"></materialvariant></assetreference></championinfantry>
+				</logic>
+			</cinematic>
+		</logic>
+		<attach name="Helmet" attachpoint="helm"></attach>
+		<attach name="WeaponRight" attachpoint="weaponright"></attach>
+		<attach name="WeaponLeft" attachpoint="weaponleft"></attach>
+	</component>
+	
+	<anim>HandAttack
+		<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_attack_a</file><tag type="Attack">0.5</tag></assetreference>
+		<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_attack_b</file><tag type="Attack">0.5</tag></assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_flail_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>HeroizeUp<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_heroize_1_up</file></assetreference><component>ModelComp</component></anim>
+	<anim>HeroizeFly<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_heroize_2_fly</file></assetreference><component>ModelComp</component></anim>
+	<anim>HeroizeDown<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\fanatic_heroize_3_down</file></assetreference><component>ModelComp</component></anim>
+	<anim>Cinematic<assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\igc\tna_fana_01_we_cannot_stay</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\igc\tna_fana_02_it_is_forbidden</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\igc\tna_fana_05b_ambush_a</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\igc\tna_fana_05b_ambush_b</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\igc\tna_fana_12b_it_is_lord</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\infantry\fanatic\anim\igc\tna_fana_12b_honor_to_kastor</file></assetreference><component>ModelComp</component></anim>
+</animfile>

@@ -106,6 +106,18 @@
       </effects>
     </tech>
 
+    <!-- Civilization Blessings - Greek Minor Gods -->
+    <tech name="ClassicalAgeAres">
+      <effects>        
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_SpartanTraining</effect>            
+      </effects>      
+    </tech>
+    <tech name="ClassicalAgeAthena">
+      <effects>      
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AthenianTraining</effect>       
+      </effects>      
+    </tech>
+
     <!-- UPSTART GOD BOOSTS -->
     <tech name="UpstartBoost_Tsukuyomi" mergeMode="add">
       <displaynameid>STR_TECH_UPSTARTBOOST_NAME</displaynameid>
@@ -1048,8 +1060,6 @@
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_I</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_II</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_III</effect>
-            
-            <effect type="TechStatus" status="obtainable">MCMT_SpartanTraining</effect>
 
             <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining</effect>            
             <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_I</effect>            
@@ -2626,6 +2636,27 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanSpearman</target></effect>    
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanSwordsman</target></effect>    
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SpartanCaptain</target></effect>    
+		</effects>		
+	</tech>
+
+  <tech name="MCMT_AthenianTraining" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_SPARTAN_TRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_SPARTAN_TRAINING_LR</rollovertextid>
+		<icon>resources\tech\athenian_logo.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">350</cost>    
+		<effects>      
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AthenianCamp</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AthenianAxeman</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AthenianBrute</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AthenianHalberdier</target></effect>    
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AthenianSpearman</target></effect>    
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AthenianSwordsman</target></effect>    
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AthenianCaptain</target></effect>    
 		</effects>		
 	</tech>
 
