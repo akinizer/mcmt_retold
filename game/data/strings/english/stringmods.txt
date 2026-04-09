@@ -457,6 +457,12 @@ ID = "STR_BLD_SHRINE_INARI_NAME" ;   Str = "Inari Shrine"
 ID = "STR_BLD_SHRINE_HACHIMAN_NAME" ;   Str = "Hachiman Shrine"
 ID = "STR_BLD_SHRINE_SHINMEI_NAME" ;   Str = "Shinmei Shrine"
 
+ID = "STR_BLD_CAMP_ELVEN_NAME" ;   Str = "Elven Camp"
+ID = "STR_BLD_CAMP_AMAZONIAN_NAME" ;   Str = "Amazonian Camp"
+ID = "STR_BLD_CAMP_SPARTAN_NAME" ;   Str = "Spartan Encampment"
+ID = "STR_BLD_CAMP_ATHENIAN_NAME" ;   Str = "Athenian Encampment"
+ID = "STR_BLD_CAMP_ENCAMPENT_LR" ;   Str = "These military productions buildings provide 2 population and civilization special elite units"
+
 ID = "STR_BLD_STATUEOFZEUS_NAME" ;   Str = "Statue of Zeus"
 ID = "STR_BLD_MAUSOLEUM_NAME" ;   Str = "Mausoleum"
 ID = "STR_BLD_THEATREOFDIONYSUS_NAME" ;   Str = "Theatre of Dionysus"
@@ -615,6 +621,30 @@ ID = "STR_UNIT_SPARTAN_SWORDSMAN_LR"   ;   Str = "In Spartan army, close range s
 ID = "STR_UNIT_SPARTAN_CAPTAIN_NAME"   ;   Str = "Spartan Captain (Hero)"
 ID = "STR_UNIT_SPARTAN_CAPTAIN_SR"   ;   Str = "Spartan with many accomplishments in war"
 ID = "STR_UNIT_SPARTAN_CAPTAIN_LR"   ;   Str = "In Spartan army, armies are categorized into smaller groups and the captains serve the commander faithfully"
+
+ID = "STR_UNIT_ATHENIAN_AXEMAN_NAME"   ;   Str = "Athenian Axeman"
+ID = "STR_UNIT_ATHENIAN_AXEMAN_SR"   ;   Str = "Athenian that slices units apart"
+ID = "STR_UNIT_ATHENIAN_AXEMAN_LR"   ;   Str = "In Athenian army, some soldier wield a heavy axe that can chop and throw away shield"
+
+ID = "STR_UNIT_ATHENIAN_BRUTE_NAME"   ;   Str = "Athenian Brute"
+ID = "STR_UNIT_ATHENIAN_BRUTE_SR"   ;   Str = "Athenian with a durable build"
+ID = "STR_UNIT_ATHENIAN_BRUTE_LR"   ;   Str = "In Athenian army, some soldiers train muscles to wield heavy blunt weapons"
+
+ID = "STR_UNIT_ATHENIAN_HALBERDIER_NAME"   ;   Str = "Athenian Halberdier"
+ID = "STR_UNIT_ATHENIAN_HALBERDIER_SR"   ;   Str = "Athenian with a sword-tipped spear"
+ID = "STR_UNIT_ATHENIAN_HALBERDIER_LR"   ;   Str = "In Athenian army, some soldiers prefer bladed spears over classic spears"
+
+ID = "STR_UNIT_ATHENIAN_SPEARMAN_NAME"   ;   Str = "Athenian Spearman"
+ID = "STR_UNIT_ATHENIAN_SPEARMAN_SR"   ;   Str = "Athenian with a piercing spear"
+ID = "STR_UNIT_ATHENIAN_SPEARMAN_LR"   ;   Str = "In Athenian army, frequenly soldiers wield spears for intimidation"
+
+ID = "STR_UNIT_ATHENIAN_SWORDSMAN_NAME"   ;   Str = "Athenian Swordsman"
+ID = "STR_UNIT_ATHENIAN_SWORDSMAN_SR"   ;   Str = "Athenian city guard"
+ID = "STR_UNIT_ATHENIAN_SWORDSMAN_LR"   ;   Str = "In Athenian army, civilized locations, forts and nation houses entrust their security to sword bearers"
+
+ID = "STR_UNIT_ATHENIAN_CAPTAIN_NAME"   ;   Str = "Athenian Polemarch (Hero)"
+ID = "STR_UNIT_ATHENIAN_CAPTAIN_SR"   ;   Str = "Athenian with many accomplishments in war"
+ID = "STR_UNIT_ATHENIAN_CAPTAIN_LR"   ;   Str = "In Athenian army, polemarchs serve commanders during war and guard important people during peace"
 
 // NORSE SPECIAL UNITS
 ID = "STR_UNIT_RANGER_ELF_NAME"   ;   Str = "Ranger Elf"

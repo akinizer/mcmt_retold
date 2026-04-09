@@ -21413,10 +21413,10 @@
 
 	<!-- ATHENIAN UNITS -->
 	<unit name="AthenianAxeman" mergeMode="add">
-		<displaynameid>STR_UNIT_SPARTAN_AXEMAN_NAME</displaynameid>
-		<shortrollovertextid>STR_UNIT_SPARTAN_AXEMAN_SR</shortrollovertextid>
-		<rollovertextid>STR_UNIT_SPARTAN_AXEMAN_LR</rollovertextid>
-		<icon>resources\greek\player_color\units\hoplite_icon.png</icon>
+		<displaynameid>STR_UNIT_ATHENIAN_AXEMAN_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_ATHENIAN_AXEMAN_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_ATHENIAN_AXEMAN_LR</rollovertextid>
+		<icon>resources\greek\player_color\units\hypaspist_icon.png</icon>
 		<animfile>mcmt\units\athenian\athenian_axeman.xml</animfile>
 		<soundsetfile>greek\vo\hoplite\hoplite.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
@@ -21499,10 +21499,10 @@
 		</protoaction>
 	</unit>
 	<unit name="AthenianBrute" mergeMode="add">
-		<displaynameid>STR_UNIT_SPARTAN_BRUTE_NAME</displaynameid>
-		<shortrollovertextid>STR_UNIT_SPARTAN_BRUTE_SR</shortrollovertextid>
-		<rollovertextid>STR_UNIT_SPARTAN_BRUTE_LR</rollovertextid>
-		<icon>resources\greek\player_color\units\hoplite_icon.png</icon>
+		<displaynameid>STR_UNIT_ATHENIAN_BRUTE_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_ATHENIAN_BRUTE_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_ATHENIAN_BRUTE_LR</rollovertextid>
+		<icon>resources\greek\player_color\units\hypaspist_icon.png</icon>
 		<animfile>mcmt\units\athenian\athenian_brute.xml</animfile>
 		<soundsetfile>greek\vo\hoplite\hoplite.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
@@ -21586,10 +21586,10 @@
 		</protoaction>
 	</unit>
 	<unit name="AthenianHalberdier" mergeMode="add">
-		<displaynameid>STR_UNIT_SPARTAN_HALBERDIER_NAME</displaynameid>
-		<shortrollovertextid>STR_UNIT_SPARTAN_HALBERDIER_SR</shortrollovertextid>
-		<rollovertextid>STR_UNIT_SPARTAN_HALBERDIER_LR</rollovertextid>
-		<icon>resources\greek\player_color\units\hoplite_icon.png</icon>
+		<displaynameid>STR_UNIT_ATHENIAN_HALBERDIER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_ATHENIAN_HALBERDIER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_ATHENIAN_HALBERDIER_LR</rollovertextid>
+		<icon>resources\greek\player_color\units\hypaspist_icon.png</icon>
 		<animfile>mcmt\units\athenian\athenian_halberdier.xml</animfile>
 		<soundsetfile>greek\vo\hoplite\hoplite.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
@@ -21660,10 +21660,10 @@
 		</protoaction>
 	</unit>
 	<unit name="AthenianSpearman" mergeMode="add">
-		<displaynameid>STR_UNIT_SPARTAN_SPEARMAN_NAME</displaynameid>
-		<shortrollovertextid>STR_UNIT_SPARTAN_SPEARMAN_SR</shortrollovertextid>
-		<rollovertextid>STR_UNIT_SPARTAN_HALBERDIER_LR</rollovertextid>
-		<icon>resources\greek\player_color\units\hoplite_icon.png</icon>
+		<displaynameid>STR_UNIT_ATHENIAN_SPEARMAN_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_ATHENIAN_SPEARMAN_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_ATHENIAN_SPEARMAN_LR</rollovertextid>
+		<icon>resources\greek\player_color\units\hypaspist_icon.png</icon>
 		<animfile>mcmt\units\athenian\athenian_spearman.xml</animfile>
 		<soundsetfile>greek\vo\hoplite\hoplite.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
@@ -21683,7 +21683,7 @@
 		<cost resourcetype="Food">50.0000</cost>
 		<cost resourcetype="Gold">40.0000</cost>
 		<armor type="Hack" value="0.3000"></armor>
-		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Pierce" value="0.3500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
@@ -21745,10 +21745,10 @@
 		</protoaction>
 	</unit>
 	<unit name="AthenianSwordsman" mergeMode="add">
-		<displaynameid>STR_UNIT_SPARTAN_SWORDSMAN_NAME</displaynameid>
-		<shortrollovertextid>STR_UNIT_SPARTAN_SWORDSMAN_SR</shortrollovertextid>
-		<rollovertextid>STR_UNIT_SPARTAN_SWORDSMAN_LR</rollovertextid>
-		<icon>resources\greek\player_color\units\hoplite_icon.png</icon>
+		<displaynameid>STR_UNIT_ATHENIAN_SWORDSMAN_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_ATHENIAN_SWORDSMAN_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_ATHENIAN_SWORDSMAN_LR</rollovertextid>
+		<icon>resources\greek\player_color\units\hypaspist_icon.png</icon>
 		<animfile>mcmt\units\athenian\athenian_swordsman.xml</animfile>
 		<soundsetfile>greek\vo\hoplite\hoplite.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
@@ -21768,7 +21768,7 @@
 		<cost resourcetype="Food">50.0000</cost>
 		<cost resourcetype="Gold">40.0000</cost>
 		<armor type="Hack" value="0.4000"></armor>
-		<armor type="Pierce" value="0.3000"></armor>
+		<armor type="Pierce" value="0.3500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
@@ -21819,10 +21819,10 @@
 		</protoaction>
 	</unit>
 	<unit name="AthenianCaptain" mergeMode="add">
-		<displaynameid>STR_UNIT_SPARTAN_CAPTAIN_NAME</displaynameid>
-		<shortrollovertextid>STR_UNIT_SPARTAN_CAPTAIN_SR</shortrollovertextid>
-		<rollovertextid>STR_UNIT_SPARTAN_CAPTAIN_LR</rollovertextid>
-		<icon>resources\greek\player_color\units\hoplite_icon.png</icon>
+		<displaynameid>STR_UNIT_ATHENIAN_CAPTAIN_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_ATHENIAN_CAPTAIN_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_ATHENIAN_CAPTAIN_LR</rollovertextid>
+		<icon>resources\greek\player_color\units\hypaspist_icon.png</icon>
 		<animfile>mcmt\units\athenian\athenian_captain.xml</animfile>
 		<soundsetfile>greek\vo\hoplite\hoplite.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
@@ -21841,8 +21841,8 @@
 		<los>16.0000</los>
 		<cost resourcetype="Food">50.0000</cost>
 		<cost resourcetype="Gold">40.0000</cost>
-		<armor type="Hack" value="0.5000"></armor>
-		<armor type="Pierce" value="0.4500"></armor>
+		<armor type="Hack" value="0.4800"></armor>
+		<armor type="Pierce" value="0.4800"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
@@ -21889,8 +21889,8 @@
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.100000</rof>
-			<damage type="Hack">10.000000</damage>
+			<rof>1.300000</rof>
+			<damage type="Hack">14.000000</damage>
 			<damagebonus type="HumanSoldier">1.450000</damagebonus>
 			<maxrange>0.750000</maxrange>
 		</protoaction>
@@ -21912,9 +21912,9 @@
 
 	<!-- Greek Special Buildings -->
 	<unit name="AmazonianCamp">
-		<displaynameid>STR_BLD_TENT_NAME</displaynameid>
-		<rollovertextid>STR_BLD_TENT_LR</rollovertextid>
-		<shortrollovertextid>STR_BLD_TENT_SR</shortrollovertextid>
+		<displaynameid>STR_BLD_CAMP_AMAZONIAN_NAME</displaynameid>
+		<shortrollovertextid>STR_BLD_CAMP_AMAZONIAN_NAME</shortrollovertextid>
+		<rollovertextid>STR_BLD_CAMP_AMAZONIAN_NAME</rollovertextid>
 		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
 		<animfile culture="greek">shared\buildings\tent\tent_greek.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
@@ -21967,9 +21967,9 @@
 		<tech row="0" column="0" mergeMode="add">MCMT_AmazonTraining_III</tech>
 	</unit>
 	<unit name="SpartanCamp">
-		<displaynameid>STR_BLD_TENT_NAME</displaynameid>
-		<rollovertextid>STR_BLD_TENT_LR</rollovertextid>
-		<shortrollovertextid>STR_BLD_TENT_SR</shortrollovertextid>
+		<displaynameid>STR_BLD_CAMP_SPARTAN_NAME</displaynameid>
+		<shortrollovertextid>STR_BLD_CAMP_SPARTAN_NAME</shortrollovertextid>
+		<rollovertextid>STR_BLD_CAMP_ENCAMPENT_LR</rollovertextid>
 		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
 		<animfile culture="greek">shared\buildings\tent\tent_greek.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
@@ -22025,9 +22025,9 @@
 		<tech row="0" column="0" mergeMode="add">MCMT_SpartanTraining_III</tech>-->
 	</unit>
 	<unit name="AthenianCamp">
-		<displaynameid>STR_BLD_TENT_NAME</displaynameid>
-		<rollovertextid>STR_BLD_TENT_LR</rollovertextid>
-		<shortrollovertextid>STR_BLD_TENT_SR</shortrollovertextid>
+		<displaynameid>STR_BLD_CAMP_ATHENIAN_NAME</displaynameid>
+		<shortrollovertextid>STR_BLD_CAMP_ATHENIAN_NAME</shortrollovertextid>
+		<rollovertextid>STR_BLD_CAMP_ENCAMPENT_LR</rollovertextid>
 		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
 		<animfile culture="greek">shared\buildings\tent\tent_greek.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
@@ -23084,9 +23084,9 @@
 	
 	<!-- Norse Special Buildings -->
 	<unit name="ElvenCamp">
-		<displaynameid>STR_BLD_TENT_NAME</displaynameid>
-		<rollovertextid>STR_BLD_TENT_LR</rollovertextid>
-		<shortrollovertextid>STR_BLD_TENT_SR</shortrollovertextid>
+		<displaynameid>STR_BLD_CAMP_AMAZONIAN_NAME</displaynameid>
+		<shortrollovertextid>STR_BLD_CAMP_AMAZONIAN_NAME</shortrollovertextid>
+		<rollovertextid>STR_BLD_CAMP_ENCAMPENT_LR</rollovertextid>
 		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
 		<animfile culture="greek">shared\buildings\tent\tent_greek.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>

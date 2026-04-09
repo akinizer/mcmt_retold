@@ -2641,8 +2641,8 @@
 
   <tech name="MCMT_AthenianTraining" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_SPARTAN_TRAINING_NAME</displaynameid>
-		<rollovertextid>STR_TECH_SPARTAN_TRAINING_LR</rollovertextid>
+		<displaynameid>STR_TECH_ATHENIAN_TRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_ATHENIAN_TRAINING_LR</rollovertextid>
 		<icon>resources\tech\athenian_logo.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
