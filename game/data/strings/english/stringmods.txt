@@ -776,7 +776,28 @@ ID = "STR_TECH_ATHENIAN_TRAINING_NAME"   ;   Str = "Athenian Training"
 ID = "STR_TECH_ATHENIAN_TRAINING_LR"   ;   Str = "Initiates advanced Greater Athens warfare and facilities"
 
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_NAME"   ;   Str = "Divine Nature Spirits"
-ID = "STR_TECH_DIVINE_NATURE_SPIRITS_LR"   ;   Str = "Nymphs are divine faes that have female deity rank abd longevity. They prefer to live in nature like saltwater, freshwater, trees and ashtrees. They have accompanied various gods and even nurtured infant Zeus. Among the popular ones, there exists Nereids, Dryads, Hamadryads and Hesperides aka Atlantides"
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_LR"   ;   Str = "Nymphs are female faes who achieve divinity and longevity. They prefer to live in nature like saltwater, freshwater, trees and ashtrees. They have accompanied various gods and even nurtured infant Zeus. Among the popular ones, there exists Nereids, Dryads, Hamadryads and Hesperides aka Atlantides"
+
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_I_NAME"   ;   Str = "Divine Nature Spirits I"
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_I_LR"   ;   Str = "First of Nymph upgrade techs that improves divinity as well as value"
+
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_II_NAME"   ;   Str = "Divine Nature Spirits I"
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_II_LR"   ;   Str = "Second of Nymph upgrade techs that improves divinity as well as value"
+
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME"   ;   Str = "Divine Nature Spirits I"
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_LR"   ;   Str = "Third of Nymph upgrade techs that improves divinity as well as value"
+
+ID = "STR_UNIT_DIVINE_NYMPH_MENDER_NAME"   ;   Str = "Nymph (Mender)"
+ID = "STR_TECH_DIVINE_NYMPH_MENDER_NAME"   ;   Str = "Nature's Blessing"
+ID = "STR_TECH_DIVINE_NYMPH_MENDER_LR"   ;   Str = "Nymphs gain divinity through nature's blessing and learn medical expertise"
+
+ID = "STR_UNIT_DIVINE_NYMPH_CHARMER_NAME"   ;   Str = "Nymph (Charmer)"
+ID = "STR_TECH_DIVINE_NYMPH_CHARMER_NAME"   ;   Str = "Physiological Capabilities"
+ID = "STR_TECH_DIVINE_NYMPH_CHARMER_LR"   ;   Str = "Nymphs gain divinity through physiological capabilities and discover their tactical uses"
+
+ID = "STR_UNIT_DIVINE_NYMPH_ORACLE_NAME"   ;   Str = "Nymph (Oracle)"
+ID = "STR_TECH_DIVINE_NYMPH_ORACLE_NAME"   ;   Str = "Divine Ascension"
+ID = "STR_TECH_DIVINE_NYMPH_ORACLE_LR"   ;   Str = "Nymphs gain divinity through ascension and bring fortune through foresight"
 
 ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"
 ID = "STR_TECH_DIVINEARMAMENTS_LR"   ;   Str = "Improves Offensive Capabilities of Military Units, Heroes and Hunters with Divine Weaponry"

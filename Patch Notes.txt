@@ -57,6 +57,8 @@
 * Compatibility with Campaign
 * Exotic Lore and References, Sci-Fi, Science, Mythology, History, Cyborgs and Plent of Surprises!
 * Up-to-Date to Demeter and Japanese
+* Encampments from Kingdom Tech: Amazonians, Spartans, Athenians, Nymphs, Mountain Dwarves, Elves
+* Dismount Warfare
 * Many Many More in Future!
 
 1. Reworking on Demeter's hero units and related techs
@@ -180,11 +182,7 @@
             - model: murmillo helm, fanatic body
         - AthenianAxeman: bash ability, slower rof, melee range
         - AthenianHalberdier: highest melee range, slower rof
-- Nymphs
-    - Prereq: ArchaicAgeGreek
-    - MCMT_DivineNatureSpirits (activate, upgrades I, II, III): enables Nymph unit, dock tech
-        - nymph: general builder, enableaction [heal, empower, convert], infantry, handattack [punch, kick]
-        - sound set: japanese\female.xml
+
 4. Atlanean reworks from mcmt mod and new changes
 - myth unit:
     - popcosts
@@ -199,6 +197,15 @@
     - popcosts 1 or 2
 - heroinfantry:
     - popcosts 1 or 2
+- Nymphs
+    - Prereq: ArchaicAgeGreek
+    - MCMT_DivineNatureSpirits (activate): enables Nymph builder unit
+        - nymph: general builder, enableaction [heal, empower, convert], infantry, handattack [punch, kick]
+        - sound set: japanese\female.xml
+    - MCMT_DivineNatureSpirits (I,II,III): divinity upgrades for nymphs, improves other nymphs [dryad, hamadryad, nereid], increases Nymph costs (favor, food)
+    - NymphMender: ascension path, enables heal ability and updates name to Nymph (Mender), hp increases
+    - NymphCharmer: ascension path, enables convert ability [huntable, abstractvillager] and updates name to Nymph (Charmer), hackarmor increases
+    - NymphOracle: ascension path, enables empower ability and updates name to Nymph (Oracle), LOS increase
 
 5. Norse reworks from mcmt mod and new improvements
 - popcost:
@@ -226,7 +233,7 @@
     - Berserk+, 
         - OnDeath: WarBear+
     - ThrowingAxeman+
-- elven specialists:
+- Elven Specialists:
     - rangerelf: rangedattack, handattack, rangedattackflying, long range, effective at infantry at close range, effective at mythunit at distance
         - modelattachment: flower petals
     - royalelf: rangedattack, handatack, rangedattackflying, medium range, stronger variant of rangerelf

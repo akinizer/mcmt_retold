@@ -38,7 +38,7 @@
 				<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 			</abstractsettlement>
 		</natureempowerdata>
-		<maxrange>3</maxrange>
+		<maxrange>1</maxrange>
 		
 		<active>0</active>
 	</action>

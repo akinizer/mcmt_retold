@@ -51,11 +51,6 @@
          <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsGreek</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsGreek" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
-
-         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_DivineNatureSpirits</effect>
-         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_DivineNatureSpirits_I</effect>
-         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_DivineNatureSpirits_II</effect>
-         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_DivineNatureSpirits_III</effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeNorse">
@@ -1087,6 +1082,7 @@
             <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_III</effect>
             <effect type="TechStatus" status="obtainable">MCMT_OracleWatchers</effect>
             
+            <!--Kingdom Tech: Encampments-->
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_I</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_II</effect>
@@ -1095,7 +1091,15 @@
             <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining</effect>            
             <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_I</effect>            
             <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_II</effect>            
-            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_III</effect>            
+            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_III</effect>    
+            
+            <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_I</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_II</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_III</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_NymphMender</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_NymphCharmer</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_NymphOracle</effect>
             <!--TechBuilding FutureTech-->
             <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
             <effect type="TechStatus" status="obtainable">MCMT_NanofiberPlatings</effect>
@@ -2695,21 +2699,22 @@
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_NAME</displaynameid>
 		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_LR</rollovertextid>
-		<icon>resources\tech\marksmanship.png</icon>
+		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
-		<cost resourcetype="Food">250</cost>
-		<cost resourcetype="Wood">150</cost>    
+		<cost resourcetype="Food">1250</cost>
+		<cost resourcetype="Favor">55</cost>    
 		<effects>      
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Nymph</target></effect>	
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">Nymph</target></effect>    
 		</effects>		
 	</tech>
   <tech name="MCMT_DivineNatureSpirits_I" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_LR</rollovertextid>
-		<icon>resources\tech\marksmanship.png</icon>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_I_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_I_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -2718,15 +2723,22 @@
       <techstatus status="Active">MCMT_DivineNatureSpirits</techstatus>
     </prereqs>
 		<effects>      
-      <effect type="Data" action="Heal" amount="1.00" subtype="ActionEnable" relativity="Absolute">
-        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Nereid</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Dryad</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Hamadryad</target></effect>
+      
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Scylla</target></effect>
 		</effects>		
 	</tech>
   <tech name="MCMT_DivineNatureSpirits_II" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_LR</rollovertextid>
-		<icon>resources\tech\marksmanship.png</icon>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_II_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_II_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -2735,16 +2747,23 @@
      <prereqs>
       <techstatus status="Active">MCMT_DivineNatureSpirits_I</techstatus>
     </prereqs>
-		<effects>      
-      <effect type="Data" action="Empower" amount="1.00" subtype="ActionEnable" relativity="Absolute">
-        <target type="ProtoUnit">Nymph</target></effect>
+		<effects>     
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Nereid</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Dryad</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Hamadryad</target></effect>
+
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Scylla</target></effect>
 		</effects>		
 	</tech>
   <tech name="MCMT_DivineNatureSpirits_III" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_LR</rollovertextid>
-		<icon>resources\tech\marksmanship.png</icon>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_III_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -2754,10 +2773,105 @@
       <techstatus status="Active">MCMT_DivineNatureSpirits_II</techstatus>
     </prereqs>
 		<effects>      
-      <effect type="Data" action="Convert" amount="1.00" subtype="ActionEnable" relativity="Absolute">
-        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Nereid</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Dryad</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Hamadryad</target></effect>
 		</effects>		
 	</tech>
+  <tech name="MCMT_NymphMender" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NYMPH_MENDER_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NYMPH_MENDER_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">150</cost>    
+    <prereqs>
+      <techstatus status="Active">MCMT_DivineNatureSpirits</techstatus>
+    </prereqs>
+		<effects>      
+      <effect type="Data" action="Heal" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="1" subtype="cost" resource="Favor" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="10" subtype="cost" resource="Food" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="15" subtype="Hitpoints" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="CommandRemove" tech="MCMT_NymphCharmer" relativity="Assign">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandRemove" tech="MCMT_NymphOracle" relativity="Assign">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="SetName" proto="Nymph" newname="STR_UNIT_DIVINE_NYMPH_MENDER_NAME"></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_NymphCharmer" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NYMPH_CHARMER_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NYMPH_CHARMER_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">150</cost>    
+    <prereqs>
+      <techstatus status="Active">MCMT_DivineNatureSpirits</techstatus>
+    </prereqs>
+		<effects>      
+      <effect type="Data" action="Convert" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="1" subtype="cost" resource="Favor" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="10" subtype="cost" resource="Food" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+        <target type="ProtoUnit">Nymph</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="CommandRemove" tech="MCMT_NymphMender" relativity="Assign">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandRemove" tech="MCMT_NymphOracle" relativity="Assign">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="SetName" proto="Nymph" newname="STR_UNIT_DIVINE_NYMPH_CHARMER_NAME"></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_NymphOracle" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NYMPH_ORACLE_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NYMPH_ORACLE_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">150</cost>    
+    <prereqs>
+      <techstatus status="Active">MCMT_DivineNatureSpirits</techstatus>
+    </prereqs>
+		<effects>      
+      <effect type="Data" action="Empower" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="1" subtype="cost" resource="Favor" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="10" subtype="cost" resource="Food" relativity="Absolute">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="5.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">Nymph</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="CommandRemove" tech="MCMT_NymphMender" relativity="Assign">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandRemove" tech="MCMT_NymphCharmer" relativity="Assign">
+        <target type="ProtoUnit">Nymph</target></effect>
+      <effect type="SetName" proto="Nymph" newname="STR_UNIT_DIVINE_NYMPH_ORACLE_NAME"></effect>
+		</effects>		
+	</tech>
+  
   <tech name="MCMT_ElvenTraining" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_ELVENTRAINING_NAME</displaynameid>
