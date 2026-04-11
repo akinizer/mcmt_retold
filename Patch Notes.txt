@@ -565,7 +565,9 @@
 - TitanYamataNoOrochi: titanattack on naval+
 - Kamaitachi: AbstractSamurai
 - Tengu: AbstractSamurai, AbstractInfantry, InfantryLineUpgraded
-- Tengu: AbstractSamurai, AbstractInfantry, InfantryLineUpgraded
+- Kitsune: amphibious
+- Wanyudo: amphibious
+- Umibozu: teleport attack throws FishingShip
 
 * Infantry, Samurai, Archer, Cavalry
 - popcosts 1 or 2
@@ -621,7 +623,7 @@
     - Snow Blast: auxcharged ability, ranged, snowball projectile, slow unit, throw [HumanSoldier, AbstractVillager]
     - Air Flow Trail
 
-* Techs Reworks & Additions
+* Techs Reworks & Additions - Major God Tech
 - Kagura: 
     - Onmyoji: heal workrate+, trainpoints-
 - Tenshu:
@@ -630,6 +632,7 @@
 - CrushingWaves:
     - Warship: MaximumVelocity+, HP+, OnDamageModify CrushArmor
 
+* Techs Reworks & Additions - Myth Tech
 - Kumiki:
     - House, Temple: CostWood-, CrushArmor+ 
 - HuntersStrength:
@@ -680,6 +683,17 @@
     - Onmyoji: name ("Shrine Priest" -> "Onmyoji")
 - AsymmetricalBows:
     - YumiHorseArcher: NumberProjectiles+, NumberOfBounces+ 
+
+* Techs Reworks & Additions - Myth Unit Upgrade
+- windsickles: kamaitachi chargedmeleeattack applies bleed
+- condemned soul: ghost type units deal area damage, increased handattack/rangedattack
+- asceticpractices: tengo gains dashattack (buildings)
+- thunderouspresence: raiju grants speedbonus to nearby myth units, stackable 3 times
+- burningmalevolvence: asura handattacks apply vfxfire effect
+- deadlyrage: oni handattack also burns enemies, asura damage increase
+- restlessarmy: projectileonmoraki explodes on impact
+- eternalhaunting: leech for shinigami variants
+- wisdomofnine: rof increase, enables kştsune to transform into a lady while idling
     
 * Special Techs
 - DetonatorsJapanese: explosive tech researchable in Armory, releases explosion on destruction (building, ship) or death (infrenal mythunit, shinobi), deals area damage and sends humansoldiers and villagers flying
@@ -713,7 +727,7 @@
 - Tsukuyomi: humansoldier damage, 1 min, watermill areaheal, chat notification
 - Susanoo: mythunit damage, 1 min, kitsune areaheal, chat notification
 
-24. More Containers, Trails
+24. More Containers, Trails, Dependants
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
@@ -729,24 +743,24 @@ Implemented & Unused Models (soldiers & leaders)
 * fenrir -> hand attack anim
 * avenger -> anubite jump anim
 
-* elf -> forkbear model, amazon archer anim
 * nitroglicerine -> vfxcold variant of detonators
-* dismount tech
 * hunts of artemis tech
 * roc -> dead spawn roctent, areheal
 * zhuque -> areaheal / area barrier
 * onmoraki -> areadamage, vfx poison
 * caladrialanded -> icarus & servant of kronos anim, handattack
 * pegasus -> pegasus anim, bellerophorn_horse anim
+
 * luffy: militia / prodromos_rider -> promethean_attack_a, promethean_attack_b, shinobi_wan_kenobi_attack_b, avenger_whirlwindattack_a 
 * alvida: miko -> oni club
 * zorro: chiyou -> 4x katana, 
 * mihawk: samurai, throw, ranged slash
+
 === JAPANESE
 * Unit Tech Reworks - General
 - MythUnit
     - WindSickes: VFXBLeed (Kamaitachi)
-    - CondemnedSoul: VFXFire, affects (Shinigami,RevenantShinigami,Wretched,HadesShade,Mummy,MummyFallen,Minion,MinionResurrected,GhostCrew,PirateCaptain)
+    - CondemnedSoul: VFXFire, affects (Shinigami,ShinigamiRevenant,ShinigamiVengeful,Wretch,HadesShade,Mummy,MummyFallen,Minion,MinionReincarnated,GhostCrew,PirateCaptain)
     - AsceticPractices
     - ThunderousPresence
     - BurningMalevolence

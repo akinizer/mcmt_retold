@@ -28,6 +28,11 @@ ID = "STR_UNIT_SANDDEVOURER_LR"   ;   Str = "Oversized worm that moves through s
 
 ID = "STR_UNIT_TITAN_YAMATANOOROCHI_NAME"   ;   Str = "Yamata no Orochi (Titan)"
 
+ID = "STR_EMB_KITSUNE_ILLUSION_SR"   ;   Str = "Just a chilling nice lady"
+ID = "STR_UNIT_HAMADRYAD_SR"   ;   Str = "Just a chilling nice lady"
+
+
+
 // DEMIGODS
 ID = "STR_UNIT_SON_OF_HORUS_NAME"  ;   Str = "Son of Horus (Hero)"
 ID = "STR_UNIT_TITAN_CERBERUS_NAME"  ;   Str = "Cerberus (Titan)"
@@ -974,6 +979,8 @@ ID = "STR_ABILITY_BARRAGE_ATTACK"   ;   Str = "Barrage Attack"
 ID = "STR_ABILITY_BASH_ATTACK"   ;   Str = "Bash Attack"
 ID = "STR_ABILITY_DEADLY_CHARM"   ;   Str = "Deadly Charm"
 ID = "STR_ABILITY_SNOW_BLAST"   ;   Str = "Snow Blast"
+ID = "STR_ABILITY_DASH_ATTACK"   ;   Str = "Dash Attack"
+ID = "STR_ABILITY_ILLUSION_SURPRISE"   ;   Str = "Illusion Surprise"
 
 ID = "STR_ABILITY_SPECIALATTACK"   ;   Str = "Special Attack"
 ID = "STR_ABILITY_SPECIALATTACK_LR"   ;   Str = "This unit has a special ability that recharges"

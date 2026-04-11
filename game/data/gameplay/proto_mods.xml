@@ -446,89 +446,21 @@
         </protoaction>
     </unit>
 	
-    <unit name="Midas" orderhint="3" mergemode="replace">
-        <displaynameid>STR_UNIT_MIDAS_NAME</displaynameid>
-        <rollovertextid>STR_UNIT_MIDAS_LR</rollovertextid>
-        <shortrollovertextid>STR_UNIT_MIDAS_SR</shortrollovertextid>
-        <icon>resources\greek\player_color\units\midas_icon.png</icon>
-        <animfile>greek_demeter\units\hero\midas\midas.xml</animfile>
-        <soundsetfile>greek_demeter\vo\king_midas_demeter\king_midas_demeter.xml</soundsetfile>
-        <obstructionradiusx>0.4900</obstructionradiusx>
-        <obstructionradiusz>0.4900</obstructionradiusz>
-        <impacttype>Armoured</impacttype>
-        <unitaitype>HandCombative</unitaitype>
-        <autoattackrange>16.0000</autoattackrange>
-        <movementtype>land</movementtype>
-        <turnrate>18.0000</turnrate>
-        <initialhitpoints>480.0000</initialhitpoints>
+    <unit name="Midas">
+    	<initialhitpoints>480.0000</initialhitpoints>
         <maxhitpoints>480.0000</maxhitpoints>
-        <trainpoints>30.0000</trainpoints>
-        <buildlimit>1</buildlimit>
-        <weightclass>8</weightclass>
-        <maxcontained>1</maxcontained>
-        <populationcount>1</populationcount>
+    	<populationcount>1</populationcount>
         <maxvelocity>4.2000</maxvelocity>
-        <los>16.0000</los>
-        <sharedselectionunittypes>
-        <unittype>LogicalTypeSharedHeroSelection</unittype>
-        </sharedselectionunittypes>
+       
         <cost resourcetype="Gold">400.0000</cost>
         <armor type="Hack" value="0.6700"></armor>
         <armor type="Pierce" value="0.5800"></armor>
         <armor type="Crush" value="0.9900"></armor>
-        <unittype>LogicalTypeNeededForVictory</unittype>
-        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
-        <unittype>LogicalTypeLandMilitary</unittype>
-        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
-        <unittype>LogicalTypeGarrisonInShips</unittype>
-        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
-        <unittype>LogicalTypeVillagersAttack</unittype>
-        <unittype>LogicalTypeHandUnitsAttack</unittype>
-        <unittype>LogicalTypeRangedUnitsAttack</unittype>
-        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
-        <unittype>LogicalTypeValidBoltTarget</unittype>
-        <unittype>LogicalTypeHealed</unittype>
-        <unittype>LogicalTypeSharedHeroSelection</unittype>
-        
-        <unittype>Unit</unittype>
-        <unittype>UnitClass</unittype>
-        <unittype>MilitaryUnit</unittype>
-        <unittype>Hero</unittype>
-        <unittype>MajorHero</unittype>
-        <unittype>HeroShadowUpgraded</unittype>
-        <unittype>InfantryLineUpgraded</unittype>
-
-        <unittype>LogicalTypeConvertsHerds</unittype>
-        <unittype>LogicalTypeEarthquakeAttack</unittype>
-        <unittype>LogicalTypeAffectedByRestoration</unittype>
-        <unittype>LogicalTypeValidMeteorTarget</unittype>
-        <unittype>LogicalTypeValidTornadoAttack</unittype>
-        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
-        <unittype>LogicalTypeParticipatesInBattlecries</unittype>
-        <unittype>LogicalTypeValidSpyTarget</unittype>
-        <unittype>LogicalTypeValidFrostTarget</unittype>
-        
-        <unittype>LogicalTypeValidShockwaveTarget</unittype>
-        <unittype>CountsTowardMilitaryScore</unittype>
-        
-        <unittype>LogicalTypeFindMilitaryHero</unittype>
-        <unittype>LogicalTypeAffectedBySunRay</unittype>
-        <flag>CollidesWithProjectiles</flag>
-        <flag>CorpseDecays</flag>
-        <flag>ShowGarrisonButton</flag>
-        <flag>DontRotateObstruction</flag>
-        <flag>ObscuredByUnits</flag>
-        <flag>RotateInPlace</flag>
-        <flag>CommonCommands</flag>
-        <flag>MilitaryCommands</flag>
-        <flag>HideGarrisonFlag</flag>
-        <flag>HasDefaultAttack</flag>
-        <flag>CreateUnitGroupAutomatically</flag>
-        <flag>ExperienceUnit</flag>
-        <flag>SplitQueue</flag>
-        <contain external="1">LogicalTypePickable</contain>
-        <tactics>greek_hero_militaryaura.tactics</tactics>
-        <protoaction>
+     
+		<unittype>InfantryLineUpgraded</unittype>        
+    	<flag>ExperienceUnit</flag>
+        <tactics>midas.tactics</tactics>
+        <protoaction mergeMode="replace">
             <name>HandAttack</name>
             <rof>1.200000</rof>
             <damage type="Hack">12.000000</damage>
@@ -545,19 +477,25 @@
 			<rate type="Ship">1.0</rate>
             <projectile>Football</projectile>
         </protoaction>
-        <protoaction>
-            <name>Pickup</name>
-            <type>Pickup</type>
-            <maxrange>1</maxrange>
-            <rate type="LogicalTypePickable">1.00000</rate>
-        </protoaction>
-        <protoaction>
-            <name>DropOff</name>
-            <type>DropOff</type>
-            <maxrange>1</maxrange>
-            <rate type="AbstractTemple">1.00000</rate>
-        </protoaction>
 		<protoaction>
+			<name>WeaponSmithing</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>HumanSoldier</modifyabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Damage</modifytype>
+			<modifymultiplier>1.1</modifymultiplier>
+		</protoaction>
+		<protoaction>
+			<name>ArmorSmithing</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>HumanSoldier</modifyabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Armor</modifytype>
+			<modifymultiplier>1.1</modifymultiplier>
+		</protoaction>
+    	<protoaction>
 			<name>HackArmorInverseAura</name>
 			<type>LikeBonus</type>
 			<modifydamagetype>Hack</modifydamagetype>
@@ -601,31 +539,6 @@
 			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
-        <veterancyranks>
-            <rank>
-                <totaldamage>700</totaldamage>
-                <resetnumkills>1</resetnumkills>
-            </rank>
-            <rank>
-                <numkills>1</numkills>
-                <resetrank>1</resetrank>
-            </rank>
-        </veterancyranks>
-        <veterancybonus>
-            <rank id="1">
-                <spawn type="veterancyRankUp" count="1" param="1" skipplacementcheck="" swapkilledunit="" shadingtype="gold">MineGoldMidas199</spawn>
-            </rank>
-            <includetypes>
-                <unittype>MilitaryUnit</unittype>
-                <unittype>EconomicUnit</unittype>
-            </includetypes>
-            <excludetypes>
-                <unittype>NavalUnit</unittype>
-                <unittype>AbstractFlyingUnit</unittype>
-                <unittype>MajorHero</unittype>
-                <unittype>AbstractTitan</unittype>
-            </excludetypes>
-        </veterancybonus>
     </unit>
 
     <!-- Greek Myth Units: Demeter -->
@@ -1680,30 +1593,207 @@
 	<unit name="Kamaitachi">
 		<unittype mergeMode="add">AbstractSamurai</unittype>
 	</unit>
-	<unit name="Tengu">
-		<unittype mergeMode="add">AbstractSamurai</unittype>
-		<unittype mergeMode="add">AbstractInfantry</unittype>
-		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
+	<unit name="Wanyudo">
+		<movementtype>amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
 	</unit>
+	<unit name="Tengu">		
+		<unittype>AbstractSamurai</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
 
+		<auxrechargetime>1.5000</auxrechargetime>
+		<movementtype>amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+		<tactics mergeMode="replace">mcmt_tengu.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.600000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Teleport</name>
+			<rof>0.500000</rof>
+			<damage type="Divine">20.000000</damage>
+			<maxrange>8.000000</maxrange>
+			<modifyduration>500</modifyduration>
+			<projectile>ProjectileYaZiDash</projectile>
+		</protoaction>
+	</unit>
+	<unit name="Raiju">
+		<protoaction>
+			<name stringid="STR_ACTION_SPEED_BOOST">SpeedBoost</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>LogicalTypeMythUnitNotTitan</modifyabstracttype>
+			<modifyself>1</modifyself>
+			<nostack>1</nostack>
+			<includeally>1</includeally>
+			<persistent>1</persistent>
+			<modelattachment>japanese\units\myth\kitsune\kitsune_aura_trail.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+
+			<maxrange>12</maxrange>
+			<modifytype>Speed</modifytype>
+			<modifymultiplier>1.05</modifymultiplier>
+			<modifystacklimit>1</modifystacklimit>
+			<active>0</active>		
+		</protoaction>
+	</unit>
+	<unit name="Kitsune">
+		<spawn type="mutate" count="1" setowner="">HamadryadAmbush</spawn>
+		<rechargetime>10.0000</rechargetime>
+		<flag>CanAutoTransform</flag>
+		<flag>UseChargeIfNotIdle</flag>
+		<flag>UseChargeOnDamaged</flag>
+
+		<movementtype>amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+		<protoaction>
+     		<name stringid="STR_ABILITY_ILLUSION_SURPRISE">DelayedHamadryadTransform</name>
+			<type>DelayedTransform</type>
+			<active>0</active>
+			<modifyprotoid>KitsuneIllusion</modifyprotoid>
+			<transformskipplacementpush>1</transformskipplacementpush>
+		</protoaction>
+	</unit>
+	<unit name="KitsuneIllusion">
+		<displaynameid>STR_UNIT_KITSUNE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_KITSUNE_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_KITSUNE_SR</shortrollovertextid>
+		<enemyshortrollovertextid>STR_EMB_KITSUNE_ILLUSION_SR</enemyshortrollovertextid>
+		<icon>resources\greek\player_color\units\hamadryad_icon.png</icon>
+		<animfile>spc\units\hallgerd_forkbeard\hallgerd_forkbeard.xml</animfile>
+		<soundsetfile>japanese\female.xml</soundsetfile>
+		<obstructionradiusx>1.2400</obstructionradiusx>
+		<obstructionradiusz>1.2400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>600.0000</initialhitpoints>
+		<maxhitpoints>600.0000</maxhitpoints>
+		<trainpoints>20.0000</trainpoints>
+		<weightclass>7</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>1.0000</maxvelocity>
+		<los>20.0000</los>
+		<sharedselectionunittypes>
+			<unittype>Kitsune</unittype>
+		</sharedselectionunittypes>
+		<eidolonprotoid>Kitsune</eidolonprotoid>
+		<cost resourcetype="Food">200.0000</cost>
+		<cost resourcetype="Gold">100.0000</cost>
+		<cost resourcetype="Favor">25.0000</cost>
+		<armor type="Hack" value="0.5000"></armor>
+		<armor type="Pierce" value="0.6000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHeroicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DisplayRange</flag>
+		<flag>HideFromDialogs</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotObscuredByUnitsForOpponents</flag>
+		<flag>HideHPBarFromOpponents</flag>
+		<flag>HideMinimapIndicatorFromOpponents</flag>
+		<flag>NotPushable</flag>
+		<flag>FakeAsTreeIfEnemy</flag>
+		<tactics>hamadryad_tree.tactics</tactics>
+		<protoaction>
+			<name>PlaceholderAttackHamadryadTree</name>
+			<rate type="All">1.0</rate>
+			<damage type="Pierce">1</damage>
+			<damage type="Divine">1</damage>
+			<damagearea>16</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>6.000000</maxrange>
+			<attackaction>1</attackaction>
+		</protoaction>
+		<protoaction>
+			<name>DelayedHamadryadTransform</name>
+			<type>DelayedTransform</type>
+			<modifyprotoid>Kitsune</modifyprotoid>
+		</protoaction>
+		<protoaction>
+			<name>ConditionalTransformMoved</name>
+			<type>ConditionalTransform</type>
+			<persistent>1</persistent>
+			<modifyprotoid>Kitsune</modifyprotoid>
+			<conditionaltransformrule type="NotIdle">0.1</conditionaltransformrule>
+			<skipmutatespawnevents>1</skipmutatespawnevents>
+			<mustfinishanimation>1</mustfinishanimation>
+		</protoaction>
+		<protoaction>
+			<name>ConditionalTransformAmbush</name>
+			<type>ConditionalTransform</type>
+			<persistent>1</persistent>
+			<modifyprotoid>Kitsune</modifyprotoid>
+			<rate type="AbstractFlyingUnit">0.0</rate>
+			<rate type="MilitaryUnit">1.0</rate>
+			<rate type="EconomicUnit">1.0</rate>
+			<conditionaltransformrule type="EnemyInRange">6.00</conditionaltransformrule>
+			<mustfinishanimation>1</mustfinishanimation>
+		</protoaction>
+	</unit>
+	<unit name="Umibozu">
+		<movementtype>amphibious</movementtype>
+		<protoaction>
+			<name>Teleport</name>
+			<rof>1.500000</rof>
+			<damage type="Divine">40.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<damagebonus type="MythUnit">2.0000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>999.000000</maxrange>
+			<modifyduration>1500</modifyduration>
+			<restricttowater>1</restricttowater>
+			<onhiteffect type="Throw" targetunittype="AbstractFishingShip"></onhiteffect>
+			<throw>1</throw>
+		</protoaction>
+	</unit>
 	<!-- TODO
-	<unit name="Wanyudo"></unit> ghost tech
-	<unit name="Shinigami"></unit> ghost tech, leech, absorb ability
-	<unit name="Kitsune"></unit> ghost tech, leech, absorb ability
-
 	<unit name="Raiju"></unit> teleport ability
-	<unit name="Honengyo"></unit> amphibious
-	<unit name="Umibozu"></unit> throw on teleport
 
-	<unit name="Asura"></unit> oni tech
-	<unit name="Oni"></unit> oni tech
-
-	<unit name="Onmoraki"></unit> vfxpoison
-
-	<unit name="Jorogumo"></unit> vfxpoison, caladria ability
+	<unit name="Jorogumo"></unit> caladria ability
 	<unit name="GauntletChaosFlamingMonkey"></unit> 
-	<unit name="FavorStashSentinel"></unit> 
-	<unit name="GauntletChaosNidhogg"></unit> 
 	-->
 
     <!-- Japanese Military Units-->
@@ -25173,6 +25263,7 @@
 		<selectionradiusz>1.2500</selectionradiusz>
 		<impacttype>Unarmoured</impacttype>
 		<dependentunit>VFXAlliedHamadryadTree</dependentunit>
+		<spawn type="mutate" count="1" setowner="">HamadryadAmbush</spawn>
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
@@ -27098,4 +27189,79 @@
 			<throw>1</throw>
    		</protoaction>
   	</unit>	
+	<!-- Drone Units -->
+	<unit name="CustomDependantUnit">
+		<animfile>vfx\projectiles\asura\fire_ball_left.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>3.2000</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractAsura</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Divine">15.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileBallOfFireAsura</projectile>
+			<impacteffect>effects\impacts\crush_medium</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
+	<unit name="VFXKitsuneIllusionDependantUnit" orderhint="3">
+		<animfile>spc\units\hallgerd_forkbeard\hallgerd_forkbeard.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unittype>EmbellishmentClass</unittype>
+		<decay delay="0.0000" duration="0.0000"></decay>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>NotAlive</flag>
+		<flag>Immoveable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>VisibleOwnerOnly</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+	</unit>
 </protomods>

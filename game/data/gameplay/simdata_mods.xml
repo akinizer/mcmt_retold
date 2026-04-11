@@ -5203,4 +5203,48 @@
 			</animinfo>
 		</animations>
 	</animxml>
+	<animxml file="japanese\units\myth\tengu\tengu.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>DashStart</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>chinese\units\myth\ya_zi\anim\ya_zi_dashstart_a</file>
+						<duration>0.30000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.00000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>YaZiDash</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>Throw</type>
+								<position>0.90000</position>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo mergeMode="add">
+				<name>DashEnd</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>chinese\units\myth\ya_zi\anim\ya_zi_dashend_a</file>
+						<duration>0.75000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.20000</position>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 </simdatabasemods>

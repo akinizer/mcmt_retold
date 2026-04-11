@@ -338,6 +338,13 @@
 		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>
 		<ability>AbilityYukiOnna<auxchargetimeasrof>1</auxchargetimeasrof></ability>
 	</YukiOnnaMistBender>
+		<!--Japanese-Myth-->
+	<Tengu>
+		<ability>AbilityYaZiFlashStrike<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</Tengu>
+	<Kitsune>
+		<ability>AbilityHamadryad<castonself>true</castonself><chargetimeasrof>1</chargetimeasrof></ability>
+	</Kitsune>
 		<!--Greek-Spartan-->
 	<SpartanAxeman>
 		<ability>AbilitySpecialHandAttack<chargetimeasrof>1</chargetimeasrof></ability>

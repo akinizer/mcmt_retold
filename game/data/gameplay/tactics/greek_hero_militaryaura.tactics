@@ -24,6 +24,18 @@
     <impacteffect>effects\impacts\pierce</impacteffect>
     <rate type="AbstractFlyingUnit">1.0</rate>
   </action>
+  	<name stringid="STR_ACTION_RANGED">FreezeAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>FreezeAttack</anim>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\hack</impacteffect>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeFreezableMythUnit">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+	</action>
   <action>
     <name>WeaponSmithing</name>
     <type>AutoRangedModify</type>
@@ -43,8 +55,9 @@
     <modifymultiplier>1.1</modifymultiplier>
   </action>
   <tactic>Default
-    <action priority="100">RangedAttack</action>
-    <action priority="90">HandAttack</action>
+    <action priority="100">FreezeAttack</action>
+    <action priority="90">RangedAttack</action>
+    <action priority="80">HandAttack</action>
     <action>WeaponSmithing</action><action>ArmorSmithing</action>
     <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
 </tactics>

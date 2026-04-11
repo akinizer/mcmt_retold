@@ -8157,6 +8157,161 @@
   </tech>			
 
   <!-- Japanese Techs - Myth Unit -  Major Gods -->
+  <tech name="WindSickles">
+		<effects>
+			<effect type="Data" amount="8.0" subtype="OnHitEffect" action="ChargedHandAttack" effecttype="DamageOverTime" duration="3.00" targettype="Unit" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Kamaitachi</target></effect>
+      <effect type="Data" amount="1.0" subtype="OnHitEffect" action="ChargedHandAttack" effecttype="Attach" duration="3.00" targettype="Unit" proto="VFXBleed" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Kamaitachi</target></effect>
+		</effects>
+	</tech>
+  <tech name="CondemnedSoul">
+		<effects>
+			<effect type="Data" action="LightningAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Shinigami</target></effect>
+			<effect type="Data" action="LightningAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Shinigami</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="LightningAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Shinigami</target></effect>
+
+			<effect type="Data" action="LightningAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiRevenant</target></effect>
+			<effect type="Data" action="LightningAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiRevenant</target></effect>
+       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="LightningAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiRevenant</target></effect>
+
+			<effect type="Data" action="LightningAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiVengeful</target></effect>
+			<effect type="Data" action="LightningAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiVengeful</target></effect>
+       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="LightningAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiVengeful</target></effect>
+
+			<effect type="Data" action="HandAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Wretch</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Wretch</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Wretch</target></effect>
+
+			<effect type="Data" action="HandAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">HadesShade</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">HadesShade</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">HadesShade</target></effect>
+
+			<effect type="Data" action="RangedAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Mummy</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Mummy</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Mummy</target></effect>
+
+			<effect type="Data" action="RangedAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">MummyFallen</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">MummyFallen</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">MummyFallen</target></effect>
+
+			<effect type="Data" action="HandAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Minion</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Minion</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Minion</target></effect>
+
+			<effect type="Data" action="HandAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">MinionReincarnated</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">MinionReincarnated</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">MinionReincarnated</target></effect>
+
+			<effect type="Data" action="HandAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">GhostCrew</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">GhostCrew</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">GhostCrew</target></effect>
+
+			<effect type="Data" action="HandAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">PirateCaptain</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">PirateCaptain</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">PirateCaptain</target></effect>
+		</effects>
+	</tech>
+  <tech name="AsceticPractices">
+		<effects>
+      <effect type="Data" action="Teleport" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Tengu</target></effect>
+		</effects>
+	</tech>
+  <tech name="ThunderousPresence" orderhint="3">
+		<effects>
+      <effect type="Data" protoaction="IdleSpeedBonus" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Raiju</target></effect>
+      <effect type="Data" action="SpeedBoost" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Raiju</target></effect>
+      <effect type="Data" amount="3.0" subtype="ModifyStackLimit" action="SpeedBoost" relativity="Absolute">
+				<target type="ProtoUnit">Raiju</target></effect>
+    </effects>
+	</tech>
+  <tech name="BurningMalevolence">
+    <effects>
+       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Asura</target></effect>
+    </effects>
+  </tech>
+  <tech name="RestlessArmy">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="HitGround" proto="SelfDestructSpawn" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">ProjectileOnmorakiSpawn</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Hit" proto="SelfDestructSpawn" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">ProjectileOnmorakiSpawn</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXPoison" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wretch</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wretch</target></effect>			
+    </effects>
+  </tech>
+  <tech name="DeadlyRage">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Oni</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Oni</target></effect>
+
+      <effect type="Data" amount="1.30" subtype="Damage" allactions="1" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Asura</target></effect>
+    </effects>
+  </tech>
+  <tech name="EternalHaunting">
+    <effects>
+      <effect type="Data" amount="0.35" subtype="OnHitEffect" allactions="1" effecttype="Lifesteal" targettype="Unit" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Shinigami</target></effect>
+      <effect type="Data" amount="0.40" subtype="OnHitEffect" allactions="1" effecttype="Lifesteal" targettype="Unit" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiRevenant</target></effect>
+      <effect type="Data" amount="0.45" subtype="OnHitEffect" allactions="1" effecttype="Lifesteal" targettype="Unit" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">ShinigamiVengeful</target></effect>
+    </effects>
+  </tech>
+  <tech name="WisdomOfNine">
+    <effects>
+      <effect type="Data" action="HandAttack" amount="0.9" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">Kitsune</target></effect>
+
+      <effect type="Data" subtype="RechargeTime" amount="6.00" relativity="Assign">
+				<target type="ProtoUnit">Kitsune</target></effect>
+
+      <effect type="Data" action="DelayedHamadryadTransform" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Kitsune</target></effect>
+    </effects>
+  </tech>
   <!-- Japanese Techs - Military Techs -->
 
   <!-- Structures of Gods-->
