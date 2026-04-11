@@ -573,7 +573,7 @@
 - popcosts 1 or 2
 - Bushi: AbstractArcher, AbstractInfantry, InfantryLineUpgraded
 - YumiArcher: AbstractArcher
-- YumiHOrseArcher: AbstractArcher
+- YumiHorseArcher: AbstractArcher
 - OnnaMusha: AbstractSamurai, InfantryLineUpgraded
 - Daimyo: AbstractSamurai, AbstractInfantry, InfantryLineUpgraded
 - Shogun: AbstractSamurai, AbstractInfantry, InfantryLineUpgraded
@@ -747,9 +747,8 @@ Implemented & Unused Models (soldiers & leaders)
 * hunts of artemis tech
 * roc -> dead spawn roctent, areheal
 * zhuque -> areaheal / area barrier
-* onmoraki -> areadamage, vfx poison
 * caladrialanded -> icarus & servant of kronos anim, handattack
-* pegasus -> pegasus anim, bellerophorn_horse anim
+* pegasus -> pegasus anim, bellerophon_horse anim
 
 * luffy: militia / prodromos_rider -> promethean_attack_a, promethean_attack_b, shinobi_wan_kenobi_attack_b, avenger_whirlwindattack_a 
 * alvida: miko -> oni club
@@ -757,17 +756,6 @@ Implemented & Unused Models (soldiers & leaders)
 * mihawk: samurai, throw, ranged slash
 
 === JAPANESE
-* Unit Tech Reworks - General
-- MythUnit
-    - WindSickes: VFXBLeed (Kamaitachi)
-    - CondemnedSoul: VFXFire, affects (Shinigami,ShinigamiRevenant,ShinigamiVengeful,Wretch,HadesShade,Mummy,MummyFallen,Minion,MinionReincarnated,GhostCrew,PirateCaptain)
-    - AsceticPractices
-    - ThunderousPresence
-    - BurningMalevolence
-    - RestlessArmy
-    - DeadlySnare, WisdomOfNine
-    - DeadlyRage, OniMask
-    - EternalHaunting
 
 * Proto Reworks - MythUnit LineUpgrade
 - Siege
@@ -784,54 +772,17 @@ Implemented & Unused Models (soldiers & leaders)
 - Flying
     - Onmoraki: Land, AreaDamage
 - Naval
-    - Honengyo: Amphibious
-    - Wanyudo: Amphibious, Burn, Bonus (villager,trade)    
     - Kappa
-- MilitaryUnit    
-    - Jorogumo: Healer
-        - Tech-Enabled: Minelayer, Spawn SpiderTrap x3
-    - Shinigami: Healer, Movement (Air)
-    - ShinigamiRevenant: Healer, Movement (Air), Spawn (Shades x3)
-- Beast
-    - Raiju     
-        - Tech-Enabled: areaslow (aotg chronosunique)
-- Scout
-    - Kitsune
-        - Tech-Enabled: workrate aura
         
 * Proto Reworks - Hero
-- Miko: Villager, Build Accel, Pacify MythUnit (caladria ability)
-    - Tech-Enabled: hp aura
-    - buildrate temple
 - Bushi, OnnaMusha
     - Tech-Enabled: AbilityOni
 - Daimyo, Shogun
     - Tech-Enabled: warcry
 
 * Proto Reworks - HumanSoldier: Infantry, Cavalry, Archer, Siege
-- Archer: YumiArcher,YumiHorseArcher
-- Samurai: Bushi,Daimyo,Shogun,Samura
+- AbstractSamurai:
     - Tech-Enabled: likeunitdamagebonus, likeunitspeedbonus
-- Naginata: OnnaMusha,NaginataRider,YariSpearman
-- Warrior Myth: Kamaitachi,Tengu,Oni
-- Priest Myth: Jorogumo,Shinigami
-
-- Weapon Based Lineupgrade Techs
-    - Spear:YariSpearman,NaginataRider
-    - Archer:YumiArcher
-    - Sword:Samurai,Shinobi
-
-* Proto Reworks - Naval: 
-- FishingShip
-    - visualscale
-- Warship
-    - visualscale
-- Transport
-    - visualscale
-    - maxcontained increases by age
-
-- Commoner
-    - workrate: dropsites
 
 * Proto Reworks - Building
 - Watermill: 

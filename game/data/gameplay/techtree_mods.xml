@@ -7904,25 +7904,25 @@
 	</tech>
   <tech name="DenDenDrums">
 		<effects>
-			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="LightningAttack" damagetype="Divine" subtype="Damage" amount="5.00" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">StatueOfLightning</target></effect>
-			<effect type="Data" action="ChainAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="ChainAttack" damagetype="Divine" subtype="Damage" amount="5.00" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">YingLong</target></effect>
-			<effect type="Data" action="FlyingUnitChainAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="FlyingUnitChainAttack" damagetype="Divine" subtype="Damage" amount="5.00" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">YingLong</target></effect>
-			<effect type="Data" action="ChargedChainAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="ChargedChainAttack" damagetype="Divine" subtype="Damage" amount="5.00" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">YingLong</target></effect>
-			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="LightningAttack" damagetype="Divine" subtype="Damage" amount="5.00" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">SonOfOsiris</target></effect>
-			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="LightningAttack" damagetype="Divine" subtype="Damage" amount="5.00" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Circe</target></effect>
-			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="LightningAttack" damagetype="Divine" subtype="Damage" amount="5.00" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">ManOWar</target></effect>
 
-      <effect type="Data" action="HandAttack" subtype="Damage" amount="1.50" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">LightningStrike</target></effect>      
+      <effect type="Data" action="HandAttack" damagetype="Divine" subtype="Damage" amount="5.00" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">LightningStrike</target></effect> 
 
-			<effect type="Data" action="LightningAttack" subtype="Damage" amount="5.0" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="LightningAttack" damagetype="Divine" subtype="Damage" amount="5.00" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Junkozosen</target></effect>
       <effect type="Data" action="ChargedHandAttack" damagetype="Divine" subtype="Damage" amount="2.00" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Raiju</target></effect>
