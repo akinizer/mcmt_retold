@@ -20596,6 +20596,14 @@
 			<rate type="Building">0.4000</rate>
 			<typedmaxrange type="Dock">2.0</typedmaxrange>
 		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\thundercharge_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
 	</unit>
 	<unit name="Nymph">
 		<displaynameid>STR_UNIT_NYMPH_NAME</displaynameid>

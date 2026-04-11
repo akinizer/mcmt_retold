@@ -727,7 +727,10 @@
 - Tsukuyomi: humansoldier damage, 1 min, watermill areaheal, chat notification
 - Susanoo: mythunit damage, 1 min, kitsune areaheal, chat notification
 
-24. More Containers, Trails, Dependants
+24. More Containers, Trails, Dependants, Glows
+- explosive containers, area containers
+- thundercharge glow: anim xml, simdata, composite, prototaction (hero glow as template)
+- snow trail
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
