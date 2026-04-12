@@ -1,0 +1,17 @@
+<unittransformmods>
+    <transform>
+		<from>WallConnector</from>
+		<to>WallConnectorArcher</to>
+		<command>WallConnectorToArcher</command>
+	</transform>
+    <transform>
+		<from>WallConnector</from>
+		<to>WallConnectorCrusher</to>
+		<command>WallConnectorToCrusher</command>
+	</transform>
+    <transform>
+		<from>WallConnector</from>
+		<to>WallConnectorCharger</to>
+		<command>WallConnectorToCharger</command>
+	</transform>
+</unittransformmods>

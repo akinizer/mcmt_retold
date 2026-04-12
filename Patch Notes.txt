@@ -731,10 +731,19 @@
 - Susanoo: mythunit damage, 1 min, kitsune areaheal, chat notification
 
 24. More Containers, Trails, Dependants, Glows
-- containers: explosive containers, area containers
+- containers: explosive containers, area containers, gather boost containers
 - glows (anim xml, simdata, composite, prototaction): thundercharge glow, kitsunetrail glow 
 - trails (area danage container, vfx): weathersnow trail, poison trail, airbender / airflow trail, mist trail, fire trail, fireskull trail
 
+25. New Commands
+- WallConnectorToArcher: transforms a connector to an offensive connector, Toxoted RangedAttack, AsuraFireBallLeft anim
+    - WallConnectorArcher: offesive connector with a dependant attachment (Cheiroballista, AsuraFireBallLeft, AsuraFireBallRight, Toxotes etc.)
+
+- WallConnectorToCrusher: transforms a connector to an offensive connector, Cheiroballista RangedAttack, AsuraFireBallLeft anim
+    - WallConnectorCrusher: offesive connector with a dependant attachment (Cheiroballista, AsuraFireBallLeft, AsuraFireBallRight, Toxotes etc.)
+
+- WallConnectorToCharger: transforms a connector to an offensive connector, ChuNoKu RangedAttack, AsuraFireBallLeft anim
+    - WallConnectorCharger: offesive connector with a dependant attachment (Cheiroballista, AsuraFireBallLeft, AsuraFireBallRight, Toxotes etc.)
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
@@ -1289,7 +1298,7 @@ bragi (hero, god) -> orpheus model
 chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
 robots: 
     chaos drone (infect,selfdestruct,spawn onkill,crawler model,melee,anti-vehicle,amphibious,fast,light armor)
-drones:
+dependants:
     wallcorner -> catapult
 
 === ANTAGONISTS (Repurpose, Unused)

@@ -1,0 +1,32 @@
+<protounitcommandmods>
+    <protounitcommand>
+		<name>WallConnectorToArcher</name>
+		<icon>resources\shared\static_color\buildings\sentry_tower_icon.png</icon>
+		<associatedtech>WallConnectorToArcher</associatedtech>
+		<displaynameid>STR_TRANSFORM_TO_SENTRY_TOWER</displaynameid>
+		<rollovertextid>STR_TRANSFORM_TO_SENTRY_TOWER_LR</rollovertextid>
+		<transform></transform>
+		<unitcommand></unitcommand>
+		<researchonselected></researchonselected>
+	</protounitcommand>
+    <protounitcommand>
+		<name>WallConnectorToCrusher</name>
+		<icon>resources\shared\static_color\buildings\sentry_tower_icon.png</icon>
+		<associatedtech>WallConnectorToCrusher</associatedtech>
+		<displaynameid>STR_TRANSFORM_TO_SENTRY_TOWER</displaynameid>
+		<rollovertextid>STR_TRANSFORM_TO_SENTRY_TOWER_LR</rollovertextid>
+		<transform></transform>
+		<unitcommand></unitcommand>
+		<researchonselected></researchonselected>
+	</protounitcommand>
+    <protounitcommand>
+		<name>WallConnectorToCharger</name>
+		<icon>resources\shared\static_color\buildings\sentry_tower_icon.png</icon>
+		<associatedtech>WallConnectorToCharger</associatedtech>
+		<displaynameid>STR_TRANSFORM_TO_SENTRY_TOWER</displaynameid>
+		<rollovertextid>STR_TRANSFORM_TO_SENTRY_TOWER_LR</rollovertextid>
+		<transform></transform>
+		<unitcommand></unitcommand>
+		<researchonselected></researchonselected>
+	</protounitcommand>
+</protounitcommandmods>

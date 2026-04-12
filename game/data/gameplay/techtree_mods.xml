@@ -26,6 +26,10 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsAtlantean</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsAtlantean" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
+
+        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
       </effects>
     </tech>
 
@@ -51,6 +55,10 @@
          <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsGreek</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsGreek" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
+
+        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeNorse">
@@ -75,6 +83,10 @@
           <target type="ProtoUnit">Armory</target></effect>	
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsNorse" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">DwarvenArmory</target></effect>	
+
+        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeJapanese">
@@ -101,6 +113,10 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsJapanese</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsJapanese" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
+        
+        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeChinese">
@@ -129,6 +145,10 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsEgyptian</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsEgyptian" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
+
+        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
       </effects>
     </tech>
 
@@ -2707,7 +2727,7 @@
 		<cost resourcetype="Favor">55</cost>    
 		<effects>      
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">Nymph</target></effect>    
+          <target type="ProtoUnit">Nymph</target></effect> 
 		</effects>		
 	</tech>
   <tech name="MCMT_DivineNatureSpirits_I" mergeMode="add">
@@ -8458,4 +8478,30 @@
   <tech name="MythicAgeSusanoo" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_ITSUKUSHIMASHRINE_NAME"></effect></effects>
   </tech> 
+
+  <!-- RESEARCHABLE COMMANDS-->
+  <tech name="WallConnectorToArcher" type="Normal">
+		<cost resourcetype="Wood">150.0000</cost>
+		<cost resourcetype="Gold">100.0000</cost>
+		<researchpoints>25.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<flag>HideAllNotifications</flag>
+		<techtype>ResearchableCommand</techtype>
+	</tech>
+  <tech name="WallConnectorToCrusher" type="Normal">
+		<cost resourcetype="Wood">150.0000</cost>
+		<cost resourcetype="Gold">100.0000</cost>
+		<researchpoints>25.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<flag>HideAllNotifications</flag>
+		<techtype>ResearchableCommand</techtype>
+	</tech>
+  <tech name="WallConnectorToCharger" type="Normal">
+		<cost resourcetype="Wood">150.0000</cost>
+		<cost resourcetype="Gold">100.0000</cost>
+		<researchpoints>25.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<flag>HideAllNotifications</flag>
+		<techtype>ResearchableCommand</techtype>
+	</tech>
 </techtreemods>
