@@ -9238,8 +9238,7 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_I</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_II</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
-		<tech row="3" column="2">Baolei_BuildingAccels</tech>
-		
+		<tech row="3" column="2">Baolei_BuildingAccels</tech>		
 	</unit>
 	<unit name="Fortress">
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
@@ -9278,6 +9277,15 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
 	</unit>
 	<unit name="AsgadianHillFort">
+		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
+		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
+		
+		<tech row="3" column="2">AdvancedFortifications</tech>
+		<tech row="3" column="2">MCMT_AdvancedFortifications_I</tech>
+		<tech row="3" column="2">MCMT_AdvancedFortifications_II</tech>
+		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
+	</unit>
+	<unit name="Castle">
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
