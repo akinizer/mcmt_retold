@@ -1651,12 +1651,28 @@
 
 		<movementtype>amphibious</movementtype>
 		<flag>TieToWaterSurface</flag>
+		<tactics mergeMode="replace">mcmt_kitsune.tactics</tactics>
 		<protoaction>
      		<name stringid="STR_ABILITY_ILLUSION_SURPRISE">DelayedHamadryadTransform</name>
 			<type>DelayedTransform</type>
 			<active>0</active>
 			<modifyprotoid>KitsuneIllusion</modifyprotoid>
 			<transformskipplacementpush>1</transformskipplacementpush>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Divine">5.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<minrange>8.000000</minrange>
+			<maxrange>14.000000</maxrange>
+			<projectile>ProjectileBallOfFire</projectile>
+			<impacteffect>effects\impacts\asura_fire_ball</impacteffect>
+			<displayednumberprojectiles>1</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+			<active>0</active>
 		</protoaction>
 	</unit>
 	<unit name="KitsuneIllusion">
@@ -20480,178 +20496,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>MilitaryUnit</unittype>
 		<unittype>HumanSoldier</unittype>
-		<unittype>AbstractInfantry</unittype>
-		<unittype>InfantryLineUpgraded</unittype>
-		<unittype>AbstractEmpowerer</unittype>
-		<unittype>AbstractHealer</unittype>
-
-		<unittype>LogicalTypeValidBoltTarget</unittype>
-		<unittype>LogicalTypeConvertsHerds</unittype>
-		<unittype>LogicalTypeEarthquakeAttack</unittype>
-		<unittype>LogicalTypeAffectedByRestoration</unittype>
-		<unittype>LogicalTypeValidMeteorTarget</unittype>
-		<unittype>LogicalTypeValidTornadoAttack</unittype>
-		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
-		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
-		<unittype>LogicalTypeValidSpyTarget</unittype>
-		<unittype>LogicalTypeValidFrostTarget</unittype>
-		<unittype>LogicalTypeValidTraitorTarget</unittype>
-		<unittype>LogicalTypeHealed</unittype>
-		<unittype>LogicalTypeValidShockwaveTarget</unittype>
-		<unittype>LogicalTypeNorseSoldierThatBuilds</unittype>
-		<unittype>LogicalTypeValidEidolon</unittype>
-		
-		<!-- General Build Accel -->
-		<train row="0" column="0">House</train>
-		<train row="0" column="4">Temple</train>
-		<train row="0" column="5">Dock</train>
-		<train row="1" column="1">MilitaryAcademy</train>
-		<train row="1" column="2">Stable</train>		
-		<train row="1" column="3">ArcheryRange</train>
-		<train row="1" column="4">Market</train>
-		<train row="1" column="5">Armory</train>
-		<train row="2" column="0">TownCenter</train>
-		<train row="255" column="0">VillageCenter</train>
-		<train row="2" column="1">WallConnector</train>
-		<train row="255" column="255">WallShort</train>
-		<train row="255" column="255">WallMedium</train>
-		<train row="255" column="255">WallLong</train>
-		<train row="2" column="2">SentryTower</train>
-		<train row="2" column="3">Fortress</train>
-		<train row="2" column="5">Wonder</train>	
-
-		<train row="1" column="1">Longhouse</train>
-		<train row="1" column="2">GreatHall</train>
-		<train row="1" column="5">DwarvenArmory</train>
-		<train row="2" column="3">HillFort</train>
-
-		<train row="1" column="1">Barracks</train>
-		<train row="1" column="2">SiegeWorks</train>
-		<train row="1" column="3">MonumentToGods</train>
-		<train row="1" column="3">MonumentToPharaohs</train>
-		<train row="1" column="3">MonumentToPriests</train>
-		<train row="1" column="3">MonumentToSoldiers</train>
-		<train row="1" column="3">MonumentToVillagers</train>
-		<train row="2" column="3">MigdolStronghold</train>
-		<train row="2" column="4">Lighthouse</train>
-
-		<train row="0" column="0">Manor</train>
-		<train row="1" column="1">MilitaryBarracks</train>
-		<train row="1" column="2">CounterBarracks</train>
-		<train row="2" column="3">Palace</train>
-		<train row="2" column="4">MirrorTower</train>
-		<train row="3" column="2">SkyPassage</train>
-
-		<train row="1" column="1">MilitaryCamp</train>
-		<train row="1" column="2">ImperialAcademy</train>
-		<train row="1" column="3">MachineWorkshop</train>
-		<train row="2" column="3">Baolei</train>
-
-		<train row="1" column="1">Dojo</train>
-		<train row="1" column="2">StableJapanese</train>
-		<train row="1" column="3">Guardhouse</train>
-		<train row="2" column="3">Castle</train>
-
-		<tech row="0" column="1">MCMT_NymphMender</tech>
-		<tech row="2" column="2">MCMT_NymphCharmer</tech>
-		<tech row="2" column="3">MCMT_NymphOracle</tech>
-
-		<tech row="2" column="5">MCMT_DivineNatureSpirits_I</tech>
-		<tech row="2" column="5">MCMT_DivineNatureSpirits_II</tech>
-		<tech row="2" column="5">MCMT_DivineNatureSpirits_III</tech>
-		
-		<flag>CollidesWithProjectiles</flag>
-		<flag>CorpseDecays</flag>
-		<flag>ShowGarrisonButton</flag>
-		<flag>DontRotateObstruction</flag>
-		<flag>ObscuredByUnits</flag>
-		<flag>MilitaryCommands</flag>
-		<flag>CommonCommands</flag>
-		<flag>CreateUnitGroupAutomatically</flag>
-		<flag>CanAutoHeal</flag>
-		<flag>HasDefaultAttack</flag>
-		<tactics>atlantean_nymph.tactics</tactics>
-		<protoaction>
-			<name>HandAttack</name>
-			<rof>2.5000000</rof>
-			<damage type="Hack">7.000000</damage>
-			<damagebonus type="HumanSoldier">1.300000</damagebonus>
-			<maxrange>1.250000</maxrange>
-			<defaultattack>1</defaultattack>
-		</protoaction>
-		<protoaction>
-			<name>Build</name>
-			<type>Build</type>
-			<maxrange>0.2</maxrange>
-			<anim>Build</anim>
-			<rate type="Building">1.000000</rate>
-			<typedmaxrange type="Dock">2.0</typedmaxrange>
-		</protoaction>
-		<protoaction>
-			<name>Repair</name>
-			<type>Repair</type>
-			<maxrange>0.2</maxrange>
-			<anim>Build</anim>
-			<rate type="AbstractWall">0.2000</rate>
-			<rate type="Building">0.4000</rate>
-			<typedmaxrange type="Dock">2.0</typedmaxrange>
-		</protoaction>
-		<protoaction>
-			<name>HeroGlowOnSelf</name>
-			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
-			<persistent>1</persistent>
-			<modelattachment>vfx\glow\thundercharge_glow.xml</modelattachment>
-			<modelattachmentbone>Spine</modelattachmentbone>
-		</protoaction>
-	</unit>
-	<unit name="Nymph">
-		<displaynameid>STR_UNIT_NYMPH_NAME</displaynameid>
-		<shortrollovertextid>STR_UNIT_NYMPH_SR</shortrollovertextid>
-		<rollovertextid>STR_UNIT_NYMPH_LR</rollovertextid>
-
-		<icon>resources\tech\nymph.png</icon>
-		<animfile>mcmt\units\nymph\nymph.xml</animfile>
-		<soundsetfile>japanese\female.xml</soundsetfile>
-
-		<obstructionradiusx>0.4900</obstructionradiusx>
-		<obstructionradiusz>0.4900</obstructionradiusz>
-		<impacttype>Unarmoured</impacttype>
-		<unitaitype>HandCombative</unitaitype>
-		<movementtype>land</movementtype>
-		<turnrate>18.0000</turnrate>
-		<initialhitpoints>90.0000</initialhitpoints>
-		<maxhitpoints>90.0000</maxhitpoints>
-		<trainpoints>14.0000</trainpoints>
-		<weightclass>5</weightclass>
-		<populationcount>1</populationcount>
-		<maxvelocity>3.6000</maxvelocity>
-		<los>16.0000</los>
-		<cost resourcetype="Food">80.0000</cost>
-		<cost resourcetype="Favor">1.0000</cost>
-		<armor type="Hack" value="0.3500"></armor>
-		<armor type="Pierce" value="0.0500"></armor>
-		<armor type="Crush" value="0.9900"></armor>
-
-		<buildlimit>3</buildlimit>
-		
-		<unittype>LogicalTypeNeededForVictory</unittype>
-		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
-		<unittype>LogicalTypeLandMilitary</unittype>
-		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
-		<unittype>LogicalTypeGarrisonInShips</unittype>
-		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
-		<unittype>LogicalTypeVillagersAttack</unittype>
-		<unittype>LogicalTypeHandUnitsAttack</unittype>
-		<unittype>LogicalTypeRangedUnitsAttack</unittype>
-		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
-		<unittype>CountsTowardMilitaryScore</unittype>
-		
-		<unittype>Unit</unittype>
-		<unittype>UnitClass</unittype>
-		<unittype>MilitaryUnit</unittype>
-		<unittype>HumanSoldier</unittype>
-		<unittype>AbstractInfantry</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
 		<unittype>AbstractEmpowerer</unittype>
 		<unittype>AbstractHealer</unittype>
@@ -20767,6 +20611,14 @@
 			<rate type="Building">0.4000</rate>
 			<typedmaxrange type="Dock">2.0</typedmaxrange>
 		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\thundercharge_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>		
 	</unit>
 	<unit name="PansChosen">
 		<displaynameid>STR_UNIT_SATYR_NAME</displaynameid>

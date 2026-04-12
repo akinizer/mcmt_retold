@@ -1,0 +1,45 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+		<defaultattack>1</defaultattack>
+	</action>
+    <action>
+        <name stringid="STR_ACTION_FIERYFLAMEATTACK">RangedAttack</name>
+        <type>Attack</type>
+        <attackaction>1</attackaction>
+        <rangedlogic>1</rangedlogic>
+        <anim>HandAttack</anim>
+        <accuracy>0.8</accuracy>
+        <maxspread>5.0</maxspread>
+        <spreadfactor>0.25</spreadfactor>
+        <trackrating>1.0</trackrating>
+        <impacteffect>effects\impacts\pierce</impacteffect>
+        <rate type="All">1.0</rate>
+    </action>
+	<action>
+		<name stringid="STR_ACTION_SPEED_BOOST">SpeedBoost</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>Unit</modifyabstracttype>
+		<modifyself>1</modifyself>
+		<nostack>1</nostack>
+		<includeally>1</includeally>
+		<persistent>1</persistent>
+		<modelattachment>japanese\units\myth\kitsune\kitsune_aura_trail.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>Default
+        <action priority="100">RangedAttack</action>
+        <action priority="90">HandAttack</action>
+        <action>SpeedBoost</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+        <attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

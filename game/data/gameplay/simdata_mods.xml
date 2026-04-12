@@ -25,6 +25,30 @@
 			</animinfo>
 		</animations>
 	</animxml>
+	
+	<animxml file="vfx\glow\kitsunetrail_glow.xml">
+		<visuallogics>
+			<visualmap>
+				<visualnode>
+					<composite>vfx\glow\kitsunetrail_glow</composite>
+					<logic>
+						<cinematic>normal</cinematic>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<null>NullVisual</null>
+					<logic>
+						<cinematic>cinematic</cinematic>
+					</logic>
+				</visualnode>
+			</visualmap>
+		</visuallogics>
+		<animations>
+			<animinfo>
+				<name>Idle</name>
+			</animinfo>
+		</animations>
+	</animxml>
 
 	<!-- encampment units -->
 
@@ -4917,16 +4941,6 @@
 					<version>
 						<file>spc\units\reginleif\anim\reginleif_death_a</file>
 						<duration>1.86667</duration>
-						<tags>
-							<tag>
-								<type>SpecificSoundSet</type>
-								<position>0.10000</position>
-								<properties>
-									<checkowner>1</checkowner>
-									<set>DeathHeroSpc</set>
-								</properties>
-							</tag>
-						</tags>
 					</version>
 				</versions>
 			</animinfo>

@@ -8257,14 +8257,17 @@
         <target type="ProtoUnit">Raiju</target></effect>
       <effect type="Data" action="SpeedBoost" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Raiju</target></effect>
-      <effect type="Data" amount="3.0" subtype="ModifyStackLimit" action="SpeedBoost" relativity="Absolute">
+      <effect type="Data" amount="3.0" subtype="ModifyStackLimit" action="SpeedBoost" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Raiju</target></effect>
     </effects>
 	</tech>
   <tech name="BurningMalevolence">
     <effects>
-       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" attachbone="spine" relativity="Assign" mergeMode="add">
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" attachbone="spine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Asura</target></effect>
+
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Kitsune</target></effect>
     </effects>
   </tech>
   <tech name="RestlessArmy">
@@ -8303,9 +8306,6 @@
   <tech name="WisdomOfNine">
     <effects>
       <effect type="Data" action="HandAttack" amount="0.9" subtype="RateOfFire" relativity="Percent" mergeMode="add">
-				<target type="ProtoUnit">Kitsune</target></effect>
-
-      <effect type="Data" subtype="RechargeTime" amount="6.00" relativity="Assign">
 				<target type="ProtoUnit">Kitsune</target></effect>
 
       <effect type="Data" action="DelayedHamadryadTransform" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">

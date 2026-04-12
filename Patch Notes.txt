@@ -566,6 +566,7 @@
 - Kamaitachi: AbstractSamurai
 - Tengu: AbstractSamurai, AbstractInfantry, InfantryLineUpgraded
 - Kitsune: amphibious
+    - FieryFireAttack: tech-enabled, ranged attack, divine damage, projectile (fireball), impact (asuraballoffire)
 - Wanyudo: amphibious
 - Umibozu: teleport attack throws FishingShip
 
@@ -728,9 +729,9 @@
 - Susanoo: mythunit damage, 1 min, kitsune areaheal, chat notification
 
 24. More Containers, Trails, Dependants, Glows
-- explosive containers, area containers
-- thundercharge glow: anim xml, simdata, composite, prototaction (hero glow as template)
-- snow trail
+- containers: explosive containers, area containers
+- glows (anim xml, simdata, composite, prototaction): thundercharge glow, kitsunetrail glow 
+- trails (area danage container, vfx): weathersnow trail, poison trail, airbender / airflow trail, mist trail, fire trail, fireskull trail
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
