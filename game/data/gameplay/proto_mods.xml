@@ -9521,7 +9521,7 @@
 	<unit name="WallConnectorArcher">
 		<displaynameid>STR_BLD_WOODEN_WALL_NAME</displaynameid>
 		<rollovertextid>STR_BLD_WOODEN_WALL_LR</rollovertextid>
-		<shortrollovertextid>STR_BLD_WOODEN_WALL_SR</shortrollovertextid>
+		<shortrollovertextid>STR_BLD_WALL_FIREPORT_WALLARCHER_SR</shortrollovertextid>
 		<editornameid>STR_BLD_WOODEN_WALL_CONNECTOR_EDT_NAME</editornameid>
 		<icon>resources\shared\static_color\buildings\wooden_wall_icon.png</icon>
 		<animfile culture="greek">greek\buildings\wall\wall_connector.xml</animfile>
@@ -9591,7 +9591,7 @@
 	<unit name="WallConnectorCrusher">
 		<displaynameid>STR_BLD_WOODEN_WALL_NAME</displaynameid>
 		<rollovertextid>STR_BLD_WOODEN_WALL_LR</rollovertextid>
-		<shortrollovertextid>STR_BLD_WOODEN_WALL_SR</shortrollovertextid>
+		<shortrollovertextid>STR_BLD_WALL_FIREPORT_WALLCRUSHER_SR</shortrollovertextid>
 		<editornameid>STR_BLD_WOODEN_WALL_CONNECTOR_EDT_NAME</editornameid>
 		<icon>resources\shared\static_color\buildings\wooden_wall_icon.png</icon>
 		<animfile culture="greek">greek\buildings\wall\wall_connector.xml</animfile>
@@ -9661,7 +9661,7 @@
 	<unit name="WallConnectorCharger">
 		<displaynameid>STR_BLD_WOODEN_WALL_NAME</displaynameid>
 		<rollovertextid>STR_BLD_WOODEN_WALL_LR</rollovertextid>
-		<shortrollovertextid>STR_BLD_WOODEN_WALL_SR</shortrollovertextid>
+		<shortrollovertextid>STR_BLD_WALL_FIREPORT_WALLCHARGER_SR</shortrollovertextid>
 		<editornameid>STR_BLD_WOODEN_WALL_CONNECTOR_EDT_NAME</editornameid>
 		<icon>resources\shared\static_color\buildings\wooden_wall_icon.png</icon>
 		<animfile culture="greek">greek\buildings\wall\wall_connector.xml</animfile>

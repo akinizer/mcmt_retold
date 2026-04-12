@@ -987,6 +987,21 @@ ID = "STR_ABILITY_ILLUSION_SURPRISE"   ;   Str = "Illusion Surprise"
 ID = "STR_ABILITY_SPECIALATTACK"   ;   Str = "Special Attack"
 ID = "STR_ABILITY_SPECIALATTACK_LR"   ;   Str = "This unit has a special ability that recharges"
 
+// COMMAND TECHS
+ID = "STR_BLD_WALL_FIREPORT_WALLARCHER_SR"   ;   Str = "Basic Archer Fireport enabled wall"
+ID = "STR_BLD_WALL_FIREPORT_WALLCRUSHER_SR"   ;   Str = "Heavy Archer Fireport enabled wall"
+ID = "STR_BLD_WALL_FIREPORT_WALLCHARGER_SR"   ;   Str = "Rapid Archer Fireport enabled wall"
+
+ID = "STR_TRANSFORM_TO_WALLARCHER"   ;   Str = "Archer Fireport"
+ID = "STR_TRANSFORM_TO_WALLARCHER_LR"   ;   Str = "Enable fireports for basic archers"
+
+ID = "STR_TRANSFORM_TO_WALLCRUSHER"   ;   Str = "Crusher Fireport"
+ID = "STR_TRANSFORM_TO_WALLCRUSHER_LR"   ;   Str = "Enable fireports for heavy archers"
+
+ID = "STR_TRANSFORM_TO_WALLCHARGER"   ;   Str = "Charger Fireport"
+ID = "STR_TRANSFORM_TO_WALLCHARGER_LR"   ;   Str = "Enable fireports for rapid archers"
+
+
 // GOD POWERS
 ID = "STR_POWER_ETERNALMOON"   ;   Str = "Eternal Moon"
 ID = "STR_POWER_ETERNALMOON_LR"   ;   Str = "Tsukuyomi blesses human units with power of moon for a duration"

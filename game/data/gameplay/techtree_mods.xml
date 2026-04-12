@@ -8489,16 +8489,16 @@
 		<techtype>ResearchableCommand</techtype>
 	</tech>
   <tech name="WallConnectorToCrusher" type="Normal">
-		<cost resourcetype="Wood">150.0000</cost>
-		<cost resourcetype="Gold">100.0000</cost>
+		<cost resourcetype="Wood">125.0000</cost>
+		<cost resourcetype="Gold">150.0000</cost>
 		<researchpoints>25.0000</researchpoints>
 		<status>UNOBTAINABLE</status>
 		<flag>HideAllNotifications</flag>
 		<techtype>ResearchableCommand</techtype>
 	</tech>
   <tech name="WallConnectorToCharger" type="Normal">
-		<cost resourcetype="Wood">150.0000</cost>
-		<cost resourcetype="Gold">100.0000</cost>
+		<cost resourcetype="Wood">155.0000</cost>
+		<cost resourcetype="Gold">125.0000</cost>
 		<researchpoints>25.0000</researchpoints>
 		<status>UNOBTAINABLE</status>
 		<flag>HideAllNotifications</flag>
