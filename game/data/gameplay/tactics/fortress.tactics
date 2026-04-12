@@ -63,7 +63,6 @@
         <damagebonus type="MythUnit">2.000000</damagebonus>
         <minrange>4.000000</minrange>
         <maxrange>20.000000</maxrange>
-        <projectile>ProjectileChainLightning</projectile>
         <displayednumberprojectiles>3</displayednumberprojectiles>
         <autoretarget>1</autoretarget>
         <canattackground>1</canattackground>
