@@ -8253,11 +8253,13 @@
 	</tech>
   <tech name="ThunderousPresence" orderhint="3">
 		<effects>
-      <effect type="Data" protoaction="IdleSpeedBonus" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Raiju</target></effect>
+      <effect type="Data" protoaction="LonghouseSpeedBonus" amount="1.00" subtype="ProtoActionAdd" unittype="IdleSpeedBonus" relativity="Assign">
+				<target type="ProtoUnit">Raiju</target></effect>
       <effect type="Data" action="SpeedBoost" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Raiju</target></effect>
       <effect type="Data" amount="3.0" subtype="ModifyStackLimit" action="SpeedBoost" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Raiju</target></effect>
+      <effect type="Data" action="ChargedHandAttack" amount="5.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Raiju</target></effect>
     </effects>
 	</tech>

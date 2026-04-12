@@ -689,7 +689,7 @@
 - windsickles: kamaitachi chargedmeleeattack applies bleed
 - condemned soul: ghost type units deal area damage, increased handattack/rangedattack
 - asceticpractices: tengo gains dashattack (buildings)
-- thunderouspresence: raiju grants speedbonus to nearby myth units, stackable 3 times
+- thunderouspresence: raiju grants a lesser speedbonus to nearby myth units, stackable 3 times, enables raiju idlespeed boost, increases areadamage range of chargedhandattack ability
 - burningmalevolvence: asura handattacks apply vfxfire effect, enables kitsune fieryfireattack
 - deadlyrage: oni handattack also burns enemies, asura damage increase
 - restlessarmy: projectileonmoraki explodes on impact

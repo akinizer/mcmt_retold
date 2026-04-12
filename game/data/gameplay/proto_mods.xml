@@ -1637,7 +1637,7 @@
 
 			<maxrange>12</maxrange>
 			<modifytype>Speed</modifytype>
-			<modifymultiplier>1.05</modifymultiplier>
+			<modifymultiplier>1.01</modifymultiplier>
 			<modifystacklimit>1</modifystacklimit>
 			<active>0</active>		
 		</protoaction>
