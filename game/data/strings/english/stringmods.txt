@@ -583,7 +583,7 @@ ID = "STR_UNIT_MEDUSA_NAME"   ;   Str = "Gorgon"
 ID = "STR_UNIT_MEDUSA_MATRIARCH_NAME"   ;   Str = "Gorgon Matriarch"
 
 ID = "STR_UNIT_SHRINE_PRIEST_NAME"   ;   Str = "Shrine Priest (Hero)"
-ID = "STR_UNIT_SHRINE_PRIEST_NAME"   ;   Str = "Shrine Priest (Hero)"
+ID = "STR_UNIT_RAIJU_TEMPEST_NAME"   ;   Str = "Raiju Tempest"
 
 // GREEK SPECIAL UNITS
 ID = "STR_UNIT_AMAZON_MARKSMAN_NAME"   ;   Str = "Amazon Marksman"

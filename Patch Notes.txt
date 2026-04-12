@@ -794,8 +794,6 @@ Implemented & Unused Models (soldiers & leaders)
 - Watermill: 
     - visualscale, <flag>SnapPlacement</flag>
 - Dojo, Guardhouse, Stable: visualscale
-- Castle:
-    - visualscale, advancedfortificationsI-II-III
 
 * ATTACK SWITCH TECHS
     * Samurai
@@ -979,9 +977,6 @@ Satyr + HandAttack (anim)
 - Muspell Settlement -> piercearmor+, projectile fireball, vfxfire, summon firelings (fire giant, rescale, melee, rof, hackdamage)
 - Lordly Settlement -> Summon Bodyguards (huskarl, infantry hero, x5, hp+, piercearmor+, bonus vs giants), Summon rof, los+
 
-* Captains
-- Military Upgrades on accel
-
 * Major Gods - Wonder Techs
 - KRONOS: 
     - titanomachy: myth units, defense, hp+
@@ -1010,50 +1005,11 @@ Satyr + HandAttack (anim)
     - Guardian of Harvests: summon Holo, gretahalberd model, transform lykaonwolf, aura farm gatherrate+
 
 === DISMOUNT TECHS
-    - rate: 0.85
-    * japanese soldier (code of honor)
-    - NaginataRider: spawn YariSpearman x1
-    - YumiHorseArcher: spawn YumiArcher x1
-    - Daimyo: spawn SamuraiHero x1 -> new special hero
-    - Shogun: spawn SamuraiHero x1 -> new special hero
-    - Bushi: spawn SamuraiHero x1 -> new special hero
     * chinese soldier (tactical advance)
     - TerracottaRider: spawn TerracottaInfantry x1 -> new special unit
     - XuanWu: spawn serpent / serpentsea x1
-    - JianZiya: spawn Sage x1
-    - WhiteHorseCavalry: spawn GeHalberdier x1 
     * greek soldier (footsoldier superiority)
-    - Hippeus: spawn Hypaspist x1 
-    - Prodromos: spawn Militia x1 
-    - Kataskopos: spawn VillagerGreek x1 
-    - Hetairos: spawn Hoplite x1 
-    - Achilles: spawn Regent / AchillesDismounted / RoyalKnight x1 
-    - Harpy: spawn HarpyGrounded -> new special unit
-    * egyptian soldier (desert's children)
-    - ChariotArcher: spawn Slinger x1 
-    - CamelRider: spawn Spearman x1 
-    * norse soldier (viking resilience)
-    - RaidingCavalry -> spawn Hirdman x1
-    - Jarl: spawn HuskarlHero x1 -> new special unit
-    - PortableRam: spawn Huskarl x2
-    * atlantean soldier (unyielding resolve)
-    - Turma: spawn Arcus x1
-    - Contairus: spawn Murmillo x1
-
-=== EXPLOSIVE TECHS
-    * mechanicals
-    - Ship,MechanicalOxCaravan
-    - FireSiphon,Cheiroballista,PortableRam,OxCart,SiegeTower,Helepolis,FireArcher,ChuKoNu
-    - Automaton,Colossus,BattleBoar,Wanyudo
-    - Onmyoji
-    * infernal
-    - FireGiant,Promethean,Fafnir,Nidhogg,Phoenix,PhoenixEgg,PhoenixFromEgg,GauntletChaosFlamingMonkey,AnimalOfSet
-    - Qiling,Taotie,Asura,Kitsune,Shinigami
-    * structures
-    - dropsites,abstracttower,abstractfortress
-    * special
-    - nukecannon
-
+    - Kataskopos: spawn VillagerGreek x1 / barbarian
 
 === COMPLEX REWORKS
 * Servitude Techs
@@ -1136,50 +1092,20 @@ Satyr + HandAttack (anim)
         - Slayer of HumanSoldier vs Titan
 
 === EVEN MORE COMPLEX REWORKS: 
-* GROUP TRAIN TECHS
-    * egyptan demigod
-    - createunit monumentgods
-        - son of ra
-            - chargedattack, continous
-            - projectilepetsuchoslazer, kastorcharisma
-            - tech-enabled ability
-        - son of horus
-            - meleeattack, fast
-            - durable, workrate
-            - tech-enabled ability
-        - son of set
-            - chargedrangedattack, slow
-            - fireball, areadamage, burn
-            - tech-enabled ability
-    * japanese soldier
-    - createunit samurai x5 infinitetech fortress
-    - createunit yumiarcher x5 infinitetech fortress
-    - createunit yarispearman x5 infinitetech fortress
-    - createunit shinobi x3 infinitetech fortress	
-    - createunit naginatarider x8 infinitetech fortress
-    * chinese soldier
-    - createunit daoswordsman x5 infinitetech fortress
-    - createunit wuzujavelineer x5 infinitetech fortress
-    - createunit firearcher x3 infinitetech fortress
-    - createunit whitehorsecavalry x8 infinitetech fortress
-    * greek soldier
-    - createunit hoplite x8 infinitetech fortress
-    - createunit hypaspist x5 infinitetech fortress
-    - createunit hippeus x5 infinitetech fortress
-    - createunit myrmidon/gastraphetoros/hetairos/harpymyth x5 infinitetech fortress
-    * egyptian soldier
-    - createunit spearman x4 infinitetech fortress
-    - createunit slinger x5 infinitetech fortress
-    - createunit camelrider x8 infinitetech fortress
-    * norse soldier
-    - createunit hersir x4 infinitetech fortress
-    - createunit godi x6 infinitetech fortress
-    - createunit jarl x5 infinitetech fortress
-    - createunit huskarl x8 infinitetech fortress
-    * atlantean soldier
-    - createunit murmillo x6 infinitetech fortress
-    - createunit destroyer x5 infinitetech fortress
-    - createunit contairus x8 infinitetech fortress
+* egyptan demigod
+- createunit monumentgods
+    - son of ra
+        - chargedattack, continous
+        - projectilepetsuchoslazer, kastorcharisma
+        - tech-enabled ability
+    - son of horus
+        - meleeattack, fast
+        - durable, workrate
+        - tech-enabled ability
+    - son of set
+        - chargedrangedattack, slow
+        - fireball, areadamage, burn
+        - tech-enabled ability
 
 === TRADE UPGRADES
     <tech name="LeatherWrapsUpgrade" orderhint="0">

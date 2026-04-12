@@ -8264,6 +8264,8 @@
         <target type="ProtoUnit">Raiju</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="ChargedHandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Raiju</target></effect>
+
+      <effect type="SetName" proto="Raiju" newname="STR_UNIT_RAIJU_TEMPEST_NAME"></effect>
     </effects>
 	</tech>
   <tech name="BurningMalevolence">
