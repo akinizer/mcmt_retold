@@ -5295,4 +5295,62 @@
 			</animinfo>
 		</animations>
 	</animxml>
+
+	<!-- abstractfortress building reworks -->
+	<animxml file="greek\buildings\fortress\fortress.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>LightningAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>misc\dummy\dummy_animation</file>
+						<duration>1.20833</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.20000</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.20000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SonOfOsirisBolt</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+	<animxml file="japanese\buildings\castle\castle.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>LightningAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>misc\dummy\dummy_animation</file>
+						<duration>1.20833</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.20000</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.20000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SonOfOsirisBolt</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 </simdatabasemods>

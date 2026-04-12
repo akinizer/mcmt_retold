@@ -664,7 +664,8 @@
 - TenFistSword:
     - AbstractSamurai: VFXLightningWeaponsUnitImpact
 - DivinePrefecture: 
-    - Fortress: BonusDamage Myth
+    - AbstractFortress: BonusDamage Myth
+    - Fortress, Castle: Enable LightningAttack
 - MechanicalArtisans:
     - SiegeWeapon, Warship: MaximumRange+, LOS+
     - Fortress: ROF+

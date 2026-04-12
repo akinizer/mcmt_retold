@@ -1,0 +1,106 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_BLD_ATK">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<scalebycontainedunittype>
+			<rate type="Unit">0.05</rate>
+		</scalebycontainedunittype>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_BLD_ATK">FlyingUnitAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<hidefromstats>1</hidefromstats>
+		<scalebycontainedunittype>
+			<rate type="Unit">0.05</rate>
+		</scalebycontainedunittype>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="AbstractFlyingUnit">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_BLD_ATK">HandAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<anim>HandAttack</anim>
+		<impacteffect>effects\impacts\hack</impacteffect>
+		<scalebycontainedunittype>
+			<rate type="Unit">0.05</rate>
+		</scalebycontainedunittype>
+		<rate type="All">1.0</rate>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_RANGED">LightningAttack</name>
+		<type>ChainAttack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>LightningAttack</anim>
+		<projectile>ProjectileChainLightning</projectile>
+		<accuracy>1.0</accuracy>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+        <scalebycontainedunittype>
+			<rate type="Unit">0.01</rate>
+		</scalebycontainedunittype>
+		<rate type="All">1.0</rate>
+
+        <rof>0.900000</rof>
+        <damage type="Divine">10.000000</damage>
+        <damagebonus type="HumanSoldier">2.000000</damagebonus>
+        <damagebonus type="MythUnit">2.000000</damagebonus>
+        <minrange>4.000000</minrange>
+        <maxrange>20.000000</maxrange>
+        <projectile>ProjectileChainLightning</projectile>
+        <displayednumberprojectiles>3</displayednumberprojectiles>
+        <autoretarget>1</autoretarget>
+        <canattackground>1</canattackground>
+        
+        <active>0</active>
+	</action>
+	<action>
+		<name>ArgivePatronageMyrmidon</name>
+		<type>Maintain</type>
+		<rate type="Myrmidon">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+		<maintaintrainpoints>60.0</maintaintrainpoints>
+	</action>
+	<action>
+		<name>ArgivePatronageAmazonArcher</name>
+		<type>Maintain</type>
+		<rate type="AmazonArcher">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+		<maintaintrainpoints>60.0</maintaintrainpoints>
+	</action>
+	<action>
+		<name>AreaHeal</name>
+		<active>0</active>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>LogicalTypeHealed</modifyabstracttype>
+		<modifyflyingunits>1</modifyflyingunits>
+		<persistent>1</persistent>
+		<modifytype>HealRate</modifytype>
+		<modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>Default
+        <action priority="100">FlyingUnitAttack</action>
+        <action priority="90">LightningAttack</action>
+        <action priority="80">RangedAttack</action>
+        <action priority="70">HandAttack</action>
+        <action>ArgivePatronageMyrmidon</action><action>ArgivePatronageAmazonArcher</action><action>AreaHeal</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype></tactic>
+</tactics>

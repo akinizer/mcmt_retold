@@ -8056,6 +8056,10 @@
 		<effects>
       <effect type="Data" action="RangedAttack" amount="1.10" subtype="Damagebonus" unittype="MythUnit" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" action="LightningAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Castle</target></effect>
+      <effect type="Data" action="LightningAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Fortress</target></effect>
 		</effects>
 	</tech>
 <tech name="MechanicalArtisans">
@@ -8261,6 +8265,10 @@
 				<target type="ProtoUnit">Raiju</target></effect>
       <effect type="Data" action="ChargedHandAttack" amount="5.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Raiju</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Raiju</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="ChargedHandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Raiju</target></effect>
     </effects>
 	</tech>
   <tech name="BurningMalevolence">
