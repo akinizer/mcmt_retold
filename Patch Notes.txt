@@ -572,12 +572,13 @@
 
 * Infantry, Samurai, Archer, Cavalry
 - popcosts 1 or 2
-- Bushi: AbstractArcher, AbstractInfantry, InfantryLineUpgraded
+- Bushi: AbstractSamurai, ArcherLineUpgraded, InfantryLineUpgraded
+    - Promxity: switches to HandAttack, lesser hack damage, lesser bonusdamage vs mythunit, anim swing bow
 - YumiArcher: AbstractArcher
 - YumiHorseArcher: AbstractArcher
 - OnnaMusha: AbstractSamurai, InfantryLineUpgraded
-- Daimyo: AbstractSamurai, AbstractInfantry, InfantryLineUpgraded
-- Shogun: AbstractSamurai, AbstractInfantry, InfantryLineUpgraded
+- Daimyo: AbstractSamurai, InfantryLineUpgraded
+- Shogun: AbstractSamurai, InfantryLineUpgraded
 
 * Worker
 - VillagerJapanese: Temple removed from build accel

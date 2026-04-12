@@ -1805,19 +1805,31 @@
 			<throw>1</throw>
 		</protoaction>
 	</unit>
-	<!-- TODO
-	<unit name="Raiju"></unit> teleport ability
-
-	<unit name="Jorogumo"></unit> caladria ability
-	<unit name="GauntletChaosFlamingMonkey"></unit> 
-	-->
 
     <!-- Japanese Military Units-->
 	<unit name="Bushi">
 		<unittype mergeMode="add">AbstractSamurai</unittype>
-		<unittype mergeMode="add">AbstractInfantry</unittype>
 		<unittype mergeMode="add">ArcherLineUpgraded</unittype>
 		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
+		<tactics mergeMode="replace">global_infantry_proximitymodes.tactics</tactics>
+		<protoaction mergeMode="add">
+			<name>HandAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagebonus type="MythUnit">1.750000</damagebonus>
+			<damagebonus type="AbstractInfantry">1.250000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction mergeMode="replace">
+			<name>RangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Pierce">7.000000</damage>
+			<damagebonus type="MythUnit">8.000000</damagebonus>
+			<minrange>3.000000</minrange>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+			<defaultattack>1</defaultattack>
+		</protoaction>
 	</unit>
 	<unit name="YumiArcher">
 		<unittype mergeMode="add">ArcherLineUpgraded</unittype>
@@ -1831,12 +1843,10 @@
 	</unit>
 	<unit name="Daimyo">
 		<unittype mergeMode="add">AbstractSamurai</unittype>
-		<unittype mergeMode="add">AbstractInfantry</unittype>
 		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
 	</unit>
 	<unit name="Shogun">
 		<unittype mergeMode="add">AbstractSamurai</unittype>
-		<unittype mergeMode="add">AbstractInfantry</unittype>
 		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
 	</unit>
 	

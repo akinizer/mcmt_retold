@@ -1,0 +1,21 @@
+<animfile validation="strict">
+    <attachment>Arrow<include>shared\units\attachments\arrow\arrow.xml</include></attachment>
+    <attachment>Helm<component>ModelComp<assetreference type="TMModel"><file>japanese\units\hero\bushi\bushi_helm</file><materialvariant index="3"></materialvariant></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+    <attachment>RangedWeapon<component>ModelComp<assetreference type="TMModel"><file>japanese\units\attachments\yumi\yumi_j_upgrade3</file><materialvariant index="3"></materialvariant></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+    <attachment>HeroGlow<include>vfx\glow\hero_glow.xml</include></attachment>
+    <attachment>HeroGlowRing<include>vfx\glow\hero_glow_ring.xml</include></attachment>
+    <attachment>HeroBirth<include>vfx\glow\hero_birth.xml</include></attachment>
+    <attachment>HeroDeath<include>vfx\glow\lesser_hero_death.xml</include></attachment>
+    <component>ModelComp<assetreference type="TMModel"><file>japanese\units\hero\bushi\bushi</file><materialvariant index="3"></materialvariant></assetreference><attach name="Helm" attachpoint="helm"></attach><attach name="RangedWeapon" attachpoint="rangedweapon"></attach><attach name="HeroGlow" attachpoint="Spine"></attach><attach name="HeroGlowRing" attachpoint="bonethatdoesntexist"></attach></component>
+    <anim>Bored<assetreference type="TMAnimation"><file>japanese\units\hero\bushi\anim\bushi_bored_a</file></assetreference><assetreference type="TMAnimation"><file>japanese\units\hero\bushi\anim\bushi_bored_b</file></assetreference><component>ModelComp</component></anim>
+    <anim>Death<assetreference type="TMAnimation"><file>japanese\units\hero\bushi\anim\bushi_death_a</file></assetreference><component>ModelComp</component><attach name="HeroDeath" attachpoint="bonethatdoesntexist"></attach></anim>
+    <anim>Flail<assetreference type="TMAnimation"><file>japanese\units\hero\bushi\anim\bushi_flail_a</file></assetreference><component>ModelComp</component></anim>
+    <anim>Idle<assetreference type="TMAnimation"><file>japanese\units\hero\bushi\anim\bushi_idle_a</file></assetreference><component>ModelComp</component></anim>
+    <anim>Birth<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_hero_birth_a</file></assetreference><component>ModelComp</component><attach name="HeroBirth" attachpoint="bonethatdoesntexist"></attach></anim>
+    <anim>RangedAttack<assetreference type="TMAnimation"><file>japanese\units\hero\bushi\anim\bushi_attack_a</file><tag type="Attack">0.54</tag></assetreference><assetreference type="TMAnimation"><file>japanese\units\hero\bushi\anim\bushi_attack_b</file><tag type="Attack">0.54</tag></assetreference><component>ModelComp</component><attach name="Arrow" attachpoint="arrow"></attach></anim>
+    <anim>HandAttack<assetreference type="TMAnimation"><file>japanese\units\infantry\samurai\anim\samurai_attack_a</file><tag type="Attack">0.5</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshSword">0.55</tag></assetreference><assetreference type="TMAnimation"><file>japanese\units\infantry\samurai\anim\samurai_attack_b</file><tag type="Attack">0.5</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshSword">0.55</tag></assetreference><component>ModelComp</component></anim>
+    <anim>Walk<assetreference type="TMAnimation"><file>japanese\units\hero\bushi\anim\bushi_walk_a</file></assetreference><component>ModelComp</component></anim>
+    <anim>Carry<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_hero_carry_a</file></assetreference><component>ModelComp</component></anim>
+    <anim>CarryIdle<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_hero_carryidle_a</file></assetreference><component>ModelComp</component></anim>
+    <anim>Cinematic<assetreference type="TMAnimation"><file>japanese\units\hero\bushi\anim\igc\yas_bushi_02b_pointing</file></assetreference><component>ModelComp</component></anim>
+</animfile>

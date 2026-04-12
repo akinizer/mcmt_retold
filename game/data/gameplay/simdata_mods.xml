@@ -5226,6 +5226,53 @@
 		</animations>
 	</animxml>
 
+	<animxml file="japanese\units\hero\bushi\bushi.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>HandAttack</name>
+				<versioncount>2</versioncount>
+				<versions>
+					<version>
+						<file>japanese\units\infantry\samurai\anim\samurai_attack_a</file>
+						<duration>1.20000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.50000</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.55000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+					<version>
+						<file>japanese\units\infantry\samurai\anim\samurai_attack_b</file>
+						<duration>1.20000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.50000</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.55000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+
 	<!-- greek unit reworks -->
 	<animxml file="greek\units\myth\manticore\manticore.xml">		
 		<animations>

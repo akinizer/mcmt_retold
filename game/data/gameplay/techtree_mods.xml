@@ -3193,11 +3193,6 @@
         <target type="ProtoUnit">YumiHorseArcher</target></effect>
 			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="YariSpearman" relativity="Assign">
         <target type="ProtoUnit">NaginataRider</target></effect>
-
-			<effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="Kappa" relativity="Assign">
-        <target type="ProtoUnit">FishingShipJapanese</target></effect>
-			<effect type="Data" amount="3.00" subtype="ModifySpawn" spawntype="Dead" proto="Kappa" relativity="Assign">
-        <target type="ProtoUnit">TransportShipJapanese</target></effect>
 		</effects>		
 	</tech>
 
