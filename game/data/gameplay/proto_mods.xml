@@ -27401,7 +27401,7 @@
 		<turnrate>18.0000</turnrate>
 		<initialhitpoints>100.0000</initialhitpoints>
 		<maxhitpoints>100.0000</maxhitpoints>
-		<maxvelocity>3.2000</maxvelocity>
+		<maxvelocity>0</maxvelocity>
 		<los>18.0000</los>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
@@ -27451,7 +27451,7 @@
 		<turnrate>18.0000</turnrate>
 		<initialhitpoints>100.0000</initialhitpoints>
 		<maxhitpoints>100.0000</maxhitpoints>
-		<maxvelocity>3.2000</maxvelocity>
+		<maxvelocity>0</maxvelocity>
 		<los>18.0000</los>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
@@ -27510,7 +27510,7 @@
 		<turnrate>18.0000</turnrate>
 		<initialhitpoints>100.0000</initialhitpoints>
 		<maxhitpoints>100.0000</maxhitpoints>
-		<maxvelocity>3.2000</maxvelocity>
+		<maxvelocity>0</maxvelocity>
 		<los>18.0000</los>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
