@@ -498,6 +498,11 @@
         - MCMT_KastorLegend,MCMT_HuangZhaowu,MCMT_HuangZhaowuWife,MCMT_NvChou,MCMT_ChampionOfFreyr,ValkyrieWarrior +
         - MCMT_GiantSiegeCrossbow,MCMT_Devastator,NukeCannon,MCMT_ColossusOfRhodes,SolarBarge +
 
+        - StatueOfPoseidon / Avatar of Poseidon: handattack with water splash vfx
+            - Charged Ability: Maelstrom
+        - StatueOfZeus / Avatar of Zeus: golden shading, boltstrike on handattack
+            - Charged Ability: Lightning Strike
+
     - S.V.A
         - units+
         - techs+

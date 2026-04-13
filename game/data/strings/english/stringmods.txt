@@ -98,6 +98,14 @@ ID = "STR_UNIT_FARSEER_LR"   ;   Str = "Ascendend Oracle"
 ID = "STR_UNIT_THORDESCENDED_NAME"   ;   Str = "Thor (God)"
 ID = "STR_UNIT_THORDESCENDED_LR"   ;   Str = "Lord of Thunder"
 
+ID = "STR_UNIT_AVATAR_OF_POSEIDON_NAME"   ;   Str = "Poseidon (Avatar)"
+ID = "STR_UNIT_AVATAR_OF_POSEIDON_SR"   ;   Str = "Lord of Seven Seas"
+ID = "STR_UNIT_AVATAR_OF_POSEIDON_LR"   ;   Str = "Ruler of oceans has come to unleash revenge and destruction upon Atlantis!"
+
+ID = "STR_UNIT_AVATAR_OF_ZEUS_NAME"   ;   Str = "Zeus (Avatar)"
+ID = "STR_UNIT_AVATAR_OF_ZEUS_SR"   ;   Str = "Lord of Lightning"
+ID = "STR_UNIT_AVATAR_OF_ZEUS_LR"   ;   Str = "Ruler of Olympians has come to put a stop to childish attempts of Poseidon!"
+
 ID = "STR_UNIT_VOLSTAGGAWAKENED_NAME"   ;   Str = "Volstagg (Jötnar)"
 ID = "STR_UNIT_VOLSTAGGAWAKENED_LR"   ;   Str = "King of Jötunnheim"
 

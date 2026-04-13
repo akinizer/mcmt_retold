@@ -939,6 +939,7 @@
 
         <effect type="Data" amount="2.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">NukeCannon</target></effect>
         <effect type="Data" amount="4.75" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">MCMT_ColossusOfRhodes</target></effect>			
+        <effect type="Data" amount="4.75" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">MCMT_ColossusOfRhodes</target></effect>			
         <effect type="Data" amount="2.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">SolarBarge</target></effect> 
 
         <effect type="TechStatus" status="obtainable">TempleOfPrimordials_ActivateTech_GodsBeasts</effect>
@@ -1865,11 +1866,15 @@
 			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">VolstaggAwakened</target></effect>			
 			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SurtrAwakened</target></effect>			
 			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">FenrisulfrAwakened</target></effect>			
+			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MCMT_LivingPoseidonStatue</target></effect>			
+			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MCMT_LivingZeusStatue</target></effect>			
 		
       <effect type="Data" amount="1.00" subtype="CommandAdd" proto="ThorDescended" row="0" column="0" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" proto="VolstaggAwakened" row="0" column="1" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" proto="SurtrAwakened" row="0" column="2" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" proto="FenrisulfrAwakened" row="0" column="3" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MCMT_LivingPoseidonStatue" row="0" column="4" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MCMT_LivingZeusStatue" row="0" column="5" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       
       <effect type="TechStatus" status="obtainable">TempleOfPrimordials_ActivateTech_Return</effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="TempleOfPrimordials_ActivateTech_Return" row="3" column="5" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
@@ -1983,6 +1988,8 @@
       <effect type="Data" amount="1.00" subtype="CommandRemove" proto="VolstaggAwakened" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandRemove" proto="SurtrAwakened" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandRemove" proto="FenrisulfrAwakened" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandRemove" proto="MCMT_LivingPoseidonStatue" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandRemove" proto="MCMT_LivingZeusStatue" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       
       <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Grootia" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
       <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Earthshaker" relativity="Assign"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
