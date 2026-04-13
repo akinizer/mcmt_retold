@@ -998,6 +998,10 @@
         <!-- AirCommand Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">MrWukong</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">SharkFlying</target></effect> 
+        <effect type="Data" amount="2.00" subtype="AdditionalScale" relativity="BasePercent">
+          <target type="ProtoUnit">SharkFlying</target></effect>
         <!-- Tech Building Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">OxCartModelX</target></effect>

@@ -256,6 +256,13 @@ ID = "STR_UNIT_MR_WUKONG_NAME"   ;   Str = "Mr. Wukong"
 ID = "STR_UNIT_MR_WUKONG_SR"   ;   Str = "Mr. Wukong"
 ID = "STR_UNIT_MR_WUKONG_LR"   ;   Str = "The Monkey King from the Rising Sun Empire in service to establish civilizations"
 
+ID = "STR_UNIT_FLYING_SHARK_NAME"   ;   Str = "Kirovos Air Shark"
+ID = "STR_UNIT_FLYING_SHARK_SR"   ;   Str = "Terror in the sky equipped with anti-building bomb and machine gun and auto-targeting systems"
+ID = "STR_UNIT_FLYING_SHARK_LR"   ;   Str = "Kirovos reporting. Bite-knowledged. Air Shark ready. Waterbomb mix optimal. Ready to splash and crush."
+
+ID = "STR_ACTION_SHARKBITESHELL"   ;   Str = "Sharkbite Shells"
+ID = "STR_ACTION_ORICHALCHUM_BOMBS"   ;   Str = "Orichalchum Bombs"
+
 // STRATEGIC VESSEL ASSEMBLY UNITS
 ID = "STR_UNIT_MCMT_DESOLATOR_NAME"   ;   Str = "Desolator"
 ID = "STR_UNIT_MCMT_DESOLATOR_SR"   ;   Str = "Desolator"

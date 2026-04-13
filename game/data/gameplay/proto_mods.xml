@@ -10667,6 +10667,7 @@
 		<notcontain>Resource</notcontain>
 		
 		<train row="0" column="5">MrWukong</train>
+		<train row="0" column="4">SharkFlying</train>
 		<command row="3" column="5">SetGatherPoint</command>
 
 		<tactics>mcmt_aircommand.tactics</tactics>
@@ -16162,9 +16163,100 @@
 			<name>Repair</name>
 			<rate type="AbstractWall">1.1250</rate>
 			<rate type="Building">2.2500</rate>
-		</protoaction>
-	
+		</protoaction>	
   </unit>
+
+  <unit name="SharkFlying">
+		<displaynameid>STR_UNIT_FLYING_SHARK_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_FLYING_SHARK_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_FLYING_SHARK_LR</rollovertextid>
+		<icon>resources\tech\kirovos.png</icon>
+		<animfile>mcmt\units\nymph\sharkflying.xml</animfile>
+		<soundsetfile>chinese\vo\chi_wen\chi_wen.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.0000</selectionradiusx>
+		<selectionradiusz>1.7500</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<formationorder>1</formationorder>
+		
+		<turnrate>9.0000</turnrate>
+		<initialhitpoints>1600.0000</initialhitpoints>
+		<maxhitpoints>1600.0000</maxhitpoints>
+		<trainpoints>16.0000</trainpoints>
+		<weightclass>10</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>2.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">480.0000</cost>
+		<cost resourcetype="Gold">280.0000</cost>
+		<cost resourcetype="Favor">5.0000</cost>
+		<armor type="Hack" value="0.5500"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.3500"></armor>
+		<unittype>LogicalTypeNavalMilitary</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+
+		<flag>FlyingUnit</flag>
+		<flag>NoTieToGround</flag>
+		<unittype>AbstractFlyingUnit</unittype>
+		<movementtype>Air</movementtype>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DirectProjectile</flag>
+
+		<dependentunit>CustomDependantUnit_SharkbiteShell</dependentunit>
+
+		<command row="3" column="0">Stop</command>
+		<command row="3" column="3">Patrol</command>
+		<command row="3" column="4">AttackMove</command>
+		<command row="3" column="5">Delete</command>
+		<tactics>mcmt_kirovos.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<anim mergeMode="replace">HandAttack</anim>
+			<rof>0.800000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="HumanSoldier">1.250000</damagebonus>
+			<maxrange>25.000000</maxrange>			
+			<projectile>ProjectileYukiOnnaBall</projectile>	
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackBombing</name>
+			<anim mergeMode="replace">HandAttack</anim>
+			<rof>5.000000</rof>
+			<damage type="Hack">40.000000</damage>
+			<damage type="Divine">5.000000</damage>
+			<damagearea>12.000000</damagearea>
+			<maxrange>1.000000</maxrange>			
+			<projectile>ProjectileYukiOnnaBall</projectile>	
+			<onhiteffect type="Spawn" proto="MCMT_VFXWaterSplash_Large" amount="1"></onhiteffect>
+		</protoaction>		
+	</unit>
   	<!-- S.V.A Special Units -->
   <unit name="Desolator">
     <displaynameid>STR_UNIT_MCMT_DESOLATOR_NAME</displaynameid>
@@ -27733,6 +27825,61 @@
 			<projectilechainbouncereduction>0.634</projectilechainbouncereduction>
 			<projectilechainbouncerange>5.3333333</projectilechainbouncerange>
 			<displayednumberprojectiles>4</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+	
+	<unit name="CustomDependantUnit_SharkbiteShell">
+		<animfile>vfx\projectiles\asura\fire_ball_left.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractAsura</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.800000</rof>
+			<damage type="Pierce">20.000000</damage>
+			<maxrange>22.000000</maxrange>
+			<projectile>ProjectilePriestPharaoh</projectile>
+			<numberprojectiles>3</numberprojectiles>
+			<displayednumberprojectiles>3</displayednumberprojectiles>
 			<autoretarget>1</autoretarget>
 			<canattackground>1</canattackground>
 		</protoaction>

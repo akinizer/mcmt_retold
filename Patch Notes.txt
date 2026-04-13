@@ -39,7 +39,7 @@
 * Temple of Primordials: Divine Beats, Gods, Legendary Heroes, Constructs of Hephaestos
 * Temple Accel Reworked: That can Support upto 18 Pages and 72 Distinct Units. Default Page Loads the Choosen Temple Accel with a Return Button
 * Strategical Vessel Assembly: Unique Naval Vehicles, Flying Dutchman & Trainable Crew & Ressurection Bolts, Worldbreaker Super Mobile Dock, Onigami
-* Air Command: Mr Wukong the Airborne Builder
+* Air Command: Mr Wukong the Airborne Builder, Kirovos Air Shark
 * Bastion: Guild Building of Special Heroes including Voltox & Sparky the Energy Wolf
 * Mage Tower: Fires Magic Bullets
 * WarBunker: Struture that Shoots If Garrisoned, Equipped with Anti-Unit, Anti-Armor, Anti-Armor Systems
@@ -489,6 +489,7 @@
 
     - AirCommand (damage aura)
         - MrWukong+
+        - Kirovos Air Shark: Sharkbite Shells LMG (general purpose), Orichalcum Bombs (anti-building), Auto Targeting System (Lasers)
     - Bastion:
         - units+
         - techs+
@@ -750,10 +751,13 @@
 - WallConnectorToCharger: transforms a connector to an offensive connector, ChuNoKu RangedAttack, AsuraFireBallLeft anim
     - WallConnectorCharger: offesive connector with a dependant attachment (Cheiroballista, AsuraFireBallLeft, AsuraFireBallRight, Toxotes etc.)
 ==============================================================================
-==================== REWORK-PLANS ============================================
+==================== PRIORITY-PLANS ============================================
 ==============================================================================
 Implemented & Unused Models (soldiers & leaders)
 * Nubian: 4
+
+hwacha
+chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
@@ -907,11 +911,6 @@ Imperial
     Shogun
 Nubians
     Bowman: ChariotArcher (No Chariot)
-
-=== New Units
-Amazons
-    Enceladus (jotun model, no club)
-    Shark (nereid_shark model)
 
 === New Structures
 japanese\units\naval\ramming_wasen\ramming_wasen_hut_upgrade1 / 2 / 3
@@ -1300,7 +1299,6 @@ Satyr + HandAttack (anim)
 === NEW SPECIAL UNITS
 * Special Unit
 bragi (hero, god) -> orpheus model
-chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
 robots: 
     chaos drone (infect,selfdestruct,spawn onkill,crawler model,melee,anti-vehicle,amphibious,fast,light armor)
 dependants:
