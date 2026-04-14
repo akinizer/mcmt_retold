@@ -481,6 +481,7 @@ ID = "STR_BLD_CAMP_ELVEN_NAME" ;   Str = "Elven Camp"
 ID = "STR_BLD_CAMP_AMAZONIAN_NAME" ;   Str = "Amazonian Camp"
 ID = "STR_BLD_CAMP_SPARTAN_NAME" ;   Str = "Spartan Encampment"
 ID = "STR_BLD_CAMP_ATHENIAN_NAME" ;   Str = "Athenian Encampment"
+ID = "STR_BLD_CAMP_NUBIAN_NAME" ;   Str = "Mercenary Campsite"
 ID = "STR_BLD_CAMP_ENCAMPENT_LR" ;   Str = "These military productions buildings provide 2 population and civilization special elite units"
 
 ID = "STR_BLD_STATUEOFZEUS_NAME" ;   Str = "Statue of Zeus"
@@ -681,14 +682,36 @@ ID = "STR_UNIT_ROYAL_ELF_LR"   ;   Str = "Royal Elves are naturally talented at 
 
 // EGYPTIAN SPECIAL UNITS
 ID = "STR_UNIT_NUBIANMERCENARY_NAME"   ;   Str = "Nubian Mercenary"
+ID = "STR_UNIT_NUBIANMERCENARY_SR"   ;   Str = "Nubian Mercenary"
+ID = "STR_UNIT_NUBIANMERCENARY_LR"   ;   Str = "Nubian Mercenary"
+
 ID = "STR_UNIT_NUBIANHUNTER_NAME"   ;   Str = "Nubian Hunter"
+ID = "STR_UNIT_NUBIANHUNTER_SR"   ;   Str = "Nubian Hunter"
+ID = "STR_UNIT_NUBIANHUNTER_LR"   ;   Str = "Nubian Hunter"
+
 ID = "STR_UNIT_NUBIANCHARGER_NAME"   ;   Str = "Nubian Charger"
+ID = "STR_UNIT_NUBIANCHARGER_SR"   ;   Str = "Nubian Charger"
+ID = "STR_UNIT_NUBIANCHARGER_LR"   ;   Str = "Nubian Charger"
+
 ID = "STR_UNIT_NUBIANCAVALRY_NAME"   ;   Str = "Nubian Cavalry"
+ID = "STR_UNIT_NUBIANCAVALRY_SR"   ;   Str = "Nubian Cavalry"
+ID = "STR_UNIT_NUBIANCAVALRY_LR"   ;   Str = "Nubian Cavalry"
 
 ID = "STR_UNIT_BOWMAN_ARCHER_NAME"   ;   Str = "Bowman Archer"
+ID = "STR_UNIT_BOWMAN_ARCHER_SR"   ;   Str = "Bowman Archer"
+ID = "STR_UNIT_BOWMAN_ARCHER_LR"   ;   Str = "Bowman Archer"
+
 ID = "STR_UNIT_KOPESHMAN_NAME"   ;   Str = "Kopesh Swordsman"
+ID = "STR_UNIT_KOPESHMAN_SR"   ;   Str = "Kopesh Swordsman"
+ID = "STR_UNIT_KOPESHMAN_LR"   ;   Str = "Kopesh Swordsman"
+
 ID = "STR_UNIT_WARELEPHANTRIDER_NAME"   ;   Str = "War Elephant Rider"
+ID = "STR_UNIT_WARELEPHANTRIDER_SR"   ;   Str = "War Elephant Rider"
+ID = "STR_UNIT_WARELEPHANTRIDER_LR"   ;   Str = "War Elephant Rider"
+
 ID = "STR_UNIT_WARELEPHANTRIDER_ARCHER_NAME"   ;   Str = "War Elephant Archer"
+ID = "STR_UNIT_WARELEPHANTRIDER_ARCHER_SR"   ;   Str = "War Elephant Archer"
+ID = "STR_UNIT_WARELEPHANTRIDER_ARCHER_LR"   ;   Str = "War Elephant Archer"
 
 // JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
@@ -805,6 +828,27 @@ ID = "STR_TECH_SPARTAN_TRAINING_LR"   ;   Str = "Initiates advanced Spartan Army
 
 ID = "STR_TECH_ATHENIAN_TRAINING_NAME"   ;   Str = "Athenian Training"
 ID = "STR_TECH_ATHENIAN_TRAINING_LR"   ;   Str = "Initiates advanced Greater Athens warfare and facilities"
+
+ID = "STR_TECH_NUBIANTRAINING_NAME"   ;   Str = "Nubian Training"
+ID = "STR_TECH_NUBIANTRAINING_LR"   ;   Str = "Recruits Nubian elites and Kingdom Guards for advanced warfare"
+
+ID = "STR_TECH_NUBIANTRAINING_I_NAME"   ;   Str = "Nubian Training I"
+ID = "STR_TECH_NUBIANTRAINING_I_LR"   ;   Str = "First upgrade for Nubian warriors"
+
+ID = "STR_TECH_NUBIANTRAINING_II_NAME"   ;   Str = "Nubian Training II"
+ID = "STR_TECH_NUBIANTRAINING_II_LR"   ;   Str = "Second upgrade for Nubian warriors"
+
+ID = "STR_TECH_NUBIANTRAINING_III_NAME"   ;   Str = "Nubian Training III"
+ID = "STR_TECH_NUBIANTRAINING_III_LR"   ;   Str = "Final upgrade for Nubian warriors"
+
+ID = "STR_TECH_KINGDOMGUARDTRAINING_I_NAME"   ;   Str = "Kingdom Guard Training I"
+ID = "STR_TECH_KINGDOMGUARDTRAINING_I_LR"   ;   Str = "First upgrade for Kingdom Guard warriors"
+
+ID = "STR_TECH_KINGDOMGUARDTRAINING_II_NAME"   ;   Str = "Kingdom Guard Training II"
+ID = "STR_TECH_KINGDOMGUARDTRAINING_II_LR"   ;   Str = "Second upgrade for Kingdom Guard warriors"
+
+ID = "STR_TECH_KINGDOMGUARDTRAINING_III_NAME"   ;   Str = "Kingdom Guard Training III"
+ID = "STR_TECH_KINGDOMGUARDTRAINING_III_LR"   ;   Str = "Final upgrade for Kingdom Guard warriors"
 
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_NAME"   ;   Str = "Divine Nature Spirits"
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_LR"   ;   Str = "Nymphs are female faes who achieve divinity and longevity. They prefer to live in nature like saltwater, freshwater, trees and ashtrees. They have accompanied various gods and even nurtured infant Zeus. Among the popular ones, there exists Nereids, Dryads, Hamadryads and Hesperides aka Atlantides"

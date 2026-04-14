@@ -24403,8 +24403,8 @@
 
 	<unit name="NubianMercenary">
 		<displaynameid>STR_UNIT_NUBIANMERCENARY_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_MERCENARY_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_MERCENARY_SR</shortrollovertextid>
+		<shortrollovertextid>STR_UNIT_NUBIANMERCENARY_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_NUBIANMERCENARY_LR</rollovertextid>
 		<icon>resources\egyptian\player_color\units\mercenary_icon.png</icon>
 		<animfile>mcmt\units\nubian\nubian_swordman.xml</animfile>
 		<soundsetfile>egyptian\vo\mercenary\mercenary.xml</soundsetfile>
@@ -24474,8 +24474,8 @@
 	</unit>
 	<unit name="NubianHunter">
 		<displaynameid>STR_UNIT_NUBIANHUNTER_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_MERCENARY_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_MERCENARY_SR</shortrollovertextid>
+		<shortrollovertextid>STR_UNIT_NUBIANHUNTER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_NUBIANHUNTER_LR</rollovertextid>
 		<icon>resources\egyptian\player_color\units\mercenary_icon.png</icon>
 		<animfile>mcmt\units\nubian\nubian_axeman.xml</animfile>
 		<soundsetfile>egyptian\vo\mercenary\mercenary.xml</soundsetfile>
@@ -24546,8 +24546,8 @@
 	</unit>
 	<unit name="NubianCharger">
 		<displaynameid>STR_UNIT_NUBIANCHARGER_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_MERCENARY_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_MERCENARY_SR</shortrollovertextid>
+		<shortrollovertextid>STR_UNIT_NUBIANCHARGER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_NUBIANCHARGER_LR</rollovertextid>
 		<icon>resources\egyptian\player_color\units\mercenary_icon.png</icon>
 		<animfile>mcmt\units\nubian\nubian_halberdier.xml</animfile>
 		<soundsetfile>egyptian\vo\mercenary\mercenary.xml</soundsetfile>
@@ -24619,8 +24619,8 @@
 
 	<unit name="NubianCavalry">
 		<displaynameid>STR_UNIT_NUBIANCAVALRY_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_MERCENARY_CAVALRY_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_MERCENARY_CAVALRY_SR</shortrollovertextid>
+		<shortrollovertextid>STR_UNIT_NUBIANCAVALRY_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_NUBIANCAVALRY_LR</rollovertextid>
 		<icon>resources\egyptian\player_color\units\mercenary_cavalry_icon.png</icon>
 		<animfile>mcmt\units\nubian\nubiancavalry.xml</animfile>
 		<soundsetfile>egyptian\vo\mercenary_cavalry\mercenary_cavalry.xml</soundsetfile>
@@ -24708,8 +24708,8 @@
 
 	<unit name="BowmanArcher">
 		<displaynameid>STR_UNIT_BOWMAN_ARCHER_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_TOXOTES_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_TOXOTES_SR</shortrollovertextid>
+		<shortrollovertextid>STR_UNIT_BOWMAN_ARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_BOWMAN_ARCHER_LR</rollovertextid>
 		<icon>resources\greek\player_color\units\toxotes_icon.png</icon>
 		<animfile>mcmt\units\nubian\bowman_archer.xml</animfile>
 		<soundsetfile>egyptian\vo\slinger\slinger.xml</soundsetfile>
@@ -24790,8 +24790,8 @@
 
 	<unit name="Kopeshman">
 		<displaynameid>STR_UNIT_KOPESHMAN_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_AXEMAN_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_AXEMAN_SR</shortrollovertextid>
+		<shortrollovertextid>STR_UNIT_KOPESHMAN_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_KOPESHMAN_LR</rollovertextid>
 		<icon>resources\egyptian\player_color\units\axeman_icon.png</icon>
 		<animfile>mcmt\units\nubian\kopeshman.xml</animfile>
 		<soundsetfile>egyptian\vo\axeman\axeman.xml</soundsetfile>
@@ -24865,8 +24865,8 @@
 
 	<unit name="WarElephantRider">
 		<displaynameid>STR_UNIT_WARELEPHANTRIDER_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_SPEARMAN_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_SPEARMAN_SR</shortrollovertextid>
+		<shortrollovertextid>STR_UNIT_WARELEPHANTRIDER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_WARELEPHANTRIDER_LR</rollovertextid>
 		<icon>resources\egyptian\player_color\units\spearman_icon.png</icon>
 		<animfile>mcmt\units\nubian\warelephant_rider.xml</animfile>
 		<soundsetfile>egyptian\vo\spearman\spearman.xml</soundsetfile>
@@ -24949,8 +24949,8 @@
 
 	<unit name="WarElephantArcher">
 		<displaynameid>STR_UNIT_WARELEPHANTRIDER_ARCHER_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_WAR_ELEPHANT_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_WAR_ELEPHANT_SR</shortrollovertextid>
+		<shortrollovertextid>STR_UNIT_WARELEPHANTRIDER_ARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_WARELEPHANTRIDER_ARCHER_LR</rollovertextid>
 		<icon>resources\egyptian\player_color\units\war_elephant_icon.png</icon>
 		<animfile>mcmt\units\nubian\warelephant_archer.xml</animfile>
 		<soundsetfile>egyptian\vo\war_elephant\war_elephant.xml</soundsetfile>
@@ -25053,9 +25053,9 @@
 
 <!-- Egyptian Special Buildings -->
 	<unit name="NubianCamp">
-		<displaynameid>STR_BLD_CAMP_AMAZONIAN_NAME</displaynameid>
-		<shortrollovertextid>STR_BLD_CAMP_AMAZONIAN_NAME</shortrollovertextid>
-		<rollovertextid>STR_BLD_CAMP_AMAZONIAN_NAME</rollovertextid>
+		<displaynameid>STR_BLD_CAMP_NUBIAN_NAME</displaynameid>
+		<shortrollovertextid>STR_BLD_CAMP_NUBIAN_NAME</shortrollovertextid>
+		<rollovertextid>STR_BLD_CAMP_ENCAMPENT_LR</rollovertextid>
 		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
 		<animfile culture="greek">shared\buildings\tent\tent_greek.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>

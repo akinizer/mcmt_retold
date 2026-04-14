@@ -3046,8 +3046,8 @@
 
   <tech name="MCMT_NubianTraining" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_LR</rollovertextid>
+		<displaynameid>STR_TECH_NUBIANTRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_NUBIANTRAINING_LR</rollovertextid>
 		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3078,8 +3078,8 @@
 	</tech>
   <tech name="MCMT_NubianTraining_I" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_I_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_I_LR</rollovertextid>
+		<displaynameid>STR_TECH_NUBIANTRAINING_I_NAME</displaynameid>
+		<rollovertextid>STR_TECH_NUBIANTRAINING_I_LR</rollovertextid>
 		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3111,8 +3111,8 @@
 	</tech>
   <tech name="MCMT_NubianTraining_II" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_II_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_II_LR</rollovertextid>
+		<displaynameid>STR_TECH_NUBIANTRAINING_II_NAME</displaynameid>
+		<rollovertextid>STR_TECH_NUBIANTRAINING_II_LR</rollovertextid>
 		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3145,8 +3145,8 @@
 	</tech>
   <tech name="MCMT_NubianTraining_III" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_III_LR</rollovertextid>
+		<displaynameid>STR_TECH_NUBIANTRAINING_III_NAME</displaynameid>
+		<rollovertextid>STR_TECH_NUBIANTRAINING_III_LR</rollovertextid>
 		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3191,8 +3191,8 @@
 
   <tech name="MCMT_KingdomGuardTraining_I" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_I_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_I_LR</rollovertextid>
+		<displaynameid>STR_TECH_KINGDOMGUARDTRAINING_I_NAME</displaynameid>
+		<rollovertextid>STR_TECH_KINGDOMGUARDTRAINING_I_LR</rollovertextid>
 		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3222,8 +3222,8 @@
 	</tech>
   <tech name="MCMT_KingdomGuardTraining_II" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_II_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_II_LR</rollovertextid>
+		<displaynameid>STR_TECH_KINGDOMGUARDTRAINING_II_NAME</displaynameid>
+		<rollovertextid>STR_TECH_KINGDOMGUARDTRAINING_II_LR</rollovertextid>
 		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3254,8 +3254,8 @@
 	</tech>
   <tech name="MCMT_KingdomGuardTraining_III" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_III_LR</rollovertextid>
+		<displaynameid>STR_TECH_KINGDOMGUARDTRAINING_III_NAME</displaynameid>
+		<rollovertextid>STR_TECH_KINGDOMGUARDTRAINING_III_LR</rollovertextid>
 		<icon>resources\tech\trident.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
