@@ -57,7 +57,7 @@
 * Compatibility with Campaign
 * Exotic Lore and References, Sci-Fi, Science, Mythology, History, Cyborgs and Plent of Surprises!
 * Up-to-Date to Demeter and Japanese
-* Encampments from Kingdom Tech: Amazonians, Spartans, Athenians, Nymphs, Mountain Dwarves, Elves
+* Encampments from Kingdom Tech: Amazonians, Spartans, Athenians, Nymphs, Mountain Dwarves, Elves, Nubians & Kingdom Guards
 * Dismount Warfare
 * Many Many More in Future!
 
@@ -282,6 +282,17 @@
     - Pharaoh Tactics: attack type (RangedAttackMyth->RangedAttack)
 - SiegeWorks:
     - MechanizedMammothUnit+
+- Nubians
+    - Nubian Mercenary: blade unit, light shield, high rof, axemen techs
+    - Nubian Charger: spear unit, light shield, high maxvelocity, spearmen techs
+    - Nubian Hunter: heavy unit, long spear, large shield, high pierce armor, slinger techs
+    - Nubian Cavalry: hero unit, mace, shield-free, high maxvelocity, low hackarmor, spearmen techs
+- Kingdom Guards
+    - Bowman Archer: dismounted chariotarcher, slinger techs
+    - Kopesh Swordsman: dismounted camelrider, axemen techs
+    - War Elephant Rider: dismounted warelephant, spearmen techs
+    - War Elephant Archer: hero cavalry, ranged warelephant, two archer riders, chariotarcher techs 
+
 
 6. Chinese reworks from mcmt mod and extra changes
 - myth unit:
@@ -753,9 +764,6 @@
 ==============================================================================
 ==================== PRIORITY-PLANS ============================================
 ==============================================================================
-Implemented & Unused Models (soldiers & leaders)
-* Nubian: 4
-
 hwacha
 chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
 japanese god powers -> zero cost, zero repeat cost
@@ -882,10 +890,7 @@ Spartans
     Midas + Arbalest
 Athenians
     Hypaspist + Double Sword (Fanatic) / Mace (Katapeltes) / Fork (Destroyer) / Spear (Hoplite)
-Nubians
-    Spearman + Kopesh
-    Mercenary + Spear
-    Mercenary + Axe
+Undeads
     Minion + Kopesh + Shield
     Mummy + Kopesh + Shield
     Mummy + Staff
@@ -910,8 +915,6 @@ Spartans
     Achilles
 Imperial
     Shogun
-Nubians
-    Bowman: ChariotArcher (No Chariot)
 
 === New Structures
 japanese\units\naval\ramming_wasen\ramming_wasen_hut_upgrade1 / 2 / 3
@@ -930,7 +933,6 @@ Satyr + HandAttack (anim)
 - MilitaryAcademy -> Spartan Training (ares): champion hoplite -> spartan
 - MilitaryAcademy -> Pelaponesian War Preparations (ares): champion hypaspist -> athenian
 - MilitaryAcademy -> daughters of artemis (prereqs Hunts of Artemis)
-- Mercenary Camp (egypt) -> Nubian Horseman, Nubian Spearman, Nubian Commander, Bowman (chariot_archer_rider.xml)
 
 === Hero Techs
 - Helm of Darkness: Perseus gains infiltraion

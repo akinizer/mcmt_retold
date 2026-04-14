@@ -24406,7 +24406,7 @@
 		<rollovertextid>STR_UNIT_MERCENARY_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_MERCENARY_SR</shortrollovertextid>
 		<icon>resources\egyptian\player_color\units\mercenary_icon.png</icon>
-		<animfile>egyptian\units\infantry\mercenary\mercenary.xml</animfile>
+		<animfile>mcmt\units\nubian\nubian_swordman.xml</animfile>
 		<soundsetfile>egyptian\vo\mercenary\mercenary.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
@@ -24477,7 +24477,79 @@
 		<rollovertextid>STR_UNIT_MERCENARY_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_MERCENARY_SR</shortrollovertextid>
 		<icon>resources\egyptian\player_color\units\mercenary_icon.png</icon>
-		<animfile>egyptian\units\infantry\mercenary\mercenary.xml</animfile>
+		<animfile>mcmt\units\nubian\nubian_axeman.xml</animfile>
+		<soundsetfile>egyptian\vo\mercenary\mercenary.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>90.0000</initialhitpoints>
+		<maxhitpoints>90.0000</maxhitpoints>
+		<trainpoints>1.0000</trainpoints>
+		<buildlimit>12</buildlimit>
+		<weightclass>5</weightclass>
+		<populationcount>0</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Gold">90.0000</cost>
+		<armor type="Hack" value="0.3500"></armor>
+		<armor type="Pierce" value="0.1500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">7.000000</damage>
+			<damagebonus type="AbstractCavalry">1.500000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+	</unit>
+	<unit name="NubianCharger">
+		<displaynameid>STR_UNIT_NUBIANCHARGER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MERCENARY_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MERCENARY_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\mercenary_icon.png</icon>
+		<animfile>mcmt\units\nubian\nubian_halberdier.xml</animfile>
 		<soundsetfile>egyptian\vo\mercenary\mercenary.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
@@ -24550,7 +24622,7 @@
 		<rollovertextid>STR_UNIT_MERCENARY_CAVALRY_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_MERCENARY_CAVALRY_SR</shortrollovertextid>
 		<icon>resources\egyptian\player_color\units\mercenary_cavalry_icon.png</icon>
-		<animfile>egyptian\units\cavalry\mercenary_cavalry\mercenary_cavalry.xml</animfile>
+		<animfile>mcmt\units\nubian\nubiancavalry.xml</animfile>
 		<soundsetfile>egyptian\vo\mercenary_cavalry\mercenary_cavalry.xml</soundsetfile>
 		<obstructionradiusx>0.7400</obstructionradiusx>
 		<obstructionradiusz>0.7400</obstructionradiusz>
@@ -24617,6 +24689,20 @@
 			<damage type="Hack">8.000000</damage>
 			<damagebonus type="AbstractArcher">1.500000</damagebonus>
 			<maxrange>0.750000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring_large.xml</modelattachment>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
 
@@ -25014,8 +25100,9 @@
 		<autobuildrate>5.0000</autobuildrate>		
 		<bloodgroupoverride>noblood</bloodgroupoverride>		
 		<train row="0" column="1" mergeMode="add">NubianMercenary</train>
-		<train row="0" column="2" mergeMode="add">NubianCavalry</train>
-		<train row="0" column="3" mergeMode="add">NubianHunter</train>
+		<train row="0" column="2" mergeMode="add">NubianHunter</train>
+		<train row="0" column="3" mergeMode="add">NubianCharger</train>
+		<train row="0" column="4" mergeMode="add">NubianCavalry</train>
 		<train row="1" column="1" mergeMode="add">BowmanArcher</train>
 		<train row="1" column="2" mergeMode="add">Kopeshman</train>
 		<train row="1" column="3" mergeMode="add">WarElephantRider</train>

@@ -682,6 +682,7 @@ ID = "STR_UNIT_ROYAL_ELF_LR"   ;   Str = "Royal Elves are naturally talented at 
 // EGYPTIAN SPECIAL UNITS
 ID = "STR_UNIT_NUBIANMERCENARY_NAME"   ;   Str = "Nubian Mercenary"
 ID = "STR_UNIT_NUBIANHUNTER_NAME"   ;   Str = "Nubian Hunter"
+ID = "STR_UNIT_NUBIANCHARGER_NAME"   ;   Str = "Nubian Charger"
 ID = "STR_UNIT_NUBIANCAVALRY_NAME"   ;   Str = "Nubian Cavalry"
 
 ID = "STR_UNIT_BOWMAN_ARCHER_NAME"   ;   Str = "Bowman Archer"

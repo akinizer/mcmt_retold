@@ -1,6 +1,15 @@
 <animfile validation="strict">
-    <attachment>Weapon<include>japanese\units\attachments\yari\yari_j_a.xml</include></attachment>
+	<attachment>Weapon<component>ModelComp
+		<logic type="Tech">
+			<none><assetreference type="TMModel"><file>japanese\units\attachments\yari\yari_j_a_baseline</file><materialvariant index="0"></materialvariant></assetreference></none>
+			<mediumspearmen><assetreference type="TMModel"><file>japanese\units\attachments\yari\yari_j_a_baseline</file><materialvariant index="1"></materialvariant></assetreference></mediumspearmen>
+			<heavyspearmen><assetreference type="TMModel"><file>japanese\units\attachments\yari\yari_j_a_baseline</file><materialvariant index="2"></materialvariant></assetreference></heavyspearmen>
+			<championspearmen><assetreference type="TMModel"><file>japanese\units\attachments\yari\yari_j_a_baseline</file><materialvariant index="3"></materialvariant></assetreference></championspearmen>
+		</logic></component>
+		<anim>Idle<component>ModelComp</component></anim>
+	</attachment>
 	<attachment>Shield<component>ModelComp<assetreference type="TMModel"><file>shared\units\attachments\shield\shield_nubian</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	
 	<component>ModelComp<assetreference type="TMModel"><file>egyptian\units\infantry\mercenary\mercenary</file></assetreference><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></component>
 	<anim>HandAttack<assetreference type="TMAnimation"><file>egyptian\units\infantry\mercenary\anim\mercenary_attack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component></anim>
 	<anim>Bored<assetreference type="TMAnimation"><file>egyptian\units\infantry\mercenary\anim\mercenary_bored_a</file></assetreference><component>ModelComp</component></anim>

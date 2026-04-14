@@ -564,8 +564,6 @@
           <!--Greek Heroes-->
           <effect type="Data" amount="-0.050" subtype="OnDamageModify" modifytype="ROF" relativity="Assign">
             <target type="ProtoUnit">Jason</target></effect>
-          <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="AchillesDismounted" relativity="Absolute">
-            <target type="ProtoUnit">Achilles</target></effect>
           <effect type="Data" amount="1.80" subtype="AdditionalScale" relativity="Absolute">
             <target type="ProtoUnit">TheArgo</target></effect>
           <effect type="Data" amount="-0.050" subtype="OnDamageModify" modifytype="ROF" relativity="Assign">
@@ -3067,6 +3065,8 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">NubianHunter</target></effect>         
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">NubianCharger</target></effect>         
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">BowmanArcher</target></effect>         
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">Kopeshman</target></effect>         
@@ -3170,6 +3170,8 @@
         <target type="ProtoUnit">NubianCavalry</target></effect>
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">NubianHunter</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianCharger</target></effect>
 
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">Amanra</target></effect>
@@ -3182,6 +3184,8 @@
         <target type="ProtoUnit">NubianCavalry</target></effect>
       <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
         <target type="ProtoUnit">NubianHunter</target></effect>
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">NubianCharger</target></effect>
 		</effects>		
 	</tech>
 
@@ -6266,6 +6270,13 @@
 				<target type="ProtoUnit">NubianCavalry</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
 				<target type="ProtoUnit">NubianCavalry</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianCharger</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianCharger</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianCharger</target></effect>
     </effects>
   </tech>
    <tech name="MediumSlingers" mergeMode="add">
