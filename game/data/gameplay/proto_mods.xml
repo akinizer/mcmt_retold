@@ -6386,7 +6386,10 @@
 	<unit name="SiegeWorks">	
 		<train row="0" column="5">MechanizedMammothUnit</train>		
 	</unit>
-    
+    <unit name="Barracks">
+		<tech row="0" column="5">MCMT_NubianTraining</tech>
+		<train row="0" column="5">NubianCamp</train>
+	</unit>
     <!-- Norse Hero Units-->
     <unit name="Godi">
 		<populationcount>1</populationcount>
@@ -24397,11 +24400,637 @@
 			<trailprotounit frequency="0.25">VFXRampage</trailprotounit>
 		</protoaction>
     </unit>
+
+	<unit name="NubianMercenary">
+		<displaynameid>STR_UNIT_NUBIANMERCENARY_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MERCENARY_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MERCENARY_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\mercenary_icon.png</icon>
+		<animfile>egyptian\units\infantry\mercenary\mercenary.xml</animfile>
+		<soundsetfile>egyptian\vo\mercenary\mercenary.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>90.0000</initialhitpoints>
+		<maxhitpoints>90.0000</maxhitpoints>
+		<trainpoints>1.0000</trainpoints>
+		<buildlimit>12</buildlimit>
+		<weightclass>5</weightclass>
+		<populationcount>0</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Gold">90.0000</cost>
+		<armor type="Hack" value="0.3500"></armor>
+		<armor type="Pierce" value="0.1500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">7.000000</damage>
+			<damagebonus type="AbstractCavalry">1.500000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+	</unit>
+	<unit name="NubianHunter">
+		<displaynameid>STR_UNIT_NUBIANHUNTER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MERCENARY_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MERCENARY_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\mercenary_icon.png</icon>
+		<animfile>egyptian\units\infantry\mercenary\mercenary.xml</animfile>
+		<soundsetfile>egyptian\vo\mercenary\mercenary.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>90.0000</initialhitpoints>
+		<maxhitpoints>90.0000</maxhitpoints>
+		<trainpoints>1.0000</trainpoints>
+		<buildlimit>12</buildlimit>
+		<weightclass>5</weightclass>
+		<populationcount>0</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Gold">90.0000</cost>
+		<armor type="Hack" value="0.3500"></armor>
+		<armor type="Pierce" value="0.1500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">7.000000</damage>
+			<damagebonus type="AbstractCavalry">1.500000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+	</unit>
+
+	<unit name="NubianCavalry">
+		<displaynameid>STR_UNIT_NUBIANCAVALRY_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MERCENARY_CAVALRY_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MERCENARY_CAVALRY_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\mercenary_cavalry_icon.png</icon>
+		<animfile>egyptian\units\cavalry\mercenary_cavalry\mercenary_cavalry.xml</animfile>
+		<soundsetfile>egyptian\vo\mercenary_cavalry\mercenary_cavalry.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.1500</selectionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>160.0000</initialhitpoints>
+		<maxhitpoints>160.0000</maxhitpoints>
+		<trainpoints>2.0000</trainpoints>
+		<buildlimit>8</buildlimit>
+		<weightclass>6</weightclass>
+		<populationcount>0</populationcount>
+		<maxvelocity>5.3000</maxvelocity>
+		<los>12.0000</los>
+		<bloodgroupoverride>defaultbloodhorse</bloodgroupoverride>
+		<cost resourcetype="Gold">120.0000</cost>
+		<armor type="Hack" value="0.2000"></armor>
+		<armor type="Pierce" value="0.3500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagebonus type="AbstractArcher">1.500000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+	</unit>
+
+	<unit name="BowmanArcher">
+		<displaynameid>STR_UNIT_BOWMAN_ARCHER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_TOXOTES_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_TOXOTES_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\toxotes_icon.png</icon>
+		<animfile>mcmt\units\nubian\bowman_archer.xml</animfile>
+		<soundsetfile>egyptian\vo\slinger\slinger.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>18.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>65.0000</initialhitpoints>
+		<maxhitpoints>65.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>4</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.0000</maxvelocity>
+		<los>18.0000</los>
+		<cost resourcetype="Wood">55.0000</cost>
+		<cost resourcetype="Gold">35.0000</cost>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.1500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeAffectedBySunRay</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CommonCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Pierce">5.500000</damage>
+			<damagebonus type="AbstractCavalry">1.20000</damagebonus>
+			<damagebonus type="AbstractWarship">1.60000</damagebonus>
+			<maxrange>12.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.634</projectilechainbouncereduction>
+			<projectilechainbouncerange>6.333333</projectilechainbouncerange>
+		</protoaction>
+	</unit>
+
+	<unit name="Kopeshman">
+		<displaynameid>STR_UNIT_KOPESHMAN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_AXEMAN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_AXEMAN_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\axeman_icon.png</icon>
+		<animfile>mcmt\units\nubian\kopeshman.xml</animfile>
+		<soundsetfile>egyptian\vo\axeman\axeman.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>85.0000</initialhitpoints>
+		<maxhitpoints>85.0000</maxhitpoints>
+		<trainpoints>11.5000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">40.0000</cost>
+		<cost resourcetype="Gold">30.0000</cost>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>		
+		<unittype>AbstractCavalry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">5.000000</damage>
+			<damagebonus type="AbstractInfantry">4.000000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+	</unit>
+
+	<unit name="WarElephantRider">
+		<displaynameid>STR_UNIT_WARELEPHANTRIDER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SPEARMAN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_SPEARMAN_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\spearman_icon.png</icon>
+		<animfile>mcmt\units\nubian\warelephant_rider.xml</animfile>
+		<soundsetfile>egyptian\vo\spearman\spearman.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>85.0000</initialhitpoints>
+		<maxhitpoints>85.0000</maxhitpoints>
+		<trainpoints>12.5000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">50.0000</cost>
+		<cost resourcetype="Gold">25.0000</cost>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">6.000000</damage>
+			<damagebonus type="AbstractCavalry">1.750000</damagebonus>
+			<maxrange>0.750000</maxrange>
+			<onhiteffect active="0" type="DamageOverTime" duration="6.000000">
+				<damage type="Divine">0.1250000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXPoison" attachbone="spine" duration="6.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+	</unit>
+
+	<unit name="WarElephantArcher">
+		<displaynameid>STR_UNIT_WARELEPHANTRIDER_ARCHER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_WAR_ELEPHANT_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_WAR_ELEPHANT_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\war_elephant_icon.png</icon>
+		<animfile>mcmt\units\nubian\warelephant_archer.xml</animfile>
+		<soundsetfile>egyptian\vo\war_elephant\war_elephant.xml</soundsetfile>
+		<obstructionradiusx>1.4900</obstructionradiusx>
+		<obstructionradiusz>1.4900</obstructionradiusz>
+		<selectionradiusx>1.5000</selectionradiusx>
+		<selectionradiusz>2.0000</selectionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>450.0000</initialhitpoints>
+		<maxhitpoints>450.0000</maxhitpoints>
+		<trainpoints>14.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>5</populationcount>
+		<maxvelocity>2.9000</maxvelocity>
+		<los>16.0000</los>
+		<bloodgroupoverride>defaultbloodelephant</bloodgroupoverride>
+		<cost resourcetype="Food">180.0000</cost>
+		<cost resourcetype="Gold">70.0000</cost>
+		<armor type="Hack" value="0.2500"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<buildlimit>3</buildlimit>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>Hero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Pierce">5.500000</damage>
+			<damagebonus type="AbstractCavalry">1.20000</damagebonus>
+			<damagebonus type="AbstractWarship">1.60000</damagebonus>
+			<damagebonus type="MythUnit">2.00000</damagebonus>
+			<maxrange>12.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+			<numberprojectiles>2</numberprojectiles>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.634</projectilechainbouncereduction>
+			<projectilechainbouncerange>6.333333</projectilechainbouncerange>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring_extra_large.xml</modelattachment>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+
+<!-- Egyptian Special Buildings -->
+	<unit name="NubianCamp">
+		<displaynameid>STR_BLD_CAMP_AMAZONIAN_NAME</displaynameid>
+		<shortrollovertextid>STR_BLD_CAMP_AMAZONIAN_NAME</shortrollovertextid>
+		<rollovertextid>STR_BLD_CAMP_AMAZONIAN_NAME</rollovertextid>
+		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
+		<animfile culture="greek">shared\buildings\tent\tent_greek.xml</animfile>
+		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
+		<obstructionradiusx>2.0000</obstructionradiusx>
+		<obstructionradiusz>2.0000</obstructionradiusz>
+		<impacttype>Wood</impacttype>
+		<allowedheightvariance>4.0000</allowedheightvariance>
+		<movementtype>land</movementtype>
+		<initialhitpoints>250.0000</initialhitpoints>
+		<maxhitpoints>250.0000</maxhitpoints>
+		<trainpoints>1.0000</trainpoints>
+		<populationcapaddition>2</populationcapaddition>
+		<los>9.0000</los>
+		<cost resourcetype="Wood">125.0000</cost>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.4500"></armor>
+		<armor type="Crush" value="0.0500"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>Unit</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>UseSharedBuildLimit</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DynamicUpdate</flag>		
+		<autobuildrate>5.0000</autobuildrate>		
+		<bloodgroupoverride>noblood</bloodgroupoverride>		
+		<train row="0" column="1" mergeMode="add">NubianMercenary</train>
+		<train row="0" column="2" mergeMode="add">NubianCavalry</train>
+		<train row="0" column="3" mergeMode="add">NubianHunter</train>
+		<train row="1" column="1" mergeMode="add">BowmanArcher</train>
+		<train row="1" column="2" mergeMode="add">Kopeshman</train>
+		<train row="1" column="3" mergeMode="add">WarElephantRider</train>
+		<train row="1" column="4" mergeMode="add">WarElephantArcher</train>
+		
+		<tech row="0" column="0" mergeMode="add">MCMT_NubianTraining_I</tech>
+		<tech row="0" column="0" mergeMode="add">MCMT_NubianTraining_II</tech>
+		<tech row="0" column="0" mergeMode="add">MCMT_NubianTraining_III</tech>
+		<tech row="1" column="0" mergeMode="add">MCMT_KingdomGuardTraining_I</tech>
+		<tech row="1" column="0" mergeMode="add">MCMT_KingdomGuardTraining_II</tech>
+		<tech row="1" column="0" mergeMode="add">MCMT_KingdomGuardTraining_III</tech>
+	</unit>
 	
 <!-- dismount units knights
 	<unit name="KopeshNubian" mergeMode="add"></unit>
-	<unit name="KopeshInfantry" mergeMode="add"></unit>
-	<unit name="Bowman" mergeMode="add"></unit>
 	<unit name="ElephantRider" mergeMode="add"></unit>
 -->
 	<!-- Hall of Heroes Special Units -->

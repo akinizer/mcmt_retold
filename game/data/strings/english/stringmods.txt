@@ -679,6 +679,16 @@ ID = "STR_UNIT_ROYAL_ELF_NAME"   ;   Str = "Royal Elf"
 ID = "STR_UNIT_ROYAL_ELF_SR"   ;   Str = "Elites from Elven Empire"
 ID = "STR_UNIT_ROYAL_ELF_LR"   ;   Str = "Royal Elves are naturally talented at swordsmanship, archery as well as smithery. They receive a professional training, join military in early ages and wield mithril armaments"
 
+// EGYPTIAN SPECIAL UNITS
+ID = "STR_UNIT_NUBIANMERCENARY_NAME"   ;   Str = "Nubian Mercenary"
+ID = "STR_UNIT_NUBIANHUNTER_NAME"   ;   Str = "Nubian Hunter"
+ID = "STR_UNIT_NUBIANCAVALRY_NAME"   ;   Str = "Nubian Cavalry"
+
+ID = "STR_UNIT_BOWMAN_ARCHER_NAME"   ;   Str = "Bowman Archer"
+ID = "STR_UNIT_KOPESHMAN_NAME"   ;   Str = "Kopesh Swordsman"
+ID = "STR_UNIT_WARELEPHANTRIDER_NAME"   ;   Str = "War Elephant Rider"
+ID = "STR_UNIT_WARELEPHANTRIDER_ARCHER_NAME"   ;   Str = "War Elephant Archer"
+
 // JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
 

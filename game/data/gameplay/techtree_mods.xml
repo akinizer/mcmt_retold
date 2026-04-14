@@ -1125,6 +1125,14 @@
             <effect type="TechStatus" status="obtainable">MCMT_NymphMender</effect>
             <effect type="TechStatus" status="obtainable">MCMT_NymphCharmer</effect>
             <effect type="TechStatus" status="obtainable">MCMT_NymphOracle</effect>
+
+            <effect type="TechStatus" status="obtainable">MCMT_NubianTraining</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_NubianTraining_I</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_NubianTraining_II</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_NubianTraining_III</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_I</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_II</effect>
+            <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_III</effect>
             <!--TechBuilding FutureTech-->
             <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
             <effect type="TechStatus" status="obtainable">MCMT_NanofiberPlatings</effect>
@@ -3035,6 +3043,255 @@
         <target type="ProtoUnit">RangerElf</target></effect>
       <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
         <target type="ProtoUnit">RoyalElf</target></effect>
+		</effects>		
+	</tech>
+
+  <tech name="MCMT_NubianTraining" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">1250</cost>
+		<cost resourcetype="Favor">55</cost>    
+		<effects>      
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">NubianCamp</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">NubianMercenary</target></effect> 
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">NubianCavalry</target></effect> 
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">NubianHunter</target></effect>         
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">BowmanArcher</target></effect>         
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">Kopeshman</target></effect>         
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">WarElephantRider</target></effect>         
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">WarElephantArcher</target></effect>         
+		</effects>		
+	</tech>
+  <tech name="MCMT_NubianTraining_I" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_I_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_I_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">150</cost> 
+    <prereqs>
+      <techstatus status="Active">MCMT_NubianTraining</techstatus>
+    </prereqs>
+		<effects>      
+      <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">NubianMercenary</target></effect>
+      <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
+      <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">NubianHunter</target></effect>
+      
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianMercenary</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianHunter</target></effect>
+
+       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">AmanraOlder</target></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_NubianTraining_II" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_II_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_II_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">150</cost>    
+     <prereqs>
+      <techstatus status="Active">MCMT_NubianTraining_I</techstatus>
+    </prereqs>
+		<effects>     
+      <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">NubianMercenary</target></effect>
+      <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
+      <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">NubianHunter</target></effect>
+      
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianMercenary</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianHunter</target></effect>
+
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">AmanraOlder</target></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_NubianTraining_III" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_III_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">150</cost>    
+    <prereqs>
+      <techstatus status="Active">MCMT_NubianTraining_II</techstatus>
+    </prereqs>
+		<effects>      
+      <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">NubianMercenary</target></effect>
+      <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
+      <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
+        <target type="ProtoUnit">NubianHunter</target></effect>
+      
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianMercenary</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianHunter</target></effect>
+
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">AmanraOlder</target></effect>
+
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">NubianMercenary</target></effect>
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
+      <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">NubianHunter</target></effect>
+		</effects>		
+	</tech>
+
+  <tech name="MCMT_KingdomGuardTraining_I" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_I_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_I_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">150</cost> 
+    <prereqs>
+      <techstatus status="Active">MCMT_NubianTraining</techstatus>
+    </prereqs>
+		<effects>            
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">BowmanArcher</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Kopeshman</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephantRider</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephantArcher</target></effect>
+
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">WarElephantArcher</target></effect>
+
+      <effect type="Data" amount="0.20" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="0.40" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">AmanraOlder</target></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_KingdomGuardTraining_II" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_II_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_II_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">150</cost>    
+     <prereqs>
+      <techstatus status="Active">MCMT_KingdomGuardTraining_I</techstatus>
+    </prereqs>
+		<effects>     
+        <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">BowmanArcher</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Kopeshman</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephantRider</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephantArcher</target></effect>
+
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">WarElephantArcher</target></effect>
+
+      <effect type="Data" amount="0.30" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="0.50" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">AmanraOlder</target></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_KingdomGuardTraining_III" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DIVINE_NATURE_SPIRITS_III_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">150</cost>    
+    <prereqs>
+      <techstatus status="Active">MCMT_KingdomGuardTraining_II</techstatus>
+    </prereqs>
+		<effects>      
+        <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">BowmanArcher</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">Kopeshman</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephantRider</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephantArcher</target></effect>
+
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">WarElephantArcher</target></effect>
+
+      <effect type="Data" amount="0.50" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Amanra</target></effect>
+      <effect type="Data" amount="0.60" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+          <target type="ProtoUnit">AmanraOlder</target></effect>
+
+      <effect type="Data" action="HandAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+          <target type="ProtoUnit">Amanra</target></effect>  
+      <effect type="Data" action="HandAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">AmanraOlder</target></effect>  
+
+      <effect type="Data" amount="0.85" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">BowmanArcher</target></effect>
+      <effect type="Data" amount="0.85" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">Kopeshman</target></effect>
+      <effect type="Data" amount="0.85" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">WarElephantRider</target></effect>
+      <effect type="Data" amount="0.85" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">WarElephantArcher</target></effect>
 		</effects>		
 	</tech>
 
@@ -5798,6 +6055,20 @@
         <target type="ProtoUnit">Landlord</target></effect>
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
         <target type="ProtoUnit">Landlord</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">Kopeshman</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">Kopeshman</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">Kopeshman</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianMercenary</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianMercenary</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianMercenary</target></effect>
     </effects>
   </tech>
   <tech name="HeavyAxemen" mergeMode="add">
@@ -5815,6 +6086,20 @@
         <target type="ProtoUnit">Landlord</target></effect>
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
         <target type="ProtoUnit">Landlord</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">Kopeshman</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">Kopeshman</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">Kopeshman</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianMercenary</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianMercenary</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianMercenary</target></effect>
     </effects>
   </tech>
   <tech name="ChampionAxemen" mergeMode="add">
@@ -5832,6 +6117,20 @@
         <target type="ProtoUnit">Landlord</target></effect>
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
         <target type="ProtoUnit">Landlord</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">Kopeshman</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">Kopeshman</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">Kopeshman</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianMercenary</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianMercenary</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianMercenary</target></effect>
     </effects>
   </tech>
   <tech name="MediumSpearmen" mergeMode="add">
@@ -5863,6 +6162,20 @@
         <target type="ProtoUnit">Reginleif</target></effect>
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
         <target type="ProtoUnit">Reginleif</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantRider</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantRider</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">WarElephantRider</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianCavalry</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianCavalry</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianCavalry</target></effect>
     </effects>
   </tech>
   <tech name="HeavySpearmen" mergeMode="add">
@@ -5894,6 +6207,20 @@
         <target type="ProtoUnit">Reginleif</target></effect>
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
         <target type="ProtoUnit">Reginleif</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantRider</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantRider</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">WarElephantRider</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianCavalry</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianCavalry</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianCavalry</target></effect>
     </effects>
   </tech>
   <tech name="ChampionSpearmen" mergeMode="add">
@@ -5925,6 +6252,101 @@
         <target type="ProtoUnit">Reginleif</target></effect>
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
         <target type="ProtoUnit">Reginleif</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantRider</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantRider</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">WarElephantRider</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianCavalry</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianCavalry</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianCavalry</target></effect>
+    </effects>
+  </tech>
+   <tech name="MediumSlingers" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">BowmanArcher</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">BowmanArcher</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">BowmanArcher</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianHunter</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianHunter</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianHunter</target></effect>
+    </effects>
+  </tech>
+  <tech name="HeavySlingers" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">BowmanArcher</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">BowmanArcher</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">BowmanArcher</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianHunter</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianHunter</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianHunter</target></effect>
+    </effects>
+  </tech>
+  <tech name="ChampionSlingers" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">BowmanArcher</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">BowmanArcher</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">BowmanArcher</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">NubianHunter</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">NubianHunter</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">NubianHunter</target></effect>
+    </effects>
+  </tech>
+   <tech name="MediumChariotArchers" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantArcher</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantArcher</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">WarElephantArcher</target></effect>
+    </effects>
+  </tech>
+  <tech name="HeavyChariotArchers" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantArcher</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantArcher</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">WarElephantArcher</target></effect>
+    </effects>
+  </tech>
+  <tech name="ChampionChariotArchers" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantArcher</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">WarElephantArcher</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">WarElephantArcher</target></effect>
     </effects>
   </tech>
   <tech name="FeetOfTheJackal" mergeMode="add">

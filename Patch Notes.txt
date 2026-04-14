@@ -758,6 +758,7 @@ Implemented & Unused Models (soldiers & leaders)
 
 hwacha
 chinese reworks -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
+japanese god powers -> zero cost, zero repeat cost
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================

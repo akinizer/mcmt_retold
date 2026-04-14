@@ -1,0 +1,15 @@
+<animfile validation="strict">
+	<attachment>Rider<include>egyptian\units\archery\chariot_archer\chariot_archer_rider.xml</include></attachment>
+    <attachment>Supply<include>egyptian\units\archery\chariot_archer\chariot_archer_rider.xml</include></attachment>	
+	<attachment>Tusk<component>ModelComp<assetreference type="TMModel"><file>egyptian\units\cavalry\war_elephant\war_elephant_tusk_upgrade3</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	<component>ModelComp
+		<assetreference type="TMModel"><file>egyptian\units\cavalry\war_elephant\war_elephant_gold</file><materialvariant index="3"></materialvariant></assetreference>
+		<attach name="rider" attachpoint="rider" syncanims="1"></attach><attach name="tusk" attachpoint="tusk" syncanims="1"></attach><attach name="supply" attachpoint="supply" syncanims="1"></attach></component>
+	<anim>Death<assetreference type="TMAnimation"><file>egyptian\units\cavalry\war_elephant\anim\war_elephant_death_a</file><tag type="SpecificSoundSet" checkvisible="1" set="GiantFootsteps">0.14</tag><tag type="SpecificSoundSet" checkvisible="1" set="HeavyFall">0.48</tag></assetreference><component>ModelComp</component></anim>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>egyptian\units\cavalry\war_elephant\anim\war_elephant_attack_a</file><tag type="Attack">0.5</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshSword">0.34</tag></assetreference><component>ModelComp</component></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>egyptian\units\cavalry\war_elephant\anim\war_elephant_attack_a</file><tag type="Attack">0.375</tag><tag type="SpecificSoundSet" checkvisible="1" set="BowTwang">0.35</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshArrow">0.35</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>egyptian\units\cavalry\war_elephant\anim\war_elephant_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>egyptian\units\cavalry\war_elephant\anim\war_elephant_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>egyptian\units\cavalry\war_elephant\anim\war_elephant_walk_a</file><tag type="SpecificSoundSet" checkvisible="1" set="GiantFootsteps">0.28</tag><tag type="SpecificSoundSet" checkvisible="1" set="GiantFootsteps">0.78</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>egyptian\units\cavalry\war_elephant\anim\war_elephant_flail_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>

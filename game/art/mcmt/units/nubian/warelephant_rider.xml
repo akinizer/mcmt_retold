@@ -1,0 +1,17 @@
+<animfile validation="strict">
+	<attachment>helmet<include>egyptian\units\cavalry\war_elephant\war_elephant_helm.xml</include></attachment>
+	<attachment>goad<include>shared\units\attachments\spear\spear.xml</include></attachment>
+	<attachment>shield<include>egyptian\units\attachments\shield\shield_e_f.xml</include></attachment>
+	<component>ModelComp<logic type="Tech">
+		<none><assetreference type="TMModel"><file>egyptian\units\cavalry\war_elephant\war_elephant_rider_iron</file><materialvariant index="0"></materialvariant></assetreference></none>
+		<mediumspearmen><assetreference type="TMModel"><file>egyptian\units\cavalry\war_elephant\war_elephant_rider_bronze</file><materialvariant index="1"></materialvariant></assetreference></mediumspearmen>
+		<heavyspearmen><assetreference type="TMModel"><file>egyptian\units\cavalry\war_elephant\war_elephant_rider_silver</file><materialvariant index="2"></materialvariant></assetreference></heavyspearmen>
+		<championspearmen><assetreference type="TMModel"><file>egyptian\units\cavalry\war_elephant\war_elephant_rider_gold</file><materialvariant index="3"></materialvariant></assetreference></championspearmen></logic>
+		<attach name="goad" attachpoint="weapon"></attach><attach name="helmet" attachpoint="helm"></attach><attach name="shield" attachpoint="shield"></attach></component>
+	<anim>Death<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_attack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_flail_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>
