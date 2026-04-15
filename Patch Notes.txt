@@ -272,8 +272,6 @@
     - Slinger: ArcherLineUpgrade
 - naval:
     - warbarge: progfreeze
-    - 
-
 - hero:
     - popcost 1 or 2
     - General Reworks: Priest+, Pharaoh+, PharaohNewKingdom+, SonOfOsiris (Son of Horus)+
@@ -285,14 +283,24 @@
 - Nubians
     - Nubian Mercenary: blade unit, light shield, high rof, axemen techs
     - Nubian Charger: spear unit, light shield, high maxvelocity, spearmen techs
+        - IdleSpeedBonus (tech-enabled): this fast unit releases muscle power for a start dash
     - Nubian Hunter: heavy unit, long spear, large shield, high pierce armor, slinger techs
+        - BashAttack (tech-enabled): this slow unit uses all the accumulated energy by launching itself toward [humansoldier, villager, mythunit] and throws back [humansoldier, villagernothero]
     - Nubian Cavalry: hero unit, mace, shield-free, high maxvelocity, low hackarmor, spearmen techs
+
+    - NubianTraining: enables MercenaryCamp, Nubian & Kingdom Guard units and techs
+    - NubianTraining I,II,III: increases speed and hitpoints of Nubian units as well as hitpoints of Amanra variants
+        - NubianTraining II: enables idlespeedbonus of Nubian Charger
+        - NubianTraining III: enables BashAttack ability of Nubian Hunter, decreases trainpoints of Nubian units
+
 - Kingdom Guards
     - Bowman Archer: dismounted chariotarcher, slinger techs
     - Kopesh Swordsman: dismounted camelrider, axemen techs
     - War Elephant Rider: dismounted warelephant, spearmen techs
-    - War Elephant Archer: hero cavalry, ranged warelephant, two archer riders, chariotarcher techs 
+    - War Elephant Archer: hero cavalry, ranged warelephant, two archer riders, chariotarcher techs
 
+    - KingdomGuardsTraining I,II,III: increases hitpoints of KingdmGuards units, maxrange of WarElephantArcher, handattack of Amanra variants
+        - KingdomGuardsTraining III: increases handattack range of Amanra variants, decreases trainpoints of Nubian units
 
 6. Chinese reworks from mcmt mod and extra changes
 - myth unit:

@@ -3048,7 +3048,7 @@
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_NUBIANTRAINING_NAME</displaynameid>
 		<rollovertextid>STR_TECH_NUBIANTRAINING_LR</rollovertextid>
-		<icon>resources\tech\trident.png</icon>
+		<icon>resources\tech\nubianlogo.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -3080,7 +3080,7 @@
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_NUBIANTRAINING_I_NAME</displaynameid>
 		<rollovertextid>STR_TECH_NUBIANTRAINING_I_LR</rollovertextid>
-		<icon>resources\tech\trident.png</icon>
+		<icon>resources\tech\nubianlogo.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -3102,6 +3102,8 @@
         <target type="ProtoUnit">NubianCavalry</target></effect>
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">NubianHunter</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianCharger</target></effect>
 
        <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">Amanra</target></effect>
@@ -3113,7 +3115,7 @@
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_NUBIANTRAINING_II_NAME</displaynameid>
 		<rollovertextid>STR_TECH_NUBIANTRAINING_II_LR</rollovertextid>
-		<icon>resources\tech\trident.png</icon>
+		<icon>resources\tech\nubianlogo.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -3129,6 +3131,9 @@
         <target type="ProtoUnit">NubianCavalry</target></effect>
       <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
         <target type="ProtoUnit">NubianHunter</target></effect>
+
+      <effect type="Data" protoaction="LonghouseSpeedBonus" amount="1.00" subtype="ProtoActionAdd" unittype="IdleSpeedBonus" relativity="Assign">
+				<target type="ProtoUnit">NubianCharger</target></effect>
       
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">NubianMercenary</target></effect>
@@ -3136,6 +3141,8 @@
         <target type="ProtoUnit">NubianCavalry</target></effect>
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">NubianHunter</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">NubianCharger</target></effect>
 
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">Amanra</target></effect>
@@ -3147,7 +3154,7 @@
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_NUBIANTRAINING_III_NAME</displaynameid>
 		<rollovertextid>STR_TECH_NUBIANTRAINING_III_LR</rollovertextid>
-		<icon>resources\tech\trident.png</icon>
+		<icon>resources\tech\nubianlogo.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -3178,6 +3185,9 @@
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">AmanraOlder</target></effect>
 
+      <effect type="Data" action="Teleport" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">NubianHunter</target></effect>
+
       <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
         <target type="ProtoUnit">NubianMercenary</target></effect>
       <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
@@ -3193,7 +3203,7 @@
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_KINGDOMGUARDTRAINING_I_NAME</displaynameid>
 		<rollovertextid>STR_TECH_KINGDOMGUARDTRAINING_I_LR</rollovertextid>
-		<icon>resources\tech\trident.png</icon>
+		<icon>resources\tech\kingdomguardslogo.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -3224,7 +3234,7 @@
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_KINGDOMGUARDTRAINING_II_NAME</displaynameid>
 		<rollovertextid>STR_TECH_KINGDOMGUARDTRAINING_II_LR</rollovertextid>
-		<icon>resources\tech\trident.png</icon>
+		<icon>resources\tech\kingdomguardslogo.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -3256,7 +3266,7 @@
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_KINGDOMGUARDTRAINING_III_NAME</displaynameid>
 		<rollovertextid>STR_TECH_KINGDOMGUARDTRAINING_III_LR</rollovertextid>
-		<icon>resources\tech\trident.png</icon>
+		<icon>resources\tech\kingdomguardslogo.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>

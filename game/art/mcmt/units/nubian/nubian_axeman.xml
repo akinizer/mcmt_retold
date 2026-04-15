@@ -22,4 +22,6 @@
 	<anim>Flail<assetreference type="TMAnimation"><file>atlantean\units\infantry\katapeltes\anim\katapeltes_flail_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>Idle<assetreference type="TMAnimation"><file>greek\units\infantry\hoplite\anim\hoplite_igc_idle_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>Walk<assetreference type="TMAnimation"><file>atlantean\units\infantry\katapeltes\anim\katapeltes_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>DashStart<assetreference type="TMAnimation"><file>chinese\units\myth\ya_zi\anim\ya_zi_dashstart_a</file><tag type="SpecificSoundSet" checkvisible="1" set="YaZiDash"></tag><tag type="Throw">0.9</tag></assetreference><component>ModelComp</component></anim>
+	<anim>DashEnd<assetreference type="TMAnimation"><file>chinese\units\myth\ya_zi\anim\ya_zi_dashend_a</file><tag type="Attack">0.2</tag></assetreference><component>ModelComp</component></anim>
 </animfile>

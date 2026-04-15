@@ -24416,10 +24416,10 @@
 		<turnrate>18.0000</turnrate>
 		<initialhitpoints>90.0000</initialhitpoints>
 		<maxhitpoints>90.0000</maxhitpoints>
-		<trainpoints>1.0000</trainpoints>
+		<trainpoints>25.0000</trainpoints>
 		<buildlimit>12</buildlimit>
 		<weightclass>5</weightclass>
-		<populationcount>0</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
 		<los>16.0000</los>
 		<cost resourcetype="Gold">90.0000</cost>
@@ -24463,13 +24463,15 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.000000</rof>
-			<damage type="Hack">7.000000</damage>
-			<damagebonus type="AbstractCavalry">1.500000</damagebonus>
-			<maxrange>0.750000</maxrange>
+			<rof>0.800000</rof>
+			<damage type="Hack">4.500000</damage>
+			<damagebonus type="AbstractArcher">1.500000</damagebonus>
+			<damagebonus type="AbstractInfantry">1.200000</damagebonus>
+			<maxrange>0.500000</maxrange>
 		</protoaction>
 	</unit>
 	<unit name="NubianHunter">
@@ -24485,17 +24487,19 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>90.0000</initialhitpoints>
-		<maxhitpoints>90.0000</maxhitpoints>
-		<trainpoints>1.0000</trainpoints>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<trainpoints>30.0000</trainpoints>
 		<buildlimit>12</buildlimit>
 		<weightclass>5</weightclass>
-		<populationcount>0</populationcount>
-		<maxvelocity>4.3000</maxvelocity>
+		<populationcount>2</populationcount>
+		<maxvelocity>3.0000</maxvelocity>
+		<rechargetime>60.0000</rechargetime>
+		<autoattackrange>25.0000</autoattackrange>
 		<los>16.0000</los>
-		<cost resourcetype="Gold">90.0000</cost>
-		<armor type="Hack" value="0.3500"></armor>
-		<armor type="Pierce" value="0.1500"></armor>
+		<cost resourcetype="Gold">120.0000</cost>
+		<armor type="Hack" value="0.4500"></armor>
+		<armor type="Pierce" value="0.2500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeNeededForVictory</unittype>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
@@ -24535,14 +24539,44 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
-		<tactics>handattack.tactics</tactics>
+		<flag>AutoTrainable</flag>
+		<flag>HasDefaultAttack</flag>
+		<tactics>global_infantry_handattack_bash.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.000000</rof>
-			<damage type="Hack">7.000000</damage>
-			<damagebonus type="AbstractCavalry">1.500000</damagebonus>
-			<maxrange>0.750000</maxrange>
+			<rof>3.000000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damagebonus type="AbstractCavalry">1.750000</damagebonus>
+			<damagebonus type="Hero">1.500000</damagebonus>
+			<maxrange>1.550000</maxrange>
+			<defaultattack>1</defaultattack>
 		</protoaction>
+		<ProtoAction>
+            <name>Teleport</name>
+            <rof>4.500000</rof>
+            <damage type='Hack'>40.000000</damage>
+			<damagebonus type="HumanSoldier">2.500000</damagebonus>
+            <DamageArea>5.000000</DamageArea>
+            <DamageFlags>Enemy</DamageFlags>
+            <MaxRange>20.000000</MaxRange>
+            <MinRange>8.000000</MinRange>
+			<rate type="HumanSoldier">1.0</rate>
+			<rate type="MythUnit">1.0</rate>
+			<rate type="AbstractVillager">1.0</rate>
+			<rate type="Building">0.0</rate>
+			<projectile>VFXRampage</projectile>
+
+            <ModifyDuration>1500</ModifyDuration>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<throw>1</throw>
+			<coneareaangle>360.000000</coneareaangle>
+			<outerdamageareadistance>1.500000</outerdamageareadistance>
+			<outerdamageareafactor>0.900000</outerdamageareafactor>
+			<fulldamagemaintarget>1</fulldamagemaintarget>
+			<maxsizeclass>7</maxsizeclass>
+			<active>0</active>
+        </ProtoAction>
 	</unit>
 	<unit name="NubianCharger">
 		<displaynameid>STR_UNIT_NUBIANCHARGER_NAME</displaynameid>
@@ -24557,17 +24591,17 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>90.0000</initialhitpoints>
-		<maxhitpoints>90.0000</maxhitpoints>
-		<trainpoints>1.0000</trainpoints>
+		<initialhitpoints>85.0000</initialhitpoints>
+		<maxhitpoints>85.0000</maxhitpoints>
+		<trainpoints>25.0000</trainpoints>
 		<buildlimit>12</buildlimit>
 		<weightclass>5</weightclass>
-		<populationcount>0</populationcount>
-		<maxvelocity>4.3000</maxvelocity>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.5000</maxvelocity>
 		<los>16.0000</los>
 		<cost resourcetype="Gold">90.0000</cost>
-		<armor type="Hack" value="0.3500"></armor>
-		<armor type="Pierce" value="0.1500"></armor>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.3500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeNeededForVictory</unittype>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
@@ -24607,13 +24641,15 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.000000</rof>
+			<rof>1.250000</rof>
 			<damage type="Hack">7.000000</damage>
 			<damagebonus type="AbstractCavalry">1.500000</damagebonus>
-			<maxrange>0.750000</maxrange>
+			<damagebonus type="AbstractSiegeWeapon">1.500000</damagebonus>
+			<maxrange>1.250000</maxrange>
 		</protoaction>
 	</unit>
 
@@ -24632,17 +24668,17 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>160.0000</initialhitpoints>
-		<maxhitpoints>160.0000</maxhitpoints>
-		<trainpoints>2.0000</trainpoints>
-		<buildlimit>8</buildlimit>
+		<initialhitpoints>145.0000</initialhitpoints>
+		<maxhitpoints>145.0000</maxhitpoints>
+		<trainpoints>30.0000</trainpoints>
+		<buildlimit>6</buildlimit>
 		<weightclass>6</weightclass>
-		<populationcount>0</populationcount>
-		<maxvelocity>5.3000</maxvelocity>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.8000</maxvelocity>
 		<los>12.0000</los>
 		<bloodgroupoverride>defaultbloodhorse</bloodgroupoverride>
 		<cost resourcetype="Gold">120.0000</cost>
-		<armor type="Hack" value="0.2000"></armor>
+		<armor type="Hack" value="0.2500"></armor>
 		<armor type="Pierce" value="0.3500"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeNeededForVictory</unittype>
@@ -24682,13 +24718,16 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.000000</rof>
+			<rof>1.100000</rof>
 			<damage type="Hack">8.000000</damage>
-			<damagebonus type="AbstractArcher">1.500000</damagebonus>
-			<maxrange>0.750000</maxrange>
+			<damage type="Crush">2.000000</damage>
+			<damagebonus type="MythUnit">1.500000</damagebonus>
+			<damagebonus type="AbstractCavalry">1.300000</damagebonus>
+			<maxrange>1.300000</maxrange>
 		</protoaction>
 		<protoaction>
 			<name>HeroRingOnSelf</name>
@@ -24773,6 +24812,7 @@
 		<flag>MilitaryCommands</flag>
 		<flag>CommonCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
 		<tactics>rangedattack.tactics</tactics>
 		<protoaction>
 			<name>RangedAttack</name>
@@ -24853,12 +24893,14 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>1.000000</rof>
 			<damage type="Hack">5.000000</damage>
-			<damagebonus type="AbstractInfantry">4.000000</damagebonus>
+			<damagebonus type="AbstractInfantry">2.000000</damagebonus>
+			<damagebonus type="AbstractVillager">4.000000</damagebonus>
 			<maxrange>0.500000</maxrange>
 		</protoaction>
 	</unit>
@@ -24928,6 +24970,7 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
@@ -24962,17 +25005,17 @@
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>450.0000</initialhitpoints>
-		<maxhitpoints>450.0000</maxhitpoints>
-		<trainpoints>14.0000</trainpoints>
+		<initialhitpoints>550.0000</initialhitpoints>
+		<maxhitpoints>550.0000</maxhitpoints>
+		<trainpoints>22.0000</trainpoints>
 		<weightclass>9</weightclass>
-		<populationcount>5</populationcount>
+		<populationcount>2</populationcount>
 		<maxvelocity>2.9000</maxvelocity>
 		<los>16.0000</los>
 		<bloodgroupoverride>defaultbloodelephant</bloodgroupoverride>
 		<cost resourcetype="Food">180.0000</cost>
-		<cost resourcetype="Gold">70.0000</cost>
-		<armor type="Hack" value="0.2500"></armor>
+		<cost resourcetype="Gold">1000.0000</cost>
+		<armor type="Hack" value="0.4500"></armor>
 		<armor type="Pierce" value="0.5000"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<buildlimit>3</buildlimit>
@@ -25020,15 +25063,16 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
 		<tactics>rangedattack.tactics</tactics>
 		<protoaction>
 			<name>RangedAttack</name>
 			<rof>1.200000</rof>
 			<damage type="Pierce">5.500000</damage>
 			<damagebonus type="AbstractCavalry">1.20000</damagebonus>
-			<damagebonus type="AbstractWarship">1.60000</damagebonus>
+			<damagebonus type="Building">1.60000</damagebonus>
 			<damagebonus type="MythUnit">2.00000</damagebonus>
-			<maxrange>12.000000</maxrange>
+			<maxrange>14.000000</maxrange>
 			<projectile>ProjectileArrowFlaming</projectile>
 			<numberprojectiles>2</numberprojectiles>
 			<projectilechainbounce>1</projectilechainbounce>
