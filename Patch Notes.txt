@@ -297,7 +297,10 @@
     - Bowman Archer: dismounted chariotarcher, slinger techs
     - Kopesh Swordsman: dismounted camelrider, axemen techs
     - War Elephant Rider: dismounted warelephant, spearmen techs
-    - War Elephant Archer: hero cavalry, ranged warelephant, two archer riders, chariotarcher techs
+    - War Elephant Archer: hero warelephant, ranged, two archer riders, chariotarcher techs
+    - War Elephant Siege: siegeweapon warelephant, mounted ballista, warelephant techs
+        - RangedAttack: BallistaShot
+        - MeleeAttack: Elephant
 
     - KingdomGuardsTraining I,II,III: increases hitpoints of KingdmGuards units, maxrange of WarElephantArcher, handattack of Amanra variants
         - KingdomGuardsTraining III: increases handattack range of Amanra variants, decreases trainpoints of Nubian units
@@ -946,7 +949,7 @@ Satyr + HandAttack (anim)
 - MilitaryAcademy -> daughters of artemis (prereqs Hunts of Artemis)
 
 === Hero Techs
-- Helm of Darkness: Perseus gains infiltraion
+- Helm of Darkness: Perseus gains infiltration
 - Gaze of Medusa: Perseus gains petrification
 - Greatest of Fifty
     - barracks -> summon hero spearman
@@ -983,9 +986,6 @@ Satyr + HandAttack (anim)
 
 - Vikings (Norse): RaiderCavalry -> HumanSoldier, reward Food and Wood, name change (Viking Ideology)
 - Spoils of War (Japanese): minor god restriction removal
-
-=== Name Updates
-- Mercenaries: rename "Nubian Mercenaries"
 
 === MORE REWORKS
 * General
