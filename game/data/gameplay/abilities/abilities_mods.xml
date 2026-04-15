@@ -357,8 +357,16 @@
 		<ability>AbilityEmpower<actioncommand>true</actioncommand><noautocast>true</noautocast></ability>
 		<ability>AbilityConvertAnimal<actioncommand>true</actioncommand><noautocast>true</noautocast></ability>
 	</Nymph>
-	<!--Egyptian-Nubian-->
+		<!--Egyptian-Myth-->
+	<Scarab>
+        <ability>AbilityScarabBurrow<tech>CrimsonLinen</tech><rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
+    </Scarab>
+	<ScarabBurrowed>
+		<ability>AbilityScarabEmerge<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
+	</ScarabBurrowed>
+		<!--Egyptian-Nubian-->
 	<NubianHunter>
 		<ability>AbilitySpecialHandAttack<tech>MCMT_KingdomGuardTraining_III</tech><chargetimeasrof>1</chargetimeasrof></ability>
 	</NubianHunter>
+	
 </abilitiesmods>

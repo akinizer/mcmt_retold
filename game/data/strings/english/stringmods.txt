@@ -683,35 +683,39 @@ ID = "STR_UNIT_ROYAL_ELF_LR"   ;   Str = "Royal Elves are naturally talented at 
 // EGYPTIAN SPECIAL UNITS
 ID = "STR_UNIT_NUBIANMERCENARY_NAME"   ;   Str = "Nubian Mercenary"
 ID = "STR_UNIT_NUBIANMERCENARY_SR"   ;   Str = "Nubian Mercenary"
-ID = "STR_UNIT_NUBIANMERCENARY_LR"   ;   Str = "Nubian Mercenary"
+ID = "STR_UNIT_NUBIANMERCENARY_LR"   ;   Str = "Nubian Light Infantry that excels in fast attacks"
 
 ID = "STR_UNIT_NUBIANHUNTER_NAME"   ;   Str = "Nubian Hunter"
 ID = "STR_UNIT_NUBIANHUNTER_SR"   ;   Str = "Nubian Hunter"
-ID = "STR_UNIT_NUBIANHUNTER_LR"   ;   Str = "Nubian Hunter"
+ID = "STR_UNIT_NUBIANHUNTER_LR"   ;   Str = "Nubian Heavy Infantry that moves slowly and bashes with an impact"
 
 ID = "STR_UNIT_NUBIANCHARGER_NAME"   ;   Str = "Nubian Charger"
 ID = "STR_UNIT_NUBIANCHARGER_SR"   ;   Str = "Nubian Charger"
-ID = "STR_UNIT_NUBIANCHARGER_LR"   ;   Str = "Nubian Charger"
+ID = "STR_UNIT_NUBIANCHARGER_LR"   ;   Str = "Nubian Light Infantry that wields a spear and a firm agility "
 
-ID = "STR_UNIT_NUBIANCAVALRY_NAME"   ;   Str = "Nubian Cavalry"
+ID = "STR_UNIT_NUBIANCAVALRY_NAME"   ;   Str = "Nubian Cavalry (Hero)"
 ID = "STR_UNIT_NUBIANCAVALRY_SR"   ;   Str = "Nubian Cavalry"
-ID = "STR_UNIT_NUBIANCAVALRY_LR"   ;   Str = "Nubian Cavalry"
+ID = "STR_UNIT_NUBIANCAVALRY_LR"   ;   Str = "Nubian Mounted Soldier that bears a heavy burden and heroism"
 
 ID = "STR_UNIT_BOWMAN_ARCHER_NAME"   ;   Str = "Bowman Archer"
 ID = "STR_UNIT_BOWMAN_ARCHER_SR"   ;   Str = "Bowman Archer"
-ID = "STR_UNIT_BOWMAN_ARCHER_LR"   ;   Str = "Bowman Archer"
+ID = "STR_UNIT_BOWMAN_ARCHER_LR"   ;   Str = "Dismounted Marksman of Chariot Archer"
 
 ID = "STR_UNIT_KOPESHMAN_NAME"   ;   Str = "Kopesh Swordsman"
 ID = "STR_UNIT_KOPESHMAN_SR"   ;   Str = "Kopesh Swordsman"
-ID = "STR_UNIT_KOPESHMAN_LR"   ;   Str = "Kopesh Swordsman"
+ID = "STR_UNIT_KOPESHMAN_LR"   ;   Str = "Dismounted Infantry of Camel Rider"
 
 ID = "STR_UNIT_WARELEPHANTRIDER_NAME"   ;   Str = "War Elephant Rider"
 ID = "STR_UNIT_WARELEPHANTRIDER_SR"   ;   Str = "War Elephant Rider"
-ID = "STR_UNIT_WARELEPHANTRIDER_LR"   ;   Str = "War Elephant Rider"
+ID = "STR_UNIT_WARELEPHANTRIDER_LR"   ;   Str = "Dismounted Infantry of War Elephant"
 
-ID = "STR_UNIT_WARELEPHANTRIDER_ARCHER_NAME"   ;   Str = "War Elephant Archer"
+ID = "STR_UNIT_WARELEPHANTRIDER_ARCHER_NAME"   ;   Str = "War Elephant Archer (Hero)"
 ID = "STR_UNIT_WARELEPHANTRIDER_ARCHER_SR"   ;   Str = "War Elephant Archer"
-ID = "STR_UNIT_WARELEPHANTRIDER_ARCHER_LR"   ;   Str = "War Elephant Archer"
+ID = "STR_UNIT_WARELEPHANTRIDER_ARCHER_LR"   ;   Str = "War Elephant with two ranged veterans of war"
+
+ID = "STR_UNIT_WARELEPHANTRIDER_SIEGE_NAME"   ;   Str = "Siege War Elephant"
+ID = "STR_UNIT_WARELEPHANTRIDER_SIEGE_SR"   ;   Str = "Siege War Elephant"
+ID = "STR_UNIT_WARELEPHANTRIDER_SIEGE_LR"   ;   Str = "War Elephant with a mounted siege arbalest that excels in distance and close range"
 
 // JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
@@ -1053,6 +1057,9 @@ ID = "STR_ABILITY_DEADLY_CHARM"   ;   Str = "Deadly Charm"
 ID = "STR_ABILITY_SNOW_BLAST"   ;   Str = "Snow Blast"
 ID = "STR_ABILITY_DASH_ATTACK"   ;   Str = "Dash Attack"
 ID = "STR_ABILITY_ILLUSION_SURPRISE"   ;   Str = "Illusion Surprise"
+
+ID = "STR_ABILITY_BURROW"   ;   Str = "Burrow"
+ID = "STR_ABILITY_EMERGE"   ;   Str = "Emerge"
 
 ID = "STR_ABILITY_SPECIALATTACK"   ;   Str = "Special Attack"
 ID = "STR_ABILITY_SPECIALATTACK_LR"   ;   Str = "This unit has a special ability that recharges"

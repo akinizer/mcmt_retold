@@ -247,6 +247,9 @@
     - VisualScale: Phoenix+, Leviathan+, WarTurtle+, Scarab+, Sphinx+
 
     - melee: Minion+, MinionReincarnated+, Avenger+, Scarab+, Sphinx+, Anubite+, ScorpionMan+
+        - Crimson Linen: enables Burrow and Emerge abilities for Scarab
+            - Burrow: submerges into ground and undetectable by enemies
+            - Emerge: returns to surface
     - ranged: Wadjet+, Petsuchos+, Mummy+
     - naval: 
         - Leviathan+: no longer amphibious (repurposed into a new unit)

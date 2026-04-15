@@ -728,14 +728,15 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PansChosen</target></effect>        
         <!-- Greek Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PegasusGroundedMessenger</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Enceladus</target></effect>
-        
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Enceladus</target></effect>        
         <!-- Egyptian Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">StellarGateway</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MummyFallen</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Chariot_Pharaoh</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SandDevourer</target></effect>
         <effect type="Data" amount="4.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">SandDevourer</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ScarabBurrowed</target></effect>
         <!-- Norse Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MCMT_DwarvenForge</target></effect>	
         <!-- Atlantean Special Units -->
@@ -6732,11 +6733,12 @@
       </effect>	  
     </effects>
   </tech>
-  <tech name="CrimsonLinen" mergeMode="add">
+  <tech name="CrimsonLinen">
     <effects>
-      <effect type="Data" amount="2.0" subtype="OnHitEffect" action="SelfDestructAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" dmgtype="Divine" relativity="Assign">
-        <target type="ProtoUnit">Scarab</target>
-      </effect>
+      <effect type="Data" amount="20.0" subtype="OnHitEffect" action="SelfDestructAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" dmgtype="Divine" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Scarab</target></effect>
+       <effect type="Data" action="Burrow" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Scarab</target></effect>
     </effects>
   </tech>  
   <tech name="Criosphinx" mergeMode="add">

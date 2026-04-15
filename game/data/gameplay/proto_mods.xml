@@ -6346,6 +6346,67 @@
 		</protoaction>
 	</unit>
 
+	<unit name="Scarab">
+		<protoaction mergeMode="add">
+			<name>Burrow</name>
+			<type>DelayedTransform</type>
+			<modifyprotoid>ScarabBurrowed</modifyprotoid>
+			<modifyduration>2000</modifyduration>
+			<anim>Transform</anim>
+			<transformskipplacementpush>1</transformskipplacementpush>
+			<mustfinishanimation>1</mustfinishanimation>
+			<active>0</active>
+		</protoaction>
+	</unit>
+	<unit name="ScarabBurrowed">	
+		<displaynameid>STR_UNIT_SCARAB_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SCARAB_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_SCARAB_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\scarab_icon.png</icon>
+		<soundsetfile>egyptian\vo\scarab\scarab.xml</soundsetfile>
+
+		<animfile>atlantean\units\myth\spider\spider.xml</animfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<los>10.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<autoattackrange>10.0000</autoattackrange>
+		<unitaitype>HandCombative</unitaitype>
+		<flag>DontRotateObstruction</flag>
+		<flag>Immoveable</flag>
+		<flag>CannotAttackDisabledUnits</flag>
+		<flag>NoHPBar</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NonCollideable</flag>
+		<flag>RotateInPlace</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Crush">95.000000</damage>
+			<damage type="Hack">15.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<damagebonus type="Building">1.100000</damagebonus>
+			<maxrange>1.000000</maxrange>
+			<impacteffect>effects\impacts\crush</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>Emerge</name>
+			<type>DelayedTransform</type>
+			<modifyprotoid>Scarab</modifyprotoid>
+			<modifyduration>2000</modifyduration>
+			<anim>Transform</anim>
+			<transformskipplacementpush>1</transformskipplacementpush>
+			<mustfinishanimation>1</mustfinishanimation>
+		</protoaction>
+	</unit>
+
 	<!-- TODO
 	<unit name="Roc" mergeMode="replace"></unit>
 	<unit name="RocLanded" mergeMode="replace"></unit> areaheal, heal aura vfx, spawn roctent on death	
@@ -25095,9 +25156,9 @@
 	</unit>
 
 	<unit name="WarElephantSiege">
-		<displaynameid>STR_UNIT_WARELEPHANTRIDER_ARCHER_NAME</displaynameid>
-		<shortrollovertextid>STR_UNIT_WARELEPHANTRIDER_ARCHER_SR</shortrollovertextid>
-		<rollovertextid>STR_UNIT_WARELEPHANTRIDER_ARCHER_LR</rollovertextid>
+		<displaynameid>STR_UNIT_WARELEPHANTRIDER_SIEGE_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_WARELEPHANTRIDER_SIEGE_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_WARELEPHANTRIDER_SIEGE_LR</rollovertextid>
 		<icon>resources\egyptian\player_color\units\war_elephant_icon.png</icon>
 		<animfile>mcmt\units\nubian\warelephant_nopassenger.xml</animfile>
 		<soundsetfile>egyptian\vo\war_elephant\war_elephant.xml</soundsetfile>
