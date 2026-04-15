@@ -248,8 +248,8 @@
 
     - melee: Minion+, MinionReincarnated+, Avenger+, Scarab+, Sphinx+, Anubite+, ScorpionMan+
         - Crimson Linen: enables Burrow and Emerge abilities for Scarab
-            - Burrow: submerges into ground and undetectable by enemies
-            - Emerge: returns to surface
+            - Burrow: manual ability, submerges into ground and undetectable by enemies
+            - Ambush: detection-based, conditional transform (ambush, moved, delayedtransform)
     - ranged: Wadjet+, Petsuchos+, Mummy+
     - naval: 
         - Leviathan+: no longer amphibious (repurposed into a new unit)

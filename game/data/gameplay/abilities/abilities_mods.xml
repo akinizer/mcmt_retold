@@ -362,7 +362,7 @@
         <ability>AbilityScarabBurrow<tech>CrimsonLinen</tech><rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
     </Scarab>
 	<ScarabBurrowed>
-		<ability>AbilityScarabEmerge<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
+		<ability>PassiveHamadryadAmbush<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</ScarabBurrowed>
 		<!--Egyptian-Nubian-->
 	<NubianHunter>

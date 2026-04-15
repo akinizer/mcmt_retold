@@ -1,0 +1,8 @@
+<animfile validation="strict">
+	<attachment>VFX<component>VFXComp<assetreference type="TMComposite"><file>atlantean\units\myth\spider\spider_vfx</file></assetreference></component><anim>Idle<component>VFXComp</component></anim></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>atlantean\units\myth\spider\spider</file></assetreference></component>
+	<anim>Idle<assetreference type="TMAnimation"><file>atlantean\units\myth\spider\anim\spider_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Pickup<assetreference type="TMAnimation"><file>atlantean\units\myth\spider\anim\spider_attack_a</file><tag type="Pickup">0.05</tag><tag type="Throw">0.90</tag><tag type="particles" popcornfxname="smoke\dust_spider_lair.pkfx" bone="bonethatdoesntexist" movewithbone="false" stopwithanim="false" adjustduration="false">0.0</tag></assetreference><attach name="VFX" attachpoint="bonethatdoesntexist"></attach><component>ModelComp</component></anim>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>atlantean\units\myth\spider\anim\spider_attack_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Cinematic<assetreference type="TMAnimation"><file>atlantean\units\myth\spider\anim\igc\sam_spider_04a_walktoidle</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\myth\spider\anim\igc\sam_spider_04a_walk</file></assetreference><component>ModelComp</component></anim>
+</animfile>
