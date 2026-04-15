@@ -247,7 +247,8 @@
     - VisualScale: Phoenix+, Leviathan+, WarTurtle+, Scarab+, Sphinx+
 
     - melee: Minion+, MinionReincarnated+, Avenger+, Scarab+, Sphinx+, Anubite+, ScorpionMan+
-        - Crimson Linen: enables Burrow and Emerge abilities for Scarab
+        - Crimson Linen: enables Burrow and Conditional Transform abilities for Scarab
+            - shading: gold
             - Burrow: manual ability, submerges into ground and undetectable by enemies
             - Ambush: detection-based, conditional transform (ambush, moved, delayedtransform)
     - ranged: Wadjet+, Petsuchos+, Mummy+
