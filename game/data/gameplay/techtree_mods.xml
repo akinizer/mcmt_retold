@@ -3074,6 +3074,8 @@
           <target type="ProtoUnit">WarElephantRider</target></effect>         
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">WarElephantArcher</target></effect>         
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">WarElephantSiege</target></effect>         
 		</effects>		
 	</tech>
   <tech name="MCMT_NubianTraining_I" mergeMode="add">
@@ -3105,10 +3107,13 @@
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">NubianCharger</target></effect>
 
-       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">Amanra</target></effect>
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">AmanraOlder</target></effect>
+
+      <effect type="Data" amount="1" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
 		</effects>		
 	</tech>
   <tech name="MCMT_NubianTraining_II" mergeMode="add">
@@ -3148,6 +3153,9 @@
         <target type="ProtoUnit">Amanra</target></effect>
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">AmanraOlder</target></effect>
+
+      <effect type="Data" amount="2" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
 		</effects>		
 	</tech>
   <tech name="MCMT_NubianTraining_III" mergeMode="add">
@@ -3196,6 +3204,9 @@
         <target type="ProtoUnit">NubianHunter</target></effect>
       <effect type="Data" amount="0.65" subtype="TrainPoints" relativity="Percent">
         <target type="ProtoUnit">NubianCharger</target></effect>
+
+      <effect type="Data" amount="3" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute">
+        <target type="ProtoUnit">NubianCavalry</target></effect>
 		</effects>		
 	</tech>
 
@@ -3220,9 +3231,13 @@
         <target type="ProtoUnit">WarElephantRider</target></effect>
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">WarElephantArcher</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephantSiege</target></effect>
 
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">WarElephantArcher</target></effect>
+      <effect type="Data" action="RangedAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">WarElephantSiege</target></effect>
 
       <effect type="Data" amount="0.20" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
 			  <target type="ProtoUnit">Amanra</target></effect>
@@ -3252,9 +3267,13 @@
         <target type="ProtoUnit">WarElephantRider</target></effect>
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">WarElephantArcher</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephantSiege</target></effect>
 
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">WarElephantArcher</target></effect>
+      <effect type="Data" action="RangedAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">WarElephantSiege</target></effect>
 
       <effect type="Data" amount="0.30" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
 			  <target type="ProtoUnit">Amanra</target></effect>
@@ -3284,9 +3303,13 @@
         <target type="ProtoUnit">WarElephantRider</target></effect>
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">WarElephantArcher</target></effect>
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+        <target type="ProtoUnit">WarElephantSiege</target></effect>
 
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">WarElephantArcher</target></effect>
+      <effect type="Data" action="RangedAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute">
+        <target type="ProtoUnit">WarElephantSiege</target></effect>
 
       <effect type="Data" amount="0.50" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
 			  <target type="ProtoUnit">Amanra</target></effect>
@@ -3306,6 +3329,8 @@
         <target type="ProtoUnit">WarElephantRider</target></effect>
       <effect type="Data" amount="0.85" subtype="TrainPoints" relativity="Percent">
         <target type="ProtoUnit">WarElephantArcher</target></effect>
+      <effect type="Data" amount="0.85" subtype="TrainPoints" relativity="Percent">
+        <target type="ProtoUnit">WarElephantSiege</target></effect>
 		</effects>		
 	</tech>
 
@@ -3385,23 +3410,42 @@
 		<cost resourcetype="Food">225</cost>
 		<cost resourcetype="Gold">125</cost>
 		<effects>
-      <!-- MYTH
-        roclanded - roc tent
-        scarab - mini scarab x4 - no attack
-        mercenary cavalry rider
-        camel rider rider
-        charior archer rider
-        war elephant rider
-        warship - chariot archer rider raft       
-      -->
 			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Mercenary" relativity="Assign">
         <target type="ProtoUnit">MercenaryCavalry</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Slinger" relativity="Assign">
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="BowmanArcher" relativity="Assign">
         <target type="ProtoUnit">ChariotArcher</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Axeman" relativity="Assign">
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Kopeshman" relativity="Assign">
         <target type="ProtoUnit">CamelRider</target></effect>
-			<effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="Spearman" relativity="Assign">
+			<effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="WarElephantRider" relativity="Assign">
         <target type="ProtoUnit">WarElephant</target></effect>
+		</effects>		
+	</tech>
+  <tech name="SpawnTacticsEgyptian" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DISMOUNT_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DISMOUNT_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">225</cost>
+		<cost resourcetype="Gold">125</cost>
+		<effects>
+      <!-- MYTH TODO
+        roclanded - roc tent
+        scarab - mini scarab x4 - no attack
+        warship - chariot archer rider raft       
+      -->
+			<effect type="Data" amount="4.00" subtype="ModifySpawn" spawntype="Dead" proto="Scarab" relativity="Assign">
+        <target type="ProtoUnit">Scarab</target></effect>
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Tent" relativity="Assign">
+        <target type="ProtoUnit">Roc</target></effect>
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="MonkeyRaft" relativity="Assign">
+        <target type="ProtoUnit">Warship</target></effect>
 		</effects>		
 	</tech>
   <tech name="DismountTacticsGreek" mergeMode="add">

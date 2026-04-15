@@ -24724,7 +24724,6 @@
 			<name>HandAttack</name>
 			<rof>1.100000</rof>
 			<damage type="Hack">8.000000</damage>
-			<damage type="Crush">2.000000</damage>
 			<damagebonus type="MythUnit">1.500000</damagebonus>
 			<damagebonus type="AbstractCavalry">1.300000</damagebonus>
 			<maxrange>1.300000</maxrange>
@@ -25095,6 +25094,102 @@
 		</protoaction>
 	</unit>
 
+	<unit name="WarElephantSiege">
+		<displaynameid>STR_UNIT_WARELEPHANTRIDER_ARCHER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_WARELEPHANTRIDER_ARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_WARELEPHANTRIDER_ARCHER_LR</rollovertextid>
+		<icon>resources\egyptian\player_color\units\war_elephant_icon.png</icon>
+		<animfile>mcmt\units\nubian\warelephant_nopassenger.xml</animfile>
+		<soundsetfile>egyptian\vo\war_elephant\war_elephant.xml</soundsetfile>
+		<obstructionradiusx>1.4900</obstructionradiusx>
+		<obstructionradiusz>1.4900</obstructionradiusz>
+		<selectionradiusx>1.5000</selectionradiusx>
+		<selectionradiusz>2.0000</selectionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>550.0000</initialhitpoints>
+		<maxhitpoints>550.0000</maxhitpoints>
+		<trainpoints>22.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>2.9000</maxvelocity>
+		<los>16.0000</los>
+		<bloodgroupoverride>defaultbloodelephant</bloodgroupoverride>
+		<cost resourcetype="Wood">180.0000</cost>
+		<cost resourcetype="Gold">1000.0000</cost>
+		<armor type="Hack" value="0.4500"></armor>
+		<armor type="Pierce" value="0.2000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<buildlimit>3</buildlimit>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AutoTrainable</flag>
+		<tactics>global_infantry_proximitymodes.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.400000</rof>
+			<damage type="Hack">16.000000</damage>
+			<damagebonus type="Building">5.000000</damagebonus>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>5.500000</rof>
+			<damage type="Crush">12.000000</damage>
+			<damage type="Pierce">8.000000</damage>
+			<damagebonus type="Ship">3.000000</damagebonus>
+			<damagebonus type="HumanSoldier">1.3000000</damagebonus>
+			<minrange>8.000000</minrange>
+			<maxrange>30.000000</maxrange>
+			<numberprojectiles>4</numberprojectiles>
+			<projectile>ProjectileBallistaShot</projectile>
+			<volleymode></volleymode>
+		</protoaction>
+	</unit>
+
 <!-- Egyptian Special Buildings -->
 	<unit name="NubianCamp">
 		<displaynameid>STR_BLD_CAMP_NUBIAN_NAME</displaynameid>
@@ -25147,10 +25242,12 @@
 		<train row="0" column="2" mergeMode="add">NubianHunter</train>
 		<train row="0" column="3" mergeMode="add">NubianCharger</train>
 		<train row="0" column="4" mergeMode="add">NubianCavalry</train>
+
 		<train row="1" column="1" mergeMode="add">BowmanArcher</train>
 		<train row="1" column="2" mergeMode="add">Kopeshman</train>
 		<train row="1" column="3" mergeMode="add">WarElephantRider</train>
 		<train row="1" column="4" mergeMode="add">WarElephantArcher</train>
+		<train row="1" column="5" mergeMode="add">WarElephantSiege</train>
 		
 		<tech row="0" column="0" mergeMode="add">MCMT_NubianTraining_I</tech>
 		<tech row="0" column="0" mergeMode="add">MCMT_NubianTraining_II</tech>
@@ -28368,7 +28465,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
 		<unittype>MilitaryUnit</unittype>
-		<unittype>AbstractAsura</unittype>
 		<unittype>LogicalTypeMythicMythUnit</unittype>
 		<unittype>LogicalTypeGarrisonInShips</unittype>
 		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
@@ -28444,7 +28540,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
 		<unittype>MilitaryUnit</unittype>
-		<unittype>AbstractAsura</unittype>
 		<unittype>LogicalTypeMythicMythUnit</unittype>
 		<unittype>LogicalTypeGarrisonInShips</unittype>
 		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
@@ -28494,7 +28589,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
 		<unittype>MilitaryUnit</unittype>
-		<unittype>AbstractAsura</unittype>
 		<unittype>LogicalTypeMythicMythUnit</unittype>
 		<unittype>LogicalTypeGarrisonInShips</unittype>
 		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
@@ -28553,7 +28647,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
 		<unittype>MilitaryUnit</unittype>
-		<unittype>AbstractAsura</unittype>
 		<unittype>LogicalTypeMythicMythUnit</unittype>
 		<unittype>LogicalTypeGarrisonInShips</unittype>
 		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
@@ -28610,7 +28703,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
 		<unittype>MilitaryUnit</unittype>
-		<unittype>AbstractAsura</unittype>
 		<unittype>LogicalTypeMythicMythUnit</unittype>
 		<unittype>LogicalTypeGarrisonInShips</unittype>
 		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
@@ -28642,6 +28734,61 @@
 			<displayednumberprojectiles>3</displayednumberprojectiles>
 			<autoretarget>1</autoretarget>
 			<canattackground>1</canattackground>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
+	<unit name="CustomDependantUnit_BallistaShot">
+		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.600000</rof>
+			<damage type="Pierce">2.500000</damage>
+			<damage type="Crush">5.500000</damage>
+			<damagebonus type="Ship">2.00000</damagebonus>
+			<maxrange>14.000000</maxrange>
+			<projectile>ProjectileHamadryadSpike</projectile>
+			<numberprojectiles>3</numberprojectiles>
+			<impacteffect>effects\impacts\crush_medium</impacteffect>
+			<volleymode></volleymode>
 		</protoaction>
 		<protoaction>
 			<name>Drone</name>

@@ -1,0 +1,16 @@
+<animfile validation="strict">
+  <attachment>Ballistashot<include>vfx\projectiles\ballista_shot\ballista_shot.xml</include></attachment>
+  <component>ModelComp
+    <logic type="Tech">
+      <none><assetreference type="TMModel"><file>norse\units\siege\ballista\ballista</file></assetreference></none>
+      <engineers><assetreference type="TMModel"><file>norse\units\siege\ballista\ballista</file><materialvariant index="1"></materialvariant></assetreference></engineers>
+    </logic>
+    <attach name="Ballistashot" attachpoint="ballistashot" syncanims="1"></attach>
+  </component>
+  <anim>RangedAttack<assetreference type="TMAnimation"><file>norse\units\siege\ballista\anim\ballista_rangedattack_a</file><tag type="Attack">0.0</tag><tag type="SpecificSoundSet" checkvisible="1" set="BallistaAttack">0.0</tag></assetreference><component>ModelComp</component></anim>
+  <anim>HandAttack<assetreference type="TMAnimation"><file>norse\units\siege\ballista\anim\ballista_idle_a</file></assetreference><component>ModelComp</component></anim>
+  <anim>Death<assetreference type="TMAnimation"><file>norse\units\siege\ballista\anim\ballista_death_a</file><tag type="SpecificSoundSet" checkvisible="1" set="BallistaDeath">0.31</tag></assetreference><component>ModelComp</component></anim>
+  <anim>Idle<assetreference type="TMAnimation"><file>norse\units\siege\ballista\anim\ballista_idle_a</file></assetreference><component>ModelComp</component></anim>
+  <anim>Bored<assetreference type="TMAnimation"><file>norse\units\siege\ballista\anim\ballista_idle_a</file></assetreference><component>ModelComp</component></anim>
+  <anim>Walk<assetreference type="TMAnimation"><file>norse\units\siege\ballista\anim\ballista_idle_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>
