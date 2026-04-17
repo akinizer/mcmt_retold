@@ -3,17 +3,19 @@
 	<attachment>helmet<include>egyptian\units\archery\chariot_archer\chariot_archer_helm.xml</include></attachment>
 	<attachment>weapon<include>egyptian\units\archery\chariot_archer\chariot_archer_bow.xml</include></attachment>
 	<attachment>shield<include>egyptian\units\attachments\shield\shield_e_c.xml</include></attachment>
+
 	<component>ModelComp
 		<logic type="Tech">
 			<none><assetreference type="TMModel"><file>egyptian\units\archery\chariot_archer\chariot_archer_iron</file><materialvariant index="0"></materialvariant></assetreference></none>
-			<mediumslingers><assetreference type="TMModel"><file>egyptian\units\archery\chariot_archer\chariot_archer_bronze</file><materialvariant index="1"></materialvariant></assetreference></mediumslingers>
-			<heavyslingers><assetreference type="TMModel"><file>egyptian\units\archery\chariot_archer\chariot_archer_silver</file><materialvariant index="2"></materialvariant></assetreference></heavyslingers>
-			<championslingers><assetreference type="TMModel"><file>egyptian\units\archery\chariot_archer\chariot_archer_gold</file><materialvariant index="3"></materialvariant></assetreference></championslingers>
+			<mediumchariotarchers><assetreference type="TMModel"><file>egyptian\units\archery\chariot_archer\chariot_archer_bronze</file><materialvariant index="1"></materialvariant></assetreference></mediumchariotarchers>
+			<heavychariotarchers><assetreference type="TMModel"><file>egyptian\units\archery\chariot_archer\chariot_archer_silver</file><materialvariant index="2"></materialvariant></assetreference></heavychariotarchers>
+			<championchariotarchers><assetreference type="TMModel"><file>egyptian\units\archery\chariot_archer\chariot_archer_gold</file><materialvariant index="3"></materialvariant></assetreference></championchariotarchers>
 		</logic>
 		<attach name="helmet" attachpoint="helmet"></attach>
 		<attach name="weapon" attachpoint="weapon"></attach>
 		<attach name="shield" attachpoint="shield"></attach>
 	</component>
+
 	<anim>Death<assetreference type="TMAnimation"><file>greek\units\archery\toxotes\anim\toxotes_death_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>RangedAttack<assetreference type="TMAnimation"><file>greek\units\archery\toxotes\anim\toxotes_attack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component><attach name="arrow" attachpoint="arrow"></attach></anim>
 	<anim>Idle<assetreference type="TMAnimation"><file>greek\units\archery\toxotes\anim\toxotes_idle_a</file></assetreference><component>ModelComp</component></anim>

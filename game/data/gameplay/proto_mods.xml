@@ -6139,6 +6139,87 @@
 			<mustfinishanimation>1</mustfinishanimation>
 		</protoaction>
 	</unit>
+	<unit name="ScarabMini">
+        <displaynameid>STR_UNIT_SCARAB_NAME</displaynameid>
+        <rollovertextid>STR_UNIT_SCARAB_LR</rollovertextid>
+        <shortrollovertextid>STR_UNIT_SCARAB_SR</shortrollovertextid>
+        <icon>resources\egyptian\player_color\units\scarab_icon.png</icon>
+        <animfile>egyptian\units\myth\scarab\scarab.xml</animfile>
+        <soundsetfile>egyptian\vo\scarab\scarab.xml</soundsetfile>
+        <obstructionradiusx>1.7400</obstructionradiusx>
+        <obstructionradiusz>1.7400</obstructionradiusz>
+        <selectionradiusx>2.0000</selectionradiusx>
+        <selectionradiusz>2.5000</selectionradiusz>
+        <impacttype>Unarmoured</impacttype>
+        <unitaitype>HandCombative</unitaitype>
+        <movementtype>land</movementtype>
+        <turnrate>18.0000</turnrate>
+        <initialhitpoints>1.0000</initialhitpoints>
+        <maxhitpoints>1.0000</maxhitpoints>
+        <trainpoints>1.0000</trainpoints>
+        <weightclass>11</weightclass>
+        <maxvelocity>4.2000</maxvelocity>
+        <los>16.0000</los>
+        <cost resourcetype="Food">240.0000</cost>
+        <cost resourcetype="Favor">18.0000</cost>
+        <armor type="Hack" value="0.0500"></armor>
+        <armor type="Pierce" value="0.7500"></armor>
+        <armor type="Crush" value="0.1000"></armor>
+        <unittype>LogicalTypeNeededForVictory</unittype>
+        <unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeLandMilitary</unittype>
+        <unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+        <unittype>LogicalTypeGarrisonInShips</unittype>
+        <unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype>LogicalTypeVillagersAttack</unittype>
+        <unittype>LogicalTypeHandUnitsAttack</unittype>
+        <unittype>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype>LogicalTypeMinimapFilterMilitary</unittype>
+        <unittype>LogicalTypeHealed</unittype>
+        <unittype>LogicalTypeHeroicMythUnit</unittype>
+        <unittype>MilitaryUnit</unittype>
+        <unittype>UnitClass</unittype>
+        <unittype>Unit</unittype>
+        <unittype>MythUnit</unittype>
+
+        <unittype>CountsTowardMilitaryScore</unittype>
+        <unittype>LogicalTypeValidBoltTarget</unittype>
+        <unittype>LogicalTypeConvertsHerds</unittype>
+        <unittype>LogicalTypeEarthquakeAttack</unittype>
+        <unittype>LogicalTypeAffectedByRestoration</unittype>
+        <unittype>LogicalTypeValidMeteorTarget</unittype>
+        <unittype>LogicalTypeValidTornadoAttack</unittype>
+        <unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+        <unittype>LogicalTypeMythUnitNotTitan</unittype>
+        <unittype>LogicalTypeValidSpyTarget</unittype>
+        <unittype>LogicalTypeValidFrostTarget</unittype>
+        <unittype>LogicalTypeValidTraitorTarget</unittype>
+        <unittype>LogicalTypeValidShockwaveTarget</unittype>
+        <unittype>LogicalTypeFreezableMythUnit</unittype>
+        <unittype>LogicalTypeMythUnitNotFlying</unittype>
+        <unittype>LogicalTypeTrainableMythUnit</unittype>
+        <unittype>LogicalTypeValidEidolon</unittype>
+        <flag>CollidesWithProjectiles</flag>
+        <flag>CorpseDecays</flag>
+        <flag>ShowGarrisonButton</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>ObscuredByUnits</flag>
+        <flag>CommonCommands</flag>
+        <flag>MilitaryCommands</flag>
+        <flag>CreateUnitGroupAutomatically</flag>
+		<initialshading type="gold" factor="1"></initialshading>
+        <selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+        <tactics>handattack.tactics</tactics>
+        <protoaction>
+            <name>HandAttack</name>
+            <rof>2.500000</rof>
+            <damage type="Hack">1.000000</damage>
+            <damagebonus type="HumanSoldier">5.000000</damagebonus>
+            <damagebonus type="Hero">0.100000</damagebonus>
+            <maxrange>0.750000</maxrange>
+            <impacteffect>effects\impacts\hack</impacteffect>
+        </protoaction>
+	</unit>
 	
 	<unit name="Sphinx" mergeMode="replace">
         <displaynameid>STR_UNIT_SPHINX_NAME</displaynameid>
@@ -6469,17 +6550,98 @@
 		  <canattackground>1</canattackground>
 		  
 		  <onhiteffect type="Throw">
-				<target attacktype="HumanSoldier"></target>
-				<target attacktype="LogicalTypeVillagerNotHero"></target>
+			<target attacktype="HumanSoldier"></target>
+			<target attacktype="LogicalTypeVillagerNotHero"></target>
 		   </onhiteffect>
 		</protoaction>
 	</unit>
 
+	<unit name="MCMT_RocTent">
+		<displaynameid>STR_BLD_REINFORCEMENT_TENT_NAME</displaynameid>
+		<rollovertextid>STR_BLD_REINFORCEMENT_TENT_SR</rollovertextid>
+		<shortrollovertextid>STR_BLD_REINFORCEMENT_TENT_LR</shortrollovertextid>
+		<icon>resources\spc\static_color\buildings\roc_tent_icon.png</icon>
+		<animfile>spc\buildings\roc_tent\roc_tent.xml</animfile>
+		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
+		<obstructionradiusx>1.7400</obstructionradiusx>
+		<obstructionradiusz>1.7400</obstructionradiusz>
+		<impacttype>Wood</impacttype>
+		<unitaitype>Passive</unitaitype>
+		<movementtype>land</movementtype>
+		<weightclass>7</weightclass>
+		<turnrate>9.0000</turnrate>
+		<initialhitpoints>400.0000</initialhitpoints>
+		<maxhitpoints>400.0000</maxhitpoints>
+		<buildpoints>1.0000</buildpoints>
+		<los>16.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<cost resourcetype="Gold">100.0000</cost>
+		<cost resourcetype="Favor">5.0000</cost>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.2500"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<eidolonprotoid>Roc</eidolonprotoid>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CorpseDecays</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<flag>Immovable</flag>
+		<tactics>delayed_transform.tactics</tactics>
+		<protoaction>
+			<name>DelayedTransform</name>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\chiyou_disable_ring.xml</modelattachment>
+		</protoaction>
+	</unit>	
+
+	<unit name="ZhuQueLanded">
+		<protoaction mergeMode="add">
+		  	<name>BillowingSmog</name>		  
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<targetenemy>1</targetenemy>
+
+			<modifyamount>-1</modifyamount>
+			<modifydamagetype>Divine</modifydamagetype>
+			<maxrange>9</maxrange>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXFire" attachbone="spine" duration="5.000000"></onhiteffect>
+			<active>0</active>
+		</protoaction>
+		<protoaction mergeMode="add">
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\chiyou_disable_ring.xml</modelattachment>
+			<active>0</active>
+		</protoaction>
+	</unit>
 	
 
 	<!-- TODO
 	<unit name="Roc" mergeMode="replace"></unit>
-	<unit name="RocLanded" mergeMode="replace"></unit> areaheal, heal aura vfx, spawn roctent on death	
+	<unit name= roctent on death	
 	<unit name="RocTent" mergeMode="add"></unit> areaheal, heal aura vfx, population 10, garrison
 	-->
     
@@ -9365,6 +9527,7 @@
 	</unit>
 
 	<unit name="Baolei">
+		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
@@ -9375,6 +9538,7 @@
 		<tech row="3" column="2">Baolei_BuildingAccels</tech>		
 	</unit>
 	<unit name="Fortress">
+		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
@@ -9384,6 +9548,7 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>		
 	</unit>
 	<unit name="MigdolStronghold">
+		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
@@ -9393,6 +9558,7 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
 	</unit>
 	<unit name="HillFort">
+		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
@@ -9402,6 +9568,7 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
 	</unit>
 	<unit name="Palace">
+		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
@@ -9411,6 +9578,7 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
 	</unit>
 	<unit name="AsgadianHillFort">
+		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
@@ -9420,6 +9588,7 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
 	</unit>
 	<unit name="Castle">
+		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
@@ -10790,10 +10959,9 @@
 		<flag>PaintTextureWhenPlacing</flag>
 		<flag>FlattenGround</flag>
 		<flag>DisplayRange</flag>
-		<flag>ForceEmpowerable</flag>
 		<flag>DisplayRangeOverride</flag>
+		<flag>ForceEmpowerable</flag>
 		<flag>HasGatherPoint</flag>
-		<flag>DisplayRange</flag>
 		<contain>Unit</contain>
 		<notcontain>MythUnit</notcontain>
 		<notcontain>AbstractSiegeWeapon</notcontain>
@@ -10814,18 +10982,6 @@
 		  <maxrange>60</maxrange>
 		  <onhiteffect type="Attach" targetunittype="Unit" proto="VFXFire" attachbone="spine" duration="5.000000"></onhiteffect>
 		  <onhiteffect type="Attach" targetunittype="Unit" proto="VFXChaos" attachbone="vfx_top" duration="5.000000"></onhiteffect>
-		</protoaction>
-		<protoaction>
-			<name>HeroRingOnSelf</name>
-			<type>Modify</type>
-			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
-			</protoaction>
-		<protoaction>
-			<name>HeroGlowOnSelf</name>
-			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
-			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
-			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
 	<unit name="WarBunker">
@@ -25321,6 +25477,59 @@
 		</protoaction>
 	</unit>
 
+	<unit name="RaftEgyptianArcher">
+		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
+		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
+		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<movementtype>water</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Ship</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+	</unit>
+
 <!-- Egyptian Special Buildings -->
 	<unit name="NubianCamp">
 		<displaynameid>STR_BLD_CAMP_NUBIAN_NAME</displaynameid>
@@ -28082,6 +28291,40 @@
       		<modifymultiplier>0.400000</modifymultiplier>
 		</protoaction>
 	</unit>
+	
+	<unit name="AreaHarvestContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaHarvest</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>AbstractFarm</modifyabstracttype>
+			<maxrange>20</maxrange>
+			<nostack>1</nostack>
+			<persistent>1</persistent>
+			<modifytype>GatherRateMultiplier</modifytype>
+			<modifymultiplier>1.10</modifymultiplier>
+			<modelattachment>vfx\water\rain_farm.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit> 
+	
 	<unit name="MythBonusContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -28461,6 +28704,40 @@
 			<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
 			<rate type="Hero">1.0</rate>
 			<rate type="EconomicUnit">1.0</rate>			
+		</protoaction>
+	</unit>
+
+	<unit name="RateOfFireContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AttackSpeedBuff</name>
+			<type>AutoRangedModify</type>
+			<modifyamount>-0.1</modifyamount>
+			<maxrange>15</maxrange>
+			<persistent>1</persistent>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifytype>ROF</modifytype>
+			<modifystackadditive>1</modifystackadditive>
+			<modifystacklimit>5</modifystacklimit>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit>
 

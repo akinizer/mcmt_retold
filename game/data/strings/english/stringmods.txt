@@ -717,6 +717,11 @@ ID = "STR_UNIT_WARELEPHANTRIDER_SIEGE_NAME"   ;   Str = "Siege War Elephant"
 ID = "STR_UNIT_WARELEPHANTRIDER_SIEGE_SR"   ;   Str = "Siege War Elephant"
 ID = "STR_UNIT_WARELEPHANTRIDER_SIEGE_LR"   ;   Str = "War Elephant with a mounted siege arbalest that excels in distance and close range"
 
+// EGYPTIAN SPECIAL BUILDINGS
+ID = "STR_BLD_REINFORCEMENT_TENT_NAME"   ;   Str = "Reinforcement Tent"
+ID = "STR_BLD_REINFORCEMENT_TENT_SR"   ;   Str = "Roc Tent that reinforces humansoldiers nearby"
+ID = "STR_BLD_REINFORCEMENT_TENT_LR"   ;   Str = "Roc Tent converts to a structure that makes surrounding human military units more efficient in battle"
+
 // JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
 

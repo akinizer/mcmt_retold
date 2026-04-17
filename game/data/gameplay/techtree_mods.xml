@@ -730,6 +730,7 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PegasusGroundedMessenger</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Enceladus</target></effect>        
         <!-- Egyptian Special Units -->
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MCMT_RocTent</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">StellarGateway</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MummyFallen</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Chariot_Pharaoh</target></effect>
@@ -737,6 +738,8 @@
         <effect type="Data" amount="4.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">SandDevourer</target></effect>
 
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ScarabBurrowed</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ScarabMini</target></effect>
+        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">ScarabMini</target></effect>
         <!-- Norse Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MCMT_DwarvenForge</target></effect>	
         <!-- Atlantean Special Units -->
@@ -3419,6 +3422,10 @@
         <target type="ProtoUnit">CamelRider</target></effect>
 			<effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="WarElephantRider" relativity="Assign">
         <target type="ProtoUnit">WarElephant</target></effect>
+
+      <effect type="TechStatus" status="obtainable" mergeMode="add">SpawnTacticsEgyptian</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="SpawnTacticsEgyptian" row="3" column="3" relativity="Assign">
+        <target type="ProtoUnit">Armory</target></effect>	
 		</effects>		
 	</tech>
   <tech name="SpawnTacticsEgyptian" mergeMode="add">
@@ -3437,16 +3444,19 @@
 		<cost resourcetype="Gold">125</cost>
 		<effects>
       <!-- MYTH TODO
-        roclanded - roc tent
-        scarab - mini scarab x4 - no attack
         warship - chariot archer rider raft       
       -->
-			<effect type="Data" amount="4.00" subtype="ModifySpawn" spawntype="Dead" proto="Scarab" relativity="Assign">
+			<effect type="Data" amount="12.00" subtype="ModifySpawn" spawntype="Dead" proto="ScarabMini" relativity="Assign">
         <target type="ProtoUnit">Scarab</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Tent" relativity="Assign">
-        <target type="ProtoUnit">Roc</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="MonkeyRaft" relativity="Assign">
-        <target type="ProtoUnit">Warship</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">RaftEgyptianArcher</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftEgyptianArcher" relativity="Assign">
+        <target type="ProtoUnit">AbstractWarship</target></effect>
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="MCMT_RocTent" relativity="Assign">
+        <target type="ProtoUnit">RocLanded</target></effect>
+
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="AttackSpeedBuff" amount="1.00" unittype="RateOfFireContainer" relativity="Assign">
+        <target type="ProtoUnit">MCMT_RocTent</target></effect>
 		</effects>		
 	</tech>
   <tech name="DismountTacticsGreek" mergeMode="add">
@@ -8335,6 +8345,14 @@
         <target type="ProtoUnit">DouJian</target></effect>
     </effects>
   </tech>
+  <tech name="FlamingBlood">
+		<effects>
+      <effect type="Data" action="BillowingSmog" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">ZhuQueLanded</target></effect>
+      <effect type="Data" action="HeroRingOnSelf" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">ZhuQueLanded</target></effect>
+		</effects>
+	</tech>
   <!-- Japanese Techs - Military -  Major Gods -->
   <tech name="Kagura">
 		<effects>

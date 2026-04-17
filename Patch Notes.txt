@@ -246,11 +246,14 @@
 - myth unit:
     - VisualScale: Phoenix+, Leviathan+, WarTurtle+, Scarab+, Sphinx+
 
-    - melee: Minion+, MinionReincarnated+, Avenger+, Scarab+, Sphinx+, Anubite+, ScorpionMan+
-        - Crimson Linen: enables Burrow and Conditional Transform abilities for Scarab
+    - melee: Minion+, MinionReincarnated+, Avenger+, Sphinx+, Anubite+, ScorpionMan+
+        - Scarab+
             - shading: gold
-            - Burrow: manual ability, submerges into ground and undetectable by enemies
-            - Ambush: detection-based, conditional transform (ambush, moved, delayedtransform)
+            - Burrow: tech-enabled (crimsonlinen), manual ability, submerges into ground and undetectable by enemies
+            - Ambush: tech-enabled (crimsonlinen), detection-based, conditional transform (ambush, moved, delayedtransform)
+            - ScarabMini: spawnondead, x12
+        - RocLanded
+            - MCMT_RocTent: tech-enabled (egyptianspawntactics), area container (ally, rof+, arkantos_glow), range ring green 
     - ranged: Wadjet+, Petsuchos+, Mummy+
     - naval: 
         - Leviathan+: no longer amphibious (repurposed into a new unit)
@@ -316,6 +319,7 @@
     
     - trade: PiXiu+
     - flying: QingLong+, YingLong+
+        - ZhuQueLanded: area damage, range indicator red
     - melee: QiLin+, YaZi+, TaoWu+, HunDun+, QionQi+, BaiHu+, TerracottaRider+
     - naval: ChiWen+, XuanWu+
 
@@ -733,6 +737,7 @@
 * Special Techs
 - DetonatorsJapanese: explosive tech researchable in Armory, releases explosion on destruction (building, ship) or death (infrenal mythunit, shinobi), deals area damage and sends humansoldiers and villagers flying
     - Norse,Greek,Atlantean,Chinese,Egyptian: variants added, enabled for [mechanical, building, warship, explosive users, infernals]
+- SpawnTacticsEgyptian: spawn tech (scarabmini, mcmt_roctent & rof container, raftegyptianarcher)
 - OnmyojiUpgradeI,I,II,IV: enables additional abilities for Onmyoji (temple gather, shieldboost, areaheal)
 - OnmyojiUpgradeV: enables additional ability for Onmyoji (banish) and enables HeadPriest (improved AbeNoSeimei) recruitable in abstactshrinejapanese
 - OraclesOfShinto: enables additional ability for Miko (ShrineBoost)
@@ -796,8 +801,6 @@ shrine -> dropsite
 
 * nitroglicerine -> vfxcold variant of detonators
 * hunts of artemis tech
-* roc -> dead spawn roctent, areheal
-* zhuque -> areaheal / area barrier
 * caladrialanded -> icarus & servant of kronos anim, handattack
 * pegasus -> pegasus anim, bellerophon_horse anim
 
