@@ -6600,7 +6600,6 @@
 		<flag>ObscuredByUnits</flag>
 		<flag>CorpseDecays</flag>
 		<flag>PreferSkeletonAsBonePile</flag>
-		<flag>Immovable</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
 			<name>AttackSpeedBuff</name>
