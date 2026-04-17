@@ -763,10 +763,6 @@ ID = "STR_TECH_ONMYOJI_UPGRADE_IV_LR"   ;   Str = "Fourth of Omnyoji upgrades. E
 ID = "STR_TECH_ONMYOJI_UPGRADE_V_NAME"   ;   Str = "Onmyoji Upgrade V"
 ID = "STR_TECH_ONMYOJI_UPGRADE_V_LR"   ;   Str = "Final Omnyoji upgrade. Improves Omnyoji and summons Head Priest. Research it only in dire cases"
 
-ID = "STR_TECH_DETONATORS_NAME"   ;   Str = "Detonators"
-ID = "STR_TECH_DETONATORS_LR"   ;   Str = "Explosive breakthrough of the technology that can be used both offensively and defensively"
-ID = "STR_VFX_DETONATORS_NAME"   ;   Str = "Detonator Charge"
-
 // REWORKED TECHS
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_NAME"   ;   Str = "Order of the Golden Kite"
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_LR"   ;   Str = "The Order was established by Emperor Meiji and served Empire of Japan until 1947. It is exclusive military award given to soldier for bravery, leadership and commandship. It is followed by Order of the Chrysanthemum "
@@ -1008,8 +1004,18 @@ ID = "STR_TECH_MADNESSOFDIONYSUS_NAME"   ;   Str = "Madness of Dionysus"
 ID = "STR_TECH_MADNESSOFDIONYSUS_LR"   ;   Str = "Dionysus goes through madness phase that leaves festive ego behind and embraces bloodthirsty personality. As he turns into Bull God, his followers orchestrate murders "
 ID = "STR_TECH_ELDRITCHSECTS_NAME"   ;   Str = "Eldritch Sects"
 
+ID = "STR_TECH_DETONATORS_NAME"   ;   Str = "Detonators"
+ID = "STR_TECH_DETONATORS_LR"   ;   Str = "Explosive breakthrough of the technology that can be used both offensively and defensively"
+ID = "STR_VFX_DETONATORS_NAME"   ;   Str = "Detonator Charge"
+
 ID = "STR_TECH_DISMOUNT_TACTICS_NAME"   ;   Str = "Dismount Tactics"
 ID = "STR_TECH_DISMOUNT_TACTICS_LR"   ;   Str = "Enable dismount capability for mounted units"
+
+ID = "STR_TECH_SPAWN_TACTICS_NAME"   ;   Str = "Spawn Tactics"
+ID = "STR_TECH_SPAWN_TACTICS_LR"   ;   Str = "Enable spawn abilities for myth units and warships"
+
+ID = "STR_TECH_DEFENSIVE_TACTICS_NAME"   ;   Str = "Defensive Reinforcement Tactics"
+ID = "STR_TECH_DEFENSIVE_TACTICS_LR"   ;   Str = "Enable reinforcement field that allows military buildings inspire nearby human soldiers"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"

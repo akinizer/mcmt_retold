@@ -4297,22 +4297,34 @@
 		<unittype>MilitaryUnit</unittype>
 		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-
-		<protoaction>
+		<protoaction mergeMode="replace">
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">12.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="AbstractCavalry">1.500000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileSatyrSpear</projectile>
+			<numberprojectiles>1</numberprojectiles>
+		</protoaction>
+		<protoaction mergeMode="replace">
 			<name>ChargedRangedAttack</name>
 			<rof>1.000000</rof>
-			<damage type="Pierce">20.000000</damage>
+			<damage type="Pierce">8.000000</damage>
 			<damageflags>Nature|Enemy</damageflags>
 			<damagebonus type="MythUnit">3.000000</damagebonus>
 			<damagebonus type="Hero">0.250000</damagebonus>
-			<maxrange>18.000000</maxrange>
-			<projectile>ProjectileArrowCentaurAttack</projectile>
-			<numberprojectiles>1</numberprojectiles>
+			<maxrange>12.000000</maxrange>
+			<projectile>ProjectileSatyrSpearSpecialAttack</projectile>
+			<numberprojectiles>4</numberprojectiles>
 			<passthrough>1</passthrough>
 			<passthroughbuildings>1</passthroughbuildings>
 			<maxheight>2</maxheight>
 			<perfectaccuracy>1</perfectaccuracy>
 			<launchpoint>ChargeAttackLaunchPoint</launchpoint>
+			<volleymode></volleymode>
+			<onhiteffect type="Spawn" proto="CentaurAreaDamage" amount="1"></onhiteffect>
 		</protoaction>
 	</unit>
 	<unit name="Centimanus">
@@ -7081,6 +7093,178 @@
 		</protoaction>
 	</unit>
 	
+	<unit name="FireSpawnling">
+		<displaynameid>STR_UNIT_FIRE_GIANT_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_FIRE_GIANT_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_FIRE_GIANT_SR</shortrollovertextid>
+		<icon>resources\norse\player_color\units\fire_giant_icon.png</icon>
+		<animfile>norse\units\myth\fire_giant\fire_giant.xml</animfile>
+		<soundsetfile>norse\vo\fire_giant\fire_giant.xml</soundsetfile>
+		<obstructionradiusx>1.2400</obstructionradiusx>
+		<obstructionradiusz>1.2400</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>60.0000</initialhitpoints>
+		<maxhitpoints>60.0000</maxhitpoints>
+		<trainpoints>24.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>3.2000</maxvelocity>
+		<rechargetime>15.0000</rechargetime>
+		<los>16.0000</los>
+		<bloodgroupoverride>mythbloodyellow</bloodgroupoverride>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.3000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeRangedMythUnit</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitThatGeneratesFavor</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.7500000</rof>
+			<damage type="Hack">4.000000</damage>
+			<damage type="Divine">1.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.100000</damagebonus>
+			<maxrange>0.750000</maxrange>
+			<projectile>ProjectileNidhoggInvisible</projectile>
+			<impacteffect>effects\impacts\fireball</impacteffect>
+			<displayednumberprojectiles>2</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+		</protoaction>
+	</unit>
+
+	<unit name="BlacksmithDwarf">
+		<displaynameid>STR_UNIT_DWARF_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_DWARF_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_DWARF_SR</shortrollovertextid>
+		<editornameid>STR_UNIT_DWARF_EDT_NAME</editornameid>
+		<icon>resources\norse\player_color\units\villager_dwarf_icon.png</icon>
+		<animfile>norse\units\economic\villager_dwarf\villager_dwarf.xml</animfile>
+		<soundsetfile>norse\vo\villager_dwarf\villager_dwarf.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>Civilian</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+
+		<initialhitpoints>55.0000</initialhitpoints>
+		<maxhitpoints>55.0000</maxhitpoints>
+		<trainpoints>17.0000</trainpoints>
+
+		<weightclass>4</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.8000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Gold">65.0000</cost>
+		
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.3500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeEasySelectAvoid</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypePredatorsAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>BuildLimitSharedNorse</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractDwarf</unittype>
+		<unittype>MythUnit</unittype>
+
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>AutoTrainable</flag>
+		<flag>HasDefaultAttack</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NonAutoFormedUnit</flag>
+
+		<command row="3" column="4">AttackMove</command>		
+		<tactics>handattack.tactics</tactics>	
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.100000</rof>
+			<damage type="Hack">6.000000</damage>
+			<damagebonus type="AbstractVillager">1.20000</damagebonus>
+			<damagebonus type="Building">1.50000</damagebonus>
+			<maxrange>0.500000</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+	</unit>
+	
 	<unit name="Nidhogg">
 		<initialhitpoints>10000.0000</initialhitpoints>
 		<maxhitpoints>10000.0000</maxhitpoints>
@@ -7970,8 +8154,137 @@
 
 	<!-- TODO -->
     <!-- Chinese Special Myth Units-->
+	<unit name="OverchargedSword">
+		<displaynameid>STR_UNIT_MASTERLESS_SWORD_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MASTERLESS_SWORD_LR</rollovertextid>
+		<icon>resources\japanese\player_color\units\masterless_sword_icon.png</icon>
+		<animfile>japanese\units\myth\masterless_sword\masterless_sword.xml</animfile>
+		<soundsetfile>japanese\vo\masterless_sword\masterless_sword.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<lifespan>4.0000</lifespan>
+		<unitaitype>HandCombative</unitaitype>
+		<initialunitaistance>Defensive</initialunitaistance>
+		<aistancebasedistance>16</aistancebasedistance>
+		<wanderdistance>4</wanderdistance>
+		<autoattackrange>12</autoattackrange>
+		<movementtype>amphibious</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>120.0000</initialhitpoints>
+		<maxhitpoints>120.0000</maxhitpoints>
+		<maxvelocity>4.0000</maxvelocity>
+		<los>12.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<armor type="Hack" value="0.8000"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Crush" value="0.0100"></armor>
+		<culture>Japanese</culture>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>Invulnerable</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotCommandable</flag>
+		<flag>Wanders</flag>
+		<flag>ExcludeFromIdleQuery</flag>
+		<flag>HideStances</flag>
+		<flag>NeverCountDeathAsLoss</flag>
+		<flag>ExcludeFromMoveAllMilitary</flag>
+		<flag>IgnoreForFavoriteUnitCount</flag>
+		<flag>TieToWaterSurface</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.900000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damage type="Divine">1.000000</damage>
+			<damagebonus type="HumanSoldier">1.500000</damagebonus>
+			<damagebonus type="MythUnit">1.200000</damagebonus>
+			<damagebonus type="Hero">0.900000</damagebonus>
+			<maxrange>1.500000</maxrange>
+			<selfdestruct>1</selfdestruct>
+		</protoaction>
+	</unit>
     <!-- Chinese Special Military Units-->	
     <!-- Chinese Special Naval Units-->
+	<unit name="RaftChineseArcher">
+		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
+		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
+		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<movementtype>water</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Ship</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+	</unit>
     <!-- Chinese Special Buildings-->
 
     <!-- Japanese Special Hero Units-->
@@ -21253,7 +21566,7 @@
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
-	<!-- dismount units knights
+	<!-- dismount units knights TODO
 	<unit name="HippeusKnight" mergeMode="add"></unit>
 	<unit name="ProdromosKnight" mergeMode="add"></unit>
 	<unit name="HetaroiKnight" mergeMode="add"></unit>
@@ -21998,6 +22311,111 @@
 			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
+	</unit>
+	<!-- Greek Special Naval Units -->
+	 <unit name="RaftGreekArcher">
+		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
+		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
+		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<movementtype>water</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Ship</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+	</unit>
+	 <unit name="RaftGreekArcherHero">
+		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
+		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
+		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<movementtype>water</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Ship</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
 	</unit>
 
 	<!-- SPARTAN UNITS -->
@@ -24169,6 +24587,60 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit>
+
+	<!-- Norse Special Naval Units -->
+	<unit name="RaftNorseArcher">
+		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
+		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
+		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<movementtype>water</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Ship</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+	</unit>
 	
 	<!-- Norse Special Buildings -->
 	<unit name="ElvenCamp">
@@ -25484,7 +25956,7 @@
 			<volleymode></volleymode>
 		</protoaction>
 	</unit>
-
+	<!-- Egyptian Special Naval Units -->
 	<unit name="RaftEgyptianArcher">
 		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
 		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
@@ -25538,7 +26010,7 @@
 		<flag>CreateUnitGroupAutomatically</flag>
 	</unit>
 
-<!-- Egyptian Special Buildings -->
+	<!-- Egyptian Special Buildings -->
 	<unit name="NubianCamp">
 		<displaynameid>STR_BLD_CAMP_NUBIAN_NAME</displaynameid>
 		<shortrollovertextid>STR_BLD_CAMP_NUBIAN_NAME</shortrollovertextid>
@@ -25605,10 +26077,6 @@
 		<tech row="1" column="0" mergeMode="add">MCMT_KingdomGuardTraining_III</tech>
 	</unit>
 	
-<!-- dismount units knights
-	<unit name="KopeshNubian" mergeMode="add"></unit>
-	<unit name="ElephantRider" mergeMode="add"></unit>
--->
 	<!-- Hall of Heroes Special Units -->
 	<unit name="ArcusCaptain">
 		<buildlimit>1</buildlimit>
@@ -27221,12 +27689,66 @@
 		</protoaction>
 	</unit>
 	<!-- Atlantean Special Units -->
-	 <!-- dismount units knights
+	 <!-- dismount units knights TODO
 	 <unit name="TurmaKnight" mergeMode="add"></unit>
 	 <unit name="TurmaKnightHero" mergeMode="add"></unit>
 	 <unit name="ContariusKnight" mergeMode="add"></unit>
 	 <unit name="ContariusHero" mergeMode="add"></unit>
 -->
+	<!-- Atlantean Special Naval Units -->
+	<unit name="RaftAtlanteanArcher">
+		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
+		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
+		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<movementtype>water</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Ship</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+	</unit>
+
 	<!-- Chinese Special Units -->
 	<unit name="FireArcherSandbag">
 		<displaynameid>STR_UNIT_FIRE_ARCHER_SANDBAG_NAME</displaynameid>
@@ -27906,7 +28428,136 @@
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
-	<!-- dismount units knights
+	<unit name="CursedFlameSword">
+		<displaynameid>STR_UNIT_MASTERLESS_SWORD_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MASTERLESS_SWORD_LR</rollovertextid>
+		<icon>resources\japanese\player_color\units\masterless_sword_icon.png</icon>
+		<animfile>japanese\units\myth\masterless_sword\masterless_sword.xml</animfile>
+		<soundsetfile>japanese\vo\masterless_sword\masterless_sword.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<lifespan>8.0000</lifespan>
+		<unitaitype>HandCombative</unitaitype>
+		<initialunitaistance>Defensive</initialunitaistance>
+		<aistancebasedistance>16</aistancebasedistance>
+		<wanderdistance>4</wanderdistance>
+		<autoattackrange>12</autoattackrange>
+		<movementtype>amphibious</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>999.0000</initialhitpoints>
+		<maxhitpoints>999.0000</maxhitpoints>
+		<maxvelocity>4.0000</maxvelocity>
+		<los>12.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.8000"></armor>
+		<armor type="Crush" value="0.0100"></armor>
+		<culture>Japanese</culture>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>Invulnerable</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotCommandable</flag>
+		<flag>Wanders</flag>
+		<flag>ExcludeFromIdleQuery</flag>
+		<flag>HideStances</flag>
+		<flag>NeverCountDeathAsLoss</flag>
+		<flag>ExcludeFromMoveAllMilitary</flag>
+		<flag>IgnoreForFavoriteUnitCount</flag>
+		<flag>TieToWaterSurface</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.300000</rof>
+			<damage type="Hack">25.000000</damage>
+			<damage type="Divine">2.000000</damage>
+			<damagebonus type="HumanSoldier">1.200000</damagebonus>
+			<damagebonus type="Hero">0.100000</damagebonus>
+			<maxrange>1.500000</maxrange>
+			<selfdestruct>1</selfdestruct>
+		</protoaction>
+	</unit>
+	<!-- Japanese Special Naval Units -->
+	<unit name="RaftJapaneseArcher">
+		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
+		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
+		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<movementtype>water</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Ship</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+	</unit>
+	<!-- dismount units knights todo
 	<unit name="NaginataSamurai" mergeMode="add"></unit>
 	<unit name="DaimyoGeneral" mergeMode="add"></unit>
 
@@ -28555,6 +29206,69 @@
 			<modifymultiplier>1.20</modifymultiplier>
 		</protoaction>
 	</unit> 
+	<unit name="ArmorBoostNoStackableMediumContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>ArmorSmithing</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<forbidabstracttype>MythUnit</forbidabstracttype>
+			<forbidabstracttype>Ship</forbidabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Armor</modifytype>
+			<modifymultiplier>1.20</modifymultiplier>
+			<nostack>1</nostack>
+		</protoaction>
+	</unit> 
+	<unit name="ArmorBoostNoStackableMinorContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>ArmorSmithing</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>HumanSoldier</modifyabstracttype>
+			<forbidabstracttype>MythUnit</forbidabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Armor</modifytype>
+			<modifymultiplier>1.10</modifymultiplier>
+			<nostack>1</nostack>
+		</protoaction>
+	</unit> 
 	<unit name="AreaHealContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -28776,7 +29490,7 @@
 			<modifytype>HealRate</modifytype>
 			<nostack>1</nostack>
 		</protoaction>
-	</unit> 
+	</unit>	
 
 	<unit name="SelfDestructSpawn" mergeMode="add">
 		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>

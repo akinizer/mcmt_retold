@@ -27,6 +27,10 @@
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsAtlantean" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
 
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsAtlantean</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsAtlantean" row="3" column="1" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>	
+
         <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
@@ -56,6 +60,10 @@
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsGreek" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
 
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsGreek</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsGreek" row="3" column="2" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>	
+
         <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
@@ -80,9 +88,11 @@
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsNorse</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsNorse" row="3" column="3" relativity="Assign">
-          <target type="ProtoUnit">Armory</target></effect>	
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsNorse" row="3" column="3" relativity="Assign">
-          <target type="ProtoUnit">DwarvenArmory</target></effect>	
+          <target type="ProtoUnit">AbstractArmory</target></effect>	
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsNorse</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsNorse" row="3" column="2" relativity="Assign">
+          <target type="ProtoUnit">AbstractArmory</target></effect>	
 
         <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
@@ -113,6 +123,10 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsJapanese</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsJapanese" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsJapanese</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsJapanese" row="3" column="2" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>	
         
         <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
@@ -131,6 +145,10 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsChinese</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsChinese" row="3" column="3" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsChinese</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsChinese" row="3" column="2" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>	
       </effects>
     </tech>
     <tech name="ArchaicAgeEgyptian">
@@ -144,6 +162,10 @@
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsEgyptian</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsEgyptian" row="3" column="3" relativity="Assign">
+          <target type="ProtoUnit">Armory</target></effect>	
+          
+        <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsEgyptian</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsEgyptian" row="3" column="2" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
 
         <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
@@ -741,6 +763,9 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ScarabMini</target></effect>
         <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">ScarabMini</target></effect>
         <!-- Norse Special Units -->
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">FireSpawnling</target></effect>
+        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">FireSpawnling</target></effect>
+
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MCMT_DwarvenForge</target></effect>	
         <!-- Atlantean Special Units -->
         <!-- Chinese Special Units -->
@@ -3338,6 +3363,7 @@
 		</effects>		
 	</tech>
 
+    <!-- Dismount Techs -->
   <tech name="DismountTacticsAtlantean" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_DISMOUNT_TACTICS_NAME</displaynameid>
@@ -3361,11 +3387,22 @@
         contarius rider
         turma rider
         cheiroballista - sumo - handattack - no weapon
+
+      <unit name="HippeusKnight" mergeMode="add"></unit>
+      <unit name="ProdromosKnight" mergeMode="add"></unit>
+      <unit name="HetaroiKnight" mergeMode="add"></unit>
+      <unit name="AchillesKnight" mergeMode="add"></unit>
+      <unit name="GreekSpy" mergeMode="add"></unit>
+
       -->
 			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Katapeltes" relativity="Assign">
         <target type="ProtoUnit">Contarius</target></effect>
 			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Arcus" relativity="Assign">
         <target type="ProtoUnit">Turma</target></effect>
+
+      <effect type="TechStatus" status="obtainable" mergeMode="add">SpawnTacticsAtlantean</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="SpawnTacticsAtlantean" row="3" column="3" relativity="Assign">
+        <target type="ProtoUnit">Armory</target></effect>	
 		</effects>		
 	</tech>
   <tech name="DismountTacticsNorse" mergeMode="add">
@@ -3377,7 +3414,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="AbstractArmory" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -3390,6 +3427,9 @@
         raiding cavalry rider
         jarl rider
         portable ram - stationary ram - aoe - idle attack animation
+
+        <unit name="Raider" mergeMode="add"></unit>
+	<unit name="JarlRider" mergeMode="add"></unit>
       -->
 			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Huskarl" relativity="Assign">
         <target type="ProtoUnit">RaidingCavalry</target></effect>
@@ -3397,6 +3437,10 @@
         <target type="ProtoUnit">Jarl</target></effect>
 			<effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="Berserk" relativity="Assign">
         <target type="ProtoUnit">PortableRam</target></effect>
+
+      <effect type="TechStatus" status="obtainable" mergeMode="add">SpawnTacticsNorse</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="SpawnTacticsNorse" row="3" column="3" relativity="Assign">
+        <target type="ProtoUnit">AbstractArmory</target></effect>	
 		</effects>		
 	</tech>
   <tech name="DismountTacticsEgyptian" mergeMode="add">
@@ -3428,10 +3472,130 @@
         <target type="ProtoUnit">Armory</target></effect>	
 		</effects>		
 	</tech>
-  <tech name="SpawnTacticsEgyptian" mergeMode="add">
+  <tech name="DismountTacticsGreek" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_DISMOUNT_TACTICS_NAME</displaynameid>
 		<rollovertextid>STR_TECH_DISMOUNT_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">225</cost>
+		<cost resourcetype="Gold">125</cost>
+		<effects>
+      <!-- MYTH
+        kataskopos - barbarian
+        hippeus rider
+        prodromos rider
+        hetaroi rider
+        scylla - bewitched girl
+        warshipnothero - toxotes / gastraphetoros / amazon raft
+        argo - jason raft
+
+        <unit name="HippeusKnight" mergeMode="add"></unit>
+	<unit name="ProdromosKnight" mergeMode="add"></unit>
+	<unit name="HetaroiKnight" mergeMode="add"></unit>
+	<unit name="AchillesKnight" mergeMode="add"></unit>
+	<unit name="GreekSpy" mergeMode="add"></unit>
+      -->
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Militia" relativity="Assign">
+        <target type="ProtoUnit">Kataskopos</target></effect>
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Hypaspist" relativity="Assign">
+        <target type="ProtoUnit">Hippeus</target></effect>
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Hoplite" relativity="Assign">
+        <target type="ProtoUnit">Prodromos</target></effect>
+			<effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="Hoplite" relativity="Assign">
+        <target type="ProtoUnit">Hetairos</target></effect>
+
+      <effect type="TechStatus" status="obtainable" mergeMode="add">SpawnTacticsGreek</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="SpawnTacticsGreek" row="3" column="3" relativity="Assign">
+        <target type="ProtoUnit">Armory</target></effect>	
+		</effects>		
+	</tech>
+  <tech name="DismountTacticsChinese" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DISMOUNT_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DISMOUNT_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">225</cost>
+		<cost resourcetype="Gold">125</cost>
+		<effects>
+      <!-- MYTH
+        white horse cavalry - white knight
+        warship - wuzu javelineer raft      
+        
+        <unit name="WhiteHorseKnight" mergeMode="add"></unit>
+	<unit name="QingQiKnight" mergeMode="add"></unit>
+	<unit name="GongQiKnight" mergeMode="add"></unit>
+      -->
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="GeHalberdier" relativity="Assign">
+        <target type="ProtoUnit">WhiteHorseCavalry</target></effect>
+
+      <effect type="TechStatus" status="obtainable" mergeMode="add">SpawnTacticsChinese</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="SpawnTacticsChinese" row="3" column="3" relativity="Assign">
+        <target type="ProtoUnit">Armory</target></effect>	
+		</effects>		
+	</tech>
+  <tech name="DismountTacticsJapanese" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DISMOUNT_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DISMOUNT_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">225</cost>
+		<cost resourcetype="Gold">125</cost>
+		<effects>
+      <!-- MYTH
+        onmoraki - wretch x3
+        bushi - bushi samurai
+        daimyo - daimyo rider
+        shogun- shogun rider
+        warship - yumi archer raft       
+
+        <unit name="NaginataSamurai" mergeMode="add"></unit>
+	<unit name="DaimyoGeneral" mergeMode="add"></unit>
+      -->
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Kitsune" relativity="Assign">
+        <target type="ProtoUnit">Miko</target></effect>
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Samurai" relativity="Assign">
+        <target type="ProtoUnit">Bushi</target></effect>        
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Samurai" relativity="Assign">
+        <target type="ProtoUnit">Daimyo</target></effect>
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Samurai" relativity="Assign">
+        <target type="ProtoUnit">Shogun</target></effect>
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="YumiArcher" relativity="Assign">
+        <target type="ProtoUnit">YumiHorseArcher</target></effect>
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="YariSpearman" relativity="Assign">
+        <target type="ProtoUnit">NaginataRider</target></effect>
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">SpawnTacticsJapanese</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="SpawnTacticsJapanese" row="3" column="3" relativity="Assign">
+        <target type="ProtoUnit">Armory</target></effect>	
+		</effects>		
+	</tech>
+
+    <!-- Spawn on Death Techs -->
+  <tech name="SpawnTacticsEgyptian" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_SPAWN_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_SPAWN_TACTICS_LR</rollovertextid>
 		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3456,10 +3620,10 @@
         <target type="ProtoUnit">RocLanded</target></effect>
 		</effects>		
 	</tech>
-  <tech name="DismountTacticsGreek" mergeMode="add">
+  <tech name="SpawnTacticsJapanese" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DISMOUNT_TACTICS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DISMOUNT_TACTICS_LR</rollovertextid>
+		<displaynameid>STR_TECH_SPAWN_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_SPAWN_TACTICS_LR</rollovertextid>
 		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3471,29 +3635,28 @@
 		<cost resourcetype="Food">225</cost>
 		<cost resourcetype="Gold">125</cost>
 		<effects>
-      <!-- MYTH
-        kataskopos - barbarian
-        hippeus rider
-        prodromos rider
-        hetaroi rider
-        scylla - bewitched girl
-        warshipnothero - toxotes / gastraphetoros / amazon raft
-        argo - jason raft
+      <!-- MYTH TODO
+        warship - chariot archer rider raft       
       -->
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Militia" relativity="Assign">
-        <target type="ProtoUnit">Kataskopos</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Hypaspist" relativity="Assign">
-        <target type="ProtoUnit">Hippeus</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Hoplite" relativity="Assign">
-        <target type="ProtoUnit">Prodromos</target></effect>
-			<effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="Hoplite" relativity="Assign">
-        <target type="ProtoUnit">Hetaroi</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">CursedFlameSword</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" relativity="Assign">
+				<target type="ProtoUnit">CursedFlameSword</target></effect>
+      <effect type="Data" amount="6.0" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" relativity="Assign">
+        <target type="ProtoUnit">CursedFlameSword</target></effect>
+
+      <effect type="Data" amount="6.00" subtype="ModifySpawn" spawntype="Dead" proto="CursedFlameSword" relativity="Absolute">
+				<target type="ProtoUnit">Asura</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">RaftJapaneseArcher</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftJapaneseArcher" relativity="Assign">
+        <target type="ProtoUnit">AbstractWarship</target></effect>
 		</effects>		
 	</tech>
-  <tech name="DismountTacticsChinese" mergeMode="add">
+  <tech name="SpawnTacticsChinese" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DISMOUNT_TACTICS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DISMOUNT_TACTICS_LR</rollovertextid>
+		<displaynameid>STR_TECH_SPAWN_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_SPAWN_TACTICS_LR</rollovertextid>
 		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3505,18 +3668,29 @@
 		<cost resourcetype="Food">225</cost>
 		<cost resourcetype="Gold">125</cost>
 		<effects>
-      <!-- MYTH
-        white horse cavalry - white knight
-        warship - wuzu javelineer raft       
+      <!-- MYTH TODO
+        warship - chariot archer rider raft       
       -->
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="GeHalberdier" relativity="Assign">
-        <target type="ProtoUnit">WhiteHorseCavalry</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SeaSnake" relativity="Absolute">
+				<target type="ProtoUnit">XuanWu</target></effect>
+        
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">OverChargedSword</target></effect>
+      <effect type="Data" amount="0.4" subtype="OnHitEffect" action="HandAttack" effecttype="Stun" duration="2.00" targettype="HumanSoldier" relativity="Assign">
+        <target type="ProtoUnit">OverChargedSword</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="OverChargedSword" relativity="Absolute">
+				<target type="ProtoUnit">Yazi</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">RaftChineseArcher</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftChineseArcher" relativity="Assign">
+        <target type="ProtoUnit">AbstractWarship</target></effect>
 		</effects>		
 	</tech>
-  <tech name="DismountTacticsJapanese" mergeMode="add">
+  <tech name="SpawnTacticsGreek" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_DISMOUNT_TACTICS_NAME</displaynameid>
-		<rollovertextid>STR_TECH_DISMOUNT_TACTICS_LR</rollovertextid>
+		<displaynameid>STR_TECH_SPAWN_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_SPAWN_TACTICS_LR</rollovertextid>
 		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -3528,25 +3702,201 @@
 		<cost resourcetype="Food">225</cost>
 		<cost resourcetype="Gold">125</cost>
 		<effects>
-      <!-- MYTH
-        onmoraki - wretch x3
-        bushi - bushi samurai
-        daimyo - daimyo rider
-        shogun- shogun rider
-        warship - yumi archer raft       
+      <!-- MYTH TODO
+        warship - chariot archer rider raft       
       -->
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Kitsune" relativity="Assign">
-        <target type="ProtoUnit">Miko</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Samurai" relativity="Assign">
-        <target type="ProtoUnit">Bushi</target></effect>        
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Samurai" relativity="Assign">
-        <target type="ProtoUnit">Daimyo</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Samurai" relativity="Assign">
-        <target type="ProtoUnit">Shogun</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="YumiArcher" relativity="Assign">
-        <target type="ProtoUnit">YumiHorseArcher</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="YariSpearman" relativity="Assign">
-        <target type="ProtoUnit">NaginataRider</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">RaftGreekArcher</target></effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">RaftGreekArcherHero</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftGreekArcher" relativity="Assign">
+        <target type="ProtoUnit">Trireme</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftGreekArcher" relativity="Assign">
+        <target type="ProtoUnit">Pentekonter</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftGreekArcher" relativity="Assign">
+        <target type="ProtoUnit">Juggernaut</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftGreekArcherHero" relativity="Assign">
+        <target type="ProtoUnit">TheArgo</target></effect>
+		</effects>		
+	</tech>
+  <tech name="SpawnTacticsNorse" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_SPAWN_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_SPAWN_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="AbstractArmory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">225</cost>
+		<cost resourcetype="Gold">125</cost>
+		<effects>
+      <!-- MYTH TODO
+        warship - chariot archer rider raft       
+      -->
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="2.00" targettype="Unit" proto="VFXFire" relativity="Assign">
+				<target type="ProtoUnit">FireSpawnling</target></effect>
+      <effect type="Data" amount="2.0" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" relativity="Assign">
+        <target type="ProtoUnit">FireSpawnling</target></effect>
+      <effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="FireSpawnling" relativity="Assign">
+        <target type="ProtoUnit">FireGiant</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">BlacksmithDwarf</target></effect>    
+      <effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="BlacksmithDwarf" relativity="Assign">
+        <target type="ProtoUnit">BattleBoar</target></effect>
+        
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">RaftNorseArcher</target></effect>    
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftNorseArcher" relativity="Assign">
+        <target type="ProtoUnit">AbstractWarship</target></effect>
+		</effects>		
+	</tech>
+  <tech name="SpawnTacticsAtlantean" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_SPAWN_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_SPAWN_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">225</cost>
+		<cost resourcetype="Gold">125</cost>
+		<effects>
+      <!-- MYTH TODO
+        warship - chariot archer rider raft       
+      -->
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Hamadryad" relativity="Assign">
+        <target type="ProtoUnit">Dryad</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">RaftAtlanteanArcher</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftAtlanteanArcher" relativity="Assign">
+        <target type="ProtoUnit">AbstractWarship</target></effect>
+		</effects>		
+	</tech>
+    <!-- Structure Fortification Field Techs -->
+  <tech name="DefensiveTacticsEgyptian" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DEFENSIVE_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DEFENSIVE_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Wood">150</cost>
+		<cost resourcetype="Gold">50</cost>
+		<effects>
+	    <effect type="Data" subtype="ProtoActionAdd" protoaction="ArmorSmithing" amount="1.00" unittype="ArmorBoostNoStackableMinorContainer" relativity="Assign">
+        <target type="ProtoUnit">Barracks</target></effect>
+		</effects>		
+	</tech>
+  <tech name="DefensiveTacticsJapanese" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DEFENSIVE_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DEFENSIVE_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Wood">150</cost>
+		<cost resourcetype="Gold">50</cost>
+		<effects>
+	    <effect type="Data" subtype="ProtoActionAdd" protoaction="ArmorSmithing" amount="1.00" unittype="ArmorBoostNoStackableMinorContainer" relativity="Assign">
+        <target type="ProtoUnit">Guardhouse</target></effect>
+		</effects>		
+	</tech>
+  <tech name="DefensiveTacticsChinese" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+	  <displaynameid>STR_TECH_DEFENSIVE_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DEFENSIVE_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Wood">150</cost>
+		<cost resourcetype="Gold">50</cost>
+		<effects>
+	    <effect type="Data" subtype="ProtoActionAdd" protoaction="ArmorSmithing" amount="1.00" unittype="ArmorBoostNoStackableMinorContainer" relativity="Assign">
+        <target type="ProtoUnit">Baolei</target></effect>
+	    <effect type="Data" subtype="ProtoActionAdd" protoaction="ArmorSmithing" amount="1.00" unittype="ArmorBoostNoStackableMinorContainer" relativity="Assign">
+        <target type="ProtoUnit">WallGate</target></effect>
+		</effects>		
+	</tech>
+  <tech name="DefensiveTacticsGreek" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DEFENSIVE_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DEFENSIVE_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Wood">150</cost>
+		<cost resourcetype="Gold">50</cost>
+		<effects>
+	    <effect type="Data" subtype="ProtoActionAdd" protoaction="ArmorSmithing" amount="1.00" unittype="ArmorBoostNoStackableMinorContainer" relativity="Assign">
+        <target type="ProtoUnit">MilitaryAcademy</target></effect>
+		</effects>		
+	</tech>
+  <tech name="DefensiveTacticsNorse" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DEFENSIVE_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DEFENSIVE_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="AbstractArmory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Wood">150</cost>
+		<cost resourcetype="Gold">50</cost>
+		<effects>
+	    <effect type="Data" subtype="ProtoActionAdd" protoaction="ArmorSmithing" amount="1.00" unittype="ArmorBoostNoStackableMinorContainer" relativity="Assign">
+        <target type="ProtoUnit">GreatHall</target></effect>
+		</effects>		
+	</tech>
+  <tech name="DefensiveTacticsAtlantean" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_DEFENSIVE_TACTICS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_DEFENSIVE_TACTICS_LR</rollovertextid>
+		<icon>resources\atlantean\static_color\technologies\sons_of_the_sun_icon.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+		</prereqs>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Wood">150</cost>
+		<cost resourcetype="Gold">50</cost>
+		<effects>
+	    <effect type="Data" subtype="ProtoActionAdd" protoaction="ArmorSmithing" amount="1.00" unittype="ArmorBoostNoStackableMinorContainer" relativity="Assign">
+        <target type="ProtoUnit">MilitaryBarracks</target></effect>
 		</effects>		
 	</tech>
 

@@ -136,15 +136,19 @@
 
     - flying: Pegasus+, PegasusWingedMessenger+
     - melee: Minotaur+, Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
-    - ranged: Centaur+, Medusa+, Sentinel+
+    - ranged: Medusa+, Sentinel+
+        - Centaur+:
+            - RangedAttack: bonusdamage abstractcavalry, NumberProjectiles 1
+            - ChargedRangedAttack: onhiteffect spawn centaurareadamage
+        - Manticore:
+            - rangedattacK: default, effective to counter ranged units, usable for kiting units to flee or get closer
+            - handattacK: effective to counter humansoldiers that get too close
+            - chargedrangedattack / barrage attack: effective for crowds in further distance and units that flee
+        - Medusa: renamed to "gorgon"
+            - faceofthegorgon: sets name to "gorgon matriarch"
     - naval: Carcinos+
 
-    - manticore
-        - rangedattacK: default, effective to counter ranged units, usable for kiting units to flee or get closer
-        - handattacK: effective to counter humansoldiers that get too close
-        - chargedrangedattack / barrage attack: effective for crowds in further distance and units that flee
-    - medusa: renamed to "gorgon"
-        - faceofthegorgon: sets name to "gorgon matriarch"
+    
 - hero:
     - favor costs removed, pop 1 or 2
     - OnDamageModify: Atalanta+, Jason+
@@ -250,10 +254,7 @@
         - Scarab+
             - shading: gold
             - Burrow: tech-enabled (crimsonlinen), manual ability, submerges into ground and undetectable by enemies
-            - Ambush: tech-enabled (crimsonlinen), detection-based, conditional transform (ambush, moved, delayedtransform)
-            - ScarabMini: spawnondead, x12
-        - RocLanded
-            - ReinforcementTentROF: tech-enabled (egyptianspawntactics), area container (ally, rof+, arkantos_glow), range ring green 
+            - Ambush: tech-enabled (crimsonlinen), detection-based, conditional transform (ambush, moved, delayedtransform)            
     - ranged: Wadjet+, Petsuchos+, Mummy+
     - naval: 
         - Leviathan+: no longer amphibious (repurposed into a new unit)
@@ -311,7 +312,6 @@
 
     - KingdomGuardsTraining I,II,III: increases hitpoints of KingdmGuards units, maxrange of WarElephantArcher, handattack of Amanra variants
         - KingdomGuardsTraining III: increases handattack range of Amanra variants, decreases trainpoints of Nubian units
-
 6. Chinese reworks from mcmt mod and extra changes
 - myth unit:
     - popcosts
@@ -737,7 +737,42 @@
 * Special Techs
 - DetonatorsJapanese: explosive tech researchable in Armory, releases explosion on destruction (building, ship) or death (infrenal mythunit, shinobi), deals area damage and sends humansoldiers and villagers flying
     - Norse,Greek,Atlantean,Chinese,Egyptian: variants added, enabled for [mechanical, building, warship, explosive users, infernals]
-- SpawnTacticsEgyptian: spawn tech (scarabmini, reinforcementtestrof & rof container, raftegyptianarcher)
+- DismountTactics:
+    - Greek: Hippeus, Prodromos, Hetairos
+    - Egyptian: MercenaryCavalry, ChariotArcher, CamelRider, WarElephant
+    - Norse: RaidingCavalry, Jarl, PortableRam
+    - Atlantean: Turma, Contarius
+    - Chinese: WhiteHorseCavalry
+    - JapaneseÇ Miko, Bushi, Daimyo, Shogun, YumiHorseArcher, NaginataRider
+- SpawnTactics: spawn tech
+    - Greek: Warship, WarshipHero
+    - Egyptian:
+        - Scarab: ScarabMini x12
+        - RocLanded: 
+            - ReinforcementTentROF: area container (ally, rof+, arkantos_glow), range ring green 
+        - Warship: RaftEgyptianArcher
+    - Norse
+        - FireGiant: FireSpawnling x2
+        - BattleBoar: BlacksmithDwarf x2
+        - Warship: RaftNorseArcher
+    - Atlantean
+        - Dryad: Hamadryad
+        - Warship: RaftAtlanteanArcher
+    - Chinese
+        - YaZi: OverchargedSword
+        - XuanWu: SeaSnake
+        - Warship: RaftChineseArcher
+    - Japanese 
+        - Asura: CursedFireBlade x6
+        - Warship: RaftChineseArcher
+- ReinforcementTactics: area rof, humansoldiers
+    - Greek: MilitaryAcademy
+    - Egyptian: Barracks
+    - Norse: GreatHall
+    - Atlantean: MilitaryBarracks
+    - Chinese: Baolei
+    - Japanese: GuardHouse
+
 - OnmyojiUpgradeI,I,II,IV: enables additional abilities for Onmyoji (temple gather, shieldboost, areaheal)
 - OnmyojiUpgradeV: enables additional ability for Onmyoji (banish) and enables HeadPriest (improved AbeNoSeimei) recruitable in abstactshrinejapanese
 - OraclesOfShinto: enables additional ability for Miko (ShrineBoost)
