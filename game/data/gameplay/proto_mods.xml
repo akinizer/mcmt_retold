@@ -6556,7 +6556,7 @@
 		</protoaction>
 	</unit>
 
-	<unit name="MCMT_RocTent">
+	<unit name="ReinforcementTentROF">
 		<displaynameid>STR_BLD_REINFORCEMENT_TENT_NAME</displaynameid>
 		<rollovertextid>STR_BLD_REINFORCEMENT_TENT_SR</rollovertextid>
 		<shortrollovertextid>STR_BLD_REINFORCEMENT_TENT_LR</shortrollovertextid>

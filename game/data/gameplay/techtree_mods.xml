@@ -730,7 +730,7 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PegasusGroundedMessenger</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Enceladus</target></effect>        
         <!-- Egyptian Special Units -->
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MCMT_RocTent</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ReinforcementTentROF</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">StellarGateway</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MummyFallen</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Chariot_Pharaoh</target></effect>
@@ -3452,11 +3452,11 @@
         <target type="ProtoUnit">RaftEgyptianArcher</target></effect>
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaftEgyptianArcher" relativity="Assign">
         <target type="ProtoUnit">AbstractWarship</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="MCMT_RocTent" relativity="Assign">
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="ReinforcementTentROF" relativity="Assign">
         <target type="ProtoUnit">RocLanded</target></effect>
 
       <effect type="Data" subtype="ProtoActionAdd" protoaction="AttackSpeedBuff" amount="1.00" unittype="RateOfFireContainer" relativity="Assign">
-        <target type="ProtoUnit">MCMT_RocTent</target></effect>
+        <target type="ProtoUnit">ReinforcementTentROF</target></effect>
 		</effects>		
 	</tech>
   <tech name="DismountTacticsGreek" mergeMode="add">

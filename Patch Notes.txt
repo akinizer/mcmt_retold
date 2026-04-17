@@ -253,7 +253,7 @@
             - Ambush: tech-enabled (crimsonlinen), detection-based, conditional transform (ambush, moved, delayedtransform)
             - ScarabMini: spawnondead, x12
         - RocLanded
-            - MCMT_RocTent: tech-enabled (egyptianspawntactics), area container (ally, rof+, arkantos_glow), range ring green 
+            - ReinforcementTentROF: tech-enabled (egyptianspawntactics), area container (ally, rof+, arkantos_glow), range ring green 
     - ranged: Wadjet+, Petsuchos+, Mummy+
     - naval: 
         - Leviathan+: no longer amphibious (repurposed into a new unit)
@@ -737,7 +737,7 @@
 * Special Techs
 - DetonatorsJapanese: explosive tech researchable in Armory, releases explosion on destruction (building, ship) or death (infrenal mythunit, shinobi), deals area damage and sends humansoldiers and villagers flying
     - Norse,Greek,Atlantean,Chinese,Egyptian: variants added, enabled for [mechanical, building, warship, explosive users, infernals]
-- SpawnTacticsEgyptian: spawn tech (scarabmini, mcmt_roctent & rof container, raftegyptianarcher)
+- SpawnTacticsEgyptian: spawn tech (scarabmini, reinforcementtestrof & rof container, raftegyptianarcher)
 - OnmyojiUpgradeI,I,II,IV: enables additional abilities for Onmyoji (temple gather, shieldboost, areaheal)
 - OnmyojiUpgradeV: enables additional ability for Onmyoji (banish) and enables HeadPriest (improved AbeNoSeimei) recruitable in abstactshrinejapanese
 - OraclesOfShinto: enables additional ability for Miko (ShrineBoost)
