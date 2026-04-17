@@ -6601,10 +6601,19 @@
 		<flag>CorpseDecays</flag>
 		<flag>PreferSkeletonAsBonePile</flag>
 		<flag>Immovable</flag>
-		<tactics>delayed_transform.tactics</tactics>
+		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>DelayedTransform</name>
-			<active>0</active>
+			<name>AttackSpeedBuff</name>
+			<type>AutoRangedModify</type>
+			<modifyamount>-0.1</modifyamount>
+			<maxrange>15</maxrange>
+			<persistent>1</persistent>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifytype>ROF</modifytype>
+			<modifystackadditive>1</modifystackadditive>
+			<modifystacklimit>5</modifystacklimit>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 		<protoaction>
 			<name>HeroRingOnSelf</name>

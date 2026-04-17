@@ -3454,9 +3454,6 @@
         <target type="ProtoUnit">AbstractWarship</target></effect>
 			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="ReinforcementTentROF" relativity="Assign">
         <target type="ProtoUnit">RocLanded</target></effect>
-
-      <effect type="Data" subtype="ProtoActionAdd" protoaction="AttackSpeedBuff" amount="1.00" unittype="RateOfFireContainer" relativity="Assign">
-        <target type="ProtoUnit">ReinforcementTentROF</target></effect>
 		</effects>		
 	</tech>
   <tech name="DismountTacticsGreek" mergeMode="add">
