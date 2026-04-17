@@ -844,7 +844,16 @@ shrine -> dropsite
 * zorro: chiyou -> 4x katana, 
 * mihawk: samurai, throw, ranged slash
 
+=== AZTEC
+* General: Units, Abilities, LineUpgrades, Buildings, Techs, VisualScales (Building, Giant, Ship)
+* Bunnies: Shogun Ability (spawn phoenix egg while fighting, decay and explode)
+* Campaign Units
+* Godpower Cost
+* Armory Techs: Dismount, Explosives, Spawn 
+* Encampment
+
 === JAPANESE
+* Godpower Cost
 
 * Proto Reworks - MythUnit LineUpgrade
 - Siege

@@ -73,6 +73,10 @@ ID = "STR_UNIT_DEFORESTATOR_NAME"   ;   Str = "Deforestator"
 ID = "STR_UNIT_DEFORESTATOR_LR"   ;   Str = "Merchant Lumberjack gets on a machine provided by CyberTech. Faster at woodcutting. Larger load capacity"
 ID = "STR_UNIT_DEFORESTATOR_SR"   ;   Str = "Lumberjack (Machine)"
 
+ID = "STR_UNIT_RAFTARCHER_NAME"   ;   Str = "Raft Archer"
+ID = "STR_UNIT_RAFTARCHER_SR"   ;   Str = "Survivor crewmate from the shipwreck"
+ID = "STR_UNIT_RAFTARCHER_LR"   ;   Str = "The survivor wishes to make it through hurling storms, pirates and enemy ships"
+
 // ELITE UNITS
 ID = "STR_UNIT_CHIEFTAIN_NAME"   ;   Str = "Chieftain"
 ID = "STR_UNIT_CHIEFTAIN_LR"   ;   Str = "Veteran Tribal Villager. Faster, Stronger, Tougher."
@@ -680,6 +684,14 @@ ID = "STR_UNIT_ROYAL_ELF_NAME"   ;   Str = "Royal Elf"
 ID = "STR_UNIT_ROYAL_ELF_SR"   ;   Str = "Elites from Elven Empire"
 ID = "STR_UNIT_ROYAL_ELF_LR"   ;   Str = "Royal Elves are naturally talented at swordsmanship, archery as well as smithery. They receive a professional training, join military in early ages and wield mithril armaments"
 
+ID = "STR_UNIT_FIRESPAWNLING_NAME"   ;   Str = "Fire Spawnling"
+ID = "STR_UNIT_FIRESPAWNLING_SR"   ;   Str = "Lesser Humanoid Magma Elementals"
+ID = "STR_UNIT_FIRESPAWNLING_LR"   ;   Str = "These elementals are weaker than their giant variants and unable to create magma balls. They prefer magma strikes using their fiery fists"
+
+ID = "STR_UNIT_BLACKSMITH_DWARF_NAME"   ;   Str = "Blackmith Dwarf"
+ID = "STR_UNIT_BLACKSMITH_DWARF_SR"   ;   Str = "Makers of the Battle Boar"
+ID = "STR_UNIT_BLACKSMITH_DWARF_LR"   ;   Str = "Dwarves are talented at mining as well as forging armaments, armors and constructs. Some dwarves are gifted by gods and gain legendary skills to return as offerings. The most popular among these are Eitri and Brokk"
+
 // EGYPTIAN SPECIAL UNITS
 ID = "STR_UNIT_NUBIANMERCENARY_NAME"   ;   Str = "Nubian Mercenary"
 ID = "STR_UNIT_NUBIANMERCENARY_SR"   ;   Str = "Nubian Mercenary"
@@ -723,6 +735,11 @@ ID = "STR_BLD_REINFORCEMENT_TENT_SR"   ;   Str = "Roc Tent that reinforces human
 ID = "STR_BLD_REINFORCEMENT_TENT_LR"   ;   Str = "Roc Tent converts to a structure that makes surrounding human military units more efficient in battle"
 
 // JAPANESE SPECIAL UNITS
+ID = "STR_UNIT_CURSEDFLAME_SWORD_NAME"   ;   Str = "Cursed Flame Sword"
+ID = "STR_UNIT_CURSEDFLAME_SWORD_SR"   ;   Str = "Looted Swords forged in demonic flames of Asura"
+ID = "STR_UNIT_CURSEDFLAME_SWORD_LR"   ;   Str = "Asura feasts on the masters of weapons and loots their well-forged blades as a token of victory"
+
+// JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
 
 ID = "STR_UNIT_ONI_GUARDIAN_RED_NAME"   ;   Str = "Red Oni (Guardian)"
@@ -741,6 +758,10 @@ ID = "STR_UNIT_YUKIONNA_MUSHA_LR"   ;   Str = "Yuki-Onna seeks a man as a true l
 ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_NAME"   ;   Str = "Yuki Onna Mistbender (Hero)"
 ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_SR"   ;   Str = "Shinobi Master of Air Element"
 ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_LR"   ;   Str = "Yuki-Onna seeks a man as a true love but it ends up with a freezing death. Yuki-Onna protects the naginata of her late husband as a precious memory"
+
+ID = "STR_UNIT_OVERCHARGED_SWORD_NAME"   ;   Str = "Overcharged Sword"
+ID = "STR_UNIT_OVERCHARGED_SWORD_SR"   ;   Str = "Sword of Ya Zi with animated with immense energy from the rage"
+ID = "STR_UNIT_OVERCHARGED_SWORD_LR"   ;   Str = "The rage unleashes as it is freed from vessel of Ya Zi and becomes one with the weapon"
 
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"

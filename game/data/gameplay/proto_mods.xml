@@ -7094,9 +7094,9 @@
 	</unit>
 	
 	<unit name="FireSpawnling">
-		<displaynameid>STR_UNIT_FIRE_GIANT_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_FIRE_GIANT_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_FIRE_GIANT_SR</shortrollovertextid>
+		<displaynameid>STR_UNIT_FIRESPAWNLING_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_FIRESPAWNLING_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_FIRESPAWNLING_LR</rollovertextid>
 		<icon>resources\norse\player_color\units\fire_giant_icon.png</icon>
 		<animfile>norse\units\myth\fire_giant\fire_giant.xml</animfile>
 		<soundsetfile>norse\vo\fire_giant\fire_giant.xml</soundsetfile>
@@ -7181,10 +7181,9 @@
 	</unit>
 
 	<unit name="BlacksmithDwarf">
-		<displaynameid>STR_UNIT_DWARF_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_DWARF_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_DWARF_SR</shortrollovertextid>
-		<editornameid>STR_UNIT_DWARF_EDT_NAME</editornameid>
+		<displaynameid>STR_UNIT_BLACKSMITH_DWARF_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_BLACKSMITH_DWARF_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_BLACKSMITH_DWARF_NAMELR</rollovertextid>
 		<icon>resources\norse\player_color\units\villager_dwarf_icon.png</icon>
 		<animfile>norse\units\economic\villager_dwarf\villager_dwarf.xml</animfile>
 		<soundsetfile>norse\vo\villager_dwarf\villager_dwarf.xml</soundsetfile>
@@ -8155,8 +8154,9 @@
 	<!-- TODO -->
     <!-- Chinese Special Myth Units-->
 	<unit name="OverchargedSword">
-		<displaynameid>STR_UNIT_MASTERLESS_SWORD_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_MASTERLESS_SWORD_LR</rollovertextid>
+		<displaynameid>STR_UNIT_OVERCHARGED_SWORD_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_OVERCHARGED_SWORD_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_OVERCHARGED_SWORD_LR</rollovertextid>
 		<icon>resources\japanese\player_color\units\masterless_sword_icon.png</icon>
 		<animfile>japanese\units\myth\masterless_sword\masterless_sword.xml</animfile>
 		<soundsetfile>japanese\vo\masterless_sword\masterless_sword.xml</soundsetfile>
@@ -8234,8 +8234,9 @@
     <!-- Chinese Special Military Units-->	
     <!-- Chinese Special Naval Units-->
 	<unit name="RaftChineseArcher">
-		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
-		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
 		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
@@ -22314,8 +22315,9 @@
 	</unit>
 	<!-- Greek Special Naval Units -->
 	 <unit name="RaftGreekArcher">
-		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
-		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
 		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
@@ -22366,8 +22368,9 @@
 		<flag>CreateUnitGroupAutomatically</flag>
 	</unit>
 	 <unit name="RaftGreekArcherHero">
-		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
-		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
 		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
@@ -24590,8 +24593,9 @@
 
 	<!-- Norse Special Naval Units -->
 	<unit name="RaftNorseArcher">
-		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
-		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
 		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
@@ -25958,8 +25962,9 @@
 	</unit>
 	<!-- Egyptian Special Naval Units -->
 	<unit name="RaftEgyptianArcher">
-		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
-		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
 		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
@@ -27697,8 +27702,9 @@
 -->
 	<!-- Atlantean Special Naval Units -->
 	<unit name="RaftAtlanteanArcher">
-		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
-		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
 		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
@@ -28429,8 +28435,9 @@
 		</protoaction>
 	</unit>
 	<unit name="CursedFlameSword">
-		<displaynameid>STR_UNIT_MASTERLESS_SWORD_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_MASTERLESS_SWORD_LR</rollovertextid>
+		<displaynameid>STR_UNIT_CURSEDFLAME_SWORD_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_CURSEDFLAME_SWORD_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_CURSEDFLAME_SWORD_LR</rollovertextid>
 		<icon>resources\japanese\player_color\units\masterless_sword_icon.png</icon>
 		<animfile>japanese\units\myth\masterless_sword\masterless_sword.xml</animfile>
 		<soundsetfile>japanese\vo\masterless_sword\masterless_sword.xml</soundsetfile>
@@ -28506,8 +28513,9 @@
 	</unit>
 	<!-- Japanese Special Naval Units -->
 	<unit name="RaftJapaneseArcher">
-		<displaynameid>STR_EMB_MONKEY_RAFT_NAME</displaynameid>
-		<rollovertextid>STR_EMB_MONKEY_RAFT_LR</rollovertextid>
+		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
 		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
