@@ -394,6 +394,7 @@
         <effect type="Data" amount="2" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">LykaonWolf</target></effect>
       </effects>
     </tech>
+    <!-- PRESETS FOR STRUCTURE AND SHIP VISUAL SCALES -->
     <tech name="BuildingPresets" mergeMode="add">
       <status>UNOBTAINABLE</status>
       <effects>
@@ -446,7 +447,7 @@
         </effect>
       </effects>
     </tech>
-
+    <!-- PRESETS FOR CIVILIZATION UNITS: SPAWN, VISUAL SCALE, POPCOST, HERO -->
     <tech name="NorsePresets" mergeMode="add">
       <status>UNOBTAINABLE</status>
       <effects>
@@ -732,7 +733,7 @@
       </effects>
     </tech>
 
-    <!-- MCMT SECTION FOR UNITS BUILDINGS RESEARCHES -->
+    <!-- MCMT SECTION FOR SPECIAL UNITS -->
 
     <tech name="MCMT_SpecialUnits" mergeMode="add">
       <status>UNOBTAINABLE</status>
@@ -1073,6 +1074,8 @@
       </effects>
     </tech> 
 
+     <!-- MCMT SECTION FOR KINGDOM TECH CIVILIZATION SPECIAL UNITS -->
+
     <tech name="ArchaicAgeNorse" mergeMode="add">
       <effects>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Hobbit</target></effect>
@@ -1121,6 +1124,8 @@
         <effect type="SetName" proto="SonOfOsiris" newname="STR_UNIT_SON_OF_HORUS_NAME"></effect>
       </effects>
     </tech>
+
+     <!-- MCMT SECTION FOR SPECIAL RESEARCHES AND ACCELS -->
 
     <tech name="MCMT_Researches" mergeMode="add">
       <status>UNOBTAINABLE</status>
@@ -1503,7 +1508,6 @@
         <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>  
     </effects>
 	</tech>
-
   
     <!-- Japanese Special Techs -->
   <tech name="SacredCustodians">
