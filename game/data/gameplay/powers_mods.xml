@@ -1,37 +1,39 @@
 <powersmod>	
 	<!--//DEFAULT GOD POWERS//-->
-	<!--Greek God Powers-->
+
+	<!-- Greek God Powers - Major -->
 	<power name="Bolt" type="Bolt" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Sentinel" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Lure" type="Lure" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
+	<power name="Wither" type="Wither" godpower="" orderhint="3">
+		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
+	<!-- Greek God Powers - Minor Classical -->	
 	<power name="Restoration" type="Restoration" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
 	<power name="CeaseFire" type="CeaseFire" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Pestilence" type="Pestilence" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<power name="ArcadianMeadow" type="ArcadianMeadow" godpower="" orderhint="3">
+		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
+	<!-- Greek God Powers - Minor Heroic -->	
+	<power name="UnderworldPassage" type="Teleport" godpower="">
+		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Bronze" type="Bronze" godpower="">
 		<cost>0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Curse" type="Curse" godpower="">
 		<cost>0</cost><repeatcost>0.0</repeatcost></power>	
-	<power name="UnderworldPassage" type="Teleport" godpower="">
+	<power name="CommunalHearth" type="TempUnit" godpower="" orderhint="3">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<!-- Greek God Powers - Minor Mythic -->	
 	<power name="PlentyVault" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="LightningStorm" type="LightningStorm" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
 	<power name="Earthquake" type="Earthquake" godpower="">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	
-	<power name="Wither" type="Wither" godpower="" orderhint="3">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
-	<power name="ArcadianMeadow" type="ArcadianMeadow" godpower="" orderhint="3">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost>
-	</power>
-	<power name="CommunalHearth" type="TempUnit" godpower="" orderhint="3">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="UnderworldInvasion" type="UnderworldInvasion" godpower="" orderhint="3" mergeMode="replace">
 		<displaynameid>STR_POWER_UNDERWORLD_INVASION</displaynameid>
@@ -62,43 +64,47 @@
 		<vfxforunitswithoutbirthanims>VFXTraitor</vfxforunitswithoutbirthanims>
 		<vfxcurseproto>VFXUnderworldInvasionLoop</vfxcurseproto>
 		<suddendeathhpmultiplier>0.5</suddendeathhpmultiplier>
-	</power>
-		
+	</power>		
 
-	<!--Atlantean God Powers-->	
+	<!-- Atlantean God Powers - Major -->	
 	<power name="Deconstruction" type="Deconstruction" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Shockwave" type="Shockwave" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="GaiaForest" type="GaiaForest" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	<power name="Carnivora" type="TempUnit" godpower="">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<!-- Atlantean God Powers - Minor Classical -->	
 	<power name="Valor" type="Valor" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="SpiderLair" type="Spiders" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<power name="Carnivora" type="TempUnit" godpower="">
+		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<!-- Atlantean God Powers - Minor Heroic -->	
 	<power name="Traitor" type="Traitor" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Chaos" type="Chaos" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="HesperidesTree" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<!-- Atlantean God Powers - Minor Mythic -->	
 	<power name="Vortex" type="Vortex" godpower="">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	<power name="TartarianGate" type="TartarianGate" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Implode" type="Implode" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	<!--Norse God Powers-->
-	<power name="DwarvenMine" type="DwarvenMine" godpower="">
+	<power name="TartarianGate" type="TartarianGate" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	<power name="Spy" type="Spy" godpower="">
+
+	<!-- Norse God Powers - Major -->
+	<power name="DwarvenMine" type="DwarvenMine" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="GreatHunt" type="GreatHunt" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<power name="Spy" type="Spy" godpower="">
+		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Gullinbursti" type="FreyrsGift" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<!-- Norse God Powers - Minor Classical -->
 	<power name="ForestFire" type="ForestFire" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="HealingSpring" type="TempUnit" godpower="">
@@ -107,6 +113,7 @@
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="AsgardianBastion" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
+	<!-- Norse God Powers - Minor Heroic -->
 	<power name="Frost" type="Frost" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="FlamingWeapons" type="FlamingWeapons" godpower="">
@@ -115,6 +122,7 @@
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Tempest" type="Tempest" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<!-- Norse God Powers - Minor Mythic -->
 	<power name="Ragnarok" type="SwapUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Fimbulwinter" type="Fimbulwinter" godpower="">
@@ -123,58 +131,100 @@
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Inferno" type="Stampede" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	<!--Egyptian God Powers-->	
+
+	<!-- Egyptian God Powers - Major -->	
 	<power name="Rain" type="Rain" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Prosperity" type="Prosperity" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Vision" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<!-- Egyptian God Powers - Minor Classical -->	
 	<power name="Eclipse" type="Eclipse" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="ShiftingSands" type="ShiftingSands" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="PlagueOfSerpents" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+	<!-- Egyptian God Powers - Minor Heroic -->	
 	<power name="LocustSwarm" type="Locust" godpower="">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	<power name="Ancestors" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Citadel" type="SwapUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	<power name="SonOfOsiris" type="SwapUnit" godpower="">
+	<power name="Ancestors" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	<power name="Meteor" type="Meteor" godpower="">
+	<!-- Egyptian God Powers - Minor Mythic -->	
+	<power name="SonOfOsiris" type="SwapUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Tornado" type="Tornado" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
-	<!--Chinese God Powers-->	
+	<power name="Meteor" type="Meteor" godpower="">
+		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+
+	<!-- Chinese God Powers - Major -->	
 	<power name="ThePeachBlossomSpring" type="TempUnit" godpower="">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 	<power name="Creation" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="ProsperousSeeds" type="PSeeds" godpower="">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<!-- Chinese God Powers - Minor Classical -->
 	<power name="LightningWeapons" type="GeneralEffect" godpower="">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 	<power name="EarthWall" type="EarthWall" godpower="">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 	<power name="Vanish" type="Stealth" godpower="">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
-	<power name="ForestProtection" type="FavorForest" godpower="">
-		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<!-- Chinese God Powers - Minor Heroic -->	
 	<power name="DroughtLand" type="DroughtLand" godpower="">
 		<cost>0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="VenomBeast" type="TempUnit" godpower="">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
-	<power name="GreatFlood" type="GreatFlood" godpower="">
+	<power name="ForestProtection" type="FavorForest" godpower="">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<!-- Chinese God Powers - Minor Mythic -->	
 	<power name="BlazingPrairie" type="Tempest" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="YinglongsWrath" type="TempUnit" godpower="">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="GreatFlood" type="GreatFlood" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>		 
+	<!-- Chinese God Powers - Special -->	
 	<power name="Pandatopia" type="SwapUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0</repeatcost></power>
+
+	<!-- Japanese God Powers - Major -->
+	<power name="SolarShield" type="SingleModify" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="Kusanagi" type="TempUnit" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="NewMoon" type="NewMoon" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>
+	<!-- Japanese God Powers - Minor Classical -->
+	<power name="ShrineOfTheHunt" type="SwapUnit" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="Goshinboku" type="TempUnit" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="Swampland" type="DroughtLand" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>
+	<!-- Japanese God Powers - Minor Heroic -->
+	<power name="Shogun" type="SwapUnit" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="ThunderBurst" type="ThunderBurst" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="SmitingGust" type="SmitingGust" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<!-- Japanese God Powers - Minor Mythic -->
+	<power name="SacredGate" type="SacredGate" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="DragonTyphoon" type="Typhoon" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="DivineSlash" type="DivineSlash" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<!-- Japanese God Powers - Special-->
+	<power name="HachimansBlessing" type="SwapUnit" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+
 	<!--///MY_CUSTOM_MOD_TECH///-->
 	<power name="MCMT_RocLand" type="UnitAction" mergeMode="add">
 		<displaynameid>STR_ABILITY_ROC</displaynameid>
