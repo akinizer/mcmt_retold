@@ -345,23 +345,41 @@
     - skyfire: improved, all flying units have hitonground & hitonwater conditions for spawn skyfire fireare
 
 7. Campaign Heroes from mcmt mod, correlating techs and new features
-- Greek +
-    - veterancy numkill, lineupgrades, egyptian techs (spearmen, axemen, feetofjackal)
+- Greek: veterancy numkill, lineupgrades
     
     - Arkantos: artmodel (weapon, golden trident)
     - OdysseusSPC, AjaxSPC, ChironSPC, Kastor
-- Egyptian +
+
+- Egyptian: veterancy numkill, lineupgrades, egyptian techs (spearmen, axemen, feetofjackal)
     - Amanra
         - JumpAttack: maximumrange+
     - Setna
-- Norse +
-    - Reginleif
+
+- Norse: veterancy numkill, lineupgrades, egyptian techs, valkyrie tech
+    - Reginleif: general build accel
     - Brokk,Eitri
         - Build: MCMT_DwarvenForge (giantslaying and thunderslaying techs)
     - KingFolstag
-- Atlantean
-- Chinese
-- Japanese
+- Atlantean: veterancy numkill, lineupgrades
+    - Kastor: AbstractSamurai
+    - KastorYoung, KastorStaff
+- Chinese: veterancy numkill, lineupgrades
+    - YanFeiFeng: InfantryLineUpgrade
+    - Cangjie: ArcherLineUpgrade
+    - Houyi: InfantryLineUpgrade, ArcherLineUpgrade
+- Japanese: veterancy numkill, lineupgrades
+    - Yasuko: AbstractSamurai, InfantryLineUpgrade, Ranged
+    - Tatsuro: AbstractSamurai, InfantryLineUpgrade
+    - Akari: AbstractSamurai, InfantryLineUpgrade
+        - Clan Member: AbstractSamurai
+    - Hatamoto, HatamotoBlessed, DaimyoBlessed: CavalryLineUpgrade
+        - SamuraiHatamoto: AbstractSamurai
+    - Azusa: ArcherLineUpgrade
+    - Sojobo: AbstractSamurai
+
+    - Infantry
+        - Sakimori: AbstractSamurai
+        - BushiYari: AbstractSamurai
 
 8. Titan reworks from mcmt mod and new reworks on Japanese titan
 - TitanCerberus+, TitanBird+, TitanYmir+, TitanAtlantean+, TitanXingTian
