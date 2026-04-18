@@ -835,12 +835,9 @@
 - WallConnectorToCharger: transforms a connector to an offensive connector, ChuNoKu RangedAttack, AsuraFireBallLeft anim
     - WallConnectorCharger: offesive connector with a dependant attachment (Cheiroballista, AsuraFireBallLeft, AsuraFireBallRight, Toxotes etc.)
 ==============================================================================
-==================== PRIORITY-PLANS ============================================
+==================== PRIORITY-PLANS ==========================================
 ==============================================================================
-egyptian -> elephantballista (dependant)
 chinese  -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
-japanese -> god powers -> zero cost, zero repeat cost
-roc -> healaura
 watermill -> snap placement
 shrine -> dropsite
 
