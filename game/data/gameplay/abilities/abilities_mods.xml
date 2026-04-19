@@ -167,6 +167,8 @@
 		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability></WuzuJavelineer>
 	<WuzuJavelineerSandbag>
 		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability></WuzuJavelineerSandbag>
+	<Hwacha>
+		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability></Hwacha>
 
 		<!-- House Special Units -->
 	<AttackWolf>

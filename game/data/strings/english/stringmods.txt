@@ -314,6 +314,11 @@ ID = "STR_UNIT_FIRE_ARCHER_SANDBAG_NAME"   ;   Str = "Fire Archer (Sandbag)"
 ID = "STR_UNIT_WUZU_JAVELINEER_SANDBAG_NAME"   ;   Str = "Wuzu Javelineer (Sandbag)"
 ID = "STR_UNIT_CHUKONU_SANDBAG_NAME"   ;   Str = "ChuKoNu (Sandbag)"
 
+ID = "STR_UNIT_HWACHA_NAME"   ;   Str = "Hwacha"
+ID = "STR_UNIT_HWACHA_DEPLOYED_NAME"   ;   Str = "Hwacha (Deployed)"
+ID = "STR_UNIT_HWACHA_SR"   ;   Str = "The father of missile howitzers"
+ID = "STR_UNIT_HWACHA_LR"   ;   Str = "Chinese military has been considered as founding father of gunpowder and firearms. Koreans however improved Chinese Fire Lancer system as a mobile platform that can launch a missile salvo"
+
 // ECONOMIC UNITS
 ID = "STR_UNIT_OXCARTMODELX_NAME"   ;   Str = "Ox Cart Model - X"
 ID = "STR_UNIT_OXCARTMODELX_LR"   ;   Str = "Ox Cart Model - X"

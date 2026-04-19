@@ -10442,10 +10442,21 @@
 		<tech row="0" column="5" mergeMode="add">MCMT_ElvenTraining</tech>
 		<train row="0" column="5" mergeMode="add">ElvenCamp</train>
 	</unit>
-	<unit name="MilitaryCampTower">
-		<unittype>AbstractTower</unittype>
+	<unit name="MachineWorkshop">		
+		<tech row="0" column="5" mergeMode="add">MCMT_ArtilleryTraining</tech>
+		<train row="0" column="5" mergeMode="add">Hwacha</train>
 	</unit>
-	<unit name="MachineWorkshopTower">
+	<unit name="MachineWorkshopTower">		
+		<unittype>AbstractTower</unittype>
+		<tech row="0" column="5" mergeMode="add">MCMT_ArtilleryTraining</tech>
+		<train row="0" column="5" mergeMode="add">Hwacha</train>
+	</unit>
+	<unit name="MachineWorkshopTrainingYard">		
+		<tech row="0" column="5" mergeMode="add">MCMT_ArtilleryTraining</tech>
+		<train row="0" column="5" mergeMode="add">Hwacha</train>
+	</unit>
+
+	<unit name="MilitaryCampTower">
 		<unittype>AbstractTower</unittype>
 	</unit>
 	<unit name="OdinsTower">
@@ -28418,6 +28429,174 @@
 			<modifyprotoid>ChuKoNu</modifyprotoid>
 		</protoaction>
   	</unit>
+	<unit name="Hwacha">
+		<displaynameid>STR_UNIT_HWACHA_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_HWACHA_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_HWACHA_LR</rollovertextid>
+		<icon>resources\tech\hwacha.png</icon>
+		<animfile>atlantean\units\siege\cheiroballista\cheiroballista.xml</animfile>
+		<soundsetfile>norse\vo\ballista\ballista.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.5000</selectionradiusz>
+		<impacttype>Wood</impacttype>
+		<unitaitype>Passive</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>115.0000</initialhitpoints>
+		<maxhitpoints>115.0000</maxhitpoints>
+		<trainpoints>24.0000</trainpoints>
+		<weightclass>8</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>3.0000</maxvelocity>
+		<los>22.0000</los>
+		<cost resourcetype="Wood">650.0000</cost>
+		<cost resourcetype="Gold">200.0000</cost>
+		<armor type="Hack" value="0.2000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.3500"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+
+		<unittype>DisplayQueue</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeAffectedByValor</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>AlwaysShowAbilities</flag>
+
+		<tactics>delayed_transform.tactics</tactics>
+		<protoaction>
+			<name>DelayedTransform</name>			
+    		<type>DelayedTransform</type>
+			<anim>Transform</anim>
+			<modifyduration>2500</modifyduration>
+			<modifyprotoid>HwachaDeployed</modifyprotoid>
+		</protoaction>
+	</unit>
+	<unit name="HwachaDeployed">
+		<displaynameid>STR_UNIT_HWACHA_DEPLOYED_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_HWACHA_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_HWACHA_LR</rollovertextid>
+		<icon>resources\tech\hwacha.png</icon>
+		<animfile>atlantean\units\siege\cheiroballista\cheiroballista.xml</animfile>
+		<soundsetfile>norse\vo\ballista\ballista.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.5000</selectionradiusz>
+		<impacttype>Wood</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>80.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>135.0000</initialhitpoints>
+		<maxhitpoints>135.0000</maxhitpoints>
+		<trainpoints>24.0000</trainpoints>
+		<weightclass>8</weightclass>
+		<populationcount>2</populationcount>
+		<los>35.0000</los>
+		<cost resourcetype="Wood">650.0000</cost>
+		<cost resourcetype="Gold">200.0000</cost>
+		<armor type="Hack" value="0.2000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.4500"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>DisplayQueue</unittype>
+
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DisplayMinimumRange</flag>
+		<flag>DisplayRange</flag>
+		<flag>Immoveable</flag>
+		<flag>RotateInPlace</flag>
+		
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>8.000000</rof>
+			<damage type="Pierce">5.000000</damage>
+			<damagebonus type="HumanSoldier">4.000000</damagebonus>
+			<damagebonus type="Ship">2.400000</damagebonus>
+			<minrange>25.000000</minrange>
+			<maxrange>60.000000</maxrange>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagearea>2.000000</damagearea>	
+
+			<projectile>ProjectileArrowFlamingSlow</projectile>
+			<numberprojectiles>20</numberprojectiles>
+			<displayednumberprojectiles>20</displayednumberprojectiles>
+			<impacteffect mergeMode="replace">effects\impacts\asura_fire_ball</impacteffect>
+			<maxspread>30.0</maxspread>
+			<volleymode></volleymode>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+		</protoaction>
+	</unit>
 <!-- dismount units knights TODO
 	<unit name="WhiteHorseKnight" mergeMode="add"></unit>
 	<unit name="QingQiKnight" mergeMode="add"></unit>
@@ -28996,6 +29175,34 @@
 		<flag>NotKBTracked</flag>
 		<flag>NotDeathTracked</flag>
  	</unit>
+	<unit name="ProjectileArrowFlamingSlow">
+		<displaynameid>STR_UNIT_PROJECTILE_FLAMING_NAME</displaynameid>
+		<animfile>vfx\projectiles\arrow\arrow_flaming.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="20.0000" duration="0.1000"></decay>
+		<movementtype>air</movementtype>
+		<maxvelocity>4.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>AdjustPositionOnTerrainCollision</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
 	<!-- /// SPECIAL TRAIL UNITS /// -->
 	<unit name="TrailOfFire">
 		<displaynameid>STR_VFX_NEZHA_FIRE_AREA_NAME</displaynameid>

@@ -1165,6 +1165,8 @@
             <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_I</effect>
             <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_II</effect>
             <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_III</effect>
+
+            <effect type="TechStatus" status="obtainable">MCMT_ArtilleryTraining</effect>            
             <!--TechBuilding FutureTech-->
             <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
             <effect type="TechStatus" status="obtainable">MCMT_NanofiberPlatings</effect>
@@ -3077,6 +3079,22 @@
 		</effects>		
 	</tech>
 
+  <tech name="MCMT_ArtilleryTraining" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_NUBIANTRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_NUBIANTRAINING_LR</rollovertextid>
+		<icon>resources\tech\nubianlogo.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Wood">1250</cost>
+		<cost resourcetype="Favor">25</cost>    
+		<effects>      
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">Hwacha</target></effect>
+		</effects>		
+	</tech>
+  
   <tech name="MCMT_NubianTraining" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_NUBIANTRAINING_NAME</displaynameid>

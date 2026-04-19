@@ -300,6 +300,11 @@
     - NubianTraining I,II,III: increases speed and hitpoints of Nubian units as well as hitpoints of Amanra variants
         - NubianTraining II: enables idlespeedbonus of Nubian Charger
         - NubianTraining III: enables BashAttack ability of Nubian Hunter, decreases trainpoints of Nubian units
+- Artillery
+    - Hwacha: defensive deployable artillery unit, slow maxvelocity, no attack, deploy ability
+    - HwachaDeployed: immobile artillery that can launch long distance missiles that explode on impact, slow projectiles, bonusdamage vs [humansoldier, ship], low hackarmor, medium crusharmor, high piercearmor
+
+    - ArtilleryTraining: enables Hwacha deployable unit
 
 - Kingdom Guards
     - Bowman Archer: dismounted chariotarcher, slinger techs
