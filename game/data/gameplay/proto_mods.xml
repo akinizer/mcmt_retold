@@ -1871,7 +1871,7 @@
 	-->
 
     <!-- Japanese Buildings-->
-	<unit name="ShrineJapanese">
+	<unit name="ShrineJapanese">				
 		<tech row="0" column="0" mergeMode="add">MikoOracleUpgrade</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_I</tech>
 		<tech row="0" column="5" mergeMode="add">OnmyojiUpgrade_II</tech>
@@ -1894,6 +1894,10 @@
 		<train row="0" column="3" mergeMode="add">YukiOnnaMusha</train>
 		<train row="0" column="4" mergeMode="add">MikoSwordmaster</train>
 		<train row="0" column="5" mergeMode="add">MCMT_HeadPriest</train>
+	</unit>
+	<unit name="Watermill">
+		<unittype>AbstractDock</unittype>
+		<flag>SnapPlacement</flag>
 	</unit>
 
     <!-- GENERAL SECTION -->
@@ -28574,7 +28578,7 @@
 		<flag>DisplayRange</flag>
 		<flag>Immoveable</flag>
 		<flag>RotateInPlace</flag>
-		
+
 		<tactics>rangedattack.tactics</tactics>
 		<protoaction>
 			<name>RangedAttack</name>
@@ -29561,6 +29565,34 @@
       		<modifymultiplier>0.400000</modifymultiplier>
 		</protoaction>
 	</unit>
+
+	<unit name="AbundanceAuraContainer" mergeMode="add">
+        <obstructionradiusx>0.2000</obstructionradiusx>
+        <obstructionradiusz>0.2000</obstructionradiusz>
+        <movementtype>air</movementtype>
+        <flag>Invulnerable</flag>
+        <flag>NoIdleActions</flag>
+        <flag>DoNotDieAtZeroHitpoints</flag>
+        <flag>NoHPBar</flag>
+        <flag>NonAutoFormedUnit</flag>
+        <flag>DoNotShowOnMiniMap</flag>
+        <flag>NotSelectable</flag>
+        <flag>NotSearchable</flag>
+        <flag>NoTieToGround</flag>
+        <flag>NonCollideable</flag>
+        <flag>DontRotateObstruction</flag>
+        <flag>NotPlayerPlaceable</flag>
+        <flag>NotKBTracked</flag>
+        <flag>NotDeathTracked</flag>
+        <tactics>container.tactics</tactics>
+        <protoaction>
+            <name>Abundance</name>
+            <type>AutoRangedModify</type>
+            <modifytype>DropsiteRate</modifytype>
+            <maxrange>10</maxrange>
+            <modifymultiplier>1.01</modifymultiplier>
+        </protoaction>
+    </unit>
 	
 	<unit name="AreaHarvestContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>

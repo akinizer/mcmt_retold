@@ -127,7 +127,22 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsJapanese</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsJapanese" row="3" column="2" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
-        
+        <!---->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">ModernPipeNetworks</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ModernPipeNetworks" row="3" column="1" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Armory</target></effect>	
+          
+        <effect type="TechStatus" status="obtainable" mergeMode="add">ShrineOfferings_I</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">ShrineOfferings_II</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">ShrineOfferings_III</effect>
+
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ShrineOfferings_I" row="3" column="4" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">ShrineJapanese</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ShrineOfferings_II" row="3" column="4" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">ShrineJapanese</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ShrineOfferings_III" row="3" column="4" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">ShrineJapanese</target></effect>	
+        <!---->
         <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
@@ -1652,6 +1667,92 @@
             <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
       </effects>
   </tech>
+  <tech name="ModernPipeNetworks" mergeMode="add">
+      <displaynameid>STR_TECH_MODERNPIPENETWORKS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_MODERNPIPENETWORKS_LR</rollovertextid>
+      <cost resourcetype="Gold">400.0000</cost>
+      <cost resourcetype="Favor">25.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\atlantean\static_color\technologies\channels_icon.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <prereqs>
+        <typecount unit="Watermill" count="0.00" state="aliveState" operator="gt"></typecount>
+        <typecount unit="Armory" count="0.00" state="aliveState" operator="gt"></typecount>
+      </prereqs>
+      <effects>
+        <!-- remove placement restriction -->
+        <effect type="Data" amount="0.00" subtype="SetUnitType" unittype="AbstractDock" relativity="Absolute">
+				  <target type="ProtoUnit">Watermill</target></effect>
+      </effects>
+  </tech>
+  <tech name="ShrineOfferings_I" mergeMode="add">
+      <displaynameid>STR_TECH_SHRINEOFFERINGS_FOOD_NAME</displaynameid>
+      <rollovertextid>STR_TECH_SHRINEOFFERINGS_FOOD_LR</rollovertextid>
+      <cost resourcetype="Food">120.0000</cost>
+      <cost resourcetype="Favor">5.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\egyptian\static_color\god_powers\prosperity_icon.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <prereqs>
+        <typecount unit="ShrineJapanese" count="0.00" state="aliveState" operator="gt"></typecount>
+      </prereqs>
+      <effects>
+        <!-- remove placement restriction -->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
+				  <target type="ProtoUnit">ShrineJapanese</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="FoodDropsite" relativity="Absolute">
+				  <target type="ProtoUnit">ShrineJapanese</target></effect>
+        <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Food" relativity="Assign">
+          <target type="ProtoUnit">ShrineJapanese</target></effect>
+      </effects>
+  </tech>
+  <tech name="ShrineOfferings_II" mergeMode="add">
+      <displaynameid>STR_TECH_SHRINEOFFERINGS_WOOD_NAME</displaynameid>
+      <rollovertextid>STR_TECH_SHRINEOFFERINGS_WOOD_LR</rollovertextid>
+      <cost resourcetype="Wood">120.0000</cost>
+      <cost resourcetype="Favor">5.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\egyptian\static_color\god_powers\prosperity_icon.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <prereqs>
+        <techstatus status="Active">ShrineOfferings_I</techstatus>
+      </prereqs>
+      <effects>
+        <!-- remove placement restriction -->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
+				  <target type="ProtoUnit">ShrineJapanese</target></effect>
+         <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign">
+          <target type="ProtoUnit">ShrineJapanese</target></effect>
+      </effects>
+  </tech>
+  <tech name="ShrineOfferings_III" mergeMode="add">
+      <displaynameid>STR_TECH_SHRINEOFFERINGS_GOLD_NAME</displaynameid>
+      <rollovertextid>STR_TECH_SHRINEOFFERINGS_GOLD_NAME</rollovertextid>
+      <cost resourcetype="Gold">120.0000</cost>
+      <cost resourcetype="Favor">5.0000</cost>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\egyptian\static_color\god_powers\prosperity_icon.png</icon>
+      <flag>CountsTowardMilitaryScore</flag>
+      <flag>MythTech</flag>
+      <prereqs>
+        <techstatus status="Active">ShrineOfferings_II</techstatus>
+      </prereqs>
+      <effects>
+        <!-- remove placement restriction -->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="GoldDropsite" relativity="Absolute">
+				  <target type="ProtoUnit">ShrineJapanese</target></effect>
+         <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Gold" relativity="Assign">
+          <target type="ProtoUnit">ShrineJapanese</target></effect>
+      </effects>
+  </tech>
+  <!-- Global Techs - Detonators-->
   <tech name="DetonatorsJapanese" mergeMode="add">
       <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
       <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>

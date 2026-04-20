@@ -739,7 +739,7 @@ ID = "STR_BLD_REINFORCEMENT_TENT_NAME"   ;   Str = "Reinforcement Tent"
 ID = "STR_BLD_REINFORCEMENT_TENT_SR"   ;   Str = "Roc Tent that reinforces humansoldiers nearby"
 ID = "STR_BLD_REINFORCEMENT_TENT_LR"   ;   Str = "Roc Tent converts to a structure that makes surrounding human military units more efficient in battle"
 
-// JAPANESE SPECIAL UNITS
+// CHINESE SPECIAL UNITS
 ID = "STR_UNIT_CURSEDFLAME_SWORD_NAME"   ;   Str = "Cursed Flame Sword"
 ID = "STR_UNIT_CURSEDFLAME_SWORD_SR"   ;   Str = "Looted Swords forged in demonic flames of Asura"
 ID = "STR_UNIT_CURSEDFLAME_SWORD_LR"   ;   Str = "Asura feasts on the masters of weapons and loots their well-forged blades as a token of victory"
@@ -788,6 +788,18 @@ ID = "STR_TECH_ONMYOJI_UPGRADE_IV_LR"   ;   Str = "Fourth of Omnyoji upgrades. E
 
 ID = "STR_TECH_ONMYOJI_UPGRADE_V_NAME"   ;   Str = "Onmyoji Upgrade V"
 ID = "STR_TECH_ONMYOJI_UPGRADE_V_LR"   ;   Str = "Final Omnyoji upgrade. Improves Omnyoji and summons Head Priest. Research it only in dire cases"
+
+ID = "STR_TECH_MODERNPIPENETWORKS_NAME"   ;   Str = "Modern Pipe Networks"
+ID = "STR_TECH_MODERNPIPENETWORKS_LR"   ;   Str = "Advanced water supply system beneath ground enables Mills to be placed afar shores"
+
+ID = "STR_TECH_SHRINEOFFERINGS_FOOD_NAME"   ;   Str = "Shrine Offerings (Food)"
+ID = "STR_TECH_SHRINEOFFERINGS_FOOD_LR"   ;   Str = "Local Shrines now accept nutritions offered to their kami"
+
+ID = "STR_TECH_SHRINEOFFERINGS_WOOD_NAME"   ;   Str = "Shrine Offerings (Wood)"
+ID = "STR_TECH_SHRINEOFFERINGS_WOOD_LR"   ;   Str = "Local Shrines now accept valuable tools offered to their kami"
+
+ID = "STR_TECH_SHRINEOFFERINGS_GOLD_NAME"   ;   Str = "Shrine Offerings (Gold)"
+ID = "STR_TECH_SHRINEOFFERINGS_GOLD_LR"   ;   Str = "Local Shrines now accept currencies and treasures offered to their kami"
 
 // REWORKED TECHS
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_NAME"   ;   Str = "Order of the Golden Kite"

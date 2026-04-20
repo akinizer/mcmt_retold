@@ -800,6 +800,11 @@
 - OnmyojiUpgradeV: enables additional ability for Onmyoji (banish) and enables HeadPriest (improved AbeNoSeimei) recruitable in abstactshrinejapanese
 - OraclesOfShinto: enables additional ability for Miko (ShrineBoost)
 
+- ModernPipeNetworks: Watermills are AbstractDock by default, settype AbstractDock zero (disable, allow placement in-land)
+- ShrineOfferings_I: ShrineJapanese settype Dropsite, FoodDropste
+- ShrineOfferings_II: ShrineJapanese settype WoodDropste
+- ShrineOfferings_III: ShrineJapanese settype GoldDropste
+
 21. Amazons Patch Additions
 * Special Techs
 - AmazonVanguards: tower and fortress, precision, range, los improvements, requires crenelletions, guard tower, Greek civ
@@ -826,7 +831,7 @@
 - Susanoo: mythunit damage, 1 min, kitsune areaheal, chat notification
 
 24. More Containers, Trails, Dependants, Glows
-- containers: explosive containers, area containers, gather boost containers
+- containers: explosive containers, area containers, gather boost containers, abundance container
 - glows (anim xml, simdata, composite, prototaction): thundercharge glow, kitsunetrail glow 
 - trails (area danage container, vfx): weathersnow trail, poison trail, airbender / airflow trail, mist trail, fire trail, fireskull trail
 
@@ -842,9 +847,6 @@
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
-chinese  -> hwacha (cheiroballista model, explosive spears, long minrange, entrench)
-watermill -> snap placement
-shrine -> dropsite
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
