@@ -865,6 +865,7 @@
 * caladrialanded -> icarus & servant of kronos anim, handattack
 * pegasus -> pegasus anim, bellerophon_horse anim
 
+=== TV SERIES
 * luffy: militia / prodromos_rider -> promethean_attack_a, promethean_attack_b, shinobi_wan_kenobi_attack_b, avenger_whirlwindattack_a 
 * alvida: miko -> oni club
 * zorro: chiyou -> 4x katana, 
