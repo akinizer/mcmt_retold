@@ -628,14 +628,18 @@
     - FieryFireAttack: tech-enabled, ranged attack, divine damage, projectile (fireball), impact (asuraballoffire)
 - Wanyudo: amphibious
 - Umibozu: teleport attack throws FishingShip
+- Asura: SiegeLineUpgrade
+- Oni: SiegeLineUpgrade, InfantryLineUpgrade
 
 * Infantry, Samurai, Archer, Cavalry
 - popcosts 1 or 2
-- Bushi: AbstractSamurai, ArcherLineUpgraded, InfantryLineUpgraded
-    - Promxity: switches to HandAttack, lesser hack damage, lesser bonusdamage vs mythunit, anim swing bow
 - YumiArcher: AbstractArcher
 - YumiHorseArcher: AbstractArcher
 - OnnaMusha: AbstractSamurai, InfantryLineUpgraded
+    - AutoBoost: tech-enabled, duration, damage+ & rof+, activation in melee range
+- Bushi: AbstractSamurai, ArcherLineUpgraded, InfantryLineUpgraded
+    - Promxity: switches to HandAttack, lesser hack damage, lesser bonusdamage vs mythunit, anim swing bow
+     - AutoBoost: tech-enabled, duration, damage+ & rof+, activation in distance
 - Daimyo: AbstractSamurai, InfantryLineUpgraded
 - Shogun: AbstractSamurai, InfantryLineUpgraded
 
@@ -753,6 +757,7 @@
 - thunderouspresence: raiju grants a lesser speedbonus to nearby myth units, stackable 3 times, enables raiju idlespeed boost, increases areadamage range of chargedhandattack ability
 - burningmalevolvence: asura handattacks apply vfxfire effect, enables kitsune fieryfireattack
 - deadlyrage: oni handattack also burns enemies, asura damage increase
+    - enables AutoBoost abilities for OnnaMusha and Bushi
 - restlessarmy: projectileonmoraki explodes on impact
 - eternalhaunting: leech for shinigami variants
 - wisdomofnine: rof increase, enables kitsune to transform into a lady while idling
@@ -853,7 +858,6 @@
 ==============================================================================
 * warbear -> lykaon transform ability, lazerbear
 * hobbit hero -> nezha ring projectile
-* fenrir -> hand attack anim
 * avenger -> anubite jump anim
 
 * nitroglicerine -> vfxcold variant of detonators
@@ -874,39 +878,11 @@
 * Armory Techs: Dismount, Explosives, Spawn 
 * Encampment
 
-=== JAPANESE
-* Godpower Cost
-
-* Proto Reworks - MythUnit LineUpgrade
-- Siege
-    - Asura: SiegeWeapon,SiegeLineUpgrade
-    - Oni: SiegeWeapon, SiegeLineUpgrade, InfantryLineUpgrade
-- Naval
-    - Umibozu: SiegeWeapon, SiegeLineUpgraded
-- Samurai Tech
-    - Kamaitachi: samurai,infantry,bleed
-    - Tengu: infantry,samurai,infrantrylineupgrade
-    - MasterlessSword: InfantryLineUpgrade
-
-* Proto Reworks - MythUnit Attributes
-- Flying
-    - Onmoraki: Land, AreaDamage
-- Naval
-    - Kappa
-        
+=== JAPANESE        
 * Proto Reworks - Hero
-- Bushi, OnnaMusha
-    - Tech-Enabled: AbilityOni
 - Daimyo, Shogun
     - Tech-Enabled: warcry
 
-* Proto Reworks - HumanSoldier: Infantry, Cavalry, Archer, Siege
-- AbstractSamurai:
-    - Tech-Enabled: likeunitdamagebonus, likeunitspeedbonus
-
-* Proto Reworks - Building
-- Watermill: 
-    - visualscale, <flag>SnapPlacement</flag>
 - Dojo, Guardhouse, Stable: visualscale
 
 * ATTACK SWITCH TECHS

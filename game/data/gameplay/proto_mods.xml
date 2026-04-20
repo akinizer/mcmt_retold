@@ -1404,8 +1404,6 @@
 
     <!-- JAPANESE SECTION --> 
 
-	<!-- Japanese Unit Reworks -->
-
     <!-- Japanese Priests -->
 	<unit name="Miko">
 		<unittype mergeMode="add">AbstractOracle</unittype>
@@ -1811,7 +1809,8 @@
 		<unittype mergeMode="add">AbstractSamurai</unittype>
 		<unittype mergeMode="add">ArcherLineUpgraded</unittype>
 		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
-		<tactics mergeMode="replace">global_infantry_proximitymodes.tactics</tactics>
+		<auxrechargetime>40</auxrechargetime>
+		<tactics mergeMode="replace">global_infantry_proximitymodes_autoboost.tactics</tactics>
 		<protoaction mergeMode="add">
 			<name>HandAttack</name>
 			<rof>1.200000</rof>
@@ -1830,6 +1829,22 @@
 			<projectile>ProjectileArrowFlaming</projectile>
 			<defaultattack>1</defaultattack>
 		</protoaction>
+		<protoaction>
+			<name>AutoBoost</name>
+			<rof>1.000000</rof>
+			<maxrange>20.000000</maxrange>
+			<anim>HandAttack</anim>
+			<onhiteffect type="SelfModify" duration="10.000000">
+				<modify type="ROF">0.900000</modify>
+				<modify type="Damage">1.100000</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack">0.900000</modify>
+				<modify type="ArmorSpecific" dmgtype="Pierce">0.900000</modify>
+			</onhiteffect>
+			<modelattachment>vfx\glow\oni_berserk_loop.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<hidefromstats>1</hidefromstats>
+			<active>0</active>
+		</protoaction>
 	</unit>
 	<unit name="YumiArcher">
 		<unittype mergeMode="add">ArcherLineUpgraded</unittype>
@@ -1840,6 +1855,24 @@
 	<unit name="OnnaMusha">
 		<unittype mergeMode="add">AbstractSamurai</unittype>
 		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
+		<auxrechargetime>40</auxrechargetime>
+		<tactics mergeMode="replace">global_handattack_chargedhandattack_autoboost.tactics</tactics>
+		<protoaction>
+			<name>AutoBoost</name>
+			<rof>1.000000</rof>
+			<maxrange>1.000000</maxrange>
+			<anim>HandAttack</anim>
+			<onhiteffect type="SelfModify" duration="10.000000">
+				<modify type="ROF">0.900000</modify>
+				<modify type="Damage">1.100000</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack">0.900000</modify>
+				<modify type="ArmorSpecific" dmgtype="Pierce">0.900000</modify>
+			</onhiteffect>
+			<modelattachment>vfx\glow\oni_berserk_loop.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<hidefromstats>1</hidefromstats>
+			<active>0</active>
+		</protoaction>
 	</unit>
 	<unit name="Daimyo">
 		<unittype mergeMode="add">AbstractSamurai</unittype>
@@ -1849,6 +1882,15 @@
 		<unittype mergeMode="add">AbstractSamurai</unittype>
 		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
 		<unittype mergeMode="add">CavalryLineUpgraded</unittype>
+	</unit>
+
+	<!-- Japanese Myth Units -->
+	<unit name="Asura">
+		<unittype mergeMode="add">SiegeLineUpgraded</unittype>
+	</unit>
+	<unit name="Oni">
+		<unittype mergeMode="add">SiegeLineUpgraded</unittype>
+		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
 	</unit>
 	
 	<!-- TODO

@@ -9314,6 +9314,11 @@
 
       <effect type="Data" amount="1.30" subtype="Damage" allactions="1" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Asura</target></effect>
+
+      <effect type="Data" action="AutoBoost" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">OnnaMusha</target></effect>
+      <effect type="Data" action="AutoBoost" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Bushi</target></effect>
     </effects>
   </tech>
   <tech name="EternalHaunting">
