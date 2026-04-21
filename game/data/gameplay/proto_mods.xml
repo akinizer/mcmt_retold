@@ -1882,6 +1882,23 @@
 		<unittype mergeMode="add">AbstractSamurai</unittype>
 		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
 		<unittype mergeMode="add">CavalryLineUpgraded</unittype>
+		
+		<auxrechargetime>30.0000</auxrechargetime>
+		<tactics mergeMode="replace">global_handattack_autoboost_aux.tactics</tactics>
+		<protoaction>
+			<name>AutoBoost</name>
+			<anim mergeMode="replace">HandAttack</anim>
+			<rof>1.0</rof>
+			<damage type="Divine">1.000000</damage>
+			<damagearea>10.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>1.000000</maxrange>
+			<rate type="All">1.0</rate>
+			<onhiteffect type="Boost" targetunittype="HumanSoldier" duration="5.000000" radius="10.000000">
+				<modify type="Damage">1.5200000</modify></onhiteffect>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
 	</unit>
 
 	<!-- Japanese Myth Units -->

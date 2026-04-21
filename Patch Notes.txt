@@ -639,9 +639,10 @@
     - AutoBoost: tech-enabled, duration, damage+ & rof+, activation in melee range
 - Bushi: AbstractSamurai, ArcherLineUpgraded, InfantryLineUpgraded
     - Promxity: switches to HandAttack, lesser hack damage, lesser bonusdamage vs mythunit, anim swing bow
-     - AutoBoost: tech-enabled, duration, damage+ & rof+, activation in distance
+     - AutoBoost: tech-enabled, duration, self, damage+ & rof+, activation in distance
 - Daimyo: AbstractSamurai, InfantryLineUpgraded
 - Shogun: AbstractSamurai, InfantryLineUpgraded
+    - AutoBoost / WarCry: duration, humansoldier damage+ 
 
 * Worker
 - VillagerJapanese: Temple removed from build accel
@@ -880,10 +881,6 @@
 * Encampment
 
 === JAPANESE        
-* Proto Reworks - Hero
-- Daimyo, Shogun
-    - Tech-Enabled: warcry
-
 - Dojo, Guardhouse, Stable: visualscale
 
 * ATTACK SWITCH TECHS

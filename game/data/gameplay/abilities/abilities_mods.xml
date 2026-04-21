@@ -324,7 +324,9 @@
 	<Bushi>
 		<ability>AbilityOni<tech>DeadlyRage</tech><auxchargetimeasrof>1</auxchargetimeasrof><castonself>true</castonself></ability>
 	</Bushi>
-	
+	<Shogun>
+		<ability>AbilityArkantos<auxchargetimeasrof>1</auxchargetimeasrof><castonself>1</castonself></ability>
+	</Shogun>	
 		<!--Japanese-Hero-Priest-->
 	<Onmyoji>
 		<ability>AbilityYasukoSolarShield<chargetimeasrof>1</chargetimeasrof><castonself>1</castonself></ability>
