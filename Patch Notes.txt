@@ -891,24 +891,6 @@
     - DefaultStance
     - AssassinationStance: rof+, bonus humansoldier, nerf mythunit, hero   
 
-* Campaign Hero
-    - Harumoto (shogun),Tatsuro (father),Sojobo (tengu),Yasuko(girl), Akari(samurai,katana,spear)
-    - Kagemasa (shogun,sword,spear,yamatanoorichi),Magumo (jorogumo),ShutenDoji (oni,metalbat,heavenlyspear),YukiOnna
-    - ClanMember,Prisoner,Skult,Tanuki,Theris,HallgerdForbeard,HatamotoSamrai,Kamos,Kastor,
-    - AbeNoSeimei,HarumotoBlessed,DaimyoBlessed,ClanMemberSpear,
-    - Kodama,ShinbokuSoul,Kappa
-
-    - Cangjie,Houyi,YanFeiFeng,Chiyou,ChiyouTitan,CanjieRider,CangjieKnife,HouyiRider,YanFeiFenRider
-    - CelestialPillar,Penglai,AmeNoUkihashi
-* Hidden Units
-    - Sakimori,Azusa,BowCavalry,BushiYari
-    - Dog,Vulture,Harpy,Horse
-    - Griffon,Santa,Apep,Golem,WilliamWalrus
-    - Bondi,Recognizer,Chariot,WarChariot,Cataphract
-    - Charioteria,QinghaiLakeShrine,ShrineOfTheHunt,Goshinboku
-    - TownWall(short,long,connector),ToriiGate,KusanagiNoTsurugi
-    - ShrineMiniature,HeavenlyJeweledSpear,KagemasaSword
-    - SnowMonkey,GreenPheasant,JapaneseWolf,Serow,SpottedDeerSPC
 * God Power
     - SolarShield: Unit -> Building
 * Nature
