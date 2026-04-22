@@ -26,12 +26,8 @@ ID = "STR_UNIT_SANDDEVOURER_NAME"   ;   Str = "Sand Devourer"
 ID = "STR_UNIT_SANDDEVOURER_SR"   ;   Str = "Last Thing Expected to See Moving Beneath Shifting Sands"
 ID = "STR_UNIT_SANDDEVOURER_LR"   ;   Str = "Oversized worm that moves through sands, hunts down anythng moves and leaves buildings in crumbles"
 
-ID = "STR_UNIT_TITAN_YAMATANOOROCHI_NAME"   ;   Str = "Yamata no Orochi (Titan)"
-
 ID = "STR_EMB_KITSUNE_ILLUSION_SR"   ;   Str = "Just a chilling nice lady"
 ID = "STR_UNIT_HAMADRYAD_SR"   ;   Str = "Just a chilling nice lady"
-
-
 
 // DEMIGODS
 ID = "STR_UNIT_SON_OF_HORUS_NAME"  ;   Str = "Son of Horus (Hero)"
@@ -40,6 +36,8 @@ ID = "STR_UNIT_TITAN_RA_NAME"  ;   Str = "Ra (Titan)"
 ID = "STR_UNIT_TITAN_YMIR_NAME"  ;   Str = "Ymir (Titan)"
 ID = "STR_UNIT_TITAN_CHTHONIAN_NAME"  ;   Str = "Chthonian (Titan)"
 ID = "STR_UNIT_TITAN_XINGTIAN_NAME"  ;   Str = "Xing Tian (Titan)"
+ID = "STR_UNIT_TITAN_YAMATANOOROCHI_NAME"   ;   Str = "Yamata no Orochi (Titan)"
+ID = "STR_UNIT_TITAN_CIPACTLI_NAME"  ;   Str = "Cipactli (Titan)"
 
 // SPECIAL UNITS
 ID = "STR_TECH_SPECIALSERVICE_NAME"   ;   Str = "Special Service"
@@ -493,6 +491,7 @@ ID = "STR_BLD_CAMP_ATHENIAN_NAME" ;   Str = "Athenian Encampment"
 ID = "STR_BLD_CAMP_NUBIAN_NAME" ;   Str = "Mercenary Campsite"
 ID = "STR_BLD_CAMP_ENCAMPENT_LR" ;   Str = "These military productions buildings provide 2 population and civilization special elite units"
 
+// WONDERS
 ID = "STR_BLD_STATUEOFZEUS_NAME" ;   Str = "Statue of Zeus"
 ID = "STR_BLD_MAUSOLEUM_NAME" ;   Str = "Mausoleum"
 ID = "STR_BLD_THEATREOFDIONYSUS_NAME" ;   Str = "Theatre of Dionysus"
@@ -513,6 +512,9 @@ ID = "STR_BLD_FUSANG_NAME" ;   Str = "Fusang"
 ID = "STR_BLD_HIMEJICASTLE_NAME" ;   Str = "Himeji Castle (Main Keep)"
 ID = "STR_BLD_TAKEONOOKUSU_NAME" ;   Str = "Takeo no Okusu"
 ID = "STR_BLD_ITSUKUSHIMASHRINE_NAME" ;   Str = "Itsukushima Shrine"
+ID = "STR_BLD_TEMPLOMAYOR_NAME" ;   Str = "Templo Mayor"
+ID = "STR_BLD_TEMPLEOFEHECATL_NAME" ;   Str = "Temple of Ehecatl"
+ID = "STR_BLD_TEMPLEOFKUKULKAN_NAME" ;   Str = "Temple of Kukulkan"
 
 ID = "STR_BLD_MAGETOWER_NAME"   ;   Str = "Mage Tower"
 ID = "STR_BLD_MAGETOWER_SR"   ;   Str = "Mage Tower"

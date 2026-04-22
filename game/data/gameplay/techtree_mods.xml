@@ -188,6 +188,16 @@
         <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
       </effects>
     </tech>
+    <tech name="ArchaicAgeAztec">
+      <effects>        
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>
+
+        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
+      </effects>
+    </tech>
 
     <!-- Civilization Blessings - Greek Minor Gods -->
     <tech name="ClassicalAgeAres">
@@ -383,6 +393,7 @@
         <effect type="TechStatus" status="active" mergeMode="add">AtlanteanPresets</effect>
         <effect type="TechStatus" status="active" mergeMode="add">ChinesePresets</effect>
         <effect type="TechStatus" status="active" mergeMode="add">JapanesePresets</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">AztecPresets</effect>
 
         <effect type="TechStatus" status="active" mergeMode="add">MCMT_SpecialUnits</effect>
         <effect type="TechStatus" status="active" mergeMode="add">MCMT_Researches</effect>
@@ -401,6 +412,7 @@
         <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">VillagerNorse</target></effect>
         <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">VillagerDwarf</target></effect>
         <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">VillagerJapanese</target></effect>
+        <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">VillagerAztec</target></effect>
 
         <effect type="Data" amount="0" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TradeUnit</target></effect>
         <effect type="Data" amount="1" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">PiXiu</target></effect>
@@ -450,7 +462,14 @@
         <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
           <target type="ProtoUnit">MilitaryBarracks</target></effect>
         <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
-          <target type="ProtoUnit">CounterBarracks</target></effect>      </effects>
+          <target type="ProtoUnit">CounterBarracks</target></effect>     
+        <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
+          <target type="ProtoUnit">Dojo</target></effect>     
+        <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
+          <target type="ProtoUnit">Guardhouse</target></effect>     
+        <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
+          <target type="ProtoUnit">StableJapanese</target></effect>     
+       </effects>
     </tech>
 
     <tech name="NavalPresets" mergeMode="add">
@@ -747,7 +766,39 @@
         <effect type="Data" amount="15.00" subtype="BuildLimit" relativity="Assign"><target type="ProtoUnit">OracleHero</target></effect>
       </effects>
     </tech>
+    <tech name="AztecPresets" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <effects>
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="CoyoteWarrior" relativity="Absolute">
+				  <target type="ProtoUnit">OcelotlWarrior</target></effect>	
+          
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Chaneque</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ChanequeIdol</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">CentzonTotochtin</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Maquizcoatl</target></effect>
+        <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Ayotochtli</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ObsidianButterfly</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Tzitzimitl</target></effect>
+        <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Tunkuluchu</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Ahuizotl</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">SoulGuide</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Quinametzin</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Axolotl</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">AxolotlMutant</target></effect>
 
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">WarriorPriest</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">QuimichinSpy</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TlamanihSpearman</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">TequihuaArcher</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">CoyoteWarrior</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">OcelotlWarrior</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">EagleWarrior</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Otontin</target></effect>
+        <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">ShornOne</target></effect>
+        <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">JaguarRider</target></effect>
+        <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Quinametzin</target></effect>
+      </effects>
+     </tech>
     <!-- MCMT SECTION FOR SPECIAL UNITS -->
 
     <tech name="MCMT_SpecialUnits" mergeMode="add">
@@ -1678,7 +1729,6 @@
       <flag>CountsTowardMilitaryScore</flag>
       <flag>MythTech</flag>
       <prereqs>
-        <typecount unit="Watermill" count="0.00" state="aliveState" operator="gt"></typecount>
         <typecount unit="Armory" count="0.00" state="aliveState" operator="gt"></typecount>
       </prereqs>
       <effects>
@@ -4245,59 +4295,73 @@
 		<cost resourcetype="Favor">30</cost>
     <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
 		<effects>
+      <!-- Greek -->
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Hoplite</target>
-		  </effect>
+			  <target type="ProtoUnit">Hoplite</target></effect>
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Militia</target>
-		  </effect>
+			  <target type="ProtoUnit">Militia</target></effect>
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Prodromos</target>
-		  </effect>
+			  <target type="ProtoUnit">Prodromos</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Bellerophon</target></effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Ajax</target></effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Atalanta</target></effect>
+      <!-- Chinese -->
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">WuzuJavelineer</target>
-		  </effect>
+			  <target type="ProtoUnit">WuzuJavelineer</target></effect>
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Nezha</target>
-		  </effect>
+			  <target type="ProtoUnit">YangJian</target></effect>
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">YangJian</target>
-		  </effect>
+			  <target type="ProtoUnit">TigerCavalry</target></effect>
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">TigerCavalry</target>
-		  </effect>
+			  <target type="ProtoUnit">TigerCavalryDismounted</target></effect>
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">TigerCavalryDismounted</target>
-		  </effect>
+			  <target type="ProtoUnit">WhiteHorseCavalry</target></effect>
+      
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Nezha</target></effect>
+      <!-- Egyptian -->
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">WhiteHorseCavalry</target>
-		  </effect>
+			  <target type="ProtoUnit">Spearman</target></effect>
+      <!-- Norse -->
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Valkyrie</target></effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">ValkyrieWarrior</target></effect>
 		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Bellerophon</target>
-		  </effect>
-		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Ajax</target>
-		  </effect><effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Atalanta</target>
-		  </effect>
-		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Spearman</target>
-		  </effect><effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Valkyrie</target>
-		  </effect><effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">ValkyrieWarrior</target>
-		  </effect>
-		  <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Hirdman</target>
-		  </effect><effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Godi</target>
-		  </effect><effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
-			<target type="ProtoUnit">Destroyer</target>
-		  </effect><effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Hirdman</target></effect>
+      
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Godi</target></effect>
+      <!-- Atlantean -->
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">Destroyer</target></effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
 			<target type="ProtoUnit">Contarius</target>
-		  </effect><effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+		  </effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
 			<target type="ProtoUnit">Satyr</target>
 		  </effect>		  
+      <!-- Chinese -->
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">GeHalberdier</target></effect>		  
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">WhiteHorseCavalry</target></effect>		  
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">TigerCavalry</target></effect>		  
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">TigerCavalryDismounted</target></effect>		  
+      <!-- Japanese -->
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">YariSpearman</target></effect>		  
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">NaginataRider</target></effect>		  
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+			  <target type="ProtoUnit">OnnaMusha</target></effect>		  
+      <!-- Aztec -->
 		</effects>
 	</tech>
 	<tech name="MCMT_DeimosSwordOfDread">
@@ -4371,7 +4435,16 @@
 	  <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent">
         <target type="ProtoUnit">Fanatic</target>
       </effect>
+    <!-- Chinese -->
+    <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent">
+      <target type="ProtoUnit">DaoSwordsman</target></effect>
+    <!-- Japanese -->
+    <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent">
+      <target type="ProtoUnit">Daimyo</target></effect>
+    <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent">
+      <target type="ProtoUnit">AbstractSamurai</target></effect>
     </effects>
+    <!-- Aztec -->
   </tech>
   <tech name="MCMT_EnyosBowOfHorror">
     <displaynameid>STR_TECH_ENYOSBOWOFHORRO_MK2_NAME</displaynameid>
@@ -4443,6 +4516,20 @@
 	  <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent">
         <target type="ProtoUnit">Arcus</target>
       </effect>
+    <!-- Chinese -->
+     <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent">
+        <target type="ProtoUnit">FireArcher</target></effect>
+     <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent">
+        <target type="ProtoUnit">ChuKoNu</target></effect>
+     <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent">
+        <target type="ProtoUnit">WhiteHorseCavalry</target></effect>
+    <!-- Japanese -->
+     <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent">
+        <target type="ProtoUnit">YumiArcher</target></effect>
+     <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent">
+        <target type="ProtoUnit">YumiHorseArcher</target></effect>
+     <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent">
+        <target type="ProtoUnit">Bushi</target></effect>
     </effects>
   </tech>
   <tech name="MCMT_AegisShield">
@@ -4614,6 +4701,7 @@
 	 <effect type="Data" amount="0.35" subtype="OnHitEffect" allactions="1" effecttype="Lifesteal" targettype="Unit" relativity="Assign">
         <target type="ProtoUnit">Axeman</target>
       </effect>	  
+    <!-- Japanese -->
     </effects>
   </tech>
 	<tech name="MCMT_Compensations" mergeMode="add">
@@ -4798,74 +4886,87 @@
     <flag>MythTech</flag>
     <prereqs><typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
-      <effect type="CreatePower" protopower="VibrantLand">
-      </effect>
+      <effect type="CreatePower" protopower="VibrantLand"></effect>
+
       <effect type="Data" action="Gather" amount="1.15" subtype="WorkRate" unittype="WoodResource" relativity="BasePercent">
-        <target type="ProtoUnit">EconomicUpgraded</target>
-      </effect>
-	  <effect type="Data" action="Gather" amount="1.15" subtype="WorkRate" unittype="FoodResource" relativity="BasePercent">
-        <target type="ProtoUnit">EconomicUpgraded</target>
-      </effect>
-	  <effect type="Data" action="Gather" amount="1.15" subtype="WorkRate" unittype="GoldResource" relativity="BasePercent">
-        <target type="ProtoUnit">EconomicUpgraded</target>
-      </effect>
-	  
+          <target type="ProtoUnit">EconomicUpgraded</target></effect>
+      <effect type="Data" action="Gather" amount="1.15" subtype="WorkRate" unittype="FoodResource" relativity="BasePercent">
+          <target type="ProtoUnit">EconomicUpgraded</target></effect>
+      <effect type="Data" action="Gather" amount="1.15" subtype="WorkRate" unittype="GoldResource" relativity="BasePercent">
+          <target type="ProtoUnit">EconomicUpgraded</target></effect>
+      
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
-        <target type="ProtoUnit">House</target>
-      </effect>
+          <target type="ProtoUnit">House</target></effect>
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
-        <target type="ProtoUnit">House</target>
-      </effect>
+          <target type="ProtoUnit">House</target></effect>
       <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
-        <target type="ProtoUnit">House</target>
-      </effect>
-	  <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
-        <target type="ProtoUnit">Manor</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
-        <target type="ProtoUnit">Manor</target>
-      </effect>
-	  <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
-        <target type="ProtoUnit">Manor</target>
-      </effect>
-	  
+          <target type="ProtoUnit">House</target></effect>
+
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
-        <target type="ProtoUnit">Armory</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="GoldDropsite" relativity="Absolute">
-        <target type="ProtoUnit">Armory</target>
-      </effect>
-	  <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Gold" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
-        <target type="ProtoUnit">Armory</target>
-      </effect>
-	  
-	  <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
+          <target type="ProtoUnit">Manor</target></effect>
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
-	  <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
-	  <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
+          <target type="ProtoUnit">Manor</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+          <target type="ProtoUnit">Manor</target></effect>
+      
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
+          <target type="ProtoUnit">Armory</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="GoldDropsite" relativity="Absolute">
+          <target type="ProtoUnit">Armory</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Gold" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+          <target type="ProtoUnit">Armory</target></effect>
+      
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
+          <target type="ProtoUnit">AbstractFortress</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
+          <target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+          <target type="ProtoUnit">AbstractFortress</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="FoodDropsite" relativity="Absolute">
+          <target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Food" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+          <target type="ProtoUnit">AbstractFortress</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="GoldDropsite" relativity="Absolute">
+          <target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Gold" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+          <target type="ProtoUnit">AbstractFortress</target></effect>		
+
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
+        <target type="ProtoUnit">MonumentToVillagers</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
+        <target type="ProtoUnit">MonumentToVillagers</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+        <target type="ProtoUnit">MonumentToVillagers</target></effect>
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="FoodDropsite" relativity="Absolute">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
-	  <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Food" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
-	  <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
+        <target type="ProtoUnit">MonumentToVillagers</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Food" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+        <target type="ProtoUnit">MonumentToVillagers</target></effect>
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="GoldDropsite" relativity="Absolute">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
-	  <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Gold" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>		
+        <target type="ProtoUnit">MonumentToVillagers</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Gold" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+        <target type="ProtoUnit">MonumentToVillagers</target></effect>		
+
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
+        <target type="ProtoUnit">PlentyVault</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
+        <target type="ProtoUnit">PlentyVault</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+        <target type="ProtoUnit">PlentyVault</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="FoodDropsite" relativity="Absolute">
+        <target type="ProtoUnit">PlentyVault</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Food" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+        <target type="ProtoUnit">PlentyVault</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="GoldDropsite" relativity="Absolute">
+        <target type="ProtoUnit">PlentyVault</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Gold" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+        <target type="ProtoUnit">PlentyVault</target></effect>		
+
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
+        <target type="ProtoUnit">HesperidesTree</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
+        <target type="ProtoUnit">HesperidesTree</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign" tooltipid="STR_TECH_VIBRANT_LAND_OVERRIDE">
+        <target type="ProtoUnit">HesperidesTree</target></effect>
     </effects>  
   </tech>
   
@@ -5197,68 +5298,12 @@
     <flag>CountsTowardMilitaryScore</flag>
     <prereqs><typecount unit="Bastion" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
     <effects>
-      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">InfantryLineUpgraded</target>
-      </effect>
-      <effect type="Data" allactions="1" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">InfantryLineUpgraded</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">InfantryLineUpgraded</target>
-      </effect>
-      <effect type="SetName" proto="Hoplite" newname="STR_UNIT_CHAMPION_HOPLITE_NAME">
-      </effect>
-      <effect type="SetName" proto="Hypaspist" newname="STR_UNIT_CHAMPION_HYPASPIST_NAME">
-      </effect>
-      <effect type="SetName" proto="Myrmidon" newname="STR_UNIT_CHAMPION_MYRMIDON_NAME">
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">ThrowingAxeman</target>
-      </effect>
-      <effect type="SetName" proto="Berserk" newname="STR_UNIT_CHAMPION_BERSERK_NAME">
-      </effect>
-      <effect type="SetName" proto="Hirdman" newname="STR_UNIT_CHAMPION_HIRDMAN_NAME">
-      </effect>
-      <effect type="SetName" proto="Huskarl" newname="STR_UNIT_CHAMPION_HUSKARL_NAME">
-      </effect>
-      <effect type="SetName" proto="ThrowingAxeman" newname="STR_UNIT_CHAMPION_THROWING_AXEMAN_NAME">
-      </effect>
-      <effect type="SetName" proto="Katapeltes" newname="STR_UNIT_CHAMPION_KATAPELTES_NAME">
-      </effect>
-      <effect type="SetName" proto="Murmillo" newname="STR_UNIT_CHAMPION_MURMILLO_NAME">
-      </effect>
-      <effect type="SetName" proto="Destroyer" newname="STR_UNIT_CHAMPION_DESTROYER_NAME">
-      </effect>
-      <effect type="SetName" proto="Fanatic" newname="STR_UNIT_CHAMPION_FANATIC_NAME">
-      </effect>
-      <effect type="SetName" proto="DaoSwordsman" newname="STR_UNIT_CHAMPION_DAO_SWORDSMAN_NAME">
-      </effect>
-      <effect type="SetName" proto="GeHalberdier" newname="STR_UNIT_CHAMPION_GE_HALBERDIER_NAME">
-      </effect>
+      <effect type="TechStatus" status="active">ChampionInfantry</effect>
+			<effect type="TechStatus" status="active">ChampionAxemen</effect>
+			<effect type="TechStatus" status="active">ChampionSpearmen</effect>
+			<effect type="TechStatus" status="active">ChampionGuardhouseSoldiers</effect>		
+			<effect type="TechStatus" status="active">ChampionDojoSoldiers</effect>
 	  
-	  <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Axeman</target>
-      </effect>
-      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">Axeman</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">Axeman</target>
-      </effect>
-      <effect type="SetName" proto="Axeman" newname="STR_UNIT_CHAMPION_AXEMAN_NAME">
-      </effect>
-	  
-	  <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Spearman</target>
-      </effect>
-      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">Spearman</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">Spearman</target>
-      </effect>
-      <effect type="SetName" proto="Spearman" newname="STR_UNIT_CHAMPION_SPEARMAN_NAME">
-      </effect>
     </effects>
   </tech>
   <tech name="ChampionHooves">
@@ -5272,57 +5317,12 @@
     <flag>CountsTowardMilitaryScore</flag>
     <prereqs><techstatus status="Active">ChampionArms</techstatus></prereqs>
     <effects>
-      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">CavalryLineUpgraded</target>
-      </effect>
-      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">CavalryLineUpgraded</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">CavalryLineUpgraded</target>
-      </effect>
-      <effect type="SetName" proto="Hippeus" newname="STR_UNIT_CHAMPION_HIPPEUS_NAME">
-      </effect>
-      <effect type="SetName" proto="Prodromos" newname="STR_UNIT_CHAMPION_PRODROMOS_NAME">
-      </effect>
-      <effect type="SetName" proto="Hetairos" newname="STR_UNIT_CHAMPION_HETAIROS_NAME">
-      </effect>
-      <effect type="SetName" proto="RaidingCavalry" newname="STR_UNIT_CHAMPION_RAIDING_CAVALRY_NAME">
-      </effect>
-      <effect type="SetName" proto="Jarl" newname="STR_UNIT_LEGENDARY_JARL_NAME">
-      </effect>
-      <effect type="SetName" proto="Contarius" newname="STR_UNIT_CHAMPION_CONTARIUS_NAME">
-      </effect>
-      <effect type="SetName" proto="WhiteHorseCavalry" newname="STR_UNIT_CHAMPION_WHITE_HORSE_CAVALRY_NAME">
-      </effect>
-      <effect type="SetName" proto="TigerCavalry" newname="STR_UNIT_CHAMPION_TIGER_CAVALRY_NAME">
-      </effect>
-      <effect type="SetName" proto="TigerCavalryDismounted" newname="STR_UNIT_CHAMPION_TIGER_CAVALRY_DISMOUNTED_NAME">
-      </effect>
-	  
-	  <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">CamelRider</target>
-      </effect>
-      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">CamelRider</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">CamelRider</target>
-      </effect>
-      <effect type="SetName" proto="CamelRider" newname="STR_UNIT_CHAMPION_CAMEL_RIDER_NAME">
-      </effect>
-	  
-	  <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">WarElephant</target>
-      </effect>
-      <effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">WarElephant</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">WarElephant</target>
-      </effect>
-      <effect type="SetName" proto="WarElephant" newname="STR_UNIT_CHAMPION_WAR_ELEPHANT_NAME">
-      </effect>
+      <effect type="TechStatus" status="active">ChampionCavalry</effect>
+      <effect type="TechStatus" status="active">ChampionChariotArchers</effect>
+			<effect type="TechStatus" status="active">ChampionCamelRiders</effect>
+			<effect type="TechStatus" status="active">ChampionWarElephants</effect>      
+
+      <effect type="TechStatus" status="active">ChampionStableSoldiers</effect>
     </effects>
   </tech>
   <tech name="ChampionRangers">
@@ -5336,63 +5336,8 @@
     <flag>CountsTowardMilitaryScore</flag>
     <prereqs><techstatus status="Active">ChampionHooves</techstatus></prereqs>
     <effects>
-      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">ArcherLineUpgraded</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">ArcherLineUpgraded</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">ArcherLineUpgraded</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">Peltast</target>
-      </effect>
-      <effect type="SetName" proto="Toxotes" newname="STR_UNIT_CHAMPION_TOXOTES_NAME"></effect>
-      <effect type="SetName" proto="Peltast" newname="STR_UNIT_CHAMPION_PELTAST_NAME"></effect>
-      <effect type="SetName" proto="Gastraphetoros" newname="STR_UNIT_CHAMPION_GASTRAPHETOROS_NAME"></effect>
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">Turma</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">TurmaHero</target>
-      </effect>
-      <effect type="SetName" proto="Turma" newname="STR_UNIT_CHAMPION_TURMA_NAME"></effect>
-      <effect type="SetName" proto="Arcus" newname="STR_UNIT_CHAMPION_ARCUS_NAME"></effect>
-      <effect type="SetName" proto="Cheiroballista" newname="STR_UNIT_CHAMPION_CHEIROBALLISTA_NAME"></effect>
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">WuzuJavelineer</target>
-      </effect>
-      <effect type="SetName" proto="WuzuJavelineer" newname="STR_UNIT_CHAMPION_WUZU_JAVELINEER_NAME"></effect>
-      <effect type="SetName" proto="FireArcher" newname="STR_UNIT_CHAMPION_FIRE_ARCHER_NAME"></effect>
-      <effect type="SetName" proto="ChuKoNu" newname="STR_UNIT_CHAMPION_CHUKONU_NAME"></effect>
-	  
-	  <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Slinger</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">Slinger</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">Slinger</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">Slinger</target>
-      </effect>
-	  
-      <effect type="SetName" proto="Slinger" newname="STR_UNIT_CHAMPION_SLINGER_NAME"></effect>
-	  
-	  <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">ChariotArcher</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="1.20" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">ChariotArcher</target>
-      </effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
-        <target type="ProtoUnit">ChariotArcher</target>
-      </effect>
-      <effect type="SetName" proto="ChariotArcher" newname="STR_UNIT_CHAMPION_CHARIOT_ARCHER_NAME">
-      </effect>
+      <effect type="TechStatus" status="active">ChampionArchers</effect>			
+      <effect type="TechStatus" status="active">ChampionSlingers</effect>		
     </effects>
 	</tech>
 	
@@ -5407,30 +5352,7 @@
     <flag>CountsTowardMilitaryScore</flag>
     <prereqs><techstatus status="Active">ChampionRangers</techstatus></prereqs>
     <effects>
-      <effect type="Data" allactions="1" amount="1.25" subtype="Damage" relativity="BasePercent">
-        <target type="ProtoUnit">SiegeLineUpgraded</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">Petrobolos</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">Catapult</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">FireSiphon</target>
-      </effect>
-      <effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">Petrobolos</target>
-      </effect>
-      <effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">Catapult</target>
-      </effect>
-      <effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">FireSiphon</target>
-      </effect>
-      <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="AbstractWall" relativity="Absolute">
-        <target type="ProtoUnit">SiegeLineUpgraded</target>
-      </effect>
+        <effect type="TechStatus" status="active">Engineers</effect>		      
     </effects>
   </tech>
 
@@ -5775,6 +5697,12 @@
         <target type="ProtoUnit">SentryTower</target></effect>
       <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileHamadryadSpike" relativity="Assign">
         <target type="ProtoUnit">SentryTower</target></effect>
+    </effects>
+  </tech>
+  <tech name="TzompantliWatchTower">
+    <effects>
+      <effect type="Data" action="RangedAttack" amount="0.1" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>
   <tech name="SecretsOfTheTitans" mergeMode="replace">
@@ -9340,7 +9268,213 @@
         <target type="ProtoUnit">Kitsune</target></effect>
     </effects>
   </tech>
-  <!-- Japanese Techs - Military Techs -->
+  <!-- Aztec Military Techs -->
+  <tech name="MediumGreatTempleSoldiers">
+    <icon mergeMode="replace">resources\aztec\static_color\technologies\heavy_great_temple_soldiers_icon.png</icon>
+    <effects>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+    </effects>
+  </tech>
+  <tech name="HeavyGreatTempleSoldiers">
+    <effects>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+    </effects>
+  </tech>
+  <tech name="ChampionGreatTempleSoldiers">
+    <effects>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+    </effects>
+  </tech>
+  <!-- Aztec Myth Techs-->
+  <tech name="OmenOfMalinalco">
+    <effects>
+      <effect type="Data" amount="1.0" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="4.00" targettype="Unit" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">QuimichinSpy</target></effect>
+			<effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="4.00" targettype="Unit" proto="VFXPoison" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">QuimichinSpy</target></effect>        
+    </effects>
+  </tech>
+  <tech name="StringOfHearts">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Crush" action="JumpAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Crush" action="JumpAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Tlacaelel</target></effect>
+    </effects>
+  </tech>
+  <tech name="ObsidianKnapping">
+    <effects>
+    	<effect type="Data" allactions="1" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">MajorHero</target></effect>
+    	<effect type="Data" allactions="1" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">ObsidianButterfly</target></effect>
+    </effects>
+  </tech>
+  <tech name="TwistedLimbs">
+    <effects>
+    	<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Itzcoatl</target></effect>
+      <effect type="Data" action="JumpAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">MajorHero</target></effect>
+    </effects>
+  </tech>
+  <tech name="TepeyollotlsReach">
+    <effects>
+      <effect type="Data" allactions="1" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Iztaccihuatl</target></effect>
+      <effect type="Data" action="JumpAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Iztaccihuatl</target></effect>
+
+      <effect type="Data" allactions="1" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">AmanraOlder</target></effect>
+      <effect type="Data" action="JumpAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AmanraOlder</target></effect>
+    </effects>
+  </tech>
+  <tech name="TemiminaloyanTrials">
+    <effects>
+      <effect type="Data" action="RangedAttack" amount="12.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" amount="12.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" action="RangedAttack" amount="3.0" subtype="RateOfFire" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+    </effects>
+  </tech>
+  <tech name="NecklaceOfEyeballs">
+    <effects>        
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">WarriorPriest</target></effect>
+      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">WarriorPriest</target></effect>
+      <effect type="Data" subtype="LOS" amount="4.0" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">WarriorPriest</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Tlacaelel</target></effect>
+      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Tlacaelel</target></effect>
+      <effect type="Data" subtype="LOS" amount="4.0" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Tlacaelel</target></effect>
+    </effects>
+  </tech>
+  <tech name="CipactlisScales">
+    <effects>        
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">TitanCipactli</target></effect>
+			<effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">TitanCipactli</target></effect>
+    </effects>
+  </tech>
+  <tech name="Mictecah">
+    <effects>        
+      <effect type="Data" amount="20" subtype="ShieldPoints" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">ShornOne</target></effect>
+      <effect type="Data" amount="0.5" subtype="UnitShieldRegenRate" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">ShornOne</target></effect>
+    </effects>
+  </tech>
+  <tech name="OmenOfDeath">
+    <effects>        
+      <effect type="Data" amount="20" subtype="ShieldPoints" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">ShornOne</target></effect>
+      <effect type="Data" amount="0.5" subtype="UnitShieldRegenRate" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">ShornOne</target></effect>
+    </effects>
+  </tech>
 
   <!-- Structures of Gods-->
     <!-- Ancient Greek -->
@@ -9478,6 +9612,16 @@
   </tech> 
   <tech name="MythicAgeSusanoo" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_ITSUKUSHIMASHRINE_NAME"></effect></effects>
+  </tech> 
+    <!-- Aztec Wonders of Art-->
+  <tech name="MythicAgeHuitzilopochtli" mergeMode="add">
+    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLOMAYOR_NAME"></effect></effects>
+  </tech> 
+  <tech name="MythicAgeTezcatlipoca" mergeMode="add">
+    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFEHECATL_NAME"></effect></effects>
+  </tech> 
+  <tech name="MythicAgeQuetzalcoatl" mergeMode="add">
+    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFKUKULKAN_NAME"></effect></effects>
   </tech> 
 
   <!-- RESEARCHABLE COMMANDS-->

@@ -194,8 +194,30 @@
 		<cost>0.0</cost><repeatcost>0</repeatcost></power>
 
 	<!-- Japanese God Powers - Major -->
-	<power name="SolarShield" type="SingleModify" godpower="">
-		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="SolarShield" type="SingleModify" godpower="" mergeMode="replace">
+		<displaynameid>STR_POWER_SOLAR_SHIELD</displaynameid>
+		<rolloverid>STR_POWER_SOLAR_SHIELD_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\solar_shield_icon.png</icon>
+		<placement ally="">Building</placement>
+		<abstractplacementtargettype>Building</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">SolarShieldBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>10.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Resource</explicitlyrestrictedattacktargettype>
+		<cost>0.0</cost><repeatcost>0.0</repeatcost>
+		<activetimeontarget></activetimeontarget>
+		<unitmodify age="ArchaicAge" apply="Add" amount="300.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify age="ClassicalAge" apply="Add" amount="600.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify age="HeroicAge" apply="Add" amount="900.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify age="MythicAge" apply="Add" amount="1200.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify age="WonderAge" apply="Add" amount="1500.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify apply="Add" amount="25.0" nostackignorepuid="">ShieldRegenRate</unitmodify>
+		<vfxproto>VFXSolarShield</vfxproto>
+		<vfxattachbone>Spine</vfxattachbone>
+	</power>
 	<power name="Kusanagi" type="TempUnit" godpower="">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 	<power name="NewMoon" type="NewMoon" godpower="">
@@ -223,6 +245,31 @@
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 	<!-- Japanese God Powers - Special-->
 	<power name="HachimansBlessing" type="SwapUnit" godpower="">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+
+	<!-- Aztec God Powers - Major -->
+	<power name="BloodPact" type="SingleModify" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>
+	<power name="Tailwind" type="UnitModify" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<!-- Aztec God Powers - Minor -->
+	<power name="Lullaby" type="EffectInArea" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="Infestation" type="TempUnit" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="AgaveBloom" type="TempUnit" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="EarthMonster" type="EarthMonster" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="Starfall" type="Tempest" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="Purge" type="CageUnit" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="CorruptedGround" type="EffectInArea" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="MonolithOfTlaloc" type="TempUnit" godpower="" orderhint="5">
+		<cost>0</cost><repeatcost>0</repeatcost></power>	
+	<power name="Volcano" type="TempUnit" godpower="" orderhint="5">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 
 	<!--///MY_CUSTOM_MOD_TECH///-->

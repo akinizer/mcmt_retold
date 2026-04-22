@@ -6701,14 +6701,7 @@
 			<active>0</active>
 		</protoaction>
 	</unit>
-	
-
-	<!-- TODO
-	<unit name="Roc" mergeMode="replace"></unit>
-	<unit name= roctent on death	
-	<unit name="RocTent" mergeMode="add"></unit> areaheal, heal aura vfx, population 10, garrison
-	-->
-    
+	    
     <!-- Egyptian Military Units-->
 	<unit name="WarElephant">
 		<unittype>AbstractSiegeWeapon</unittype>
@@ -9137,9 +9130,6 @@
 	<unit name="Circe"></unit>			-> magic tower
 	-->
 
-	<!-- CAMPAIGN UNITS -->
-
-	<!-- Campaign Heroes - New Atlantis -->
 	<!-- Campaign Heroes - Pillars of God  TODO
 	 
 		<unit name="YanFeifengRider">
@@ -9598,6 +9588,206 @@
 		</protoaction>
 	</unit>
 
+	<!-- Campaign Units Obsidian Mirror -->
+	<unit name="Iztaccihuatl">
+		<flag>ExperienceUnit</flag>
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="IztaccihuatlDismounted">
+		<flag>ExperienceUnit</flag>
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="Popocatepetl">
+		<flag>ExperienceUnit</flag>
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="Tezcatlipoca">
+		<flag>ExperienceUnit</flag>
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.5000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.0000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.3000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.5000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.5000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="Itzcoatl">
+		<flag>ExperienceUnit</flag>
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.3000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.5000</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.0000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.5000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.8000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.5000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+	<unit name="Tlacaelel">
+		<flag>ExperienceUnit</flag>
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.3000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.2500</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.5000</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.0000</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.5000</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.8000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
+
     <!-- Titans -->
     <unit name="TitanCerberus">
 		<displaynameid>STR_UNIT_TITAN_CERBERUS_NAME</displaynameid>
@@ -9714,6 +9904,28 @@
 			<impactforcemax>600.0f</impactforcemax>
 			<impactlaunchangle>10.0</impactlaunchangle>
 			<areasortmode>Directional</areasortmode>
+		</protoaction>
+	</unit>
+	<unit name="TitanCipactli">
+		<displaynameid>STR_UNIT_TITAN_CIPACTLI_NAME</displaynameid>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Land</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
 		</protoaction>
 	</unit>
 
@@ -9899,6 +10111,27 @@
 			<rate type="Huntable">1.000000</rate>
 			<rate type="NonConvertableHerdable">0.900000</rate>
 			<rate type="BerryBush">0.700000</rate>
+			<rate type="AbstractFarm">0.700000</rate>
+			<rate type="ThePeachBlossomSpring" resource="Food">1.000000</rate>
+			<rate type="ThePeachBlossomSpring" resource="Wood">1.000000</rate>
+			<rate type="ThePeachBlossomSpring" resource="Gold">0.850000</rate>
+			<rate type="FishResource">1.30</rate>
+			<rate type="AbstractDock">1.30</rate>
+		</protoaction>
+	</unit>
+	<unit name="VillagerAztec">
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<protoaction>
+		<name>Gather</name>
+			<dropsitegathering>1</dropsitegathering>
+			<rate type="Temple">0.1</rate>
+			<rate type="WoodResource">1.000000</rate>
+			<rate type="GoldResource">0.850000</rate>
+			<rate type="Herdable">0.900000</rate>
+			<rate type="Huntable">1.000000</rate>
+			<rate type="NonConvertableHerdable">0.900000</rate>
+			<rate type="BerryBush">0.800000</rate>
 			<rate type="AbstractFarm">0.700000</rate>
 			<rate type="ThePeachBlossomSpring" resource="Food">1.000000</rate>
 			<rate type="ThePeachBlossomSpring" resource="Wood">1.000000</rate>
@@ -11207,6 +11440,104 @@
 		<initialresource resourcetype="Wood">2000</initialresource>
 		<flag>ObscuresUnits</flag>
 	</unit>	
+	<!-- Trees Chinese DLC -->
+	<unit name="TreePeach">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeGinkgo">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeGinkgoAutumn">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeBamboo">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">200</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeBambooSingle">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">200</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeMetasequoia">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeMetasequoiaAutumn">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreePear">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeWillow">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeChinesePine">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<!-- Trees Chinese DLC -->
+	<unit name="TreePineBuddhist">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreePineBuddhistSnow">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeCherry">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeMaple">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreePineBrown">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
+	<unit name="TreeCherryShrine">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>	
+		<initialresource resourcetype="Wood">1000</initialresource>
+		<flag>ObscuresUnits</flag>
+	</unit>		
 	<!--Gold Mines-->
 	<unit name="MineGoldLarge">
 		<initialresource resourcetype="Gold">8000</initialresource>
@@ -11839,6 +12170,7 @@
 		<flag>CreateUnitGroupAutomatically</flag>
 		<flag>HideGarrisonFlag</flag>
 		<flag>HasDefaultAttack</flag>
+		<flag>DirectProjectile</flag>
 		<contain>AbstractArcher</contain>
 		<notcontain>AbstractCavalry</notcontain>
 		<notcontain>MythUnit</notcontain>
@@ -17108,41 +17440,13 @@
     <flag>NoIdleActions</flag>
     <flag>CreateUnitGroupAutomatically</flag>
 	
-	<!-- Atlantean -->
-	<hotkeycontext>BuildAtlanteanAccel</hotkeycontext>
-	<train row="0" column="0">Manor</train>
-	<train row="0" column="1">EconomicGuild</train>
-	<train row="0" column="2">SkyPassage</train>
-	<train row="0" column="4">Temple</train>
-	<train row="0" column="5">Dock</train>
-	<train row="1" column="1">MilitaryBarracks</train>
-	<train row="1" column="2">CounterBarracks</train>
-	<train row="1" column="3">Farm</train>
-	<train row="1" column="4">Market</train>
-	<train row="1" column="5">Armory</train>
-	<train row="2" column="0">TownCenter</train>
-	<train row="255" column="0">VillageCenter</train>
-	<train row="2" column="1">WallConnector</train>
-	<train row="255" column="255">WallShort</train>
-	<train row="255" column="255">WallMedium</train>
-	<train row="255" column="255">WallLong</train>
-	<train row="2" column="2">SentryTower</train>
-	<train row="2" column="3">Palace</train>
-	<train row="2" column="4">MirrorTower</train>
-	<train row="2" column="5">Wonder</train>
-	<train>TempleOvergrown</train>
-	<train>TitanGate</train>
-	<!-- Greek -->
-	<hotkeycontext>BuildGreekAccel</hotkeycontext>
+	<!-- General Build Accel -->
 	<train row="0" column="0">House</train>
-	<train row="0" column="1">Granary</train>
-	<train row="0" column="2">Storehouse</train>
 	<train row="0" column="4">Temple</train>
 	<train row="0" column="5">Dock</train>
-	<train row="1" column="0">ArcheryRange</train>
 	<train row="1" column="1">MilitaryAcademy</train>
-	<train row="1" column="2">Stable</train>
-	<train row="1" column="3">Farm</train>
+	<train row="1" column="2">Stable</train>		
+	<train row="1" column="3">ArcheryRange</train>
 	<train row="1" column="4">Market</train>
 	<train row="1" column="5">Armory</train>
 	<train row="2" column="0">TownCenter</train>
@@ -17153,66 +17457,39 @@
 	<train row="255" column="255">WallLong</train>
 	<train row="2" column="2">SentryTower</train>
 	<train row="2" column="3">Fortress</train>
-	<train row="2" column="5">Wonder</train>
-	<train>TitanGate</train>
-	<train>GiantGateRam</train>
-	<train>DigPile</train>
-	<train>TrojanHorseBuilding</train>
-	<!-- Egyptian -->
-	<hotkeycontext>BuildEgyptianAccel</hotkeycontext>
-	<train row="0" column="0">House</train>
-	<train row="0" column="1">Granary</train>
-	<train row="0" column="2">MiningCamp</train>
-	<train row="0" column="3">LumberCamp</train>
-	<train row="0" column="4">Temple</train>
-	<train row="0" column="5">Dock</train>
-	<train row="1" column="0">MonumentToGods</train>
-	<train row="1" column="0">MonumentToPharaohs</train>
-	<train row="1" column="0">MonumentToPriests</train>
-	<train row="1" column="0">MonumentToSoldiers</train>
-	<train row="1" column="0">MonumentToVillagers</train>
-	<train row="1" column="1">Barracks</train>
-	<train row="1" column="2">SiegeWorks</train>
-	<train row="1" column="3">Farm</train>
-	<train row="1" column="4">Market</train>
-	<train row="1" column="5">Armory</train>
-	<train row="2" column="0">TownCenter</train>
-	<train row="255" column="0">VillageCenter</train>
-	<train row="2" column="1">WallConnector</train>
-	<train row="255" column="255">WallShort</train>
-	<train row="255" column="255">WallMedium</train>
-	<train row="255" column="255">WallLong</train>
-	<train row="2" column="2">SentryTower</train>
-	<train row="2" column="3">MigdolStronghold</train>
-	<train row="2" column="4">Lighthouse</train>
-	<train row="2" column="5">Wonder</train>
-	<train>Excavation</train>
-	<train>DigPile</train>
-	<train>TitanGate</train>
-	<!-- Norse -->
-	<hotkeycontext>BuildNorseAccel</hotkeycontext>
-	<train row="0" column="0">House</train>
-	<train row="0" column="1">OxCartBuilding</train>
-	<train row="1" column="3">Farm</train>
-	<train row="0" column="0">House</train>
-	<train row="0" column="4">Temple</train>
-	<train row="0" column="5">Dock</train>
+	<train row="2" column="5">Wonder</train>	
+
 	<train row="1" column="1">Longhouse</train>
 	<train row="1" column="2">GreatHall</train>
-	<train row="1" column="4">Market</train>
-	<train row="1" column="5">Armory</train>
 	<train row="1" column="5">DwarvenArmory</train>
-	<train row="2" column="0">TownCenter</train>
-	<train row="255" column="0">VillageCenter</train>
-	<train row="2" column="1">WallConnector</train>
-	<train row="255" column="255">WallShort</train>
-	<train row="255" column="255">WallMedium</train>
-	<train row="255" column="255">WallLong</train>
-	<train row="2" column="2">SentryTower</train>
 	<train row="2" column="3">HillFort</train>
-	<train row="2" column="5">Wonder</train>
-	<train>TitanGate</train>
-	<train>AsgardianHillFort</train>
+
+	<train row="1" column="1">Barracks</train>
+	<train row="1" column="2">SiegeWorks</train>
+	<train row="1" column="3">MonumentToGods</train>
+	<train row="1" column="3">MonumentToPharaohs</train>
+	<train row="1" column="3">MonumentToPriests</train>
+	<train row="1" column="3">MonumentToSoldiers</train>
+	<train row="1" column="3">MonumentToVillagers</train>
+	<train row="2" column="3">MigdolStronghold</train>
+	<train row="2" column="4">Lighthouse</train>
+
+	<train row="0" column="0">Manor</train>
+	<train row="1" column="1">MilitaryBarracks</train>
+	<train row="1" column="2">CounterBarracks</train>
+	<train row="2" column="3">Palace</train>
+	<train row="2" column="4">MirrorTower</train>
+	<train row="3" column="2">SkyPassage</train>
+
+	<train row="1" column="1">MilitaryCamp</train>
+	<train row="1" column="2">ImperialAcademy</train>
+	<train row="1" column="3">MachineWorkshop</train>
+	<train row="2" column="3">Baolei</train>
+
+	<train row="1" column="1">Dojo</train>
+	<train row="1" column="2">StableJapanese</train>
+	<train row="1" column="3">Guardhouse</train>
+	<train row="2" column="3">Castle</train>
 	
 	<tactics>mcmt_mr_wukong.tactics</tactics>
     <protoaction>

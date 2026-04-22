@@ -475,6 +475,8 @@
 - tree obscurity: pass-throgh+
 - increased resources: tree+, goldmine+
 - settlements: nonsolid
+- Chinese DLC: trees are reworked
+- Japanese DLC: trees are reworked
 
 15. Tech reworks from mcmt mod and new reworks
 - general
@@ -530,6 +532,7 @@
     - TechBuilding+
     - MageTower+
     - WarBunker+
+        - directprojectile
     - EcoMarket+
     - Bastion:
         - LandLord,TravelerOxWagon,Voltox,MobileFortress,E.A.P +
@@ -541,7 +544,7 @@
         - MatsuriYurio, MatsuriAzula (including godpowers)
 
     - AirCommand (damage aura)
-        - MrWukong+
+        - MrWukong+:
         - Kirovos Air Shark: Sharkbite Shells LMG (general purpose), Orichalcum Bombs (anti-building), Auto Targeting System (Lasers)
     - Bastion:
         - units+
@@ -660,6 +663,9 @@
     - Banish: active ability, sends mythunits to realm of chaos for 3s, divineattack
     - Gather: active ability, gathers favor on temple
 
+* Building
+- VisualScale: Dojo, Guardhouse, StableJapanese
+- Watermill: shore-restricted by default, upgradable to in-land
 
 * Special Unit
 - MCMT_HeadPriest: improved version of Abe-No-Seimei, old priest that likes teasing others
@@ -850,9 +856,74 @@
 
 - WallConnectorToCharger: transforms a connector to an offensive connector, ChuNoKu RangedAttack, AsuraFireBallLeft anim
     - WallConnectorCharger: offesive connector with a dependant attachment (Cheiroballista, AsuraFireBallLeft, AsuraFireBallRight, Toxotes etc.)
+
+26. Aztec Expansion
+- campaign heroes: access to myth techs, veterancy
+- tower upgrade: increase rof of sentrytower
+- spy: gains a sniper behavior and poison darts with techs
+- villager, mythunit and humansoldier: popcosts are reworked
+- god power costs free
+- display name: titan name, wonder names
+
+
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
+
+=== SPECIAL
+* Spawns
+RaftEgyptianArcher
+RaftNorseArcher
+RaftAtlanteanArcher
+RaftChineseArcher
+RaftJapaneseArcher
+RaftGreekArcher, RaftGreekArcherHero
+
+=== AZTEC
+* Custom Temple Names
+* Reworks
+Tunkuluchu: lure-kill, jump
+Ahuizothl: amphibious, include ships
+Soul Guide: special attack (scorch area), auxcharged transform axolotl offspring, infernal tech
+Chaneque: default anti-unit, turret anti-building
+Ayotochtli: zhquelanded special ability
+ObsidianButterfly: military tech upgrade
+CentonTotochin: frenzied tech, high rof, high maxvelocity, auxrecharge (abilityhonengyo), AbilityShogun (spawn phoenix egg while fighting, decay and explode)
+Tlacanexquimilli: corruption recharge, ghost tech
+Tzitzimitl: infernal tech, umibozu teleport
+
+LumberPost: damage scale by villager
+
+OldCoyoteSpirit: coyote warrior, coyote hero
+CuicacalliTraining: coyote hero
+
+ExplosivesAztec: Buildings, Ships, Chaneque, Tzitzimitl
+
+* Custom Units
+Jokul: Ability Gust, Ability Tempest, hackarmor+
+Eitri:
+    mjolnir tech -> replace Eitri with EitriHammer mjolnir weapon visual upgrade,
+    EitriHammer: raiju special attack
+
+Gods
+    Quetzalcoatl (flying), Quetzalcoatl (hero)
+    Teixiptla / Incarnate: 
+        TeixiptlaHuitz, TeixiptlaTezca, TeixiptlaQuetz / SuperTeixiptlaHuitz, CheatSuperTeixiptlaHuitz, SuperTeixiptlaTezca, CheatSuperTeixiptlaTezca, SuperTeixiptlaQuetz, CheatSuperTeixiptlaQuetz
+    Huitzilopochtli 
+    Tezcatlilopa
+
+Iztaccihuatl
+    warrior techs
+Tlacaelel
+    warrior tech, warriorpriest
+Itzcoatl
+    jaguar techs
+Popocatepetl
+    scout techs
+
+
+PantherWarrior: tezca model, siegeunit
+BullWarrior: Kamina model, Kamos model
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
@@ -866,50 +937,18 @@
 * caladrialanded -> icarus & servant of kronos anim, handattack
 * pegasus -> pegasus anim, bellerophon_horse anim
 
-=== TV SERIES
+=== AZTEC
+* General: Units, Abilities, LineUpgrades, Buildings, Techs, VisualScales (Building, Giant, Ship)
+* Bunnies: 
+* Campaign Units
+* Armory Techs: Dismount, Explosives, Spawn 
+* Encampment
+
+=== MEDIA
 * luffy: militia / prodromos_rider -> promethean_attack_a, promethean_attack_b, shinobi_wan_kenobi_attack_b, avenger_whirlwindattack_a 
 * alvida: miko -> oni club
 * zorro: chiyou -> 4x katana, 
 * mihawk: samurai, throw, ranged slash
-
-=== AZTEC
-* General: Units, Abilities, LineUpgrades, Buildings, Techs, VisualScales (Building, Giant, Ship)
-* Bunnies: Shogun Ability (spawn phoenix egg while fighting, decay and explode)
-* Campaign Units
-* Godpower Cost
-* Armory Techs: Dismount, Explosives, Spawn 
-* Encampment
-
-=== JAPANESE        
-- Dojo, Guardhouse, Stable: visualscale
-
-* ATTACK SWITCH TECHS
-    * Samurai
-    - DefaultStance
-    - HeavyStance: rof-, hackattack+, divineattack 1
-    * Shinobi
-    - DefaultStance
-    - AssassinationStance: rof+, bonus humansoldier, nerf mythunit, hero   
-
-* God Power
-    - SolarShield: Unit -> Building
-* Nature
-    - resource rework, obscurion (japanese and chinese trees)
-
-* Special: include japanese among effects
-- ChampionArms, ChampionHooves, ChampionEngines, ChampionRangers
-- PhobosSpearOfPanicMk2: japanese spear units
-- DeimosSwordOfDreadMk2: japanese sword and blade units
-- EnyosBowOfHorrorMk2: japanese archer units
-- Mjolnir: japanese heavy blunt weapon units
-- Aegis: japanese shield units
-- VibrantLandMk2: shrine, shrineofhunt, plenty, monumenttovillagers, hesperidestree
-
-- MrWukong: VillagerJapanese Accel
-- LandLord: sfx non-norse civilizations
-
-- WarBunker: directprojectile
-- Temple: tech based name update -> temple of the sun, temple of the moon, temple of the tempest
 
 === New Unit Models - Custom Mesh
 Horse + ChuKoNu + Arbalest
