@@ -871,8 +871,34 @@
 ==============================================================================
 
 tech replace reworks
-    demeter+
     general
+    greek
+        demeter+
+        legacy
+    egyptian
+        protagonist
+        humansoldier
+        naval
+        myth
+    norse
+    atlantean
+    chinese
+    japanese
+        majorgod
+        minorgod
+        mythunit
+    aztec
+        humansoldier
+        myth
+
+building names
+    temple
+    wonder
+
+archaicage
+classicalage
+heroicage
+mythicage
 
 === SPECIAL
 * Spawns
