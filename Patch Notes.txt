@@ -870,11 +870,11 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
-tech replace reworks
+* tech replace reworks
     general
     greek
         demeter+
-        legacy
+        legacy+
     egyptian
         protagonist
         humansoldier
@@ -899,6 +899,18 @@ archaicage
 classicalage
 heroicage
 mythicage
+
+* additional reworks
+aztec techs
+    add thornedwall container
+non-aztec
+    ElvenEncampment: add stealth
+greek
+    survivalequiment: villager gatherberry recover hp
+    arcadianmeadow: villager maxvelocity +5%
+    hippocampus (lordofthehorses): fishingship maxvelocity +5%, gather rate +5%
+atlantean
+    hesperidestree: armorsmith area, hamadryad
 
 === SPECIAL
 * Spawns

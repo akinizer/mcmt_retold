@@ -5376,79 +5376,48 @@
   <!-- TECH REWORKS -->
 
   <!-- General - Techs -->
-  <tech name="Omniscience" mergeMode="replace">
-    <displaynameid>STR_TECH_OMNISCIENCE_NAME</displaynameid>
-    <rollovertextid>STR_TECH_OMNISCIENCE_LR</rollovertextid>
-    <cost resourcetype="Gold">100.0000</cost>
-    <researchpoints>4.0000</researchpoints>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\shared\static_color\technologies\omniscience_icon.png</icon>
-    <flag>CountsTowardMilitaryScore</flag>
-    <flag>DynamicCost</flag>
+  <tech name="Omniscience">
     <effects>
-      <effect all="true" type="SharedLOS"></effect>
-       <effect type="Data" amount="1.00" subtype="RevealEnemyUI" relativity="Absolute">
+      <effect type="Data" amount="1.00" subtype="RevealEnemyUI" relativity="Absolute" mergeMode="add">
         <target type="Player"></target></effect>
-      <effect type="Data" amount="1.00" subtype="RevealAllyUI" relativity="Absolute">
+      <effect type="Data" amount="1.00" subtype="RevealAllyUI" relativity="Absolute" mergeMode="add">
         <target type="Player"></target></effect>
     </effects>
   </tech>
-  <tech name="Crenellations" mergeMode="add">
-    <displaynameid>STR_TECH_CRENELLATIONS_NAME</displaynameid>
-    <rollovertextid>STR_TECH_CRENELLATIONS_LR</rollovertextid>
-    <cost resourcetype="Food">150.0000</cost>
-    <cost resourcetype="Wood">150.0000</cost>
-    <researchpoints>20.0000</researchpoints>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\shared\static_color\technologies\crenellations_icon.png</icon>
-    <flag>CountsTowardMilitaryScore</flag>
-    <prereqs>
-      <techstatus status="Active">WatchTower</techstatus>
-    </prereqs>
+  <tech name="Crenellations">
     <effects>
-      <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">AbstractTower</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">AbstractTower</target>
-      </effect>
-      <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">AbstractTower</target>
-      </effect>
+      <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Building</target></effect>			
+      <!---->
+      <effect type="Data" allactions="1" amount="0.50" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractTower</target></effect>
 	  
-	  <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
+	    <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractFortress</target></effect>
       <effect type="Data" action="RangedAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
+        <target type="ProtoUnit">AbstractFortress</target></effect>
       <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">AbstractFortress</target>
-      </effect>
+        <target type="ProtoUnit">AbstractFortress</target></effect>
 	  
-	  <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add"> 
-        <target type="ProtoUnit">AbstractTownCenter</target>
-      </effect>
+	    <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add"> 
+        <target type="ProtoUnit">AbstractTownCenter</target></effect>
       <effect type="Data" action="RangedAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">AbstractTownCenter</target>
-      </effect>
+        <target type="ProtoUnit">AbstractTownCenter</target></effect>
       <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">AbstractTownCenter</target>
-      </effect>
+        <target type="ProtoUnit">AbstractTownCenter</target></effect>
     </effects>
   </tech>
-  <tech name="Ballistics" mergeMode="add">
-    <displaynameid>STR_TECH_BALLISTICS_NAME</displaynameid>
-    <rollovertextid>STR_TECH_BALLISTICS_LR</rollovertextid>
-    <cost resourcetype="Wood">200.0000</cost>
-    <cost resourcetype="Gold">200.0000</cost>
-    <researchpoints>50.0000</researchpoints>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\shared\static_color\technologies\ballistics_icon.png</icon>
-    <flag>CountsTowardMilitaryScore</flag>
-    <techtype>ArmoryTechnology</techtype>
-    <techage>HeroicAge</techage>
-    <effects>
+  <tech name="Ballistics">
+    <effects>      
+      <effect type="Data" action="RangedAttack" amount="3.0" subtype="Trackrating" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Hero</target></effect>
+      <effect type="Data" action="RangedAttackFlying" amount="3.0" subtype="Trackrating" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Hero</target></effect>
+      <!---->
+      <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Hero</target></effect>
+      <effect type="Data" action="RangedAttackFlying" amount="99.0" subtype="Trackrating" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Hero</target></effect>
       <effect type="Data" action="ChargedRangedAttack" amount="99.0" subtype="Trackrating" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Hero</target></effect>
       <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign" mergeMode="add">
@@ -5458,107 +5427,91 @@
       <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">AbstractTownCenter</target></effect>
 
-      <effect type="Data" action="RangedAttack" amount="5.00" subtype="Damagebonus" unittype="AbstractScout" relativity="Absolute"><target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="Data" action="RangedAttack" amount="5.00" subtype="Damagebonus" unittype="AbstractScout" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+
+      <effect type="Data" amount="5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ProjectileArrow</target></effect>
+			<effect type="Data" amount="5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ProjectileArrowFlaming</target></effect>
     </effects>
   </tech>
-  <tech name="FortifiedTownCenter" mergeMode="add">
+  <tech name="FortifiedTownCenter">
     <effects>
-        <effect type="Data" amount="1.50" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-          <target type="ProtoUnit">VillageCenter</target>
-        </effect>
-        <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">VillageCenter</target>
-        </effect>
-        <effect type="Data" action="RangedAttack" amount="1.50" subtype="Damage" relativity="BasePercent" mergeMode="add">
-          <target type="ProtoUnit">VillageCenter</target>
-        </effect>
-      <effect type="Data" action="RangedAttack" amount="0.66" subtype="RoF" relativity="BasePercent" mergeMode="add">
-          <target type="ProtoUnit">VillageCenter</target>
-      </effect>
+      <effect type="Data" amount="1.50" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">VillageCenter</target></effect>
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">VillageCenter</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.50" subtype="Damage" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">VillageCenter</target></effect>
+      <effect type="Data" action="RangedAttack" amount="0.66" subtype="RateOfFire" relativity="BasePercent" mergeMode="add">
+          <target type="ProtoUnit">VillageCenter</target></effect>
 
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">AbstractWall</target>
-      </effect>
+        <target type="ProtoUnit">AbstractWall</target></effect>
     </effects>
   </tech>
-  <tech name="Masons" mergeMode="replace">
-    <displaynameid>STR_TECH_MASONS_NAME</displaynameid>
-    <rollovertextid>STR_TECH_MASONS_LR</rollovertextid>
-    <cost resourcetype="Food">200.0000</cost>
-    <cost resourcetype="Wood">300.0000</cost>
-    <researchpoints>20.0000</researchpoints>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\shared\static_color\technologies\masons_icon.png</icon>
-    <flag>CountsTowardMilitaryScore</flag>
+  <tech name="Masons">
     <effects>
-      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Building</target>
-      </effect>
-      <effect type="Data" amount="0.85" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">LogicalTypeUnitIsConstructed</target>
-      </effect>
-      <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
-        <target type="ProtoUnit">Building</target>
-      </effect>
-      <effect type="Data" amount="-0.30" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
-        <target type="ProtoUnit">Building</target>
-      </effect>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">Building</target></effect>
+			<effect type="Data" amount="0.8" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">LogicalTypeUnitIsConstructed</target></effect>
+      <!---->
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Building</target></effect>
+      <effect type="Data" amount="0.85" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">LogicalTypeUnitIsConstructed</target></effect>
+      <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">Building</target></effect>
+      <effect type="Data" amount="-0.30" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">Building</target></effect>
     </effects>
   </tech>
-  <tech name="Architects" mergeMode="replace">
-    <displaynameid>STR_TECH_ARCHITECTS_NAME</displaynameid>
-    <rollovertextid>STR_TECH_ARCHITECTS_LR</rollovertextid>
-    <cost resourcetype="Food">400.0000</cost>
-    <cost resourcetype="Wood">500.0000</cost>
-    <researchpoints>30.0000</researchpoints>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\shared\static_color\technologies\architects_icon.png</icon>
-    <flag>CountsTowardMilitaryScore</flag>
-    <prereqs>
-      <techstatus status="Active">Masons</techstatus>
-    </prereqs>
+  <tech name="Architects">
     <effects>
-      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Building</target>
-      </effect>
-      <effect type="Data" amount="0.80" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">LogicalTypeUnitIsConstructed</target>
-      </effect>
-      <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
-        <target type="ProtoUnit">Building</target>
-      </effect>
-      <effect type="Data" amount="-0.30" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
-        <target type="ProtoUnit">Building</target>
-      </effect>
+      <effect type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">Building</target></effect>
+			<effect type="Data" amount="0.70" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">LogicalTypeUnitIsConstructed</target></effect>
+      <!---->
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Building</target></effect>
+      <effect type="Data" amount="0.80" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">LogicalTypeUnitIsConstructed</target></effect>
+      <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">Building</target></effect>
+      <effect type="Data" amount="-0.30" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">Building</target></effect>
     </effects>
   </tech>  
-  <tech name="WatchTower" mergeMode="add">
+  <tech name="WatchTower">
     <effects>
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileBallistaShot" relativity="Assign">
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileBallistaShot" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>
-  <tech name="GuardTower" mergeMode="add">
+  <tech name="GuardTower">
     <effects>
-      <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute">
+      <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileCatapultShot" relativity="Assign">
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileCatapultShot" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>
-  <tech name="BallistaTower" mergeMode="add">
+  <tech name="BallistaTower">
     <effects>
-      <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute">
+      <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileHamadryadSpike" relativity="Assign">
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileHamadryadSpike" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>
-  <tech name="CrossbowTower" mergeMode="add">
+  <tech name="CrossbowTower">
     <effects>
-      <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute">
+      <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileHamadryadSpike" relativity="Assign">
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileHamadryadSpike" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>
@@ -5568,88 +5521,81 @@
 				<target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>
-  <tech name="SecretsOfTheTitans" mergeMode="replace">
-    <displaynameid>STR_TECH_SECRETS_OF_THE_TITANS_NAME</displaynameid>
-    <rollovertextid>STR_TECH_SECRETS_OF_THE_TITANS_LR</rollovertextid>
-    <cost resourcetype="Food">800.0000</cost>
-    <cost resourcetype="Wood">800.0000</cost>
-    <cost resourcetype="Gold">800.0000</cost>
-    <cost resourcetype="Favor">50.0000</cost>
-    <researchpoints>60.0000</researchpoints>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\shared\static_color\technologies\secrets_of_the_titans_icon.png</icon>
-    <flag>CountsTowardEconomicScore</flag>
-    <flag>ExcludeFromKBCostTracking</flag>
-    <flag>Titans</flag>
+  <tech name="SecretsOfTheTitans">
     <effects>
-      <effect type="Data" subtype="GodPower" power="TitanGate" amount="1.0" relativity="Absolute">
-        <target type="Player"></target></effect>
-      <effect type="TechStatus" status="obtainable">WonderAgeTitan</effect>
-
-      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
-      <effect type="Data" amount="1.10" subtype="Damage" action="HandAttack" relativity="BasePercent">
+      <effect type="Data" amount="1.10" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
-      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent">
+      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
     </effects>
   </tech>
-  <tech name="BurningPitch" mergeMode="replace">
-    <displaynameid>STR_TECH_BURNING_PITCH_NAME</displaynameid>
-    <rollovertextid>STR_TECH_BURNING_PITCH_LR</rollovertextid>
-    <cost resourcetype="Wood">500.0000</cost>
-    <cost resourcetype="Gold">300.0000</cost>
-    <researchpoints>40.0000</researchpoints>
-    <status>UNOBTAINABLE</status>
-    <icon>resources\shared\static_color\technologies\burning_pitch_icon.png</icon>
-    <flag>CountsTowardMilitaryScore</flag>
-    <techtype>ArmoryTechnology</techtype>
-    <techage>MythicAge</techage>
+  <tech name="BurningPitch">
     <effects>
+      <!-- Old Effects Removed -->
+      <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractArcher</target></effect>
+			<effect type="Data" action="RangedAttack" amount="-2.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">ThrowingAxeman</target></effect>
+			<effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractArcherShip</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.50" subtype="Damagebonus" unittype="Ship" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractArcher</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractArcherShip</target></effect>
+			<effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Centaur</target></effect>
+			<effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Medusa</target></effect>
+			<effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Satyr</target></effect>
+			<effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Draugr</target></effect>
       <!-- Archers -->
-      <effect type="Data" action="RangedAttack" amount="0.15" subtype="Damagebonus" unittype="Building" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="0.15" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
-      <effect type="Data" action="RangedAttack" amount="0.30" subtype="Damagebonus" unittype="Ship" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="0.30" subtype="Damagebonus" unittype="Ship" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
-      <effect type="Data" action="RangedAttack" amount="0.30" subtype="Damagebonus" unittype="AbstractSiegeWeapon" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="0.30" subtype="Damagebonus" unittype="AbstractSiegeWeapon" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
       
       <!-- Exclusive Archers -->
-      <effect type="Data" action="RangedAttack" amount="1.15" subtype="Damage" relativity="BasePercent">
+      <effect type="Data" action="RangedAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">AbstractArcherShip</target></effect>
-      <effect type="Data" action="RangedAttack" amount="5.0" subtype="MaximumRange" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="5.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">FireArcher</target></effect>
       
       <!-- Siege Archers -->
-      <effect type="Data" action="RangedAttack" amount="1.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Ballista</target></effect>
-      <effect type="Data" action="RangedAttack" amount="1.00" subtype="Damagebonus" unittype="Building" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">SiegeCrossbow</target></effect>
 
       <!-- Towers Archers -->
-      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">AbstractTower</target></effect>
-      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">AbstractFortress</target></effect>
 
       <!-- Workers Hunters -->
-      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="AnimalOfSet" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="Damagebonus" unittype="AnimalOfSet" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">AbstractVillager</target></effect>
 
       <!-- Burn -->
-      <effect type="Data" amount="0.10" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Building" dmgtype="Divine" relativity="Assign">
+      <effect type="Data" amount="0.10" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Building" dmgtype="Divine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
-      <effect type="Data" amount="0.10" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Ship" dmgtype="Divine" relativity="Assign">
+      <effect type="Data" amount="0.10" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Ship" dmgtype="Divine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
-      <effect type="Data" amount="0.10" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="AbstractSiegeWeapon" dmgtype="Divine" relativity="Assign">
+      <effect type="Data" amount="0.10" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="AbstractSiegeWeapon" dmgtype="Divine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
 
       <!-- VFXFire -->
-      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Building" proto="VFXFire" relativity="Assign">
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Building" proto="VFXFire" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>            
-      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Ship" proto="VFXFire" relativity="Assign">
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Ship" proto="VFXFire" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>            
-      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="AbstractSiegeWeapon" proto="VFXFire" relativity="Assign">
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="AbstractSiegeWeapon" proto="VFXFire" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>            
     </effects>
   </tech>  
