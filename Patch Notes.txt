@@ -871,6 +871,8 @@
 ==============================================================================
 
 tech replace reworks
+    demeter+
+    general
 
 === SPECIAL
 * Spawns

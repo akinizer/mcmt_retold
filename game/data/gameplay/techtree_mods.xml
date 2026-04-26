@@ -5373,156 +5373,124 @@
     </effects>
   </tech>
 
-    <!-- TECH REWORKS -->
+  <!-- TECH REWORKS -->
 
-    <!-- Greek -->
-    <tech name="PredatoryInstinct">
-      <effects>
-        <!-- Clear Existing Effects to Avoid Duplication -->
-        <effect type="Data" amount="2.00" subtype="Damage" action="HandAttack" damagetype="Hack" relativity="Absolute" mergeMode="remove">
-          <target type="ProtoUnit">LykaonWolf</target></effect>
-        <effect type="Data" amount="1.0833333" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="remove">
-				  <target type="ProtoUnit">LykaonWolf</target></effect>
-        <!-- Base Improvements -->
-        <effect type="Data" amount="5.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">LykaonWolf</target></effect>
-        <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
-          <target type="ProtoUnit">LykaonWolf</target></effect>
-        <!-- New Ability -->
-        <effect type="Data" action="FeralInfectionAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">LykaonWolf</target></effect>
-        <!-- Alpha Unit -->
-        <effect type="Data" amount="8.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">KingLycaon</target></effect>
-        <effect type="Data" amount="12.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">KingLycaon</target></effect>
-        <effect type="Data" action="HandAttack" amount="0.75" subtype="RateOfFire" relativity="Percent" mergeMode="add">
-          <target type="ProtoUnit">KingLycaon</target></effect>
-        <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
-          <target type="ProtoUnit">KingLycaon</target></effect>
-      </effects>
-    </tech>
-    <tech name="FatedArrows" orderhint="4" mergeMode="replace">
-      <displaynameid>STR_TECH_FATED_ARROWS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_FATED_ARROWS_LR</rollovertextid>
-      <cost resourcetype="Food">300.0000</cost>
-      <cost resourcetype="Favor">30.0000</cost>
-      <researchpoints>40.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\greek_demeter\static_color\technologies\fated_arrows_icon.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <effects>
-        <effect type="Data" amount="2.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute">
-          <target type="ProtoUnit">AbstractArcher</target></effect>
-        <effect type="Data" amount="3.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute">
-          <target type="ProtoUnit">MythUnit</target></effect>
-        <effect type="Data" amount="8.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute">
-          <target type="ProtoUnit">Hero</target></effect>
+  <!-- Greek -->
+  <tech name="PredatoryInstinct">
+    <effects>
+      <!-- Clear Existing Effects to Avoid Duplication -->
+      <effect type="Data" amount="2.00" subtype="Damage" action="HandAttack" damagetype="Hack" relativity="Absolute" mergeMode="remove">
+        <target type="ProtoUnit">LykaonWolf</target></effect>
+      <effect type="Data" amount="1.0833333" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="remove">
+        <target type="ProtoUnit">LykaonWolf</target></effect>
+      <!-- Base Improvements -->
+      <effect type="Data" amount="5.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">LykaonWolf</target></effect>
+      <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">LykaonWolf</target></effect>
+      <!-- New Ability -->
+      <effect type="Data" action="FeralInfectionAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">LykaonWolf</target></effect>
+      <!-- Alpha Unit -->
+      <effect type="Data" amount="8.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">KingLycaon</target></effect>
+      <effect type="Data" amount="12.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">KingLycaon</target></effect>
+      <effect type="Data" action="HandAttack" amount="0.75" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">KingLycaon</target></effect>
+      <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">KingLycaon</target></effect>
+    </effects>
+  </tech>
+  <tech name="FatedArrows">
+    <effects>
+      <effect type="Data" amount="2.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractArcher</target></effect>
+			<effect type="Data" amount="2.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Medusa</target></effect>
+			<effect type="Data" amount="2.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AmazonArcher</target></effect>
 
-        <effect type="Data" action="SonicBlastAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
-          <target type="ProtoUnit">Orpheus</target></effect>
-        <effect type="Data" action="SonicBlastAttackFlying" amount="1.00" subtype="ActionEnable" relativity="Absolute">
-          <target type="ProtoUnit">Orpheus</target></effect>
-      </effects>
-    </tech>
-    <tech name="ThornedWalls" orderhint="4" mergeMode="replace">
-      <displaynameid>STR_TECH_THORNED_WALLS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_THORNED_WALLS_LR</rollovertextid>
-      <cost resourcetype="Wood">150.0000</cost>
-      <cost resourcetype="Favor">15.0000</cost>
-      <researchpoints>40.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\greek_demeter\static_color\technologies\thorned_walls_icon.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <techtype>MythTechDefensive</techtype>
-      <effects>
-        <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign">
-          <target type="ProtoUnit">AbstractWall</target></effect>
-        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasReflectAttack" relativity="Absolute">
-          <target type="ProtoUnit">AbstractWall</target></effect>
-        <effect type="Data" amount="3.00" subtype="Damage" damagetype="Hack" action="ThornedWallsAttack" relativity="Absolute">
-          <target type="ProtoUnit">AbstractWall</target></effect>
-        <effect type="Data" amount="1.00" subtype="UnitRegenRate" relativity="Absolute">
-          <target type="ProtoUnit">AbstractWall</target></effect>
-        <effect type="Data" amount="0.80" subtype="UnitRegenRate" relativity="Absolute">
-          <target type="ProtoUnit">Hamadryad</target></effect>
-      </effects>
-    </tech>
-    <tech name="DivineLabor" orderhint="4" mergeMode="add">
-      <effects>
-        <effect type="Data" amount="18.00" subtype="DropoffHeal" relativity="Absolute">
-          <target type="ProtoUnit">AbstractDwarf</target></effect>
-      </effects>
-    </tech>
-    <tech name="PansPioneers" orderhint="4" mergeMode="replace">
-      <displaynameid>STR_TECH_PANS_PIONEERS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_PANS_PIONEERS_LR</rollovertextid>
-      <cost resourcetype="Gold">100.0000</cost>
-      <cost resourcetype="Favor">15.0000</cost>
-      <researchpoints>20.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\greek_demeter\static_color\technologies\pans_pioneers_icon.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <!-- Spawn of Build VillageCenter -->
-      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Build" proto="LykaonVillager" relativity="Absolute">
+      <effect type="Data" amount="3.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+      <effect type="Data" amount="5.00" subtype="NumberBounces" action="RangedAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Hero</target></effect>
+
+      <effect type="Data" action="SonicBlastAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Orpheus</target></effect>
+      <effect type="Data" action="SonicBlastAttackFlying" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Orpheus</target></effect>
+    </effects>
+  </tech>
+  <tech name="ThornedWalls">
+    <effects>   
+      <effect type="Data" amount="1.00" subtype="UnitRegenRate" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractWall</target></effect>
+      <effect type="Data" amount="0.80" subtype="UnitRegenRate" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Hamadryad</target></effect>
+    </effects>
+  </tech>
+  <tech name="DivineLabor">
+    <effects>
+      <effect type="Data" amount="18.00" subtype="DropoffHeal" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractDwarf</target></effect>
+    </effects>
+  </tech>
+  <tech name="PansPioneers">
+    <effects>
+      <!-- Spawn of Build VillageCenter -->     
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Build" proto="PansChosen" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">VillageCenter</target></effect>
-      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Build" proto="PansChosen" relativity="Absolute">
-        <target type="ProtoUnit">VillageCenter</target></effect>
-      <!-- Spawn of Build TownCenter -->
-      <effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Build" proto="LykaonVillager" relativity="Absolute">
+      <!-- Spawn of Build TownCenter -->    
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Build" proto="PansChosen" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">TownCenter</target></effect>
-      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Build" proto="PansChosen" relativity="Absolute">
-        <target type="ProtoUnit">TownCenter</target></effect>
-    </tech>
-    <tech name="HallowedWoodlands" orderhint="4" mergeMode="add">
-      <effects>
-        <effect type="Data" action="DelayedHamadryadTransform" amount="1.0" subtype="ActionEnable" relativity="Absolute">
-          <target type="ProtoUnit">Hamadryad</target></effect>
-        <effect type="Data" action="DelayedHamadryadTransform" amount="1.0" subtype="ActionEnable" relativity="Absolute">
-          <target type="ProtoUnit">MirageTank</target></effect>
-      </effects>
-    </tech>
-    <tech name="SacredLand" orderhint="4" mergeMode="add">
-      <effects>
-        <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign">
-          <target type="ProtoUnit">AbstractFarm</target></effect>
-        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasReflectAttack" relativity="Absolute">
-          <target type="ProtoUnit">AbstractFarm</target></effect>
-        <effect type="Data" amount="3.00" subtype="Damage" damagetype="Hack" action="ThornedWallsAttack" relativity="Absolute">
-          <target type="ProtoUnit">AbstractFarm</target></effect>
-      </effects>
-    </tech>
-    <tech name="PiousSacrifice" orderhint="4" mergeMode="add">
-      <effects>
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Wretch" chance="0.40" relativity="Assign">
-          <target type="ProtoUnit">HumanSoldier</target></effect>
-      </effects>
-    </tech>
-    <tech name="EnchantedHymn" orderhint="4" mergeMode="add">
-      <effects>
-        <effect type="Data" action="DamageBonusVsMyth" amount="2.5" subtype="MaximumRange" relativity="Absolute">
-          <target type="ProtoUnit">Orpheus</target></effect>
-        <effect type="Data" action="AreaHeal" amount="1.00" subtype="ActionEnable" relativity="Absolute">
-          <target type="ProtoUnit">Orpheus</target></effect>
-      </effects>
-    </tech>
-    <tech name="NepheleanHarpy" orderhint="4" mergeMode="add">
-      <effects>
-        <effect type="Data" amount="2.0" subtype="OnHitEffect" action="Abduct" effecttype="DamageOverTime" duration="6.00" targettype="Unit" relativity="Assign">
-          <target type="ProtoUnit">HarpyMyth</target></effect>
-        <effect type="Data" amount="1.0" subtype="OnHitEffect" action="Abduct" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXBleed" relativity="Assign">
-          <target type="ProtoUnit">HarpyMyth</target></effect>
+    </effects>
+  </tech>
+  <tech name="HallowedWoodlands">
+    <effects>
+      <effect type="Data" action="DelayedHamadryadTransform" amount="1.0" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Hamadryad</target></effect>
+      <effect type="Data" action="DelayedHamadryadTransform" amount="1.0" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">MirageTank</target></effect>
+    </effects>
+  </tech>
+  <tech name="SacredLand">
+    <effects>
+      <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractFarm</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasReflectAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractFarm</target></effect>
+      <effect type="Data" amount="3.00" subtype="Damage" damagetype="Hack" action="ThornedWallsAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractFarm</target></effect>
+    </effects>
+  </tech>
+  <tech name="PiousSacrifice">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Wretch" chance="0.40" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="EnchantedHymn">
+    <effects>
+      <effect type="Data" action="DamageBonusVsMyth" amount="2.5" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Orpheus</target></effect>
+      <effect type="Data" action="AreaHeal" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Orpheus</target></effect>
+    </effects>
+  </tech>
+  <tech name="NepheleanHarpy">
+    <effects>
+      <effect type="Data" amount="6.0" subtype="OnHitEffect" action="Abduct" effecttype="DamageOverTime" duration="6.00" targettype="Unit" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">HarpyMyth</target></effect>
+      <effect type="Data" amount="1.0" subtype="OnHitEffect" action="Abduct" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXBleed" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">HarpyMyth</target></effect>
 
-        <effect type="Data" amount="2.0" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="3.00" targettype="Unit" relativity="Assign">
-          <target type="ProtoUnit">Icarus</target></effect>
-        <effect type="Data" amount="1.0" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="3.00" targettype="Unit" proto="VFXBleed" relativity="Assign">
-          <target type="ProtoUnit">Icarus</target></effect>
-      </effects>
-    </tech>
-
+      <effect type="Data" amount="6.0" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="3.00" targettype="Unit" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Icarus</target></effect>
+      <effect type="Data" amount="1.0" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="3.00" targettype="Unit" proto="VFXBleed" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Icarus</target></effect>
+    </effects>
+  </tech>
 
   <!-- General - Techs -->
   <tech name="Omniscience" mergeMode="replace">
