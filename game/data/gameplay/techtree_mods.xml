@@ -31,6 +31,9 @@
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsAtlantean" row="3" column="1" relativity="Assign">
           <target type="ProtoUnit">Armory</target></effect>	
 
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>
+
         <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
@@ -39,6 +42,13 @@
 
     <tech name="ArchaicAgeGreek">
       <effects>        
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="Data" amount="1.25" subtype="ObstructionRadiusX" relativity="BasePercent">
+          <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="Data" amount="1.25" subtype="ObstructionRadiusZ" relativity="BasePercent">
+          <target type="ProtoUnit">TownCenter</target></effect>
+
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AmazonVanguards</effect>
 
         <effect type="SetName" proto="TownCenter" newname="STR_BLD_PARTHENON_NAME" newrollover="STR_BLD_PARTHENON_LR" newshortrollover="STR_BLD_PARTHENON_SR"></effect>
@@ -71,6 +81,13 @@
     </tech>
     <tech name="ArchaicAgeNorse">
       <effects>        
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+          <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="Data" amount="1.25" subtype="ObstructionRadiusX" relativity="BasePercent">
+          <target type="ProtoUnit">TownCenter</target></effect>
+        <effect type="Data" amount="1.25" subtype="ObstructionRadiusZ" relativity="BasePercent">
+          <target type="ProtoUnit">TownCenter</target></effect>
+          
         <effect type="SetName" proto="TownCenter" newname="STR_BLD_JARLSMANOR_NAME" newrollover="STR_BLD_JARLSMANOR_LR" newshortrollover="STR_BLD_JARLSMANOR_SR"></effect>
         <effect type="Data" action="RangedAttack" amount="0.00" subtype="ActionEnable" relativity="Assign">
 				  <target type="ProtoUnit">TownCenter</target></effect>
@@ -5359,26 +5376,17 @@
     <!-- TECH REWORKS -->
 
     <!-- Greek -->
-    <tech name="PredatoryInstinct" orderhint="4" mergeMode="replace">
-      <displaynameid>STR_TECH_PREDATORY_INSTINCT_NAME</displaynameid>
-      <rollovertextid>STR_TECH_PREDATORY_INSTINCT_LR</rollovertextid>
-      <cost resourcetype="Food">300.0000</cost>
-      <cost resourcetype="Favor">20.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\greek_demeter\static_color\technologies\predatory_instinct_icon.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <techtype>MythUnitUpgrade</techtype>
+    <tech name="PredatoryInstinct">
       <effects>
+        <!-- Base Improvements -->
         <effect type="Data" amount="5.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
           <target type="ProtoUnit">LykaonWolf</target></effect>
         <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
           <target type="ProtoUnit">LykaonWolf</target></effect>
-
+        <!-- New Ability -->
         <effect type="Data" action="FeralInfectionAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
           <target type="ProtoUnit">LykaonWolf</target></effect>
-        
+        <!-- Alpha Unit -->
         <effect type="Data" amount="8.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
           <target type="ProtoUnit">KingLycaon</target></effect>
         <effect type="Data" amount="12.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute">
@@ -5387,9 +5395,6 @@
           <target type="ProtoUnit">KingLycaon</target></effect>
         <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
           <target type="ProtoUnit">KingLycaon</target></effect>
-        
-        <effect type="SetName" proto="LykaonWolf" newname="STR_UNIT_ALPHA_LYKAON_WOLF_NAME"></effect>
-        <effect type="SetName" proto="LykaonVillager" newname="STR_UNIT_ALPHA_LYKAON_VILLAGER_NAME"></effect>
       </effects>
     </tech>
     <tech name="FatedArrows" orderhint="4" mergeMode="replace">
@@ -5470,7 +5475,9 @@
     <tech name="HallowedWoodlands" orderhint="4" mergeMode="add">
       <effects>
         <effect type="Data" action="DelayedHamadryadTransform" amount="1.0" subtype="ActionEnable" relativity="Absolute">
-        <target type="ProtoUnit">MirageTank</target></effect>
+          <target type="ProtoUnit">Hamadryad</target></effect>
+        <effect type="Data" action="DelayedHamadryadTransform" amount="1.0" subtype="ActionEnable" relativity="Absolute">
+          <target type="ProtoUnit">MirageTank</target></effect>
       </effects>
     </tech>
     <tech name="SacredLand" orderhint="4" mergeMode="add">

@@ -5369,6 +5369,96 @@
 	</animxml>
 
 	<!-- greek unit reworks -->
+	<animxml file="greek\units\hero\achilles\achilles.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>JumpFly</name>
+				<versioncount>3</versioncount>
+				<versions>
+					<version>
+						<file>greek\units\hero\bellerophon\anim\bellerophon_horse_jumptakeoff_a</file>
+						<duration>0.56667</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.01000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+					<version>
+						<file>greek\units\hero\bellerophon\anim\bellerophon_horse_jumpattack_a</file>
+						<duration>0.56667</duration>
+					</version>
+					<version>
+						<file>greek\units\hero\bellerophon\anim\bellerophon_horse_jumpland_a</file>
+						<duration>1.00000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.10000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>HeavyFall</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.10000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.10000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>GruntMaleCavalry</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+	<animxml file="greek\units\hero\achilles\achilles_rider.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>JumpFly</name>
+				<versioncount>3</versioncount>
+				<versions>
+					<version>
+						<file>greek\units\hero\bellerophon\anim\bellerophon_jumptakeoff_a</file>
+						<duration>0.56667</duration>
+					</version>
+					<version>
+						<file>greek\units\hero\bellerophon\anim\bellerophon_jumpattack_a</file>
+						<duration>0.56667</duration>
+					</version>
+					<version>
+						<file>greek\units\hero\bellerophon\anim\bellerophon_jumpland_a</file>
+						<duration>1.00000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.50000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 	<animxml file="greek\units\myth\manticore\manticore.xml">		
 		<animations>
 			<animinfo mergeMode="add">
