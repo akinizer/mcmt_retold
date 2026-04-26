@@ -5378,22 +5378,27 @@
     <!-- Greek -->
     <tech name="PredatoryInstinct">
       <effects>
-        <!-- Base Improvements -->
-        <effect type="Data" amount="5.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+        <!-- Clear Existing Effects to Avoid Duplication -->
+        <effect type="Data" amount="2.00" subtype="Damage" action="HandAttack" damagetype="Hack" relativity="Absolute" mergeMode="remove">
           <target type="ProtoUnit">LykaonWolf</target></effect>
-        <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
+        <effect type="Data" amount="1.0833333" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="remove">
+				  <target type="ProtoUnit">LykaonWolf</target></effect>
+        <!-- Base Improvements -->
+        <effect type="Data" amount="5.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">LykaonWolf</target></effect>
+        <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
           <target type="ProtoUnit">LykaonWolf</target></effect>
         <!-- New Ability -->
-        <effect type="Data" action="FeralInfectionAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <effect type="Data" action="FeralInfectionAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">LykaonWolf</target></effect>
         <!-- Alpha Unit -->
-        <effect type="Data" amount="8.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute">
+        <effect type="Data" amount="8.00" subtype="Damage" damagetype="Hack" action="HandAttack" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">KingLycaon</target></effect>
-        <effect type="Data" amount="12.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute">
+        <effect type="Data" amount="12.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">KingLycaon</target></effect>
-        <effect type="Data" action="HandAttack" amount="0.75" subtype="RateOfFire" relativity="Percent">
+        <effect type="Data" action="HandAttack" amount="0.75" subtype="RateOfFire" relativity="Percent" mergeMode="add">
           <target type="ProtoUnit">KingLycaon</target></effect>
-        <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
+        <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
           <target type="ProtoUnit">KingLycaon</target></effect>
       </effects>
     </tech>
