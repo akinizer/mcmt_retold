@@ -467,6 +467,8 @@ ID = "STR_BLD_TEMPLEOFDIVINESUN_NAME" ;   Str = "Temple of Divine Sun"
 ID = "STR_BLD_TEMPLEOFETERNALMOON_NAME" ;   Str = "Temple of Eternal Moon"
 ID = "STR_BLD_TEMPLEOFSTORMS_NAME" ;   Str = "Temple of Storm"
 
+ID = "STR_BLD_FORGE_OF_HEPHAESTOS_NAME" ;   Str = "Forge of Hephaestos"
+
 ID = "STR_BLD_PARTHENON_NAME" ;   Str = "Parthenon"
 ID = "STR_BLD_PARTHENON_SR" ;   Str = "Center of Nation"
 ID = "STR_BLD_PARTHENON_LR" ;   Str = "While town centers are important for smaller regions, Parthenons bear significance where Nation Leaders take a part in important decisions and offer their praying to deities"
@@ -612,7 +614,7 @@ ID = "STR_UNIT_MEDUSA_MATRIARCH_NAME"   ;   Str = "Gorgon Matriarch"
 ID = "STR_UNIT_SHRINE_PRIEST_NAME"   ;   Str = "Shrine Priest (Hero)"
 ID = "STR_UNIT_RAIJU_TEMPEST_NAME"   ;   Str = "Raiju Tempest"
 
-// GREEK SPECIAL UNITS
+// ENCAMPMENT SPECIAL UNITS
 ID = "STR_UNIT_AMAZON_MARKSMAN_NAME"   ;   Str = "Amazon Marksman"
 ID = "STR_UNIT_AMAZON_MARKSMAN_SR"   ;   Str = "Elite Amazon Archer"
 ID = "STR_UNIT_AMAZON_MARKSMAN_LR"   ;   Str = "Among Amazons, some are born with exclusive archery skills and get appointed in private security of Queen Hippolyta"
@@ -681,6 +683,22 @@ ID = "STR_UNIT_ATHENIAN_CAPTAIN_LR"   ;   Str = "In Athenian army, polemarchs se
 ID = "STR_UNIT_NYMPH_NAME"   ;   Str = "Nymph"
 ID = "STR_UNIT_NYMPH_SR"   ;   Str = "Humanoid aquatic fae"
 ID = "STR_UNIT_NYMPH_LR"   ;   Str = "During the journey of Odysseus, he encounters a beautiful nymph. Later, Circe who has interest in him finds it out and turns the nymph into a seas monster named Scylla"
+
+ID = "STR_UNIT_DIVINE_NYMPH_MENDER_NAME"   ;   Str = "Nymph (Mender)"
+ID = "STR_TECH_DIVINE_NYMPH_MENDER_NAME"   ;   Str = "Nature's Blessing"
+ID = "STR_TECH_DIVINE_NYMPH_MENDER_LR"   ;   Str = "Nymphs gain divinity through nature's blessing and learn medical expertise"
+
+ID = "STR_UNIT_DIVINE_NYMPH_CHARMER_NAME"   ;   Str = "Nymph (Charmer)"
+ID = "STR_TECH_DIVINE_NYMPH_CHARMER_NAME"   ;   Str = "Physiological Capabilities"
+ID = "STR_TECH_DIVINE_NYMPH_CHARMER_LR"   ;   Str = "Nymphs gain divinity through physiological capabilities and discover their tactical uses"
+
+ID = "STR_UNIT_DIVINE_NYMPH_ORACLE_NAME"   ;   Str = "Nymph (Oracle)"
+ID = "STR_TECH_DIVINE_NYMPH_ORACLE_NAME"   ;   Str = "Divine Ascension"
+ID = "STR_TECH_DIVINE_NYMPH_ORACLE_LR"   ;   Str = "Nymphs gain divinity through ascension and bring fortune through foresight"
+
+ID = "STR_UNIT_HESPERIDES_NAME"   ;   Str = "Hesperides"
+ID = "STR_UNIT_HESPERIDES_SR"   ;   Str = "Tree Nymphs that live inside the legendary tree"
+ID = "STR_UNIT_HESPERIDES_LR"   ;   Str = "The legendary tree inhabits Golden Apples and Nymphs and stands at the western edge of the world in presence of Atlas condemned to lift up Celestial Heavens"
 
 // NORSE SPECIAL UNITS
 ID = "STR_UNIT_RANGER_ELF_NAME"   ;   Str = "Ranger Elf"
@@ -771,8 +789,6 @@ ID = "STR_UNIT_OVERCHARGED_SWORD_SR"   ;   Str = "Sword of Ya Zi with animated w
 ID = "STR_UNIT_OVERCHARGED_SWORD_LR"   ;   Str = "The rage unleashes as it is freed from vessel of Ya Zi and becomes one with the weapon"
 
 // JAPANESE SPECIAL TECHS
-ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
-
 ID = "STR_TECH_MIKO_ORACLE_UPGRADE_NAME"   ;   Str = "Oracles of Shinto"
 ID = "STR_TECH_MIKO_ORACLE_UPGRADE_LR"   ;   Str = "Mikos obtain favors of shrine gods and get blessed with prophetic blessings"
 
@@ -803,7 +819,7 @@ ID = "STR_TECH_SHRINEOFFERINGS_WOOD_LR"   ;   Str = "Local Shrines now accept va
 ID = "STR_TECH_SHRINEOFFERINGS_GOLD_NAME"   ;   Str = "Shrine Offerings (Gold)"
 ID = "STR_TECH_SHRINEOFFERINGS_GOLD_LR"   ;   Str = "Local Shrines now accept currencies and treasures offered to their kami"
 
-// REWORKED TECHS
+// REWORKED CHINESE TECHS
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_NAME"   ;   Str = "Order of the Golden Kite"
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_LR"   ;   Str = "The Order was established by Emperor Meiji and served Empire of Japan until 1947. It is exclusive military award given to soldier for bravery, leadership and commandship. It is followed by Order of the Chrysanthemum "
 ID = "STR_TECH_ORDER_OF_CHRYSANTHEMUM_NAME"   ;   Str = "Order of the Chrysanthemum"
@@ -818,6 +834,13 @@ ID = "STR_TECH_ORDER_OF_SACRED_TREASURE_NAME"   ;   Str = "Order of the Sacred T
 ID = "STR_TECH_ORDER_OF_SACRED_TREASURE_LR"   ;   Str = "The Order is slightly below Rising Sun and Precious Crown. It is awareded for service in education, social welfare, medical care, commission and employment with harsh environment"
 ID = "STR_TECH_ORDER_OF_CULTURE_NAME"   ;   Str = "Order of the Culture"
 ID = "STR_TECH_ORDER_OF_CULTURE_LR"   ;   Str = "The Order is given to Persons of Cultural Merit who contributed culture in various aspects by Minister of Education, Culturei Sports Science and Technology. The annuity is also given for the contributions"
+
+// REWORKED EGYPTIAN TECHS
+ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and the Abyss lets the encapsulating primordial waters flow into the mortal realm of Atum. The specimens that reach and consume these very water currents embrace the immortality and madness"
+
+// REWORKED GREEK TECHS
+ID = "STR_TECH_THRACIAN_HORSES_LR"   ;   Str = "Thracian Mares of Diomedes"
+ID = "STR_TECH_GOLDEN_APPLES_LR" ;   Str = "During the journey to Eleventh Labor, Zeus gives Heracles permission to free Prometheus from his eternal punishment. In return Prometheus advises Heracles whereabouts of Atlas. Heracles finds Atlas lifting the Celestial Heavens upon his shoulders. As one of Titan faction members during Titanomachy, Atlas is condemned to hold up the sky on the western edge of the Earth whereas many Titans are imprisoned in Tartarus beneath Hades' Underworld. He makes a deal and Atlas gives Heracles the Golden Apples that grow on Tree of Hesperides and can be picked up only by divine beings. Atlast lets Heracles take over the sky with no intention to give it back. Heracles out smarts Atlas and tells him to lift it for a moment and finishes his task"
 
 // SPECIAL TECHS
 ID = "STR_TECH_MCMT_PAGE_1"   ;   Str = "Page1"
@@ -906,18 +929,6 @@ ID = "STR_TECH_DIVINE_NATURE_SPIRITS_II_LR"   ;   Str = "Second of Nymph upgrade
 
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME"   ;   Str = "Divine Nature Spirits I"
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_LR"   ;   Str = "Third of Nymph upgrade techs that improves divinity as well as value"
-
-ID = "STR_UNIT_DIVINE_NYMPH_MENDER_NAME"   ;   Str = "Nymph (Mender)"
-ID = "STR_TECH_DIVINE_NYMPH_MENDER_NAME"   ;   Str = "Nature's Blessing"
-ID = "STR_TECH_DIVINE_NYMPH_MENDER_LR"   ;   Str = "Nymphs gain divinity through nature's blessing and learn medical expertise"
-
-ID = "STR_UNIT_DIVINE_NYMPH_CHARMER_NAME"   ;   Str = "Nymph (Charmer)"
-ID = "STR_TECH_DIVINE_NYMPH_CHARMER_NAME"   ;   Str = "Physiological Capabilities"
-ID = "STR_TECH_DIVINE_NYMPH_CHARMER_LR"   ;   Str = "Nymphs gain divinity through physiological capabilities and discover their tactical uses"
-
-ID = "STR_UNIT_DIVINE_NYMPH_ORACLE_NAME"   ;   Str = "Nymph (Oracle)"
-ID = "STR_TECH_DIVINE_NYMPH_ORACLE_NAME"   ;   Str = "Divine Ascension"
-ID = "STR_TECH_DIVINE_NYMPH_ORACLE_LR"   ;   Str = "Nymphs gain divinity through ascension and bring fortune through foresight"
 
 ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"
 ID = "STR_TECH_DIVINEARMAMENTS_LR"   ;   Str = "Improves Offensive Capabilities of Military Units, Heroes and Hunters with Divine Weaponry"

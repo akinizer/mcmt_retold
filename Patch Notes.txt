@@ -871,10 +871,11 @@
 ==============================================================================
 
 * tech replace reworks
-    general
+    general+
     greek
         demeter+
         legacy+
+        special+
     egyptian
         protagonist
         humansoldier
@@ -910,7 +911,7 @@ greek
     arcadianmeadow: villager maxvelocity +5%
     hippocampus (lordofthehorses): fishingship maxvelocity +5%, gather rate +5%
 atlantean
-    hesperidestree: armorsmith area, hamadryad
+    hesperidestree: armorsmith area, hamadryad, hesperides, ladon (dragon serpent, low armor buffed by hespedides tree), spawn arcadian meadow on spawn
 
 === SPECIAL
 * Spawns

@@ -2874,7 +2874,18 @@
     <!-- Atlantean Buildings-->
     <!-- Special Tree Buildings-->
     <unit name="HesperidesTree">
+		<animfile>nature\trees_spc\summoning_tree\summoning_tree.xml</animfile>
 		<unittype>Tree</unittype>
+		<tech row="1" column="0">GoldenApplesHesperides</tech>
+		<train row="0" column="1">Hamadryad</train>
+		<train row="0" column="2">Hesperides</train>
+		<protoaction>
+			<name>AutoGather</name>
+			<type>AutoGather</type>
+			<rate type="Food">0.010000</rate>
+			<persistent>1</persistent>
+			<active>0</active>
+		</protoaction>
 	</unit>
 	<unit name="Goshinboku">
 		<unittype>Tree</unittype>
@@ -19001,6 +19012,84 @@
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
+	<unit name="Hesperides">
+		<displaynameid>STR_UNIT_HESPERIDES_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_HESPERIDES_SR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_HESPERIDES_LR</shortrollovertextid>
+		<icon>resources\atlantean\player_color\units\dryad_icon.png</icon>
+		<animfile>atlantean\units\myth\dryad\dryad.xml</animfile>
+		<soundsetfile>atlantean\vo\dryad\dryad.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<impacttype>Wood</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>90.0000</initialhitpoints>
+		<maxhitpoints>90.0000</maxhitpoints>
+		<trainpoints>13.0000</trainpoints>
+		<weightclass>7</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.5000</maxvelocity>
+		<los>12.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<cost resourcetype="Wood">80.0000</cost>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.6000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHeroicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitMelee</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.900000</rof>
+			<damage type="Hack">19.000000</damage>
+			<damagebonus type="MythUnit">1.200000</damagebonus>
+			<damagebonus type="Hero">1.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+	</unit>
 
 	<unit name="PegasusGroundedMessenger">
 		<displaynameid>STR_UNIT_PEGASUS_NAME</displaynameid>
@@ -26862,12 +26951,20 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name stringid="STR_INGAME_HELP_DAMAGE_AREA">AreaDamage</name>
+			<name>AreaDamage</name>
 			<type>AutoRangedModify</type>
 			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
 			<persistent>1</persistent>
 			<modifytype>HealRate</modifytype>
 			<nostack>1</nostack>
+
+		  	<modifydamagetype>Divine</modifydamagetype>
+			
+			<modelattachment>vfx\fire\fire_on_hit_effect.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>-3</modifyamount>			
+			<maxrange>5	</maxrange>
+			<damagebonus type="AbstractSiegeWeapon">3.0000</damagebonus>
 		</protoaction>
 	</unit>	
 
@@ -26958,6 +27055,37 @@
 			<throw>1</throw>
    		</protoaction>
   	</unit>	
+	<!-- Autogather Container -->
+	 <unit name="AutoGatherFavorContainer" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AutoGather</name>
+			<type>AutoGather</type>
+			<rate type="Favor">0.010000</rate>
+			<persistent>1</persistent>
+		</protoaction>
+  	</unit>	
+
 	<!-- Drone Units -->
 	<unit name="CustomDependantUnit">
 		<animfile>vfx\projectiles\asura\fire_ball_left.xml</animfile>

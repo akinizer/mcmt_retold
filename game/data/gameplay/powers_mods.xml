@@ -86,7 +86,9 @@
 	<power name="Chaos" type="Chaos" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="HesperidesTree" type="TempUnit" godpower="">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+		<cost>0.0</cost><repeatcost>0.0</repeatcost>
+		<terraincreep creep="ArcadianMeadowCreep" strength="100.0" maxradius="19.0" growthrate="6.0" minupdateinterval="0.2" maxupdateinterval="0.3" avoidimpassable=""></terraincreep>
+	</power>	
 	<!-- Atlantean God Powers - Minor Mythic -->	
 	<power name="Vortex" type="Vortex" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
