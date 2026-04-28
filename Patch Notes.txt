@@ -695,6 +695,13 @@
     - Snow Blast: auxcharged ability, ranged, snowball projectile, slow unit, throw [HumanSoldier, AbstractVillager]
     - Air Flow Trail
 
+- HesperidesTree
+    - GoldenApplesHesperides: 
+        - enables authogather favor for heroes, autogather food for HesperidesTree
+        - enables Hamadryad & Hesperides units for HesperidesTree
+        - Hamadryad: dryad variant ported from Demeter, excels in ranged and melee
+        - Hesperides: smaller version of dryad, effective to counter hero and mythunt, amassable
+
 * Techs Reworks & Additions - Major God Tech
 - Kagura: 
     - Onmyoji: heal workrate+, trainpoints-
@@ -883,6 +890,7 @@
         myth
     norse
     atlantean
+        hesperides
     chinese
     japanese
         majorgod
@@ -911,7 +919,7 @@ greek
     arcadianmeadow: villager maxvelocity +5%
     hippocampus (lordofthehorses): fishingship maxvelocity +5%, gather rate +5%
 atlantean
-    hesperidestree: armorsmith area, hamadryad, hesperides, ladon (dragon serpent, low armor buffed by hespedides tree), spawn arcadian meadow on spawn
+    hesperidestree: armorsmith area, hamadryad, hesperides, ladon (dragon serpent, low armor buffed by hesperides tree), spawn arcadian meadow on spawn
 
 === SPECIAL
 * Spawns
