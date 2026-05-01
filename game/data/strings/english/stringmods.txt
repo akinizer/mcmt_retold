@@ -696,6 +696,9 @@ ID = "STR_UNIT_DIVINE_NYMPH_ORACLE_NAME"   ;   Str = "Nymph (Oracle)"
 ID = "STR_TECH_DIVINE_NYMPH_ORACLE_NAME"   ;   Str = "Divine Ascension"
 ID = "STR_TECH_DIVINE_NYMPH_ORACLE_LR"   ;   Str = "Nymphs gain divinity through ascension and bring fortune through foresight"
 
+ID = "STR_TECH_GOLDENAPPLES_OF_SACREDTREE_NAME"   ;   Str = "Golden Apples (Sacred Tree)"
+ID = "STR_TECH_GOLDENAPPLES_OF_SACREDTREE_LR"   ;   Str = "Enables additional silvan nymphs"
+
 ID = "STR_UNIT_HESPERIDES_NAME"   ;   Str = "Hesperides"
 ID = "STR_UNIT_HESPERIDES_SR"   ;   Str = "Tree Nymphs that live inside the legendary tree"
 ID = "STR_UNIT_HESPERIDES_LR"   ;   Str = "The legendary tree inhabits Golden Apples and Nymphs and stands at the western edge of the world in presence of Atlas condemned to lift up Celestial Heavens"

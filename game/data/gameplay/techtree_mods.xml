@@ -34,9 +34,6 @@
         <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
           <target type="ProtoUnit">TownCenter</target></effect>
 
-        <effect type="TechStatus" status="obtainable">GoldenApplesHesperides</effect>
-        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Hamadryad" relativity="Assign"><target type="ProtoUnit">Temple</target></effect>
-
         <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
         <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
       </effects>
@@ -393,6 +390,8 @@
         <effect type="Data" amount="0.01" subtype="BuildPoints" relativity="Percent"><target type="ProtoUnit">AbstractFarm</target></effect>
       </effects>
     </tech>
+
+    
     
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <tech name="MCMT_Techs" mergeMode="add">
@@ -1487,17 +1486,33 @@
     <!-- Norse Special Techs -->
     <!-- Egyptian Special Techs -->    
     <!-- Atlantean Special Techs -->
+    <tech name="ActivateGoldenApplesHesperides" mergeMode="add">
+      <status>ACTIVE</status>
+      <delay>0.5000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <flag>HideAllNotifications</flag>
+      <flag>HideFromDialogs</flag>
+      <effects>
+        <effect type="TechStatus" status="obtainable">GoldenApplesHesperides</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="GoldenApplesHesperides" row="1" column="0" relativity="Assign">
+          <target type="ProtoUnit">HesperidesTree</target></effect>	
+      </effects>
+    </tech>
     <tech name="GoldenApplesHesperides" mergeMode="add">
-      <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
-      <researchpoints>10.0000</researchpoints>
+      <displaynameid>STR_TECH_GOLDENAPPLES_OF_SACREDTREE_NAME</displaynameid>
+      <rollovertextid>STR_TECH_GOLDENAPPLES_OF_SACREDTREE_LR</rollovertextid>
+      <researchpoints>20.0000</researchpoints>
       <status>UNOBTAINABLE</status>
       <icon>resources\tech\activate_tech.jpg</icon>
       <flag>NoTextMessage</flag>
       <flag>HideFromDialogs</flag>
-      <researchpoints>10.0000</researchpoints>
       <cost resourcetype="Wood">500.0000</cost>
       <cost resourcetype="Gold">100.0000</cost>
       <cost resourcetype="Favor">10.0000</cost>
+      <prereqs>
+        <typecount unit="HesperidesTree" count="0.00" state="aliveState" operator="gt"></typecount>
+      </prereqs>
       <effects>			
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">Hamadryad</target></effect>        
@@ -1505,11 +1520,22 @@
           <target type="ProtoUnit">Hesperides</target></effect>        
         <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute">
           <target type="ProtoUnit">Hesperides</target></effect>       
+        
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Hamadryad" relativity="Assign">
+          <target type="ProtoUnit">Temple</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Hamadryad" row="0" column="1" relativity="Assign">
+          <target type="ProtoUnit">HesperidesTree</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Hesperides" row="0" column="2" relativity="Assign">
+          <target type="ProtoUnit">HesperidesTree</target></effect>	
 
         <effect type="Data" protoaction="AutoGather" amount="1.00" subtype="ProtoActionAdd" unittype="AutoGatherFavorContainer" relativity="Assign">
           <target type="ProtoUnit">Hero</target></effect>
 
         <effect type="Data" action="AutoGather" amount="1.00" subtype="ActionEnable" relativity="Assign">
+				  <target type="ProtoUnit">HesperidesTree</target></effect>
+        <effect type="Data" action="SpeedBoost" amount="1.00" subtype="ActionEnable" relativity="Assign">
+				  <target type="ProtoUnit">HesperidesTree</target></effect>
+        <effect type="Data" action="ArmorBoost" amount="1.00" subtype="ActionEnable" relativity="Assign">
 				  <target type="ProtoUnit">HesperidesTree</target></effect>
       </effects>
     </tech>
@@ -1525,7 +1551,6 @@
     <flag>HideFromDialogs</flag>
     <researchpoints>10.0000</researchpoints>
     <cost resourcetype="Favor">100.0000</cost>
-    <status>UNOBTAINABLE</status>
     <prereqs>
       <specificage>MythicAgeChinese</specificage>
       <typecount unit="Baolei" count="0.00" state="aliveState" operator="gt"></typecount>

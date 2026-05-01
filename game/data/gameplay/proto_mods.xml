@@ -2615,6 +2615,9 @@
 	</unit>
 
     <!-- Atlantean Myth Units-->
+	<unit name="Dryad">
+		<maxvelocity>2.0</maxvelocity>
+	</unit>
      <unit name="Satyr">
 		<unittype>MilitaryUnit</unittype>
 		<unittype>AbstractArcher</unittype>
@@ -2876,14 +2879,37 @@
     <unit name="HesperidesTree">
 		<animfile>nature\trees_spc\summoning_tree\summoning_tree.xml</animfile>
 		<unittype>Tree</unittype>
-		<tech row="1" column="0">GoldenApplesHesperides</tech>
-		<train row="0" column="1">Hamadryad</train>
-		<train row="0" column="2">Hesperides</train>
-		<protoaction>
+		<protoaction mergeMode="add">
 			<name>AutoGather</name>
 			<type>AutoGather</type>
 			<rate type="Food">0.010000</rate>
 			<persistent>1</persistent>
+			<active>0</active>
+		</protoaction>
+		<protoaction mergeMode="add">
+			<name>SpeedBoost</name>
+			<type>AutoRangedModify</type>
+			<modifyunittype>Dryad</modifyunittype>
+			<maxrange>18</maxrange>
+			<persistent>1</persistent>	
+			<modifytype>Speed</modifytype>
+			<modifymultiplier>2.00</modifymultiplier>
+			<includeally>1</includeally>
+			<nostack>1</nostack>
+			<modifyupdateinterval>1750</modifyupdateinterval>
+			<active>0</active>
+		</protoaction>
+		<protoaction mergeMode="add">
+			<name>ArmorBoost</name>
+			<type>AutoRangedModify</type>
+			<modifyunittype>Dryad</modifyunittype>
+			<maxrange>18</maxrange>
+			<persistent>1</persistent>	
+			<modifytype>Armor</modifytype>
+			<modifymultiplier>1.20</modifymultiplier>
+			<includeally>1</includeally>
+			<nostack>1</nostack>
+			<modifyupdateinterval>1750</modifyupdateinterval>
 			<active>0</active>
 		</protoaction>
 	</unit>
