@@ -878,6 +878,9 @@
 - agavebloom
     - gatherboost Farm
     - doombloom: spawns on dead, burns nearby units, can kill nearby animals
+- infestedden
+    - omenofmalinalco: spawn maquizcoatl 3 on destruction
+    - stingofyappan: add areadamagecontainer
 
 * additional tree types
 - hesperides, goshinboku
@@ -889,7 +892,6 @@
 
 === AZTEC
 * godpowers
-agavebloom: farm gatherbonus container
 infestation: poison areadamage container, maquizcoatl
 pillaroftlalocan: bonusdamage vs ship
 volcanometeor: impact explosion

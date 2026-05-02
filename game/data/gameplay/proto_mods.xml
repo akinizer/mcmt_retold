@@ -5080,7 +5080,6 @@
 		</protoaction>
 	</unit>
 
-	<!-- TODO -->
     <!-- Chinese Special Myth Units-->
 	<unit name="OverchargedSword">
 		<displaynameid>STR_UNIT_OVERCHARGED_SWORD_NAME</displaynameid>
@@ -5550,9 +5549,30 @@
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
+
+	<!-- TODO -->
     <!-- Japanese Special Military Units-->
     <!-- Japanese Special Naval Units-->
     <!-- Japanese Special Buildings--> 
+
+	<!-- Aztec Hero Units -->
+	<!-- Aztec Military Units -->
+	<!-- Aztec Naval Units -->
+	<!-- Aztec Buildings -->
+	<unit name="InfestedDen">
+		<spawn type="dead" count="3" skipplacementcheck="" mergeMode="remove">LargeScorpion</spawn>
+		<protoaction mergeMode="add">
+			<name>MaquizcoatlSpawn</name>
+			<modifybase>3</modifybase>
+			<maxrange>3.0000</maxrange>
+			<rate type="Maquizcoatl">1.0</rate>
+			<forcetrainedunitstogatherpoint>1</forcetrainedunitstogatherpoint>
+			<maintaintrainpoints>45.0000</maintaintrainpoints>
+			<active>0</active>
+		</protoaction>
+	</unit>
+	<!-- Aztec Special Units -->
+	<!-- Aztec Special Buildings -->
 	
 	<!-- CAMPAIGN HEROES REWORK -->
 
@@ -27091,6 +27111,82 @@
 			<modifyamount>-3</modifyamount>			
 			<maxrange>5	</maxrange>
 			<damagebonus type="AbstractSiegeWeapon">3.0000</damagebonus>
+		</protoaction>
+	</unit>	
+	<unit name="AreaDamageContainerTargetEnemy" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaDamage</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<nostack>1</nostack>
+
+		  	<modifydamagetype>Divine</modifydamagetype>
+			
+			<modelattachment>vfx\fire\fire_on_hit_effect.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>-3</modifyamount>			
+			<maxrange>5	</maxrange>
+			<damagebonus type="AbstractSiegeWeapon">3.0000</damagebonus>
+
+			<targetenemy>1</targetenemy>
+		</protoaction>
+	</unit>	
+	<unit name="AreaDamageContainerTargetEnemyNature" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaDamage</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<nostack>1</nostack>
+
+		  	<modifydamagetype>Divine</modifydamagetype>
+			
+			<modelattachment>vfx\fire\fire_on_hit_effect.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>-3</modifyamount>			
+			<maxrange>5	</maxrange>
+			<damagebonus type="AbstractSiegeWeapon">3.0000</damagebonus>
+
+			<targetenemyincludenature>1</targetenemyincludenature>
 		</protoaction>
 	</unit>	
 

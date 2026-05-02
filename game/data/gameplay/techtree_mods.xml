@@ -9293,7 +9293,18 @@
       <effect type="Data" amount="1.0" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="4.00" targettype="Unit" relativity="Assign" mergeMode="add">
 				<target type="ProtoUnit">QuimichinSpy</target></effect>
 			<effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="4.00" targettype="Unit" proto="VFXPoison" relativity="Assign" mergeMode="add">
-				<target type="ProtoUnit">QuimichinSpy</target></effect>        
+				<target type="ProtoUnit">QuimichinSpy</target></effect>      
+      
+      <effect type="Data" amount="3.00" subtype="ModifySpawn" spawntype="Dead" proto="Maquizcoatl" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">InfestedDen</target></effect>
+    </effects>
+  </tech>
+  <tech name="StingOfYappan">
+    <effects>
+      <effect type="Data" protoaction="AreaDamage" amount="1.00" subtype="ProtoActionAdd" unittype="AreaDamageContainerTargetEnemyNature" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">InfestedDen</target></effect>      
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">InfestedDen</target></effect>
     </effects>
   </tech>
   <tech name="StringOfHearts">
