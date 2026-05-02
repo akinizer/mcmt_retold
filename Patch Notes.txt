@@ -874,6 +874,14 @@
 - god power costs free
 - display name: titan name, wonder names
 
+* god power reworks
+- agavebloom
+    - gatherboost Farm
+    - doombloom: spawns on dead, burns nearby units, can kill nearby animals
+
+* additional tree types
+- hesperides, goshinboku
+
 
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================

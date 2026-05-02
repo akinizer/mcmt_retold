@@ -27,7 +27,6 @@ ID = "STR_UNIT_SANDDEVOURER_SR"   ;   Str = "Last Thing Expected to See Moving B
 ID = "STR_UNIT_SANDDEVOURER_LR"   ;   Str = "Oversized worm that moves through sands, hunts down anythng moves and leaves buildings in crumbles"
 
 ID = "STR_EMB_KITSUNE_ILLUSION_SR"   ;   Str = "Just a chilling nice lady"
-ID = "STR_UNIT_HAMADRYAD_SR"   ;   Str = "Just a chilling nice lady"
 
 // DEMIGODS
 ID = "STR_UNIT_SON_OF_HORUS_NAME"  ;   Str = "Son of Horus (Hero)"
@@ -821,6 +820,11 @@ ID = "STR_TECH_SHRINEOFFERINGS_WOOD_LR"   ;   Str = "Local Shrines now accept va
 
 ID = "STR_TECH_SHRINEOFFERINGS_GOLD_NAME"   ;   Str = "Shrine Offerings (Gold)"
 ID = "STR_TECH_SHRINEOFFERINGS_GOLD_LR"   ;   Str = "Local Shrines now accept currencies and treasures offered to their kami"
+
+// AZTEC SPECIAL UNITS
+ID = "STR_BLD_AGAVE_DOOMBLOOM_NAME"   ;   Str = "Doom Bloom"
+ID = "STR_BLD_AGAVE_DOOMBLOOM_SR"   ;   Str = "Nature's Vengeance"
+ID = "STR_BLD_AGAVE_DOOMBLOOM_LR"   ;   Str = "Nature gifts Agave Bloom as a gift to heal people. If they get greedy and deplete it, it turns into Doom Bloom and burns the sinners"
 
 // REWORKED CHINESE TECHS
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_NAME"   ;   Str = "Order of the Golden Kite"

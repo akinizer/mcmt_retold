@@ -1660,393 +1660,423 @@
   </tech>
 	
   <tech name="MikoOracleUpgrade" mergeMode="add">
-      <displaynameid>STR_TECH_MIKO_ORACLE_UPGRADE_NAME</displaynameid>
-      <rollovertextid>STR_TECH_MIKO_ORACLE_UPGRADE_LR</rollovertextid>
-      <cost resourcetype="Food">200.0000</cost>
-      <cost resourcetype="Gold">100.0000</cost>
-      <cost resourcetype="Favor">10.0000</cost>
-      <researchpoints>15.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\japanese\static_color\technologies\sacred_custodians_icon.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs>
-        <techstatus status="Active">SacredCustodians</techstatus>
-      </prereqs>
-      <effects>
-        <effect type="Data" subtype="ProtoActionAdd" protoaction="AreaMutate" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
-          <target type="ProtoUnit">Miko</target></effect>
-        <effect type="Data" subtype="ProtoActionAdd" protoaction="ShrineGatherRateBoost" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
-          <target type="ProtoUnit">Miko</target></effect>
-        <effect type="Data" subtype="ProtoActionAdd" protoaction="CherrySpawn" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
-          <target type="ProtoUnit">Miko</target></effect>
-        <effect type="Data" subtype="ProtoActionAdd" protoaction="ResourceInventoryAura" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
-          <target type="ProtoUnit">Miko</target></effect>
-        <effect type="Data" subtype="ProtoActionAdd" protoaction="ResourceInventoryCapAura" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
-          <target type="ProtoUnit">Miko</target></effect>
-      </effects>
+    <displaynameid>STR_TECH_MIKO_ORACLE_UPGRADE_NAME</displaynameid>
+    <rollovertextid>STR_TECH_MIKO_ORACLE_UPGRADE_LR</rollovertextid>
+    <cost resourcetype="Food">200.0000</cost>
+    <cost resourcetype="Gold">100.0000</cost>
+    <cost resourcetype="Favor">10.0000</cost>
+    <researchpoints>15.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\japanese\static_color\technologies\sacred_custodians_icon.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs>
+      <techstatus status="Active">SacredCustodians</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="AreaMutate" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+        <target type="ProtoUnit">Miko</target></effect>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="ShrineGatherRateBoost" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+        <target type="ProtoUnit">Miko</target></effect>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="CherrySpawn" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+        <target type="ProtoUnit">Miko</target></effect>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="ResourceInventoryAura" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+        <target type="ProtoUnit">Miko</target></effect>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="ResourceInventoryCapAura" amount="1.00" unittype="ShrineGatherBoostContainer" relativity="Assign">
+        <target type="ProtoUnit">Miko</target></effect>
+    </effects>
   </tech>
 
   <tech name="OnmyojiUpgrade_I" mergeMode="add">
-      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_I_NAME</displaynameid>
-      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_I_LR</rollovertextid>
-      <cost resourcetype="Wood">200.0000</cost>
-      <cost resourcetype="Favor">10.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\onmyoji_upgrade_I.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <effects>
-        <!-- tech enable gather -->
-        <effect type="Data" action="Gather" amount="1.00" subtype="ActionEnable" relativity="Assign">
-				  <target type="ProtoUnit">Onmyoji</target></effect>
-      </effects>
+    <displaynameid>STR_TECH_ONMYOJI_UPGRADE_I_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_I_LR</rollovertextid>
+    <cost resourcetype="Wood">200.0000</cost>
+    <cost resourcetype="Favor">10.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\onmyoji_upgrade_I.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <effects>
+      <!-- tech enable gather -->
+      <effect type="Data" action="Gather" amount="1.00" subtype="ActionEnable" relativity="Assign">
+        <target type="ProtoUnit">Onmyoji</target></effect>
+    </effects>
   </tech>
   <tech name="OnmyojiUpgrade_II" mergeMode="add">
-      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_II_NAME</displaynameid>
-      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_II_LR</rollovertextid>
-      <cost resourcetype="Gold">200.0000</cost>
-      <cost resourcetype="Favor">10.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\onmyoji_upgrade_II.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs>
-        <techstatus status="Active">OnmyojiUpgrade_I</techstatus>
-      </prereqs>
-      <effects>
-        <!-- barrier -->
-        <effect type="Data" action="AutoBoost" amount="1.00" subtype="ActionEnable" relativity="Assign">
-				  <target type="ProtoUnit">Onmyoji</target></effect>
-      </effects>
-    </tech>
+    <displaynameid>STR_TECH_ONMYOJI_UPGRADE_II_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_II_LR</rollovertextid>
+    <cost resourcetype="Gold">200.0000</cost>
+    <cost resourcetype="Favor">10.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\onmyoji_upgrade_II.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs>
+      <techstatus status="Active">OnmyojiUpgrade_I</techstatus>
+    </prereqs>
+    <effects>
+      <!-- barrier -->
+      <effect type="Data" action="AutoBoost" amount="1.00" subtype="ActionEnable" relativity="Assign">
+        <target type="ProtoUnit">Onmyoji</target></effect>
+    </effects>
+  </tech>
   <tech name="OnmyojiUpgrade_III" mergeMode="add">
-      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_III_NAME</displaynameid>
-      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_III_LR</rollovertextid>
-      <cost resourcetype="Food">200.0000</cost>
-      <cost resourcetype="Favor">10.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\onmyoji_upgrade_III.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs>
-        <techstatus status="Active">OnmyojiUpgrade_II</techstatus>
-      </prereqs>
-      <effects>
-        <!-- area heal -->
-        <effect type="Data" action="AreaHeal" amount="1.00" subtype="ActionEnable" relativity="Assign">
-				  <target type="ProtoUnit">Onmyoji</target></effect>
-      </effects>
-    </tech>
+    <displaynameid>STR_TECH_ONMYOJI_UPGRADE_III_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_III_LR</rollovertextid>
+    <cost resourcetype="Food">200.0000</cost>
+    <cost resourcetype="Favor">10.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\onmyoji_upgrade_III.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs>
+      <techstatus status="Active">OnmyojiUpgrade_II</techstatus>
+    </prereqs>
+    <effects>
+      <!-- area heal -->
+      <effect type="Data" action="AreaHeal" amount="1.00" subtype="ActionEnable" relativity="Assign">
+        <target type="ProtoUnit">Onmyoji</target></effect>
+    </effects>
+  </tech>
   <tech name="OnmyojiUpgrade_IV" mergeMode="add">
-      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_IV_NAME</displaynameid>
-      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_IV_LR</rollovertextid>
-      <cost resourcetype="Gold">200.0000</cost>
-      <cost resourcetype="Favor">15.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\onmyoji_upgrade_IV.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs>
-        <techstatus status="Active">OnmyojiUpgrade_III</techstatus>
-      </prereqs>
-      <effects>
-        <!-- banish -->
-        <effect type="Data" action="Banish" amount="1.00" subtype="ActionEnable" relativity="Assign">
-				  <target type="ProtoUnit">Onmyoji</target></effect>
-      </effects>
-    </tech>
+    <displaynameid>STR_TECH_ONMYOJI_UPGRADE_IV_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_IV_LR</rollovertextid>
+    <cost resourcetype="Gold">200.0000</cost>
+    <cost resourcetype="Favor">15.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\onmyoji_upgrade_IV.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs>
+      <techstatus status="Active">OnmyojiUpgrade_III</techstatus>
+    </prereqs>
+    <effects>
+      <!-- banish -->
+      <effect type="Data" action="Banish" amount="1.00" subtype="ActionEnable" relativity="Assign">
+        <target type="ProtoUnit">Onmyoji</target></effect>
+    </effects>
+  </tech>
   <tech name="OnmyojiUpgrade_V" mergeMode="add">
-      <displaynameid>STR_TECH_ONMYOJI_UPGRADE_V_NAME</displaynameid>
-      <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_V_LR</rollovertextid>
-      <cost resourcetype="Gold">400.0000</cost>
-      <cost resourcetype="Favor">25.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\onmyoji_upgrade_V.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs>
-        <techstatus status="Active">OnmyojiUpgrade_IV</techstatus>
-      </prereqs>
-      <effects>
-        <!-- ultimate -->
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">MCMT_HeadPriest</target></effect>
+    <displaynameid>STR_TECH_ONMYOJI_UPGRADE_V_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ONMYOJI_UPGRADE_V_LR</rollovertextid>
+    <cost resourcetype="Gold">400.0000</cost>
+    <cost resourcetype="Favor">25.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\onmyoji_upgrade_V.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs>
+      <techstatus status="Active">OnmyojiUpgrade_IV</techstatus>
+    </prereqs>
+    <effects>
+      <!-- ultimate -->
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">MCMT_HeadPriest</target></effect>
 
-        <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileOnmyojiAttack" relativity="Assign">
-          <target type="ProtoUnit">Onmyoji</target></effect>
-        <effect type="Data" action="RangedAttack" amount="0.80" subtype="RateOfFire" relativity="Percent">
-          <target type="ProtoUnit">Onmyoji</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileOnmyojiAttack" relativity="Assign">
+        <target type="ProtoUnit">Onmyoji</target></effect>
+      <effect type="Data" action="RangedAttack" amount="0.80" subtype="RateOfFire" relativity="Percent">
+        <target type="ProtoUnit">Onmyoji</target></effect>
 
-			  <effect type="CreateUnit" unit="MCMT_HeadPriest" generator="AbstractShrineJapanese">
-          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
-      </effects>
+      <effect type="CreateUnit" unit="MCMT_HeadPriest" generator="AbstractShrineJapanese">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+          <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+    </effects>
   </tech>
   <tech name="ModernPipeNetworks" mergeMode="add">
-      <displaynameid>STR_TECH_MODERNPIPENETWORKS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_MODERNPIPENETWORKS_LR</rollovertextid>
-      <cost resourcetype="Gold">400.0000</cost>
-      <cost resourcetype="Favor">25.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\atlantean\static_color\technologies\channels_icon.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs>
-        <typecount unit="Armory" count="0.00" state="aliveState" operator="gt"></typecount>
-      </prereqs>
-      <effects>
-        <!-- remove placement restriction -->
-        <effect type="Data" amount="0.00" subtype="SetUnitType" unittype="AbstractDock" relativity="Absolute">
-				  <target type="ProtoUnit">Watermill</target></effect>
-      </effects>
+    <displaynameid>STR_TECH_MODERNPIPENETWORKS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_MODERNPIPENETWORKS_LR</rollovertextid>
+    <cost resourcetype="Gold">400.0000</cost>
+    <cost resourcetype="Favor">25.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\atlantean\static_color\technologies\channels_icon.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs>
+      <typecount unit="Armory" count="0.00" state="aliveState" operator="gt"></typecount>
+    </prereqs>
+    <effects>
+      <!-- remove placement restriction -->
+      <effect type="Data" amount="0.00" subtype="SetUnitType" unittype="AbstractDock" relativity="Absolute">
+        <target type="ProtoUnit">Watermill</target></effect>
+    </effects>
   </tech>
   <tech name="ShrineOfferings_I" mergeMode="add">
-      <displaynameid>STR_TECH_SHRINEOFFERINGS_FOOD_NAME</displaynameid>
-      <rollovertextid>STR_TECH_SHRINEOFFERINGS_FOOD_LR</rollovertextid>
-      <cost resourcetype="Food">120.0000</cost>
-      <cost resourcetype="Favor">5.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\egyptian\static_color\god_powers\prosperity_icon.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs>
-        <typecount unit="ShrineJapanese" count="0.00" state="aliveState" operator="gt"></typecount>
-      </prereqs>
-      <effects>
-        <!-- remove placement restriction -->
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
-				  <target type="ProtoUnit">ShrineJapanese</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="FoodDropsite" relativity="Absolute">
-				  <target type="ProtoUnit">ShrineJapanese</target></effect>
-        <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Food" relativity="Assign">
-          <target type="ProtoUnit">ShrineJapanese</target></effect>
-      </effects>
+    <displaynameid>STR_TECH_SHRINEOFFERINGS_FOOD_NAME</displaynameid>
+    <rollovertextid>STR_TECH_SHRINEOFFERINGS_FOOD_LR</rollovertextid>
+    <cost resourcetype="Food">120.0000</cost>
+    <cost resourcetype="Favor">5.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\egyptian\static_color\god_powers\prosperity_icon.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs>
+      <typecount unit="ShrineJapanese" count="0.00" state="aliveState" operator="gt"></typecount>
+    </prereqs>
+    <effects>
+      <!-- remove placement restriction -->
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Dropsite" relativity="Absolute">
+        <target type="ProtoUnit">ShrineJapanese</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="FoodDropsite" relativity="Absolute">
+        <target type="ProtoUnit">ShrineJapanese</target></effect>
+      <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Food" relativity="Assign">
+        <target type="ProtoUnit">ShrineJapanese</target></effect>
+    </effects>
   </tech>
   <tech name="ShrineOfferings_II" mergeMode="add">
-      <displaynameid>STR_TECH_SHRINEOFFERINGS_WOOD_NAME</displaynameid>
-      <rollovertextid>STR_TECH_SHRINEOFFERINGS_WOOD_LR</rollovertextid>
-      <cost resourcetype="Wood">120.0000</cost>
-      <cost resourcetype="Favor">5.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\egyptian\static_color\god_powers\prosperity_icon.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs>
-        <techstatus status="Active">ShrineOfferings_I</techstatus>
-      </prereqs>
-      <effects>
-        <!-- remove placement restriction -->
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
-				  <target type="ProtoUnit">ShrineJapanese</target></effect>
-         <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign">
-          <target type="ProtoUnit">ShrineJapanese</target></effect>
-      </effects>
+    <displaynameid>STR_TECH_SHRINEOFFERINGS_WOOD_NAME</displaynameid>
+    <rollovertextid>STR_TECH_SHRINEOFFERINGS_WOOD_LR</rollovertextid>
+    <cost resourcetype="Wood">120.0000</cost>
+    <cost resourcetype="Favor">5.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\egyptian\static_color\god_powers\prosperity_icon.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs>
+      <techstatus status="Active">ShrineOfferings_I</techstatus>
+    </prereqs>
+    <effects>
+      <!-- remove placement restriction -->
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="WoodDropsite" relativity="Absolute">
+        <target type="ProtoUnit">ShrineJapanese</target></effect>
+        <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Wood" relativity="Assign">
+        <target type="ProtoUnit">ShrineJapanese</target></effect>
+    </effects>
   </tech>
   <tech name="ShrineOfferings_III" mergeMode="add">
-      <displaynameid>STR_TECH_SHRINEOFFERINGS_GOLD_NAME</displaynameid>
-      <rollovertextid>STR_TECH_SHRINEOFFERINGS_GOLD_NAME</rollovertextid>
-      <cost resourcetype="Gold">120.0000</cost>
-      <cost resourcetype="Favor">5.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\egyptian\static_color\god_powers\prosperity_icon.png</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <prereqs>
-        <techstatus status="Active">ShrineOfferings_II</techstatus>
-      </prereqs>
-      <effects>
-        <!-- remove placement restriction -->
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="GoldDropsite" relativity="Absolute">
-				  <target type="ProtoUnit">ShrineJapanese</target></effect>
-         <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Gold" relativity="Assign">
-          <target type="ProtoUnit">ShrineJapanese</target></effect>
-      </effects>
+    <displaynameid>STR_TECH_SHRINEOFFERINGS_GOLD_NAME</displaynameid>
+    <rollovertextid>STR_TECH_SHRINEOFFERINGS_GOLD_NAME</rollovertextid>
+    <cost resourcetype="Gold">120.0000</cost>
+    <cost resourcetype="Favor">5.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\egyptian\static_color\god_powers\prosperity_icon.png</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs>
+      <techstatus status="Active">ShrineOfferings_II</techstatus>
+    </prereqs>
+    <effects>
+      <!-- remove placement restriction -->
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="GoldDropsite" relativity="Absolute">
+        <target type="ProtoUnit">ShrineJapanese</target></effect>
+        <effect type="Data" amount="1.00" subtype="CarryCapacity" resource="Gold" relativity="Assign">
+        <target type="ProtoUnit">ShrineJapanese</target></effect>
+    </effects>
+  </tech>
+  <!-- Aztec Special Techs -->
+  <tech name="ActivateEffectsAgaveBloom" mergeMode="add">
+    <status>ACTIVE</status>
+    <delay>0.5000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideAllNotifications</flag>
+    <flag>HideFromDialogs</flag>
+    <effects>
+      <effect type="TechStatus" status="obtainable">EffectsAgaveBloom</effect>
+    </effects>
+  </tech>
+  <tech name="EffectsAgaveBloom" mergeMode="add">
+    <status>UNOBTAINABLE</status>
+    <delay>0.5000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideAllNotifications</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ActivateEffectsAgaveBloom</techstatus>
+      <techstatus status="Active">ArchaicAgeAztec</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" protoaction="AreaHarvest" amount="1.00" subtype="ProtoActionAdd" unittype="GatherBonusFarmContainer" relativity="Assign">
+        <target type="ProtoUnit">AgaveBloom</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="DoomBloom" relativity="Absolute">
+        <target type="ProtoUnit">AgaveBloom</target></effect>	
+    </effects>
   </tech>
   <!-- Global Techs - Detonators-->
   <tech name="DetonatorsJapanese" mergeMode="add">
-      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
-      <cost resourcetype="Gold">300.0000</cost>
-      <cost resourcetype="Wood">100.0000</cost>
-      <cost resourcetype="Favor">5.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\explosives.jpg</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <effects>
-        <!-- ultimate -->        
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Building</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">AbstractWarship</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Shinobi</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Wanyudo</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Asura</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">ShinigamiVengeful</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Wretch</target></effect>	
-      </effects>
-    </tech>
+    <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+    <cost resourcetype="Gold">300.0000</cost>
+    <cost resourcetype="Wood">100.0000</cost>
+    <cost resourcetype="Favor">5.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\explosives.jpg</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <effects>
+      <!-- ultimate -->        
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Building</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">AbstractWarship</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Shinobi</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Wanyudo</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Asura</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">ShinigamiVengeful</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Wretch</target></effect>	
+    </effects>
+  </tech>
   <tech name="DetonatorsChinese" mergeMode="add">
-      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
-      <cost resourcetype="Gold">300.0000</cost>
-      <cost resourcetype="Wood">100.0000</cost>
-      <cost resourcetype="Favor">5.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\explosives.jpg</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <effects>
-        <!-- ultimate -->        
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Building</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">AbstractWarship</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">HunDun</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">ZhuQueLanded</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">FireArcher</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Nezha</target></effect>	
-      </effects>
-    </tech>
+    <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+    <cost resourcetype="Gold">300.0000</cost>
+    <cost resourcetype="Wood">100.0000</cost>
+    <cost resourcetype="Favor">5.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\explosives.jpg</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <effects>
+      <!-- ultimate -->        
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Building</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">AbstractWarship</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">HunDun</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">ZhuQueLanded</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">FireArcher</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Nezha</target></effect>	
+    </effects>
+  </tech>
   <tech name="DetonatorsGreek" mergeMode="add">
-      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
-      <cost resourcetype="Gold">300.0000</cost>
-      <cost resourcetype="Wood">100.0000</cost>
-      <cost resourcetype="Favor">5.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\explosives.jpg</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <effects>
-        <!-- ultimate -->        
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Building</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">AbstractWarship</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Hydra</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Colossus</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Scylla</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Chimera</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Helepolis</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Iolaus</target></effect>	
-      </effects>
-    </tech>
+    <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+    <cost resourcetype="Gold">300.0000</cost>
+    <cost resourcetype="Wood">100.0000</cost>
+    <cost resourcetype="Favor">5.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\explosives.jpg</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <effects>
+      <!-- ultimate -->        
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Building</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">AbstractWarship</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Hydra</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Colossus</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Scylla</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Chimera</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Helepolis</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Iolaus</target></effect>	
+    </effects>
+  </tech>
   <tech name="DetonatorsEgyptian" mergeMode="add">
-      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
-      <cost resourcetype="Gold">300.0000</cost>
-      <cost resourcetype="Wood">100.0000</cost>
-      <cost resourcetype="Favor">5.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\explosives.jpg</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <effects>
-        <!-- ultimate -->        
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Building</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">AbstractWarship</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">RocLanded</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">ScorpionMan</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">PhoenixEgg</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">MechanizedMammothUnit</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Leviathan</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">SiegeTower</target></effect>	
-      </effects>
-    </tech>
+    <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+    <cost resourcetype="Gold">300.0000</cost>
+    <cost resourcetype="Wood">100.0000</cost>
+    <cost resourcetype="Favor">5.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\explosives.jpg</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <effects>
+      <!-- ultimate -->        
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Building</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">AbstractWarship</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">RocLanded</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">ScorpionMan</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">PhoenixEgg</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">MechanizedMammothUnit</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Leviathan</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">SiegeTower</target></effect>	
+    </effects>
+  </tech>
   <tech name="DetonatorsNorse" mergeMode="add">
-      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
-      <cost resourcetype="Gold">300.0000</cost>
-      <cost resourcetype="Wood">100.0000</cost>
-      <cost resourcetype="Favor">5.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\explosives.jpg</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <effects>
-        <!-- ultimate -->        
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Building</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">AbstractWarship</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">BattleBoar</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">FireGiant</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Fafnir</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">PortableRam</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Berserk</target></effect>	
-      </effects>
-    </tech>
+    <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+    <cost resourcetype="Gold">300.0000</cost>
+    <cost resourcetype="Wood">100.0000</cost>
+    <cost resourcetype="Favor">5.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\explosives.jpg</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <effects>
+      <!-- ultimate -->        
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Building</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">AbstractWarship</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">BattleBoar</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">FireGiant</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Fafnir</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">PortableRam</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Berserk</target></effect>	
+    </effects>
+  </tech>
   <tech name="DetonatorsAtlantean" mergeMode="add">
-      <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
-      <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
-      <cost resourcetype="Gold">300.0000</cost>
-      <cost resourcetype="Wood">100.0000</cost>
-      <cost resourcetype="Favor">5.0000</cost>
-      <researchpoints>30.0000</researchpoints>
-      <status>UNOBTAINABLE</status>
-      <icon>resources\tech\explosives.jpg</icon>
-      <flag>CountsTowardMilitaryScore</flag>
-      <flag>MythTech</flag>
-      <effects>
-        <!-- ultimate -->        
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Building</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">AbstractWarship</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Promethean</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Automaton</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Behemoth</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">Argus</target></effect>	
-        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
-				  <target type="ProtoUnit">FireSiphon</target></effect>	
+    <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
+    <cost resourcetype="Gold">300.0000</cost>
+    <cost resourcetype="Wood">100.0000</cost>
+    <cost resourcetype="Favor">5.0000</cost>
+    <researchpoints>30.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\explosives.jpg</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <effects>
+      <!-- ultimate -->        
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Building</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">AbstractWarship</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Promethean</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Automaton</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Behemoth</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">Argus</target></effect>	
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
+        <target type="ProtoUnit">FireSiphon</target></effect>	
       </effects>
     </tech>
   
