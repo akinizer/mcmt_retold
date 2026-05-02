@@ -879,6 +879,88 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
+=== AZTEC
+* godpowers
+agavebloom: farm gatherbonus container
+infestation: poison areadamage container, maquizcoatl
+pillaroftlalocan: bonusdamage vs ship
+volcanometeor: impact explosion
+starfall: impact explosion
+centzonhuitznahua: Tzitzimitl divinedamage
+    nemontemi: spawn itzpapalotl (hero goddess, decay)
+torchofmisfortune: spawn burn area
+    chargedattack: enemy los-
+eveningstar: soulguide spawn ondeath axolotl, bonusdamage myth container 
+feastofsustenance: devote humansoldier return cost 20%
+
+* god boost
+huitzilopochtli: warpriest
+tezcatlipoca: ObsidianButterfly
+quetzalcoatl: mythunit
+
+* myth techs
+ometochtlisreverly: bleed
+seprentskirt: maquizcoatl hitpoints
+coatepecshrines: regeneration farm (DynamicUpdate prevents it)
+wingsofitzpapalotl: enable takeoff
+burntwater: burn
+fourjars: popcap+4
+omenofdeath: teixiptia lifespan+ & cost gold+
+    also influences itzpapalotl
+preciousbones: hero hitpoints+
+CuicacalliTraining: humansoldier piercearmor
+    telpochcallitraining: humansoldier hp
+teponaztlidrums: humansoldier maxvelocity, rof
+nahuallatolli: improve sorcerers
+
+* military techs
+obisdianweapons: ObsidianButterfly handatack+
+
+* NavalUnit
+fishingshipAztec: area gatherrate bonus
+
+* mythunits
+Tunkuluchu: lure-kill, jump, flight
+Ahuizothl: amphibious, include ships
+SoulGuide: special attack (scorch area), auxcharged transform axolotl offspring, infernal tech
+Chaneque: default anti-unit, turret anti-building
+Ayotochtli: zhquelanded special ability, siegelineupgrade
+ObsidianButterfly: military tech upgrade
+CentonTotochin: frenzied tech, high rof, high maxvelocity, auxrecharge (abilityhonengyo), AbilityShogun (spawn phoenix egg while fighting, decay and explode)
+Tlacanexquimilli: corruption recharge, ghost tech
+Tzitzimitl: infernal tech, umibozu teleport
+
+* hero
+teixiptla: areaboost humansoldier hitpoints
+    huitzilopochtli: areadamage, rangedattack (fireball, building & flying), rangedattack (chimera fire)
+        glass canon
+    tezcatlipoca: areaboost humansoldier armor, damagebonus vs building, dashattack throw & bleed,
+        tanky
+    quetzalcoatl: areaboost humansoldier maxvelocity, NumberBounces +3, stun mythunit 2s
+        balanced
+
+* displaynames
+temple
+wonder
+titan
+
+* buildings
+LumberPost: damage scale by villager
+
+* special tech
+ExplosivesAztec: Buildings, Ships, Chaneque, Tzitzimitl
+    ExplosiveTrap
+    Quinametzin: explosive projectile
+    ObsidianShard
+
+* special unit
+OldCoyoteSpirit: coyote warrior, coyote hero
+CuicacalliTraining: coyote hero
+
+* anim
+warriorpriest: spear, maxrange+, rof-, armor+
+
+=== refactor
 * tech replace reworks
     general+
     greek
@@ -931,26 +1013,6 @@ RaftAtlanteanArcher
 RaftChineseArcher
 RaftJapaneseArcher
 RaftGreekArcher, RaftGreekArcherHero
-
-=== AZTEC
-* Custom Temple Names
-* Reworks
-Tunkuluchu: lure-kill, jump
-Ahuizothl: amphibious, include ships
-Soul Guide: special attack (scorch area), auxcharged transform axolotl offspring, infernal tech
-Chaneque: default anti-unit, turret anti-building
-Ayotochtli: zhquelanded special ability
-ObsidianButterfly: military tech upgrade
-CentonTotochin: frenzied tech, high rof, high maxvelocity, auxrecharge (abilityhonengyo), AbilityShogun (spawn phoenix egg while fighting, decay and explode)
-Tlacanexquimilli: corruption recharge, ghost tech
-Tzitzimitl: infernal tech, umibozu teleport
-
-LumberPost: damage scale by villager
-
-OldCoyoteSpirit: coyote warrior, coyote hero
-CuicacalliTraining: coyote hero
-
-ExplosivesAztec: Buildings, Ships, Chaneque, Tzitzimitl
 
 * Custom Units
 Jokul: Ability Gust, Ability Tempest, hackarmor+
