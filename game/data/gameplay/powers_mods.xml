@@ -264,7 +264,9 @@
 	<power name="EarthMonster" type="EarthMonster" godpower="" orderhint="5">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 	<power name="Starfall" type="Tempest" godpower="" orderhint="5">
-		<cost>0</cost><repeatcost>0</repeatcost></power>	
+		<cost>0</cost><repeatcost>0</repeatcost>
+		<groundimpactvfxproto>VFXNewMoonPulse</groundimpactvfxproto>
+	</power>	
 	<power name="Purge" type="CageUnit" godpower="" orderhint="5">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 	<power name="CorruptedGround" type="EffectInArea" godpower="" orderhint="5">
@@ -272,7 +274,11 @@
 	<power name="MonolithOfTlaloc" type="TempUnit" godpower="" orderhint="5">
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 	<power name="Volcano" type="TempUnit" godpower="" orderhint="5">
-		<cost>0</cost><repeatcost>0</repeatcost></power>	
+		<cost>0</cost><repeatcost>0</repeatcost>		
+	</power>	
+	<power name="AbilityVolcanoMeteor" type="Meteor">
+		<landimpactprotounit>VFXExplosion</landimpactprotounit>
+	</power>
 
 	<!--///MY_CUSTOM_MOD_TECH///-->
 	<power name="MCMT_RocLand" type="UnitAction" mergeMode="add">

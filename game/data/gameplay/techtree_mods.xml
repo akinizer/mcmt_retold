@@ -9307,6 +9307,14 @@
         <target type="ProtoUnit">InfestedDen</target></effect>
     </effects>
   </tech>
+  <tech name="ToloacheTrance">
+    <effects>
+      <effect type="Data" amount="1.10" subtype="OnHitEffectStatModify" action="HandAttack" effecttype="StatModify" modifytype="ROF" relativity="Absolute">
+				<target type="ProtoUnit">LargeScorpion</target></effect>
+      <effect type="Data" amount="1.20" subtype="OnHitEffectStatModify" action="PoisonousBreath" effecttype="StatModify" modifytype="ROF" relativity="Absolute">
+				<target type="ProtoUnit">Maquizcoatl</target></effect>
+    </effects>
+  </tech>
   <tech name="StringOfHearts">
     <effects>
       <effect type="Data" amount="1.00" subtype="Damage" damagetype="Crush" action="JumpAttack" relativity="Absolute" mergeMode="add">

@@ -867,24 +867,38 @@
     - WallConnectorCharger: offesive connector with a dependant attachment (Cheiroballista, AsuraFireBallLeft, AsuraFireBallRight, Toxotes etc.)
 
 26. Aztec Expansion
-- campaign heroes: access to myth techs, veterancy
+
+* tech reworks
 - tower upgrade: increase rof of sentrytower
-- spy: gains a sniper behavior and poison darts with techs
-- villager, mythunit and humansoldier: popcosts are reworked
-- god power costs free
-- display name: titan name, wonder names
+
+* myth tech reworks
 
 * god power reworks
-- agavebloom
+- Cost: free
+- AgaveBloom
     - gatherboost Farm
-    - doombloom: spawns on dead, burns nearby units, can kill nearby animals
-- infestedden
-    - omenofmalinalco: spawn maquizcoatl 3 on destruction
-    - stingofyappan: add areadamagecontainer
+    - DoomBloom: spawns on dead, burns nearby units, can kill nearby animals
+- InfestedDen
+    - OmenOfMalinalco: spawn maquizcoatl 3 on destruction
+    - StingOfYappan: add areadamagecontainer
+- Starfall
+    - groundimpactvfxproto: vfxnewmoonpulse
+- MonolithOfTlaloc
+    - bonusdamage vs ship
+- VolcanoMeteor:
+    - landimpactprotounit: VFXExplosion
+* unit reworks
+- PopCost: villager, mythunit and humansoldier
+- Campaign Heroes: access to myth techs, veterancy
+- QuimichinSpy: 
+    - OmenOfMalinalco: poison dart
+    - TemiminaloyanTrials: maximumrange+, los+, rof-, damagebonus vs humansoldier, directprojectile
+
+* structure reworks
+- Display Name: titan, wonders
 
 * additional tree types
-- hesperides, goshinboku
-
+- HesperidesTree, Goshinboku
 
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
@@ -892,15 +906,11 @@
 
 === AZTEC
 * godpowers
-infestation: poison areadamage container, maquizcoatl
-pillaroftlalocan: bonusdamage vs ship
-volcanometeor: impact explosion
-starfall: impact explosion
 centzonhuitznahua: Tzitzimitl divinedamage
     nemontemi: spawn itzpapalotl (hero goddess, decay)
 torchofmisfortune: spawn burn area
     chargedattack: enemy los-
-eveningstar: soulguide spawn ondeath axolotl, bonusdamage myth container 
+eveningstar: bonusdamage myth container 
 feastofsustenance: devote humansoldier return cost 20%
 
 * god boost
@@ -962,6 +972,9 @@ ExplosivesAztec: Buildings, Ships, Chaneque, Tzitzimitl
     ExplosiveTrap
     Quinametzin: explosive projectile
     ObsidianShard
+
+SpawnsAztec
+    soulguide: axolotl 
 
 * special unit
 OldCoyoteSpirit: coyote warrior, coyote hero
@@ -1049,6 +1062,32 @@ Popocatepetl
 
 PantherWarrior: tezca model, siegeunit
 BullWarrior: Kamina model, Kamos model
+
+* mechanics applicable
+- Abilities
+ConditionalShield
+AbilityUmibozu
+Burrow
+JumpAttack + AbilityTunkuluchu (mark for death)
+BirthAttack
+AbilitySoulGuide (ınfection)
+LifeDrain
+Throw
+Spawn: GodPower
+Spawn: MythUnit
+Spawn: Multiple Units
+Spawn: AbilityDaimyo
+
+- Containers
+SmokeTrapAura: AreaLOSReduction, AreaSpeedReduction
+ThornedWallsContainer
+- OnHitEffect
+<onhiteffect type="InstantKillablePercentChance" amount="0.25" relativity="set" duration="8.000000" byunittype="Tunkuluchu">
+    <target attacktype="HumanSoldier"></target></onhiteffect>
+<onhiteffect type="StatModify" duration="8.000000">
+    <modify type="MaxHP" stack="">0.750000</modify>
+    <target attacktype="Unit"></target><target ignoretype="Hero"></target><target ignoretype="LogicalTypeDivineImmunity"></target></onhiteffect>
+
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================

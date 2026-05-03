@@ -5561,14 +5561,11 @@
 	<!-- Aztec Buildings -->
 	<unit name="InfestedDen">
 		<spawn type="dead" count="3" skipplacementcheck="" mergeMode="remove">LargeScorpion</spawn>
-		<protoaction mergeMode="add">
-			<name>MaquizcoatlSpawn</name>
-			<modifybase>3</modifybase>
-			<maxrange>3.0000</maxrange>
-			<rate type="Maquizcoatl">1.0</rate>
-			<forcetrainedunitstogatherpoint>1</forcetrainedunitstogatherpoint>
-			<maintaintrainpoints>45.0000</maintaintrainpoints>
-			<active>0</active>
+	</unit>
+	<unit name="MonolithOfTlaloc">
+		<protoaction>
+			<name>MonolithStrike</name>
+			<damagebonus type="Ship" mergeMode="add">1.80000</damagebonus>
 		</protoaction>
 	</unit>
 	<!-- Aztec Special Units -->
