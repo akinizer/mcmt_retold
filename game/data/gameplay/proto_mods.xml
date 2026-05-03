@@ -27653,6 +27653,8 @@
 		</protoaction>
 	</unit>
 
+	<!-- GOD POWER SPAWNS -->
+
 	<!-- CUSTOM GOD POWER SPAWNS -->
 	 <unit name="MCMT_BoltStrike">
 		<animfile>greek\godpowers\bolt\bolt.xml</animfile>

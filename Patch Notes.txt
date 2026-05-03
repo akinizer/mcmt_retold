@@ -940,7 +940,7 @@ obisdianweapons: ObsidianButterfly handatack+
 fishingshipAztec: area gatherrate bonus
 
 * mythunits
-Tunkuluchu: lure-kill, jump, flight
+Tunkuluchu: lure-kill, jumpattack (markfordeath, areadamage, throw), walk anim (nature flying unit)
 Ahuizothl: amphibious, include ships
 SoulGuide: special attack (scorch area), auxcharged transform axolotl offspring, infernal tech
 Chaneque: default anti-unit, turret anti-building

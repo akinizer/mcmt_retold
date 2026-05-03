@@ -275,8 +275,11 @@
 		<cost>0</cost><repeatcost>0</repeatcost></power>	
 	<power name="Volcano" type="TempUnit" godpower="" orderhint="5">
 		<cost>0</cost><repeatcost>0</repeatcost>		
+		<activetime>30</activetime>
 	</power>	
 	<power name="AbilityVolcanoMeteor" type="Meteor">
+		<activetime>30</activetime>
+		<numberofstrikes>30</numberofstrikes>
 		<landimpactprotounit>VFXExplosion</landimpactprotounit>
 	</power>
 
