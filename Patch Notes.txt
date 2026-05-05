@@ -1219,6 +1219,7 @@ TreeBender (wind.tactics): LightWindSmallArea,LightWindAllTrees,ModerateWindSmal
 * alvida: miko -> oni club
 * zorro: chiyou -> 4x katana, 
 * mihawk: samurai, throw, ranged slash
+* colossaltitan: fanatic -> delayedtransform, explosion birth, firegiant hero 
 
 === New Unit Models - Custom Mesh
 Horse + ChuKoNu + Arbalest
