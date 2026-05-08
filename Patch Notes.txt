@@ -936,7 +936,7 @@ teponaztlidrums: humansoldier maxvelocity, rof
 nahuallatolli: improve sorcerers
 
 * military techs
-obisdianweapons: ObsidianButterfly handatack+
+obsidianweapons: ObsidianButterfly handatack+
 
 * NavalUnit
 fishingshipAztec: area gatherrate bonus
@@ -977,6 +977,8 @@ ExplosivesAztec: Buildings, Ships, Chaneque, Tzitzimitl
 
 SpawnsAztec
     soulguide: axolotl 
+
+TrackingDevices: QuimichinSpy castpower vision recharge
 
 * special unit
 OldCoyoteSpirit: coyote warrior, coyote hero
@@ -1213,6 +1215,8 @@ TreeBender (wind.tactics): LightWindSmallArea,LightWindAllTrees,ModerateWindSmal
 * Campaign Units
 * Armory Techs: Dismount, Explosives, Spawn 
 * Encampment
+* aztect tower: area increase recovery rate
+* ranged humansoldier: grenade launcher
 
 === CROSSOVER
 * luffy: militia / prodromos_rider -> promethean_attack_a, promethean_attack_b, shinobi_wan_kenobi_attack_b, avenger_whirlwindattack_a 
@@ -1220,6 +1224,7 @@ TreeBender (wind.tactics): LightWindSmallArea,LightWindAllTrees,ModerateWindSmal
 * zorro: chiyou -> 4x katana, 
 * mihawk: samurai, throw, ranged slash
 * colossaltitan: fanatic -> delayedtransform, explosion birth, firegiant hero 
+* bloodthirster: aztec covert, lifespan, winged humanoid mythunit, doubleaxe, jumpattack
 
 === New Unit Models - Custom Mesh
 Horse + ChuKoNu + Arbalest
