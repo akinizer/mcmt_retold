@@ -5557,6 +5557,122 @@
 
 	<!-- Aztec Hero Units -->
 	<!-- Aztec Military Units -->
+	<unit name="QuimichinSpy">
+		<train row="0" column="1" mergeMode="remove">SmokeTrap</train>
+		<train row="0" column="2" mergeMode="remove">SpikeTrap</train>
+		<train row="0" column="4" mergeMode="add">SmokeTrap</train>
+		<train row="0" column="5" mergeMode="add">SpikeTrap</train>
+		<rechargetime>60.0000</rechargetime>
+		<flag>RangeIndicatorForAbilityCasting</flag>
+		<flag>AutoAbilityStartDisabled</flag>
+		<tactics>mcmt_spy_rangedattack.tactics</tactics>
+		<protoaction>
+			<name>TrackerDeviceAction</name>
+			<rof>0.900000</rof>
+			<damage type="Pierce">1.000000</damage>
+			<maxrange>22.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>SleepDartAction</name>
+			<rof>1.100000</rof>
+			<damage type="Pierce">1.000000</damage>
+			<onhiteffect type="Stun" duration="10"></onhiteffect>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileArrowTzompantli</projectile>
+		</protoaction>
+		<protoaction>
+			<name>PoisonDartAction</name>
+			<rof>1.100000</rof>
+			<damage type="Pierce">1.000000</damage>
+			<onhiteffect type="DamageOverTime" duration="3.000000" targetunittype="Unit">
+				<damage type="Divine">8.00000</damage></onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXPoison" attachbone="spine" duration="3.000000"></onhiteffect>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileWadjetSpit</projectile>
+		</protoaction>
+	</unit>
+	<unit name="WanderingTurkey" orderhint="5">
+		<displaynameid>STR_EMB_WANDERING_TURKEY_NAME</displaynameid>
+		<rollovertextid>STR_EMB_WANDERING_TURKEY_LR</rollovertextid>
+		<shortrollovertextid>STR_EMB_FOOD_SR</shortrollovertextid>
+		<icon>resources\nature\animals\land\turkey_icon.png</icon>
+		<animfile>aztec\nature\animals\land\turkey\turkey.xml</animfile>
+		<soundsetfile>nature\animals\turkey\turkey.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<wanderdistance>3</wanderdistance>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>6.0000</initialhitpoints>
+		<maxhitpoints>6.0000</maxhitpoints>
+		<weightclass>0</weightclass>
+		<maxvelocity>2.2000</maxvelocity>
+		<los>8.0000</los>
+		<initialresource resourcetype="Food">50.0000</initialresource>
+		<resourcesubtype>meat</resourcesubtype>
+		<resourcedecay>0.2000</resourcedecay>
+		<workersoftlimit>7</workersoftlimit>
+		<carrycapacity resourcetype="Food">250.0000</carrycapacity>
+		<armor type="Hack" value="0.0000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeEasySelectAvoid</unittype>
+		<unittype>NatureClass</unittype>
+		<unittype>Nature</unittype>
+		<unittype>Herdable</unittype>
+		<unittype>HuntedResource</unittype>
+		<unittype>Resource</unittype>
+		<unittype>Unit</unittype>
+		<unittype>AbstractScout</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>FoodResource</unittype>
+		<flag>DieAtZeroResources</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>RMCanRotate</flag>
+		<flag>Wanders</flag>
+		<flag>NotDeleteable</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>VisibleUnderFogIfNature</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DoNotDragSelectWithUnits</flag>
+		<flag>IgnoreCarryCapacityWhenDead</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<command row="3" column="0">SetVillagerToGather</command>
+		<command row="3" column="1">ResourceUnitConstructGranary</command>
+		<command row="3" column="1">ResourceUnitConstructSilo</command>
+		<command row="3" column="1">ResourceUnitConstructWatermill</command>
+		<command row="3" column="1">ResourceUnitConstructCalpulli</command>
+		<command row="3" column="3">FlareAtUnit</command>
+		<command row="3" column="4">SetRallyPointOfNearbyEconUnitsToUnitPos</command>
+		<command row="3" column="5">SetRallyPointOfNearbyMilitaryUnitsToUnitPos</command>
+		<tactics>animal_herdable.tactics</tactics>
+		<protoaction>
+			<name>AutoConvert</name>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>AutoGatherFood</name>
+			<rate type="Food">0.200000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DevoteMinor</name>
+			<devotiontime>2.000000</devotiontime>
+			<active>0</active>
+			<devotionpower>AnimalSacrifice</devotionpower>
+			<modelattachment>vfx\glow\appearance.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit>
 	<!-- Aztec Naval Units -->
 	<!-- Aztec Buildings -->
 	<unit name="InfestedDen">
@@ -5566,6 +5682,17 @@
 		<protoaction>
 			<name>MonolithStrike</name>
 			<damagebonus type="Ship" mergeMode="add">1.80000</damagebonus>
+		</protoaction>
+	</unit>
+	<unit name="Calpulli">
+		<tactics>aztec_calpulli_noranged.tactics</tactics>
+	</unit>
+	<unit name="CalpulliLivestockPen">
+		<tactics>aztec_calpulli_noranged.tactics</tactics>
+		<protoaction>
+			<name>ChargedSpawn</name>
+			<rate type="Turkey" mergeMode="remove">1.000000</rate>
+			<rate type="WanderingTurkey" mergeMode="add">1.000000</rate>
 		</protoaction>
 	</unit>
 	<!-- Aztec Special Units -->
@@ -7369,7 +7496,7 @@
 		<maxhitpoints>600.0000</maxhitpoints>
 	</unit>
 	<unit name="WallConnectorArcher">
-		<displaynameid>STR_BLD_WOODEN_WALL_NAME</displaynameid>
+		<displaynameid>STR_BLD_FIREWALL_NAME</displaynameid>
 		<rollovertextid>STR_BLD_WOODEN_WALL_LR</rollovertextid>
 		<shortrollovertextid>STR_BLD_WALL_FIREPORT_WALLARCHER_SR</shortrollovertextid>
 		<editornameid>STR_BLD_WOODEN_WALL_CONNECTOR_EDT_NAME</editornameid>
@@ -7380,6 +7507,7 @@
 		<animfile culture="atlantean">atlantean\buildings\wall\wall_connector.xml</animfile>
 		<animfile culture="chinese">chinese\buildings\wall\wall_connector.xml</animfile>
 		<animfile culture="japanese">japanese\buildings\wall\wall_connector.xml</animfile>
+		<animfile culture="aztec">aztec\buildings\wall\wall_connector.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\wall.xml</soundsetfile>
 		<obstructionradiusx>1.0000</obstructionradiusx>
 		<obstructionradiusz>1.0000</obstructionradiusz>
@@ -7436,10 +7564,11 @@
 		<command row="1" column="1">CancelBuilding</command>
 		<command row="3" column="5">Delete</command>
 
+		<flag>DisplayRange</flag>
 		<dependentunit>CustomDependantUnit_WallArcher</dependentunit>
 	</unit>
 	<unit name="WallConnectorCrusher">
-		<displaynameid>STR_BLD_WOODEN_WALL_NAME</displaynameid>
+		<displaynameid>STR_BLD_FIREWALL_NAME</displaynameid>
 		<rollovertextid>STR_BLD_WOODEN_WALL_LR</rollovertextid>
 		<shortrollovertextid>STR_BLD_WALL_FIREPORT_WALLCRUSHER_SR</shortrollovertextid>
 		<editornameid>STR_BLD_WOODEN_WALL_CONNECTOR_EDT_NAME</editornameid>
@@ -7450,6 +7579,7 @@
 		<animfile culture="atlantean">atlantean\buildings\wall\wall_connector.xml</animfile>
 		<animfile culture="chinese">chinese\buildings\wall\wall_connector.xml</animfile>
 		<animfile culture="japanese">japanese\buildings\wall\wall_connector.xml</animfile>
+		<animfile culture="aztec">aztec\buildings\wall\wall_connector.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\wall.xml</soundsetfile>
 		<obstructionradiusx>1.0000</obstructionradiusx>
 		<obstructionradiusz>1.0000</obstructionradiusz>
@@ -7506,10 +7636,11 @@
 		<command row="1" column="1">CancelBuilding</command>
 		<command row="3" column="5">Delete</command>
 
+		<flag>DisplayRange</flag>
 		<dependentunit>CustomDependantUnit_WallCrusher</dependentunit>
 	</unit>
 	<unit name="WallConnectorCharger">
-		<displaynameid>STR_BLD_WOODEN_WALL_NAME</displaynameid>
+		<displaynameid>STR_BLD_FIREWALL_NAME</displaynameid>
 		<rollovertextid>STR_BLD_WOODEN_WALL_LR</rollovertextid>
 		<shortrollovertextid>STR_BLD_WALL_FIREPORT_WALLCHARGER_SR</shortrollovertextid>
 		<editornameid>STR_BLD_WOODEN_WALL_CONNECTOR_EDT_NAME</editornameid>
@@ -7520,6 +7651,7 @@
 		<animfile culture="atlantean">atlantean\buildings\wall\wall_connector.xml</animfile>
 		<animfile culture="chinese">chinese\buildings\wall\wall_connector.xml</animfile>
 		<animfile culture="japanese">japanese\buildings\wall\wall_connector.xml</animfile>
+		<animfile culture="aztec">aztec\buildings\wall\wall_connector.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\wall.xml</soundsetfile>
 		<obstructionradiusx>1.0000</obstructionradiusx>
 		<obstructionradiusz>1.0000</obstructionradiusz>
@@ -7576,6 +7708,7 @@
 		<command row="1" column="1">CancelBuilding</command>
 		<command row="3" column="5">Delete</command>
 
+		<flag>DisplayRange</flag>
 		<dependentunit>CustomDependantUnit_WallCharger</dependentunit>
 	</unit>
 

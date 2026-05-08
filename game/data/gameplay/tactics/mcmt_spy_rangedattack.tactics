@@ -1,0 +1,80 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_STEALTH">Stealth</name>
+		<type>Stealth</type>
+		<maxrange>25.0</maxrange>
+		<autocastbyself>1</autocastbyself>
+		<autocastdistance>2.250000</autocastdistance>
+		<persistent>1</persistent>
+		<activevfxproto>VFXStealthEye</activevfxproto>
+		<revealarearadius>2.0</revealarearadius>
+		<revealareachain>1.0</revealareachain>
+		<soundsetenter>StealthBirth</soundsetenter>
+		<soundsetupdate>StealthAcknowledge</soundsetupdate>
+		<soundsetexit>StealthExists</soundsetexit>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="Unit">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+		<type>DevoteMajor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+   <action>
+		<name stringid="STR_ACTION_TRACKERDEVICE">TrackerDeviceAction</name>
+		<type>Attack</type>
+		<rate type="LogicalTypeValidSpyTarget">1.0</rate>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<handlogic>1</handlogic>
+		<anim>RangedAttack</anim>
+		<castpower>Spy</castpower>
+		<castpowertargettype>Unit</castpowertargettype>
+		<firechallengepacket>1</firechallengepacket>
+		<active>0</active>
+	</action>
+   <action>
+		<name stringid="STR_ACTION_SLEEPDART">SleepDartAction</name>
+		<type>Attack</type>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<handlogic>1</handlogic>
+		<anim>RangedAttack</anim>
+		<firechallengepacket>1</firechallengepacket>
+		<active>0</active>
+	</action>
+   <action>
+		<name stringid="STR_ACTION_POISONDART">PoisonDartAction</name>
+		<type>Attack</type>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<handlogic>1</handlogic>
+		<anim>RangedAttack</anim>
+		<firechallengepacket>1</firechallengepacket>
+		<active>0</active>
+	</action>
+	<tactic>Default
+        <action priority="100">TrackerDeviceAction</action>
+        <action priority="90">SleepDartAction</action>
+        <action priority="80">PoisonDartAction</action>
+        <action priority="70">RangedAttack</action>
+        <action>DevoteMajor</action>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype>
+        <autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

@@ -893,11 +893,30 @@
 - PopCost: villager, mythunit and humansoldier
 - Campaign Heroes: access to myth techs, veterancy
 - QuimichinSpy: 
-    - OmenOfMalinalco: poison dart
+    - AutoScout disabled
     - TemiminaloyanTrials: maximumrange+, los+, rof-, damagebonus vs humansoldier, directprojectile
+    - ArchaicAgeAztec:
+        - TrackingDevice: launches a device that casts spy at a unit, manual ability, targets logicaltypespytarget
+    - ClassicalAgeAztec:
+        - SleepDart: blows a special dart that makes target unit fall a sleep, manual ability, targets units
+    - HeroicAgeAztec:
+        - PoisonDart: blows a special dart that makes unit suffering from toxic spores, manual ability, targets units
+
+* special units
+- WanderingTurkey:
+    - replaces Turkey in CalpulliLiveStockPen
+    - autoconvert disabled
+    - autoscout added
+
+* special buildings
+- WallConnectorArcher,WallConnectorCrusher,WallConnectorCharger:
+    - aztec model added
+    - displayname: Fire Wall
 
 * structure reworks
 - Display Name: titan, wonders
+- Calpulli, CalpulliLivestock: oversight that displays ranged attack has been fixed
+
 
 * additional tree types
 - HesperidesTree, Goshinboku

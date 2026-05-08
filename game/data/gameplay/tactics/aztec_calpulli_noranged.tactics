@@ -1,0 +1,19 @@
+<tactics>
+	<action>
+		<name>FoodGatherAura</name>
+		<type>AutoRangedModify</type>
+		<persistent>1</persistent>
+		<active>0</active>
+		<modelattachment>vfx\glow\mythic_resource.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name>FarmGatherAura</name>
+		<type>AutoRangedModify</type>
+		<persistent>1</persistent>
+		<active>0</active>
+		<modelattachment>vfx\glow\mythic_resource.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<tactic>Default<action>FoodGatherAura</action><action>FarmGatherAura</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

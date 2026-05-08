@@ -5,114 +5,114 @@
         <!--Military Barracks: Murmillo, Fanatic, Destroyer-->
         <!--Counter Barracks: Arcus, Turma, Cheiroballista-->
         <!--Palace Barracks: Katapeltes, Contarius, Fire Siphon-->
-        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Arcus" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Contarius" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Destroyer" relativity="Assign"><target type="ProtoUnit">Palace</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Fanatic" relativity="Assign"><target type="ProtoUnit">Palace</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Katapeltes" relativity="Assign"><target type="ProtoUnit">CounterBarracks</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Arcus" relativity="Assign" mergeMode="add"><target type="ProtoUnit">MilitaryBarracks</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Contarius" relativity="Assign" mergeMode="add"><target type="ProtoUnit">MilitaryBarracks</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Destroyer" relativity="Assign" mergeMode="add"><target type="ProtoUnit">Palace</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Fanatic" relativity="Assign" mergeMode="add"><target type="ProtoUnit">Palace</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Katapeltes" relativity="Assign" mergeMode="add"><target type="ProtoUnit">CounterBarracks</target></effect>
 
-        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Katapeltes" row="0" column="0" relativity="Assign"><target type="ProtoUnit">Palace</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Contarius" row="0" column="1" relativity="Assign"><target type="ProtoUnit">Palace</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Fanatic" row="0" column="1" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Destroyer" row="0" column="2" relativity="Assign"><target type="ProtoUnit">MilitaryBarracks</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Arcus" row="0" column="0" relativity="Assign"><target type="ProtoUnit">CounterBarracks</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Katapeltes" row="0" column="0" relativity="Assign" mergeMode="add"><target type="ProtoUnit">Palace</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Contarius" row="0" column="1" relativity="Assign" mergeMode="add"><target type="ProtoUnit">Palace</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Fanatic" row="0" column="1" relativity="Assign" mergeMode="add"><target type="ProtoUnit">MilitaryBarracks</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Destroyer" row="0" column="2" relativity="Assign" mergeMode="add"><target type="ProtoUnit">MilitaryBarracks</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Arcus" row="0" column="0" relativity="Assign" mergeMode="add"><target type="ProtoUnit">CounterBarracks</target></effect>	
     
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AmazonVanguards</effect>
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsAtlantean</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsAtlantean" row="3" column="4" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsAtlantean" row="3" column="4" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsAtlantean</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsAtlantean" row="3" column="3" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsAtlantean" row="3" column="3" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsAtlantean</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsAtlantean" row="3" column="1" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsAtlantean" row="3" column="1" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
 
-        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
 
-        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
       </effects>
     </tech>
 
     <tech name="ArchaicAgeGreek">
       <effects>        
-        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
-        <effect type="Data" amount="1.25" subtype="ObstructionRadiusX" relativity="BasePercent">
+        <effect type="Data" amount="1.25" subtype="ObstructionRadiusX" relativity="BasePercent" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
-        <effect type="Data" amount="1.25" subtype="ObstructionRadiusZ" relativity="BasePercent">
+        <effect type="Data" amount="1.25" subtype="ObstructionRadiusZ" relativity="BasePercent" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AmazonVanguards</effect>
 
         <effect type="SetName" proto="TownCenter" newname="STR_BLD_PARTHENON_NAME" newrollover="STR_BLD_PARTHENON_LR" newshortrollover="STR_BLD_PARTHENON_SR"></effect>
-        <effect type="Data" action="RangedAttack" amount="0.00" subtype="ActionEnable" relativity="Assign">
+        <effect type="Data" action="RangedAttack" amount="0.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
 				  <target type="ProtoUnit">TownCenter</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandRemove" tech="FortifiedTownCenter" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandRemove" tech="FortifiedTownCenter" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
-        <effect type="Data" amount="1750" subtype="Hitpoints" relativity="Absolute">
+        <effect type="Data" amount="1750" subtype="Hitpoints" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">ParthenonGuards</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ParthenonGuards" row="0" column="5" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ParthenonGuards" row="0" column="5" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>		
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsGreek</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsGreek" row="3" column="4" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsGreek" row="3" column="4" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
 
          <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsGreek</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsGreek" row="3" column="3" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsGreek" row="3" column="3" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsGreek</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsGreek" row="3" column="2" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsGreek" row="3" column="2" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>
         
-        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeNorse">
       <effects>        
-        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
-        <effect type="Data" amount="1.25" subtype="ObstructionRadiusX" relativity="BasePercent">
+        <effect type="Data" amount="1.25" subtype="ObstructionRadiusX" relativity="BasePercent" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
-        <effect type="Data" amount="1.25" subtype="ObstructionRadiusZ" relativity="BasePercent">
+        <effect type="Data" amount="1.25" subtype="ObstructionRadiusZ" relativity="BasePercent" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
           
-        <effect type="SetName" proto="TownCenter" newname="STR_BLD_JARLSMANOR_NAME" newrollover="STR_BLD_JARLSMANOR_LR" newshortrollover="STR_BLD_JARLSMANOR_SR"></effect>
-        <effect type="Data" action="RangedAttack" amount="0.00" subtype="ActionEnable" relativity="Assign">
+        <effect type="SetName" proto="TownCenter" newname="STR_BLD_JARLSMANOR_NAME" newrollover="STR_BLD_JARLSMANOR_LR" newshortrollover="STR_BLD_JARLSMANOR_SR" mergeMode="add"></effect>
+        <effect type="Data" action="RangedAttack" amount="0.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
 				  <target type="ProtoUnit">TownCenter</target></effect>
-        <effect type="Data" amount="1.00" subtype="CommandRemove" tech="FortifiedTownCenter" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandRemove" tech="FortifiedTownCenter" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
-        <effect type="Data" amount="1750" subtype="Hitpoints" relativity="Absolute">
+        <effect type="Data" amount="1750" subtype="Hitpoints" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">ManorGuards</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ManorGuards" row="0" column="5" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ManorGuards" row="0" column="5" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>		
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsNorse</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsNorse" row="3" column="4" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsNorse" row="3" column="4" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">AbstractArmory</target></effect>		
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsNorse</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsNorse" row="3" column="3" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsNorse" row="3" column="3" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">AbstractArmory</target></effect>	
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsNorse</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsNorse" row="3" column="2" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsNorse" row="3" column="2" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">AbstractArmory</target></effect>	
 
-        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeJapanese">
@@ -137,11 +137,11 @@
         <effect type="SetName" proto="ShrineJapanese" newname="STR_BLD_SHRINE_LOCAL_NAME" mergeMode="add"></effect>
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsJapanese</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsJapanese" row="3" column="3" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsJapanese" row="3" column="3" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsJapanese</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsJapanese" row="3" column="2" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsJapanese" row="3" column="2" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
         <!---->
         <effect type="TechStatus" status="obtainable" mergeMode="add">ModernPipeNetworks</effect>
@@ -159,59 +159,74 @@
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ShrineOfferings_III" row="3" column="4" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">ShrineJapanese</target></effect>	
 
-        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeChinese">
       <effects>        
-        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsChinese</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsChinese" row="3" column="4" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsChinese" row="3" column="4" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>		
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsChinese</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsChinese" row="3" column="3" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsChinese" row="3" column="3" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsChinese</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsChinese" row="3" column="2" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsChinese" row="3" column="2" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
       </effects>
     </tech>
     <tech name="ArchaicAgeEgyptian">
       <effects>        
-        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DetonatorsEgyptian</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsEgyptian" row="3" column="4" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DetonatorsEgyptian" row="3" column="4" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">DismountTacticsEgyptian</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsEgyptian" row="3" column="3" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DismountTacticsEgyptian" row="3" column="3" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
           
         <effect type="TechStatus" status="obtainable" mergeMode="add">DefensiveTacticsEgyptian</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsEgyptian" row="3" column="2" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DefensiveTacticsEgyptian" row="3" column="2" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Armory</target></effect>	
 
-        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeAztec">
       <effects>        
-        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
 
-        <effect type="TechStatus" status="active">WallConnectorToArcher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCrusher</effect>
-        <effect type="TechStatus" status="active">WallConnectorToCharger</effect>
+        <effect type="Data" action="TrackerDeviceAction" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit" mergeMode="add">QuimichinSpy</target></effect>
+
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToArcher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
+      </effects>
+    </tech>
+    <tech name="ClassicalAgeAztec">
+      <effects>        
+        <effect type="Data" action="SleepDartAction" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">QuimichinSpy</target></effect>
+      </effects>
+    </tech>
+    <tech name="HeroicAgeAztec">
+      <effects>        
+        <effect type="Data" action="PoisonDartAction" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">QuimichinSpy</target></effect>
       </effects>
     </tech>
 
@@ -9188,11 +9203,6 @@
   <!-- Aztec Myth Techs-->
   <tech name="OmenOfMalinalco">
     <effects>
-      <effect type="Data" amount="1.0" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="4.00" targettype="Unit" relativity="Assign" mergeMode="add">
-				<target type="ProtoUnit">QuimichinSpy</target></effect>
-			<effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="4.00" targettype="Unit" proto="VFXPoison" relativity="Assign" mergeMode="add">
-				<target type="ProtoUnit">QuimichinSpy</target></effect>      
-      
       <effect type="Data" amount="3.00" subtype="ModifySpawn" spawntype="Dead" proto="Maquizcoatl" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">InfestedDen</target></effect>
     </effects>

@@ -372,5 +372,14 @@
 	<NubianHunter>
 		<ability>AbilitySpecialHandAttack<tech>MCMT_KingdomGuardTraining_III</tech><chargetimeasrof>1</chargetimeasrof></ability>
 	</NubianHunter>
-	
+		<!--Aztec-Military-->
+	<QuimichinSpy>
+		<ability>AbilityTrackerDevice<tech>ArchaicAgeAztec</tech><chargetimeasrof>1</chargetimeasrof><noautocast>true</noautocast></ability>
+		<ability>AbilitySleepDart<tech>ClassicalAgeAztec</tech><chargetimeasrof>1</chargetimeasrof><noautocast>true</noautocast></ability>
+		<ability>AbilityPoisonDart<tech>HeroicAgeAztec</tech><chargetimeasrof>1</chargetimeasrof><noautocast>true</noautocast></ability>
+	</QuimichinSpy>	
+		<!--Aztec-Economic-->
+	<WanderingTurkey>
+		<ability>AbilityAutoScout<noautocast>true</noautocast></ability>
+	</WanderingTurkey>	
 </abilitiesmods>

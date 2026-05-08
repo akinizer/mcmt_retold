@@ -74,6 +74,9 @@ ID = "STR_UNIT_RAFTARCHER_NAME"   ;   Str = "Raft Archer"
 ID = "STR_UNIT_RAFTARCHER_SR"   ;   Str = "Survivor crewmate from the shipwreck"
 ID = "STR_UNIT_RAFTARCHER_LR"   ;   Str = "The survivor wishes to make it through hurling storms, pirates and enemy ships"
 
+ID = "STR_EMB_WANDERING_TURKEY_NAME"   ;   Str = "Wandering Turkey"
+ID = "STR_EMB_WANDERING_TURKEY_LR"   ;   Str = "Overly curious turkey that has been planning to run away. It is an excellent scout in large groups but tends to get distracted easily"
+
 // ELITE UNITS
 ID = "STR_UNIT_CHIEFTAIN_NAME"   ;   Str = "Chieftain"
 ID = "STR_UNIT_CHIEFTAIN_LR"   ;   Str = "Veteran Tribal Villager. Faster, Stronger, Tougher."
@@ -1084,7 +1087,7 @@ ID = "STR_POWER_PSIONIC_LEVITATION_LR"   ;   Str = "Psionic Energy Unleashed to 
 ID = "STR_POWER_TSUNAMI_GENERATOR"   ;   Str = "Tsunami Generator"
 ID = "STR_POWER_TSUNAMI_GENERATOR_LR"   ;   Str = "Seismic Wave Superweapon Unleashed by Worldbreaker Super Battleship"
 
-// ACTION NAMES
+// SPECIAL ACTIONS AND ABILITIES
 ID = "STR_ACTION_TRANSFORM"   ;   Str = "Transform"
 ID = "STR_ACTION_DEPLOY"   ;   Str = "Deploy"
 ID = "STR_ACTION_UNDEPLOY"   ;   Str = "Undeploy"
@@ -1133,7 +1136,21 @@ ID = "STR_ABILITY_EMERGE"   ;   Str = "Emerge"
 ID = "STR_ABILITY_SPECIALATTACK"   ;   Str = "Special Attack"
 ID = "STR_ABILITY_SPECIALATTACK_LR"   ;   Str = "This unit has a special ability that recharges"
 
+ID = "STR_ACTION_TRACKERDEVICE"   ;   Str = "Launch Tracker"
+ID = "STR_ABILITY_TRACKERDEVICE_NAME"   ;   Str = "Tracker Device"
+ID = "STR_ABILITY_TRACKERDEVICE_LR"   ;   Str = "Spies excel in many utility gatgets including tracker devices that notify location of targets through GPS or Divine Sight"
+
+ID = "STR_ACTION_SLEEPDART"   ;   Str = "Sleep Dart"
+ID = "STR_ABILTY_SLEEPDART_NAME"   ;   Str = "Sleep Dart"
+ID = "STR_ABILTY_SLEEPDART_LR"   ;   Str = "Spies can use an array of darts including sleep darts for a duration"
+
+ID = "STR_ACTION_POISONDART"   ;   Str = "Poison Dart"
+ID = "STR_ABILTY_POISONDART_NAME"   ;   Str = "Poison Dart"
+ID = "STR_ABILTY_POISONDART_LR"   ;   Str = "Spies can use an array of darts including poison darts for a duration"
+
 // COMMAND TECHS
+ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
+
 ID = "STR_BLD_WALL_FIREPORT_WALLARCHER_SR"   ;   Str = "Basic Archer Fireport enabled wall"
 ID = "STR_BLD_WALL_FIREPORT_WALLCRUSHER_SR"   ;   Str = "Heavy Archer Fireport enabled wall"
 ID = "STR_BLD_WALL_FIREPORT_WALLCHARGER_SR"   ;   Str = "Rapid Archer Fireport enabled wall"
@@ -1146,7 +1163,6 @@ ID = "STR_TRANSFORM_TO_WALLCRUSHER_LR"   ;   Str = "Enable fireports for heavy a
 
 ID = "STR_TRANSFORM_TO_WALLCHARGER"   ;   Str = "Charger Fireport"
 ID = "STR_TRANSFORM_TO_WALLCHARGER_LR"   ;   Str = "Enable fireports for rapid archers"
-
 
 // GOD POWERS
 ID = "STR_POWER_ETERNALMOON"   ;   Str = "Eternal Moon"
