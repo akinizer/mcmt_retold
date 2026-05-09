@@ -893,6 +893,11 @@
     - numberofstrikes: 40 to 30
     - landimpactprotounit: VFXExplosion
 
+* upstart boost techs
+- Huitzi: maxhitpoints & damage for [WarriorPriest, Titan]
+- Tezca: hackarmor & rof for [ObsidianButterfly, Titan]
+- Quetzal: maxhitpoints & rechargetime for [MythUnit, Titan]
+
 * unit reworks
 - PopCost: villager, mythunit and humansoldier
 - Campaign Heroes: access to myth techs, veterancy
@@ -933,6 +938,7 @@
 
 * additional tree types
 - HesperidesTree, Goshinboku
+
 
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================

@@ -307,6 +307,58 @@
       </effects>
     </tech>
 
+    <tech name="UpstartBoost_Huitzilopochtli" mergeMode="add">
+      <displaynameid>STR_TECH_UPSTARTBOOST_NAME</displaynameid>
+      <status>UNOBTAINABLE</status>
+      <delay>90.0000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <effects> 
+        <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+          <target type="ProtoUnit">WarriorPriest</target></effect>
+        <effect type="Data" action="HandAttack" amount="0.90" subtype="RateOfFire" relativity="BasePercent">
+          <target type="ProtoUnit">WarriorPriest</target></effect>
+
+        <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+          <target type="ProtoUnit">AbstractTitan</target></effect>
+        <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" allactions="1" relativity="Absolute">
+          <target type="ProtoUnit">AbstractTitan</target></effect>
+      </effects>
+    </tech>
+    <tech name="UpstartBoost_Tezcatlipoca" mergeMode="add">
+      <displaynameid>STR_TECH_UPSTARTBOOST_NAME</displaynameid>
+      <status>UNOBTAINABLE</status>
+      <delay>90.0000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <effects> 
+        <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+          <target type="ProtoUnit">AbstractTitan</target></effect>
+        <effect type="Data" action="HandAttack" amount="0.90" subtype="RateOfFire" relativity="BasePercent">
+          <target type="ProtoUnit">ObsidianButterfly</target></effect>
+        <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+          <target type="ProtoUnit">ObsidianButterfly</target></effect>
+      </effects>
+    </tech>
+    <tech name="UpstartBoost_Quetzalcoatl" mergeMode="add">
+      <displaynameid>STR_TECH_UPSTARTBOOST_NAME</displaynameid>
+      <status>UNOBTAINABLE</status>
+      <delay>90.0000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <effects> 
+        <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
+          <target type="ProtoUnit">MythUnit</target></effect>
+        <effect type="Data" subtype="RechargeTime" amount="0.80" relativity="BasePercent">
+          <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
+        <effect type="Data" subtype="RechargeTime" amount="0.90" relativity="BasePercent">
+          <target type="ProtoUnit">AbstractTitan</target></effect>
+      </effects>
+    </tech>
+
     <!-- MAJOR GOD BLESSINGS -->
     <tech name="ArchaicAgeTsukuyomi">  
       <effects> 
@@ -324,6 +376,22 @@
       <effects> 
         <effect type="TechStatus" status="obtainable" mergeMode="add">UpstartBoost_Susanoo</effect>
       </effects> 
+    </tech>
+
+    <tech name="ArchaicAgeHuitzilopochtli">
+      <effects> 
+        <effect type="TechStatus" status="obtainable" mergeMode="add">UpstartBoost_Huitzilopochtli</effect>
+      </effects>
+    </tech>
+    <tech name="ArchaicAgeTezcatlipoca">
+      <effects> 
+        <effect type="TechStatus" status="obtainable" mergeMode="add">UpstartBoost_Tezcatlipoca</effect>
+      </effects>
+    </tech>
+    <tech name="ArchaicAgeQuetzalcoatl">
+      <effects> 
+        <effect type="TechStatus" status="obtainable" mergeMode="add">UpstartBoost_Quetzalcoatl</effect>
+      </effects>
     </tech>
 
     <!-- MAJOR GOD IMPROVEMENTS -->
