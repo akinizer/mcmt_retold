@@ -411,7 +411,9 @@
 - VisualScale+ (except Japanese, Chinese)
 
 - Tower:
-    - SentryTower+, MilitaryCampTower+, MachineWorkshopTower+, OdinsTower+
+    - MilitaryCampTower+, MachineWorkshopTower+, OdinsTower+
+    - SentryTower+
+        - logicaltypebuildingsthatshoot added, enabled at archaicage
     - MirrorTower+
         - enable attack if garrisoned by 1 oracle / oraclehero
 - CitadelCenter+
@@ -868,10 +870,11 @@
 
 26. Aztec Expansion
 
-* tech reworks
+* military tech reworks
 - tower upgrade: increase rof of sentrytower
 
 * myth tech reworks
+- StringOfYappan: tower rangedattack, vfxpoison units 6s
 
 * god power reworks
 - Cost: free
@@ -889,6 +892,7 @@
     - activetime: 20 to 30
     - numberofstrikes: 40 to 30
     - landimpactprotounit: VFXExplosion
+
 * unit reworks
 - PopCost: villager, mythunit and humansoldier
 - Campaign Heroes: access to myth techs, veterancy
@@ -901,6 +905,15 @@
         - SleepDart: blows a special dart that makes target unit fall a sleep, manual ability, targets units
     - HeroicAgeAztec:
         - PoisonDart: blows a special dart that makes unit suffering from toxic spores, manual ability, targets units
+
+* building reworks
+- House: removed from builder accels, merged with Calpulli
+- All Calpulli: populationcapaddition +5, maxcontained 5
+- CalpulliLumberOutpost: 
+    - activeifcontainsunits
+    - scalebycontainedunittype villager
+    - damagebonus ship removed
+    - damagebonus villager added
 
 * special units
 - WanderingTurkey:
@@ -941,13 +954,16 @@ quetzalcoatl: mythunit
 
 * myth techs
 ometochtlisreverly: bleed
-seprentskirt: maquizcoatl hitpoints
+serpentskirt: maquizcoatl hitpoints
 coatepecshrines: regeneration farm (DynamicUpdate prevents it)
 wingsofitzpapalotl: enable takeoff
 burntwater: burn
 fourjars: popcap+4
-omenofdeath: teixiptia lifespan+ & cost gold+
+omenofdeath: 
+    teixiptia lifespan+ & cost gold+
     also influences itzpapalotl
+    enables tnompantli watch tower markfordeath
+    enables Tunkuluchu jumpattack (markfordeath, areadamage, throw), taunt for markfordeath
 preciousbones: hero hitpoints+
 CuicacalliTraining: humansoldier piercearmor
     telpochcallitraining: humansoldier hp
@@ -956,12 +972,13 @@ nahuallatolli: improve sorcerers
 
 * military techs
 obsidianweapons: ObsidianButterfly handatack+
+AdvancedFortifications,AdvancedFortifications_I,II,III: relocate, enable
 
 * NavalUnit
 fishingshipAztec: area gatherrate bonus
 
 * mythunits
-Tunkuluchu: lure-kill, jumpattack (markfordeath, areadamage, throw), walk anim (nature flying unit)
+Tunkuluchu: jumpattack (markfordeath, areadamage, throw), walk anim (nature flying unit)
 Ahuizothl: amphibious, include ships
 SoulGuide: special attack (scorch area), auxcharged transform axolotl offspring, infernal tech
 Chaneque: default anti-unit, turret anti-building
@@ -982,11 +999,6 @@ teixiptla: areaboost humansoldier hitpoints
 
 * displaynames
 temple
-wonder
-titan
-
-* buildings
-LumberPost: damage scale by villager
 
 * special tech
 ExplosivesAztec: Buildings, Ships, Chaneque, Tzitzimitl
@@ -1007,38 +1019,6 @@ CuicacalliTraining: coyote hero
 warriorpriest: spear, maxrange+, rof-, armor+
 
 === refactor
-* tech replace reworks
-    general+
-    greek
-        demeter+
-        legacy+
-        special+
-    egyptian
-        protagonist
-        humansoldier
-        naval
-        myth
-    norse
-    atlantean
-        hesperides
-    chinese
-    japanese
-        majorgod
-        minorgod
-        mythunit
-    aztec
-        humansoldier
-        myth
-
-building names
-    temple
-    wonder
-
-archaicage
-classicalage
-heroicage
-mythicage
-
 * additional reworks
 aztec techs
     add thornedwall container
@@ -1060,22 +1040,6 @@ RaftChineseArcher
 RaftJapaneseArcher
 RaftGreekArcher, RaftGreekArcherHero
 
-* Repurposed Custom Units
-Spider, StymphalianBird, Quetzal
-PantherWarrior: tezca model, siegeunit
-BullWarrior: Kamina model, Kamos model
-* Campaign-Exclusive Units
-Jokul: Ability Gust, Ability Tempest, hackarmor+
-Eitri:
-    mjolnir tech -> replace Eitri with EitriHammer mjolnir weapon visual upgrade,
-    EitriHammer: raiju special attack
-Gods
-    Quetzalcoatl (flying), Quetzalcoatl (hero)
-    Teixiptla / Incarnate: 
-        TeixiptlaHuitz, TeixiptlaTezca, TeixiptlaQuetz / SuperTeixiptlaHuitz, CheatSuperTeixiptlaHuitz, SuperTeixiptlaTezca, CheatSuperTeixiptlaTezca, SuperTeixiptlaQuetz, CheatSuperTeixiptlaQuetz
-    Huitzilopochtli 
-    Tezcatlilopa
-
 Iztaccihuatl
     warrior techs
 Tlacaelel
@@ -1086,6 +1050,13 @@ Popocatepetl
     scout techs
 
 * mechanics applicable
+- veterancy container
+Unit Veterancy: Spawns container 
+<spawn type="veterancyRankUp" count="1" param="1" skipplacementcheck="" swapkilledunit="" shadingtype="gold">VeterancySpawnedContainer</spawn>
+
+Tech: activates if "VeterancySpawnedContainer" is alive
+<prereqs> <typecount unit="VeterancySpawnedContainer" count="0.00" state="aliveState" operator="gt"></typecount> </prereqs>
+
 - Proximity Abilities
 HandAttack,RangedAttack,RangedAttackMyth,FlyingUnitAttack,AntiWallAttack,BuildingAttack
 - Switch Abilities
@@ -1236,6 +1207,23 @@ TreeBender (wind.tactics): LightWindSmallArea,LightWindAllTrees,ModerateWindSmal
 * Encampment
 * aztect tower: area increase recovery rate
 * ranged humansoldier: grenade launcher
+
+* Repurposed Custom Units
+Spider, StymphalianBird, Quetzal
+PantherWarrior: tezca model, siegeunit
+BullWarrior: Kamina model, Kamos model
+
+* Campaign-Exclusive Units
+Jokul: Ability Gust, Ability Tempest, hackarmor+
+Eitri:
+    mjolnir tech -> replace Eitri with EitriHammer mjolnir weapon visual upgrade,
+    EitriHammer: raiju special attack
+Gods
+    Quetzalcoatl (flying), Quetzalcoatl (hero)
+    Teixiptla / Incarnate: 
+        TeixiptlaHuitz, TeixiptlaTezca, TeixiptlaQuetz / SuperTeixiptlaHuitz, CheatSuperTeixiptlaHuitz, SuperTeixiptlaTezca, CheatSuperTeixiptlaTezca, SuperTeixiptlaQuetz, CheatSuperTeixiptlaQuetz
+    Huitzilopochtli 
+    Tezcatlilopa
 
 === CROSSOVER
 * luffy: militia / prodromos_rider -> promethean_attack_a, promethean_attack_b, shinobi_wan_kenobi_attack_b, avenger_whirlwindattack_a 

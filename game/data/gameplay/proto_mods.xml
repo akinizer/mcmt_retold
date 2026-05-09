@@ -5685,14 +5685,63 @@
 		</protoaction>
 	</unit>
 	<unit name="Calpulli">
+		<contain>Unit</contain>
+		<notcontain>AbstractCavalry</notcontain>
+		<notcontain>MythUnit</notcontain>
+		<notcontain>AbstractSiegeWeapon</notcontain>
+		<notcontain>Ship</notcontain>
+		<notcontain>Resource</notcontain>
+		<notcontain>TradeUnit</notcontain>
+		<maxcontained>5</maxcontained>
+
+		<populationcapaddition>5</populationcapaddition>
 		<tactics>aztec_calpulli_noranged.tactics</tactics>
 	</unit>
+	<unit name="CalpulliCraftWorkshop">
+		<contain>Unit</contain>
+		<notcontain>AbstractCavalry</notcontain>
+		<notcontain>MythUnit</notcontain>
+		<notcontain>AbstractSiegeWeapon</notcontain>
+		<notcontain>Ship</notcontain>
+		<notcontain>Resource</notcontain>
+		<notcontain>TradeUnit</notcontain>
+
+		<populationcapaddition>5</populationcapaddition>
+		<maxcontained>5</maxcontained>
+	</unit>
 	<unit name="CalpulliLivestockPen">
+		<contain>Unit</contain>
+		<notcontain>AbstractCavalry</notcontain>
+		<notcontain>MythUnit</notcontain>
+		<notcontain>AbstractSiegeWeapon</notcontain>
+		<notcontain>Ship</notcontain>
+		<notcontain>Resource</notcontain>
+		<notcontain>TradeUnit</notcontain>
+		<maxcontained>5</maxcontained>
+
+		<populationcapaddition>5</populationcapaddition>
 		<tactics>aztec_calpulli_noranged.tactics</tactics>
 		<protoaction>
 			<name>ChargedSpawn</name>
 			<rate type="Turkey" mergeMode="remove">1.000000</rate>
 			<rate type="WanderingTurkey" mergeMode="add">1.000000</rate>
+		</protoaction>
+	</unit>
+	<!-- Aztec Special Units -->
+	<unit name="CalpulliLumberOutpost">
+		<unittype>ArcherLineUpgraded</unittype>
+		<populationcapaddition>5</populationcapaddition>
+		<protoaction>
+			<name>RangedAttack</name>
+			<damage type="Pierce">1.000000</damage>
+			<damagebonus type="Ship" mergeMode="remove">3.000000</damagebonus>
+			<damagebonus type="AbstractVillager" mergeMode="add">3.000000</damagebonus>
+			<minrange>1.000000</minrange>
+			<scalebycontainedunittype>
+				<rate type="AbstractVillager">1.00000</rate>
+			</scalebycontainedunittype>
+			<activeifcontainsunits>1</activeifcontainsunits>
+			<containscalebasedamage>1</containscalebasedamage>
 		</protoaction>
 	</unit>
 	<!-- Aztec Special Units -->
@@ -7247,6 +7296,7 @@
     <!--general buildings improvements-->
 	<unit name="SentryTower">
 		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>LogicalTypeBuildingsThatShoot</unittype>
 		<armor type="Hack" value="0.5000"></armor>
 		<armor type="Pierce" value="0.8500"></armor>
 		<armor type="Crush" value="0.0500"></armor>
@@ -7259,7 +7309,7 @@
 		<contain>ArcherLineUpgraded</contain>
 		<notcontain>AbstractInfantry</notcontain>
 
-		<protoaction mergeMode="replace">
+		<protoaction>
 			<name>RangedAttack</name>
 			<rof>15.00000</rof>
 			<damage type="Pierce">25</damage>
@@ -7270,9 +7320,10 @@
 			<minrange>1.000000</minrange>
 			<maxrange>50.000000</maxrange>
 			<projectile>ProjectileArrowFlaming</projectile>
-			<numberprojectiles>1</numberprojectiles>
-			<autoretarget>1</autoretarget>
-			<canattackground>1</canattackground>
+
+			<numberprojectiles>2</numberprojectiles>
+			<displayednumberprojectiles>2</displayednumberprojectiles>
+
 			<activeifcontainsunits>1</activeifcontainsunits>
 			<containscalebasedamage>1</containscalebasedamage>
 		</protoaction>

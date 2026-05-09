@@ -209,6 +209,9 @@
         <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
 
+        <effect type="Data" amount="1.00" subtype="CommandRemove" proto="House" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Unit</target></effect>
+
         <effect type="Data" action="TrackerDeviceAction" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit" mergeMode="add">QuimichinSpy</target></effect>
 
@@ -502,6 +505,9 @@
           <target type="ProtoUnit">Guardhouse</target></effect>     
         <effect type="Data" amount="1.50" subtype="AdditionalScale" relativity="Absolute">
           <target type="ProtoUnit">StableJapanese</target></effect>     
+
+        <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+          <target type="ProtoUnit">SentryTower</target></effect>
        </effects>
     </tech>
 
@@ -1169,7 +1175,6 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">FanaticCaptain</target></effect>		
         <!-- Mage Tower Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Maiar</target></effect>
-
       </effects>
     </tech> 
 
@@ -5585,6 +5590,8 @@
   </tech>  
   <tech name="WatchTower">
     <effects>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="LogicalTypeBuildingsThatShoot" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">SentryTower</target></effect>
       <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileBallistaShot" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
     </effects>
@@ -9213,6 +9220,13 @@
 				<target type="ProtoUnit">InfestedDen</target></effect>      
       <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">InfestedDen</target></effect>
+
+      <effect type="Data" amount="2.00" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" relativity="Assign">
+				<target type="ProtoUnit">AbstractTower</target></effect>			
+			<effect type="Data" amount="2.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXPoison" relativity="Assign">
+				<target type="ProtoUnit">AbstractTower</target></effect>
+			<effect type="Data" amount="2.00" subtype="OnHitEffectAttachBone" action="RangedAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign">
+				<target type="ProtoUnit">AbstractTower</target></effect>			
     </effects>
   </tech>
   <tech name="ToloacheTrance">
