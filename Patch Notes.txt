@@ -888,8 +888,10 @@
 - CuicacalliTraining: HumanSoldier PierceArmor, enables TelpochcalliTraining
 - TelpochcalliTraining: HumanSoldier Hitpoints
 - TeponaztliDrums: HumanSoldier maxvelocity, rof
-- Nahuallatolli: WarriorPriest,AbstractTeixiptla,OcelotlWarrior bonusdamage vs HumanSoldier, no longer affects traps
-
+- Nahuallatolli: WarriorPriest,AbstractTeixiptla,OcelotlWarrior,SoulGuide bonusdamage vs HumanSoldier, no longer affects traps, description update
+- EveningStar:
+    - EveningStarContainer: spawns 1 soulguide at abstracttemple built
+- WingsOfItzpapalotl: 
 
 * god power reworks
 - Cost: free
@@ -920,7 +922,7 @@
     - TeixiptlaHuitz: handattack maximumrange+
     - WarriorPriest: paint brush weapon (iztaccihuatl_weapon model), ranged unit, infatrylineupgrade, archerlineupgrade
         - HandAttack: maximumrange increased to 2
-        - RangedAttack: also targets nonflying units, minrange 4, divine damage
+        - RangedAttack: also targets nonflying units, minrange 4, divine damage, throw humansoldier
 - QuimichinSpy: 
     - AutoScout disabled
     - TemiminaloyanTrials: maximumrange+, los+, rof-, damagebonus vs humansoldier, directprojectile
@@ -933,6 +935,13 @@
 - Naval:
     - FishingShipAztec: GatherBonus aura for other FishingShipAztec
 
+* mythunit reworks
+- ObsidianButterfly:
+   - WingsOfItzpapalotl: enables ShimmeringChainsaw, dash, bleed, glow afteffect, targets units at a distance
+- SoulGuide:
+    - ChargedHandAttack: also spawns AreaDamageCorruptionAreaContainer
+        - AreaDamageCorruptionAreaContainer: purple flame area, damage over time, vfxfire
+
 * building reworks
 - House: removed from builder accels, merged with Calpulli
 - All Calpulli: populationcapaddition +5, maxcontained 5
@@ -941,6 +950,7 @@
     - scalebycontainedunittype villager
     - damagebonus ship removed
     - damagebonus villager added
+- GreatTemple: unittype abstracttemple
 
 * special units
 - WanderingTurkey:
@@ -977,7 +987,6 @@ Ahuizothl: amphibious, include ships
 SoulGuide: special attack (scorch area), auxcharged transform axolotl offspring, infernal tech
 Chaneque: default anti-unit, turret anti-building
 Ayotochtli: zhquelanded special ability, siegelineupgrade
-ObsidianButterfly: military tech upgrade
 CentonTotochin: frenzied tech, high rof, high maxvelocity, auxrecharge (abilityhonengyo), AbilityShogun (spawn phoenix egg while fighting, decay and explode)
 Tlacanexquimilli: corruption recharge, ghost tech
 Tzitzimitl: infernal tech, umibozu teleport

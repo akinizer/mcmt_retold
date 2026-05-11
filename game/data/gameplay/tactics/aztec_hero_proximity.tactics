@@ -1,0 +1,46 @@
+<tactics>
+	<action>
+		<name>HandAttack</name>
+		<type>Attack</type>
+		<rate type="LogicalTypeHandUnitsAttack">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name>RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>1.0</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\crush</impacteffect>
+		<rate type="LogicalTypeRangedUnitsAttack" mergeMode="add">1.0</rate>
+		<minrange>4.000000</minrange>
+		<maxsizeclass>4</maxsizeclass>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+		<type>DevoteMajor</type>
+		<anim>Devotion</anim>
+		<maxrange>0.2</maxrange>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMinor</name>
+		<active>0</active>
+		<type>DevoteMinor</type>
+		<anim>Devotion</anim>
+		<maxrange>0.2</maxrange>
+	</action>
+	<tactic>Default
+		<action priority="100">RangedAttack</action>
+		<action priority="90">HandAttack</action>
+		<action>DevoteMinor</action><action>DevoteMajor</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

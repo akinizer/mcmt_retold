@@ -856,6 +856,9 @@ ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and th
 ID = "STR_TECH_THRACIAN_HORSES_LR"   ;   Str = "Thracian Mares of Diomedes"
 ID = "STR_TECH_GOLDEN_APPLES_LR" ;   Str = "During the journey to Eleventh Labor, Zeus gives Heracles permission to free Prometheus from his eternal punishment. In return Prometheus advises Heracles whereabouts of Atlas. Heracles finds Atlas lifting the Celestial Heavens upon his shoulders. As one of Titan faction members during Titanomachy, Atlas is condemned to hold up the sky on the western edge of the Earth whereas many Titans are imprisoned in Tartarus beneath Hades' Underworld. He makes a deal and Atlas gives Heracles the Golden Apples that grow on Tree of Hesperides and can be picked up only by divine beings. Atlast lets Heracles take over the sky with no intention to give it back. Heracles out smarts Atlas and tells him to lift it for a moment and finishes his task"
 
+// REWORKED AZTEC TECHS
+ID = "STR_TECH_NAHUALLATOLLI_LR"   ;   Str = "Nahuallatolli spell mastery improves capabilities of sorcerers"
+
 // SPECIAL TECHS
 ID = "STR_TECH_MCMT_PAGE_1"   ;   Str = "Page1"
 ID = "STR_TECH_MCMT_PAGE_2"   ;   Str = "Page2"
@@ -1151,6 +1154,11 @@ ID = "STR_ABILTY_SLEEPDART_LR"   ;   Str = "Spies can use an array of darts incl
 ID = "STR_ACTION_POISONDART"   ;   Str = "Poison Dart"
 ID = "STR_ABILTY_POISONDART_NAME"   ;   Str = "Poison Dart"
 ID = "STR_ABILTY_POISONDART_LR"   ;   Str = "Spies can use an array of darts including poison darts for a duration"
+
+ID = "STR_ACTION_WARBRUSHATTACK"   ;   Str = "Warbrush Attack"
+ID = "STR_ACTION_SOLARBLAST"   ;   Str = "Solar Blast Attack"
+ID = "STR_ACTION_SHIMMERINGCHAINSAW"   ;   Str = "Shimmering Chainsaw"
+ID = "STR_TEST_HAND"   ;   Str = "Melee Attack (TEST)"
 
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"

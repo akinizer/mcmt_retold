@@ -4659,6 +4659,7 @@
 	</unit>
 	
 	<unit name="Kraken">		
+		<sizeclass>6</sizeclass>
 		<armor type="Hack" value="0.8700"></armor>
 		<armor type="Pierce" value="0.5000"></armor>
 		<armor type="Crush" value="0.7000"></armor>
@@ -4722,7 +4723,7 @@
 	<unit name="JormunElver">
 		<autoattackrange>40</autoattackrange>
 		<rechargetime>24.0000</rechargetime>
-
+		<sizeclass>6</sizeclass>
 		<armor type="Hack" value="0.5500"></armor>
 		
 		<tactics>mcmt_jormunelver.tactics</tactics>
@@ -5560,16 +5561,19 @@
 		<unittype>Ranged</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
+		<tactics>aztec_hero_proximity.tactics</tactics>
 		<protoaction>
-			<name>HandAttack</name>
+			<name stringid="STR_ACTION_WARBRUSHATTACK">HandAttack</name>
 			<maxrange>2.000000</maxrange>
 		</protoaction>
 		<protoaction>
 			<name>RangedAttack</name>
+			<damagearea>3.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
 			<damage type="Pierce" mergeMode="remove">12.000000</damage>
 			<damage type="Divine" mergeMode="add">2.000000</damage>
-			<rate type="LogicalTypeHandUnitsAttack" mergeMode="add">1.0</rate>
-			<minrange>4.000000</minrange>
+			<maxsizeclass>4</maxsizeclass>
 		</protoaction>
 	</unit>
 
@@ -5688,6 +5692,40 @@
 			<devotionpower>AnimalSacrifice</devotionpower>
 			<modelattachment>vfx\glow\appearance.xml</modelattachment>
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit>
+	<!-- Aztec Myth Units -->
+	<unit name="SoulGuide">
+		<protoaction>
+			<name>MictlansHowl</name>
+			<onhiteffect type="Spawn" proto="AreaDamageCorruptionAreaContainer" amount="1" terraintype="Land">
+				<target attacktype="Unit"></target></onhiteffect>
+		</protoaction>
+	</unit>
+	<unit name="ObsidianButterfly">
+		<tactics>mcmt_obsidianbutterfly.tactics</tactics>
+		<protoaction>
+			<name>ShimmeringChainsaw</name>
+			<rof>1.200000</rof>
+			<damage type="Hack">30.000000</damage>
+			<damagearea>3.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<damagebonus type="MythUnit">3.5000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<minrange>4.0000000</minrange>
+			<maxrange>15.000000</maxrange>
+			<modifyduration>500</modifyduration>
+			<projectile>ProjectileBallOfFireInvisible</projectile>
+			<onhiteffect type="DamageOverTime" duration="3.000000">
+				<damage type="Divine">5.000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXBleed" attachbone="spine" duration="3.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<active>0</active>
 		</protoaction>
 	</unit>
 	<!-- Aztec Naval Units -->
@@ -7442,6 +7480,7 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
 	</unit>
 	<unit name="GreatTemple">
+		<unittype>AbstractTemple</unittype>
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
@@ -26546,7 +26585,7 @@
 			<targetenemy>1</targetenemy>
 		</protoaction>
 	</unit>
-	<!-- /// SPECIAL AURA CONTAINERS /// -->
+	<!-- /// GATHER BONUS AURA CONTAINERS /// -->
 	<unit name="GatherBonusContainer">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -26836,6 +26875,7 @@
 		</protoaction>
 	</unit> 
 	
+	<!-- /// BONUS DAMAGE AURA CONTAINERS /// -->
 	<unit name="MythBonusContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -26996,6 +27036,7 @@
 			<persistent>1</persistent>
 		</protoaction>
 	</unit> 
+	<!-- /// DAMAGE BOOST AURA CONTAINERS /// -->
 	<unit name="DamageBoostStackableContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -27027,6 +27068,7 @@
 			<modifymultiplier>1.20</modifymultiplier>
 		</protoaction>
 	</unit> 
+	<!-- /// ARMOR BOOST AURA CONTAINERS /// -->
 	<unit name="ArmorBoostStackableContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -27121,6 +27163,7 @@
 			<nostack>1</nostack>
 		</protoaction>
 	</unit> 
+	<!-- /// AREA OF EFFECT AURA CONTAINERS /// -->
 	<unit name="AreaHealContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -27186,6 +27229,7 @@
 			<maxrange>1</maxrange>
 		</protoaction>
 	</unit> 
+	
 	<unit name="AreaInvisibilityContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -27346,7 +27390,7 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit>
-
+	<!-- /// AREA DAMAGE AND SELFDESTRUCTION CONTAINERS /// -->
 	<unit name="AreaDamageContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -27453,12 +27497,52 @@
 			<modelattachment>vfx\fire\fire_on_hit_effect.xml</modelattachment>
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 			<modifyamount>-3</modifyamount>			
-			<maxrange>5	</maxrange>
+			<maxrange>5</maxrange>
 			<damagebonus type="AbstractSiegeWeapon">3.0000</damagebonus>
 
 			<targetenemyincludenature>1</targetenemyincludenature>
 		</protoaction>
 	</unit>	
+	<unit name="AreaDamageCorruptionAreaContainer" mergeMode="add">
+		<displaynameid>STR_VFX_MAELSTROM_NAME</displaynameid>
+		<animfile>aztec\godpowers\corrupted_ground\corrupted_ground_corruption.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>10.0000</lifespan>
+		<decay delay="4.0000" duration="5.0000"></decay>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>DestroyProjectile</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaDamage</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<nostack>1</nostack>
+
+		  	<modifydamagetype>Divine</modifydamagetype>
+			
+			<modelattachment>vfx\fire\fire_on_hit_effect.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>-3</modifyamount>			
+			<maxrange>5</maxrange>
+			<damagebonus type="Hero">0.40000</damagebonus>
+
+			<targetenemyincludenature>1</targetenemyincludenature>
+		</protoaction>
+	</unit>
 
 	<unit name="SelfDestructSpawn" mergeMode="add">
 		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
@@ -27547,8 +27631,42 @@
 			<throw>1</throw>
    		</protoaction>
   	</unit>	
-	<!-- Autogather Container -->
-	 <unit name="AutoGatherFavorContainer" mergeMode="add">
+
+	<!-- /// INDIVIDUAL SPAWNER CONTAINERS /// -->
+	<unit name="EveningStarContainer" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>EveningStarSoulGuide</name>
+			<type>Spawn</type>
+			<rate type="SoulGuide">1.0</rate>
+			<singleuse>1</singleuse>
+			<animationrate>1</animationrate>
+			<persistent>1</persistent>
+		</protoaction>
+  	</unit>	
+
+	<!-- /// INDIVIDUAL AUTOGATHER CONTAINERS /// -->
+	<unit name="AutoGatherFavorContainer" mergeMode="add">
 		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
 		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
 		<obstructionradiusx>0.4000</obstructionradiusx>
