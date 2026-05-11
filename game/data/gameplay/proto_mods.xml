@@ -5701,6 +5701,11 @@
 			<onhiteffect type="Spawn" proto="AreaDamageCorruptionAreaContainer" amount="1" terraintype="Land">
 				<target attacktype="Unit"></target></onhiteffect>
 		</protoaction>
+		<protoaction>
+			<name>ChainOfCorruption</name>
+			<damage type="Divine">40.00000</damage>
+			<maxrange>12.000000</maxrange>
+		</protoaction>
 	</unit>
 	<unit name="ObsidianButterfly">
 		<tactics>mcmt_obsidianbutterfly.tactics</tactics>
@@ -27825,7 +27830,7 @@
 
 	<!-- /// INDIVIDUAL SPAWNER CONTAINERS /// -->
 	<unit name="EveningStarContainer" mergeMode="add">
-		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<displaynameid>STR_VFX_EVENINGSTARS_NAME</displaynameid>
 		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
 		<obstructionradiusx>0.4000</obstructionradiusx>
 		<obstructionradiusz>0.4000</obstructionradiusz>
@@ -27847,7 +27852,7 @@
 		<flag>BallisticTrackSource</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>EveningStarSoulGuide</name>
+			<name stringid="STR_VFX_EVENINGSTARS_NAME">EveningStarSoulGuide</name>
 			<type>Spawn</type>
 			<rate type="SoulGuide">1.0</rate>
 			<singleuse>1</singleuse>

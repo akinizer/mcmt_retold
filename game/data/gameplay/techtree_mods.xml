@@ -9618,6 +9618,14 @@
 				<target type="ProtoUnit">WarriorPriest</target></effect>
     </effects>  
   </tech>
+  <tech name="TorchOfMisfortune">
+    <effects>
+      <effect type="Data" amount="5.00" subtype="OnHitEffectStatModify" action="ChainOfCorruption" effecttype="StatModify" modifytype="Speed" targettype="MilitaryUnit" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">SoulGuide</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="ChainOfCorruption" effecttype="Pull" radius="50.00" relativity="Absolute" targettype="MilitaryUnit" mergeMode="add">
+				<target type="ProtoUnit">SoulGuide</target></effect>
+    </effects>
+  </tech>
 
   <!-- Structures of Gods-->
     <!-- Ancient Greek -->

@@ -900,6 +900,9 @@
     - DevoteMinorSacrificeWarriorContainer: enable humansoldier devoteminor temple (DevoteMinorSacrificeWarriorContainer)
     - humansoldier trainpoints +1 s
     - WarriorPriest devoteminor temple favor workrate +15% 
+- TorchOfMisfortune:
+    - SoulGuide TorchOfMisfortune onhiteffect Pull MilitaryUnit
+    - SoulGuide TorchOfMisfortune onhiteffect StatModify Speed MilitaryUnit
 * god power reworks
 - Cost: free
 - AgaveBloom

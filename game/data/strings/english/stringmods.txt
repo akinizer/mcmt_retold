@@ -1076,6 +1076,7 @@ ID = "STR_TECH_DETONATORS_NAME"   ;   Str = "Detonators"
 ID = "STR_TECH_DETONATORS_LR"   ;   Str = "Explosive breakthrough of the technology that can be used both offensively and defensively"
 ID = "STR_VFX_DETONATORS_NAME"   ;   Str = "Detonator Charge"
 ID = "STR_VFX_DEVOTECONTAINERS_NAME"   ;   Str = "Temple Devote Action"
+ID = "STR_VFX_EVENINGSTARS_NAME"   ;   Str = "Evening Star Spawn Action"
 
 ID = "STR_TECH_DISMOUNT_TACTICS_NAME"   ;   Str = "Dismount Tactics"
 ID = "STR_TECH_DISMOUNT_TACTICS_LR"   ;   Str = "Enable dismount capability for mounted units"
