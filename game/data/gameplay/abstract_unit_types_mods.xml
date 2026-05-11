@@ -1,0 +1,18 @@
+<abstractunittypesmods>
+    <abstractunittype>HeroProtagonist</abstractunittype>
+    <abstractunittype>AbstractGreekHero</abstractunittype>
+    <abstractunittype>AbstractSorcerer</abstractunittype>
+    <abstractunittype>AbstractPriest</abstractunittype>
+    <abstractunittype>AbstractBeast</abstractunittype>
+    <abstractunittype>AbstractAvian</abstractunittype>
+    <abstractunittype>AbstractInfernal</abstractunittype>
+    <abstractunittype>AbstractSpectral</abstractunittype>
+    <abstractunittype>AbstractUndead</abstractunittype>
+    <abstractunittype>AbstractAmphibious</abstractunittype>
+    <abstractunittype>AbstractHumanoid</abstractunittype>
+    <abstractunittype>AbstractConstruct</abstractunittype>
+    <abstractunittype>AbstractDemigod</abstractunittype>
+    <abstractunittype>AbstractWolf</abstractunittype>
+    <abstractunittype>AbstractGiant</abstractunittype>
+    <abstractunittype>AbstractSerpent</abstractunittype>
+</abstractunittypesmods>

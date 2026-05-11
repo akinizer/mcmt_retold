@@ -9607,11 +9607,11 @@
       <effect type="Data" amount="2.00" subtype="ResourceReturn" resource="Favor" relativity="Assign" mergeMode="add">
 				<target type="ProtoUnit">HumanSoldier</target></effect>
 
-      <effect type="Data" action="DevoteMinor" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+      <effect type="Data" action="DevoteMinor" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" protoaction="DevoteMinor" amount="1.00" subtype="ProtoActionAdd" unittype="DevoteMinorSacrificeWarriorContainer" relativity="Assign">
+      <effect type="Data" protoaction="DevoteMinor" amount="1.00" subtype="ProtoActionAdd" unittype="DevoteMinorSacrificeWarriorContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" amount="1" subtype="TrainPoints" relativity="Absolute">
+      <effect type="Data" amount="1" subtype="TrainPoints" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">HumanSoldier</target></effect>
 
       <effect type="Data" action="DevoteMinor" amount="1.15" subtype="WorkRate" unittype="Favor" relativity="BasePercent" mergeMode="add">
@@ -9624,6 +9624,16 @@
 				<target type="ProtoUnit">SoulGuide</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="ChainOfCorruption" effecttype="Pull" radius="50.00" relativity="Absolute" targettype="MilitaryUnit" mergeMode="add">
 				<target type="ProtoUnit">SoulGuide</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="Ranged" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">SoulGuide</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="ArcherLineUpgraded" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">SoulGuide</target></effect>
+    </effects>
+  </tech>
+  <tech name="OldCoyotesSpirit">
+    <effects>
+      <effect type="Data" protoaction="HackArmorInverseAura" amount="1.00" subtype="ProtoActionAdd" unittype="HackArmorInverseAllyBuildingContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">ChanequeIdol</target></effect>
     </effects>
   </tech>
 
