@@ -11,6 +11,7 @@
     <abstractunittype>AbstractAmphibious</abstractunittype>
     <abstractunittype>AbstractHumanoid</abstractunittype>
     <abstractunittype>AbstractConstruct</abstractunittype>
+    <abstractunittype>AbstractTurret</abstractunittype>
     <abstractunittype>AbstractDemigod</abstractunittype>
     <abstractunittype>AbstractWolf</abstractunittype>
     <abstractunittype>AbstractGiant</abstractunittype>
