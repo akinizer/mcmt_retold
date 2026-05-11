@@ -9567,6 +9567,57 @@
 				<target type="ProtoUnit">ObsidianButterfly</target></effect>
     </effects>    
   </tech>
+  <tech name="CoyolxauhquiStone">
+    <effects>
+      <effect type="Data" amount="0.25" subtype="CostBuildingTechs" resource="Food" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTemple</target></effect>
+			<effect type="Data" amount="0.25" subtype="CostBuildingTechs" resource="Wood" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTemple</target></effect>
+			<effect type="Data" amount="0.25" subtype="CostBuildingTechs" resource="Gold" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTemple</target></effect>
+			<effect type="Data" amount="0.25" subtype="CostBuildingTechs" resource="Food" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">GreatTemple</target></effect>
+			<effect type="Data" amount="0.25" subtype="CostBuildingTechs" resource="Wood" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">GreatTemple</target></effect>
+			<effect type="Data" amount="0.25" subtype="CostBuildingTechs" resource="Gold" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">GreatTemple</target></effect>
+      <!---->
+      <effect type="Data" amount="0.00" subtype="CostBuildingTechs" resource="Food" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTemple</target></effect>
+      <effect type="Data" amount="0.00" subtype="CostBuildingTechs" resource="Wood" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTemple</target></effect>
+      <effect type="Data" amount="0.00" subtype="CostBuildingTechs" resource="Gold" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTemple</target></effect>
+
+      <effect type="Data" amount="15.00" subtype="CostBuildingTechs" resource="Favor" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTemple</target></effect>
+      
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Tzitzimitl</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="ResourceReturnRate" resource="Favor" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Tzitzimitl</target></effect>
+    </effects>    
+  </tech>
+  <tech name="TecciztecatlsPenance">
+    <effects>
+      <effect type="Data" action="DevoteMinor" amount="1.15" subtype="WorkRate" unittype="Favor" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">VillagerAztec</target></effect>
+      <!---->
+      <effect type="Data" amount="2.00" subtype="ResourceReturn" resource="Favor" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">HumanSoldier</target></effect>
+
+      <effect type="Data" action="DevoteMinor" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+				<target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="Data" protoaction="DevoteMinor" amount="1.00" subtype="ProtoActionAdd" unittype="DevoteMinorSacrificeWarriorContainer" relativity="Assign">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="Data" amount="1" subtype="TrainPoints" relativity="Absolute">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+
+      <effect type="Data" action="DevoteMinor" amount="1.15" subtype="WorkRate" unittype="Favor" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+    </effects>  
+  </tech>
 
   <!-- Structures of Gods-->
     <!-- Ancient Greek -->

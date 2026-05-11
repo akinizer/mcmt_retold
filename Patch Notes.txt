@@ -891,8 +891,15 @@
 - Nahuallatolli: WarriorPriest,AbstractTeixiptla,OcelotlWarrior,SoulGuide bonusdamage vs HumanSoldier, no longer affects traps, description update
 - EveningStar:
     - EveningStarContainer: spawns 1 soulguide at abstracttemple built
-- WingsOfItzpapalotl: 
-
+- CoyolxauhquiStone: 
+    - sets material costs of AbstractTemple techs zero, but increases favor cost +15
+    - Tzitzimitl handattack divine damage +1
+    - Tzitzimitl return favor cost on death
+- TecciztecatlsPenance:
+    - rewards 2 favors on death
+    - DevoteMinorSacrificeWarriorContainer: enable humansoldier devoteminor temple (DevoteMinorSacrificeWarriorContainer)
+    - humansoldier trainpoints +1 s
+    - WarriorPriest devoteminor temple favor workrate +15% 
 * god power reworks
 - Cost: free
 - AgaveBloom

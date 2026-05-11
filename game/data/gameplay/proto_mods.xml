@@ -27631,6 +27631,197 @@
 			<throw>1</throw>
    		</protoaction>
   	</unit>	
+	
+	<unit name="DevoteMinorSacrificeWarriorContainer" mergeMode="add">
+		<displaynameid>STR_VFX_DEVOTECONTAINERS_NAME</displaynameid>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_ACTION_DEVOTE">DevoteMinor</name>
+			<type>DevoteMinor</type>
+			<soundsetenter>DevotionBirth</soundsetenter>
+			<maxrange>0.2</maxrange>
+			<rate type="Favor">1.0</rate>
+			
+			<devotiontime>1.500000</devotiontime>
+			<devotionfavorreward>20.000000</devotionfavorreward>
+			<devotioncombatxpreward>1.000000</devotioncombatxpreward>
+			<reductionstart>0.000000</reductionstart>
+			<reductionend>300.000000</reductionend>
+			<minscale>0.100000</minscale>
+			<modelattachment>vfx\glow\appearance.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+  	</unit>	
+	<unit name="DevoteMinorSacrificeVillagerContainer" mergeMode="add">
+		<displaynameid>STR_VFX_DEVOTECONTAINERS_NAME</displaynameid>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_ACTION_DEVOTE">DevoteMinor</name>
+			<type>DevoteMinor</type>
+			<soundsetenter>DevotionBirth</soundsetenter>
+			<maxrange>0.2</maxrange>
+			<rate type="Favor">1.0</rate>
+			
+			<devotiontime>2.000000</devotiontime>
+			<devotionfavorreward>15.000000</devotionfavorreward>
+			<devotioncombatxpreward>1.000000</devotioncombatxpreward>
+			<reductionstart>0.000000</reductionstart>
+			<reductionend>300.000000</reductionend>
+			<minscale>0.100000</minscale>
+			<modelattachment>vfx\glow\appearance.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+  	</unit>	
+	<unit name="DevoteMinorSacrificeHerdableContainer" mergeMode="add">
+		<displaynameid>STR_VFX_DEVOTECONTAINERS_NAME</displaynameid>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_ACTION_DEVOTE">DevoteMinor</name>
+			<type>DevoteMinor</type>
+			<maxrange>0.2</maxrange>
+			
+			<devotiontime>2.000000</devotiontime>
+			<devotionpower>AnimalSacrifice</devotionpower>
+			<modelattachment>vfx\glow\appearance.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+  	</unit>	
+	<unit name="DevoteMinorBlootlettingContainer" mergeMode="add">
+		<displaynameid>STR_VFX_DEVOTECONTAINERS_NAME</displaynameid>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_ACTION_DEVOTE">DevoteMinor</name>
+			<type>DevoteMinor</type>
+			<maxrange>0.2</maxrange>
+			
+			<devotionfavortrickle>0.100000</devotionfavortrickle>
+			<devotionneversacrifice>1</devotionneversacrifice>
+			<devotionhealthdraineachsecond>0.6666</devotionhealthdraineachsecond>
+			<devotionhealthdrainlimit>0.200000</devotionhealthdrainlimit>
+			<devotionscaleatminimumhealth>0.500000</devotionscaleatminimumhealth>
+			<modelattachment>vfx\glow\appearance.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+  	</unit>	
+
+	<unit name="DeathBoostContainer" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\smoke\shinobi_smoke_bomb.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_TECH_FURY_OF_THE_FALLEN_NAME">DeathBoostDamageBonus</name>
+			<type>LikeBonus</type>
+			<modifybase>1.0</modifybase>
+			<maxrange>6</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyprotoid>BerserkDamageBoost</modifyprotoid>
+			<rate type="BerserkDamageBoost">0.25</rate>
+			<persistent>1</persistent>
+			<modifytype>Damage</modifytype>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+  	</unit>	
 
 	<!-- /// INDIVIDUAL SPAWNER CONTAINERS /// -->
 	<unit name="EveningStarContainer" mergeMode="add">
