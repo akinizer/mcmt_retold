@@ -9568,7 +9568,7 @@
     <effects>
       <effect type="Data" action="ShimmeringChainsaw" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">ObsidianButterfly</target></effect>
-      <effect type="Data" amount="1.00" subtype="15" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Tunkuluchu</target></effect>
     </effects>    
   </tech>
