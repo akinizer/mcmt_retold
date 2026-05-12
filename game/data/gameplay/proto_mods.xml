@@ -27449,6 +27449,41 @@
 			<name>BlessingSlowDownEnemyHumanUnitsDivine</name>
 		</protoaction>
 	</unit>
+
+	<unit name="RateOfFireContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AttackSpeedBuff</name>
+			<type>AutoRangedModify</type>
+			<modifyamount>-0.1</modifyamount>
+			<maxrange>15</maxrange>
+			<persistent>1</persistent>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifytype>ROF</modifytype>
+			<modifystackadditive>1</modifystackadditive>
+			<modifystacklimit>5</modifystacklimit>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit>
+	<!-- ATTACK ACTION CONTAINERS -->
 	<unit name="ReflectAttackDivineContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -27515,8 +27550,7 @@
 			<rate type="EconomicUnit">1.0</rate>			
 		</protoaction>
 	</unit>
-
-	<unit name="RateOfFireContainer" mergeMode="add">
+	<unit name="TargetConvertContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
 		<movementtype>air</movementtype>
@@ -27536,17 +27570,68 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>AttackSpeedBuff</name>
-			<type>AutoRangedModify</type>
-			<modifyamount>-0.1</modifyamount>
-			<maxrange>15</maxrange>
-			<persistent>1</persistent>
-			<modifyabstracttype>Unit</modifyabstracttype>
-			<modifytype>ROF</modifytype>
-			<modifystackadditive>1</modifystackadditive>
-			<modifystacklimit>5</modifystacklimit>
-			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
-			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<name stringid="STR_ACTION_CONVERT">Convert</name>
+
+			<name>Convert</name>
+			<maxrange>25</maxrange>			
+			<rate type="Unit">1.000000</rate>
+			<rate type="HumanSoldier">5.000000</rate>
+			<rate type="AbstractWarship">5.000000</rate>
+			<rate type="LogicalTypeMythUnitNotTitan">10.000000</rate>
+			<rate type="LogicalTypeMilitaryProductionBuilding">10.000000</rate>
+			<rate type="AbstractDock">10.000000</rate>
+			<rate type="AbstractMarket">10.000000</rate>
+			<rate type="AbstractTitan">20.000000</rate>
+			<rate type="Sentinel">20.000000</rate>
+			<rate type="Huntable">2.000000</rate>
+
+			<modelattachment>greek_demeter\godpowers\communal_hearth\communal_hearth_conversion.xml</modelattachment>
+		</protoaction>
+	</unit>
+	<unit name="TargetMarkerContainer" mergeMode="add">
+		<displaynameid>STR_VFX_TOWEROFDEATH</displaynameid>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_TOWEROFDEATH">TargetMarker</name>
+			<type>Attack</type>
+			<rate type="Unit">1.0</rate>
+			<attackaction>1</attackaction>
+			<handlogic>1</handlogic>
+			<anim>RangedAttack</anim>
+			<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+			<impacteffect>effects\impacts\hack</impacteffect>
+			
+			<forceareaattacktarget>1</forceareaattacktarget>
+			<rof>0.01000</rof>			
+			<maxrange>25.000000</maxrange>
+			<damagearea>25.000000</damagearea>
+
+			<onhiteffect type="InstantKillablePercentChance" amount="0.10" relativity="set" duration="1.000000" byunittype="MilitaryUnit">
+				<target attacktype="Unit"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXMarkOfDeath" attachbone="vfx_top" duration="1.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="Hero"></target>
+				<target ignoretype="LogicalTypeDivineImmunity"></target>
+			</onhiteffect>
+			<attachvalidtargetonly>1</attachvalidtargetonly>
 		</protoaction>
 	</unit>
 	<!-- /// AREA DAMAGE AND SELFDESTRUCTION CONTAINERS /// -->
@@ -28046,7 +28131,7 @@
 		</protoaction>
   	</unit>	
 
-	<!-- Drone Units -->
+	<!-- Dependant Units -->
 	<unit name="CustomDependantUnit">
 		<animfile>vfx\projectiles\asura\fire_ball_left.xml</animfile>
 		<obstructionradiusx>0.1000</obstructionradiusx>
@@ -28386,6 +28471,58 @@
 			<numberprojectiles>3</numberprojectiles>
 			<impacteffect>effects\impacts\crush_medium</impacteffect>
 			<volleymode></volleymode>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
+	<unit name="CustomDependantUnit_Grenade">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>0.010000</rof>
+			<damage type="Pierce">2.500000</damage>
+			<damagebonus type="Ship">2.00000</damagebonus>
+			<maxrange>8.000000</maxrange>
+			<projectile>ProjectileIcarusBomb</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<impacteffect>effects\impacts\crush_medium</impacteffect>
 		</protoaction>
 		<protoaction>
 			<name>Drone</name>

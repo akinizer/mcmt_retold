@@ -973,6 +973,8 @@
     - damagebonus ship removed
     - damagebonus villager added
 - GreatTemple: unittype abstracttemple
+- TzompantliTower:
+    - OmenOfDeath: enables TowerOfDeath action, enables ability on ungarrisoned SentryTower that debuffs all valid units with Mark for Death in an area
 
 * special units
 - WanderingTurkey:
@@ -1000,8 +1002,6 @@
 
 === AZTEC
 * myth techs
-omenofdeath: 
-    enables tnompantli watch tower markfordeath
 
 eveningstar: bonusdamage myth container 
 
