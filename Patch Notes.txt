@@ -882,7 +882,10 @@
 - CoatepecShrines: enables SelfHeal Farms
 - BurntWater: LogicalTypeBuildingsThatShoot VFXFire Unit
 - FourJars: GreatTemple PopulationCapAddition 1 to 4
-- OmenOfDeath: Shieldpoints & UnitShieldRegenRate Warrior Priest, Lifespan Teixiptla, hitpoints Popocatepetl
+- OmenOfDeath: 
+    - Shieldpoints & UnitShieldRegenRate Warrior Priest, Lifespan Teixiptla, hitpoints Popocatepetl
+    - VFXOniBerserkFlameUnit: Oni Flame Area glow effect for QuimichinSpy
+    - VFXOniBerserkFlameBuilding: Oni Flame Area glow effect for Sentry Tower
 - ObsidianWeapons: also affects ObsidianButterfly, TeixiptlaTezca
 - PreciousBones: hero hitpoints
 - CuicacalliTraining: HumanSoldier PierceArmor, enables TelpochcalliTraining

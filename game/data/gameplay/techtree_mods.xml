@@ -9446,7 +9446,11 @@
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">Popocatepetl</target></effect>
 
-      <effect type="Data" subtype="ProtoActionAdd" protoaction="TargetMarker" amount="1.00" unittype="TargetMarkerContainer" relativity="Assign">
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="TargetMarker" amount="1.00" unittype="TargetMarkerContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">SentryTower</target></effect>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXOniBerserkFlameUnit" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXOniBerserkFlameBuilding" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>

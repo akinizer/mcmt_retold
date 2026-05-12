@@ -27635,6 +27635,48 @@
 			<attachvalidtargetonly>1</attachvalidtargetonly>
 		</protoaction>
 	</unit>
+
+	<unit name="VFXGlowContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>VFXOniBerserkFlameUnit</name>
+			<type>AutoRangedModify</type>
+			<modelattachment>vfx\glow\oni_berserk_loop.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifyself>1</modifyself>
+			<maxrange>1</maxrange>
+			<persistent>1</persistent>
+		</protoaction>
+		<protoaction>
+			<name>VFXOniBerserkFlameBuilding</name>
+			<type>AutoRangedModify</type>
+			<modelattachment>vfx\glow\oni_berserk_loop.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyabstracttype>Building</modifyabstracttype>
+			<modifyself>1</modifyself>
+			<maxrange>1</maxrange>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+
 	<!-- /// AREA DAMAGE AND SELFDESTRUCTION CONTAINERS /// -->
 	<unit name="AreaDamageContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
@@ -27668,7 +27710,7 @@
 			<modelattachment>vfx\fire\fire_on_hit_effect.xml</modelattachment>
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 			<modifyamount>-3</modifyamount>			
-			<maxrange>5	</maxrange>
+			<maxrange>5</maxrange>
 			<damagebonus type="AbstractSiegeWeapon">3.0000</damagebonus>
 		</protoaction>
 	</unit>	
