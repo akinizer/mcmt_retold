@@ -9401,6 +9401,9 @@
   </tech>
   <tech name="NecklaceOfEyeballs">
     <effects>        
+      <effect type="Data" subtype="LOS" amount="8.0" relativity="Absolute">
+				<target type="ProtoUnit">Tunkuluchu</target></effect>
+
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">WarriorPriest</target></effect>
       <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
@@ -9563,8 +9566,10 @@
   </tech>
   <tech name="WingsOfItzpapalotl">
     <effects>
-       <effect type="Data" action="ShimmeringChainsaw" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="ShimmeringChainsaw" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">ObsidianButterfly</target></effect>
+      <effect type="Data" amount="1.00" subtype="15" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Tunkuluchu</target></effect>
     </effects>    
   </tech>
   <tech name="CoyolxauhquiStone">
@@ -9635,6 +9640,16 @@
       <effect type="Data" protoaction="HackArmorInverseAura" amount="1.00" subtype="ProtoActionAdd" unittype="HackArmorInverseAllyBuildingContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">ChanequeIdol</target></effect>
     </effects>
+  </tech>
+  <tech name="ShardsOfItztli">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">ArrowCanoe</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileStymphalianBirdFeathers" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">ArrowCanoe</target></effect>
+      <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">ArrowCanoe</target></effect>
+    </effects>   
   </tech>
 
   <!-- Structures of Gods-->

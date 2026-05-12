@@ -1,0 +1,46 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_HAND">ChargedHandAttack</name>
+		<type>Attack</type>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<handlogic>1</handlogic>
+		<anim>ChargedHandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ABILITY_DEATHFROMABOVE">JumpAttack</name>
+		<type>JumpAttack</type>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<onlyattackifpathclear>1</onlyattackifpathclear>
+		<anim>JumpFly</anim>
+		<auxchargeaction>1</auxchargeaction>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<tactic>Default
+        <action priority="100">JumpAttack</action>
+        <action priority="90">ChargedHandAttack</action>
+        <action priority="80">HandAttack</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

@@ -1164,6 +1164,8 @@ ID = "STR_ACTION_SOLARBLAST"   ;   Str = "Solar Blast Attack"
 ID = "STR_ACTION_SHIMMERINGCHAINSAW"   ;   Str = "Shimmering Chainsaw"
 ID = "STR_TEST_HAND"   ;   Str = "Melee Attack (TEST)"
 
+ID = "STR_ABILITY_DEATHFROMABOVE"   ;   Str = "Death from Above"
+
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
 

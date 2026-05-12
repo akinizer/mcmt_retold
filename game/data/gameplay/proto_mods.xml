@@ -5756,7 +5756,64 @@
 			<projectile>ProjectileLightningLazer</projectile>
 		</protoaction>
 	</unit>
+	<unit name="Tunkuluchu">
+		<auxrechargetime>45.0000</auxrechargetime>
+		<tactics>global_chargedhandattack_jumpattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.800000</rof>
+			<damage type="Hack">45.000000</damage>
+		</protoaction>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<damage type="Pierce">35.000000</damage>
+			<onhiteffect type="StatModify" duration="5.000000">
+				<modify type="ForcedTarget">1.000000</modify>
+				<target attacktype="Unit"></target>
+				<target ignoretype="Hero"></target>
+				<target ignoretype="LogicalTypeDivineImmunity"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>JumpAttack</name>
 
+			<rof>2.50000</rof>
+			<damage type="Divine">15.000000</damage>
+			<damage type="Crush">45.000000</damage>
+			<damagearea>8.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<damagebonus type="HumanSoldier">1.7500000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>18.000000</maxrange>
+
+			<rate type="MilitaryUnit">1.0</rate>
+			<onhiteffect type="InstantKillablePercentChance" amount="0.25" relativity="set" duration="8.000000" byunittype="Tunkuluchu">
+				<target attacktype="HumanSoldier"></target>
+			</onhiteffect>
+			<onhiteffect type="Flee" duration="8.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="Hero"></target>
+				<target ignoretype="LogicalTypeDivineImmunity"></target>
+			</onhiteffect>
+			<onhiteffect type="StatModify" duration="8.000000">
+				<modify type="MaxHP" stack="">0.750000</modify>
+				<target attacktype="Unit"></target>
+				<target ignoretype="Hero"></target>
+				<target ignoretype="LogicalTypeDivineImmunity"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXMarkOfDeath" attachbone="vfx_top" duration="8.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="Hero"></target>
+				<target ignoretype="LogicalTypeDivineImmunity"></target>
+			</onhiteffect>
+			<attachvalidtargetonly>1</attachvalidtargetonly>
+		</protoaction>
+	</unit>
+	<unit name="Ayotochtli">
+		<unittype>SiegeLineUpgraded</unittype>
+	</unit>
 	<!-- Aztec Naval Units -->
 	<!-- Aztec Buildings -->
 	<unit name="InfestedDen">

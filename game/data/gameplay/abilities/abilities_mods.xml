@@ -382,4 +382,8 @@
 	<WanderingTurkey>
 		<ability>AbilityAutoScout<noautocast>true</noautocast></ability>
 	</WanderingTurkey>	
+		<!--Aztec-Military-->
+	<Tunkuluchu>
+		<ability>AbilitySojobo<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</Tunkuluchu>
 </abilitiesmods>

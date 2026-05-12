@@ -7548,4 +7548,54 @@
 			</animinfo>
 		</animations>
 	 </animxml>
+	 <animxml file="aztec\units\myth\tunkuluchu\tunkuluchu.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>JumpFly</name>
+				<versioncount>3</versioncount>
+				<versions>
+					<version>
+						<file>japanese\spc\units\sojobo\anim\sojobo_jumptakeoff_a</file>
+						<duration>4.00000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.01000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+					<version>
+						<file>japanese\spc\units\sojobo\anim\sojobo_jumpfly_a</file>
+						<duration>1.16667</duration>
+					</version>
+					<version>
+						<file>japanese\spc\units\sojobo\anim\sojobo_jumpland_a</file>
+						<duration>2.33333</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.35000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.35000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>HeavyFall</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	 </animxml>
 </simdatabasemods>
