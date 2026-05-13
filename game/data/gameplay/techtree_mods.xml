@@ -9464,12 +9464,23 @@
   </tech>
   <tech name="OmetochtlisRevelry">
     <effects>
+      <effect type="Data" amount="0.60" subtype="OnHitEffect" action="HandAttack" effecttype="Lifesteal" targettype="HumanSoldier" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">CentzonTotochtin</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="3.00" targettype="HumanSoldier" proto="VFXBleed" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">CentzonTotochtin</target></effect>
       <effect type="Data" amount="0.25" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="3.00" targettype="HumanSoldier" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">CentzonTotochtin</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="HumanSoldier" attachbone="spine" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">CentzonTotochtin</target></effect>   
+        <target type="ProtoUnit">CentzonTotochtin</target></effect>
+
+      <effect type="Data" amount="0.80" subtype="OnHitEffect" action="HandAttack" effecttype="Lifesteal" targettype="EconomicUpgraded" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">CentzonTotochtin</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="3.00" targettype="EconomicUpgraded" proto="VFXBleed" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">CentzonTotochtin</target></effect>
+      <effect type="Data" amount="0.25" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="3.00" targettype="EconomicUpgraded" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">CentzonTotochtin</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="EconomicUpgraded" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">CentzonTotochtin</target></effect>      
     </effects>
   </tech>
   <tech name="SerpentSkirt">
