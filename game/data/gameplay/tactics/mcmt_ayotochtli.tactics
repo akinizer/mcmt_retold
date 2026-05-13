@@ -1,0 +1,45 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_WRECKING_BALL">WreckingBallAttack</name>
+		<type>LinearAreaAttack</type>
+		<rate type="Building">1.0</rate>
+		<maxheight>12.0</maxheight>
+		<nomodifyheight>1</nomodifyheight>
+		<walkanim>WreckingBall</walkanim>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>WreckingBall</anim>
+		<impacteffect>effects\impacts\crush</impacteffect>
+		<forceareaattackcenter>1</forceareaattackcenter>
+		<throw>1</throw>
+		<rollingsmash>1</rollingsmash>
+		<rollingdamagefactor>0.05</rollingdamagefactor>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_BOOST">AutoBoost</name>
+		<type>AutoBoost</type>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>HandAttack</anim>
+		<auxchargeaction>1</auxchargeaction>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<tactic>Default
+        <action priority="100">WreckingBallAttack</action>
+        <action priority="90">AutoBoost</action>
+        <action priority="80">HandAttack</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

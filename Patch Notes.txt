@@ -980,6 +980,9 @@
     - HandAttack: Hack Damage greatly reduced, bonusdamage vs HumanSoldier & EconomicUpgraded x5
     - OmetochtlisRevelry:
         - JumpAttack: short distance, bonusdamage vs humans, building
+- Ayotochtli: 
+    - HandAttack: crush damage removed, hack damage increased, weaker vs building
+    - AutoBoost: self-boost hackarmor for a duration
 * building reworks
 - House: removed from builder accels, merged with Calpulli
 - All Calpulli: populationcapaddition +5, maxcontained 5
@@ -1024,11 +1027,8 @@
 eveningstar: bonusdamage myth container 
 
 * mythunits
-infernal tech:Tzitzimitl, SoulGuide
-
-Tunkuluchu: jumpattack (markfordeath, areadamage, throw), walk anim (nature flying unit)
-Ayotochtli: zhquelanded special ability, siegelineupgrade
-CentonTotochin: frenzied tech, high rof, high maxvelocity, auxrecharge (abilityhonengyo), AbilityShogun (spawn phoenix egg while fighting, decay and explode)
+Ayotochtli: zhquelanded special ability
+CentonTotochin: AbilityShogun (spawn phoenix egg while fighting, decay and explode)
 Tlacanexquimilli: corruption recharge, ghost tech
 
 * hero

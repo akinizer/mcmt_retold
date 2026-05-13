@@ -382,8 +382,11 @@
 	<WanderingTurkey>
 		<ability>AbilityAutoScout<noautocast>true</noautocast></ability>
 	</WanderingTurkey>	
-		<!--Aztec-Military-->
+		<!--Aztec-Myth-->
 	<Tunkuluchu>
 		<ability>AbilitySojobo<auxchargetimeasrof>1</auxchargetimeasrof></ability>
 	</Tunkuluchu>
+	<Ayotochtli>
+		<ability>ZhuQueFieryDeflector<auxchargetimeasrof>1</auxchargetimeasrof><castonself>true</castonself></ability>
+	</Ayotochtli>	
 </abilitiesmods>

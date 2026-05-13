@@ -10028,6 +10028,14 @@
   </tech>
   <tech name="BurntWater">
     <effects>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect>
+      <!---->
+      <effect type="Data" action="Build" amount="1.20" subtype="WorkRate" unittype="AbstractTownCenter" relativity="BasePercent">
+				<target type="ProtoUnit">VillagerAztec</target></effect>
+      <effect type="Data" action="Build" amount="1.20" subtype="WorkRate" unittype="GreatTemple" relativity="BasePercent">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="LogicalTypeBuildingsThatShoot" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">MonolithOfTlaloc</target></effect>
 

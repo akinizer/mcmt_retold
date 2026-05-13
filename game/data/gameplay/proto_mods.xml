@@ -5813,6 +5813,27 @@
 	</unit>
 	<unit name="Ayotochtli">
 		<unittype>SiegeLineUpgraded</unittype>
+
+		<auxrechargetime>30.0000</auxrechargetime>
+		<tactics>mcmt_ayotochtli.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<damage type="Crush" mergeMode="remove">130.000000</damage>
+			<damage type="Hack">125.000000</damage>
+			<damagebonus type="Building">0.750000</damagebonus>
+			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>AutoBoost</name>
+			<rof>2.67</rof>
+			<damageflags>Enemy</damageflags>
+			<maxrange>5.0</maxrange>
+			<onhiteffect type="SelfModify" duration="10.000000">
+				<modify type="ArmorSpecific" dmgtype="Hack">1.600000</modify>
+			</onhiteffect>
+			<modelattachment>japanese\godpowers\solar_shield\solar_shield.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
 	</unit>
 	<unit name="CentzonTotochtin">
 		<rechargetime>20.0000</rechargetime>
