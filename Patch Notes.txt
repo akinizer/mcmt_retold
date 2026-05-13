@@ -1007,8 +1007,9 @@
 * additional tree types
 - HesperidesTree, Goshinboku
 
-* additional abstractunittypes
-- AbstractSerpent / Serpentine
+* additional unit types
+- abstractunittypes
+- type resistance and vulnerability: myth, fire, lightning
 
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
