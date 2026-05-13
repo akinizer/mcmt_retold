@@ -884,8 +884,8 @@
 - FourJars: GreatTemple PopulationCapAddition 1 to 4
 - OmenOfDeath: 
     - Shieldpoints & UnitShieldRegenRate Warrior Priest, Lifespan Teixiptla, hitpoints Popocatepetl
-    - VFXOniBerserkFlameUnit: Oni Flame Area glow effect for QuimichinSpy
-    - VFXOniBerserkFlameBuilding: Oni Flame Area glow effect for Sentry Tower
+    - VFXOniBerserkFlameUnit: Oni Flame Area glow effect for QuimichinSpy, spawn SelfDestruct on death
+    - VFXOniBerserkFlameBuilding: Oni Flame Area glow effect for Sentry Tower, spawn SelfDestruct on death
 - ObsidianWeapons: also affects ObsidianButterfly, TeixiptlaTezca
 - PreciousBones: hero hitpoints
 - CuicacalliTraining: HumanSoldier PierceArmor, enables TelpochcalliTraining
@@ -894,6 +894,7 @@
 - Nahuallatolli: WarriorPriest,AbstractTeixiptla,OcelotlWarrior,SoulGuide bonusdamage vs HumanSoldier, no longer affects traps, description update
 - EveningStar:
     - EveningStarContainer: spawns 1 soulguide at abstracttemple built
+    - add SoulGuide reflectsrangedattacks
 - CoyolxauhquiStone: 
     - sets material costs of AbstractTemple techs zero, but increases favor cost +15
     - Tzitzimitl handattack divine damage +1
@@ -908,10 +909,15 @@
     - SoulGuide TorchOfMisfortune onhiteffect StatModify Speed MilitaryUnit
     - add SoulGuide unittype Ranged, ArcherLineUpgraded
 - OldCoyotesSpirit: protoactionadd ChanequeIdol HackArmorInverseAura
-- WingsOfItzpapalotl: Tunkuluchu CrushDamage +15
+- WingsOfItzpapalotl: 
+    - Tunkuluchu CrushDamage +15
+    - add ObsidianButterfly reflectshandattacks
 - NecklaceOfEyeballs: Tunkuluchu LOS+
 - ShardsOfItztli: 
     - ArrowCanoe: rangedattack crushattack +1, ProjectileStymphalianBirdFeathers, CrushArmor +15%
+- TwistedLimbs:
+    - HumanSoldier JumpAttack DamageArea
+
 * god power reworks
 - Cost: free
 - AgaveBloom

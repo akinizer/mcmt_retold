@@ -9370,6 +9370,9 @@
 				<target type="ProtoUnit">Itzcoatl</target></effect>
       <effect type="Data" action="JumpAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">MajorHero</target></effect>
+
+      <effect type="Data" action="JumpAttack" amount="0.75" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">HumanSoldier</target></effect>
     </effects>
   </tech>
   <tech name="TepeyollotlsReach">
@@ -9448,9 +9451,14 @@
 
       <effect type="Data" subtype="ProtoActionAdd" protoaction="TargetMarker" amount="1.00" unittype="TargetMarkerContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
-      <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXOniBerserkFlameUnit" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" mergeMode="add">
+
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXOniBerserkFlameUnit" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" hidetooltip="" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
-      <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXOniBerserkFlameBuilding" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" mergeMode="add">
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXOniBerserkFlameBuilding" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" hidetooltip="" mergeMode="add">
+        <target type="ProtoUnit">SentryTower</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawnMinorDamage" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawnMinorDamage" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>
@@ -9569,14 +9577,20 @@
 				<target type="ProtoUnit">GreatTemple</target></effect>
       <effect type="Data" protoaction="EveningStarSoulGuide" amount="1.00" subtype="ProtoActionAdd" unittype="EveningStarContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">AbstractTemple</target></effect>
+      
+      <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectRangedAttackContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">SoulGuide</target></effect>
     </effects>
   </tech>
   <tech name="WingsOfItzpapalotl">
     <effects>
       <effect type="Data" action="ShimmeringChainsaw" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">ObsidianButterfly</target></effect>
+      <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">ObsidianButterfly</target></effect>
+
       <effect type="Data" amount="15.00" subtype="Damage" damagetype="Crush" action="HandAttack" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">Tunkuluchu</target></effect>
+				<target type="ProtoUnit">Tunkuluchu</target></effect>      
     </effects>    
   </tech>
   <tech name="CoyolxauhquiStone">
@@ -9658,7 +9672,12 @@
         <target type="ProtoUnit">ArrowCanoe</target></effect>
     </effects>   
   </tech>
-
+  <tech name="Metzliapan">
+    <effects>
+      <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AxolotlMutant</target></effect>
+    </effects>
+  </tech>
   <!-- Structures of Gods-->
     <!-- Ancient Greek -->
   <tech name="HeroicAgeDionysus" mergeMode="add">

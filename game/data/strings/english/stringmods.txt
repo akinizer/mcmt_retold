@@ -1080,6 +1080,7 @@ ID = "STR_VFX_EVENINGSTARS_NAME"   ;   Str = "Evening Star Spawn"
 ID = "STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGS_NAME"   ;   Str = "Hack Armor Boost Near Fortification"
 ID = "STR_VFX_PIERCEARMORBOOSTNEARALLYBUILDINGS_NAME"   ;   Str = "Pierce Armor Boost Near Fortification"
 ID = "STR_VFX_TOWEROFDEATH"   ;   Str = "Tower of Death"
+ID = "STR_VFX_AUTOREPAIR"   ;   Str = "Autorepair"
 
 ID = "STR_TECH_DISMOUNT_TACTICS_NAME"   ;   Str = "Dismount Tactics"
 ID = "STR_TECH_DISMOUNT_TACTICS_LR"   ;   Str = "Enable dismount capability for mounted units"
