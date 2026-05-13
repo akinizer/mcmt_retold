@@ -2,18 +2,27 @@
     <abstractunittype>HeroProtagonist</abstractunittype>
     <abstractunittype>AbstractGreekHero</abstractunittype>
     <abstractunittype>AbstractSorcerer</abstractunittype>
-    <abstractunittype>AbstractPriest</abstractunittype>
+    <abstractunittype>AbstractPegasus</abstractunittype>
+    <abstractunittype>AbstractDragon</abstractunittype>
     <abstractunittype>AbstractBeast</abstractunittype>
+    <abstractunittype>AbstractBeastfolk</abstractunittype>
     <abstractunittype>AbstractAvian</abstractunittype>
     <abstractunittype>AbstractInfernal</abstractunittype>
     <abstractunittype>AbstractSpectral</abstractunittype>
+    <abstractunittype>AbstractShinigami</abstractunittype>
     <abstractunittype>AbstractUndead</abstractunittype>
-    <abstractunittype>AbstractAmphibious</abstractunittype>
+    <abstractunittype>AbstractValkyrie</abstractunittype>
     <abstractunittype>AbstractHumanoid</abstractunittype>
     <abstractunittype>AbstractConstruct</abstractunittype>
     <abstractunittype>AbstractTurret</abstractunittype>
     <abstractunittype>AbstractDemigod</abstractunittype>
     <abstractunittype>AbstractWolf</abstractunittype>
+    <abstractunittype>AbstractOni</abstractunittype>
     <abstractunittype>AbstractGiant</abstractunittype>
     <abstractunittype>AbstractSerpent</abstractunittype>
+    <abstractunittype>AbstractMythResistant</abstractunittype>
+    <abstractunittype>AbstractFireResistant</abstractunittype>
+    <abstractunittype>AbstractFireVulnerable</abstractunittype>
+    <abstractunittype>AbstractLightningResistant</abstractunittype>
+    <abstractunittype>AbstractLightningVulnerable</abstractunittype>
 </abstractunittypesmods>
