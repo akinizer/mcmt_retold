@@ -9857,6 +9857,8 @@
   </tech>
   <tech name="ToloacheTrance">
     <effects>
+      <effect type="Data" amount="1.10" subtype="OnHitEffectStatModify" action="RangedAttack" effecttype="StatModify" modifytype="ROF" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect>
       <effect type="Data" amount="1.10" subtype="OnHitEffectStatModify" action="HandAttack" effecttype="StatModify" modifytype="ROF" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">LargeScorpion</target></effect>
       <effect type="Data" amount="1.20" subtype="OnHitEffectStatModify" action="PoisonousBreath" effecttype="StatModify" modifytype="ROF" relativity="Absolute" mergeMode="add">
