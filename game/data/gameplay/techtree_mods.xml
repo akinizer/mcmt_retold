@@ -10028,12 +10028,22 @@
   </tech>
   <tech name="BurntWater">
     <effects>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="LogicalTypeBuildingsThatShoot" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">MonolithOfTlaloc</target></effect>
+
       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="3.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect>
       <effect type="Data" amount="0.25" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="3.00" targettype="Unit" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect>
+        <target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect> 
+        
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="MonolithStrike" effecttype="Attach" duration="3.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">MonolithOfTlaloc</target></effect>
+      <effect type="Data" amount="3.00" subtype="OnHitEffect" action="MonolithStrike" effecttype="DamageOverTime" duration="3.00" targettype="Unit" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">MonolithOfTlaloc</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="MonolithStrike" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">MonolithOfTlaloc</target></effect> 
     </effects>
   </tech>
   <tech name="FourJars">

@@ -881,7 +881,10 @@
 - OmetochtlisRevelry: CentzonTotochtin vfxbleed humansoldier & economicupgraded, lifesteal humansoldiers & economicupgraded
 - SerpentSkirt: AbstractSerpent maxhitpoints
 - CoatepecShrines: enables SelfHeal Farms
-- BurntWater: LogicalTypeBuildingsThatShoot VFXFire Unit
+- BurntWater: 
+    - LogicalTypeBuildingsThatShoot VFXFire Unit
+    - setunittype MonolithOfTlaloc LogicalTypeBuildingsThatShoot
+    - MonolithOfTlaloc onhiteffect vfxfire
 - FourJars: GreatTemple PopulationCapAddition 1 to 4
 - OmenOfDeath: 
     - Shieldpoints & UnitShieldRegenRate Warrior Priest, Lifespan Teixiptla, hitpoints Popocatepetl
@@ -914,10 +917,10 @@
     - Tunkuluchu CrushDamage +15
     - add ObsidianButterfly reflectshandattacks
 - NecklaceOfEyeballs: Tunkuluchu LOS+
-- ShardsOfItztli: 
+- ShardsOfItztli:  
     - ArrowCanoe: rangedattack crushattack +1, ProjectileStymphalianBirdFeathers, CrushArmor +15%
-- TwistedLimbs:
-    - HumanSoldier JumpAttack DamageArea
+- TwistedLimbs: HumanSoldier JumpAttack DamageArea
+- ToloacheTrance: affects RangedAttack LogicalTypeBuildingsThatShoot
 
 * god power reworks
 - Cost: free
