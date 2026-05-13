@@ -877,7 +877,7 @@
 
 * myth tech reworks
 - StringOfYappan: tower rangedattack, vfxpoison units 6s
-- OmetochtlisRevelry: CentzonTotochtin vfxbleed humansoldier, lifesteal humansoldiers, economicupgraded
+- OmetochtlisRevelry: CentzonTotochtin vfxbleed humansoldier & economicupgraded, lifesteal humansoldiers & economicupgraded
 - SerpentSkirt: Maquizcoatl maxhitpoints
 - CoatepecShrines: enables SelfHeal Farms
 - BurntWater: LogicalTypeBuildingsThatShoot VFXFire Unit
