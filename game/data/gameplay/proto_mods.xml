@@ -27008,6 +27008,51 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit> 
+
+	<unit name="BuildrateContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_BUILDRATEBONUS">TemporalScaffoldingSmall</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>LogicalTypeBuildingSmall</modifyabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>BuildRate</modifytype>
+			<modifymultiplier>1.25</modifymultiplier>
+			<targetunbuilt>1</targetunbuilt>
+			<modelattachment>vfx\glow\temporal_scaffolding_small.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_VFX_BUILDRATEBONUS">TemporalScaffoldingLarge</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>LogicalTypeBuildingLarge</modifyabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>BuildRate</modifytype>
+			<modifymultiplier>1.25</modifymultiplier>
+			<targetunbuilt>1</targetunbuilt>
+			<modelattachment>vfx\glow\temporal_scaffolding_large.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit> 
 	
 	<!-- /// BONUS DAMAGE AURA CONTAINERS /// -->
 	<unit name="MythBonusContainer" mergeMode="add">
@@ -27030,13 +27075,45 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>DamageBonusVsMyth</name>
+			<name stringid="STR_VFX_MYTHDAMAGEBONUS">DamageBonusVsMyth</name>
 			<type>AutoRangedModify</type>
 			<modifytype>DamageByTargetType</modifytype>
 			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
 			<maxrange>5</maxrange>
 			<modifydamagetargettype>MythUnit</modifydamagetargettype>
 			<modifyamount>5.0</modifyamount>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+	<unit name="MythBonusContainerMedium" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_MYTHDAMAGEBONUS">DamageBonusVsMyth</name>
+			<type>AutoRangedModify</type>
+			<modifytype>DamageByTargetType</modifytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<maxrange>22</maxrange>
+			<modifydamagetargettype>MythUnit</modifydamagetargettype>
+			<modifyamount>2.0</modifyamount>
 			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 			<persistent>1</persistent>
@@ -27062,7 +27139,7 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>DamageBonusVsMyth</name>
+			<name stringid="STR_VFX_MYTHDAMAGEBONUS">DamageBonusVsMyth</name>
 			<type>AutoRangedModify</type>
 			<modifytype>DamageByTargetType</modifytype>
 			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
@@ -27094,7 +27171,7 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>DamageBonusVsMyth</name>
+			<name stringid="STR_VFX_MYTHDAMAGEBONUS">DamageBonusVsMyth</name>
 			<type>AutoRangedModify</type>
 			<modifytype>DamageByTargetType</modifytype>
 			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
@@ -27126,7 +27203,7 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>DamageBonusVsMyth</name>
+			<name stringid="STR_VFX_MYTHDAMAGEBONUS">DamageBonusVsMyth</name>
 			<type>AutoRangedModify</type>
 			<modifytype>DamageByTargetType</modifytype>
 			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
@@ -27158,7 +27235,7 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>DamageBonusVsMyth</name>
+			<name stringid="STR_VFX_MYTHDAMAGEBONUS">DamageBonusVsMyth</name>
 			<type>AutoRangedModify</type>
 			<modifytype>DamageByTargetType</modifytype>
 			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
@@ -27531,6 +27608,39 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit>
+	<unit name="RateOfFireContainerMedium" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_ROFBONUS">AttackSpeedBuff</name>
+			<type>AutoRangedModify</type>
+			<modifyamount>-0.1</modifyamount>
+			<maxrange>22</maxrange>
+			<persistent>1</persistent>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<modifytype>ROF</modifytype>
+			<modifystackadditive>1</modifystackadditive>
+			<modifystacklimit>5</modifystacklimit>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit>
 	<!-- ATTACK ACTION CONTAINERS -->
 	<unit name="ReflectAttackDivineContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
@@ -27555,6 +27665,38 @@
 			<name stringid="STR_ACTION_REFLECT_ATTACK">ThornedWallsAttack</name>
 			<type>ReflectAttack</type>
 			<damage type="Divine">1.000000</damage>
+			<reflecthandattacks>1</reflecthandattacks>
+			<attackaction>1</attackaction>
+			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+	</unit>
+	<unit name="ReflectAttacBurnContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_ACTION_REFLECT_ATTACK">ThornedWallsAttack</name>
+			<type>ReflectAttack</type>
+			<damage type="Divine">1.000000</damage>
+			<onhiteffect type="DamageOverTime" duration="5.000000">
+				<damage type="Divine">2.00000</damage>
+			</onhiteffect>
+		  	<onhiteffect type="Attach" targetunittype="Unit" proto="VFXFire" attachbone="spine" duration="5.000000"></onhiteffect>
 			<reflecthandattacks>1</reflecthandattacks>
 			<attackaction>1</attackaction>
 			<impacteffect>effects\impacts\hack</impacteffect>

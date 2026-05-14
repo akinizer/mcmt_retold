@@ -10038,6 +10038,10 @@
 
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="LogicalTypeBuildingsThatShoot" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">MonolithOfTlaloc</target></effect>
+      <effect type="Data" protoaction="TemporalScaffoldingSmall" amount="1.00" subtype="ProtoActionAdd" unittype="BuildrateContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">MonolithOfTlaloc</target></effect>
+      <effect type="Data" protoaction="TemporalScaffoldingLarge" amount="1.00" subtype="ProtoActionAdd" unittype="BuildrateContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">MonolithOfTlaloc</target></effect>
 
       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="3.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect>
@@ -10135,8 +10139,13 @@
     <effects>
       <effect type="Data" action="EveningStarSoulGuide" amount="1.00" subtype="ActionEnable" relativity="Absolute" tooltipid="STR_TECH_EVENING_STAR_OVERRIDE" mergeMode="remove">
 				<target type="ProtoUnit">GreatTemple</target></effect>
+      <!---->
       <effect type="Data" protoaction="EveningStarSoulGuide" amount="1.00" subtype="ProtoActionAdd" unittype="EveningStarContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">AbstractTemple</target></effect>
+      <effect type="Data" protoaction="DamageBonusVsMyth" amount="1.00" subtype="ProtoActionAdd" unittype="MythBonusContainerMedium" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Temple</target></effect>
+      <effect type="Data" protoaction="AttackSpeedBuff" amount="1.00" subtype="ProtoActionAdd" unittype="RateOfFireContainerMedium" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">GreatTemple</target></effect>
       
       <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectRangedAttackContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">SoulGuide</target></effect>

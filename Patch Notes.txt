@@ -885,6 +885,7 @@
     - LogicalTypeBuildingsThatShoot VFXFire Unit
     - setunittype MonolithOfTlaloc LogicalTypeBuildingsThatShoot
     - MonolithOfTlaloc onhiteffect vfxfire
+    - TemporalScaffolding Containers: buildrate aura, attaches MonolithOfTlaloc
 - FourJars: GreatTemple PopulationCapAddition 1 to 4
 - OmenOfDeath: 
     - Shieldpoints & UnitShieldRegenRate Warrior Priest, Lifespan Teixiptla, hitpoints Popocatepetl
@@ -897,8 +898,10 @@
 - TeponaztliDrums: HumanSoldier maxvelocity, rof
 - Nahuallatolli: WarriorPriest,AbstractTeixiptla,OcelotlWarrior,SoulGuide bonusdamage vs HumanSoldier, no longer affects traps, description update
 - EveningStar:
-    - EveningStarContainer: spawns 1 soulguide at abstracttemple built
-    - add SoulGuide reflectsrangedattacks
+    - EveningStarContainer: Spawn 1 SoulGuide, build completion action, attaches AbstractTemple
+    - MythBonusContainerMedium: DamageBonus vs mythunit aura, attaches Temple
+    - RateOfFireContainerMedium: ROF aura, attaches GreatTemple
+    - ReflectRangedAttacksContainer: attaches SoulGuide
 - CoyolxauhquiStone: 
     - sets material costs of AbstractTemple techs zero, but increases favor cost +15
     - Tzitzimitl handattack divine damage +1
@@ -1022,13 +1025,7 @@
 ==============================================================================
 
 === AZTEC
-* myth techs
-
-eveningstar: bonusdamage myth container 
-
 * mythunits
-Ayotochtli: zhquelanded special ability
-CentonTotochin: AbilityShogun (spawn phoenix egg while fighting, decay and explode)
 Tlacanexquimilli: corruption recharge, ghost tech
 
 * hero
@@ -1096,7 +1093,7 @@ Itzcoatl
     jaguar techs
 Popocatepetl
     scout techs
-
+    
 * mechanics applicable
 - veterancy container
 Unit Veterancy: Spawns container 
@@ -1260,6 +1257,7 @@ TreeBender (wind.tactics): LightWindSmallArea,LightWindAllTrees,ModerateWindSmal
 Spider, StymphalianBird, Quetzal
 PantherWarrior: tezca model, siegeunit
 BullWarrior: Kamina model, Kamos model
+CentonTotochin (Hero): AbilityShogun (spawn phoenix egg while fighting, decay and explode)
 
 * Campaign-Exclusive Units
 Jokul: Ability Gust, Ability Tempest, hackarmor+

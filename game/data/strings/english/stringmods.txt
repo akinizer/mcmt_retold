@@ -1081,6 +1081,9 @@ ID = "STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGS_NAME"   ;   Str = "Hack Armor Boos
 ID = "STR_VFX_PIERCEARMORBOOSTNEARALLYBUILDINGS_NAME"   ;   Str = "Pierce Armor Boost Near Fortification"
 ID = "STR_VFX_TOWEROFDEATH"   ;   Str = "Tower of Death"
 ID = "STR_VFX_AUTOREPAIR"   ;   Str = "Autorepair"
+ID = "STR_VFX_MYTHDAMAGEBONUS"   ;   Str = "Bonus Damage vs MythUnit"
+ID = "STR_VFX_BUILDRATEBONUS"   ;   Str = "Build Rate Bonus"
+ID = "STR_VFX_ROFBONUS"   ;   Str = "Attack Speed Rate Bonus"
 
 ID = "STR_TECH_DISMOUNT_TACTICS_NAME"   ;   Str = "Dismount Tactics"
 ID = "STR_TECH_DISMOUNT_TACTICS_LR"   ;   Str = "Enable dismount capability for mounted units"
