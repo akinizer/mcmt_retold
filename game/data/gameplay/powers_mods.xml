@@ -108,7 +108,11 @@
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<!-- Norse God Powers - Minor Classical -->
 	<power name="ForestFire" type="ForestFire" godpower="">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
+		<cost>0.0</cost><repeatcost>0.0</repeatcost>
+		<placement allowdeadtarget="" natureonly="" mergeMode="remove">Unit</placement>
+		<placement allowdeadtarget="" allownature="" enemy="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+	</power>	
 	<power name="HealingSpring" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="Undermine" type="Undermine" godpower="">

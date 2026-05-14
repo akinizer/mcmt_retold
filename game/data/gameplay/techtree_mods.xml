@@ -6234,6 +6234,8 @@
     </effects>
   </tech>
   <tech name="BurningPitch">
+    <cost resourcetype="Wood">1000.0000</cost>
+		<cost resourcetype="Gold">1000.0000</cost>
     <effects>
       <!-- Old Effects Removed -->
       <effect type="Data" action="RangedAttack" amount="3.00" subtype="Damagebonus" unittype="Building" relativity="Absolute" mergeMode="remove">
@@ -9747,6 +9749,16 @@
 				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Popocatepetl</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+
+      <effect type="Data" allactions="1" amount="1.0" subtype="DamageBonus" unittype="Building" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Otontin</target></effect>
     </effects>
   </tech>
   <tech name="HeavyGreatTempleSoldiers">
@@ -9785,6 +9797,18 @@
 				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Popocatepetl</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+
+      <effect type="Data" amount="1.30" subtype="AdditionalScale" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Otontin</target></effect>
+      <effect type="Data" allactions="1" amount="3.0" subtype="DamageBonus" unittype="Building" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Otontin</target></effect>
     </effects>
   </tech>
   <tech name="ChampionGreatTempleSoldiers">
@@ -9823,6 +9847,20 @@
 				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Popocatepetl</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="AdditionalScale" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Otontin</target></effect>
+      <effect type="Data" allactions="1" amount="4.0" subtype="DamageBonus" unittype="Building" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Otontin</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="1.00" targettype="Unit" proto="MCMT_VFXKitsuneFireBallGhost" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Otontin</target></effect>
     </effects>
   </tech>
   <tech name="ObsidianWeapons">
@@ -9833,6 +9871,18 @@
 				<target type="ProtoUnit">TeixiptlaTezca</target></effect>
     </effects>
   </tech>
+  <tech name="StoneskinQuinametzin">
+    <effects>
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+      <effect type="Data" amount="1.0" subtype="OnHitEffect" action="RangedAttack" effecttype="Throw" targettype="HumanSoldier" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Quinametzin</target></effect>
+      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Pierce" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Quinametzin</target></effect>
+      <effect type="Data" amount="-0.40" subtype="ArmorVulnerability" armortype="Hack" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Quinametzin</target></effect>
+    </effects>
+  </tech>  
   <!-- Aztec Myth Techs-->
   <tech name="OmenOfMalinalco">
     <effects>
@@ -9963,6 +10013,11 @@
       <effect type="Data" amount="20" subtype="ShieldPoints" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">ShornOne</target></effect>
       <effect type="Data" amount="0.5" subtype="UnitShieldRegenRate" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">ShornOne</target></effect>
+
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXLegendAuraStrongerUnit" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" hidetooltip="" mergeMode="add">
+        <target type="ProtoUnit">ShornOne</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="1.00" targettype="Unit" proto="MCMT_VFXKitsuneFireBallGhost" attachbone="spine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">ShornOne</target></effect>
     </effects>
   </tech>
@@ -10223,6 +10278,9 @@
         <target type="ProtoUnit">SoulGuide</target></effect>
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="ArcherLineUpgraded" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">SoulGuide</target></effect>
+
+      <effect type="Data" amount="2.00" subtype="Lifespan" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Tlacanexquimilli</target></effect>
     </effects>
   </tech>
   <tech name="OldCoyotesSpirit">

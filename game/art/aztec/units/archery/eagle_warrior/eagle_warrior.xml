@@ -1,0 +1,12 @@
+<animfile validation="strict">
+	<attachment>Weapon<include>aztec\units\attachments\dart_thrower\dart_thrower_z.xml</include></attachment>
+	<attachment>Arrow<include>aztec\units\attachments\dart_thrower\throw_dart_z.xml</include></attachment>
+	<attachment>Shield<include>aztec\units\attachments\shield\shield_z_b.xml</include></attachment>
+	<component>ModelComp<logic type="Tech"><none><assetreference type="TMModel"><file>aztec\units\archery\eagle_warrior\eagle_warrior_iron</file></assetreference></none><mediumnobleshutsoldiers><assetreference type="TMModel"><file>aztec\units\archery\eagle_warrior\eagle_warrior_bronze</file></assetreference></mediumnobleshutsoldiers><heavynobleshutsoldiers><assetreference type="TMModel"><file>aztec\units\archery\eagle_warrior\eagle_warrior_silver</file></assetreference></heavynobleshutsoldiers><championnobleshutsoldiers><assetreference type="TMModel"><file>aztec\units\archery\eagle_warrior\eagle_warrior_gold</file><playercoloroverridename name="EagleWarrior"></playercoloroverridename></assetreference></championnobleshutsoldiers></logic><attach name="Weapon" attachpoint="weapon"></attach><attach name="Arrow" attachpoint="dart"></attach><attach name="Shield" attachpoint="shield"></attach></component>
+	<anim>Death<assetreference type="TMAnimation"><file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_death</file></assetreference><component>ModelComp</component></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_ranged_attack</file><tag type="Attack">0.213</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshArrow">0.5</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_idle_b</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_walk</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_flail</file></assetreference><component>ModelComp</component></anim>
+</animfile>

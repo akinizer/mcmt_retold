@@ -873,7 +873,9 @@
 
 * military tech reworks
 - tower upgrade: increase rof of sentrytower
-- GreatTempleTechs: warriorpriest
+- GreatTempleTechs: 
+    - Warriorpriest included
+    - Quinametzin included, Otontin visualscale+, piercearmor-, Otontin bonusdamage vs building scaling
 - AdvancedTraps: Nahuallatolli trap improvements are moved in
 
 * myth tech reworks
@@ -915,6 +917,7 @@
     - SoulGuide TorchOfMisfortune onhiteffect Pull MilitaryUnit
     - SoulGuide TorchOfMisfortune onhiteffect StatModify Speed MilitaryUnit
     - add SoulGuide unittype Ranged, ArcherLineUpgraded
+    - Tlacanexquimilli lifespan +2 s
 - OldCoyotesSpirit: protoactionadd ChanequeIdol HackArmorInverseAura
 - WingsOfItzpapalotl: 
     - Tunkuluchu CrushDamage +15
@@ -924,23 +927,28 @@
     - ArrowCanoe: rangedattack crushattack +1, ProjectileStymphalianBirdFeathers, CrushArmor +15%
 - TwistedLimbs: HumanSoldier JumpAttack DamageArea
 - ToloacheTrance: affects RangedAttack LogicalTypeBuildingsThatShoot
+- Mictecah: ShornOne VFXLegendAuraStrongerUnit, OnHitEffect Kitsune Ghost Fire
+- StoneskinQuinametzin: damagearea, throw, piercearmor+, hackarmor+
 
 * god power reworks
 - Cost: free
-- AgaveBloom
-    - gatherboost Farm
-    - DoomBloom: spawns on dead, burns nearby units, can kill nearby animals
-- InfestedDen
-    - OmenOfMalinalco: spawn maquizcoatl 3 on destruction
-    - StingOfYappan: add areadamagecontainer
-- Starfall
-    - groundimpactvfxproto: vfxnewmoonpulse
-- MonolithOfTlaloc
-    - bonusdamage vs ship
-- VolcanoMeteor:
-    - activetime: 20 to 30
-    - numberofstrikes: 40 to 30
-    - landimpactprotounit: VFXExplosion
+- Non-Aztec:
+    - ForestFire: targets also nature & enemy, orbital strike logic
+- Aztec:
+    - AgaveBloom
+        - gatherboost Farm
+        - DoomBloom: spawns on dead, burns nearby units, can kill nearby animals
+    - InfestedDen
+        - OmenOfMalinalco: spawn maquizcoatl 3 on destruction
+        - StingOfYappan: add areadamagecontainer
+    - Starfall
+        - groundimpactvfxproto: vfxnewmoonpulse
+    - MonolithOfTlaloc
+        - bonusdamage vs ship
+    - VolcanoMeteor:
+        - activetime: 20 to 30
+        - numberofstrikes: 40 to 30
+        - landimpactprotounit: VFXExplosion
 
 * upstart boost techs
 - Huitzi: maxhitpoints & damage for [WarriorPriest, Titan]
@@ -964,6 +972,8 @@
         - SleepDart: blows a special dart that makes target unit fall a sleep, manual ability, targets units
     - HeroicAgeAztec:
         - PoisonDart: blows a special dart that makes unit suffering from toxic spores, manual ability, targets units
+- EagleWarrior: proxmity modes handattack added, rangedattack maxrange decreased, bonusdamages
+- TequihuaArcher: maxrange increased
 - Naval:
     - FishingShipAztec: GatherBonus aura for other FishingShipAztec
 
@@ -986,6 +996,9 @@
 - Ayotochtli: 
     - HandAttack: crush damage removed, hack damage increased, weaker vs building
     - AutoBoost: self-boost hackarmor for a duration
+- Tlacanexquimilli: inferior Corruption debuff
+- Quinametzin: pierce damage replaced with hack damage, crush damage adjusted
+
 * building reworks
 - House: removed from builder accels, merged with Calpulli
 - All Calpulli: populationcapaddition +5, maxcontained 5
@@ -997,6 +1010,7 @@
 - GreatTemple: unittype abstracttemple
 - TzompantliTower:
     - OmenOfDeath: enables TowerOfDeath action, enables ability on ungarrisoned SentryTower that debuffs all valid units with Mark for Death in an area
+- NoblesHut,WarHut: rangedattack
 
 * special units
 - WanderingTurkey:
@@ -1025,9 +1039,6 @@
 ==============================================================================
 
 === AZTEC
-* mythunits
-Tlacanexquimilli: corruption recharge, ghost tech
-
 * hero
 teixiptla: areaboost humansoldier hitpoints
     huitzilopochtli: areadamage, rangedattack (fireball, building & flying), rangedattack (chimera fire)
@@ -1050,8 +1061,6 @@ ExplosivesAztec: Buildings, Ships, Chaneque, Tzitzimitl
 
 SpawnsAztec
     soulguide: axolotl 
-
-TrackingDevices: QuimichinSpy castpower vision recharge
 
 * special unit
 OldCoyoteSpirit: coyote warrior, coyote hero

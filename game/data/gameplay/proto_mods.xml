@@ -5694,6 +5694,57 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit>
+	<unit name="Quinametzin">
+		<armor type="Pierce" value="0.6000"></armor>
+		<unittype>ArcherLineUpgraded</unittype>
+		<protoaction>
+			<name>RangedAttack</name>
+			<damage type="Pierce" mergeMode="remove">10.000000</damage>
+			<damage type="Hack" mergeMode="add">20.000000</damage>
+			<damage type="Crush">40.000000</damage>
+		</protoaction>
+	</unit>
+	<unit name="Otontin">
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.800000</rof>
+			<damage type="Hack">22.000000</damage>
+			<damagebonus type="Building" mergeMode="remove">8.000000</damagebonus>
+			<impacteffect>effects\impacts\crush</impacteffect>
+		</protoaction>
+	</unit>
+	<unit name="EagleWarrior">
+		<tactics>global_infantry_proximitymodes.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.800000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagebonus type="AbstractCavalry">5.000000</damagebonus>
+			<damagebonus type="AbstractInfantry">2.500000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<anim>RangedAttack</anim>
+			<rof>1.500000</rof>
+			<damage type="Pierce">10.000000</damage>
+			<damagebonus type="AbstractArcher">1.500000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>14.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+			<type>DevoteMajor</type>
+			<maxrange>0.2</maxrange>
+		</protoaction>
+	</unit>
+	<unit name="TequihuaArcher">
+		<protoaction>
+			<name>RangedAttack</name>
+			<maxrange>18.000000</maxrange>
+		</protoaction>
+	</unit>
+
 	<!-- Aztec Myth Units -->
 	<unit name="SoulGuide">
 		<protoaction>
@@ -5862,6 +5913,26 @@
 			<active>0</active>
 		</protoaction>
 	</unit>
+
+	<unit name="Tlacanexquimilli">
+		<protoaction>
+			<name>HandAttack</name>
+			<onhiteffect type="DamageOverTime" duration="5.000000">
+				<damage type="Divine">0.800000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Reincarnation" proto="Tlacanexquimilli" duration="2.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXCorruptedGroundCorruption" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+	</unit>
+
 	<!-- Aztec Naval Units -->
 	<!-- Aztec Buildings -->
 	<unit name="InfestedDen">
@@ -5916,7 +5987,6 @@
 			<rate type="WanderingTurkey" mergeMode="add">1.000000</rate>
 		</protoaction>
 	</unit>
-	<!-- Aztec Special Units -->
 	<unit name="CalpulliLumberOutpost">
 		<unittype>ArcherLineUpgraded</unittype>
 		<populationcapaddition>5</populationcapaddition>
@@ -5933,6 +6003,50 @@
 			<containscalebasedamage>1</containscalebasedamage>
 		</protoaction>
 	</unit>
+	<unit name="NoblesHut">
+		<unitaitype>RangedCombative</unitaitype>
+
+		<unittype>LogicalTypeBuildingsThatShoot</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<flag>DisplayRange</flag>
+		
+		<maxcontained>5</maxcontained>
+		<contain>ArcherLineUpgraded</contain>
+		<notcontain>AbstractInfantry</notcontain>
+		
+		<flag mergeMode="remove">InitialGarrisonOnly</flag>
+		<flag mergeMode="remove">NoIdleActions</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">6.000000</damage>
+			<damageflags>Enemy|Nature</damageflags>
+			<damagebonus type="AbstractInfantry">1.250000</damagebonus>
+			<maxrange>15.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+		</protoaction>
+	</unit>	
+	<unit name="WarHut">
+		<unitaitype>RangedCombative</unitaitype>
+
+		<unittype>LogicalTypeBuildingsThatShoot</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<flag>DisplayRange</flag>
+		
+		<flag mergeMode="remove">InitialGarrisonOnly</flag>
+		<flag mergeMode="remove">NoIdleActions</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">6.000000</damage>
+			<damageflags>Enemy|Nature</damageflags>
+			<damagebonus type="AbstractInfantry">1.250000</damagebonus>
+			<maxrange>15.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+		</protoaction>
+	</unit>	
 	<!-- Aztec Special Units -->
 	<!-- Aztec Special Buildings -->
 	
@@ -27895,6 +28009,28 @@
 			<persistent>1</persistent>
 			<nostack>1</nostack>
 		</protoaction>
+		<protoaction>
+			<name>VFXLegendAuraStrongUnit</name>
+			<type>AutoRangedModify</type>
+			<modelattachment>vfx\glow\legend_glow_strong.xml</modelattachment>
+			<modelattachmentbone>spine</modelattachmentbone>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifyself>1</modifyself>
+			<maxrange>1</maxrange>
+			<persistent>1</persistent>
+			<nostack>1</nostack>
+		</protoaction>
+		<protoaction>
+			<name>VFXLegendAuraStrongerUnit</name>
+			<type>AutoRangedModify</type>
+			<modelattachment>vfx\glow\legend_glow_strong.xml</modelattachment>
+			<modelattachmentbone>spine</modelattachmentbone>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifyself>1</modifyself>
+			<maxrange>1</maxrange>
+			<persistent>1</persistent>
+			<nostack>1</nostack>
+		</protoaction>
 	</unit> 
 
 	<!-- /// AREA DAMAGE AND SELFDESTRUCTION CONTAINERS /// -->
@@ -28985,6 +29121,27 @@
 	<unit name="MCMT_VFXWaterSplash_Large">
 		<displaynameid>STR_VFX_FIRE_NAME</displaynameid>
 		<animfile>egyptian\godpowers\meteor\meteor_impact_water_vfx.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<decay delay="0.0000" duration="1.0000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>EmbellishmentClass</unittype>
+		<flag>StartOnAnimationUpdate</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Immoveable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NoHPBar</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>NotKBTracked</flag>
+	</unit>
+	<unit name="MCMT_VFXKitsuneFireBallGhost">
+		<displaynameid>STR_VFX_FIRE_NAME</displaynameid>
+		<animfile>vfx\projectiles\kitsune\projectile_elder_kitsune_ghost_fire_ball.xml</animfile>
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
 		<decay delay="0.0000" duration="1.0000"></decay>
