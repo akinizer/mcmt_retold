@@ -10371,6 +10371,8 @@
     <effects>
       <effect type="Data" amount="2.00" subtype="DropoffHeal" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractVillager</target></effect>
+      <effect type="Data" protoaction="SpeedInverseAura" amount="1.00" subtype="ProtoActionAdd" unittype="SpeedInverseNearBushContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractVillager</target></effect>
     </effects>
   </tech>
   <tech name="MagueyCultivation">

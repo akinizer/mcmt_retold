@@ -27553,6 +27553,43 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit> 
+	<unit name="SpeedInverseNearBushContainer" mergeMode="add">
+		<displaynameid>STR_VFX_SPEEDINVERSENEARBUSHES_NAME</displaynameid>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_SPEEDINVERSENEARBUSHES_NAME">SpeedInverseAura</name>
+			<type>LikeBonus</type>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>8</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyunittype>BerryBush</modifyunittype>
+			<nostack>1</nostack>
+			<rate type="BerryBush">0.02</rate>
+			<targetenemy>1</targetenemy>
+			<persistent>1</persistent>
+			<modifytype>Speed</modifytype>
+			<modelattachment>vfx\cold\cold_dense.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit> 
 	<!-- /// AREA OF EFFECT AURA CONTAINERS /// -->
 	<unit name="AreaHealContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>

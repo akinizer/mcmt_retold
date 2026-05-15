@@ -929,7 +929,9 @@
 - ToloacheTrance: affects RangedAttack LogicalTypeBuildingsThatShoot
 - Mictecah: ShornOne VFXLegendAuraStrongerUnit, OnHitEffect Kitsune Ghost Fire
 - StoneskinQuinametzin: damagearea, throw, piercearmor+, hackarmor+
-- OcpatliInfusions: villager dropoffheal
+- OcpatliInfusions: 
+    - villager dropoffheal
+    - attach Villagers SpeedInverseNearBushContainer
 * god power reworks
 - Cost: free
 - Non-Aztec:
